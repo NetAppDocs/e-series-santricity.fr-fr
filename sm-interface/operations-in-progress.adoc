@@ -1,0 +1,334 @@
+---
+permalink: sm-interface/operations-in-progress.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, operations in progress 
+summary: 'La page opérations en cours vous permet d"afficher une liste des opérations en cours d"exécution ou en état suspendu, arrêté ou en échec. Vous pouvez prendre des mesures sur certains types d"opérations.' 
+---
+= Opérations en cours
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page opérations en cours vous permet d'afficher une liste des opérations en cours d'exécution ou en état suspendu, arrêté ou en échec. Vous pouvez prendre des mesures sur certains types d'opérations.
+
+Le long des opérations peut affecter les performances du système. Pour certaines opérations, vous avez la possibilité d'arrêter l'opération ou de modifier sa priorité afin que les opérations plus importantes se termine en premier.
+
+Les opérations qui apparaissent sur la page opérations en cours comprennent les éléments suivants :
+
+[cols="1a,1a,1a"]
+|===
+| Fonctionnement | État possible de l'opération | Actions que vous pouvez entreprendre 
+
+
+ a| 
+La copie de volume
+ a| 
+Terminé
+ a| 
+Clair
+
+
+
+ a| 
+La copie de volume
+ a| 
+En cours
+ a| 
+* Changer la priorité
+* Arrêter
+
+
+
+
+ a| 
+La copie de volume
+ a| 
+En attente
+ a| 
+Clair
+
+
+
+ a| 
+La copie de volume
+ a| 
+Échec
+ a| 
+* Clair
+* Recopier
+
+
+
+
+ a| 
+La copie de volume
+ a| 
+Arrêté
+ a| 
+* Clair
+* Recopier
+
+
+
+
+ a| 
+Création de volumes (volumes de pool épais supérieurs à 64 Tio uniquement)
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Suppression du volume (volumes de pool épais supérieurs à 64 Tio uniquement)
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Synchronisation initiale du groupe de miroirs asynchrones
+ a| 
+En cours
+ a| 
+Suspendre
+
+
+
+ a| 
+Synchronisation initiale du groupe de miroirs asynchrones
+ a| 
+Suspendu
+ a| 
+Reprendre
+
+
+
+ a| 
+La mise en miroir synchrone
+ a| 
+En cours
+ a| 
+Suspendre
+
+
+
+ a| 
+La mise en miroir synchrone
+ a| 
+Suspendu
+ a| 
+Reprendre
+
+
+
+ a| 
+Restauration de l'image instantanée
+ a| 
+En cours
+ a| 
+Annuler
+
+
+
+ a| 
+Restauration de l'image instantanée
+ a| 
+En attente
+ a| 
+Annuler
+
+
+
+ a| 
+Restauration de l'image instantanée
+ a| 
+En pause
+ a| 
+* Annuler
+* Reprendre
+
+
+
+
+ a| 
+Évacuation des disques
+ a| 
+En cours
+ a| 
+Annuler (selon le type d'évacuation des disques)
+
+
+
+ a| 
+Ajoutez de la capacité au pool ou au groupe de volumes
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Modifier un niveau RAID pour un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Réduction de la capacité pour un pool
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Récupération du volume fin
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Vérifiez le temps restant sur une opération de format de disponibilité instantanée (IAF) pour les volumes de pool
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Vérifier la redondance des données d'un groupe de volumes
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Défragmenter un groupe de volumes
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Initialiser un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Augmentation de la capacité d'un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Modifier la taille de segment d'un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Copie de disque
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Reconstruction des données
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Recopie
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Effacement de lecteur
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+En cours
+ a| 
+* Changer la priorité
+* Arrêter
+
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+Arrêté
+ a| 
+* Reprendre
+* Déconnexion
+
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+Échec
+ a| 
+* Reprendre
+* Déconnexion
+
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+Terminé
+ a| 
+Déconnexion
+
+|===

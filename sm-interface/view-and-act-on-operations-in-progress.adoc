@@ -1,0 +1,355 @@
+---
+permalink: sm-interface/view-and-act-on-operations-in-progress.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, act, operations, progress, 
+summary: Pour afficher et prendre des mesures sur les opérations à long terme, utilisez la page opérations en cours. 
+---
+= Voir et agir sur les opérations en cours
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour afficher et prendre des mesures sur les opérations à long terme, utilisez la page opérations en cours.
+
+Pour chaque opération répertoriée sur la page opérations en cours, un pourcentage d'achèvement et une estimation du temps restant pour terminer l'opération sont indiqués. Dans certains cas, vous pouvez arrêter une opération ou la placer à une priorité plus ou moins élevée. Vous pouvez également effacer une opération de copie de volume terminée de la liste.
+
+.Étapes
+. Sur la page d'accueil, sélectionnez *Afficher les opérations en cours*.
++
+La page opérations en cours s'affiche.
+
+. Si vous le souhaitez, utilisez les liens de la colonne actions pour arrêter ou modifier la priorité d'une opération.
++
+[CAUTION]
+====
+Lisez tous les textes de mise en garde fournis dans les boîtes de dialogue, en particulier lors de l'arrêt d'une opération.
+
+====
++
+Vous pouvez arrêter une opération de copie de volume ou modifier sa priorité.
+
+. Une fois l'opération de copie de volume terminée, vous pouvez sélectionner *Effacer* pour la supprimer de la liste.
++
+En haut de la page d'accueil, un message d'information et une icône de clé jaune apparaissent lorsqu'une opération est terminée. Ce message comprend un lien qui vous permet de supprimer l'opération de la page opérations en cours.
+
+
+
+Les opérations qui apparaissent sur la page opérations en cours comprennent les éléments suivants :
+
+[cols="1a,1a,1a"]
+|===
+| Fonctionnement | État possible de l'opération | Actions que vous pouvez entreprendre 
+
+
+ a| 
+La copie de volume
+ a| 
+Terminé
+ a| 
+Clair
+
+
+
+ a| 
+La copie de volume
+ a| 
+En cours
+ a| 
+* Changer la priorité
+* Arrêter
+
+
+
+
+ a| 
+La copie de volume
+ a| 
+En attente
+ a| 
+Clair
+
+
+
+ a| 
+La copie de volume
+ a| 
+Échec
+ a| 
+* Clair
+* Recopier
+
+
+
+
+ a| 
+La copie de volume
+ a| 
+Arrêté
+ a| 
+* Clair
+* Recopier
+
+
+
+
+ a| 
+Création de volumes (volumes de pool épais supérieurs à 64 Tio uniquement)
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Suppression du volume (volumes de pool épais supérieurs à 64 Tio uniquement)
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Synchronisation initiale du groupe de miroirs asynchrones
+ a| 
+En cours
+ a| 
+Suspendre
+
+
+
+ a| 
+Synchronisation initiale du groupe de miroirs asynchrones
+ a| 
+Suspendu
+ a| 
+Reprendre
+
+
+
+ a| 
+La mise en miroir synchrone
+ a| 
+En cours
+ a| 
+Suspendre
+
+
+
+ a| 
+La mise en miroir synchrone
+ a| 
+Suspendu
+ a| 
+Reprendre
+
+
+
+ a| 
+Restauration de l'image instantanée
+ a| 
+En cours
+ a| 
+Annuler
+
+
+
+ a| 
+Restauration de l'image instantanée
+ a| 
+En attente
+ a| 
+Annuler
+
+
+
+ a| 
+Restauration de l'image instantanée
+ a| 
+En pause
+ a| 
+* Annuler
+* Reprendre
+
+
+
+
+ a| 
+Évacuation des disques
+ a| 
+En cours
+ a| 
+Annuler (selon le type d'évacuation des disques)
+
+
+
+ a| 
+Ajoutez de la capacité au pool ou au groupe de volumes
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Modifier un niveau RAID pour un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Réduction de la capacité pour un pool
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Récupération du volume fin
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Vérifiez le temps restant sur une opération de format de disponibilité instantanée (IAF) pour les volumes de pool
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Vérifier la redondance des données d'un groupe de volumes
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Défragmenter un groupe de volumes
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Initialiser un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Augmentation de la capacité d'un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Modifier la taille de segment d'un volume
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Copie de disque
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Reconstruction des données
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Recopie
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Effacement de lecteur
+ a| 
+En cours
+ a| 
+_aucun_
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+En cours
+ a| 
+* Changer la priorité
+* Arrêter
+
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+Arrêté
+ a| 
+* Reprendre
+* Déconnexion
+
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+Échec
+ a| 
+* Reprendre
+* Déconnexion
+
+
+
+
+ a| 
+Importation du stockage distant
+ a| 
+Terminé
+ a| 
+Déconnexion
+
+|===

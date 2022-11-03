@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/interpret-performance-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, performance data 
+summary: Les données de performances peuvent vous aider à régler les performances de votre baie de stockage. 
+---
+= Interpréter les données de performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les données de performances peuvent vous aider à régler les performances de votre baie de stockage.
+
+Lors de l'interprétation des données de performances, n'oubliez pas que plusieurs facteurs affectent les performances de votre baie de stockage. Le tableau suivant décrit les principaux points à prendre en compte.
+
+[cols="25h,~"]
+|===
+| Les données de performance | Impact sur l'ajustement des performances 
+
+
+ a| 
+Latence (millisecondes ou ms)
+ a| 
+Surveiller l'activité d'E/S d'un objet spécifique.
+
+Identifiez potentiellement les objets qui sont des goulets d'étranglement :
+
+* Lorsqu'un groupe de volumes est partagé entre plusieurs volumes, chaque groupe de volumes peut avoir besoin de ses propres groupes pour améliorer les performances séquentielles des disques et réduire la latence.
+* Avec les pools, des latences plus importantes sont introduites et des charges de travail irrégulières peuvent exister entre les disques, ce qui réduit les valeurs de latence et, en général, les valeurs plus élevées.
+* Le type de disques et la vitesse influencent la latence. Grâce à des E/S aléatoires, les disques rotatifs plus rapides passent moins de temps à déplacer les données entre les différents emplacements sur le disque.
+* Un nombre insuffisant de disques génère davantage de commandes en file d'attente et une plus grande période de temps pour le traitement de la commande, ce qui augmente la latence générale du système.
+* Les E/S plus importantes bénéficient d'une latence plus élevée en raison du temps supplémentaire consacré au transfert des données.
+* Une latence plus élevée peut indiquer que le modèle d'E/S est aléatoire par nature. Les disques dotés d'E/S aléatoires auront une latence supérieure à celle des flux séquentiels.
+* La disparité de latence entre les disques ou les volumes d'un groupe de volumes commun pourrait indiquer la lenteur d'un disque.
+
+
+
+
+ a| 
+D'IOPS
+ a| 
+Les éléments suivants sont pris en compte lors des facteurs qui affectent les opérations d'entrée/sortie par seconde (IOPS ou E/S par seconde) :
+
+* Mode d'accès (aléatoire ou séquentiel)
+* Taille des E/S
+* Niveau RAID
+* Taille de bloc de cache
+* Indique si la mise en cache de lecture est activée
+* Indique si la mise en cache des écritures est activée
+* Préextraction de lecture dynamique du cache
+* Taille du segment
+* Nombre de disques dans les groupes de volumes ou la matrice de stockage
+
+
+Plus le taux d'accès au cache est élevé, plus les taux d'E/S sont élevés. Par rapport aux disques désactivés, la mise en cache d'écriture est activée pour les E/S plus élevées. Lors de la décision d'activer ou non la mise en cache des écritures pour un volume individuel, analysez les IOPS actuelles et les IOPS maximales. Les taux d'E/S séquentielles sont plus élevés que ceux des modèles d'E/S aléatoires. Quel que soit votre modèle d'E/S, activez la mise en cache des écritures pour optimiser les taux d'E/S et réduire le temps de réponse des applications.
+
+Vous pouvez voir l'amélioration des performances en modifiant la taille de segment dans les statistiques IOPS d'un volume. Essayez de déterminer la taille de segment optimale ou utilisez la taille du système de fichiers ou la taille du bloc de base de données.
+
+
+
+ a| 
+Mio/s
+ a| 
+Les taux de transfert ou de débit sont déterminés par la taille des E/S et le taux d'E/S de l'application. Généralement, les petites demandes d'E/S des applications entraînent un taux de transfert inférieur, mais elles offrent un taux d'E/S plus rapide et un temps de réponse plus court. En cas de demandes d'E/S plus importantes au niveau des applications, des débits plus élevés sont possibles.
+
+Comprendre les modèles d'E/S types d'applications peut vous aider à déterminer les taux de transfert d'E/S maximum pour une baie de stockage spécifique.
+
+
+
+ a| 
+CPU
+ a| 
+Cette valeur est un pourcentage de la capacité de traitement utilisée.
+
+Vous remarquerez peut-être une disparité dans l'utilisation du CPU des mêmes types d'objets. Par exemple, l'utilisation de l'UC d'un contrôleur est lourde ou augmente avec le temps alors que celle de l'autre contrôleur est plus légère ou plus stable. Dans ce cas, il peut être intéressant de modifier la propriété du contrôleur d'un ou plusieurs volumes vers le contrôleur avec le pourcentage de processeur inférieur.
+
+Il peut être intéressant de surveiller le processeur dans la baie de stockage. Si le processeur continue d'augmenter au fil du temps alors que les performances des applications diminuent, vous devrez peut-être ajouter des baies de stockage. L'ajout de baies de stockage à votre entreprise vous permet de continuer à répondre aux besoins des applications à un niveau de performances acceptable.
+
+
+
+ a| 
+Marge
+ a| 
+La marge fait référence à la capacité de performance restante des contrôleurs, aux canaux hôtes du contrôleur et aux canaux de lecteurs du contrôleur. Cette valeur est exprimée en pourcentage et représente l'écart entre les performances maximales que ces objets peuvent fournir et les niveaux de performances actuels.
+
+* Pour les contrôleurs, la marge est un pourcentage des IOPS maximales possibles.
+* Pour les canaux, la marge est un pourcentage du débit maximum, ou MIB/s. Le débit de lecture, le débit d'écriture et le débit bidirectionnel sont inclus dans le calcul.
+
+
+|===

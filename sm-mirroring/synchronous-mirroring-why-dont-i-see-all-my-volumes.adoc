@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles. 
+---
+= Mise en miroir synchrone - Pourquoi ne pas voir tous mes volumes ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes peuvent ne pas être éligibles pour les raisons suivantes :
+
+* Le volume n'est pas un volume standard, tel qu'un volume instantané ou un volume fin.
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+

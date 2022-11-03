@@ -1,0 +1,22 @@
+---
+permalink: sm-interface/what-if-i-dont-see-all-of-my-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host detection 
+summary: 'Si vos hôtes connectés ne s"affichent pas, la détection automatique a échoué, les hôtes sont mal connectés ou aucun hôte n"est actuellement connecté.' 
+---
+= Et si je ne vois pas tous mes hôtes ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vos hôtes connectés ne s'affichent pas, la détection automatique a échoué, les hôtes sont mal connectés ou aucun hôte n'est actuellement connecté.
+
+Vous pourrez configurer les hôtes ultérieurement, une fois l'installation terminée. Vous pouvez créer des hôtes automatiquement ou manuellement comme suit :
+
+* Si vous avez installé l'agent HCA (Host Context Agent) sur vos hôtes, le HCA transmet les informations de configuration de l'hôte à la matrice de stockage. System Manager configure automatiquement ces hôtes et les affiche dans l'assistant d'installation initiale. (HCA ne s'applique pas aux hôtes NVMe over Fabrics.)
+* Vous pouvez créer manuellement des hôtes et associer les identificateurs de port hôte appropriés en accédant au menu:Storage[hosts]. Les hôtes qui ont été créés manuellement s'affichent également dans l'assistant *Configuration initiale*.
+* La cible et l'hôte doivent être configurés pour le type de port hôte (par exemple, iSCSI ou NVMe over RoCE), ainsi qu'une session vers le stockage établi avant le fonctionnement de la détection automatique.
+

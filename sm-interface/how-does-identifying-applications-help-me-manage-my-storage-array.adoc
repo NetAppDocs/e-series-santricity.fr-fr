@@ -1,0 +1,16 @@
+---
+permalink: sm-interface/how-does-identifying-applications-help-me-manage-my-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: 'Lorsque vous identifiez des applications, System Manager recommande automatiquement une configuration de volume qui optimise le stockage en fonction du type d"application.' 
+---
+= En quoi l'identification des applications m'aide-t-elle dans la gestion de ma baie de stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous identifiez des applications, System Manager recommande automatiquement une configuration de volume qui optimise le stockage en fonction du type d'application.
+
+Grâce à l'optimisation des volumes par application, les opérations de stockage des données peuvent être plus efficaces. Des caractéristiques telles que le type d'E/S, la taille du segment, la propriété du contrôleur et le cache de lecture et d'écriture sont incluses dans la configuration du volume. De plus, vous pouvez afficher les données de performances par application et par charge de travail afin d'évaluer la latence, les IOPS et la MIB/s des applications et de leurs charges de travail associées.

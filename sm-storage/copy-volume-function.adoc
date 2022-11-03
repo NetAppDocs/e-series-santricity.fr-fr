@@ -1,0 +1,131 @@
+---
+permalink: sm-storage/copy-volume-function.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: 'La fonction Copier le volume vous permet de créer une copie ponctuelle d"un volume en créant deux volumes distincts, le volume source et le volume cible, sur la même matrice de stockage.' 
+---
+= Présentation du volume de copie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction Copier le volume vous permet de créer une copie ponctuelle d'un volume en créant deux volumes distincts, le volume source et le volume cible, sur la même matrice de stockage.
+
+Cette fonction effectue une copie octet par octet du volume source vers le volume cible, ce qui rend les données du volume cible identiques aux données du volume source.
+
+
+
+== Copie des données pour un meilleur accès
+
+En cas de modification d'un volume, la fonction Copy Volume vous permet de copier des données à partir de pools ou de groupes de volumes utilisant des disques de capacité inférieure vers des pools ou des groupes de volumes utilisant des disques de capacité supérieure. Par exemple, vous pouvez utiliser la fonction Copier le volume pour effectuer les opérations suivantes :
+
+* Déplacez les données vers des disques de plus grande taille.
+* Passez à des disques avec un taux de transfert de données plus élevé.
+* Remplacez les disques par des nouvelles technologies pour améliorer les performances.
+* Remplacez un volume fin par un volume non fin.
+
+
+
+
+== Remplacez un volume fin par un volume non fin
+
+Si vous souhaitez modifier un volume fin en volume épais, utilisez l'opération Copier le volume pour créer une copie du volume fin. La cible d'une opération de copie de volume est toujours un volume lourd.
+
+[NOTE]
+====
+System Manager ne propose pas d'option pour la création des volumes fins. Si vous souhaitez créer des volumes fins, utilisez l'interface de ligne de commande (CLI).
+
+====
+
+
+== Données de sauvegarde
+
+La fonction Copier le volume vous permet de sauvegarder un volume en copiant les données d'un volume vers un autre volume de la même matrice de stockage. Vous pouvez utiliser le volume cible comme sauvegarde du volume source, pour le test du système ou pour effectuer une sauvegarde sur un autre périphérique, tel qu'un lecteur de bande.
+
+
+
+== Restaurez les données de volume Snapshot sur le volume de base
+
+Si vous devez restaurer les données vers le volume de base à partir du volume Snapshot associé, vous pouvez utiliser la fonction Copier le volume pour copier les données du volume Snapshot vers le volume de base. Vous pouvez créer une copie de volume des données présentes sur le volume Snapshot, puis copier ces données dans le volume de base.
+
+
+
+== Volumes source et cible
+
+Le tableau suivant indique les types de volumes pouvant être utilisés pour les volumes source et cible avec la fonction Copier le volume.
+
+[cols="1a,1a,1a,1a"]
+|===
+| Type de volume | Volume source de copie de volume hors ligne | Volume source de copie de volume en ligne | Volume cible en ligne et hors ligne 
+
+
+ a| 
+Un volume non fin dans un pool
+ a| 
+Oui.
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Volume non fin dans un groupe de volumes
+ a| 
+Oui.
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Volume fin
+ a| 
+Oui.
+ a| 
+Oui.
+ a| 
+Non
+
+
+
+ a| 
+Volume Snapshot
+ a| 
+Oui^1^
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+Volume de base Snapshot
+ a| 
+Oui.
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+Volume primaire du miroir distant
+ a| 
+Oui^2^
+ a| 
+Non
+ a| 
+Oui.
+
+|===
+^1^ vous ne pouvez pas utiliser la copie du volume de snapshot tant que la copie en ligne n'est pas terminée.
+
+^2^ si le volume source est un volume primaire, la capacité du volume cible doit être égale ou supérieure à la capacité utilisable du volume source.

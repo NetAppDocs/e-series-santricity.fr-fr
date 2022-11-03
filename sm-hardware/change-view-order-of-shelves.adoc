@@ -1,0 +1,19 @@
+---
+permalink: sm-hardware/change-view-order-of-shelves.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
+summary: 'Vous pouvez modifier l"ordre des tiroirs affiché sur la page Hardware en fonction de l"ordre physique des tiroirs dans une armoire.' 
+---
+= Modifier l'ordre d'affichage des étagères
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier l'ordre des tiroirs affiché sur la page Hardware en fonction de l'ordre physique des tiroirs dans une armoire.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Dans le coin supérieur droit d'une vue de tablette, sélectionnez les flèches vers le haut ou vers le bas pour réorganiser l'ordre des étagères affiché sur la page matériel.
+

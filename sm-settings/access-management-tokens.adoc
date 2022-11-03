@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/access-management-tokens.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, tokens 
+summary: 'Les jetons d"accès assurent l"accès à la matrice sans exposer le nom d"utilisateur et le mot de passe.' 
+---
+= Jetons d'accès
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les jetons d'accès offrent une méthode d'authentification avec l'API REST ou l'interface de ligne de commande, sans exposer les noms d'utilisateurs et les mots de passe. Un jeton est associé à un utilisateur spécifique (y compris les utilisateurs LDAP) et comprend un ensemble d'autorisations et une expiration.
+
+
+
+== Accès aux jetons Web SAML et JSON
+
+Par défaut, un système dont le langage SAML est activé ne permet pas l'accès aux outils de ligne de commande traditionnels. L'API REST et l'interface de ligne de commande deviennent effectivement inexploitables car le flux de travail MFA requiert une redirection vers un serveur Identity Provider pour l'authentification. Par conséquent, vous devez générer des jetons dans System Manager, qui imposent à un utilisateur d'être authentifié via MFA.
+
+
+NOTE: Il n'est pas nécessaire que le langage SAML soit activé pour utiliser des jetons Web, mais le langage SAML est recommandé pour assurer le plus haut niveau de sécurité.
+
+
+
+== Flux de production pour la création et l'utilisation de jetons
+
+. Créez un jeton dans System Manager et déterminez son expiration.
+. Copiez le texte du jeton dans le presse-papiers ou téléchargez-le dans un fichier, puis enregistrez le texte du jeton dans un emplacement sécurisé.
+. Utilisez le jeton comme suit :
++
+** *API REST* : pour utiliser un jeton dans une requête d'API REST, ajoutez un en-tête HTTP à vos requêtes. Par exemple :
+`Authorization: Bearer _<access-token-value>_`
+** *Secure CLI* : pour utiliser un jeton dans l'interface de ligne de commande, ajoutez la valeur du jeton sur la ligne de commande ou utilisez le chemin d'accès à un fichier contenant la valeur du jeton. Par exemple :
++
+*** Valeur du jeton sur la ligne de commande : `-t _access-token-value_`
+*** Chemin d'accès à un fichier contenant la valeur du jeton : `-T _access-token-file_`
+
+
+
+
+
+
+En savoir plus :
+
+* link:access-management-tokens-create.html["Créez des jetons d'accès"]
+* link:access-management-tokens-edit.html["Modifier les jetons d'accès"]
+* link:access-management-tokens-revoke.html["Révoquer les jetons d'accès"]
+

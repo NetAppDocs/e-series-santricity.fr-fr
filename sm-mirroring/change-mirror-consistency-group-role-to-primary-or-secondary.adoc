@@ -1,0 +1,42 @@
+---
+permalink: sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
+summary: 'Vous pouvez modifier le rôle entre les groupes de cohérence miroir à des fins d"administration ou en cas d"incident sur la baie de stockage locale.' 
+---
+= Modifiez le rôle de groupe de cohérence du miroir sur principal ou secondaire
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le rôle entre les groupes de cohérence miroir à des fins d'administration ou en cas d'incident sur la baie de stockage locale.
+
+Les groupes de cohérence en miroir créés sur la matrice de stockage locale détiennent le rôle principal. Les groupes de cohérence en miroir créés sur la matrice de stockage distante détiennent le rôle secondaire. Vous pouvez rétrograder le groupe de cohérence du miroir local à un rôle secondaire ou promouvoir le groupe de cohérence du miroir distant en rôle principal.
+
+.Étapes
+. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Sélectionnez l'onglet *groupes de cohérence miroir*.
++
+Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.
+
+. Sélectionnez le groupe de cohérence miroir pour lequel vous souhaitez modifier le rôle, puis sélectionnez menu :plus[changer le rôle sur <Primary | Secondary>]*>*.
++
+Le système affiche une confirmation.
+
+. Confirmez que vous souhaitez modifier le rôle du groupe de cohérence miroir, puis cliquez sur *Modifier le rôle*.
++
+[NOTE]
+====
+Le système affiche la boîte de dialogue Impossible de contacter la matrice de stockage lorsqu'un changement de rôle est demandé, mais la matrice de stockage distante ne peut pas être contactée. Cliquez sur *Oui* pour forcer le changement de rôle.
+
+====
+
+
+System Manager effectue les actions suivantes :
+
+* Le tableau Groupe de cohérence miroir affiche l'état « en attente » ou « en cours » en regard du groupe de cohérence miroir en cours de modification du rôle. Vous pouvez annuler une opération de changement de rôle en attente en cliquant sur le lien *Annuler* qui se trouve dans la cellule du tableau.
+* Si vous pouvez contacter le groupe de cohérence miroir associé, les rôles entre les groupes de cohérence miroir changent. System Manager promeut le groupe de cohérence du miroir secondaire à un rôle principal ou abaisse le groupe de cohérence du miroir principal à un rôle secondaire (selon la sélection). Le changement de rôle affecte toutes les paires symétriques au sein du groupe de cohérence miroir sélectionné.
+

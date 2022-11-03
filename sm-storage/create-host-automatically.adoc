@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/create-host-automatically.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, automatically 
+summary: 'Vous pouvez autoriser l"agent HCA (Host Context Agent) à détecter automatiquement les hôtes, puis vérifier que les informations sont correctes. La création d"un hôte est l"une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d"autoriser l"accès E/S aux volumes.' 
+---
+= Créer l'hôte automatiquement
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez autoriser l'agent HCA (Host Context Agent) à détecter automatiquement les hôtes, puis vérifier que les informations sont correctes. La création d'un hôte est l'une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d'autoriser l'accès E/S aux volumes.
+
+Assurez-vous que l'agent HCA (Host Context Agent) est installé et exécuté sur chaque hôte connecté à la matrice de stockage. Les hôtes sur lesquels HCA est installé et connecté à la matrice de stockage sont créés automatiquement. Pour installer le HCA, installez le gestionnaire de stockage SANtricity sur l'hôte et sélectionnez l'option hôte. Le HCA n'est pas disponible sur tous les systèmes d'exploitation pris en charge. S'il n'est pas disponible, vous devez créer l'hôte manuellement.
+
+.Étapes
+. Sélectionnez menu:Storage[hosts].
++
+Le tableau répertorie les hôtes créés automatiquement.
+
+. Vérifiez que les informations fournies par l'HCA sont correctes (nom, type d'hôte, identifiants de port hôte).
++
+Si vous devez modifier l'une des informations, sélectionnez l'hôte, puis cliquez sur *Afficher/Modifier les paramètres*.
+
+. *Facultatif:* si vous souhaitez que l'hôte créé automatiquement soit dans un cluster, créez un cluster hôte et ajoutez l'hôte ou les hôtes.
+
+
+Après la création automatique d'un hôte, le système affiche les éléments suivants dans la table des mosaïques hôtes :
+
+* Nom d'hôte dérivé du nom système de l'hôte.
+* Les ports d'identifiant hôte associés à l'hôte.
+* Type de système d'exploitation hôte de l'hôte.
+

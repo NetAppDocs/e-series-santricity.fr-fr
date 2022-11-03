@@ -1,0 +1,96 @@
+---
+permalink: sm-storage/snapshot-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, terms 
+summary: 'Découvrez comment les termes du snapshot s"appliquent à votre baie de stockage.' 
+---
+= Terminologie des snapshots
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les termes du snapshot s'appliquent à votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Fonction snapshots
+ a| 
+La fonction snapshots permet de créer et de gérer des images de volumes.
+
+
+
+ a| 
+Image Snapshot
+ a| 
+Une image Snapshot est une copie logique des données de volume, capturées à un point dans le temps spécifique. Comme un point de restauration, les images instantanées vous permettent de revenir à un jeu de données correct connu. Bien que l'hôte puisse accéder à l'image snapshot, il ne peut pas y lire ni y écrire directement.
+
+
+
+ a| 
+Volume de base
+ a| 
+Un volume de base est la source à partir de laquelle une image snapshot est créée. Il peut s'agir d'un volume non fin ou non fin et est généralement attribué à un hôte. Le volume de base peut résider dans un groupe de volumes ou un pool de disques.
+
+
+
+ a| 
+Volume Snapshot
+ a| 
+Un volume snapshot permet à l'hôte d'accéder aux données de l'image snapshot. Le volume snapshot contient sa propre capacité réservée, qui enregistre toutes les modifications apportées au volume de base sans affecter l'image snapshot d'origine.
+
+
+
+ a| 
+Groupe de snapshots
+ a| 
+Un groupe d'instantanés est un ensemble d'images d'instantanés provenant d'un seul volume de base.
+
+
+
+ a| 
+Volume de capacité réservée
+ a| 
+Un volume de capacité réservée suit les blocs de données du volume de base remplacés et le contenu conservé de ces blocs.
+
+
+
+ a| 
+Planification Snapshot
+ a| 
+Un planning de snapshots est un calendrier pour la création automatique d'images d'instantanés. Grâce à l'horaire, vous pouvez contrôler la fréquence des créations d'images.
+
+
+
+ a| 
+Groupe de cohérence Snapshot
+ a| 
+Un groupe de cohérence de snapshot est un ensemble de volumes traités comme une entité unique lors de la création d'une image Snapshot. Chaque volume a sa propre image snapshot, mais toutes les images sont créées au même point dans le temps.
+
+
+
+ a| 
+Volume membre du groupe de cohérence Snapshot
+ a| 
+Chaque volume appartenant à un groupe de cohérence snapshot est appelé volume membre. Lorsque vous ajoutez un volume à un groupe de cohérence snapshot, System Manager crée automatiquement un nouveau groupe snapshot correspondant à ce volume membre.
+
+
+
+ a| 
+Retour arrière
+ a| 
+Une restauration consiste à renvoyer les données d'un volume de base à un point précédent dans le temps.
+
+
+
+ a| 
+Capacité réservée
+ a| 
+La capacité réservée est la capacité physique allouée utilisée pour toute opération de service de copie et tout objet de stockage. Il n'est pas directement lisible par l'hôte.
+
+|===

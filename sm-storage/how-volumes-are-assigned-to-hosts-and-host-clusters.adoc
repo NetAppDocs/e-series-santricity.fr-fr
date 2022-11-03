@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/how-volumes-are-assigned-to-hosts-and-host-clusters.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
+summary: 'Pour qu"un hôte ou un cluster hôte puisse envoyer les E/S à un volume, vous devez affecter le volume à l"hôte ou au cluster hôte.' 
+---
+= Mode d'affectation des volumes aux hôtes et aux clusters hôtes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour qu'un hôte ou un cluster hôte puisse envoyer les E/S à un volume, vous devez affecter le volume à l'hôte ou au cluster hôte.
+
+Vous pouvez sélectionner un hôte ou un cluster hôte lors de la création d'un volume ou attribuer ultérieurement un volume à un hôte ou à un cluster hôte. Un cluster hôte est un groupe d'hôtes. Vous créez un cluster hôte pour vous permettre d'attribuer facilement les mêmes volumes à plusieurs hôtes.
+
+L'affectation de volumes à des hôtes est flexible, ce qui vous permet de répondre à vos besoins de stockage spécifiques.
+
+* *Hôte autonome, ne faisant pas partie d'un cluster hôte* -- vous pouvez affecter un volume à un hôte individuel. Le volume n'est accessible que par un seul hôte.
+* *Cluster hôte* -- vous pouvez affecter un volume à un cluster hôte. Il est possible d'accéder au volume par tous les hôtes du cluster hôte.
+* *Hôte dans un cluster hôte* -- vous pouvez affecter un volume à un hôte individuel qui fait partie d'un cluster hôte. Même si l'hôte fait partie d'un cluster hôte, celui-ci est uniquement accessible par l'hôte individuel, et non par les autres hôtes du cluster hôte.
+
+
+Lorsque des volumes sont créés, des LUN (Logical Unit Numbers) sont automatiquement attribuées. La LUN sert de « adresse » entre l'hôte et le contrôleur au cours des opérations d'E/S. Vous pouvez modifier les LUN après la création du volume.

@@ -1,0 +1,32 @@
+---
+permalink: sm-support/view-nvme-over-fabrics-statistics-support.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, nvme, over, fabrics, statistics 
+summary: Vous pouvez afficher les données relatives aux connexions NVMe over Fabrics avec votre baie de stockage. 
+---
+= Affichez les statistiques NVMe over Fabrics
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les données relatives aux connexions NVMe over Fabrics avec votre baie de stockage.
+
+System Manager affiche ces types de statistiques NVMe over Fabrics. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
+
+* *Statistiques du sous-système NVMe* -- affiche les statistiques du contrôleur NVMe et de sa file d'attente. Le contrôleur NVMe fournit un chemin d'accès entre un hôte et les espaces de noms de la baie de stockage. Vous pouvez consulter les statistiques du sous-système NVMe pour des éléments tels que les échecs de connexion, les réinitialisations et les arrêts de service.
+* *Statistiques de l'interface RDMA* -- fournit des statistiques sur tous les ports NVMe over Fabrics de l'interface RDMA, qui incluent des statistiques de performances et des informations sur les erreurs de liaison associées à chaque port de commutateur. Cet onglet s'affiche uniquement lorsque les ports NVMe over Fabrics sont disponibles.
+
+
+Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.
+
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Afficher les statistiques NVMe over Fabrics*.
+. Pour définir la ligne de base, cliquez sur *définir la nouvelle ligne de base*.
++
+La définition de la ligne de base définit un nouveau point de départ pour la collecte des statistiques. La même base est utilisée pour toutes les statistiques NVMe.
+
+

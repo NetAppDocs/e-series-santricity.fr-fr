@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/how-do-i-configure-my-dhcp-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, dhcp, server, static, internet, protocol, 
+summary: 'Vous devez configurer un serveur DHCP (Dynamic Host Configuration Protocol) pour utiliser des adresses IP (Internet Protocol) statiques pour les contrôleurs de votre matrice de stockage.' 
+---
+= Comment configurer mon serveur DHCP ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez configurer un serveur DHCP (Dynamic Host Configuration Protocol) pour utiliser des adresses IP (Internet Protocol) statiques pour les contrôleurs de votre matrice de stockage.
+
+Les adresses IP que votre serveur DHCP attribue sont généralement dynamiques et peuvent changer parce qu'elles ont une période de bail qui expire. Certains périphériques, par exemple, les serveurs et les routeurs, doivent utiliser des adresses statiques. Les contrôleurs de votre baie de stockage ont également besoin d'adresses IP statiques.
+
+Pour plus d'informations sur l'attribution d'adresses statiques, reportez-vous à la documentation de votre serveur DHCP.

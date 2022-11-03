@@ -1,0 +1,45 @@
+---
+permalink: sm-storage/decrease-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
+summary: 'L"option réduire la capacité permet de réduire la capacité réservée aux objets de stockage suivants : groupe de snapshots, volume snapshot et volume membre du groupe de cohérence. Vous pouvez diminuer la capacité réservée uniquement en fonction de la ou des quantité(s) utilisée(s) pour l"augmenter.' 
+---
+= Réduction de la capacité réservée
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'option réduire la capacité permet de réduire la capacité réservée aux objets de stockage suivants : groupe de snapshots, volume snapshot et volume membre du groupe de cohérence. Vous pouvez diminuer la capacité réservée uniquement en fonction de la ou des quantité(s) utilisée(s) pour l'augmenter.
+
+.Avant de commencer
+* L'objet de stockage doit contenir plusieurs volumes de capacité réservée.
+* L'objet de stockage ne doit pas être un volume par paire en miroir.
+* Si l'objet de stockage est un volume de snapshot, il doit être désactivé.
+* Si l'objet de stockage est un groupe de snapshots, il ne doit pas contenir d'images de snapshot associées.
+
+
+Consultez les directives suivantes :
+
+* Vous pouvez supprimer des volumes de capacité réservée dans l'ordre inverse de leur ajout.
+* Vous ne pouvez pas réduire la capacité réservée d'un volume snapshot en lecture seule car il ne dispose d'aucune capacité réservée associée. Seuls les snapshots qui sont en lecture/écriture nécessitent une capacité réservée.
+
+
+.Étapes
+. Menu Sélectionner:Storage[pools & Volume Groups].
+. Cliquez sur l'onglet *capacité réservée*.
+. Sélectionnez l'objet de stockage pour lequel vous souhaitez diminuer la capacité réservée, puis cliquez sur *réduire la capacité*.
++
+La boîte de dialogue diminuer la capacité réservée s'affiche.
+
+. Sélectionnez la capacité dont vous souhaitez diminuer la capacité réservée, puis cliquez sur *diminuer*.
+
+
+System Manager effectue les actions suivantes :
+
+* Met à jour la capacité de l'objet de stockage.
+* Affiche la nouvelle capacité réservée mise à jour pour l'objet de stockage.
+* Lorsque vous réduisez la capacité d'un volume de snapshot, System Manager transfère automatiquement le volume de snapshot à un état désactivé. Désactivé signifie que le volume de snapshot n'est pas actuellement associé à une image de snapshot et ne peut donc pas être affecté à un hôte pour les E/S.
+

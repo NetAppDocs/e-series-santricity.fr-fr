@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/manage-session-timeouts-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
+summary: 'Vous pouvez configurer les délais d"expiration dans le Gestionnaire système SANtricity, de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d"un délai spécifié.' 
+---
+= Gérer les délais d'expiration des sessions
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les délais d'expiration dans System Manager de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d'un délai spécifié.
+
+Par défaut, le délai d'expiration de la session pour System Manager est de 30 minutes. Vous pouvez régler cette heure ou désactiver complètement les délais de session.
+
+[NOTE]
+====
+Si Access Management est configuré à l'aide des fonctionnalités SAML (Security assertion Markup Language) intégrées dans la baie, un délai d'expiration de session peut survenir lorsque la session SSO de l'utilisateur atteint sa limite maximale. Cela peut survenir avant le délai d'expiration de la session System Manager.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous la section général, sélectionnez *Activer/Désactiver le délai de session*.
++
+La boîte de dialogue Activer/Désactiver le délai d'expiration de session s'ouvre.
+
+. Utilisez les commandes de disque pour augmenter ou diminuer le temps en minutes.
++
+Le délai minimal que vous pouvez définir pour System Manager est de 15 minutes.
+
++
+[NOTE]
+====
+Pour désactiver les délais de session, décochez la case *définir la durée...*.
+
+====
+. Cliquez sur *Enregistrer*.
+

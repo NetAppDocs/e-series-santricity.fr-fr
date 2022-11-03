@@ -1,0 +1,28 @@
+---
+permalink: sm-hardware/update-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
+summary: 'Un cycle d"apprentissage est un cycle automatique d"étalonnage de la jauge de batterie intelligente. Les cycles sont programmés pour démarrer automatiquement, à la même journée et à la même heure, par intervalles de 8 semaines (par contrôleur). Si vous souhaitez définir un autre programme, vous pouvez régler les cycles d"apprentissage.' 
+---
+= Mettre à jour les cycles d'apprentissage de la batterie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un cycle d'apprentissage est un cycle automatique d'étalonnage de la jauge de batterie intelligente. Les cycles sont programmés pour démarrer automatiquement, à la même journée et à la même heure, par intervalles de 8 semaines (par contrôleur). Si vous souhaitez définir un autre programme, vous pouvez régler les cycles d'apprentissage.
+
+La mise à jour des cycles d'apprentissage affecte les deux batteries du contrôleur.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Sélectionnez la liste déroulante du tiroir contrôleur, puis *Afficher les paramètres*.
+. Sélectionnez l'onglet *batteries*.
+. Sélectionnez *mettre à jour les cycles d'apprentissage de la batterie*.
++
+La boîte de dialogue mettre à jour les cycles d'apprentissage de la batterie s'ouvre.
+
+. Dans les listes déroulantes, sélectionnez un nouveau jour et une nouvelle heure.
+. Cliquez sur *Enregistrer*.
+

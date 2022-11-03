@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/why-is-it-important-to-record-security-key-information.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, record, security, key, 
+summary: 'Si vous perdez les informations relatives aux clés de sécurité et que vous ne disposez pas d"une sauvegarde, vous risquez de perdre des données en déplaçant les disques sécurisés ou en mettant à niveau un contrôleur. Vous avez besoin de la clé de sécurité pour déverrouiller les données des lecteurs.' 
+---
+= Pourquoi est-il important d'enregistrer les informations relatives aux clés de sécurité ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous perdez les informations relatives aux clés de sécurité et que vous ne disposez pas d'une sauvegarde, vous risquez de perdre des données en déplaçant les disques sécurisés ou en mettant à niveau un contrôleur. Vous avez besoin de la clé de sécurité pour déverrouiller les données des lecteurs.
+
+Assurez-vous d'enregistrer l'identifiant de clé de sécurité, la phrase de passe associée et l'emplacement sur l'hôte local où le fichier de clé de sécurité a été enregistré.

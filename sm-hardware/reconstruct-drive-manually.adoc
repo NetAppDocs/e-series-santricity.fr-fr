@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/reconstruct-drive-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
+summary: 'La reconstruction du disque démarre normalement automatiquement après le remplacement d"un disque. Si la reconstruction de disque ne démarre pas automatiquement, vous pouvez démarrer la reconstruction manuellement.' 
+---
+= Reconstruire le lecteur manuellement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La reconstruction du disque démarre normalement automatiquement après le remplacement d'un disque. Si la reconstruction de disque ne démarre pas automatiquement, vous pouvez démarrer la reconstruction manuellement.
+
+[NOTE]
+====
+Effectuez cette opération uniquement lorsque vous y êtes invité par le support technique ou le gourou de la restauration
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Cliquez sur le lecteur que vous souhaitez reconstruire manuellement.
++
+Le menu contextuel du lecteur s'affiche.
+
+. Sélectionnez *reconstruire* et confirmez que vous souhaitez effectuer l'opération.
+

@@ -1,0 +1,55 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-mapping-storage-array-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mapping, roles, 
+summary: Avant de mapper des groupes à des rôles, consultez les directives suivantes. 
+---
+= De quoi ai-je besoin savoir concernant le mappage aux rôles de la baie de stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de mapper des groupes à des rôles, consultez les directives suivantes.
+
+Les fonctionnalités RBAC intégrées de la baie de stockage (contrôle d'accès basé sur des rôles) incluent les rôles suivants :
+
+* *Storage admin* -- accès en lecture/écriture complet aux objets de stockage (par exemple, volumes et pools de disques), mais pas d'accès à la configuration de sécurité.
+* *Security admin* -- accès à la configuration de sécurité dans Access Management, gestion des certificats, gestion du journal d'audit et possibilité d'activer ou de désactiver l'interface de gestion héritée (symbole).
+* *Support admin* -- accès à toutes les ressources matérielles de la baie de stockage, aux données de panne, aux événements MEL et aux mises à niveau du micrologiciel du contrôleur. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+* *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+
+
+== Services d'annuaire
+
+Si vous utilisez un serveur LDAP (Lightweight Directory Access Protocol) et des services d'annuaire, assurez-vous que :
+
+* Un administrateur a défini des groupes d'utilisateurs dans le service d'annuaire.
+* Vous connaissez les noms de domaine de groupe des groupes d'utilisateurs LDAP. Les expressions régulières sont prises en charge. Ces caractères spéciaux d'expression régulière doivent être échappé avec une barre oblique inverse (`\`) s'ils ne font pas partie d'un modèle d'expression régulier:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrateur. System Manager ne fonctionnera pas correctement pour un utilisateur sans le rôle Monitor présent.
+
+
+
+
+== SAML
+
+Si vous utilisez les fonctionnalités SAML intégrées à la baie de stockage, vérifiez que :
+
+* Un administrateur IDP a configuré les attributs utilisateur et l'appartenance à un groupe dans le système IDP.
+* Vous connaissez les noms d'appartenance à un groupe.
+* Vous connaissez la valeur d'attribut du groupe à mapper. Les expressions régulières sont prises en charge. Ces caractères spéciaux d'expression régulière doivent être échappé avec une barre oblique inverse (`\`) s'ils ne font pas partie d'un modèle d'expression régulier:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrateur. System Manager ne fonctionnera pas correctement pour un utilisateur sans le rôle Monitor présent.
+

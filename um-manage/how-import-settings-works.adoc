@@ -1,0 +1,51 @@
+---
+permalink: um-manage/how-import-settings-works.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, settings, 
+summary: 'Unified Manager permet d"importer des paramètres d"une matrice de stockage vers plusieurs baies de stockage. La fonction Importer les paramètres est une opération par lots qui permet de gagner du temps lorsque vous devez configurer plusieurs matrices sur le réseau.' 
+---
+= Fonctionnement des paramètres d'importation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager permet d'importer des paramètres d'une matrice de stockage vers plusieurs baies de stockage. La fonction Importer les paramètres est une opération par lots qui permet de gagner du temps lorsque vous devez configurer plusieurs matrices sur le réseau.
+
+
+
+== Paramètres disponibles pour l'importation
+
+Les configurations suivantes peuvent être importées dans plusieurs baies :
+
+* *Alertes* -- méthodes d'alerte pour envoyer des événements importants aux administrateurs, à l'aide de la messagerie électronique, d'un serveur syslog ou d'un serveur SNMP.
+* *AutoSupport* -- fonction qui surveille l'intégrité d'une matrice de stockage et envoie des interventions automatiques au support technique.
+* *Services d'annuaire* -- Méthode d'authentification utilisateur gérée par un serveur LDAP (Lightweight Directory Access Protocol) et un service d'annuaire, comme Active Directory de Microsoft.
+* *Configuration de stockage* -- configurations relatives aux éléments suivants :
++
+** Volumes (volumes épais et non référentiels uniquement)
+** Groupes de volumes et pools
+** Affectations des disques de secours
+
+
+* *Paramètres système* -- configurations relatives aux éléments suivants :
++
+** Paramètres de recherche d'un volume
+** Paramètres des SSD
+** Équilibrage automatique de la charge (n'inclut pas le reporting sur la connectivité hôte)
+
+
+
+
+
+
+== Flux de travail de configuration
+
+Pour importer des paramètres, suivez ce flux de travail :
+
+. Sur une matrice de stockage à utiliser comme source, configurez les paramètres à l'aide de System Manager.
+. Sur les baies de stockage à utiliser comme cibles, sauvegardez leur configuration à l'aide de System Manager.
+. Depuis Unified Manager, accédez à la page *Manage* et importez les paramètres.
+. Dans la page *opérations*, consultez les résultats de l'opération Paramètres d'importation.
+

@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-preferred-controller-ownership.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, preferred, controller, ownership 
+summary: La propriété privilégiée des contrôleurs définit le contrôleur désigné comme étant le contrôleur propriétaire ou principal du volume. 
+---
+= En quoi consiste la propriété privilégiée d'un contrôleur ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La propriété privilégiée des contrôleurs définit le contrôleur désigné comme étant le contrôleur propriétaire ou principal du volume.
+
+La propriété du contrôleur est très importante et doit être planifiée avec soin. Les contrôleurs doivent être équilibrés aussi étroitement que possible pour l'ensemble des E/S.
+
+Par exemple, si un contrôleur lit principalement des blocs de données séquentiels de grande taille et que l'autre contrôleur présente de petits blocs de données avec des lectures et des écritures fréquentes, les charges sont très différentes. Connaître les volumes contenant ce type de données vous permet d'équilibrer les transferts d'E/S de manière homogène sur les deux contrôleurs.

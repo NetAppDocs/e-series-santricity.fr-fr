@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/turn-on-storage-array-locator-lights.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, locator, lights, 
+summary: 'Pour trouver l"emplacement physique d"une matrice de stockage dans une armoire, vous pouvez activer ses voyants de localisation (LED).' 
+---
+= Activez les voyants de localisation de la matrice de stockage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour trouver l'emplacement physique d'une matrice de stockage dans une armoire, vous pouvez activer ses voyants de localisation (LED).
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *général*, cliquez sur *Activer les voyants du localisateur de matrice de stockage*.
++
+La boîte de dialogue Activer les voyants de localisation de la matrice de stockage s'ouvre et les voyants de localisation de la matrice de stockage correspondante s'allument.
+
+. Une fois la matrice de stockage physiquement installée, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
+
+
+Les voyants de localisation s'éteignent et la boîte de dialogue se ferme.

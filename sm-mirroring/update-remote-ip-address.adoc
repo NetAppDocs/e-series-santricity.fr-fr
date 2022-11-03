@@ -1,0 +1,32 @@
+---
+permalink: sm-mirroring/update-remote-ip-address.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
+summary: 'Vous pouvez mettre à jour l"adresse IP iSCSI de votre matrice de stockage distante afin de rétablir la connexion avec la matrice de stockage locale.' 
+---
+= Mettre à jour l'adresse IP distante
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez mettre à jour l'adresse IP iSCSI de votre matrice de stockage distante afin de rétablir la connexion avec la matrice de stockage locale.
+
+La matrice de stockage locale et la matrice de stockage distante doivent être configurées pour la mise en miroir asynchrone à l'aide d'une connexion iSCSI.
+
+.Étapes
+. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Sélectionnez l'onglet *groupes de cohérence miroir*.
++
+Le tableau Groupe de cohérence miroir affiche tous les groupes de cohérence miroir associés à la matrice de stockage.
+
+. Sélectionnez le groupe de cohérence miroir à mettre à jour, puis sélectionnez menu :plus[mettre à jour l'adresse IP distante].
++
+Le système affiche la boîte de dialogue mettre à jour l'adresse IP distante.
+
+. Sélectionnez *Update* pour mettre à jour l'adresse IP iSCSI de votre matrice de stockage distante.
+
+
+Le système réinitialise l'adresse IP de la matrice de stockage distante pour rétablir la connexion avec la matrice de stockage locale.

@@ -1,0 +1,93 @@
+---
+permalink: sm-hardware/view-controller-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, controller, settings 
+summary: 'Vous pouvez afficher des informations sur un contrôleur, telles que l"état des interfaces hôtes, des interfaces de lecteur et des ports de gestion.' 
+---
+= Afficher les paramètres du contrôleur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher des informations sur un contrôleur, telles que l'état des interfaces hôtes, des interfaces de lecteur et des ports de gestion.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Effectuez l'une des actions suivantes pour afficher les paramètres du contrôleur :
++
+** Cliquez sur le contrôleur pour afficher le menu contextuel, puis sélectionnez *Paramètres d'affichage*.
+** Sélectionnez l'icône du contrôleur (en regard de la liste déroulante *Shelf*). Pour les configurations duplex, sélectionnez *contrôleur A* ou *contrôleur B* dans la boîte de dialogue, puis cliquez sur *Suivant*.
++
+La boîte de dialogue Paramètres du contrôleur s'ouvre.
+
+
+
+. Sélectionnez les onglets pour passer d'un paramètre de propriété à l'autre.
++
+Certains onglets ont un lien pour *Afficher plus de paramètres* en haut à droite.
+
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Onglet | Description 
+
+
+ a| 
+Base
+ a| 
+Affiche l'état du contrôleur, le nom du modèle, le numéro de pièce de remplacement, la version actuelle du micrologiciel et la version de la mémoire d'accès aléatoire statique non volatile (NVSRAM).
+
+
+
+ a| 
+Cache
+ a| 
+Affiche les paramètres de cache du contrôleur, qui comprennent le cache de données, le cache du processeur et le périphérique de sauvegarde du cache. Le périphérique de sauvegarde du cache est utilisé pour sauvegarder les données dans le cache si vous perdez de l'alimentation du contrôleur. L'état peut être optimal, échec, supprimé, inconnu, protégé en écriture, Ou incompatible.
+
+
+
+ a| 
+Interfaces hôtes
+ a| 
+Affiche les informations sur l'interface hôte et l'état de liaison de chaque port. L'interface hôte est la connexion entre le contrôleur et l'hôte, comme Fibre Channel ou iSCSI.
+
+
+NOTE: L'emplacement de la carte d'interface hôte (HIC) se trouve soit dans la carte de base, soit dans un emplacement (baie). « Carte mère » indique que les ports HIC sont intégrés au contrôleur. Les ports « slot » sont sur le HIC en option.
+
+
+
+ a| 
+Interfaces de lecteur
+ a| 
+Affiche les informations sur l'interface du lecteur et l'état de la liaison de chaque port. L'interface de lecteur est la connexion entre le contrôleur et les disques, par exemple SAS.
+
+
+
+ a| 
+Ports de gestion
+ a| 
+Affiche les détails du port de gestion, tels que le nom d'hôte utilisé pour accéder au contrôleur et indique si une connexion à distance a été activée. Le port de gestion connecte le contrôleur et le client de gestion, c'est-à-dire où un navigateur est installé pour accéder à System Manager.
+
+
+
+ a| 
+DNS/NTP
+ a| 
+La présente la méthode d'adressage et les adresses IP du serveur DNS et du serveur NTP, si ces serveurs ont été configurés dans System Manager.
+
+Le système de noms de domaine (DNS) est un système d'attribution de nom aux périphériques connectés à Internet ou à un réseau privé. Le serveur DNS gère un répertoire de noms de domaine et les convertit en adresses IP (Internet Protocol).
+
+Le protocole NTP (Network Time Protocol) est un protocole de mise en réseau pour la synchronisation de l'horloge entre les systèmes informatiques des réseaux de données.
+
+|===
+====
+. Cliquez sur *Fermer*.
+

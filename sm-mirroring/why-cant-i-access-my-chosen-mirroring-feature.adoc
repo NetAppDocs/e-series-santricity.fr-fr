@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirroring, access 
+summary: 'La mise en miroir est configurée dans l"interface Unified Manager.' 
+---
+= Pourquoi ne puis-je pas accéder à la fonction de mise en miroir choisie ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La mise en miroir est configurée dans l'interface Unified Manager.
+
+[NOTE]
+====
+La mise en miroir n'est pas disponible sur la baie de stockage EF600 ou EF300.
+
+====
+Pour activer et configurer la mise en miroir entre deux baies, vérifiez les points suivants :
+
+* Le service Web Services Proxy doit être en cours d'exécution. (Unified Manager est installé sur un système hôte avec le proxy de services Web.)
+* Unified Manager doit s'exécuter sur votre hôte local via une connexion HTTPS.
+* Les deux baies de stockage que vous souhaitez utiliser pour la mise en miroir doivent être découvertes dans Unified Manager.
+* Unified Manager doit disposer de certificats SSL valides pour les matrices de stockage. Vous pouvez accepter un certificat auto-signé ou installer des certificats avec une autorité de certification depuis Unified Manager.
+
+
+Pour obtenir des instructions de configuration, reportez-vous aux sections suivantes :
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Création d'une paire asynchrone en miroir (dans Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Création d'une paire mise en miroir synchrone (dans Unified Manager)"]
+

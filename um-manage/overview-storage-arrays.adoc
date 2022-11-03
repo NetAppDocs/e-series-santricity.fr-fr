@@ -1,0 +1,42 @@
+---
+permalink: um-manage/overview-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
+summary: 'Pour gérer les ressources de stockage, vous devez d"abord découvrir les baies de stockage du réseau.' 
+---
+= Présentation de la découverte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour gérer les ressources de stockage, vous devez d'abord découvrir les baies de stockage du réseau.
+
+
+
+== Comment détecter les baies ?
+
+Utilisez la page Add/Discover pour trouver et ajouter les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule. Pour ce faire, vous entrez les adresses IP du réseau, puis Unified Manager tente de connecter individuellement chaque adresse IP de cette plage.
+
+En savoir plus :
+
+* link:considerations-for-discovering-arrays.html["Considérations relatives à la détection des baies"]
+* link:discover-multiple-arrays.html["Découvrir plusieurs baies de stockage"]
+* link:discover-single-array.html["Découvrir une seule baie"]
+
+
+
+
+== Comment puis-je gérer les baies ?
+
+Après avoir découvert des matrices, rendez-vous sur la page *gérer - tous*. À partir de cette page, vous pouvez faire défiler la liste des matrices de stockage détectées sur votre réseau, afficher leur état et effectuer des opérations sur une seule matrice ou sur un groupe de matrices.
+
+Pour gérer une baie unique, vous pouvez la sélectionner et ouvrir System Manager.
+
+En savoir plus :
+
+* link:launch-considerations.html["Facteurs à prendre en compte pour accéder à System Manager"]
+* link:launch-system-manager.html["Gérer une baie de stockage individuelle"]
+* link:storage-array-status.html["Afficher l'état de la matrice de stockage"]
+

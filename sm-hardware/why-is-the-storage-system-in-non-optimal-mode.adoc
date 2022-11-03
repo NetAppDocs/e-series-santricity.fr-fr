@@ -1,0 +1,22 @@
+---
+permalink: sm-hardware/why-is-the-storage-system-in-non-optimal-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, non-optimal, mode, 
+summary: Un système de stockage en mode non optimal est dû à un état de configuration du système non valide. Malgré cet état, les accès E/S standard aux volumes existants sont entièrement pris en charge. Cependant, System Manager interdit certaines opérations. 
+---
+= Pourquoi le système de stockage est-il en mode non optimal ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un système de stockage en mode non optimal est dû à un état de configuration du système non valide. Malgré cet état, les accès E/S standard aux volumes existants sont entièrement pris en charge. Cependant, System Manager interdit certaines opérations.
+
+Un système de stockage peut passer à une configuration système non valide pour l'une des raisons suivantes :
+
+* Le contrôleur n'est pas conforme, peut-être parce qu'il a un code SMID (sous-modèle ID) incorrect ou qu'il a dépassé la limite des fonctions Premium.
+* Une opération de service interne est en cours, par exemple, le téléchargement du firmware d'un disque.
+* Le contrôleur a dépassé le seuil d'erreur de parité et a été verrouillé.
+* Une condition générale de verrouillage s'est produite.
+

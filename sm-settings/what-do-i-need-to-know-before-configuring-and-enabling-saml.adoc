@@ -1,0 +1,49 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-configuring-and-enabling-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuring, enabling, SAML, 
+summary: 'Avant de configurer et d"activer les fonctionnalités SAML pour l"authentification, assurez-vous de respecter les exigences suivantes et de comprendre les restrictions SAML.' 
+---
+= Que dois-je savoir avant de configurer et d'activer le langage SAML ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de configurer et d'activer les fonctionnalités SAML pour l'authentification, assurez-vous de respecter les exigences suivantes et de comprendre les restrictions SAML.
+
+
+
+== De formation
+
+Avant de commencer, assurez-vous que :
+
+* Un fournisseur d'identité (IDP) est configuré dans votre réseau. Un IDP est un système externe utilisé pour demander des informations d'identification à un utilisateur et déterminer si l'utilisateur est authentifié avec succès. Votre équipe de sécurité est responsable du maintien du PDI.
+* Un administrateur IDP a configuré des attributs utilisateur et des groupes dans le système IDP.
+* Un administrateur IDP s'est assuré que le IDP prend en charge la possibilité de renvoyer un ID de nom lors de l'authentification.
+* Un administrateur s'est assuré que les horloges du serveur IDP et du contrôleur sont synchronisées (via un serveur NTP ou en ajustant les paramètres d'horloge du contrôleur).
+* Un fichier de métadonnées IDP est téléchargé depuis le système IDP et disponible sur le système local utilisé pour accéder à System Manager.
+* Vous connaissez l'adresse IP ou le nom de domaine de chaque contrôleur de la matrice de stockage.
+
+
+
+
+== Restrictions
+
+Outre les exigences ci-dessus, assurez-vous de bien comprendre les restrictions suivantes :
+
+* Une fois le langage SAML activé, vous ne pouvez pas le désactiver via l'interface utilisateur, ni modifier les paramètres IDP. Si vous devez désactiver ou modifier la configuration SAML, contactez le support technique pour obtenir de l'aide. Nous vous recommandons de tester les connexions SSO avant d'activer SAML lors de l'étape de configuration finale. (Le système exécute également un test de connexion SSO avant d'activer SAML.)
+* Si vous désactivez SAML à l'avenir, le système restaure automatiquement la configuration précédente (rôles d'utilisateur local et/ou Services d'annuaire).
+* Si les services d'annuaire sont actuellement configurés pour l'authentification des utilisateurs, le langage SAML remplace cette configuration.
+* Lorsque le langage SAML est configuré, les clients suivants ne peuvent pas accéder aux ressources de la baie de stockage :
++
+** Fenêtre de gestion Enterprise (EMW)
+** Interface de ligne de commandes
+** Clients SDK (Software Developer kits)
+** Clients intrabande
+** Clients API REST HTTP Basic Authentication
+** Connectez-vous à l'aide d'un terminal API REST standard
+
+
+

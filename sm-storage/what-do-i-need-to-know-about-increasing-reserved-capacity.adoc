@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/what-do-i-need-to-know-about-increasing-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity 
+summary: En général, vous devez augmenter la capacité lorsque vous recevez un avertissement indiquant que la capacité réservée risque de devenir pleine. Vous pouvez augmenter la capacité réservée par incréments de 8 Gio. 
+---
+= Que dois-je savoir pour augmenter la capacité réservée ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En général, vous devez augmenter la capacité lorsque vous recevez un avertissement indiquant que la capacité réservée risque de devenir pleine. Vous pouvez augmenter la capacité réservée par incréments de 8 Gio.
+
+* Vous devez disposer d'une capacité disponible suffisante dans le pool ou le groupe de volumes pour pouvoir l'étendre si nécessaire.
++
+Si aucune capacité disponible n'est disponible dans un pool ou un groupe de volumes, vous pouvez ajouter de la capacité non affectée sous la forme de disques inutilisés dans un pool ou un groupe de volumes.
+
+* Le volume du pool ou du groupe de volumes doit avoir un état optimal et ne doit pas être dans un état de modification.
+* La capacité disponible doit exister dans le pool ou le groupe de volumes que vous souhaitez utiliser pour augmenter la capacité.
+* Vous ne pouvez pas augmenter la capacité réservée pour un volume Snapshot en lecture seule. Seuls les snapshots qui sont en lecture/écriture nécessitent une capacité réservée.
+
+
+Pour les opérations de snapshot, la capacité réservée est en général de 40 % du volume de base. Pour les opérations de mise en miroir asynchrone, la capacité réservée est généralement de 20 % du volume de base. Utilisez un pourcentage plus élevé si vous pensez que le volume de base sera soumis à de nombreuses modifications ou si l'espérance de vie estimée du service de copie d'un objet de stockage sera très longue.

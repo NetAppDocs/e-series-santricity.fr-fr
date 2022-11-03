@@ -1,0 +1,110 @@
+---
+permalink: um-manage/overview-upgrade-center-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, upgrade, center 
+summary: Le Centre de mise à niveau vous permet de gérer les mises à niveau du logiciel SANtricity OS et de la NVSRAM pour plusieurs baies de stockage. 
+---
+= Présentation du centre de mise à niveau
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le Centre de mise à niveau vous permet de gérer les mises à niveau du logiciel SANtricity OS et de la NVSRAM pour plusieurs baies de stockage.
+
+
+
+== Comment fonctionnent les mises à niveau ?
+
+Vous téléchargez la dernière version du système d'exploitation, puis mettez à niveau une ou plusieurs baies.
+
+
+
+=== Mise à niveau du workflow
+
+Les étapes suivantes fournissent un flux de travail général pour les mises à niveau logicielles.
+
+. Vous téléchargez le dernier fichier logiciel SANtricity OS depuis le site de support (un lien est disponible depuis Unified Manager dans la page de support). Enregistrez le fichier sur le système hôte de gestion (l'hôte sur lequel vous accédez à Unified Manager dans un navigateur), puis décompressez le fichier.
+. Dans Unified Manager, vous chargez le fichier logiciel du système d'exploitation SANtricity et le fichier NVSRAM dans le référentiel (zone du serveur proxy de services Web où les fichiers sont stockés). Vous pouvez ajouter des fichiers à partir du menu :Centre de mise à niveau [mise à niveau du logiciel SANtricity OS ou du Centre de mise à niveau > gérer le référentiel logiciel].
+. Une fois les fichiers chargés dans le référentiel, vous pouvez sélectionner le fichier à utiliser dans la mise à niveau. Dans la page mise à niveau du logiciel SANtricity OS (menu:Centre de mise à niveau [mise à niveau du logiciel SANtricity OS]), sélectionnez le fichier logiciel SANtricity OS et le fichier NVSRAM. Après avoir sélectionné un fichier logiciel, une liste de matrices de stockage compatibles apparaît sur cette page. Vous sélectionnez ensuite les baies de stockage que vous souhaitez mettre à niveau avec le nouveau logiciel. (Vous ne pouvez pas sélectionner de baies incompatibles.)
+. Vous pouvez alors démarrer un transfert et une activation de logiciel immédiat, ou vous pouvez choisir d'activer les fichiers ultérieurement. Durant le processus de mise à niveau, Unified Manager effectue les tâches suivantes :
++
+.. Effectue un contrôle de l'état des baies de stockage pour déterminer si une condition susceptible d'empêcher la mise à niveau est terminée. Si l'une des baies ne fonctionne pas, vous pouvez ignorer cette matrice et poursuivre la mise à niveau pour les autres, ou arrêter le processus complet et dépanner les baies qui ne sont pas utilisées.
+.. Transfère les fichiers de mise à niveau vers chaque contrôleur.
+.. Redémarre les contrôleurs et active le nouveau logiciel SANtricity OS, un contrôleur à la fois. Lors de l'activation, le fichier SANtricity OS existant est remplacé par le nouveau fichier.
++
+[NOTE]
+====
+Vous pouvez également indiquer que le logiciel est activé ultérieurement.
+
+====
+
+
+
+
+
+
+=== Mise à niveau immédiate ou échelonnée
+
+Vous pouvez activer la mise à niveau immédiatement ou la préparer ultérieurement. Vous pouvez choisir de l'activer ultérieurement pour les raisons suivantes :
+
+* *Temps de jour* -- l'activation du logiciel peut prendre un certain temps, vous pouvez donc attendre que les charges d'E/S soient plus légères. Selon la charge d'E/S et la taille du cache, une mise à niveau du contrôleur peut prendre entre 15 et 25 minutes. Les contrôleurs redémarrent et basculent pendant l'activation pour que les performances soient inférieures à la normale jusqu'à la fin de la mise à niveau.
+* *Type de paquet* -- vous pouvez tester le nouveau logiciel et le nouveau micrologiciel sur une matrice de stockage avant de mettre à niveau les fichiers sur d'autres matrices de stockage.
+
+
+Pour activer le logiciel par étapes, accédez au menu:support[Upgrade Center] et cliquez sur *Activer* dans la zone SANtricity OS Controller Upgrade.
+
+
+
+=== Vérification de l'état
+
+Un contrôle de l'état de fonctionnement est exécuté lors du processus de mise à niveau, mais vous pouvez également effectuer un contrôle de l'état séparément avant de commencer (allez dans le menu:Upgrade Center[Pre-Upgrade Health Check]).
+
+La vérification de l'état de santé vérifie tous les composants du système de stockage pour s'assurer que la mise à niveau peut se poursuivre. Les conditions suivantes peuvent empêcher la mise à niveau :
+
+* Disques affectés en panne
+* Disques de secours en cours d'utilisation
+* Groupes de volumes incomplets
+* Opérations exclusives en cours d'exécution
+* Volumes manquants
+* Contrôleur en état non optimal
+* Nombre excessif d'événements du journal des événements
+* Échec de validation de la base de données de configuration
+* Lecteurs avec les anciennes versions de DACstore
+
+
+
+
+== Que dois-je savoir avant de procéder à la mise à niveau ?
+
+Avant de mettre à niveau plusieurs baies de stockage, passez en revue les principaux éléments à prendre en compte dans le cadre de votre planification.
+
+
+
+=== Versions actuelles
+
+Vous pouvez consulter les versions actuelles du logiciel SANtricity OS à partir de la page Manage of Unified Manager (gérer les versions de chaque baie de stockage détectée). La version est indiquée dans la colonne logiciel SANtricity OS. Les informations relatives au micrologiciel du contrôleur et à la NVSRAM sont disponibles dans une boîte de dialogue contextuelle lorsque vous cliquez sur la version du système d'exploitation SANtricity dans chaque ligne.
+
+
+
+=== Les autres composants doivent être mis à niveau
+
+Dans le cadre du processus de mise à niveau, vous devrez peut-être également mettre à niveau le pilote multivoie/basculement de l'hôte ou le pilote HBA afin que l'hôte puisse interagir correctement avec les contrôleurs.
+
+Pour plus d'informations sur la compatibilité, reportez-vous à la section https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp"^]. Consultez également les procédures des Guides Express pour votre système d'exploitation. Des guides Express sont disponibles sur le https://docs.netapp.com/us-en/e-series/index.html["Documentation sur les systèmes E-Series et SANtricity"^].
+
+
+
+=== Doubles contrôleurs
+
+Si une baie de stockage contient deux contrôleurs et qu'un pilote multivoie est installé, la baie de stockage peut continuer à traiter les E/S pendant la mise à niveau. Pendant la mise à niveau, la procédure suivante se produit :
+
+. Le contrôleur A bascule de toutes ses LUN vers le contrôleur B.
+. La mise à niveau se produit sur le contrôleur A.
+. Le contrôleur A revient ses LUN et toutes les LUN du contrôleur B.
+. La mise à niveau se produit sur le contrôleur B.
+
+
+Une fois la mise à niveau terminée, vous devrez peut-être redistribuer manuellement les volumes entre les contrôleurs afin de garantir que les volumes reviennent au contrôleur propriétaire approprié.

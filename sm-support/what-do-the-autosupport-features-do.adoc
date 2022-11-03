@@ -1,0 +1,19 @@
+---
+permalink: sm-support/what-do-the-autosupport-features-do.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, autosupport features, ASUP 
+summary: La fonctionnalité AutoSupport comprend trois fonctions individuelles que vous pouvez activer séparément. 
+---
+= Quels sont les avantages des fonctionnalités AutoSupport ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonctionnalité AutoSupport comprend trois fonctions individuelles que vous pouvez activer séparément.
+
+* *AutoSupport de base* -- permet à votre matrice de stockage de collecter et d'envoyer automatiquement des données au support technique.
+* *AutoSupport OnDemand* -- permet au support technique de demander la retransmission d'une intervention AutoSupport précédente si nécessaire pour le dépannage d'un problème. Toutes les transmissions sont lancées à partir de la baie de stockage, et non à partir du serveur AutoSupport. La baie de stockage vérifie régulièrement avec le serveur AutoSupport pour déterminer s'il existe des demandes de retransmission en attente et répond en conséquence.
+* *Diagnostics à distance* -- permet au support technique de demander une nouvelle intervention AutoSupport à jour si nécessaire pour le dépannage d'un problème. Toutes les transmissions sont lancées à partir de la baie de stockage, et non à partir du serveur AutoSupport. La baie de stockage s'effectue régulièrement avec le serveur AutoSupport afin de déterminer s'il existe de nouvelles demandes en attente et répond en conséquence.
+

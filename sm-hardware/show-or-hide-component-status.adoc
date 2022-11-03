@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/show-or-hide-component-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
+summary: 'Vous pouvez afficher les descriptions d"état des disques, des contrôleurs, des ventilateurs et des alimentations.' 
+---
+= Afficher ou masquer l'état des composants
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les descriptions d'état des disques, des contrôleurs, des ventilateurs et des alimentations.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Pour voir les composants avant ou arrière :
++
+** Si vous souhaitez voir les composants du contrôleur et du boîtier alimentation/ventilateur, mais que les lecteurs sont affichés, cliquez sur *Afficher l'arrière du tiroir*.
+** Si vous souhaitez voir les lecteurs, mais que les composants du contrôleur et du boîtier alimentation/ventilateur sont affichés, cliquez sur *Afficher l'avant du shelf*.
+
+
+. Pour afficher ou masquer les descriptions d'état des fenêtres contextuelles :
++
+** Si vous souhaitez voir une description contextuelle des icônes d'état, cliquez sur *Afficher les détails de l'icône d'état* en haut à droite de la vue de tablette (cochez la case).
+** Pour masquer les descriptions contextuelles, cliquez à nouveau sur *Afficher les détails de l'icône d'état* (décochez la case).
+
+
+. Pour afficher les détails complets de l'état, sélectionnez le composant dans la vue étagère, puis sélectionnez *Paramètres d'affichage*.
+. Pour afficher les descriptions des composants colorés, sélectionnez *Légende*.
+

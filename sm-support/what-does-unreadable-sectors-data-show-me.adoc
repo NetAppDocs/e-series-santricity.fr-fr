@@ -1,0 +1,89 @@
+---
+permalink: sm-support/what-does-unreadable-sectors-data-show-me.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unreadable, sectors, 
+summary: Vous pouvez afficher des données détaillées sur les secteurs illisibles détectés sur les disques de votre matrice de stockage. 
+---
+= Que me montrent les données des secteurs illisibles ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher des données détaillées sur les secteurs illisibles détectés sur les disques de votre matrice de stockage.
+
+Le journal secteurs illisibles montre d'abord le secteur illisible le plus récent. Le journal contient les informations suivantes sur les volumes qui contiennent les secteurs illisibles. Les champs sont sortables.
+
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Volume affecté
+ a| 
+Affiche le libellé du volume. Si un volume manquant contient des secteurs illisibles, le World Wide identifier apparaît pour le volume manquant.
+
+
+
+ a| 
+Numéro d'unité logique (LUN)
+ a| 
+Indique la LUN du volume. Si le volume ne dispose pas d'une LUN, la boîte de dialogue affiche NA.
+
+
+
+ a| 
+Affecté à
+ a| 
+Affiche les hôtes ou clusters hôtes qui ont accès au volume. Si le volume n'est pas accessible par un hôte, un cluster hôte ou même un cluster par défaut, la boîte de dialogue affiche NA.
+
+|===
+Pour afficher des informations supplémentaires sur les secteurs illisibles, cliquez sur le signe plus (+) en regard d'un volume.
+
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Date/heure
+ a| 
+Indique la date et l'heure de détection du secteur illisible.
+
+
+
+ a| 
+Adresse de bloc logique du volume
+ a| 
+Affiche l'adresse de bloc logique (LBA) du volume.
+
+
+
+ a| 
+Emplacement du lecteur
+ a| 
+Le indique le tiroir disque, le tiroir (si votre tiroir disque est doté de tiroirs) et l'emplacement de la baie.
+
+
+
+ a| 
+Adresse du bloc logique du lecteur
+ a| 
+Indique la LBA du lecteur.
+
+
+
+ a| 
+Type de panne
+ a| 
+Affiche l'un des types de panne suivants :
+
+* *Physique* -- une erreur de support physique.
+* *Logique* -- une erreur de lecture ailleurs dans la bande causant des données illisibles. Par exemple, secteur illisible en raison d'erreurs de support ailleurs dans le volume.
+* *Incohérent* -- données de redondance incohérentes.
+* *Data assurance* -- une erreur Data assurance.
+
+
+|===

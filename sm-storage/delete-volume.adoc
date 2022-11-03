@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/delete-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, volume 
+summary: Généralement, vous supprimez des volumes si les volumes ont été créés avec des paramètres ou une capacité incorrects, que vous ne répondez plus aux besoins de configuration du stockage ou que des images Snapshot qui ne sont plus nécessaires pour les tests des applications ou des sauvegardes. 
+---
+= Supprimer le volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Généralement, vous supprimez des volumes si les volumes ont été créés avec des paramètres ou une capacité incorrects, que vous ne répondez plus aux besoins de configuration du stockage ou que des images Snapshot qui ne sont plus nécessaires pour les tests des applications ou des sauvegardes.
+
+La suppression d'un volume augmente la capacité disponible dans le pool ou le groupe de volumes. Vous pouvez sélectionner un ou plusieurs volumes à supprimer.
+
+Sur les volumes que vous prévoyez de supprimer, vérifiez les points suivants :
+
+* Toutes les données sont sauvegardées.
+* Toutes les entrées/sorties (E/S) sont arrêtées.
+* Tous les périphériques et systèmes de fichiers sont démontés.
+
+
+Vous ne pouvez pas supprimer un volume dont l'une des conditions suivantes est présente :
+
+* Le volume est en cours d'initialisation.
+* Le volume est en cours de reconstruction.
+* Le volume fait partie d'un groupe de volumes qui contient un lecteur en cours d'opération de copie.
+* Le volume est en cours d'opération de modification, par exemple un changement de taille de segment, à moins que le volume ne soit à présent en état d'échec.
+* Le volume contient n'importe quel type de réservation persistante.
+* Le volume est un volume source ou cible d'un volume de copie dont l'état est en attente, en cours ou en échec.
+
+
+[CAUTION]
+====
+La suppression d'un volume entraîne la perte de toutes les données présentes sur ces volumes.
+
+====
+[NOTE]
+====
+Lorsqu'un volume dépasse une taille donnée (actuellement 128 To), la suppression est effectuée en arrière-plan et l'espace libéré n'est peut-être pas disponible immédiatement.
+
+====
+.Étapes
+. Sélectionnez menu:Storage[volumes].
+. Cliquez sur *Supprimer*.
++
+La boîte de dialogue Supprimer les volumes s'affiche.
+
+. Sélectionnez un ou plusieurs volumes à supprimer et confirmez que vous souhaitez effectuer l'opération.
+. Cliquez sur *Supprimer*.
+
+
+System Manager effectue les actions suivantes :
+
+* Supprime toutes les images de snapshot, les planifications et les volumes de snapshot associés.
+* Supprime toutes les relations de mise en miroir.
+* Augmente la capacité disponible dans le pool ou le groupe de volumes.
+

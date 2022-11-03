@@ -1,0 +1,59 @@
+---
+permalink: sm-settings/overview-access-management.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access, management, 
+summary: 'Access Management est une méthode pour établir l"authentification des utilisateurs dans SANtricity System Manager. Les méthodes d"authentification incluent le contrôle d"accès basé sur des rôles (RBAC), les services de répertoire et le langage SAML 2.0.' 
+---
+= Présentation de Access Management
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Access Management est une méthode permettant d'établir l'authentification des utilisateurs dans System Manager.
+
+
+
+== Quelles sont les méthodes d'authentification disponibles ?
+
+Les méthodes d'authentification incluent le contrôle d'accès basé sur des rôles (RBAC), les services d'annuaire et le langage SAML (Security assertion Markup Language) :
+
+* *RBAC/rôles utilisateur locaux* -- l'authentification est gérée via les fonctions RBAC appliquées dans la baie de stockage. Les rôles des utilisateurs locaux comprennent des profils utilisateur prédéfinis et des rôles avec des autorisations d'accès spécifiques.
+* *Services d'annuaire* -- l'authentification est gérée par un serveur LDAP (Lightweight Directory Access Protocol) et des services d'annuaire, tels que Active Directory de Microsoft.
+* *SAML* -- l'authentification est gérée par un fournisseur d'identité (IDP) utilisant SAML 2.0.
+
+
+En savoir plus :
+
+* link:how-access-management-works.html["Fonctionnement de Access Management"]
+* link:access-management-terminology.html["Terminologie de la gestion des accès"]
+* link:permissions-for-mapped-roles.html["Autorisations pour les rôles mappés"]
+* link:access-management-with-local-user-roles.html["Rôles d'utilisateur local"]
+* link:access-management-with-directory-services.html["Services d'annuaire"]
+* link:access-management-with-saml.html["SAML"]
+
+
+
+
+== Comment configurer l'authentification ?
+
+La baie de stockage est préconfigurée pour utiliser les rôles d'utilisateur local, qui sont une implémentation des fonctionnalités RBAC. Si vous souhaitez configurer une autre méthode, accédez au menu:Paramètres[Access Management].
+
+En savoir plus :
+
+* link:add-directory-server.html["Ajouter un serveur d'annuaire LDAP"]
+* link:configure-saml.html["Configurez SAML"]
+
+
+
+
+== Informations associées
+
+En savoir plus sur les tâches liées à la gestion des accès :
+
+* link:change-passwords.html["Modifier les mots de passe"]
+* link:view-audit-log-activity.html["Afficher l'activité du journal d'audit"]
+* link:configure-syslog-server-for-audit-logs.html["Configuration du serveur syslog pour les journaux d'audit"]
+

@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool, 
+summary: 'Un pool est un ensemble de disques regroupés de manière logique. Vous pouvez utiliser un pool pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes depuis un pool ou un groupe de volumes.)' 
+---
+= Qu'est-ce qu'un pool ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un pool est un ensemble de disques regroupés de manière logique. Vous pouvez utiliser un pool pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes depuis un pool ou un groupe de volumes.)
+
+Les pools peuvent éliminer la nécessité pour les administrateurs de surveiller l'utilisation de chaque hôte afin de déterminer quand ils sont susceptibles de manquer d'espace de stockage et d'éviter les pannes de redimensionnement des disques conventionnelles. Lorsqu'un pool arrive à saturation, des disques supplémentaires peuvent être ajoutés au pool sans interruption et l'augmentation de la capacité est transparente pour l'hôte.
+
+Avec les pools, les données sont automatiquement redistribuées pour maintenir l'équilibre. Grâce à la répartition des informations de parité et de la capacité disponible au sein du pool, chaque disque du pool peut être utilisé pour reconstruire un disque défaillant. Cette approche n'utilise pas de disques de secours dédiés, mais la capacité de conservation (disponible) est réservée dans l'ensemble du pool. En cas de panne de disque, les segments des autres disques sont lus pour recréer les données. Un nouveau disque est ensuite choisi pour écrire chaque segment qui se trouvait sur un disque défaillant, de sorte que la distribution des données entre les disques soit maintenue.

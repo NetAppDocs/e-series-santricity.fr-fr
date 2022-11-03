@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/edit-storage-array-name.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
+summary: 'Vous pouvez modifier le nom de la baie de stockage qui s"affiche dans la barre de titre de SANtricity System Manager.' 
+---
+= Modifier le nom de la matrice de stockage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le nom de la baie de stockage qui s'affiche dans la barre de titre de SANtricity System Manager.
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *général*, recherchez le champ *Nom:*.
++
+Si aucun nom de matrice de stockage n'a été défini, ce champ affiche « Inconnu ».
+
+. Cliquez sur l'icône *Modifier* (crayon) en regard du nom de la matrice de stockage.
++
+Le champ devient modifiable.
+
+. Saisissez un nouveau nom.
++
+Un nom peut contenir des lettres, des chiffres et les caractères spéciaux soulignés (_), tiret (-) et signe dièse (#). Un nom ne peut pas contenir d'espaces. Un nom peut comporter un maximum de 30 caractères. Le nom doit être unique.
+
+. Cliquez sur l'icône *Enregistrer* (coche).
++
+[NOTE]
+====
+Si vous souhaitez fermer le champ modifiable sans effectuer de modifications, cliquez sur l'icône *Annuler* (X).
+
+====
+
+
+Le nouveau nom apparaît dans la barre de titre de SANtricity System Manager.

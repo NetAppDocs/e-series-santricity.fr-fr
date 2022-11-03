@@ -1,0 +1,60 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
+summary: 'Vous pouvez utiliser l"option Effacer pour préparer un lecteur non affecté à retirer du système. Cette procédure supprime définitivement les données, en veillant à ce qu"elles ne puissent plus être lues.' 
+---
+= Effacer les lecteurs
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'option Effacer pour préparer un lecteur non affecté à retirer du système. Cette procédure supprime définitivement les données, en veillant à ce qu'elles ne puissent plus être lues.
+
+Le lecteur doit être à l'état non affecté.
+
+Utilisez l'option Effacer uniquement si vous souhaitez supprimer définitivement toutes les données d'un disque. Si le lecteur est sécurisé, l'option Effacer effectue une suppression cryptographique et réinitialise les attributs de sécurité du lecteur en mode sécurisé.
+
+[NOTE]
+====
+La fonction Effacer ne prend pas en charge certains modèles de disques plus anciens. Si vous tentez d'effacer l'un de ces anciens modèles, un message d'erreur s'affiche.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Vous pouvez également utiliser les champs de filtre pour afficher tous les disques non assignés dans le tiroir. Dans la liste déroulante *Afficher les lecteurs qui sont...*, sélectionnez *non affectés*.
++
+La vue du tiroir affiche uniquement les disques non assignés. Tous les autres sont grisés.
+
+. Pour ouvrir le menu contextuel du lecteur, cliquez sur un lecteur que vous souhaitez effacer. (Si vous souhaitez sélectionner plusieurs lecteurs, vous pouvez le faire dans la boîte de dialogue Effacer les lecteurs.)
++
+[CAUTION]
+====
+*Perte de données possible* -- l'opération Effacer ne peut pas être annulée. Assurez-vous de sélectionner les lecteurs appropriés au cours de la procédure.
+
+====
+. Dans le menu contextuel, sélectionnez *Effacer*.
++
+La boîte de dialogue Effacer les lecteurs s'ouvre et affiche tous les lecteurs éligibles pour une opération d'effacement.
+
+. Si vous le souhaitez, sélectionnez des lecteurs supplémentaires dans le tableau. Vous ne pouvez pas sélectionner _tous_ lecteurs ; assurez-vous qu'un lecteur reste désélectionné.
+. Confirmer l'opération en tapant `erase`, Puis cliquez sur *Effacer*.
++
+[CAUTION]
+====
+Assurez-vous de poursuivre cette opération. Lorsque vous cliquez sur Oui dans la boîte de dialogue suivante, l'opération ne peut pas être abandonnée.
+
+====
+. Dans la boîte de dialogue temps d'achèvement estimé, cliquez sur *Oui* pour continuer l'opération d'effacement.
+
+
+L'opération d'effacement peut prendre plusieurs minutes ou plusieurs heures. Vous pouvez afficher l'état dans le menu:Accueil[Afficher les opérations en cours]. Une fois l'opération d'effacement terminée, les lecteurs peuvent être utilisés dans un autre groupe de volumes ou un autre pool de disques, ou dans une autre matrice de stockage.
+
+Si vous souhaitez réutiliser le lecteur, vous devez d'abord l'initialiser. Pour ce faire, sélectionnez *initialiser* dans le menu contextuel du lecteur.

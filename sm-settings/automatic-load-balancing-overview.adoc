@@ -1,0 +1,95 @@
+---
+permalink: sm-settings/automatic-load-balancing-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
+summary: 'L"équilibrage automatique de la charge améliore la gestion des ressources d"E/S en réagissant de manière dynamique aux changements de charge dans le temps et en ajustant automatiquement la propriété du contrôleur de volume pour corriger les problèmes de déséquilibre de la charge lorsque les charges de travail sont transférées sur les contrôleurs.' 
+---
+= Vue d'ensemble de l'équilibrage automatique de la charge
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'équilibrage automatique de la charge améliore la gestion des ressources d'E/S en réagissant de manière dynamique aux changements de charge dans le temps et en ajustant automatiquement la propriété du contrôleur de volume pour corriger les problèmes de déséquilibre de la charge lorsque les charges de travail sont transférées sur les contrôleurs.
+
+La charge de travail de chaque contrôleur est surveillée en permanence et, avec la collaboration des pilotes multichemins installés sur les hôtes, il est possible d'équilibrer automatiquement la charge de travail dès que nécessaire. Lorsque la charge de travail est automatiquement reéquilibrée entre les contrôleurs, l'administrateur du stockage n'a plus à régler manuellement la charge de travail des contrôleurs de volume pour prendre en charge les changements de charge qui se sont opérés sur la baie de stockage.
+
+Lorsque l'équilibrage automatique de la charge est activé, il exécute les fonctions suivantes :
+
+* Surveille et équilibre automatiquement l'utilisation des ressources du contrôleur.
+* Ajuste automatiquement la propriété des contrôleurs de volume lorsque vous en avez besoin, ce qui optimise la bande passante d'E/S entre les hôtes et la baie de stockage.
+
+
+
+
+== Activation et désactivation de l'équilibrage automatique de la charge
+
+L'équilibrage automatique de la charge est activé par défaut sur toutes les matrices de stockage.
+
+Vous pouvez désactiver l'équilibrage automatique de la charge sur votre matrice de stockage pour les raisons suivantes :
+
+* Vous ne souhaitez pas modifier automatiquement la propriété du contrôleur d'un volume pour équilibrer la charge de travail.
+* Vous travaillez dans un environnement très ajusté où la distribution de charge est volontairement configurée pour obtenir une distribution spécifique entre les contrôleurs.
+
+
+
+
+== Types d'hôte prenant en charge la fonction d'équilibrage automatique de la charge
+
+Même si l'équilibrage automatique de la charge est activé au niveau de la baie de stockage, le type d'hôte que vous sélectionnez pour un hôte ou un cluster hôte a une influence directe sur le fonctionnement de la fonction.
+
+Lors de l'équilibrage de la charge de travail de la baie de stockage entre les contrôleurs, la fonction d'équilibrage automatique de la charge tente de déplacer des volumes accessibles par les deux contrôleurs et qui ne sont mappés qu'à un hôte ou un cluster hôte capable de prendre en charge la fonction d'équilibrage automatique de la charge.
+
+Ce comportement empêche un hôte de perdre l'accès à un volume en raison du processus d'équilibrage de la charge. Toutefois, la présence de volumes mappés à des hôtes ne prenant pas en charge l'équilibrage automatique de la charge affecte la capacité de la baie de stockage à équilibrer la charge de travail. Pour équilibrer automatiquement la charge de travail, le pilote multivoie doit prendre en charge TPGS et le type d'hôte doit être inclus dans le tableau suivant.
+
+[NOTE]
+====
+Pour qu'un cluster hôte soit considéré comme capable d'équilibrer automatiquement la charge, tous les hôtes de ce groupe doivent être capables de prendre en charge l'équilibrage automatique de la charge.
+
+====
+[cols="1a,1a"]
+|===
+| Type d'hôte prenant en charge l'équilibrage automatique de la charge | Avec ce pilote multichemin 
+
+
+ a| 
+Windows ou Windows en cluster
+ a| 
+MPIO avec NetApp E-Series DSM
+
+
+
+ a| 
+Linux DM-MP (Kernel 3.10 ou version ultérieure)
+ a| 
+DM-MP avec `scsi_dh_alua` gestionnaire de périphériques
+
+
+
+ a| 
+VMware
+ a| 
+Plug-in de chemins d'accès multiples natifs (NMP) avec `VMW_SATP_ALUA Storage Array Type` intégration
+
+|===
+[NOTE]
+====
+À des exceptions mineures, les types d'hôtes qui ne prennent pas en charge l'équilibrage automatique de la charge continuent à fonctionner normalement, que la fonction soit activée ou non. Lorsque le système a un basculement, les baies de stockage déplacent les volumes non attribués ou non attribués vers le contrôleur propriétaire lors du retour du chemin d'accès aux données. Les volumes qui sont mappés ou affectés à des hôtes non automatiques d'équilibrage de charge ne sont pas déplacés.
+
+====
+Voir la https://mysupport.netapp.com/matrix["Matrice d'interopérabilité"^] Pour obtenir des informations sur la compatibilité pour la prise en charge de pilotes à chemins d'accès multiples, du niveau du système d'exploitation et de la barre des disques du contrôleur.
+
+
+
+== Vérification de la compatibilité du système d'exploitation avec la fonction d'équilibrage automatique de la charge
+
+Vérifiez la compatibilité du système d'exploitation avec la fonction d'équilibrage automatique de la charge avant de configurer un nouveau système (ou de migrer un système existant).
+
+. Accédez au https://mysupport.netapp.com/matrix["Matrice d'interopérabilité"^] pour trouver votre solution et vérifier l'assistance.
++
+Si votre système exécute Red Hat Enterprise Linux 6 ou SUSE Linux Enterprise Server 11, contactez le support technique.
+
+. Mettre à jour et configurer le `/etc/multipath.conf file`.
+. S'assurer que les deux `retain_attached_device_handler` et `detect_prio` sont réglés sur `yes` pour le fournisseur et le produit concernés, ou utilisez les paramètres par défaut.
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/why-would-i-disable-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
+summary: 'Vous désactivez un volume d"instantané lorsque vous souhaitez attribuer un volume d"instantané différent à l"image d"instantané. Vous pouvez réserver le volume snapshot désactivé pour une utilisation ultérieure.' 
+---
+= Pourquoi désactiver un volume snapshot ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous désactivez un volume d'instantané lorsque vous souhaitez attribuer un volume d'instantané différent à l'image d'instantané. Vous pouvez réserver le volume snapshot désactivé pour une utilisation ultérieure.
+
+Si vous n'avez plus besoin du volume snapshot ou du volume snapshot du groupe de cohérence et que vous n'avez plus l'intention de le recréer ultérieurement, vous devez supprimer le volume au lieu de le désactiver.

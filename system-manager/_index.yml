@@ -1,0 +1,63 @@
+---
+indexpage:
+  tiles:
+  - title: Configurer la matrice
+    links:
+    - title: Configuration initiale
+      url: "../sm-interface/setup-wizard-overview.html"
+    - title: Mot de passe administrateur
+      url: "../sm-interface/administrator-password-protection.html"
+    - title: Alertes
+      url: "../sm-settings/how-alerts-work.html"
+    - title: AutoSupport
+      url: "../sm-support/autosupport-feature-overview.html"
+  - title: Créer du stockage
+    links:
+    - title: Pools
+      url: "../sm-storage/create-pool-manually.html"
+    - title: Groupes de volumes
+      url: "../sm-storage/create-volume-group.html"
+    - title: Cache SSD
+      url: "../sm-storage/create-ssd-cache.html"
+    - title: Volumes
+      url: "../sm-storage/create-volumes.html"
+  - title: Gestion du matériel
+    links:
+    - title: Tiroirs
+      url: "../sm-hardware/hardware-page-overview.html"
+    - title: Contrôleurs
+      url: "../sm-hardware/controller-states.html"
+    - title: Disques
+      url: "../sm-hardware/drive-states.html"
+    - title: Certificats
+      url: "../sm-settings/how-certificates-work-sam.html"
+  - title: Mise en miroir, copies Snapshot et stockage à distance
+    links:
+    - title: La mise en miroir asynchrone
+      url: "../sm-mirroring/how-asynchronous-mirroring-works.html"
+    - title: Mise en miroir synchrone
+      url: "../sm-mirroring/how-synchronous-mirroring-works.html"
+    - title: Le stockage Snapshot
+      url: "../sm-storage/overview-snapshots.html"
+    - title: Stockage distant
+      url: "../sm-storage/rtv-how-remote-storage-works.html"
+  - title: Diagnostics
+    links:
+    - title: Collecte des données de support
+      url: "../sm-support/collect-support-data-manually.html"
+    - title: Vérifiez les erreurs de mise à niveau
+      url: "../sm-support/review-the-possible-software-and-firmware-upgrade-errors.html"
+    - title: Notifications de problèmes
+      url: "../sm-interface/problem-notification.html"
+    - title: Opérations en cours
+      url: "../sm-interface/view-and-act-on-operations-in-progress.html"
+  - title: Reprise et événements
+    links:
+    - title: Journal secteurs non redables
+      url: "../sm-support/view-unreadable-sectors-log.html"
+    - title: La fonctionnalité Recovery Guru
+      url: "../sm-interface/recover-from-problems-using-recovery-guru.html"
+    - title: Journal des événements
+      url: "../sm-support/overview-event-log.html"
+    - title: Fichiers de prise en charge de la récupération
+      url: "../sm-support/retrieve-recovery-support-files.html"

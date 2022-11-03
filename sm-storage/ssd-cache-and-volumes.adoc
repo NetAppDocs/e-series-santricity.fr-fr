@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/ssd-cache-and-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd, cache, volumes 
+summary: 'Vous pouvez ajouter un volume à SSD cache pour améliorer les performances en lecture seule. La fonctionnalité SSD cache se compose d"un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage.' 
+---
+= SSD cache et les volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter un volume à SSD cache pour améliorer les performances en lecture seule. La fonctionnalité SSD cache se compose d'un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+
+
+== Volumes
+
+Des mécanismes d'E/S de volume simples permettent de déplacer les données vers et depuis SSD cache. Une fois les données mises en cache et stockées sur les disques SSD, les lectures suivantes sont effectuées sur le module SSD cache, ce qui évite d'avoir à accéder au volume HDD.
+
+SSD cache est un cache secondaire utilisable avec le cache principal dans la mémoire DRAM dynamique du contrôleur.
+
+* Dans le cache primaire, les données sont stockées dans la DRAM après la lecture de l'hôte.
+* Dans SSD cache, les données sont copiées à partir des volumes et stockées sur deux volumes RAID internes (un par contrôleur) qui sont automatiquement créés lors de la création d'un SSD cache.
+
+
+Les volumes RAID internes sont utilisés à des fins de traitement du cache interne. Ces volumes ne sont pas accessibles ni affichés dans l'interface utilisateur. Toutefois, ces deux volumes sont pris en compte par rapport au nombre total de volumes autorisés dans la baie de stockage.
+
+[NOTE]
+====
+Tout volume attribué à l'utilisation de la fonctionnalité SSD cache d'un contrôleur n'est pas éligible pour un transfert automatique d'équilibrage de charge.
+
+====
+
+
+== Fonction de sécurité du lecteur
+
+Pour utiliser SSD cache sur un volume qui utilise également la sécurité des disques (elle est sécurisée), les capacités de sécurité des disques du volume et du cache SSD doivent correspondre. Si elles ne correspondent pas, le volume n'est pas activé de manière sécurisée.

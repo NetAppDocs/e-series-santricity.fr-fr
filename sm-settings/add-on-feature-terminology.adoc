@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/add-on-feature-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
+summary: 'Découvrez les fonctionnalités d"extension qui s"appliquent à votre baie de stockage.' 
+---
+= Terminologie des fonctions complémentaires
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez les fonctionnalités d'extension qui s'appliquent à votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Identifiant d'activation de fonctionnalité
+ a| 
+Un identificateur d'activation de fonction est une chaîne unique qui identifie la matrice de stockage spécifique. Cet identifiant garantit que lorsque vous obtenez la fonction premium, elle est associée uniquement à cette matrice de stockage particulière. Cette chaîne s'affiche sous Add-Os sur la page système.
+
+
+
+ a| 
+Fichier de clé de fonction
+ a| 
+Un fichier de clé de fonction est un fichier que vous recevez pour déverrouiller et activer une fonction premium ou un pack de fonctionnalités.
+
+
+
+ a| 
+Pack de fonctions
+ a| 
+Un Feature Pack est un pack qui modifie les attributs de la baie de stockage (par exemple, le passage du protocole de Fibre Channel à iSCSI). Les packs de fonctionnalités requièrent une clé spéciale pour les activer.
+
+
+
+ a| 
+Caractéristique Premium
+ a| 
+Une fonctionnalité Premium est une option supplémentaire qui requiert une clé pour l'activer. Elle n'est pas incluse dans la configuration standard de System Manager.
+
+|===

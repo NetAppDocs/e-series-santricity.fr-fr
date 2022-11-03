@@ -1,0 +1,94 @@
+---
+permalink: sm-hardware/configure-management-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, management, port, 
+summary: Le contrôleur inclut un port Ethernet utilisé pour la gestion du système. Si nécessaire, vous pouvez modifier ses paramètres de transmission et ses adresses IP. 
+---
+= Configurez le port de gestion
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le contrôleur inclut un port Ethernet utilisé pour la gestion du système. Si nécessaire, vous pouvez modifier ses paramètres de transmission et ses adresses IP.
+
+Au cours de cette procédure, vous sélectionnez le port 1, puis déterminez la vitesse et la méthode d'adressage du port. Le port 1 se connecte au réseau sur lequel le client de gestion peut accéder au contrôleur et à System Manager.
+
+[NOTE]
+====
+N'utilisez pas le port 2 sur l'un ou l'autre des contrôleurs. Le port 2 est réservé au support technique.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur avec le port de gestion que vous souhaitez configurer.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *configurer les ports de gestion*.
++
+La boîte de dialogue configurer les ports de gestion s'ouvre.
+
+. Vérifiez que le port 1 est affiché, puis cliquez sur *Suivant*.
+. Sélectionnez les paramètres du port de configuration, puis cliquez sur *Suivant*.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Vitesse et mode duplex
+ a| 
+Conservez le paramètre négociation automatique si vous souhaitez que System Manager détermine les paramètres de transmission entre la matrice de stockage et le réseau ; ou si vous connaissez la vitesse et le mode de votre réseau, sélectionnez les paramètres dans la liste déroulante. Seules les combinaisons vitesse et duplex valides apparaissent dans la liste.
+
+
+
+ a| 
+Activez IPv4 / Activer IPv6
+ a| 
+Sélectionnez une ou les deux options pour activer la prise en charge des réseaux IPv4 et IPv6.
+
+|===
+====
++
+Si vous sélectionnez *Activer IPv4*, une boîte de dialogue s'ouvre pour sélectionner les paramètres IPv4 après avoir cliqué sur *Suivant*. Si vous sélectionnez *Activer IPv6*, une boîte de dialogue s'ouvre pour sélectionner les paramètres IPv6 après avoir cliqué sur *Suivant*. Si vous sélectionnez les deux options, la boîte de dialogue des paramètres IPv4 s'ouvre en premier, puis après avoir cliqué sur *Suivant*, la boîte de dialogue des paramètres IPv6 s'ouvre.
+
+. Configurez les paramètres IPv4 et/ou IPv6, automatiquement ou manuellement.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Obtention automatique de la configuration auprès du serveur DHCP
+ a| 
+Sélectionnez cette option pour obtenir la configuration automatiquement.
+
+
+
+ a| 
+Spécifiez manuellement la configuration statique
+ a| 
+Sélectionnez cette option, puis saisissez l'adresse IP du contrôleur. (Si vous le souhaitez, vous pouvez couper et coller des adresses dans les champs.) Pour IPv4, incluez le masque de sous-réseau réseau et la passerelle. Pour IPv6, incluez l'adresse IP routable et l'adresse IP du routeur.
+
+
+NOTE: Si vous modifiez la configuration de l'adresse IP, le chemin de gestion de la baie de stockage est perdu. Si vous utilisez SANtricity Unified Manager pour gérer globalement les baies de votre réseau, ouvrez l'interface utilisateur et accédez au menu :Manage[Discover]. Si vous utilisez le gestionnaire de stockage SANtricity, vous devez supprimer le périphérique de la fenêtre de gestion d'entreprise (EMW), l'ajouter à l'EMW en sélectionnant menu:Modifier[Ajouter une matrice de stockage], puis saisir la nouvelle adresse IP.
+
+|===
+====
+. Cliquez sur *Terminer*.
+
+
+La configuration du port de gestion s'affiche dans les paramètres du contrôleur, onglet ports de gestion.

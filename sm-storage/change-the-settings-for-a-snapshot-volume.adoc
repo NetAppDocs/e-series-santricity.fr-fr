@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, settings, snapshot, volume 
+summary: 'Vous pouvez modifier les paramètres d"un volume snapshot ou d"un volume snapshot de groupe de cohérence pour le renommer, activer ou désactiver la mise en cache SSD, ou modifier l"affectation de l"hôte, du cluster hôte ou de l"unité logique (LUN).' 
+---
+= Modifiez les paramètres de volume d'un volume d'instantané
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres d'un volume snapshot ou d'un volume snapshot de groupe de cohérence pour le renommer, activer ou désactiver la mise en cache SSD, ou modifier l'affectation de l'hôte, du cluster hôte ou de l'unité logique (LUN).
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Cliquez sur l'onglet *Snapshot volumes*.
+. Sélectionnez le volume de snapshot que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Paramètres du volume de snapshot s'affiche.
+
+. Affichez ou modifiez les paramètres du volume de snapshot selon les besoins.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Volume instantané*
+
+
+
+ a| 
+Nom
+ a| 
+Vous pouvez modifier le nom du volume de snapshot.
+
+
+
+ a| 
+Affecté à
+ a| 
+Vous pouvez modifier l'affectation de l'hôte ou du cluster hôte pour le volume Snapshot.
+
+
+
+ a| 
+LUN
+ a| 
+Vous pouvez modifier l'affectation de LUN pour le volume snapshot.
+
+
+
+ a| 
+Cache SSD
+ a| 
+Vous pouvez activer/désactiver la mise en cache en lecture seule sur des disques SSD.
+
+
+
+ a| 
+*Objets associés*
+
+
+
+ a| 
+Image Snapshot
+ a| 
+Vous pouvez afficher les images de snapshot associées au volume de snapshot. Une image Snapshot est une copie logique des données de volume, capturées à un point dans le temps spécifique. Comme un point de restauration, les images instantanées vous permettent de revenir à un jeu de données correct connu. Bien que l'hôte puisse accéder à l'image snapshot, il ne peut pas y lire ni y écrire directement.
+
+
+
+ a| 
+Volume de base
+ a| 
+Vous pouvez afficher le volume de base associé au volume Snapshot. Un volume de base est la source à partir de laquelle une image snapshot est créée. Il peut s'agir d'un volume non fin ou non fin et est généralement attribué à un hôte. Le volume de base peut résider dans un groupe de volumes ou un pool de disques.
+
+
+
+ a| 
+Groupe de snapshots
+ a| 
+Vous pouvez afficher le groupe de snapshots associé au volume de snapshot. Un groupe d'instantanés est un ensemble d'images d'instantanés provenant d'un seul volume de base.
+
+|===
+====
+

@@ -1,0 +1,53 @@
+---
+permalink: sm-storage/increase-capacity-of-a-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, increase, capacity, volume 
+summary: 'Vous pouvez augmenter la capacité indiquée (la capacité signalée aux hôtes) d"un volume en utilisant la capacité disponible dans le pool ou le groupe de volumes.' 
+---
+= Augmentation de la capacité d'un volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez augmenter la capacité indiquée (la capacité signalée aux hôtes) d'un volume en utilisant la capacité disponible dans le pool ou le groupe de volumes.
+
+.Avant de commencer
+* Une capacité disponible suffisante est disponible dans le pool ou le groupe de volumes associé du volume.
+* Le volume est optimal et ne présente aucun état de modification.
+* La capacité maximale signalée de 256 Tio n'a pas été atteinte pour les volumes fins.
+* Aucun disque de secours n'est utilisé dans le volume. (S'applique uniquement aux volumes de groupes de volumes.)
+
+
+N'oubliez pas les besoins de capacité futurs que vous pourriez avoir pour d'autres volumes de ce pool ou de ce groupe de volumes. Assurez-vous d'autoriser une capacité suffisante pour créer des images de snapshot, des volumes de snapshot ou des miroirs distants.
+
+[NOTE]
+====
+L'augmentation de la capacité d'un volume n'est prise en charge que sur certains systèmes d'exploitation. Si vous augmentez la capacité du volume sur un système d'exploitation hôte qui n'est pas pris en charge, la capacité étendue est inutilisable et vous ne pouvez pas restaurer la capacité du volume d'origine.
+
+====
+.Étapes
+. Sélectionnez menu:Storage[volumes].
+. Sélectionnez le volume pour lequel vous souhaitez augmenter la capacité, puis sélectionnez *augmenter la capacité*.
++
+La boîte de dialogue confirmer l'augmentation de la capacité s'affiche.
+
+. Sélectionnez *Oui* pour continuer.
++
+La boîte de dialogue augmenter la capacité déclarée s'affiche.
+
++
+Cette boîte de dialogue affiche la capacité actuelle signalée du volume et la capacité disponible dans le pool ou le groupe de volumes associé du volume.
+
+. Utilisez la case *augmenter la capacité signalée en ajoutant...* pour ajouter de la capacité à la capacité actuellement disponible. Vous pouvez modifier la valeur de capacité pour l'afficher en mébioctets (Mio), gibioctets (Tio) ou tébioctets (Tio).
+. Cliquez sur *augmenter*.
+
+
+.Résultats
+* System Manager augmente la capacité du volume en fonction de votre sélection.
+* Sélectionnez menu:Accueil[Afficher les opérations en cours] pour afficher la progression de l'opération augmenter la capacité en cours d'exécution pour le volume sélectionné. Cette opération peut être longue et peut affecter les performances du système.
+
+
+Après avoir augmenté la capacité du volume, vous devez augmenter manuellement la taille du système de fichiers pour qu'elle corresponde. La façon dont vous faites cela dépend du système de fichiers que vous utilisez. Pour plus de détails, reportez-vous à la documentation du système d'exploitation hôte.

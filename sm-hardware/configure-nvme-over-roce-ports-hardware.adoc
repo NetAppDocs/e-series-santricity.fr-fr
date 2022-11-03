@@ -1,0 +1,101 @@
+---
+permalink: sm-hardware/configure-nvme-over-roce-ports-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, nvme, over, roce, ports 
+summary: 'Si votre contrôleur inclut une connexion pour NVMe over RoCE (RDMA over Converged Ethernet), vous pouvez configurer les paramètres des ports NVMe à partir de la page Hardware.' 
+---
+= Configurez les ports NVMe over RoCE
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si votre contrôleur inclut une connexion pour NVMe over RoCE (RDMA over Converged Ethernet), vous pouvez configurer les paramètres des ports NVMe à partir de la page Hardware.
+
+.Avant de commencer
+* Votre contrôleur doit inclure un port hôte NVMe over RoCE. Sinon, les paramètres NVMe over RoCE ne sont pas disponibles dans System Manager.
+* Vous devez connaître l'adresse IP de la connexion hôte.
+
+
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur associé au port NVMe over RoCE que vous souhaitez configurer.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *configurer les ports NVMe over RoCE*.
++
+La boîte de dialogue Configure NVMe over RoCE ports s'ouvre.
+
+. Dans la liste déroulante, sélectionnez le port HIC que vous souhaitez configurer.
+. Cliquez sur *Suivant*.
++
+Pour afficher tous les paramètres de port, cliquez sur le lien *Afficher plus de paramètres de port* à droite de la boîte de dialogue.
+
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Paramètre de port | Description 
+
+
+ a| 
+Vitesse du port ethernet configurée
+ a| 
+Sélectionnez la vitesse correspondant à la capacité de vitesse du SFP sur le port.
+
+
+
+ a| 
+Activez IPv4 / Activer IPv6
+ a| 
+Sélectionnez une ou les deux options pour activer la prise en charge des réseaux IPv4 et IPv6.
+
+
+NOTE: Pour désactiver l'accès aux ports, décochez les deux cases.
+
+
+
+ a| 
+Taille MTU (disponible en cliquant sur *Afficher plus de paramètres de port*).
+ a| 
+Si nécessaire, entrez une nouvelle taille en octets pour l'unité de transmission maximale (MTU).
+
+La taille par défaut de l'unité de transmission maximale (MTU) est de 1500 octets par trame. Vous devez entrer une valeur comprise entre 1500 et 9000.
+
+|===
+====
++
+Si vous avez sélectionné *Activer IPv4*, une boîte de dialogue s'ouvre pour sélectionner les paramètres IPv4 après avoir cliqué sur *Suivant*. Si vous avez sélectionné *Activer IPv6*, une boîte de dialogue s'ouvre pour sélectionner les paramètres IPv6 après avoir cliqué sur *Suivant*. Si vous avez sélectionné les deux options, la boîte de dialogue des paramètres IPv4 s'ouvre en premier, puis après avoir cliqué sur *Suivant*, la boîte de dialogue des paramètres IPv6 s'ouvre.
+
+. Configurez les paramètres IPv4 et/ou IPv6, automatiquement ou manuellement.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Paramètre de port | Description 
+
+
+ a| 
+Obtention automatique de la configuration
+ a| 
+Sélectionnez cette option pour obtenir la configuration automatiquement.
+
+
+
+ a| 
+Spécifiez manuellement la configuration statique
+ a| 
+Sélectionnez cette option, puis entrez une adresse statique dans les champs. (Si vous le souhaitez, vous pouvez couper et coller des adresses dans les champs.) Pour IPv4, incluez le masque de sous-réseau réseau et la passerelle. Pour IPv6, incluez l'adresse IP routable et l'adresse IP du routeur. Si vous configurez une baie de stockage EF600 avec une HIC compatible 200 Go, cette boîte de dialogue affiche deux ensembles de champs pour les paramètres réseau, un pour un port physique (externe) et un pour un port virtuel (interne). Vous devez attribuer des paramètres uniques pour les deux ports. Ces paramètres permettent à l'hôte d'établir un chemin entre chaque port et pour la HIC d'obtenir des performances optimales. Si vous n'attribuez pas d'adresse IP au port virtuel, la HIC fonctionne à environ la moitié de sa vitesse.
+
+|===
+====
+. Cliquez sur *Terminer*.
+

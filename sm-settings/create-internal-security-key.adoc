@@ -1,0 +1,84 @@
+---
+permalink: sm-settings/create-internal-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
+summary: Pour utiliser la fonction sécurité des lecteurs, vous pouvez créer une clé de sécurité interne partagée par les contrôleurs et les lecteurs sécurisés de la matrice de stockage. Les clés internes sont conservées sur la mémoire persistante du contrôleur. 
+---
+= Créer une clé de sécurité interne
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour utiliser la fonction sécurité des lecteurs, vous pouvez créer une clé de sécurité interne partagée par les contrôleurs et les lecteurs sécurisés de la matrice de stockage. Les clés internes sont conservées sur la mémoire persistante du contrôleur.
+
+.Avant de commencer
+* Les lecteurs sécurisés doivent être installés dans la matrice de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).
+* La fonction de sécurité du lecteur doit être activée. Dans le cas contraire, une boîte de dialogue Impossible de créer une clé de sécurité s'ouvre pendant cette tâche. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
+
+
+[NOTE]
+====
+Si des disques FDE et FIPS sont tous deux installés dans la baie de stockage, ils partagent la même clé de sécurité.
+
+====
+Dans cette tâche, vous définissez un identifiant et une phrase de passe à associer à la clé de sécurité interne.
+
+[NOTE]
+====
+La phrase de passe pour la sécurité des disques est indépendante du mot de passe administrateur de la matrice de stockage.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *gestion des clés de sécurité*, sélectionnez *Créer une clé interne*.
++
+Si vous n'avez pas encore généré de clé de sécurité, la boîte de dialogue Créer une clé de sécurité s'ouvre.
+
+. Entrez les informations dans les champs suivants :
++
+** *Définir un identificateur de clé de sécurité* -- vous pouvez soit accepter la valeur par défaut (nom de la matrice de stockage et horodatage, qui est généré par le micrologiciel du contrôleur), soit entrer votre propre valeur. Vous pouvez entrer jusqu'à 189 caractères alphanumériques sans espaces, signes de ponctuation ni symboles.
++
+[NOTE]
+====
+Des caractères supplémentaires sont générés automatiquement, ajoutés aux deux extrémités de la chaîne que vous entrez. Les caractères générés garantissent que l'identificateur est unique.
+
+====
+** *Définir une phrase de passe/saisir à nouveau la phrase de passe* -- entrer et confirmer une phrase de passe. La valeur peut comporter entre 8 et 32 caractères et doit comprendre chacun des éléments suivants :
++
+*** Une lettre majuscule (une ou plusieurs). Gardez à l'esprit que la phrase de passe est sensible à la casse.
+*** Un nombre (un ou plusieurs).
+*** Caractère non alphanumérique, tel que !, *, @ (un ou plusieurs).
+
+
+
+
++
+[CAUTION]
+====
+*N'oubliez pas d'enregistrer vos entrées pour une utilisation ultérieure*. Si vous devez déplacer un lecteur sécurisé de la matrice de stockage, vous devez connaître l'identifiant et la phrase de passe pour déverrouiller les données du lecteur.
+
+====
+. Cliquez sur *Créer*.
++
+La clé de sécurité est stockée sur le contrôleur dans un emplacement non accessible. Avec la clé réelle, un fichier de clé cryptée est téléchargé à partir de votre navigateur.
+
++
+[NOTE]
+====
+Le chemin du fichier téléchargé peut dépendre de l'emplacement de téléchargement par défaut de votre navigateur.
+
+====
+. Enregistrez votre identifiant de clé, votre phrase de passe et l'emplacement du fichier de clé téléchargé, puis cliquez sur *Fermer*.
+
+
+Vous pouvez désormais créer des groupes ou des pools de volumes sécurisés ou activer la sécurité sur des groupes et pools de volumes existants.
+
+[NOTE]
+====
+Chaque fois que l'alimentation des lecteurs est coupée, puis remise sous tension, tous les lecteurs sécurisés sont mis à l'état verrouillé par sécurité. Dans cet état, les données sont inaccessibles jusqu'à ce que le contrôleur applique la clé de sécurité correcte lors de l'initialisation du lecteur. Si quelqu'un supprime physiquement un disque verrouillé et l'installe dans un autre système, l'état sécurité verrouillée empêche l'accès non autorisé à ses données.
+
+====
+Vous devez valider la clé de sécurité pour vous assurer que le fichier clé n'est pas corrompu.

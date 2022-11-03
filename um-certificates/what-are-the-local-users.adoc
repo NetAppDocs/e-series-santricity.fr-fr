@@ -1,0 +1,25 @@
+---
+permalink: um-certificates/what-are-the-local-users.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, local, users 
+summary: Les utilisateurs locaux sont prédéfinis dans le système et incluent des autorisations spécifiques. 
+---
+= Qu'est-ce que les utilisateurs locaux ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les utilisateurs locaux sont prédéfinis dans le système et incluent des autorisations spécifiques.
+
+Les utilisateurs locaux incluent :
+
+* *Admin* -- Super administrateur qui a accès à toutes les fonctions du système. Cet utilisateur inclut tous les rôles. Le mot de passe doit être défini lors de la première connexion.
+* *Stockage* -- l'administrateur responsable de tout le provisionnement du stockage. Cet utilisateur comprend les rôles suivants : administrateur du stockage, administrateur du support et contrôle. Ce compte est désactivé jusqu'à ce qu'un mot de passe soit défini.
+* *Sécurité* -- l'utilisateur responsable de la configuration de la sécurité, y compris la gestion des accès et la gestion des certificats. Cet utilisateur inclut les rôles suivants : administrateur de sécurité et moniteur. Ce compte est désactivé jusqu'à ce qu'un mot de passe soit défini.
+* *Support* -- l'utilisateur responsable des ressources matérielles, des données de défaillance et des mises à niveau du micrologiciel. Cet utilisateur inclut les rôles suivants : support Admin et Monitor. Ce compte est désactivé jusqu'à ce qu'un mot de passe soit défini.
+* *Moniteur* -- Un utilisateur avec accès en lecture seule au système. Cet utilisateur inclut uniquement le rôle Monitor. Ce compte est désactivé jusqu'à ce qu'un mot de passe soit défini.
+* *rw* (lecture/écriture) -- cet utilisateur comprend les rôles suivants : administrateur de stockage, administrateur de support et moniteur. Ce compte est désactivé jusqu'à ce qu'un mot de passe soit défini.
+* *Ro* (lecture seule) -- cet utilisateur n'inclut que le rôle moniteur. Ce compte est désactivé jusqu'à ce qu'un mot de passe soit défini.
+

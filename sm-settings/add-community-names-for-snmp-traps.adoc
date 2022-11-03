@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/add-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, communities, snmpv2c, traps, 
+summary: 'Vous pouvez ajouter jusqu"à 256 noms de communauté pour les déroutements SNMPv2c.' 
+---
+= Ajouter des communautés pour les déroutements SNMPv2c
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter jusqu'à 256 noms de communauté pour les déroutements SNMPv2c.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations d'interruption et les noms de communauté apparaissent dans le tableau.
+
+. Sélectionnez *configurer les communautés*.
++
+La boîte de dialogue configurer les communautés s'ouvre.
+
+. Sélectionnez *Ajouter une autre communauté*.
+. Entrez le nouveau nom de communauté, puis cliquez sur *Enregistrer*.
+
+
+Le nouveau nom de communauté apparaît dans l'onglet SNMP de la page alertes.

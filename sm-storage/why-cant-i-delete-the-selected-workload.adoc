@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-cant-i-delete-the-selected-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, selected, workload 
+summary: 'Cette charge de travail se compose d"un groupe de volumes créés à l"aide de l"interface de ligne de commande ou migrés (importé/exporté) à partir d"une autre baie de stockage. Par conséquent, les volumes de cette charge de travail ne sont pas associés à une charge de travail spécifique à une application. La charge de travail ne peut donc pas être supprimée.' 
+---
+= Pourquoi ne puis-je pas supprimer la charge de travail sélectionnée ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette charge de travail se compose d'un groupe de volumes créés à l'aide de l'interface de ligne de commande ou migrés (importé/exporté) à partir d'une autre baie de stockage. Par conséquent, les volumes de cette charge de travail ne sont pas associés à une charge de travail spécifique à une application. La charge de travail ne peut donc pas être supprimée.

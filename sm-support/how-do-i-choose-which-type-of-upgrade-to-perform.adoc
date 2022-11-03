@@ -1,0 +1,24 @@
+---
+permalink: sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, perform 
+summary: 'Vous choisissez le type de mise à niveau à effectuer sur le lecteur en fonction de l"état du pool ou du groupe de volumes.' 
+---
+= Comment choisir le type de mise à niveau à effectuer ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous choisissez le type de mise à niveau à effectuer sur le lecteur en fonction de l'état du pool ou du groupe de volumes.
+
+* *En ligne*
++
+Si le pool ou le groupe de volumes prend en charge la redondance et est optimal, vous pouvez utiliser la méthode en ligne pour mettre à niveau le micrologiciel du lecteur. La méthode en ligne télécharge le micrologiciel _pendant que la matrice de stockage traite les E/S_ aux volumes associés utilisant ces lecteurs. Il n'est pas nécessaire d'arrêter les E/S vers les volumes associés à l'aide de ces lecteurs. Ces lecteurs sont mis à niveau un par un vers les volumes associés aux lecteurs. Si le lecteur n'est pas affecté à un pool ou à un groupe de volumes, son micrologiciel peut être mis à jour par la méthode en ligne ou hors ligne. Les performances du système peuvent être affectées lorsque vous utilisez la méthode en ligne pour mettre à niveau le micrologiciel du lecteur.
+
+* *Hors ligne*
++
+Si le pool ou le groupe de volumes ne prend pas en charge la redondance (RAID 0) ou s'il est dégradé, vous devez utiliser la méthode hors ligne pour mettre à niveau le micrologiciel du lecteur. La méthode Offline met à niveau le micrologiciel _uniquement lorsque toutes les activités d'E/S sont arrêtées_ vers les volumes associés utilisant ces lecteurs. Vous devez arrêter toutes les E/S de tous les volumes associés utilisant ces lecteurs. Si le lecteur n'est pas affecté à un pool ou à un groupe de volumes, son micrologiciel peut être mis à jour par la méthode en ligne ou hors ligne.
+
+

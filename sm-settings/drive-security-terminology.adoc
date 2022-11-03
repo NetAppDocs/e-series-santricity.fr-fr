@@ -1,0 +1,91 @@
+---
+permalink: sm-settings/drive-security-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, security, terms, 
+summary: 'Découvrez comment les conditions de sécurité des lecteurs s"appliquent à votre baie de stockage.' 
+---
+= Terminologie de sécurité des lecteurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les conditions de sécurité des lecteurs s'appliquent à votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Fonction de sécurité du lecteur
+ a| 
+La sécurité des disques est une fonctionnalité de baie de stockage qui fournit une couche de sécurité supplémentaire avec des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard). Lorsque ces disques sont utilisés avec la fonction sécurité des lecteurs, ils ont besoin d'une clé de sécurité pour accéder à leurs données. Lorsque les lecteurs sont physiquement retirés de la matrice, ils ne peuvent pas fonctionner tant qu'ils ne sont pas installés dans une autre matrice. À ce moment, ils seront dans un état de sécurité verrouillé jusqu'à ce que la clé de sécurité correcte soit fournie.
+
+
+
+ a| 
+Disques FDE
+ a| 
+Les disques FDE (Full Disk Encryption) cryptant les disques au niveau du matériel. Le disque dur contient une puce ASIC qui chiffre les données pendant les écritures, puis décrypte les données pendant les lectures.
+
+
+
+ a| 
+Disques FIPS
+ a| 
+Les disques FIPS utilisent la norme FIPS (Federal information Processing Standards) 140-2 de niveau 2. Ce sont pour l'essentiel des disques FDE conformes aux normes gouvernementales américaines en matière de sécurité des algorithmes et des méthodes de cryptage solides. Les disques FIPS sont plus stricts que les disques FDE.
+
+
+
+ a| 
+Client de gestion
+ a| 
+Un système local (ordinateur, tablette, etc.) qui comprend un navigateur pour accéder à System Manager.
+
+
+
+ a| 
+Phrase de passe
+ a| 
+La phrase de passe est utilisée pour crypter la clé de sécurité à des fins de sauvegarde. La même phrase de passe utilisée pour crypter la clé de sécurité doit être fournie lorsque la clé de sécurité sauvegardée est importée en raison d'une migration de lecteur ou d'un remplacement de tête. Une phrase de passe peut comporter entre 8 et 32 caractères.
+
+[NOTE]
+====
+La phrase de passe pour la sécurité des disques est indépendante du mot de passe administrateur de la matrice de stockage.
+
+====
+
+
+ a| 
+Disques sécurisés
+ a| 
+Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard), qui cryptent les données pendant les écritures et décomposent les données pendant les lectures. Ces lecteurs sont considérés comme sécurisés-_compatibles_ car ils peuvent être utilisés pour des raisons de sécurité supplémentaires à l'aide de la fonction sécurité des lecteurs. Si la fonction de sécurité des disques est activée pour les groupes de volumes et les pools utilisés avec ces disques, les lecteurs deviennent sécurisés --_Enabled_.
+
+
+
+ a| 
+Disques sécurisés
+ a| 
+Les lecteurs sécurisés sont utilisés avec la fonction de sécurité des lecteurs. Lorsque vous activez la fonction sécurité du lecteur, puis appliquez la sécurité du lecteur à un pool ou à un groupe de volumes sur des lecteurs sécurisés_ compatibles_, les lecteurs deviennent sécurisés___-activés____. L'accès en lecture et en écriture n'est disponible que par l'intermédiaire d'un contrôleur configuré avec la clé de sécurité adéquate. Cette sécurité supplémentaire empêche tout accès non autorisé aux données d'un disque physiquement retiré de la matrice de stockage.
+
+
+
+ a| 
+Clé de sécurité
+ a| 
+Une clé de sécurité est une chaîne de caractères partagée entre les disques et les contrôleurs sécurisés d'une matrice de stockage. Lorsque l'alimentation des lecteurs est coupée et allumée, les lecteurs sécurisés se déverrouillent en mode sécurité jusqu'à ce que le contrôleur applique la clé de sécurité. Si un disque sécurisé est retiré de la matrice de stockage, les données du disque sont verrouillées. Lorsque le lecteur est réinstallé dans une matrice de stockage différente, il recherche la clé de sécurité avant de rendre les données à nouveau accessibles. Pour déverrouiller les données, vous devez appliquer la clé de sécurité d'origine. Vous pouvez créer et gérer des clés de sécurité en utilisant l'une des méthodes suivantes :
+
+* Gestion interne des clés :- Créez et conservez les clés de sécurité sur la mémoire persistante du contrôleur.
+* Gestion externe des clés : permet de créer et de gérer des clés de sécurité sur un serveur de gestion externe des clés.
+
+
+
+
+ a| 
+Identifiant de clé de sécurité
+ a| 
+L'identifiant de clé de sécurité est une chaîne associée à la clé de sécurité lors de la création de la clé. L'identifiant est stocké sur le contrôleur et sur tous les disques associés à la clé de sécurité.
+
+|===

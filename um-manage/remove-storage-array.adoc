@@ -1,0 +1,28 @@
+---
+permalink: um-manage/remove-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, remove, storage, arrays, 
+summary: Vous pouvez supprimer une ou plusieurs baies de stockage si vous ne souhaitez plus la gérer depuis SANtricity Unified Manager. 
+---
+= Retirez les baies de stockage de SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une ou plusieurs baies de stockage si vous ne souhaitez plus la gérer depuis Unified Manager.
+
+Vous ne pouvez accéder à aucune des baies de stockage que vous supprimez. Vous pouvez cependant établir une connexion avec n'importe quelle baie de stockage supprimée en pointant directement un navigateur vers son adresse IP ou son nom d'hôte.
+
+La suppression d'une matrice de stockage n'affecte en aucune façon la matrice de stockage ou ses données. Si une matrice de stockage est accidentellement retirée, elle peut être ajoutée à nouveau.
+
+.Étapes
+. Sélectionnez la page *gérer*.
+. Sélectionnez une ou plusieurs matrices de stockage que vous souhaitez supprimer.
+. Sélectionner le menu:tâches rares[Supprimer la matrice de stockage].
++
+La baie de stockage est supprimée de toutes les vues dans SANtricity Unified Manager.
+
+

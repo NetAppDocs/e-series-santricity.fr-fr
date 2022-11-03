@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-is-a-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, health, images, controller, memory, processor 
+summary: Une image de santé est un vidage de données brutes de la mémoire processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur. 
+---
+= Qu'est-ce qu'une image de santé ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une image de santé est un « dump » de données brutes de la mémoire du processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.
+
+Le firmware génère automatiquement une image de l'état de santé lorsqu'il détecte certaines erreurs. Dans certains scénarios de dépannage, le support technique peut vous demander de récupérer le fichier d'image d'intégrité et de l'envoyer.

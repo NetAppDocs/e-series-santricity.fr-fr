@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-segment-sizing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, segment, size, storage, raid 
+summary: 'Un segment correspond à la quantité de données en kilo-octets (Kio) stockée sur un lecteur avant que la matrice de stockage ne passe au lecteur suivant de la bande (groupe RAID). La taille de segment s"applique uniquement aux groupes de volumes, pas aux pools.' 
+---
+= Quelle est la taille du segment ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un segment correspond à la quantité de données en kilo-octets (Kio) stockée sur un lecteur avant que la matrice de stockage ne passe au lecteur suivant de la bande (groupe RAID). La taille de segment s'applique uniquement aux groupes de volumes, pas aux pools.
+
+La taille du segment est définie par le nombre de blocs de données qu'il contient. Pour déterminer la taille du segment, vous devez connaître le type de données que vous stockez dans un volume. Si une application utilise généralement des lectures et des écritures aléatoires peu volumineuses (IOPS), une taille de segment plus petite est généralement plus efficace. Si l'application possède des lectures et des écritures séquentielles volumineuses (débit), il est généralement préférable d'utiliser une taille de segment importante.
+
+Qu'une application utilise des lectures et écritures aléatoires peu volumineuses ou de grandes lectures et écritures séquentielles, la baie de stockage est plus efficace si la taille du segment est supérieure à la taille typique des blocs de données. Cela permet généralement aux disques d'accéder plus facilement et plus rapidement aux données, ce qui est important pour améliorer les performances de la baie de stockage.
+
+
+
+== Environnements dans lesquels les performances d'IOPS sont importantes
+
+Dans un environnement d'opérations d'E/S par seconde (IOPS), la baie de stockage est plus performante si la taille de segment est supérieure à la taille de bloc de données standard (« bloc ») qui est lue/écrite sur un disque. Cela garantit que chaque bloc est écrit sur un seul disque.
+
+
+
+== Dans les environnements où le débit est important
+
+Dans un environnement de débit, la taille de segment doit représenter une fraction régulière du nombre total de disques pour les données et la taille type du bloc de données (taille d'E/S). Les données sont ainsi réparties sur une seule bande des disques du groupe de volumes, ce qui permet d'accélérer les opérations de lecture et d'écriture.

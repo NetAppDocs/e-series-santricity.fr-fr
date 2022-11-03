@@ -1,0 +1,96 @@
+---
+permalink: sm-settings/access-management-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, terms 
+summary: 'Découvrez comment les termes de gestion des accès s"appliquent à votre matrice de stockage.' 
+---
+= Terminologie de la gestion des accès
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les termes de gestion des accès s'appliquent à votre matrice de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Jeton d'accès
+ a| 
+Les jetons d'accès sont utilisés pour s'authentifier auprès de l'API REST ou de l'interface de ligne de commande à la place d'un nom d'utilisateur et d'un mot de passe. Les jetons sont associés à un utilisateur spécifique (y compris les utilisateurs LDAP) et comprennent un ensemble d'autorisations et une expiration.
+
+
+
+ a| 
+Active Directory
+ a| 
+Active Directory (AD) est un service d'annuaire Microsoft qui utilise LDAP pour les réseaux de domaine Windows.
+
+
+
+ a| 
+Reliure
+ a| 
+Les opérations BIND sont utilisées pour authentifier les clients sur le serveur d'annuaire. La liaison nécessite généralement des informations d'identification de compte et de mot de passe, mais certains serveurs autorisent des opérations de liaison anonymes.
+
+
+
+ a| 
+ENV
+ a| 
+Une autorité de certification (AC) est une entité de confiance qui délivre des documents électroniques, appelés certificats numériques, pour la sécurité Internet. Ces certificats identifient les propriétaires de sites Web, ce qui permet des connexions sécurisées entre les clients et les serveurs.
+
+
+
+ a| 
+Certificat
+ a| 
+Un certificat identifie le propriétaire d'un site à des fins de sécurité, ce qui empêche les pirates d'emprunter l'identité du site. Le certificat contient des informations sur le propriétaire du site et l'identité de l'entité de confiance qui certifie (signe) ces informations.
+
+
+
+ a| 
+IDP
+ a| 
+Un fournisseur d'identité (IDP) est un système externe utilisé pour demander des informations d'identification à un utilisateur et déterminer si cet utilisateur est correctement authentifié. Le IDP peut être configuré pour fournir une authentification multifacteur et utiliser n'importe quelle base de données utilisateur, telle qu'Active Directory. Votre équipe de sécurité est responsable du maintien du PDI.
+
+
+
+ a| 
+LDAP
+ a| 
+Le protocole LDAP (Lightweight Directory Access Protocol) est un protocole d'application permettant d'accéder aux services d'informations d'annuaire distribués et de les gérer. Ce protocole permet à de nombreuses applications et services différents de se connecter au serveur LDAP pour valider les utilisateurs.
+
+
+
+ a| 
+RBAC
+ a| 
+Le contrôle d'accès basé sur les rôles (RBAC) est une méthode qui permet de réguler l'accès aux ressources informatiques ou réseau en fonction des rôles des utilisateurs individuels. Des contrôles RBAC sont appliqués sur la baie de stockage et incluent des rôles prédéfinis.
+
+
+
+ a| 
+SAML
+ a| 
+Le langage SAML (Security assertion Markup Language) est une norme XML pour l'authentification et l'autorisation entre deux entités. SAML permet l'authentification multifacteur, dans laquelle les utilisateurs doivent fournir au moins deux éléments pour prouver leur identité (par exemple, un mot de passe et une empreinte digitale). La fonctionnalité SAML intégrée de la baie de stockage est conforme à la norme SAML2.0 pour l'assertion d'identité, l'authentification et l'autorisation.
+
+
+
+ a| 
+SP
+ a| 
+Un SP (Service Provider) est un système qui contrôle l'authentification des utilisateurs et l'accès. Lorsque Access Management est configuré avec SAML, la baie de stockage agit comme fournisseur de services pour demander l'authentification auprès du fournisseur d'identités.
+
+
+
+ a| 
+SSO
+ a| 
+Single Sign-on (SSO) est un service d'authentification qui permet à un ensemble d'informations d'identification de connexion d'accéder à plusieurs applications.
+
+|===

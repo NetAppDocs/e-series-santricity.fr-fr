@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-is-cache-block-size.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, block, size, 
+summary: 'Le contrôleur de la matrice de stockage organise son cache en blocs, qui sont des blocs de mémoire pouvant avoir une taille de 8, 16 et 32 Kio. Tous les volumes du système de stockage partagent le même espace de cache. Par conséquent, les volumes ne peuvent avoir qu"une seule taille de bloc de cache.' 
+---
+= Quelle est la taille de bloc du cache ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le contrôleur de la baie de stockage organise son cache en « blocs », qui sont des blocs de mémoire d'une taille de 8, 16 et 32 Kio. Tous les volumes du système de stockage partagent le même espace de cache. Par conséquent, les volumes ne peuvent avoir qu'une seule taille de bloc de cache.
+
+Les applications utilisent des tailles de blocs différentes, ce qui peut avoir un impact sur les performances du stockage. Par défaut, la taille de bloc dans System Manager est de 32 Kio, mais vous pouvez définir la valeur 8, 16, 32 KiB. Une taille inférieure est un bon choix pour les systèmes de fichiers ou les applications de bases de données. Une taille plus importante est un bon choix pour les applications nécessitant des transferts de données importants, des E/S séquentielles ou une bande passante élevée, telles que le multimédia.

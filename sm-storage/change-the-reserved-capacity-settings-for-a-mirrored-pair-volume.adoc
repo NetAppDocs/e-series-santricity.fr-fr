@@ -1,0 +1,46 @@
+---
+permalink: sm-storage/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, mirrored pair volume 
+summary: 'Vous pouvez modifier les paramètres d"un volume de paire en miroir pour ajuster le point de pourcentage auquel System Manager envoie une notification d"alerte lorsque la capacité réservée d"un volume de paire en miroir est presque pleine.' 
+---
+= Modifiez les paramètres de capacité réservée pour un volume de paire en miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres d'un volume de paire en miroir pour ajuster le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'un volume de paire en miroir est presque pleine.
+
+.Étapes
+. Menu Sélectionner:Storage[pools & Volume Groups].
+. Sélectionnez l'onglet *capacité réservée*.
+. Sélectionnez le volume de paires symétriques que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Paramètres de capacité réservée du volume de la paire en miroir s'affiche.
+
+. Modifiez les paramètres de capacité réservée pour le volume de paire en miroir selon les besoins.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+M'avertir lorsque...
+ a| 
+Utilisez la boîte à plateau pour régler le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'une paire en miroir est presque pleine.
+
+Lorsque la capacité réservée de la paire en miroir dépasse le seuil spécifié, System Manager envoie une alerte et vous permet d'augmenter la capacité réservée.
+
+
+NOTE: La modification du paramètre alerte pour une paire symétrique modifie le paramètre alerte pour toutes les paires symétriques appartenant au même groupe de cohérence miroir.
+
+|===
+====
+. Cliquez sur *Enregistrer* pour appliquer vos modifications.
+

@@ -1,0 +1,38 @@
+---
+permalink: sm-mirroring/delete-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
+summary: Il est possible de supprimer les groupes de cohérence des miroirs qui ne sont plus nécessaires sur la baie de stockage locale et sur la baie de stockage distante. 
+---
+= Supprimez le groupe de cohérence en miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il est possible de supprimer les groupes de cohérence des miroirs qui ne sont plus nécessaires sur la baie de stockage locale et sur la baie de stockage distante.
+
+Toutes les paires mises en miroir doivent être supprimées du groupe de cohérence miroir.
+
+.Étapes
+. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Sélectionnez l'onglet *groupes de cohérence miroir*.
++
+Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.
+
+. Sélectionnez le groupe de cohérence miroir que vous souhaitez supprimer, puis sélectionnez menu:tâches rares[Supprimer].
++
+Le système affiche une confirmation.
+
+. Sélectionnez *Oui* pour supprimer le groupe de cohérence miroir.
+
+
+System Manager effectue les actions suivantes :
+
+* Supprime d'abord le groupe de cohérence miroir sur la baie de stockage locale, puis supprime le groupe de cohérence miroir sur la matrice de stockage distante.
+* Supprime le groupe de cohérence miroir du tableau Groupe de cohérence miroir.
+
+
+Il peut arriver que le groupe de cohérence miroir soit correctement supprimé de la matrice de stockage locale, mais qu'une erreur de communication empêche la suppression du groupe de cohérence miroir de la matrice de stockage distante. Dans ce cas, vous devez accéder à la matrice de stockage distante pour supprimer le groupe de cohérence miroir correspondant.

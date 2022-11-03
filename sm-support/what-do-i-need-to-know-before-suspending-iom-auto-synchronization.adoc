@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-suspending-iom-auto-synchronization.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, iom, auto-synchronization 
+summary: 'L"interruption de la synchronisation automatique du module d"E/S empêche la mise à niveau du firmware du module lors de la prochaine mise à niveau du logiciel du contrôleur SANtricity OS.' 
+---
+= Que dois-je savoir avant de suspendre la synchronisation automatique de l'IOM ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'interruption de la synchronisation automatique du module d'E/S empêche la mise à niveau du firmware du module lors de la prochaine mise à niveau du logiciel du contrôleur SANtricity OS.
+
+En principe, le logiciel du contrôleur et le firmware du module sont mis à niveau en tant que pack. Vous pouvez suspendre la synchronisation automatique du module d'E/S si vous disposez d'une version spéciale du firmware IOM que vous souhaitez conserver sur votre armoire. Si vous ne faites pas partie du firmware du module d'E/S, celui-ci est inclus avec le logiciel du contrôleur lors de la prochaine mise à niveau du logiciel du contrôleur.

@@ -1,0 +1,45 @@
+---
+permalink: um-manage/overview-mirroring-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring 
+summary: Utilisez les fonctions de mise en miroir pour répliquer des données entre une baie de stockage locale et une baie de stockage distante, de manière asynchrone ou synchrone. 
+---
+= Vue d'ensemble de la symétrie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez les fonctions de mise en miroir pour répliquer des données entre une baie de stockage locale et une baie de stockage distante, de manière asynchrone ou synchrone.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+
+
+== Qu'est-ce que la mise en miroir ?
+
+Les applications SANtricity incluent deux types de mise en miroir : asynchrone et synchrone. La mise en miroir asynchrone copie les volumes de données à la demande ou selon une planification. La mise en miroir permet de réduire ou d'éviter les temps d'indisponibilité dus à la corruption ou à la perte de données. La mise en miroir synchrone réplique les volumes de données en temps réel pour assurer une disponibilité continue.
+
+En savoir plus :
+
+* link:mirroring-overview.html["Fonctionnement de la mise en miroir"]
+* link:mirroring-terminology.html["Terminologie de la mise en miroir"]
+
+
+
+
+== Comment configurer la mise en miroir ?
+
+Vous configurez la mise en miroir synchrone ou asynchrone dans Unified Manager, puis utilisez System Manager pour gérer les synchronisations.
+
+En savoir plus :
+
+* link:mirroring-configuration-workflow.html["Flux de travail de configuration de mise en miroir"]
+* link:requirements-for-using-mirroring.html["Conditions requises pour l'utilisation de la mise en miroir"]
+* link:create-asynchronous-mirrored-pair-um.html["Création d'une paire asynchrone en miroir"]
+* link:create-synchronous-mirrored-pair-um.html["Création d'une paire symétrique synchrone"]
+

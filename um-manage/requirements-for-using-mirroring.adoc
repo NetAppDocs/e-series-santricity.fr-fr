@@ -1,0 +1,116 @@
+---
+permalink: um-manage/requirements-for-using-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, requirements, using, mirroring 
+summary: 'Si vous prévoyez de configurer la mise en miroir, gardez les exigences suivantes à l"esprit.' 
+---
+= Conditions requises pour l'utilisation de la mise en miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous prévoyez de configurer la mise en miroir, gardez les exigences suivantes à l'esprit.
+
+
+
+== Unified Manager
+
+* Le service Web Services Proxy doit être en cours d'exécution.
+* Unified Manager doit s'exécuter sur votre hôte local via une connexion HTTPS.
+* Unified Manager doit afficher des certificats SSL valides pour la matrice de stockage. Vous pouvez accepter un certificat auto-signé ou installer votre propre certificat de sécurité à l'aide d'Unified Manager et accéder au menu :Certificate[Certificate Management].
+
+
+
+
+== Les baies de stockage
+
+[NOTE]
+====
+La mise en miroir n'est pas disponible sur la baie de stockage EF600 ou EF300.
+
+====
+* Vous devez disposer de deux baies de stockage.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Les deux baies de stockage doivent être découvertes dans Unified Manager.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* La mise en miroir asynchrone est prise en charge sur les contrôleurs avec des ports hôte Fibre Channel (FC) ou iSCSI, tandis que la mise en miroir synchrone est uniquement prise en charge sur les contrôleurs avec des ports hôtes FC.
+
+
+
+
+== Les besoins en connectivité
+
+La mise en miroir via une interface FC (asynchrone ou synchrone) nécessite les éléments suivants :
+
+* Chaque contrôleur de la baie de stockage dédie son port hôte FC le plus numéroté aux opérations de mise en miroir.
+* Si le contrôleur possède à la fois des ports FC de base et des ports FC carte d'interface hôte (HIC), le port le plus numéroté est sur une HIC. Tout hôte connecté au port dédié est déconnecté et aucune demande de connexion à l'hôte n'est acceptée. Les demandes d'E/S sur ce port sont acceptées uniquement à partir des contrôleurs qui participent aux opérations de mise en miroir.
+* Les ports dédiés à la mise en miroir doivent être connectés à un environnement FC Fabric qui prend en charge le service d'annuaire et les interfaces de service de noms. En particulier, les protocoles FC-AL et point à point ne sont pas pris en charge en tant qu'options de connectivité entre les contrôleurs participant aux relations en miroir.
+
+
+La mise en miroir via une interface iSCSI (asynchrone uniquement) nécessite les éléments suivants :
+
+* Contrairement à FC, l'iSCSI ne nécessite pas de port dédié. Lorsqu'une mise en miroir asynchrone est utilisée dans les environnements iSCSI, il n'est pas nécessaire de dédier les ports iSCSI frontaux de la baie de stockage à une utilisation avec la mise en miroir asynchrone. Ces ports sont partagés à la fois pour le trafic en miroir asynchrone et les connexions d'E/S hôte à baie.
+* Le contrôleur maintient une liste de systèmes de stockage distants avec lesquels l'initiateur iSCSI tente d'établir une session. Le premier port qui établit avec succès une connexion iSCSI est utilisé pour toutes les communications ultérieures avec cette matrice de stockage distante. Si la communication échoue, une nouvelle session est tentée en utilisant tous les ports disponibles.
+* Les ports iSCSI sont configurés au niveau de la baie, port par port. La communication InterController pour la messagerie de configuration et le transfert de données utilise les paramètres globaux, notamment les paramètres suivants :
++
+** VLAN : les systèmes locaux et distants doivent avoir le même paramètre VLAN pour communiquer
+** Port d'écoute iSCSI
+** Trames Jumbo
+** Priorité Ethernet
+
+
+
+
+[NOTE]
+====
+La communication iSCSI entre contrôleurs doit utiliser un port de connexion hôte et non le port Ethernet de gestion.
+
+====
+
+
+== Candidats aux volumes en miroir
+
+* Le niveau RAID, les paramètres de mise en cache et la taille des segments peuvent être différents sur les volumes primaire et secondaire d'une paire en miroir.
+* Le volume secondaire doit être au moins aussi grand que le volume primaire.
+* Un volume ne peut participer qu'à une seule relation miroir.
+* Dans le cas d'une paire mise en miroir synchrone, les volumes primaire et secondaire doivent être des volumes standard. Elles ne peuvent pas être de volumes fins ou de snapshot.
+* Pour la mise en miroir synchrone, le nombre de volumes pris en charge sur une baie de stockage donnée est limité. Assurez-vous que le nombre de volumes configurés sur votre matrice de stockage est inférieur à la limite prise en charge. Lorsque la mise en miroir synchrone est active, les deux volumes de capacité réservée qui sont créés sont pris en compte par rapport à la limite du volume.
+* Pour la mise en miroir asynchrone, le volume principal et le volume secondaire doivent disposer des mêmes fonctions de sécurité de lecteur.
++
+** Si le volume principal prend en charge la norme FIPS, le volume secondaire doit être compatible FIPS.
+** Si le volume primaire est compatible FDE, le volume secondaire doit être compatible FDE.
+** Si le volume principal n'utilise pas la sécurité du lecteur, le volume secondaire ne doit pas utiliser la sécurité du lecteur.
+
+
+
+
+
+
+== Capacité réservée
+
+Mise en miroir asynchrone :
+
+* Un volume de capacité réservée est nécessaire pour un volume primaire et pour un volume secondaire d'une paire en miroir afin d'obtenir les informations d'écriture de journalisation pour une restauration après la réinitialisation du contrôleur et toute autre interruption temporaire.
+* Comme le volume primaire et le volume secondaire d'une paire en miroir nécessitent une capacité réservée supplémentaire, vous devez garantir que la capacité disponible sur les deux baies de stockage de la relation en miroir est suffisante.
+
+
+Mise en miroir synchrone :
+
+* Une capacité réservée est requise pour un volume primaire et un volume secondaire pour les informations de journalisation en écriture afin de restaurer les données à partir de la réinitialisation du contrôleur et d'autres interruptions temporaires.
+* Les volumes de capacité réservée sont créés automatiquement lorsque la mise en miroir synchrone est activée. Comme le volume primaire et le volume secondaire d'une paire en miroir nécessitent une capacité réservée, vous devez disposer d'une capacité disponible suffisante sur les deux baies de stockage participant à la relation de miroir synchrone.
+
+
+
+
+== Fonction de sécurité du lecteur
+
+* Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent disposer de paramètres de sécurité compatibles. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.
+* Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent utiliser le même type de lecteur. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.
+* Si vous utilisez Data assurance (DA), le volume primaire et le volume secondaire doivent avoir les mêmes paramètres DA.
+

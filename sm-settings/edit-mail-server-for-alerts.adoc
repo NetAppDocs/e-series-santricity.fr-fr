@@ -1,0 +1,45 @@
+---
+permalink: sm-settings/edit-mail-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
+summary: 'Vous pouvez modifier l"adresse du serveur de messagerie et l"adresse de l"expéditeur utilisée pour les alertes par e-mail.' 
+---
+= Modifiez le serveur de messagerie pour les alertes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier l'adresse du serveur de messagerie et l'adresse de l'expéditeur utilisée pour les alertes par e-mail.
+
+L'adresse du serveur de messagerie que vous modifiez doit être disponible. L'adresse peut être une adresse IPv4 ou IPv6 ou un nom de domaine complet.
+
+[NOTE]
+====
+Pour utiliser un nom de domaine complet, vous devez configurer un serveur DNS sur les deux contrôleurs. Vous pouvez configurer un serveur DNS à partir de la page matériel.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *E-mail*.
+. Sélectionnez *configurer le serveur de messagerie*.
++
+La boîte de dialogue configurer le serveur de messagerie s'ouvre.
+
+. Modifiez l'adresse du serveur de messagerie, les informations d'expéditeur et les informations de contact.
++
+** *Adresse du serveur de messagerie* -- modifiez le nom de domaine complet, l'adresse IPv4 ou l'adresse IPv6 du serveur de messagerie.
++
+[NOTE]
+====
+Pour utiliser un nom de domaine complet, vous devez configurer un serveur DNS sur les deux contrôleurs. Vous pouvez configurer un serveur DNS à partir de la page matériel.
+
+====
+** *Adresse de l'expéditeur de l'e-mail* -- modifiez l'adresse e-mail à utiliser comme expéditeur de l'e-mail. Cette adresse apparaît dans le champ « de » du message électronique.
+** *Inclure les informations de contact dans l'e-mail* -- pour modifier les coordonnées de l'expéditeur, sélectionnez cette option, puis modifiez le nom et le numéro de téléphone.
+
+
+. Cliquez sur *Enregistrer*.
+

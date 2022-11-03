@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/assign-hot-spares-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, assign hot spares 
+summary: 'Vous pouvez attribuer un disque de secours en tant que disque de secours pour une protection supplémentaire des données au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Si un disque tombe en panne dans l"un de ces groupes de volumes, le contrôleur reconstruit les données du disque défectueux vers le disque de secours.' 
+---
+= Affecter des disques de secours
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez attribuer un disque de secours en tant que disque de secours pour une protection supplémentaire des données au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Si un disque tombe en panne dans l'un de ces groupes de volumes, le contrôleur reconstruit les données du disque défectueux vers le disque de secours.
+
+.Avant de commencer
+* Vous devez créer des groupes de volumes RAID 1, RAID 5 ou RAID 6. (Les disques de secours ne peuvent pas être utilisés pour les pools. À la place, un pool utilise la capacité disponible au sein de chaque disque pour assurer la protection des données.)
+* Un lecteur qui répond aux critères suivants doit être disponible :
++
+** Non attribué, avec un état optimal.
+** Même type de support que les disques du groupe de volumes (disques SSD, par exemple).
+** Même type d'interface que les disques du groupe de volumes (par exemple, SAS).
+** Capacité égale ou supérieure à la capacité utilisée des disques du groupe de volumes.
+
+
+
+
+Cette tâche explique comment affecter manuellement un disque de secours à partir de la page matériel. La couverture recommandée est de deux disques de secours par jeu de disques.
+
+[CAUTION]
+====
+Des disques de secours peuvent également être affectés à partir de l'assistant de configuration initiale. Vous pouvez déterminer si des disques de secours sont déjà affectés en recherchant des baies de disques affichées en rose sur la page matériel.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Sélectionnez un lecteur non affecté (en gris) que vous souhaitez utiliser comme disque de secours.
++
+Le menu contextuel du lecteur s'ouvre.
+
+. Sélectionnez *affecter disque de secours*.
++
+Si le lecteur est sécurisé, la boîte de dialogue *Secure Erase Drive* s'ouvre. Pour utiliser un disque sécurisé comme disque de secours, vous devez d'abord effectuer une opération d'effacement sécurisé pour supprimer toutes ses données et réinitialiser ses attributs de sécurité.
+
++
+[CAUTION]
+====
+*Perte possible de données* -- Assurez-vous que vous avez sélectionné le bon lecteur. Une fois l'opération Secure Erase terminée, vous ne pouvez pas restaurer les données.
+
+====
++
+Si le lecteur est *non* sécurisé activé, la boîte de dialogue confirmer l'attribution d'un disque de secours s'ouvre.
+
+. Vérifiez le texte dans la boîte de dialogue, puis confirmez l'opération.
++
+Le lecteur s'affiche en rose sur la page matériel, ce qui indique qu'il s'agit désormais d'un disque de secours.
+
+
+
+
+
+== Résultats
+
+En cas de panne d'un disque au sein d'un groupe de volumes RAID 1, RAID 5 ou RAID 6, le contrôleur utilise automatiquement les données de redondance pour reconstruire les données du disque défaillant vers le disque de secours.

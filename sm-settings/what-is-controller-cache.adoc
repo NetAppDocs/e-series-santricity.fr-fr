@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/what-is-controller-cache.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, cache, 
+summary: 'Le cache du contrôleur est un espace de mémoire physique qui rationalise deux types d"opérations d"E/S (entrée/sortie) : entre les contrôleurs et les hôtes, et entre les contrôleurs et les disques.' 
+---
+= Qu'est-ce que le cache du contrôleur ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le cache du contrôleur est un espace de mémoire physique qui rationalise deux types d'opérations d'E/S (entrée/sortie) : entre les contrôleurs et les hôtes, et entre les contrôleurs et les disques.
+
+Pour les transferts de données en lecture et en écriture, les hôtes et les contrôleurs communiquent via des connexions haut débit. Cependant, les communications entre l'arrière-plan du contrôleur et les disques sont plus lentes, car les disques sont des périphériques relativement lents.
+
+Lorsque le cache du contrôleur reçoit des données, le contrôleur reconnaît aux applications hôtes qu'il contient désormais les données. De cette façon, les applications hôte n'ont pas besoin d'attendre que les E/S soient écrites sur le disque. Au contraire, les applications peuvent continuer les opérations. Les données mises en cache sont également facilement accessibles par les applications serveur, ce qui évite d'avoir recours à des lectures de disque supplémentaires pour accéder aux données.
+
+Le cache du contrôleur affecte les performances globales de la baie de stockage de plusieurs façons :
+
+* Le cache agit comme un tampon, de sorte que les transferts de données des hôtes et des disques n'ont pas besoin d'être synchronisés.
+* Les données d'une opération de lecture ou d'écriture à partir de l'hôte peuvent être dans le cache à partir d'une opération précédente, ce qui évite d'avoir à accéder au disque.
+* Si la mise en cache d'écriture est utilisée, l'hôte peut envoyer des commandes d'écriture suivantes avant que les données d'une opération d'écriture précédente ne soient écrites sur le disque.
+* Si la préextraction du cache est activée, l'accès en lecture séquentielle est optimisé. La fonction de préextraction du cache permet une opération de lecture plus susceptible de retrouver ses données dans le cache, au lieu de lire les données à partir du disque.
+
+
+[CAUTION]
+====
+*Perte de données possible* -- si vous activez l'option *mise en cache écriture sans piles* et ne disposez pas d'une alimentation universelle pour la protection, vous risquez de perdre des données. De plus, vous risquez de perdre des données si vous n'avez pas de batterie de contrôleur et que vous activez l'option *Write cache sans piles*.
+
+====

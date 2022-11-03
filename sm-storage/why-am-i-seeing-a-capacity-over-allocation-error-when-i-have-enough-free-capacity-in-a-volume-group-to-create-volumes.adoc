@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, over-allocation, error, 
+summary: 'Le groupe de volumes sélectionné peut avoir une ou plusieurs zones de capacité libre. Une zone de capacité libre est la capacité disponible pouvant résulter de la suppression d"un volume ou de l"absence de toute capacité disponible lors de la création du volume.' 
+---
+= Pourquoi une erreur de sur-allocation de capacité se produit-elle lorsque la capacité disponible d'un groupe de volumes est suffisante pour créer des volumes ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le groupe de volumes sélectionné peut avoir une ou plusieurs zones de capacité libre. Une zone de capacité libre est la capacité disponible pouvant résulter de la suppression d'un volume ou de l'absence de toute capacité disponible lors de la création du volume.
+
+Lorsque vous créez un volume dans un groupe de volumes disposant d'une ou plusieurs zones de capacité libre, la capacité du volume est limitée à la plus grande zone de capacité libre de ce groupe de volumes. Par exemple, si un groupe de volumes dispose d'une capacité libre totale de 15 Gio et si la zone la plus large de capacité libre est de 10 Gio, le plus grand volume possible est de 10 Gio.
+
+Si un groupe de volumes possède des zones de capacité libre, le graphique de groupe de volumes contient un lien indiquant le nombre de zones de capacité libre existantes. Sélectionnez le lien pour afficher une fenêtre contextuelle indiquant la capacité de chaque zone.
+
+En consolidant la capacité disponible, vous pouvez créer des volumes supplémentaires à partir de la capacité maximale disponible dans un groupe de volumes. Vous pouvez consolider la capacité disponible existante sur un groupe de volumes sélectionné à l'aide de l'une des méthodes suivantes :
+
+* Lorsqu'au moins une zone de capacité libre est détectée pour un groupe de volumes, la recommandation « consolider la capacité libre » s'affiche sur la page d'accueil de la zone notification. Cliquez sur le lien *consolider la capacité libre* pour lancer la boîte de dialogue.
+* Vous pouvez également sélectionner menu:pools et groupes de volumes[tâches rares > consolider la capacité libre du groupe de volumes] pour lancer la boîte de dialogue.
+
+
+Si vous souhaitez utiliser une zone de capacité libre spécifique plutôt que la plus grande zone de capacité libre, utilisez l'interface de ligne de commande (CLI).

@@ -1,0 +1,60 @@
+---
+permalink: sm-mirroring/increase-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, increase, reserved, capacity 
+summary: 'Vous pouvez augmenter la capacité réservée, c"est-à-dire la capacité physiquement allouée à toute opération de service de copie sur un objet de stockage.' 
+---
+= Augmenter la capacité réservée
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez augmenter la capacité réservée, c'est-à-dire la capacité physiquement allouée à toute opération de service de copie sur un objet de stockage.
+
+Pour les opérations Snapshot, il s'agit généralement de 40 % du volume de base ; pour les opérations de mise en miroir asynchrone, il s'agit généralement de 20 % du volume de base. En général, vous augmentez la capacité réservée lorsque vous recevez un avertissement indiquant que la capacité réservée de l'objet de stockage est saturée.
+
+.Avant de commencer
+* Le volume du pool ou du groupe de volumes doit avoir un état optimal et ne doit pas être dans un état de modification.
+* La capacité disponible doit exister dans le pool ou le groupe de volumes que vous souhaitez utiliser pour augmenter la capacité.
++
+Si aucune capacité disponible n'est disponible dans un pool ou un groupe de volumes, vous pouvez ajouter de la capacité non affectée sous la forme de disques inutilisés dans un pool ou un groupe de volumes.
+
+
+
+La capacité réservée peut être augmentée uniquement par incréments de 8 Gio pour les objets de stockage suivants :
+
+* Groupe de snapshots
+* Volume Snapshot
+* Volume membre du groupe de cohérence
+* Volume de paire en miroir
+
+
+Utilisez un pourcentage élevé si vous pensez que le volume primaire subit de nombreuses modifications ou si la durée de vie d'une opération de copie particulière sera très longue.
+
+[NOTE]
+====
+Vous ne pouvez pas augmenter la capacité réservée pour un volume Snapshot en lecture seule. Seuls les snapshots qui sont en lecture/écriture nécessitent une capacité réservée.
+
+====
+.Étapes
+. Menu Sélectionner:Storage[pools & Volume Groups].
+. Sélectionnez l'onglet *capacité réservée*.
+. Sélectionnez l'objet de stockage pour lequel vous souhaitez augmenter la capacité réservée, puis cliquez sur *augmenter la capacité*.
++
+La boîte de dialogue augmenter la capacité réservée s'affiche.
+
+. Utilisez la boîte de disque pour régler le pourcentage de capacité.
++
+Si la capacité disponible n'existe pas dans le pool ou le groupe de volumes qui contient l'objet de stockage sélectionné et que la baie de stockage dispose de la capacité non affectée, vous pouvez créer un nouveau pool ou groupe de volumes. Vous pouvez ensuite réessayer cette opération en utilisant la nouvelle capacité disponible sur ce pool ou ce groupe de volumes.
+
+. Cliquez sur *augmenter*.
+
+
+System Manager effectue les actions suivantes :
+
+* Augmente la capacité réservée pour l'objet de stockage.
+* Affiche la nouvelle capacité réservée ajoutée.
+

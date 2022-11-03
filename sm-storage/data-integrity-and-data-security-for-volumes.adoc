@@ -1,0 +1,59 @@
+---
+permalink: sm-storage/data-integrity-and-data-security-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
+summary: 'Vous pouvez activer les volumes pour utiliser la fonction Data assurance (DA) et la fonction Drive Security. Ces fonctionnalités sont présentées au niveau du pool et du groupe de volumes.' 
+---
+= Intégrité et sécurité des données des volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer les volumes pour utiliser la fonction Data assurance (DA) et la fonction Drive Security. Ces fonctionnalités sont présentées au niveau du pool et du groupe de volumes.
+
+
+
+== Data assurance
+
+Data assurance (DA) implémente la norme T10PI, qui améliore l'intégrité des données en vérifiant et en corrigeant les erreurs pouvant se produire lors du transfert des données sur le chemin d'E/S. L'utilisation classique de la fonctionnalité Data assurance permet de vérifier la partie du chemin d'E/S entre les contrôleurs et les disques. Les fonctionnalités DE DA sont présentées au niveau du pool et du groupe de volumes.
+
+Lorsque cette fonctionnalité est activée, la matrice de stockage ajoute des codes de vérification des erreurs (également appelés vérifications cycliques de redondance ou CRCS) à chaque bloc de données du volume. Après le déplacement d'un bloc de données, la matrice de stockage utilise ces codes CRC pour déterminer si des erreurs se sont produites au cours de la transmission. Les données potentiellement corrompues ne sont ni écrites sur le disque ni renvoyées à l'hôte. Si vous souhaitez utiliser la fonction DA, sélectionnez un pool ou un groupe de volumes qui est compatible DA lorsque vous créez un nouveau volume (recherchez « Oui » en regard de « DA » dans la table des groupes de candidats de pools et de volumes).
+
+
+
+== Sécurité du lecteur
+
+La sécurité du lecteur est une fonction qui empêche tout accès non autorisé aux données sur les disques sécurisés lorsqu'ils sont retirés de la matrice de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou des disques certifiés conformes aux normes fédérales de traitement des informations 140-2 de niveau 2 (disques FIPS).
+
+
+
+=== Fonctionnement de la sécurité du lecteur au niveau du lecteur
+
+Un disque sécurisé, FDE ou FIPS, chiffre les données lors des écritures et déchiffre les données pendant les lectures. Ce cryptage et ce décryptage n'ont aucune incidence sur les performances ou le flux de travail de l'utilisateur. Chaque disque dispose de sa propre clé de chiffrement unique, qui ne peut jamais être transférée depuis le disque.
+
+
+
+=== Fonctionnement de la sécurité du lecteur au niveau du volume
+
+Lorsque vous créez un pool ou un groupe de volumes à partir de disques sécurisés, vous pouvez également activer la sécurité des disques pour ces pools ou groupes de volumes. L'option Drive Security (sécurité du lecteur) assure la sécurité des lecteurs et des groupes de volumes et pools associés. Un pool ou un groupe de volumes peut contenir à la fois des disques sécurisés et non sécurisés, mais tous les disques doivent être sécurisés pour utiliser leurs fonctionnalités de chiffrement.
+
+
+
+=== Comment mettre en œuvre la sécurité du lecteur
+
+Pour mettre en œuvre la sécurité des lecteurs, procédez comme suit.
+
+. Équipez votre baie de stockage de disques sécurisés, soit avec des disques FDE, soit avec des disques FIPS. (Pour les volumes nécessitant une prise en charge de FIPS, utilisez uniquement des disques FIPS. La combinaison de disques FIPS et FDE dans un groupe ou un pool de volumes entraîne le traitement de tous les disques comme disques FDE. Par ailleurs, un disque FDE ne peut pas être ajouté à un groupe de volumes ou un pool FIPS ni être utilisé comme unité de rechange.)
+. Créez une clé de sécurité, qui est une chaîne de caractères partagée par le contrôleur et les lecteurs pour l'accès en lecture/écriture. Vous pouvez créer une clé interne à partir de la mémoire persistante du contrôleur ou une clé externe à partir d'un serveur de gestion des clés. Pour la gestion externe des clés, l'authentification doit être établie avec le serveur de gestion des clés.
+. Activer la sécurité des disques pour les pools et les groupes de volumes :
++
+** Créez un pool ou un groupe de volumes (recherchez *Oui* dans la colonne *Secure-able* de la table candidats).
+** Sélectionnez un pool ou un groupe de volumes lorsque vous créez un nouveau volume (recherchez *Yes* en regard de *Secure-proparable* dans la table des candidats de groupe de volumes et de pools).
++
+Avec la fonction sécurité des lecteurs, vous créez une clé de sécurité partagée entre les lecteurs et les contrôleurs sécurisés d'une matrice de stockage. Lorsque l'alimentation des lecteurs est coupée et allumée, les lecteurs sécurisés se déverrouillent en mode sécurité jusqu'à ce que le contrôleur applique la clé de sécurité.
+
+
+
+

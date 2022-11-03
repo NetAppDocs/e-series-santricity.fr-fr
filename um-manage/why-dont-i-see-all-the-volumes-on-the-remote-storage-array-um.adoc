@@ -1,0 +1,35 @@
+---
+permalink: um-manage/why-dont-i-see-all-the-volumes-on-the-remote-storage-array-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, volumes missing 
+summary: Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir. 
+---
+= Pourquoi ne vois-je pas tous les volumes de la baie de stockage distante ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes ne peuvent être admissibles pour aucune des raisons suivantes :
+
+* Le volume n'est pas un volume standard, tel qu'un volume snapshot.
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Pour la mise en miroir asynchrone, les attributs de volume fin entre le volume primaire et le volume secondaire ne correspondent pas.
+* Si vous utilisez Data assurance (DA), le volume primaire et le volume secondaire doivent avoir les mêmes paramètres DA.
++
+** Si le volume principal est DA activé, le volume secondaire doit être DA activé.
+** Si le volume principal n'est pas activé par DA, le volume secondaire ne doit pas être activé par DA.
+
+
+* Pour la mise en miroir asynchrone, le volume principal et le volume secondaire doivent disposer des mêmes fonctions de sécurité de lecteur.
++
+** Si le volume principal prend en charge la norme FIPS, le volume secondaire doit être compatible FIPS.
+** Si le volume primaire est compatible FDE, le volume secondaire doit être compatible FDE.
+** Si le volume principal n'utilise pas la sécurité du lecteur, le volume secondaire ne doit pas utiliser la sécurité du lecteur.
+
+
+

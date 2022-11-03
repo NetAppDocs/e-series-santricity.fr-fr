@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir. 
+---
+= Mise en miroir synchrone - Pourquoi ne vois-je pas tous les volumes de la baie de stockage distante ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes peuvent ne pas être éligibles pour les raisons suivantes :
+
+* Le volume n'est pas un volume standard, tel qu'un volume instantané ou un volume fin.
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Si vous utilisez Data assurance (DA), le volume primaire et le volume secondaire doivent avoir les mêmes paramètres DA.
++
+** Si le volume principal est DA activé, le volume secondaire doit être DA activé.
+** Si le volume principal n'est pas activé par DA, le volume secondaire ne doit pas être activé par DA.
+
+
+

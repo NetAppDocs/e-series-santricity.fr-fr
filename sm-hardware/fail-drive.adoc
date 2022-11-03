@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/fail-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, fail, drive, 
+summary: Si vous y êtes invité, vous pouvez faire échouer manuellement un disque. 
+---
+= Disque défaillant
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous y êtes invité, vous pouvez faire échouer manuellement un disque.
+
+System Manager surveille les disques de la matrice de stockage. Lorsqu'il détecte qu'un disque génère beaucoup d'erreurs, le gourou de la restauration vous informe d'une panne de disque imminente. Si cela se produit et que vous disposez d'un disque de remplacement, vous devrez peut-être faire échouer le disque afin de prendre une action préventive. Si vous ne disposez pas d'un disque de remplacement, vous pouvez attendre que le disque tombe en panne.
+
+[CAUTION]
+====
+*Perte possible d'accès aux données* -- cette opération peut entraîner la perte de données ou la perte de redondance des données. Effectuez cette opération uniquement lorsque vous y êtes invité par le support technique ou le gourou de la restauration
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Cliquez sur le lecteur que vous souhaitez faire échouer.
++
+Le menu contextuel du lecteur s'affiche.
+
+. Sélectionnez *Fail*.
+. Cochez la case *copie du contenu du lecteur avant l'échec*.
++
+L'option de copie s'affiche uniquement pour les disques affectés et pour les groupes de volumes non RAID 0.
+
++
+Avant de tomber en panne, assurez-vous de copier le contenu du disque. En fonction de votre configuration, vous risquez de perdre toute redondance de données ou de données sur le pool ou le groupe de volumes associé si vous ne copiez pas le contenu du disque en premier.
+
++
+Cette option permet une restauration plus rapide que la reconstruction et réduit le risque de panne d'un volume si un autre disque tombe en panne pendant l'opération de copie.
+
+. Confirmez que vous souhaitez faire tomber le disque en panne.
++
+Une fois le lecteur défaillant, attendez au moins 30 secondes avant de le retirer.
+
+

@@ -1,0 +1,23 @@
+---
+permalink: um-manage/launch-system-manager.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, individual, storage, array 
+summary: 'Vous pouvez utiliser l"option lancer pour ouvrir SANtricity System Manager basé sur navigateur pour une ou plusieurs baies de stockage lorsque vous souhaitez effectuer des opérations de gestion.' 
+---
+= Gérer une baie de stockage individuelle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'option lancer pour ouvrir System Manager basé sur navigateur pour une ou plusieurs baies de stockage lorsque vous souhaitez effectuer des opérations de gestion.
+
+.Étapes
+. Dans la page gérer, sélectionnez une ou plusieurs matrices de stockage à gérer.
+. Cliquez sur *lancer*.
++
+Le système ouvre une nouvelle fenêtre et affiche la page de connexion de System Manager.
+
+. Entrez votre nom d'utilisateur et votre mot de passe, puis cliquez sur *connexion*.
+

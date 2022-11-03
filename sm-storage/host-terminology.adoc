@@ -1,0 +1,95 @@
+---
+permalink: sm-storage/host-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host, terms 
+summary: 'Découvrez comment les conditions générales d"hôtes s"appliquent à votre baie de stockage.' 
+---
+= Terminologie hôte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les conditions générales d'hôtes s'appliquent à votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Composant | Définition 
+
+
+ a| 
+Hôte
+ a| 
+Un hôte est un serveur qui envoie des E/S à un volume d'une baie de stockage.
+
+
+
+ a| 
+Nom d'hôte
+ a| 
+Le nom d'hôte doit correspondre au nom système de l'hôte.
+
+
+
+ a| 
+Cluster d'hôtes
+ a| 
+Un cluster hôte est un groupe d'hôtes. Vous créez un cluster hôte pour vous permettre d'attribuer facilement les mêmes volumes à plusieurs hôtes.
+
+
+
+ a| 
+Protocole d'interface hôte
+ a| 
+Un protocole d'interface hôte est la connexion (par exemple, Fibre Channel, iSCSI, etc.) entre les contrôleurs et les hôtes.
+
+
+
+ a| 
+HBA ou carte d'interface réseau (NIC)
+ a| 
+Une carte HBA (Host bus adapter) est une carte qui réside dans un hôte et qui contient un ou plusieurs ports hôtes.
+
+
+
+ a| 
+Port hôte
+ a| 
+Un port hôte est un port sur un adaptateur de bus hôte (HBA, host bus adapter) qui fournit la connexion physique à un contrôleur et est utilisé pour les opérations d'E/S.
+
+
+
+ a| 
+Identificateur de port hôte
+ a| 
+Un identifiant de port hôte est un nom mondial unique associé à chaque port hôte d'un adaptateur de bus hôte (HBA, host bus adapter).
+
+* Les identificateurs de port hôte iSCSI (Internet Small Computer System interface) doivent comporter entre 1 et 233 caractères. Les identificateurs de port d'hôte iSCSI s'affichent au format IQN standard (par exemple, `iqn.xxx.com.xxx:8b3ad`).
+* Les identificateurs de port hôte non iSCSI, tels que Fibre Channel et Serial Attached SCSI (SAS), s'affichent sous la forme de deux-points séparés au bout de deux caractères (par exemple, `xx:yy:zz`). Les identifiants des ports hôtes Fibre Channel doivent comporter 16 caractères.
+
+
+
+
+ a| 
+Type de système d'exploitation hôte
+ a| 
+Le type de système d'exploitation hôte est un paramètre de configuration qui définit la façon dont les contrôleurs de la baie de stockage réagissent aux E/S en fonction du système d'exploitation (ou de la variante) de l'hôte. Il s'agit également parfois de _host type_ pour short.
+
+
+
+ a| 
+Port hôte du contrôleur
+ a| 
+Un port hôte de contrôleur est un port du contrôleur qui fournit la connexion physique à un hôte et est utilisé pour les opérations d'E/S.
+
+
+
+ a| 
+LUN
+ a| 
+Un numéro d'unité logique (LUN) est le numéro attribué à l'espace d'adresse qu'un hôte utilise pour accéder à un volume. Le volume est présenté à l'hôte comme capacité sous la forme d'une LUN.
+
+Chaque hôte dispose de son propre espace d'adresse de LUN. Par conséquent, la même LUN peut être utilisée par différents hôtes pour accéder à différents volumes.
+
+|===

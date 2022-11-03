@@ -1,0 +1,44 @@
+---
+permalink: sm-interface/set-default-units-for-capacity-values.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity values 
+summary: 'System Manager peut afficher les valeurs de capacité soit en gibioctets (Gio), soit en Tio.' 
+---
+= Définissez les unités par défaut pour les valeurs de capacité
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager peut afficher les valeurs de capacité soit en gibioctets (Gio), soit en Tio.
+
+Les préférences sont stockées dans le stockage local du navigateur pour que tous les utilisateurs puissent disposer de leurs propres paramètres.
+
+.Étapes
+. Sélectionnez menu:Préférences[définir les préférences].
+. Cliquez sur le bouton radio de *Gibioctet* ou *Tebbik* et confirmez que vous souhaitez effectuer l'opération.
++
+Voir le tableau suivant pour les abréviations et les valeurs.
+
++
+[cols="1a,1a"]
+|===
+| Abréviation | Valeur 
+
+
+ a| 
+Gio
+ a| 
+1,024^3^ octets
+
+
+
+ a| 
+Tio
+ a| 
+1,024^4^ octets
+
+|===
+

@@ -1,0 +1,103 @@
+---
+permalink: sm-storage/performance-graphs-guidelines.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, 
+summary: 'La page performances fournit des graphiques et des tableaux de données qui vous permettent d"évaluer les performances de la baie de stockage dans plusieurs domaines clés.' 
+---
+= Graphiques de performance et instructions
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page performances fournit des graphiques et des tableaux de données qui vous permettent d'évaluer les performances de la baie de stockage dans plusieurs domaines clés.
+
+Les fonctions de performances vous permettent d'effectuer les tâches suivantes :
+
+* Affichez les données de performances en temps quasi réel pour déterminer si une baie de stockage est confronté à des problèmes.
+* Exportez les données de performances pour établir une vue d'historique d'une baie de stockage et déterminer quand un problème a démarré ou ce qui a causé un problème.
+* Sélectionnez les objets, les mesures de performance et la période que vous souhaitez afficher.
+* Comparez les mesures.
+
+
+Vous pouvez afficher les données de performances sous trois formats :
+
+* *Graphique en temps réel* -- Plots données de performance sur un graphique en temps quasi réel.
+* *Tabulaire en temps quasi réel* -- répertorie les données de performance dans une table en temps quasi réel.
+* *Fichier CSV exporté* -- vous permet d'enregistrer des données de performances tabulaires dans un fichier de valeurs séparées par des virgules afin de les afficher et de les analyser plus en détail.
+
+
+
+
+== Caractéristiques des formats de données de performances
+
+[cols="1a,1a,1a,1a,1a"]
+|===
+| *Type de surveillance des performances* | *Intervalle d'échantillonnage* | *Durée affichée* | *Nombre maximum d'objets affichés* | *Capacité à enregistrer des données* 
+
+
+ a| 
+Graphique en temps réel, en direct
+
+Graphique, historique en temps réel
+ a| 
+10 s (temps réel)
+
+5 min (historique)
+
+Les points de données affichés dépendent de l'intervalle de temps sélectionné
+ a| 
+La période par défaut est de 1 heure.
+
+Choix :
+
+* 5 minutes
+* 1 heure
+* 8 heures
+* 1 jour
+* 7 jours
+* 30 jours
+
+ a| 
+5
+ a| 
+Non
+
+
+
+ a| 
+Tableau quasiment en temps réel (vue de table)
+ a| 
+10 s -1 heure
+ a| 
+Valeur la plus récente
+ a| 
+Illimitée
+ a| 
+Oui.
+
+
+
+ a| 
+Fichier CSV (valeurs séparées par des virgules)
+ a| 
+Dépend de l'intervalle de temps sélectionné
+ a| 
+Dépend de l'intervalle de temps sélectionné
+ a| 
+Illimitée
+ a| 
+Oui.
+
+|===
+
+
+== Instructions d'affichage des données de performances
+
+* La collecte des données de performance est constamment disponible. Il n'y a pas d'option pour la désactiver.
+* Chaque fois que l'intervalle d'échantillonnage s'écoule, la matrice de stockage est interrogée et les données sont mises à jour.
+* Pour les données graphiques, la durée de 5 minutes prend en charge la mise à jour de 10 secondes en moyenne sur 5 minutes. Toutes les autres périodes sont mises à jour toutes les 5 minutes, la moyenne est calculée sur la période sélectionnée.
+* Les données de performance des vues graphiques sont mises à jour en temps réel. Les données de performances dans la vue table sont mises à jour en temps quasi réel.
+* Si un objet surveillé change pendant la collecte des données, il se peut que l'objet ne dispose pas d'un ensemble complet de points de données couvrant la période sélectionnée. Les jeux de volumes peuvent par exemple être modifiés lorsque des volumes sont créés, supprimés, affectés ou non attribués. Vous pouvez également ajouter, supprimer ou échouer des disques.
+

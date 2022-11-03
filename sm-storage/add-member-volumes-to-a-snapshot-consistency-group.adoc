@@ -1,0 +1,60 @@
+---
+permalink: sm-storage/add-member-volumes-to-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, member, volume, snapshot consistency group 
+summary: Vous pouvez ajouter un nouveau volume membre à un groupe de cohérence de snapshot existant. Lorsque vous ajoutez un nouveau volume membre, vous devez également réserver de la capacité pour le volume membre. 
+---
+= Ajout d'un volume membre à un groupe de cohérence de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter un nouveau volume membre à un groupe de cohérence de snapshot existant. Lorsque vous ajoutez un nouveau volume membre, vous devez également réserver de la capacité pour le volume membre.
+
+.Avant de commencer
+* Le volume membre doit être optimal.
+* Le groupe de cohérence de snapshot doit avoir un nombre inférieur au nombre maximal de volumes autorisés (tel que défini par votre configuration).
+* Chaque volume de capacité réservée doit avoir les mêmes paramètres d'assurance de données (DA) et de sécurité que le volume membre associé.
+
+
+Vous pouvez ajouter des volumes standard ou des volumes fins au groupe de cohérence Snapshot. Le volume de base peut résider dans un pool ou un groupe de volumes.
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Sélectionnez l'onglet *groupes de cohérence Snapshot*.
++
+Le tableau apparaît et affiche tous les groupes de cohérence de snapshots associés à la matrice de stockage.
+
+. Sélectionnez le groupe de cohérence de snapshot à modifier, puis cliquez sur *Ajouter des membres*.
++
+La boîte de dialogue Ajouter des membres s'affiche.
+
+. Sélectionnez le ou les volumes membres que vous souhaitez ajouter, puis cliquez sur *Suivant*.
++
+L'étape réserver la capacité s'affiche. Le tableau Volume candidate affiche uniquement les candidats qui prennent en charge la capacité réservée spécifiée.
+
+. Utilisez la zone de disque pour allouer la capacité réservée au volume membre. Effectuez l'une des actions suivantes :
++
+** *Acceptez les paramètres par défaut.*
++
+Utilisez cette option recommandée pour attribuer la capacité réservée au volume membre avec les paramètres par défaut.
+
+** *Allouez vos propres paramètres de capacité réservée pour répondre à vos besoins en stockage de données.*
++
+Si vous modifiez le paramètre de capacité réservée par défaut, cliquez sur *Actualiser les candidats* pour actualiser la liste des candidats pour la capacité réservée que vous avez spécifiée.
+
++
+Allouez la capacité réservée en suivant les instructions suivantes.
+
++
+*** Le paramètre par défaut pour la capacité réservée correspond à 40 % de la capacité du volume de base et cette capacité est généralement suffisante.
+*** La capacité nécessaire varie en fonction de la fréquence et de la taille des écritures d'E/S sur les volumes, ainsi que de la quantité et de la durée de la collecte des images de snapshot.
+
+
+
+
+. Cliquez sur *Finish* pour ajouter les volumes membres.
+

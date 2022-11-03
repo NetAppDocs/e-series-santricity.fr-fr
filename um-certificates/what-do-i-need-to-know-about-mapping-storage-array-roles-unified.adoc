@@ -1,0 +1,33 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mapping, storage, array, roles 
+summary: Avant de mapper des groupes à des rôles, consultez les directives. 
+---
+= De quoi ai-je besoin savoir concernant le mappage aux rôles de la baie de stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de mapper des groupes à des rôles, consultez les directives.
+
+Les fonctionnalités RBAC (contrôle d'accès basé sur des rôles) incluent les rôles suivants :
+
+* *Storage admin* -- accès en lecture/écriture complet aux objets de stockage sur les baies, mais pas à la configuration de sécurité.
+* *Security admin* -- accès à la configuration de sécurité dans Access Management et Certificate Management.
+* *Support admin* -- accès à toutes les ressources matérielles sur les matrices de stockage, aux données de panne et aux événements MEL. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+* *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+[NOTE]
+====
+Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrateur.
+
+====
+Si vous utilisez un serveur LDAP (Lightweight Directory Access Protocol) et des services d'annuaire, assurez-vous que :
+
+* Un administrateur a défini des groupes d'utilisateurs dans le service d'annuaire.
+* Vous connaissez les noms de domaine de groupe des groupes d'utilisateurs LDAP.
+

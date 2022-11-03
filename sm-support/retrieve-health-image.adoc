@@ -1,0 +1,37 @@
+---
+permalink: sm-support/retrieve-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
+summary: 'Vous pouvez vérifier une image d"état de santé du contrôleur. Une image de santé est un vidage de données brutes de la mémoire processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.' 
+---
+= Récupère l'image d'état de santé
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez vérifier une image d'état de santé du contrôleur. Une image de santé est un « dump » de données brutes de la mémoire du processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.
+
+Le firmware génère automatiquement une image de l'état de santé lorsqu'il détecte certaines erreurs. Après la génération d'une image de santé, le contrôleur qui a connu le redémarrage de l'erreur et un événement est consigné dans le journal des événements.
+
+Si AutoSupport est activé, l'image d'état de santé est automatiquement envoyée au support technique. Si vous n'avez pas activé AutoSupport, vous devez contacter le support technique pour obtenir des instructions sur la récupération de l'image de santé et son envoi à des fins d'analyse.
+
+[NOTE]
+====
+Effectuez cette opération uniquement lorsque le support technique vous y invite.
+
+====
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Retrieve Health image*.
++
+Pour consulter la taille de l'image d'état de santé avant de télécharger le fichier, reportez-vous à la section Détails.
+
+. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `health-image.7z`.
+
+. Suivez les instructions fournies par le support technique pour leur envoyer le fichier.
+

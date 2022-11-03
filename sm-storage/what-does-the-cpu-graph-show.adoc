@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-cpu-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cpu, graph, show, capacity, statistics, controller 
+summary: 'Le graphique CPU affiche les statistiques de capacité de traitement pour chaque contrôleur (contrôleur A et contrôleur B). CPU est une abréviation pour unité centrale de traitement. Sur la page d"accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans l"onglet vue physique de la mosaïque performances, ce graphique affiche les statistiques de la matrice de stockage et des lecteurs.' 
+---
+= Que montre le graphique de l'UC ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le graphique CPU affiche les statistiques de capacité de traitement pour chaque contrôleur (contrôleur A et contrôleur B). CPU est une abréviation de _unité centrale de traitement_. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans l'onglet vue physique de la mosaïque performances, ce graphique affiche les statistiques de la matrice de stockage et des lecteurs.
+
+Le graphique de l'UC indique le pourcentage de capacité de traitement de l'UC utilisé par rapport aux opérations sur la baie. Même lorsqu'aucune E/S externe n'est en cours, le pourcentage d'utilisation du CPU peut être égal à zéro, car le système d'exploitation de stockage peut effectuer des opérations en arrière-plan et une surveillance. Placez le curseur sur un point du graphique pour afficher un pourcentage de capacité de traitement utilisée à ce moment précis.

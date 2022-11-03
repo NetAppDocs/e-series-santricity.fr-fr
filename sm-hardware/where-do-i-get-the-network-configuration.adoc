@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/where-do-i-get-the-network-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, network, configuration, internet, protocol, 
+summary: 'Vous pouvez obtenir l"adresse IP (Internet Protocol), le masque de sous-réseau (masque de sous-réseau) et les informations de passerelle de votre administrateur réseau.' 
+---
+= Où puis-je obtenir la configuration réseau ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez obtenir l'adresse IP (Internet Protocol), le masque de sous-réseau (masque de sous-réseau) et les informations de passerelle de votre administrateur réseau.
+
+Vous avez besoin de ces informations lorsque vous configurez des ports sur les contrôleurs.

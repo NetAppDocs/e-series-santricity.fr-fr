@@ -1,0 +1,105 @@
+---
+permalink: sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, differ, synchronous, mirroring, 
+summary: 'La fonction de mise en miroir asynchrone diffère de la fonction de mise en miroir synchrone de façon essentielle : elle capture l"état du volume source à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d"image.' 
+---
+= En quoi la mise en miroir asynchrone est-elle différente de la mise en miroir synchrone ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction de mise en miroir asynchrone diffère de la fonction de mise en miroir synchrone de façon essentielle : elle capture l'état du volume source à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image.
+
+Avec la mise en miroir synchrone, l'état du volume primaire n'est pas capturé à un certain moment, mais reflète plutôt toutes les modifications apportées au volume primaire au volume secondaire. Le volume secondaire est identique au volume primaire à chaque instant car, avec ce type de miroir, chaque écriture est effectuée sur le volume primaire, une écriture est effectuée sur le volume secondaire. L'hôte ne reçoit pas de confirmation de la réussite de l'écriture tant que le volume secondaire n'a pas été mis à jour avec les modifications apportées au volume principal.
+
+Avec la mise en miroir asynchrone, la baie de stockage distante n'est pas entièrement synchronisée avec la baie de stockage locale. Par conséquent, si l'application doit passer à la baie de stockage distante en raison d'une perte de la baie de stockage locale, certaines transactions peuvent être perdues.
+
+Comparaison entre les fonctions de mise en miroir :
+
+[cols="1a,1a"]
+|===
+| La mise en miroir asynchrone | La mise en miroir synchrone 
+
+
+ a| 
+*Méthode de réplication*
+
+
+
+ a| 
+* *Point dans le temps*
++
+La mise en miroir s'effectue à la demande ou automatiquement selon un planning défini par l'utilisateur. Les planifications peuvent être définies au niveau de la granularité de quelques minutes. La durée minimale entre les synchronisations est de 10 minutes.
+
+
+ a| 
+* *Continu*
++
+La mise en miroir s'exécute automatiquement en continu et copie les données à partir de chaque écriture hôte.
+
+
+
+
+
+ a| 
+*Capacité réservée*
+
+
+
+ a| 
+* *Multiple*
++
+Un volume de capacité réservée est requis pour chaque paire en miroir.
+
+
+ a| 
+* *Unique*
++
+Un seul volume de capacité réservée est requis pour tous les volumes en miroir.
+
+
+
+
+
+ a| 
+* Communication*
+
+
+
+ a| 
+* *ISCSI et Fibre Channel*
++
+Prend en charge les interfaces iSCSI et Fibre Channel entre différentes baies de stockage.
+
+
+ a| 
+* *Fibre Channel*
++
+Prend uniquement en charge les interfaces Fibre Channel entre différentes baies de stockage.
+
+
+
+
+
+ a| 
+*Distance*
+
+
+
+ a| 
+* *Illimité*
++
+Prise en charge de distances pratiquement illimitées entre la matrice de stockage locale et la matrice de stockage distante, avec une distance généralement limitée uniquement par les capacités du réseau et la technologie d'extension de canal.
+
+
+ a| 
+* *Restreint*
++
+La baie de stockage locale doit généralement se situer à environ 10 km (6.2 miles), afin de répondre aux exigences de latence et de performances applicatives.
+
+
+
+|===

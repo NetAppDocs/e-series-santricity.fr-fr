@@ -1,0 +1,41 @@
+---
+permalink: sm-interface/recover-from-problems-using-recovery-guru.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Recovery Guru 
+summary: Le gourou de la restauration est un composant de System Manager qui diagnostique les problèmes de baie de stockage et recommande des procédures de restauration pour la résolution des problèmes. 
+---
+= Restaurez vos données à partir du gourou de la restauration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le gourou de la restauration est un composant de System Manager qui diagnostique les problèmes de baie de stockage et recommande des procédures de restauration pour la résolution des problèmes.
+
+.Étapes
+. Sélectionnez *Accueil*.
+. Cliquez sur le lien *recover from _n_ problemes* dans le centre-haut de la fenêtre.
++
+La boîte de dialogue Recovery Guru s'affiche.
+
+. Sélectionnez le premier problème affiché dans la liste récapitulative, puis suivez les instructions de la procédure de récupération pour corriger le problème. Si nécessaire, utiliser les instructions de remplacement pour remplacer les composants défectueux. Répétez cette étape pour chaque problème répertorié.
++
+Plusieurs problèmes peuvent être liés au sein d'une baie de stockage. Dans ce cas, l'ordre dans lequel les problèmes sont corrigés peut affecter le résultat. Sélectionnez et corrigez les problèmes dans l'ordre dans lequel ils sont répertoriés dans la liste récapitulative.
+
++
+Plusieurs défaillances d'un réservoir d'alimentation sont regroupées et répertoriées comme un problème dans la liste récapitulative. Les défaillances multiples d'une cartouche de ventilateur sont également répertoriées comme un problème.
+
+. Pour vous assurer que la procédure de récupération a réussi, cliquez sur *revérifier*.
++
+Si vous avez sélectionné un problème pour un groupe de miroirs asynchrones ou un membre d'un groupe de miroirs asynchrones, cliquez sur *Effacer* d'abord pour effacer le défaut du contrôleur, puis cliquez sur *revérifier* pour supprimer l'événement du Recovery Guru.
+
++
+Si tous les problèmes ont été corrigés, l'icône de la matrice de stockage passe finalement d'une intervention à une gestion optimale. Pour certains problèmes, une icône de résolution s'affiche pendant qu'une opération, telle que la reconstruction, est en cours.
+
+. *Facultatif:* pour enregistrer les informations Recovery Guru dans un fichier, cliquez sur l'icône *Enregistrer*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+
+. Pour imprimer les informations Recovery Guru, cliquez sur l'icône *Print*.
+

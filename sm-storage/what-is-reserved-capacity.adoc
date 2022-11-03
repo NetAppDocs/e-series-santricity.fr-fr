@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity 
+summary: La capacité réservée est la capacité physiquement allouée qui stocke les données des objets de service de copie tels que les images Snapshot, les volumes membres des groupes de cohérence et les volumes de paires en miroir. 
+---
+= Qu'est-ce que la capacité réservée ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacité réservée est la capacité physiquement allouée qui stocke les données des objets de service de copie tels que les images Snapshot, les volumes membres des groupes de cohérence et les volumes de paires en miroir.
+
+Le volume de capacité réservée associé à une opération de service de copie réside dans un pool ou un groupe de volumes. Vous créez une capacité réservée à partir d'un pool ou d'un groupe de volumes.

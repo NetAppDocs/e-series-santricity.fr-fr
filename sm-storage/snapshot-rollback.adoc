@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/snapshot-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
+summary: 'Une opération de restauration renvoie un volume de base à un état précédent déterminé par l"instantané sélectionné.' 
+---
+= Restauration des snapshots
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une opération de restauration renvoie un volume de base à un état précédent déterminé par l'instantané sélectionné.
+
+Pour la restauration, vous pouvez sélectionner une image snapshot parmi les sources suivantes :
+
+* *Retour arrière d'image instantané*, pour une restauration complète d'un volume de base.
+* *Restauration de groupe de cohérence snapshot*, qui peut être utilisé pour restaurer un ou plusieurs volumes.
+
+
+Pendant la restauration, la fonction snapshots préserve toutes les images d'instantané du groupe. Il permet également à l'hôte d'accéder au volume de base pendant ce processus, le cas échéant, pour les opérations d'E/S.
+
+Lors du lancement d'une restauration, un processus d'arrière-plan balaie les adresses de blocs logiques (LBA) du volume de base, puis trouve les données de copie sur écriture dans l'image de snapshot de restauration à restaurer. Le volume de base étant accessible à l'hôte pour les lectures et écritures, et toutes les données écrites précédemment sont immédiatement disponibles, le volume de capacité réservée doit être suffisamment grand pour contenir toutes les modifications pendant le traitement de la restauration. Le transfert de données continue en arrière-plan jusqu'à ce que la restauration soit terminée.
+
+image::../media/sam1130-dwg-snapshots-rollback-overview.gif[vue d'ensemble de la restauration des snapshots sam1130 dwg]
+
+^1^ Volume de base ; ^2^ objets Snapshot d’un groupe ; ^3^ capacité réservée au groupe de snapshots

@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlocking, secure, drives, 
+summary: 'Pour déverrouiller les données d"un lecteur sécurisé, vous devez importer sa clé de sécurité.' 
+---
+= Que dois-je savoir avant de déverrouiller les lecteurs sécurisés ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour déverrouiller les données d'un lecteur sécurisé, vous devez importer sa clé de sécurité.
+
+Avant de déverrouiller des lecteurs sécurisés, gardez les consignes suivantes à l'esprit :
+
+* La baie de stockage doit déjà disposer d'une clé de sécurité. Les disques migrés seront re-clés vers la baie de stockage cible.
+* Pour les lecteurs que vous migrez, vous devez connaître l'identifiant de clé de sécurité et la phrase de passe correspondant au fichier de clé de sécurité.
+* Le fichier de clé de sécurité doit être disponible sur le client de gestion (le système avec un navigateur utilisé pour accéder à System Manager).
+* Si vous réinitialisez un disque NVMe verrouillé, vous devez entrer l'ID de sécurité du disque. Pour localiser l'ID de sécurité, vous devez retirer physiquement le lecteur et trouver la chaîne PSID (32 caractères maximum) sur l'étiquette du lecteur. Assurez-vous que le lecteur est réinstallé avant de lancer l'opération.
+

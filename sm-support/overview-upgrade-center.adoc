@@ -1,0 +1,118 @@
+---
+permalink: sm-support/overview-upgrade-center.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, center 
+summary: Utilisez le Centre de mise à niveau pour télécharger les derniers logiciels et micrologiciels et mettre à niveau votre matrice de stockage pour obtenir les dernières fonctionnalités et correctifs. 
+---
+= Présentation du centre de mise à niveau
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez le Centre de mise à niveau pour télécharger les derniers logiciels et micrologiciels et pour mettre à niveau vos contrôleurs et lecteurs.
+
+
+
+== Présentation de la mise à niveau du contrôleur
+
+Vous pouvez mettre à niveau les logiciels et les micrologiciels de votre baie de stockage pour obtenir les dernières fonctionnalités et correctifs de bogues.
+
+
+
+=== Composants inclus dans la mise à niveau du contrôleur OS
+
+Plusieurs composants de matrice de stockage contiennent des logiciels ou du matériel que vous pouvez souhaiter mettre à niveau occasionnellement.
+
+* *Logiciel de gestion* -- System Manager est le logiciel qui gère la matrice de stockage.
+* *Micrologiciel de contrôleur* -- le micrologiciel de contrôleur gère les E/S entre les hôtes et les volumes.
+* *NVSRAM de contrôleur* -- NVSRAM de contrôleur est un fichier de contrôleur qui spécifie les paramètres par défaut des contrôleurs.
+* *Micrologiciel IOM* -- le firmware du module d'E/S (IOM) gère la connexion entre un contrôleur et un tiroir de disque. Il surveille également l'état des composants.
+* *Supervisor Software* -- le logiciel Supervisor est la machine virtuelle sur un contrôleur dans lequel le logiciel s'exécute.
+
+
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[emplacements du micrologiciel de mise à niveau sam1130 dwg]
+
+^1^ tiroir contrôleur ; ^2^ tiroir disque ; ^3^ logiciel, micrologiciel de contrôleur, NVSRAM contrôleur, Logiciel de supervision ; ^4^ microprogramme de lecteur ; ^5^ microprogramme de module d'E/S ; ^6^ microprogramme de lecteur
+
+Vous pouvez afficher les versions actuelles de vos logiciels et micrologiciels dans la boîte de dialogue Inventaire des logiciels et micrologiciels. Accédez au menu :support[Upgrade Center], puis cliquez sur le lien *Software and Firmware Inventory*.
+
+Dans le cadre du processus de mise à niveau, le pilote multivoie/relais et/ou le pilote HBA de l'hôte peuvent également être mis à niveau afin que l'hôte puisse interagir correctement avec les contrôleurs. Pour déterminer si c'est le cas, reportez-vous à la https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp"^].
+
+
+
+=== Quand arrêter les E/S.
+
+Si votre baie de stockage contient deux contrôleurs et qu'un pilote multivoie est installé, la baie de stockage peut continuer à traiter les E/S pendant la mise à niveau. Lors de la mise à niveau, le contrôleur A bascule tous ses volumes vers le contrôleur B, réeffectue les volumes et l'ensemble des volumes du contrôleur B, puis procède à la mise à niveau du contrôleur B.
+
+
+
+=== Vérification de l'état de pré-mise à niveau
+
+Une vérification de l'état de pré-mise à niveau s'effectue dans le cadre du processus de mise à niveau. Un contrôle avant la mise à niveau de l'état de santé vérifie tous les composants de la baie de stockage afin de vérifier que la mise à niveau peut se poursuivre. Les conditions suivantes peuvent empêcher la mise à niveau :
+
+* Disques affectés en panne
+* Disques de secours en cours d'utilisation
+* Groupes de volumes incomplets
+* Opérations exclusives en cours d'exécution
+* Volumes manquants
+* Contrôleur en état non optimal
+* Nombre excessif d'événements du journal des événements
+* Échec de validation de la base de données de configuration
+* Lecteurs avec les anciennes versions de DACstore
+
+
+Vous pouvez également exécuter le contrôle d'état de pré-mise à niveau séparément sans effectuer de mise à niveau.
+
+
+
+== Présentation de la mise à niveau du lecteur
+
+Le micrologiciel du lecteur contrôle les caractéristiques de fonctionnement d'un lecteur. Régulièrement, les fabricants de disques publient des mises à jour de firmware pour générer de nouvelles fonctionnalités, améliorer la performance et corriger les défauts.
+
+
+
+=== Mises à niveau hors ligne et en ligne du firmware des disques
+
+Il existe deux types de méthodes de mise à niveau du micrologiciel des lecteurs : en ligne et hors ligne.
+
+
+
+==== En ligne
+
+Lors d'une mise à niveau en ligne, les disques sont mis à niveau séquentiellement, un à la fois. La baie de stockage continue de traiter les E/S pendant la mise à niveau. Il n'est donc pas nécessaire d'arrêter les E/S. Si un lecteur peut effectuer une mise à niveau en ligne, la méthode en ligne est utilisée automatiquement.
+
+Les lecteurs qui peuvent effectuer une mise à niveau en ligne sont les suivants :
+
+* Disques dans un pool optimal
+* Disques dans un groupe de volumes redondants optimal (RAID 1, RAID 5 et RAID 6)
+* Disques non assignés
+* Disques de secours de secours
+
+
+L'exécution d'une mise à niveau du firmware de disque en ligne peut prendre plusieurs heures, exposant ainsi la baie de stockage à des pannes de volume potentielles. Une défaillance de volume peut se produire dans les cas suivants :
+
+* Dans un groupe de volumes RAID 1 ou RAID 5, un disque tombe en panne pendant la mise à niveau d'un autre disque du groupe de volumes.
+* Dans un pool ou un groupe de volumes RAID 6, deux disques tombent en panne pendant la mise à niveau d'un autre disque dans le pool ou le groupe de volumes.
+
+
+
+
+==== Hors ligne (parallèle)
+
+Lors d'une mise à niveau hors ligne, tous les lecteurs du même type sont mis à niveau en même temps. Cette méthode nécessite l'arrêt de l'activité d'E/S sur les volumes associés aux disques sélectionnés. Comme plusieurs disques peuvent être mis à niveau simultanément (en parallèle), les temps d'indisponibilité sont considérablement réduits. Si un lecteur ne peut effectuer qu'une mise à niveau hors ligne, la méthode hors ligne est utilisée automatiquement.
+
+Les lecteurs suivants DOIVENT utiliser la méthode offline :
+
+* Disques dans un groupe de volumes non redondant (RAID 0)
+* Disques dans un pool ou un groupe de volumes non optimal
+* Disques dans SSD cache
+
+
+
+
+=== Compatibilité
+
+Chaque fichier de micrologiciel de lecteur contient des informations sur le type de lecteur sur lequel le micrologiciel s'exécute. Vous ne pouvez télécharger le fichier de micrologiciel spécifié que sur un lecteur compatible. System Manager vérifie automatiquement la compatibilité lors du processus de mise à niveau.

@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ALB, automatic, load, balancing 
+summary: 'La fonction d"équilibrage de charge automatique assure l"équilibrage d"E/S automatisé et garantit que le trafic d"E/S entrant depuis les hôtes est géré et équilibré de manière dynamique entre les deux contrôleurs.' 
+---
+= Qu'est-ce que l'équilibrage automatique de la charge ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction d'équilibrage de charge automatique assure l'équilibrage d'E/S automatisé et garantit que le trafic d'E/S entrant depuis les hôtes est géré et équilibré de manière dynamique entre les deux contrôleurs.
+
+La fonction d'équilibrage automatique de la charge améliore la gestion des ressources d'E/S en réagissant dynamiquement aux changements de charge dans le temps et en ajustant automatiquement la propriété du contrôleur de volume pour corriger les problèmes de déséquilibre de la charge lorsque les charges de travail sont transférées sur les contrôleurs.
+
+La charge de travail de chaque contrôleur est surveillée en permanence et, avec la collaboration des pilotes multichemins installés sur les hôtes, il est possible d'équilibrer automatiquement la charge de travail dès que nécessaire. Lorsque la charge de travail est automatiquement reéquilibrée entre les contrôleurs, l'administrateur du stockage n'a plus à régler manuellement la charge de travail des contrôleurs de volume pour prendre en charge les changements de charge qui se sont opérés sur la baie de stockage.
+
+Lorsque l'équilibrage automatique de la charge est activé, il exécute les fonctions suivantes :
+
+* Surveille et équilibre automatiquement l'utilisation des ressources du contrôleur.
+* Ajuste automatiquement la propriété des contrôleurs de volume lorsque vous en avez besoin, ce qui optimise la bande passante d'E/S entre les hôtes et la baie de stockage.
+
+
+[NOTE]
+====
+Tout volume attribué à l'utilisation de la fonctionnalité SSD cache d'un contrôleur n'est pas éligible pour un transfert automatique d'équilibrage de charge.
+
+====

@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/add-user-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, users, snmpv3, traps, 
+summary: 'Vous pouvez ajouter jusqu"à 256 utilisateurs pour les interruptions SNMPv3.' 
+---
+= Ajouter des utilisateurs pour les interruptions SNMPv3
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter jusqu'à 256 utilisateurs pour les interruptions SNMPv3.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations d'interruption et les noms d'utilisateur apparaissent dans le tableau.
+
+. Sélectionnez *configurer les utilisateurs*.
++
+La boîte de dialogue configurer les utilisateurs SNMPv3 s'ouvre.
+
+. Sélectionnez *Ajouter*.
+. Entrez les informations suivantes, puis cliquez sur *Ajouter*.
++
+** *Nom d'utilisateur* -- Entrez un nom pour identifier l'utilisateur, qui peut comporter jusqu'à 31 caractères.
+** *ID moteur* -- sélectionnez l'ID moteur, qui est utilisé pour générer des clés d'authentification et de cryptage pour les messages, et doit être unique dans le domaine administratif. Dans la plupart des cas, vous devez sélectionner *local*. Si vous avez une configuration non standard, sélectionnez *Custom* ; un autre champ apparaît où vous devez entrer l'ID de moteur faisant autorité en tant que chaîne hexadécimale, avec un nombre pair de caractères compris entre 10 et 32 caractères.
+** *Authentification d'authentification* -- sélectionnez un protocole d'authentification qui garantit l'identité des utilisateurs. Ensuite, entrez un mot de passe d'authentification requis lorsque le protocole d'authentification est défini ou modifié. Le mot de passe doit comporter entre 8 et 128 caractères.
+** *Données d'identification* -- sélectionnez un protocole de confidentialité utilisé pour crypter le contenu des messages. Ensuite, entrez un mot de passe de confidentialité, requis lorsque le protocole de confidentialité est défini ou modifié. Le mot de passe doit comporter entre 8 et 128 caractères.
+
+
+

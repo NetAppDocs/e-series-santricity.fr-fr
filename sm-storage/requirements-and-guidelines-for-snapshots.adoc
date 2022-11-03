@@ -1,0 +1,110 @@
+---
+permalink: sm-storage/requirements-and-guidelines-for-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
+summary: 'Lors de la création et de l"utilisation d"instantanés, vérifiez les exigences et les directives suivantes.' 
+---
+= Exigences et consignes relatives aux snapshots
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de la création et de l'utilisation d'instantanés, vérifiez les exigences et les directives suivantes.
+
+
+
+== Images Snapshot et groupes de snapshots
+
+* Chaque image snapshot est associée à un seul groupe de snapshots.
+* Un groupe de snapshots est créé la première fois que vous créez une image instantanée ou planifiée pour un objet associé. Cela crée une capacité réservée.
++
+Vous pouvez afficher les groupes de snapshots à partir de la page pools et groupes de volumes.
+
+* Les images d'instantanés programmées ne se produisent pas lorsque la matrice de stockage est hors ligne ou hors tension.
+* Si vous supprimez un groupe de snapshots doté d'une planification de snapshots, la planification de snapshots est également supprimée.
+* Si vous disposez d'un volume de snapshot dont vous n'avez plus besoin, vous pouvez le réutiliser, ainsi que toute capacité réservée associée, au lieu de le supprimer. Cela crée un autre volume Snapshot du même volume de base. Vous pouvez ré-associer le volume snapshot ou le volume snapshot du groupe de cohérence snapshot à la même image snapshot ou à une image snapshot différente, tant que l'image Snapshot se trouve dans le même volume de base.
+
+
+
+
+== Groupe de cohérence Snapshot
+
+* Un groupe de cohérence de snapshot contient un groupe de snapshots pour chaque volume membre du groupe de cohérence de snapshot.
+* Vous ne pouvez associer un groupe de cohérence de snapshot qu'à une seule planification.
+* Si vous supprimez un groupe de cohérence de snapshot avec un planning de snapshots, la planification de snapshots est également supprimée.
+* Vous ne pouvez pas gérer individuellement un groupe de snapshots associé à un groupe de cohérence de snapshot. Vous devez plutôt effectuer les opérations de gestion (créer une image snapshot, supprimer l'image snapshot ou le groupe de snapshots et restaurer l'image snapshot) au niveau du groupe de cohérence snapshot.
+
+
+
+
+== Volume de base
+
+* Un volume snapshot doit avoir les mêmes paramètres d'assurance des données (DA) et de sécurité que le volume de base associé.
+* Vous ne pouvez pas créer un volume de snapshot d'un volume de base défaillant.
+* Si le volume de base réside dans un groupe de volumes, les volumes membres d'un groupe de cohérence snapshot associé peuvent résider sur un pool ou un groupe de volumes.
+* Si un volume de base réside dans un pool, tous les volumes membres d'un groupe de cohérence snapshot associé doivent résider dans le même pool que le volume de base.
+
+
+
+
+== Capacité réservée
+
+* La capacité réservée est associée à un seul volume de base.
+* L'utilisation d'une planification peut entraîner un grand nombre d'images instantanées. Assurez-vous d'avoir une capacité réservée suffisante pour les snapshots programmés.
+* Le volume de capacité réservé pour un groupe de cohérence snapshot doit avoir les mêmes paramètres d'assurance des données (DA) et de sécurité que le volume de base associé pour le volume membre du groupe de cohérence snapshot.
+
+
+
+
+== Images de snapshot en attente
+
+La création d'images de snapshot peut rester à l'état en attente dans les conditions suivantes :
+
+* Le volume de base contenant cette image snapshot est membre d'un groupe de miroirs asynchrone.
+* Le volume de base est actuellement en cours de synchronisation. La création de l'image instantanée se termine dès que l'opération de synchronisation est terminée.
+
+
+
+
+== Nombre maximal d'images instantanées
+
+* Si un volume est membre d'un groupe de cohérence de snapshot, System Manager crée un groupe de snapshots pour ce volume membre. Ce groupe de snapshots compte pour le nombre maximal autorisé de groupes de snapshots par volume de base.
+* Si vous tentez de créer une image snapshot sur un groupe de snapshots ou un groupe de cohérence snapshot, mais que le groupe associé a atteint son nombre maximal d'images snapshot, vous disposez de deux options :
++
+** Activez la suppression automatique pour le groupe de snapshots ou le groupe de cohérence Snapshot.
+** Supprimez manuellement une ou plusieurs images d'instantané du groupe de snapshots ou du groupe de cohérence de snapshot, puis réessayez l'opération.
+
+
+
+
+
+
+== Suppression automatique
+
+Si le groupe de snapshots ou le groupe de cohérence Snapshot est activé pour la suppression automatique, System Manager supprime l'image Snapshot la plus ancienne lorsque le système en crée une nouvelle pour le groupe.
+
+
+
+== Opération de retour arrière
+
+* Vous ne pouvez pas effectuer les actions suivantes lorsqu'une opération de restauration est en cours :
++
+** Supprimez l'image instantanée utilisée pour la restauration.
+** Créez une nouvelle image snapshot pour un volume de base participant à une opération de restauration.
+** Modifiez la stratégie de référentiel complet du groupe de snapshots associé.
+
+
+* Vous ne pouvez pas démarrer une opération de restauration lorsque l'une de ces opérations est en cours :
++
+** Extension de la capacité (ajout de capacité à un pool ou à un groupe de volumes)
+** L'extension de volumes (en augmentant la capacité d'un volume)
+** Modification du niveau RAID d'un groupe de volumes
+** Modification de la taille de segment d'un volume
+
+
+* Vous ne pouvez pas démarrer une opération de restauration si le volume de base participe à une copie de volume.
+* Vous ne pouvez pas démarrer une opération de restauration si le volume de base est un volume secondaire dans un miroir distant.
+* Une opération de restauration échoue si l'une des capacités utilisées dans le volume de référentiel de snapshot associé a des secteurs illisibles.
+

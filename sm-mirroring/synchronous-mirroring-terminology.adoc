@@ -1,0 +1,84 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, terms 
+summary: 'Découvrez comment les conditions de la mise en miroir synchrone s"appliquent à votre baie de stockage.' 
+---
+= Terminologie de la mise en miroir synchrone
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les conditions de la mise en miroir synchrone s'appliquent à votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Baie de stockage locale
+ a| 
+La baie de stockage locale est la baie de stockage sur laquelle vous agissez.
+
+Lorsque vous voyez *Primary* dans la colonne rôle local, cela indique que la matrice de stockage contient le volume qui détient le rôle principal dans la relation miroir. Lorsque vous voyez *Secondary* dans la colonne rôle local, cela indique que la matrice de stockage contient le volume qui détient le rôle secondaire dans la relation miroir.
+
+
+
+ a| 
+Paire en miroir
+ a| 
+Une paire en miroir comprend deux volumes, un volume primaire et un volume secondaire.
+
+
+
+ a| 
+Volume primaire
+ a| 
+Le volume principal d'une paire en miroir est le volume source à mettre en miroir.
+
+
+
+ a| 
+Objectif de point de restauration (RPO)
+ a| 
+L'objectif RPO (Recovery point objective) est un objectif qui indique la différence jugée acceptable entre le volume primaire et le volume secondaire dans une paire en miroir. Un RPO de zéro indique qu'aucune différence entre le volume primaire et le volume secondaire ne peut être tolérée. Un RPO supérieur à zéro indique que le volume secondaire est moins actuel ou qu'il se trouve derrière le volume primaire.
+
+
+
+ a| 
+Baie de stockage distante
+ a| 
+La matrice de stockage distante est généralement désignée comme site secondaire, qui contient généralement une réplique des données dans une configuration de mise en miroir.
+
+
+
+ a| 
+Capacité réservée
+ a| 
+La capacité réservée est la capacité physique allouée utilisée pour toute opération de service de copie et tout objet de stockage. Il n'est pas directement lisible par l'hôte.
+
+
+
+ a| 
+Changement de rôle
+ a| 
+Le changement de rôle affecte le rôle principal au volume secondaire et inversement.
+
+
+
+ a| 
+Volume secondaire
+ a| 
+Le volume secondaire d'une paire en miroir se trouve généralement sur un site secondaire et contient une réplique des données.
+
+
+
+ a| 
+Synchronisation
+ a| 
+La synchronisation a lieu lors de la synchronisation initiale entre la matrice de stockage locale et la matrice de stockage distante. La synchronisation se produit également lorsque les volumes primaire et secondaire ne sont plus synchronisés après une interruption de communication. Lorsque la liaison de communication fonctionne de nouveau, toutes les données non répliquées sont synchronisées avec la matrice de stockage du volume secondaire.
+
+|===

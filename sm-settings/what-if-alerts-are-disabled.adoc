@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-if-alerts-are-disabled.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alerts, disabled, 
+summary: 'Si vous souhaitez que les administrateurs reçoivent des notifications concernant les événements importants qui se produisent dans la matrice de stockage, vous devez configurer une méthode d"alerte.' 
+---
+= Que se passe-t-il si les alertes sont désactivées ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous souhaitez que les administrateurs reçoivent des notifications concernant les événements importants qui se produisent dans la matrice de stockage, vous devez configurer une méthode d'alerte.
+
+Pour les baies de stockage gérées avec SANtricity System Manager, vous configurez les alertes à partir de la page alertes. Des notifications d'alerte peuvent être envoyées par e-mail, des traps SNMP ou des messages syslog. En outre, les alertes par e-mail peuvent être configurées à partir de l'assistant d'installation initiale.

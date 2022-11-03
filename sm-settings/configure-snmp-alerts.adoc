@@ -1,0 +1,78 @@
+---
+permalink: sm-settings/configure-snmp-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
+summary: 'Pour configurer les alertes SNMP (simple Network Management Protocol), vous devez identifier au moins un serveur sur lequel le moniteur d"événements de la baie de stockage peut envoyer des interruptions SNMP. La configuration requiert un nom de communauté ou d"utilisateur et une adresse IP pour le serveur.' 
+---
+= Configurez les alertes SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer les alertes SNMP (simple Network Management Protocol), vous devez identifier au moins un serveur sur lequel le moniteur d'événements de la baie de stockage peut envoyer des traps SNMP. La configuration requiert un nom de communauté ou d'utilisateur et une adresse IP pour le serveur.
+
+.Avant de commencer
+* Un serveur réseau doit être configuré avec une application de service SNMP. Vous avez besoin de l'adresse réseau de ce serveur (soit une adresse IPv4, soit une adresse IPv6), de sorte que le moniteur d'événements puisse envoyer des messages d'interruption à cette adresse. Vous pouvez utiliser plusieurs serveurs (jusqu'à 10 serveurs sont autorisés).
+* Le fichier MIB (Management information base) a été copié et compilé sur le serveur avec l'application de service SNMP. Ce fichier MIB définit les données en cours de contrôle et de gestion.
++
+Si vous ne possédez pas le fichier MIB, vous pouvez l'obtenir sur le site de support NetApp :
+
++
+** Accédez à https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^].
+** Cliquez sur l'onglet *Téléchargements*, puis sélectionnez *Téléchargements*.
+** Cliquez sur *logiciel de contrôleur de système d'exploitation SANtricity E-Series*.
+** Sélectionnez *Télécharger la dernière version*.
+** Connectez-vous.
+** Acceptez la déclaration de mise en garde et le contrat de licence.
+** Faites défiler vers le bas jusqu'à ce que le fichier MIB de votre type de contrôleur, puis cliquez sur le lien pour télécharger le fichier.
+
+
+
+
+Cette tâche décrit comment identifier le serveur SNMP pour les destinations de déroutement, puis tester votre configuration.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Lors de la configuration initiale, l'onglet SNMP affiche « configurer les communautés/utilisateurs ».
+
+. Sélectionnez *configurer les communautés/utilisateurs*.
++
+La boîte de dialogue Sélectionner une version SNMP s'ouvre.
+
+. Sélectionnez la version SNMP pour les alertes, soit *SNMPv2c*, soit *SNMPv3*.
++
+Selon votre sélection, la boîte de dialogue configurer les communautés ou configurer les utilisateurs SNMPv3 s'ouvre.
+
+. Suivez les instructions appropriées pour SNMPv2c (communautés) ou SNMPv3 (utilisateurs) :
++
+** *SNMPv2c (communautés)* -- dans la boîte de dialogue configurer les communautés, entrez une ou plusieurs chaînes de communauté pour les serveurs réseau. Un nom de communauté est une chaîne qui identifie un ensemble connu de stations de gestion et qui est généralement créé par un administrateur réseau. Il se compose uniquement de caractères ASCII imprimables. Vous pouvez ajouter jusqu'à 256 communautés. Lorsque vous avez terminé, cliquez sur *Enregistrer*.
+** *SNMPv3 (utilisateurs)* -- dans la boîte de dialogue configurer les utilisateurs SNMPv3, cliquez sur *Ajouter*, puis entrez les informations suivantes :
++
+*** *Nom d'utilisateur* -- Entrez un nom pour identifier l'utilisateur, qui peut comporter jusqu'à 31 caractères.
+*** *ID moteur* -- sélectionnez l'ID moteur, qui est utilisé pour générer des clés d'authentification et de cryptage pour les messages, et doit être unique dans le domaine administratif. Dans la plupart des cas, vous devez sélectionner *local*. Si vous avez une configuration non standard, sélectionnez *Custom* ; un autre champ apparaît où vous devez entrer l'ID de moteur faisant autorité en tant que chaîne hexadécimale, avec un nombre pair de caractères compris entre 10 et 32 caractères.
+*** *Authentification d'authentification* -- sélectionnez un protocole d'authentification qui garantit l'identité des utilisateurs. Ensuite, entrez un mot de passe d'authentification requis lorsque le protocole d'authentification est défini ou modifié. Le mot de passe doit comporter entre 8 et 128 caractères.
+*** *Données d'identification* -- sélectionnez un protocole de confidentialité utilisé pour crypter le contenu des messages. Ensuite, entrez un mot de passe de confidentialité, requis lorsque le protocole de confidentialité est défini ou modifié. Le mot de passe doit comporter entre 8 et 128 caractères. Lorsque vous avez terminé, cliquez sur *Ajouter*, puis sur *Fermer*.
+
+
+
+
+. Dans la page alertes avec l'onglet SNMP sélectionné, cliquez sur *Ajouter des destinations de déroutement*.
++
+La boîte de dialogue Ajouter des destinations de recouvrement s'ouvre.
+
+. Entrez une ou plusieurs destinations d'interruption, sélectionnez leurs noms de communauté ou d'utilisateur associés, puis cliquez sur *Ajouter*.
++
+** *Trap destination* -- Entrez une adresse IPv4 ou IPv6 du serveur exécutant un service SNMP.
+** *Nom de communauté ou Nom d'utilisateur* -- dans le menu déroulant, sélectionnez le nom de communauté (SNMPv2c) ou le nom d'utilisateur (SNMPv3) pour cette destination de déroutement. (Si vous en avez défini un seul, le nom apparaît déjà dans ce champ.)
+** *Send Authentication Failure Trap* -- sélectionnez cette option (la case à cocher) si vous souhaitez alerter la destination de l'interruption lorsqu'une requête SNMP est rejetée en raison d'un nom de communauté ou d'utilisateur non reconnu. Après avoir cliqué sur *Ajouter*, les destinations de déroutement et les noms associés apparaissent dans l'onglet *SNMP* de la page *alertes*.
+
+
+. Pour vous assurer qu'une interruption est valide, sélectionnez une destination d'interruption dans le tableau, puis cliquez sur *Test Trap destination* pour envoyer une interruption de test à l'adresse configurée.
+
+
+Le moniteur d'événements envoie des interruptions SNMP au(x) serveur(s) chaque fois qu'un événement alertable se produit.

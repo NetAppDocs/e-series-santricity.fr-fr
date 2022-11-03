@@ -1,0 +1,26 @@
+---
+permalink: sm-support/re-enable-drive-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
+summary: Vous pouvez indiquer au contrôleur que des mesures correctives ont été prises pour récupérer un problème de câblage. 
+---
+= Réactivez les ports de lecteur
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez indiquer au contrôleur que des mesures correctives ont été prises pour récupérer un problème de câblage.
+
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *réactiver les ports de lecteur* et confirmez que vous souhaitez effectuer l'opération.
++
+Cette option s'affiche uniquement lorsque la matrice de stockage a désactivé les ports de lecteur.
+
++
+Le contrôleur réactive tous les ports SAS qui ont été désactivés lorsqu'un mauvais fil a été détecté.
+
+

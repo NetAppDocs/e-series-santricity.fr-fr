@@ -1,0 +1,34 @@
+---
+permalink: sm-settings/remove-community-name-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, communities, snmpv2c, traps, 
+summary: Vous pouvez supprimer un nom de communauté pour les déroutements SNMPv2c. 
+---
+= Supprimer des communautés pour les déroutements SNMPv2c
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer un nom de communauté pour les déroutements SNMPv2c.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations de déroutement et les noms de communauté apparaissent sur la page *alertes*.
+
+. Sélectionnez *configurer les communautés*.
++
+La boîte de dialogue configurer les communautés s'ouvre.
+
+. Sélectionnez le nom de communauté à supprimer, puis cliquez sur l'icône *Supprimer* (X) à l'extrême droite.
++
+Si les destinations d'interruption sont associées à ce nom de communauté, la boîte de dialogue confirmer la suppression de la communauté affiche les adresses de destination d'interruption affectées.
+
+. Confirmez l'opération, puis cliquez sur *Supprimer*.
+
+
+Le nom de communauté et sa destination de déroutement associée sont supprimés de la page alertes.

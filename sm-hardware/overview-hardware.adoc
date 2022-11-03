@@ -1,0 +1,55 @@
+---
+permalink: sm-hardware/overview-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, 
+summary: 'Vous pouvez vérifier l"état des composants sur la page matériel et exécuter certaines fonctions associées à ces composants.' 
+---
+= Présentation des composants matériels
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez vérifier l'état des composants sur la page matériel et exécuter certaines fonctions associées à ces composants.
+
+
+
+== Quels composants puis-je gérer ?
+
+Vous pouvez vérifier l'état des composants et exécuter certaines fonctions associées à ces composants :
+
+* **Tiroirs** -- Un _shelf_ est un composant qui contient le matériel de la matrice de stockage (contrôleurs, blocs d'alimentation/ventilateurs et lecteurs). Les tiroirs sont disponibles en trois tailles pour accueillir jusqu'à 12, 24 ou 60 disques.
+* **Contrôleurs** -- Un _contrôleur_ est le matériel et le micrologiciel combinés qui implémente la matrice de stockage et les fonctions de gestion. Il comprend la mémoire cache, la prise en charge des lecteurs et les ports pour les connexions hôte.
+* **Lecteurs** -- Un _lecteur_ peut être un disque dur (HDD) ou un disque SSD. Selon la taille du tiroir, il est possible d'installer jusqu'à 12, 24 ou 60 disques sur le shelf.
+
+
+En savoir plus :
+
+* link:hardware-page-overview.html["Page du matériel"]
+* link:hardware-terminology.html["Terminologie matérielle"]
+
+
+
+
+== Comment voir les composants matériels ?
+
+Accédez à la page matériel, qui fournit une représentation graphique des composants physiques de la baie de stockage. Vous pouvez basculer entre les vues avant et arrière des étagères de la matrice en sélectionnant *Afficher le verso des étagères* ou *Afficher le recto des étagères* dans le coin supérieur droit de la vue de tablette.
+
+En savoir plus :
+
+* link:view-shelf-component-status-and-settings.html["Consultez l'état et les paramètres des composants du tiroir"]
+* link:view-controller-settings.html["Afficher les paramètres du contrôleur"]
+* link:view-drive-status-and-settings.html["Afficher l'état et les paramètres du lecteur"]
+
+
+
+
+= Informations associées
+
+En savoir plus sur les concepts liés au matériel :
+
+* link:controller-states.html["États du contrôleur"]
+* link:drive-states.html["États des disques"]
+* link:what-is-shelf-loss-protection-and-drawer-loss-protection.html["Protection contre les pertes de tablette et protection contre les pertes de tiroir"]
+

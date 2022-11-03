@@ -1,0 +1,30 @@
+---
+permalink: sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, mirrored, pair, volume, 
+summary: 'En règle générale, vous devez augmenter la capacité réservée lorsque vous recevez un avertissement indiquant que la capacité réservée d"une paire en miroir est saturée. Vous pouvez augmenter la capacité réservée par incréments de 8 Gio.' 
+---
+= Que dois-je savoir avant d'augmenter la capacité réservée sur un volume en miroir ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En règle générale, vous devez augmenter la capacité réservée lorsque vous recevez un avertissement indiquant que la capacité réservée d'une paire en miroir est saturée. Vous pouvez augmenter la capacité réservée par incréments de 8 Gio.
+
+Pour les opérations de mise en miroir asynchrone, la capacité réservée est généralement de 20 % du volume de base. Choisissez une capacité supérieure pour la capacité réservée si l'une ou les deux conditions suivantes existent :
+
+* Vous avez l'intention de conserver la paire en miroir pendant une longue période.
+* Un pourcentage élevé de blocs de données change sur le volume primaire en raison d'une forte activité d'E/S. Utilisez des données de performances historiques ou d'autres utilitaires du système d'exploitation pour déterminer les activités d'E/S types sur le volume primaire.
+
+
+Vous pouvez augmenter la capacité réservée pour une paire en miroir en effectuant l'une des actions suivantes :
+
+* Réglez le pourcentage de capacité d'un volume de paire en miroir en sélectionnant menu:Storage[pools and volumes Groups], puis en cliquant sur l'onglet *Reserved Capacity*.
+* Créez un nouveau volume en utilisant la capacité disponible dans un pool ou un groupe de volumes.
++
+Si aucune capacité disponible n'existe sur un pool ou un groupe de volumes, vous pouvez ajouter de la capacité non configurée sous la forme de disques inutilisés à un pool ou à un groupe de volumes.
+
+

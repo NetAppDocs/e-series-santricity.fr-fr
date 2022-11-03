@@ -1,0 +1,69 @@
+---
+permalink: sm-settings/save-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
+summary: 'Vous pouvez enregistrer les informations de configuration d"une matrice de stockage dans un fichier script pour gagner du temps lors de la configuration de matrices de stockage supplémentaires avec la même configuration.' 
+---
+= Enregistrer la configuration de la matrice de stockage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez enregistrer les informations de configuration d'une matrice de stockage dans un fichier de script pour gagner du temps lors de la configuration de matrices de stockage supplémentaires avec la même configuration.
+
+La matrice de stockage ne doit pas être en cours d'opération qui modifie ses paramètres de configuration logique. Comme la création ou la suppression de volumes, le téléchargement du firmware des contrôleurs, l'attribution ou la modification des disques de secours, ou l'ajout de capacité (disques) à un groupe de volumes.
+
+L'enregistrement de la configuration de la matrice de stockage génère un script d'interface de ligne de commande (CLI) contenant les paramètres de la matrice de stockage, la configuration de volume, la configuration de l'hôte ou les affectations de l'hôte au volume pour une matrice de stockage. Vous pouvez utiliser ce script CLI généré pour répliquer une configuration vers une autre matrice de stockage avec la même configuration matérielle.
+
+Cependant, vous ne devez pas utiliser ce script CLI généré pour la reprise après sinistre. Pour effectuer une restauration de système, utilisez le fichier de sauvegarde de la base de données de configuration que vous créez manuellement ou contactez le support technique afin d'obtenir ces données à partir des dernières données d'Auto-support.
+
+Cette opération _n'enregistre pas_ ces paramètres :
+
+* Durée de vie de la batterie
+* Heure du contrôleur
+* Les paramètres NVSRAM (Nonvolatile Static Random Access Memory)
+* Toutes les fonctionnalités Premium
+* Mot de passe de la matrice de stockage
+* L'état de fonctionnement et les États des composants matériels
+* L'état de fonctionnement (sauf optimal) et les États des groupes de volumes
+* Services de copie, tels que la mise en miroir et la copie de volume
+
+
+[CAUTION]
+====
+*Risque d'erreurs d'application* -- n'utilisez pas cette option si la matrice de stockage est en cours d'opération qui modifiera tout paramètre de configuration logique. Comme la création ou la suppression de volumes, le téléchargement du firmware des contrôleurs, l'attribution ou la modification des disques de secours, ou l'ajout de capacité (disques) à un groupe de volumes.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sélectionnez *Enregistrer la configuration de la matrice de stockage*.
+. Sélectionnez les éléments de la configuration à enregistrer :
++
+** Paramètres de la matrice de stockage
+** Configuration de volume
+** Configuration de l'hôte
+** Affectations hôte-volume
+
+
++
+[NOTE]
+====
+Si vous sélectionnez l'option *affectations hôte-volume*, l'élément *Configuration du volume* et l'élément *Configuration hôte* sont également sélectionnés par défaut. Vous ne pouvez pas enregistrer les affectations hôte-volume sans enregistrer également « Configuration de volume » et « Configuration hôte ».
+
+====
+. Cliquez sur *Enregistrer*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `storage-array-configuration.cfg`.
+
+
+
+Pour charger la configuration enregistrée de la matrice de stockage sur une autre matrice de stockage, utilisez l'interface de ligne de commande SANtricity (SMcli) avec le `-f` pour appliquer le `.cfg` fichier.
+
+[NOTE]
+====
+Vous pouvez également charger une configuration de matrice de stockage sur d'autres matrices de stockage à l'aide de l'interface Unified Manager (sélectionnez menu:Manage[Import Settings] (gérer les paramètres d'importation).
+
+====

@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, validating, security, key, 
+summary: 'Après avoir créé une clé de sécurité, vous devez valider le fichier de clé pour vous assurer qu"il n"est pas corrompu.' 
+---
+= Que dois-je savoir sur la validation de la clé de sécurité ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir créé une clé de sécurité, vous devez valider le fichier de clé pour vous assurer qu'il n'est pas corrompu.
+
+Si la validation échoue, procédez comme suit :
+
+* Si l'identifiant de clé de sécurité ne correspond pas à l'identifiant du contrôleur, localisez le fichier de clé de sécurité correct, puis réessayez la validation.
+* Si le contrôleur ne parvient pas à décrypter la clé de sécurité pour validation, il se peut que vous ayez saisi la phrase de passe de manière incorrecte. Vérifiez deux fois la phrase de passe, saisissez-la à nouveau si nécessaire, puis réessayez la validation. Si le message d'erreur s'affiche de nouveau, sélectionnez une sauvegarde du fichier de clé (si disponible) et réessayez la validation.
+* Si vous ne parvenez toujours pas à valider la clé de sécurité, le fichier d'origine est peut-être corrompu. Créer une nouvelle sauvegarde de la clé et valider cette copie.
+

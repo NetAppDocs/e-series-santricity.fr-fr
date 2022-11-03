@@ -1,0 +1,222 @@
+---
+permalink: sm-hardware/view-drive-status-and-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
+summary: 'Vous pouvez afficher l"état et les paramètres des lecteurs, tels que le type de support, le type d"interface et la capacité.' 
+---
+= Afficher l'état et les paramètres du lecteur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher l'état et les paramètres des lecteurs, tels que le type de support, le type d'interface et la capacité.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Sélectionnez le lecteur pour lequel vous souhaitez afficher l'état et les paramètres.
++
+Le menu contextuel du lecteur s'ouvre.
+
+. Sélectionnez *Paramètres d'affichage*.
++
+La boîte de dialogue Paramètres du lecteur s'ouvre.
+
+. Pour afficher tous les paramètres, cliquez sur *Afficher plus de paramètres* dans le coin supérieur droit de la boîte de dialogue.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Paramètres | Description 
+
+
+ a| 
+État
+ a| 
+Affiche optimal, hors ligne, défaut non critique et échec. L'état optimal indique la condition de fonctionnement souhaitée.
+
+
+
+ a| 
+Mode
+ a| 
+Affiche affecté, non affecté, disque de secours en attente ou disque de secours en cours d'utilisation.
+
+
+
+ a| 
+Emplacement
+ a| 
+La indique le numéro de tiroir et de baie correspondant à l'emplacement du disque.
+
+
+
+ a| 
+Affecté à/peut protéger
+ a| 
+Si le disque est affecté à un pool, un groupe de volumes ou un cache SSD, ce champ affiche « affecté à ». La valeur peut être un nom de pool, un nom de groupe de volumes ou un nom de cache SSD. Si le lecteur est affecté à un disque de secours et que son mode est Veille, ce champ affiche « peut protéger ». Si le disque de secours peut protéger un ou plusieurs groupes de volumes, les noms de groupes de volumes s'affichent. S'il ne peut pas protéger un groupe de volumes, il affiche 0 groupes de volumes.
+
+Si le lecteur est affecté à un disque de secours et que son mode est utilisé, ce champ affiche « protéger ». La valeur correspond au nom du groupe de volumes affecté.
+
+Si le lecteur n'est pas affecté, ce champ n'apparaît pas.
+
+
+
+ a| 
+Type de support
+ a| 
+Affiche le type de support d'enregistrement utilisé par le lecteur, qui peut être un disque dur ou un disque SSD.
+
+
+
+ a| 
+Pourcentage de longévité utilisé (uniquement indiqué si des disques SSD sont présents)
+ a| 
+Quantité de données écrites sur le disque jusqu'à ce jour, divisée par la limite théorique totale en écriture.
+
+
+
+ a| 
+Type d'interface
+ a| 
+Affiche le type d'interface utilisé par le lecteur, par exemple SAS.
+
+
+
+ a| 
+Redondance des chemins d'accès aux disques
+ a| 
+Indique si les connexions entre le lecteur et le contrôleur sont redondantes (Oui) ou non (non).
+
+
+
+ a| 
+Capacité (Gio)
+ a| 
+Affiche la capacité utilisable (capacité totale configurée) du disque.
+
+
+
+ a| 
+Vitesse (tr/min)
+ a| 
+Indique la vitesse en tr/min (n'apparaît pas pour les disques SSD).
+
+
+
+ a| 
+Débit de données actuel
+ a| 
+Affiche le taux de transfert des données entre le lecteur et la matrice de stockage.
+
+
+
+ a| 
+Taille du secteur logique (octets)
+ a| 
+Affiche la taille du secteur logique utilisé par le lecteur.
+
+
+
+ a| 
+Taille du secteur physique (octets)
+ a| 
+Indique la taille du secteur physique utilisé par le lecteur. En général, la taille du secteur physique est de 4096 octets pour les disques durs.
+
+
+
+ a| 
+Version du firmware du disque
+ a| 
+Affiche le niveau de révision du micrologiciel du lecteur.
+
+
+
+ a| 
+Identificateur mondial
+ a| 
+La montre l'identifiant hexadécimal unique du disque.
+
+
+
+ a| 
+ID produit
+ a| 
+Affiche l'identifiant du produit, qui est attribué par le fabricant.
+
+
+
+ a| 
+Numéro de série
+ a| 
+Indique le numéro de série du disque.
+
+
+
+ a| 
+Fabricant
+ a| 
+Indique le fournisseur du disque.
+
+
+
+ a| 
+Date de fabrication
+ a| 
+Indique la date de construction du lecteur.
+
+
+NOTE: Non disponible pour les disques NVMe.
+
+
+
+ a| 
+Sécurité
+ a| 
+Indique si le lecteur est sécurisé (Oui) ou non (non). Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard) (niveaux 140-2 ou 140-3), qui cryptent les données pendant les écritures et les déchiffrées lors des lectures. Ces lecteurs sont considérés comme sécurisés-_compatibles_ car ils peuvent être utilisés pour des raisons de sécurité supplémentaires à l'aide de la fonction sécurité des lecteurs. Si la fonction de sécurité des disques est activée pour les groupes de volumes et les pools utilisés avec ces disques, les lecteurs deviennent sécurisés --_Enabled_.
+
+
+
+ a| 
+Sécurité
+ a| 
+Indique si le lecteur est sécurisé (Oui) ou non (non). Les lecteurs sécurisés sont utilisés avec la fonction de sécurité des lecteurs. Lorsque vous activez la fonction sécurité du lecteur, puis appliquez la sécurité du lecteur à un pool ou à un groupe de volumes sur des lecteurs sécurisés-_compatibles_, les lecteurs deviennent sécurisés-_activés_. L'accès en lecture et en écriture n'est disponible que par l'intermédiaire d'un contrôleur configuré avec la clé de sécurité adéquate. Cette sécurité supplémentaire empêche tout accès non autorisé aux données d'un disque physiquement retiré de la matrice de stockage.
+
+
+
+ a| 
+Accessible en lecture/écriture
+ a| 
+Indique si le lecteur est accessible en lecture/écriture (Oui) ou non (non).
+
+
+
+ a| 
+Identifiant de clé de sécurité du lecteur
+ a| 
+La illustre la clé de sécurité des lecteurs sécurisés. La sécurité des disques est une fonctionnalité de baie de stockage qui fournit une couche de sécurité supplémentaire avec des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard). Lorsque ces disques sont utilisés avec la fonction sécurité des lecteurs, ils ont besoin d'une clé de sécurité pour accéder à leurs données. Lorsque les lecteurs sont physiquement retirés de la matrice, ils ne peuvent pas fonctionner tant qu'ils ne sont pas installés dans une autre matrice. À ce moment, ils seront dans un état de sécurité verrouillé jusqu'à ce que la clé de sécurité correcte soit fournie.
+
+
+
+ a| 
+Compatibilité avec Data assurance (DA)
+ a| 
+Indique si la fonction Data assurance (DA) est activée (Oui) ou non (non). Data assurance (DA) est une fonctionnalité qui vérifie et corrige les erreurs susceptibles de se produire lors du transfert des données entre les contrôleurs et les disques. Data assurance peut être activé au niveau du pool ou du groupe de volumes, avec des hôtes qui utilisent une interface d'E/S DA, telle que Fibre Channel.
+
+
+
+ a| 
+Compatible DULBE
+ a| 
+Indique si l'option d'erreur de bloc logique (DULBE) désalloué ou non est activée (Oui) ou non (non). DULBE est une option sur disques NVMe qui permet aux baies de stockage EF300 ou EF600 de prendre en charge des volumes provisionnés par ressources.
+
+|===
+====
+. Cliquez sur *Fermer*.
+

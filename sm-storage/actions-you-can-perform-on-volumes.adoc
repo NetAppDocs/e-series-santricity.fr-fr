@@ -1,0 +1,135 @@
+---
+permalink: sm-storage/actions-you-can-perform-on-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: 'Vous pouvez effectuer plusieurs actions différentes sur un volume : augmentation de la capacité, suppression, copie, initialisation, redistribution, modification de la propriété, modification des paramètres de cache et modification des paramètres de numérisation des supports.' 
+---
+= Actions que vous pouvez effectuer sur des volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effectuer plusieurs actions différentes sur un volume : augmentation de la capacité, suppression, copie, initialisation, redistribution, modification de la propriété, modification des paramètres de cache et modification des paramètres de numérisation des supports.
+
+
+
+== Augmentation de la capacité
+
+Vous pouvez étendre la capacité d'un volume de deux manières :
+
+* Utilisez la capacité disponible dans le pool ou le groupe de volumes.
++
+Pour ajouter de la capacité à un volume, sélectionnez menu:Storage[pools and Volume Groups > Add Capacity].
+
+* Ajoutez de la capacité non affectée (sous la forme de disques inutilisés) au pool ou au groupe de volumes du volume. Utilisez cette option lorsqu'aucune capacité disponible n'existe dans le pool ou le groupe de volumes.
++
+Pour ajouter de la capacité non affectée au pool ou au groupe de volumes, sélectionnez menu :Storage[pools and Volume Groups > Add Capacity].
+
++
+Si la capacité disponible n'est pas disponible dans le pool ou le groupe de volumes, vous ne pouvez pas augmenter la capacité du volume. Vous devez d'abord augmenter la taille du pool ou du groupe de volumes ou supprimer les volumes inutilisés.
+
+
+
+Après avoir augmenté la capacité du volume, vous devez augmenter manuellement la taille du système de fichiers pour qu'elle corresponde. La façon dont vous faites cela dépend du système de fichiers que vous utilisez. Pour plus de détails, reportez-vous à la documentation du système d'exploitation hôte.
+
+
+
+== Supprimer
+
+Généralement, vous supprimez des volumes si les volumes ont été créés avec des paramètres ou une capacité incorrects, que vous ne répondez plus aux besoins de configuration du stockage ou que des images Snapshot qui ne sont plus nécessaires pour les tests des applications ou des sauvegardes. La suppression d'un volume augmente la capacité disponible dans le pool ou le groupe de volumes.
+
+La suppression de volumes entraîne la perte de toutes les données de ces volumes. La suppression d'un volume supprimera également les images de snapshot, les planifications et les volumes de snapshot associés et supprimera toutes les relations de mise en miroir.
+
+
+
+== Copier
+
+Lorsque vous copiez des volumes, vous créez une copie ponctuelle de deux volumes distincts, le volume source et le volume cible, sur la même matrice de stockage. Vous pouvez copier des volumes en sélectionnant menu:Storage[volumes > Copy Services > Copy volume].
+
+
+
+== Initialiser
+
+L'initialisation d'un volume efface toutes les données du volume. Un volume est automatiquement initialisé lors de sa première création. Cependant, il est possible que le gourou de la restauration indique que vous initiez manuellement un volume afin d'effectuer une restauration suite à une certaine défaillance. Lorsque vous initialisez un volume, celui-ci conserve son WWN, ses affectations d'hôtes, sa capacité allouée et ses paramètres de capacité réservée. Il conserve également les mêmes paramètres d'assurance de données et de sécurité.
+
+Vous pouvez initialiser les volumes en sélectionnant menu:Storage[volumes > More > Initialize volumes].
+
+
+
+== Redistribuer
+
+Vous redistribuez les volumes pour retransférer les volumes vers leurs propriétaires de contrôleur préférés. En général, les pilotes de chemins d'accès multiples déplacent les volumes depuis leur propriétaire privilégié de contrôleur en cas de problème lors du chemin d'accès aux données entre l'hôte et la baie de stockage.
+
+La plupart des pilotes de chemins d'accès multiples de l'hôte tentent d'accéder à chaque volume sur un chemin vers son propriétaire de contrôleur privilégié. Toutefois, si ce chemin préféré n'est plus disponible, le pilote multichemin de l'hôte bascule vers un autre chemin. Ce basculement peut entraîner le changement de propriété du volume vers le contrôleur secondaire. Une fois que vous avez résolu le problème à l'origine du basculement, certains hôtes peuvent retransférer automatiquement la propriété des volumes vers le propriétaire du contrôleur privilégié, mais dans certains cas, vous devrez peut-être redistribuer manuellement les volumes.
+
+Vous pouvez redistribuer les volumes en sélectionnant menu:Storage[volumes > plus > redistribuer les volumes].
+
+
+
+== Changer la propriété du volume
+
+La modification de la propriété d'un volume modifie la propriété de contrôleur préférée du volume. Le propriétaire préféré d'un volume est répertorié sous menu : Storage[volumes > Affichage/Modifier les paramètres > onglet Avancé].
+
+Vous pouvez modifier la propriété d'un volume en sélectionnant menu:Storage[volumes > plus > changer la propriété].
+
+
+
+=== Mise en miroir et propriété de volumes
+
+Si le volume primaire de la paire en miroir est détenu par le contrôleur A, le volume secondaire sera également détenu par le contrôleur A de la baie de stockage distante. La modification du propriétaire du volume primaire entraîne automatiquement la modification du propriétaire du volume secondaire pour s'assurer que les deux volumes appartiennent au même contrôleur. Les modifications de propriété actuelles du côté principal se propagent automatiquement aux modifications de propriété actuelles correspondantes du côté secondaire.
+
+Si un groupe de cohérence du miroir contient un volume secondaire local dont la propriété est modifiée, le volume secondaire est automatiquement retransféré vers le propriétaire de son contrôleur d'origine lors de la première opération d'écriture. Vous ne pouvez pas modifier la propriété du contrôleur d'un volume secondaire en utilisant l'option *changer la propriété*.
+
+
+
+=== Propriété du volume et du volume de la copie
+
+Au cours d'une opération de copie de volume, le même contrôleur doit posséder à la fois le volume source et le volume cible. Parfois, les deux volumes ne disposent pas du même contrôleur préféré au démarrage de l'opération de copie de volume. Par conséquent, la propriété du volume cible est automatiquement transférée vers le contrôleur préféré du volume source. Lorsque la copie de volume est terminée ou arrêtée, la propriété du volume cible est restaurée sur son contrôleur préféré.
+
+Si la propriété du volume source est modifiée pendant l'opération de copie, la propriété du volume cible est également modifiée. Dans certains environnements de systèmes d'exploitation, il peut être nécessaire de reconfigurer le pilote hôte multivoie avant que ce dernier ne puisse être utilisé. (Certains pilotes de chemins d'accès multiples nécessitent une modification pour reconnaître le chemin d'E/S. Reportez-vous à la documentation de votre pilote pour plus d'informations.)
+
+
+
+== Modifier les paramètres de cache
+
+La mémoire cache est une zone de stockage volatile temporaire (RAM) du contrôleur dont le temps d'accès est plus rapide que le support du lecteur. Si vous utilisez la mémoire cache, la performance d'E/S globale est augmentée pour les raisons suivantes :
+
+* Les données demandées par l'hôte pour une lecture peuvent déjà se trouver dans le cache à partir d'une opération précédente, ce qui élimine la nécessité d'accéder au disque.
+* Les données d'écriture sont initialement écrites dans le cache, ce qui libère l'application pour qu'elle puisse continuer à attendre que les données soient écrites sur le disque.
+
+
+Sélectionner menu:Storage[volumes > plus > Modifier les paramètres de cache] pour modifier les paramètres de cache suivants :
+
+* *Cache de lecture et d'écriture* -- le cache de lecture est un tampon qui stocke les données lues à partir des lecteurs. Les données d'une opération de lecture peuvent déjà se trouver dans le cache à partir d'une opération précédente, ce qui évite d'avoir à accéder aux disques. Les données restent dans le cache de lecture jusqu'à ce qu'elles soient supprimées.
++
+Le cache d'écriture est un tampon qui stocke les données de l'hôte qui n'ont pas encore été écrites sur les lecteurs. Les données restent dans le cache d'écriture jusqu'à ce qu'elles soient écrites sur les disques. La mise en cache d'écriture peut augmenter les performances d'E/S.
+
+* *Mise en cache d'écriture avec mise en miroir* -- la mise en cache d'écriture avec mise en miroir se produit lorsque les données écrites dans la mémoire cache d'un contrôleur sont également écrites dans la mémoire cache de l'autre contrôleur. Par conséquent, si un contrôleur tombe en panne, l'autre peut mener à bien toutes les opérations d'écriture en attente. La mise en miroir du cache d'écriture n'est disponible que si la mise en cache d'écriture est activée et que deux contrôleurs sont présents. Lors de la création du volume, la mise en cache d'écriture avec mise en miroir est le paramètre par défaut.
+* *La mise en cache d'écriture sans piles* -- le paramètre de mise en cache d'écriture sans piles permet de poursuivre la mise en cache même si les batteries sont manquantes, en panne, complètement déchargées ou pas complètement chargées. Il n'est généralement pas recommandé de choisir la mise en cache d'écriture sans piles car les données risquent d'être perdues en cas de coupure d'alimentation. En règle générale, la mise en cache des écritures est désactivée temporairement par le contrôleur jusqu'à ce que les batteries soient chargées ou qu'une batterie défectueuse soit remplacée.
++
+Ce paramètre n'est disponible que si vous avez activé la mise en cache des écritures. Ce paramètre n'est pas disponible pour les volumes fins.
+
+* *Préextraction dynamique du cache de lecture* -- la préextraction dynamique de lecture du cache permet au contrôleur de copier des blocs de données séquentiels supplémentaires dans le cache pendant la lecture des blocs de données d'un lecteur vers le cache. Cette mise en cache augmente le risque que les futures demandes de données soient traitées à partir du cache. La lecture préalable en cache dynamique est importante pour les applications multimédia qui utilisent des E/S séquentielles Le taux et la quantité de données préextraites dans le cache sont auto-réglables en fonction du débit et de la taille de la demande des lectures de l'hôte. L'accès aléatoire n'entraîne pas la préextraction des données dans le cache. Cette fonction ne s'applique pas lorsque la mise en cache de lecture est désactivée.
++
+Pour un volume fin, la préextraction de lecture dynamique du cache est toujours désactivée et ne peut pas être modifiée.
+
+
+
+
+
+== Modifier les paramètres de numérisation du support
+
+Les analyses des supports détectent et répare les erreurs de support sur les blocs de disque qui sont rarement lus par les applications. Cette analyse permet d'éviter la perte de données si d'autres disques du pool ou du groupe de volumes tombent en panne, car les données des disques défaillants sont reconstruites à l'aide des informations de redondance et des données provenant d'autres disques du pool ou du groupe de volumes.
+
+Les analyses de supports s'exécutent en continu à un taux constant en fonction de la capacité à scanner et de la durée d'acquisition. Les acquisitions en arrière-plan peuvent être temporairement suspendues par une tâche en arrière-plan de priorité supérieure (par exemple, reconstruction), mais elles reprendront à la même vitesse constante.
+
+Vous pouvez activer et définir la durée d'exécution de l'analyse des supports en sélectionnant menu:Storage[volumes > plus > Modifier les paramètres d'analyse des supports].
+
+Un volume est analysé uniquement lorsque l'option de numérisation des supports est activée pour la matrice de stockage et pour ce volume. Si le contrôle de redondance est également activé pour ce volume, les informations de redondance du volume sont vérifiées pour vérifier la cohérence avec les données, à condition que le volume dispose de la redondance. L'analyse des supports avec contrôle de redondance est activée par défaut pour chaque volume lors de sa création.
+
+En cas d'erreur irrécupérable lors de l'acquisition, les données seront réparées à l'aide des informations de redondance, le cas échéant. Par exemple, les informations de redondance sont disponibles dans des volumes RAID 5 optimaux, ou dans des volumes RAID 6 optimaux ou qui ne comportent qu'un seul disque en panne. Si l'erreur irrécupérable ne peut pas être réparée à l'aide d'informations de redondance, le bloc de données est ajouté au journal de secteur illisible. Les erreurs de support corrigibles et non corrigibles sont signalées au journal des événements.
+
+Si le contrôle de redondance détecte une incohérence entre les données et les informations de redondance, il est signalé dans le journal des événements.

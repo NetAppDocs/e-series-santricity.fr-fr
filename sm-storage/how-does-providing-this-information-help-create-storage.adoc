@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/how-does-providing-this-information-help-create-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload 
+summary: 'Les informations relatives à la charge de travail permettent d"optimiser les caractéristiques des volumes, comme le type d"E/S, la taille de segment et le cache de lecture/écriture pour la charge de travail sélectionnée. Ces caractéristiques optimisées déterminent la façon dont votre charge de travail interagit avec les composants d"une baie de stockage.' 
+---
+= Comment fournir ces informations aide-t-il à créer du stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les informations relatives à la charge de travail permettent d'optimiser les caractéristiques des volumes, comme le type d'E/S, la taille de segment et le cache de lecture/écriture pour la charge de travail sélectionnée. Ces caractéristiques optimisées déterminent la façon dont votre charge de travail interagit avec les composants d'une baie de stockage.
+
+En fonction des informations que vous fournissez sur les charges de travail, System Manager crée les volumes appropriés et les place sur les pools ou groupes de volumes disponibles sur le système. Le système crée les volumes et optimise leurs caractéristiques en fonction des meilleures pratiques actuelles pour la charge de travail que vous avez sélectionnée.
+
+Avant de terminer la création de volumes pour une charge de travail donnée, vous pouvez vérifier la configuration de volume recommandée et modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.
+
+Consultez la documentation spécifique à votre application pour obtenir des informations sur les bonnes pratiques.

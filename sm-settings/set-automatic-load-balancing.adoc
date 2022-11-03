@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/set-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, automatic, load, balancing, 
+summary: 'La fonction d"équilibrage de charge automatique assure la gestion et l"équilibrage dynamiques du trafic d"E/S entrant provenant des hôtes sur les deux contrôleurs. Cette fonctionnalité est activée par défaut, mais vous pouvez la désactiver dans System Manager.' 
+---
+= Définir l'équilibrage automatique de la charge
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction d'équilibrage de charge automatique assure la gestion et l'équilibrage dynamiques du trafic d'E/S entrant provenant des hôtes sur les deux contrôleurs. Cette fonctionnalité est activée par défaut, mais vous pouvez la désactiver dans System Manager.
+
+Lorsque l'équilibrage automatique de la charge est activé, il exécute les fonctions suivantes :
+
+* Surveille et équilibre automatiquement l'utilisation des ressources du contrôleur.
+* Ajuste automatiquement la propriété des contrôleurs de volume lorsque vous en avez besoin, ce qui optimise la bande passante d'E/S entre les hôtes et la baie de stockage.
+
+
+Vous pouvez désactiver l'équilibrage automatique de la charge sur votre matrice de stockage pour les raisons suivantes :
+
+* Vous ne souhaitez pas modifier automatiquement la propriété du contrôleur d'un volume pour équilibrer la charge de travail.
+* Vous travaillez dans un environnement très ajusté où la distribution de charge est volontairement configurée pour obtenir une distribution spécifique entre les contrôleurs.
+
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres supplémentaires*, puis cliquez sur *Activer/Désactiver l'équilibrage automatique de la charge*.
++
+Le texte en dessous de cette option indique si la fonction est actuellement activée ou désactivée.
+
++
+Une boîte de dialogue de confirmation s'ouvre.
+
+. Confirmez en cliquant sur *Oui* pour continuer.
++
+En sélectionnant cette option, vous basculez la fonction entre activé/désactivé.
+
++
+[NOTE]
+====
+Si cette fonctionnalité est déplacée de Désactivé à activé, la fonction de rapport de connectivité hôte est également activée automatiquement.
+
+====
+

@@ -1,0 +1,32 @@
+---
+permalink: sm-storage/rtv-remove-remote-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, remote, storage, 
+summary: 'Une fois l"importation terminée, vous pouvez supprimer un objet de stockage distant si vous ne souhaitez plus copier les données entre les périphériques locaux et distants.' 
+---
+= Supprime un objet de stockage distant
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois l'importation terminée, vous pouvez supprimer un objet de stockage distant si vous ne souhaitez plus copier les données entre les périphériques locaux et distants.
+
+Assurez-vous qu'aucune importation n'est associée à l'objet de stockage distant que vous envisagez de supprimer.
+
+Lorsque vous supprimez un objet de stockage distant, les connexions entre les périphériques locaux et distants sont supprimées.
+
+.Étapes
+. Sélectionnez menu:stockage[stockage distant].
+. Dans la liste, sélectionnez l'objet de stockage distant que vous souhaitez supprimer.
+. Cliquez sur *Supprimer*.
++
+La boîte de dialogue confirmer la suppression de la connexion de stockage distant s'affiche.
+
+. Confirmer l'opération en tapant `remove` Puis cliquez sur *Supprimer*.
++
+L'objet de stockage distant sélectionné est supprimé.
+
+

@@ -1,0 +1,41 @@
+---
+permalink: sm-storage/automatic-versus-manual-host-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, manual, host, 
+summary: 'La création d"un hôte est l"une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d"autoriser l"accès E/S aux volumes. Vous pouvez créer un hôte automatiquement ou manuellement.' 
+---
+= Création automatique ou manuelle des hôtes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La création d'un hôte est l'une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d'autoriser l'accès E/S aux volumes. Vous pouvez créer un hôte automatiquement ou manuellement.
+
+
+
+== Création automatique
+
+La création automatique d'hôte pour les hôtes basés sur SCSI (et non sur NVMe-of) est initiée par l'agent HCA (Host Context Agent). Le HCA est un utilitaire que vous pouvez installer sur chaque hôte connecté à la matrice de stockage. Chaque hôte sur lequel le HCA est installé transmet ses informations de configuration aux contrôleurs de la matrice de stockage via le chemin d'E/S. En fonction des informations sur l'hôte, les contrôleurs créent automatiquement l'hôte et les ports hôtes associés et définissent le type d'hôte. Si nécessaire, vous pouvez apporter des modifications supplémentaires à la configuration de l'hôte à l'aide de System Manager.
+
+Une fois que l'HCA a effectué sa détection automatique, l'hôte s'affiche automatiquement dans la page hôtes avec les attributs suivants :
+
+* Nom d'hôte dérivé du nom système de l'hôte.
+* Les ports d'identifiant hôte associés à l'hôte.
+* Type de système d'exploitation hôte de l'hôte.
+
+
+Les hôtes sont créés en tant qu'hôtes autonomes ; le HCA ne crée pas ou n'ajoute pas automatiquement aux clusters hôtes.
+
+
+
+== Création manuelle
+
+Vous pouvez créer manuellement un hôte pour l'une des raisons suivantes :
+
+. Vous avez choisi de ne pas installer l'utilitaire HCA sur vos hôtes.
+. Vous voulez vous assurer que les identificateurs de port hôte détectés par les contrôleurs de la matrice de stockage sont correctement associés aux hôtes.
+
+
+Lors de la création manuelle d'un hôte, vous associez des identificateurs de port hôte en les sélectionnant dans une liste ou en les saisissant manuellement. Une fois que vous avez créé un hôte, vous pouvez lui attribuer des volumes ou l'ajouter à un cluster hôte si vous prévoyez de partager l'accès aux volumes.

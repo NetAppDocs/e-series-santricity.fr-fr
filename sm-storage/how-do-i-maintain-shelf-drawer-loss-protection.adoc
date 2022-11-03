@@ -1,0 +1,73 @@
+---
+permalink: sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, drawer, loss, protection 
+summary: Pour maintenir la protection contre les pertes de tiroir/tiroir pour un pool ou un groupe de volumes, utilisez les critères spécifiés dans le tableau suivant. 
+---
+= Comment maintenir la protection contre les pertes des tablettes et des tiroirs ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour maintenir la protection contre les pertes de tiroir/tiroir pour un pool ou un groupe de volumes, utilisez les critères spécifiés dans le tableau suivant.
+
+[cols="1a,1a,1a"]
+|===
+| Niveau | Critères pour la protection contre les pertes des étagères/tiroirs | Nombre minimal de tiroirs/étagères requis 
+
+
+ a| 
+Piscine
+ a| 
+Pour les tiroirs, le pool ne doit pas contenir plus de deux disques dans un seul tiroir.
+
+Pour les tiroirs, le pool doit inclure un nombre égal de disques de chaque tiroir.
+ a| 
+6 pour les étagères
+
+5 pour tiroirs
+
+
+
+ a| 
+RAID 6
+ a| 
+Le groupe de volumes ne contient pas plus de deux disques dans un tiroir ou un tiroir unique.
+ a| 
+3
+
+
+
+ a| 
+RAID 3 ou RAID 5
+ a| 
+Chaque disque du groupe de volumes est situé dans un tiroir ou un tiroir séparé.
+ a| 
+3
+
+
+
+ a| 
+RAID 1
+ a| 
+Chaque disque d'une paire en miroir doit être placé dans un tiroir ou un tiroir séparé.
+ a| 
+2
+
+
+
+ a| 
+RAID 0
+ a| 
+Impossible d'obtenir une protection contre les pertes de tablette/tiroir.
+ a| 
+Sans objet
+
+|===
+[NOTE]
+====
+La protection contre les pertes de tiroirs/tiroirs n'est pas maintenue si un disque a déjà échoué dans le pool ou le groupe de volumes. Dans ce cas, si l'accès à un tiroir disque ou à un tiroir disque est perdu et par conséquent à un autre disque du pool ou du groupe de volumes, les données sont perdues.
+
+====

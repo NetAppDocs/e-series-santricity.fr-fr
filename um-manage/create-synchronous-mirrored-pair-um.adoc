@@ -1,0 +1,144 @@
+---
+permalink: um-manage/create-synchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
+summary: Pour configurer la mise en miroir synchrone, vous créez une paire en miroir qui comprend un volume primaire sur la baie locale et un volume secondaire sur la baie distante. 
+---
+= Création d'une paire symétrique synchrone
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer la mise en miroir synchrone, vous créez une paire en miroir qui comprend un volume primaire sur la baie locale et un volume secondaire sur la baie distante.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+Avant de créer une paire en miroir, répondez aux exigences suivantes pour Unified Manager :
+
+* Le service Web Services Proxy doit être en cours d'exécution.
+* Unified Manager doit s'exécuter sur votre hôte local via une connexion HTTPS.
+* Unified Manager doit afficher des certificats SSL valides pour la matrice de stockage. Vous pouvez accepter un certificat auto-signé ou installer votre propre certificat de sécurité à l'aide d'Unified Manager et accéder au menu :Certificate[Certificate Management].
+
+
+Assurez-vous également de répondre aux exigences suivantes en matière de baies et de volumes de stockage :
+
+* Les deux baies de stockage que vous prévoyez d'utiliser pour la mise en miroir sont découvertes dans Unified Manager.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vos baies de stockage locales et distantes sont connectées par une structure Fibre Channel.
+* Vous avez créé les volumes primaires et secondaires que vous souhaitez utiliser dans la relation de miroir synchrone.
+* Le volume primaire doit être un volume standard. Il ne peut s'agir d'un volume fin ou d'un volume de snapshot.
+* Le volume secondaire doit être un volume standard. Il ne peut s'agir d'un volume fin ou d'un volume de snapshot.
+* Le volume secondaire doit être au moins aussi grand que le volume principal.
+
+
+Le processus de création de paires mises en miroir synchrones est une procédure en plusieurs étapes.
+
+
+
+== Étape 1 : sélectionnez le volume principal
+
+Dans cette étape, vous sélectionnez le volume primaire à utiliser dans la relation miroir synchrone. Lorsque vous sélectionnez un volume primaire sur la matrice de stockage locale, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Le volume que vous sélectionnez conserve le rôle principal dans la relation miroir.
+
+.Étapes
+. Dans la page *Manage*, sélectionnez la matrice de stockage locale que vous souhaitez utiliser pour la source.
+. Sélectionner le menu:actions [Créer une paire symétrique synchrone].
++
+L'assistant Créer une paire symétrique synchrone s'ouvre.
+
+. Dans la liste des volumes éligibles, sélectionnez un volume que vous souhaitez utiliser comme volume principal dans le miroir.
+. Sélectionnez *Suivant* et allez à  2: Select the secondary volume.
+
+
+
+
+== Étape 2 : sélectionnez le volume secondaire
+
+Dans cette étape, vous sélectionnez le volume secondaire à utiliser dans la relation miroir. Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Le volume que vous sélectionnez tiendra le rôle secondaire dans la relation miroir.
+
+.Étapes
+. Sélectionnez la matrice de stockage distante sur laquelle vous souhaitez établir une relation de mise en miroir avec la matrice de stockage locale.
++
+[NOTE]
+====
+Si votre matrice de stockage distante est protégée par un mot de passe, le système vous demande un mot de passe.
+
+====
++
+** Les baies de stockage sont répertoriées par le nom de leur baie de stockage. Si vous n'avez pas nommé de baie de stockage, elle est indiquée comme « sans nom ».
+** Si la baie de stockage que vous souhaitez utiliser ne figure pas dans la liste, assurez-vous qu'elle a été découverte dans Unified Manager.
+
+
+. Dans la liste des volumes éligibles, sélectionnez un volume que vous souhaitez utiliser comme volume secondaire dans le miroir.
++
+[NOTE]
+====
+Si un volume secondaire est choisi avec une capacité supérieure à celle du volume primaire, la capacité utilisable est limitée à la taille du volume primaire.
+
+====
+. Cliquez sur *Suivant* et allez à  3: Select synchronization settings.
+
+
+
+
+== Étape 3 : sélectionnez les paramètres de synchronisation
+
+Dans cette étape, vous sélectionnez les paramètres qui déterminent comment les données sont synchronisées après une interruption de communication. Vous pouvez définir la priorité à laquelle le propriétaire du contrôleur du volume principal resynchronise les données sur le volume secondaire après une interruption de communication. Vous devez également sélectionner la règle de resynchronisation manuelle ou automatique.
+
+.Étapes
+. Utilisez le curseur pour définir la priorité de synchronisation.
++
+La priorité de synchronisation détermine la quantité de ressources système utilisées pour terminer la synchronisation initiale et l'opération de resynchronisation après une interruption de communication par rapport aux demandes d'E/S de service.
+
++
+La priorité définie dans cette boîte de dialogue s'applique à la fois au volume primaire et au volume secondaire. Vous pouvez modifier ultérieurement le débit du volume primaire en accédant à System Manager et en sélectionnant menu :stockage[mise en miroir synchrone > plus > Modifier les paramètres].
+
++
+Il existe cinq taux de priorité de synchronisation :
+
++
+** La plus faible
+** Faible
+** Moyen
+** Élevée
+** La plus haute
++
+Si la priorité de synchronisation est définie sur le taux le plus bas, l'activité d'E/S est prioritaire et l'opération de resynchronisation prend plus de temps. Si la priorité de synchronisation est définie sur le taux le plus élevé, l'opération de resynchronisation est prioritaire, mais l'activité d'E/S de la matrice de stockage peut être affectée.
+
+
+
+. Indiquez si vous souhaitez resynchroniser les paires mises en miroir sur la baie de stockage distante manuellement ou automatiquement.
++
+** *Manuel* (option recommandée) -- sélectionnez cette option pour que la synchronisation puisse être reprise manuellement après la restauration de la communication sur une paire symétrique. Cette option offre la meilleure possibilité de récupérer des données.
+** *Automatique* -- sélectionnez cette option pour démarrer la resynchronisation automatiquement après la restauration de la communication vers une paire symétrique.
++
+Pour reprendre la synchronisation manuellement, accédez à System Manager et sélectionnez menu:Storage[Synchronous Mirroring], mettez en surbrillance la paire symétrique dans le tableau et sélectionnez *reprendre* sous *plus*.
+
+
+
+. Cliquez sur *Finish* pour terminer la séquence de mise en miroir synchrone.
+
+
+Une fois la mise en miroir activée, le système effectue les actions suivantes :
+
+* Commence la synchronisation initiale entre la matrice de stockage locale et la matrice de stockage distante.
+* Définit la priorité de synchronisation et la règle de resynchronisation.
+* Réserve le port le plus numéroté du contrôleur HIC pour la transmission des données en miroir.
++
+Les demandes d'E/S reçues sur ce port ne sont acceptées que par le propriétaire du contrôleur préféré distant du volume secondaire de la paire en miroir. (Les réservations sur le volume primaire sont autorisées.)
+
+* Crée deux volumes de capacité réservée, un pour chaque contrôleur, qui sont utilisés pour la journalisation des informations d'écriture afin de restaurer les données à partir de la réinitialisation du contrôleur et d'autres interruptions temporaires.
++
+La capacité de chaque volume est de 128 Mio. Cependant, si les volumes sont placés dans un pool, 4 Gio sont réservées pour chaque volume.
+
+
+
+Accédez à System Manager et sélectionnez menu:Home [opérations de visualisation en cours] pour afficher la progression de l'opération de mise en miroir synchrone. Cette opération peut être longue et peut affecter les performances du système.

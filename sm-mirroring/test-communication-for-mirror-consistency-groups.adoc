@@ -1,0 +1,73 @@
+---
+permalink: sm-mirroring/test-communication-for-mirror-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
+summary: 'Vous pouvez tester la liaison de communication pour diagnostiquer d"éventuels problèmes de communication entre la matrice de stockage locale et la matrice de stockage distante associée à un groupe de cohérence miroir.' 
+---
+= Testez la communication pour les groupes de cohérence miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez tester la liaison de communication pour diagnostiquer d'éventuels problèmes de communication entre la matrice de stockage locale et la matrice de stockage distante associée à un groupe de cohérence miroir.
+
+Le groupe de cohérence en miroir que vous souhaitez tester doit exister sur les baies de stockage locales et distantes.
+
+Vous pouvez exécuter quatre tests différents :
+
+* *Connectivity* -- vérifie que les deux contrôleurs ont un chemin de communication. Le test de connectivité envoie un message inter-baies entre les baies de stockage, puis valide l'existence du groupe de cohérence du miroir correspondant sur la baie de stockage distante. Il valide également que les volumes membres du groupe de cohérence miroir sur la baie de stockage distante correspondent aux volumes membres du groupe de cohérence miroir sur la baie de stockage locale.
+* *Latence* -- envoie une commande SCSI Test Unit à chaque volume mis en miroir sur la matrice de stockage distante associée au groupe de cohérence miroir pour tester la latence minimale, moyenne et maximale.
+* *Bandwidth* -- envoie deux messages inter-array à la matrice de stockage distante pour tester la bande passante minimale, moyenne et maximale ainsi que la vitesse de liaison négociée du port de la matrice effectuant le test.
+* *Connexions de port* -- affiche le port utilisé pour la mise en miroir sur la matrice de stockage locale et le port qui reçoit les données en miroir sur la matrice de stockage distante.
+
+
+.Étapes
+. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Sélectionnez l'onglet *groupes de cohérence miroir*, puis sélectionnez le groupe de cohérence miroir que vous souhaitez tester.
+. Sélectionnez *Test communication*.
++
+La boîte de dialogue Tester la communication s'affiche.
+
+. Sélectionnez un ou plusieurs tests de communication à effectuer entre les matrices de stockage locales et distantes associées au groupe de cohérence miroir sélectionné, puis cliquez sur *Test*.
+. Vérifiez les informations affichées dans la fenêtre Résultats.
++
+[cols="35h,~"]
+|===
+| État du test de communication | Description 
+
+
+ a| 
+Normale, sans erreur
+ a| 
+Le groupe de cohérence miroir communique correctement.
+
+
+
+ a| 
+Statut réussi (mais non normal)
+ a| 
+Vérifiez les problèmes de réseau ou de connexion possibles et réessayez le test.
+
+
+
+ a| 
+Échec de l'état
+ a| 
+La raison de la défaillance est indiquée. Reportez-vous au gourou de la restauration pour corriger le problème.
+
+
+
+ a| 
+Erreur de connexion du port
+ a| 
+La raison peut être que la matrice de stockage locale n'est pas connectée ou que la matrice de stockage distante ne peut pas être contactée. Reportez-vous au gourou de la restauration pour corriger le problème.
+
+|===
+
+
+Une fois le test de communication terminé, cette boîte de dialogue affiche un état Normal, réussi ou échec.
+
+Si le test de communication renvoie un état d'échec, le test continue à s'exécuter après la fermeture de cette boîte de dialogue jusqu'à ce que la communication entre les groupes de cohérence miroir soit restaurée.

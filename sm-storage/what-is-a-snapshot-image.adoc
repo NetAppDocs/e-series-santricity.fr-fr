@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, image, 
+summary: Une image Snapshot est une copie logique du contenu de volume, capturée à un point spécifique dans le temps. Les images snapshot utilisent un espace de stockage minimal. 
+---
+= Qu'est-ce qu'une image instantanée ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une image Snapshot est une copie logique du contenu de volume, capturée à un point spécifique dans le temps. Les images snapshot utilisent un espace de stockage minimal.
+
+Les données d'images instantanées sont stockées comme suit :
+
+* Toute image Snapshot reflète exactement le volume de base tel qu'il était au moment de la création de la copie. Après la création de la copie Snapshot, lorsque la première demande d'écriture a lieu pour un bloc ou un ensemble de blocs du volume de base, les données originales sont copiées dans la capacité réservée du snapshot avant que les nouvelles données ne soient écrites sur le volume de base.
+* Les snapshots suivants incluent uniquement les blocs de données qui ont été modifiés depuis la création de la première image snapshot. Chaque opération de copie sur écriture suivante enregistre les données originales qui sont sur le point d'être remplacées sur le volume de base vers la capacité réservée de snapshot avant que les nouvelles données ne soient écrites sur le volume de base.
+

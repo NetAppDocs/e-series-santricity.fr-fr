@@ -1,0 +1,21 @@
+---
+permalink: um-certificates/why-cant-i-log-in-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, log in, login 
+summary: Si vous recevez une erreur lors de la tentative de connexion, consultez ces causes possibles. 
+---
+= Pourquoi ne puis-je pas me connecter ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous recevez une erreur lors de la tentative de connexion, consultez ces causes possibles.
+
+Des erreurs de connexion peuvent se produire pour l'une des raisons suivantes :
+
+* Vous avez saisi un nom d'utilisateur ou un mot de passe incorrect.
+* Vous disposez de privilèges insuffisants.
+* Vous avez tenté de vous connecter plusieurs fois sans succès, ce qui a déclenché le mode de verrouillage. Attendez 10 minutes pour vous reconnecter.
+

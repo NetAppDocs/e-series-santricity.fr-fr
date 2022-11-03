@@ -1,0 +1,49 @@
+---
+permalink: um-certificates/access-management-with-directory-services-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, access management, directory services, 
+summary: 'Les administrateurs peuvent utiliser un serveur LDAP (Lightweight Directory Access Protocol) et un service d"annuaire, tel que Active Directory de Microsoft.' 
+---
+= Gestion des accès avec les services d'annuaire
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les administrateurs peuvent utiliser un serveur LDAP (Lightweight Directory Access Protocol) et un service d'annuaire, tel que Active Directory de Microsoft.
+
+
+
+== Flux de travail de configuration
+
+Si un serveur LDAP et un service d'annuaire sont utilisés sur le réseau, la configuration fonctionne comme suit :
+
+. Un administrateur se connecte à Unified Manager avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité.
++
+[NOTE]
+====
+Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du système.
+
+====
+. L'administrateur entre les paramètres de configuration du serveur LDAP. Les paramètres incluent le nom de domaine, l'URL et les informations de compte Bind.
+. Si le serveur LDAP utilise un protocole sécurisé (LDAPS), l'administrateur télécharge une chaîne de certificats d'autorité de certification (CA) pour l'authentification entre le serveur LDAP et le système hôte sur lequel le proxy des services Web est installé.
+. Une fois la connexion au serveur établie, l'administrateur mappe les groupes d'utilisateurs sur les rôles d'utilisateur local. Ces rôles sont prédéfinis et ne peuvent pas être modifiés.
+. L'administrateur teste la connexion entre le serveur LDAP et Web Services Proxy.
+. Les utilisateurs se connectent au système avec les informations d'identification des services LDAP/Directory qui leur sont attribuées.
+
+
+
+
+== Gestion
+
+Lors de l'utilisation des services d'annuaire pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :
+
+* Ajouter un serveur de répertoire.
+* Modifier les paramètres du serveur de répertoire.
+* Mappez les utilisateurs LDAP aux rôles d'utilisateur local.
+* Supprimer un serveur de répertoires.
+* Modifier les mots de passe.
+* Définissez une longueur minimale pour les mots de passe.
+* Autoriser les utilisateurs à se connecter sans mot de passe.
+

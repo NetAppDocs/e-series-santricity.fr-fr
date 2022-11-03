@@ -1,0 +1,89 @@
+---
+permalink: um-admin/overview-interface-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, interface, GUI 
+summary: 'Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d"une seule vue.' 
+---
+= Présentation de l'interface de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d'une seule vue.
+
+
+
+== Page principale
+
+Lorsque vous vous connectez à Unified Manager, la page principale s'ouvre sur *Manage - All*. À partir de cette page, vous pouvez faire défiler la liste des matrices de stockage détectées sur votre réseau, afficher leur état et effectuer des opérations sur une seule matrice ou sur un groupe de matrices.
+
+
+
+== Barre latérale de navigation
+
+Vous pouvez accéder aux fonctionnalités et fonctions de Unified Manager à partir de la barre latérale de navigation.
+
+[cols="25h,~"]
+|===
+| De service | Description 
+
+
+ a| 
+Gérez
+ a| 
+Découvrez les baies de stockage de votre réseau, lancez SANtricity System Manager pour une baie, importez les paramètres d'une baie à plusieurs baies et gérez les groupes de baies. Cochez les cases en regard des noms de tableau pour effectuer des opérations sur ces derniers, telles que l'importation de paramètres et la création de groupes de matrices. Les points de suspension à la fin de chaque ligne fournissent un menu en ligne pour les opérations sur un tableau unique, comme le renommer.
+
+
+
+ a| 
+Exploitation
+ a| 
+Affichez la progression des opérations par lots, comme l'importation de paramètres d'une matrice à une autre.
+
+[NOTE]
+====
+Certaines opérations ne sont pas disponibles lorsqu'une matrice de stockage présente un état non optimal.
+
+====
+
+
+ a| 
+Gestion des certificats
+ a| 
+Gérer les certificats pour s'authentifier entre les navigateurs et les clients.
+
+
+
+ a| 
+Gestion des accès
+ a| 
+Définition de l'authentification utilisateur pour l'interface Unified Manager
+
+
+
+ a| 
+Assistance
+ a| 
+Accédez aux options d'assistance technique, aux ressources et aux contacts.
+
+|===
+
+
+== Paramètres d'interface et aide
+
+En haut à droite de l'interface, vous pouvez accéder à l'aide et à d'autres documents. Vous pouvez également accéder aux options d'administration disponibles dans la liste déroulante située à côté de votre nom de connexion.
+
+
+
+== Identifiants de connexion et mots de passe des utilisateurs
+
+L'utilisateur actuel connecté au système s'affiche en haut à droite de l'interface.
+
+Pour plus d'informations sur les utilisateurs et les mots de passe, voir :
+
+* link:administrator-password-protection-unified.html["Définissez la protection par mot de passe de l'administrateur"]
+* link:change-admin-password-unified.html["Modifiez le mot de passe d'administration"]
+* link:../um-certificates/change-passwords-unified.html["Modifiez les mots de passe des profils utilisateur locaux"]
+

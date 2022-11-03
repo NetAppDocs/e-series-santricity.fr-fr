@@ -1,0 +1,59 @@
+---
+permalink: um-manage/considerations-for-discovering-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
+summary: Avant que Unified Manager puisse afficher et gérer les ressources de stockage, il doit découvrir les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule. 
+---
+= Considérations relatives à la détection des baies
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant que Unified Manager puisse afficher et gérer les ressources de stockage, il doit détecter les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule.
+
+
+
+== Détection des nombreuses baies de stockage
+
+Si vous choisissez de détecter plusieurs baies, vous entrez une plage d'adresses IP réseau, puis Unified Manager tente de connecter individuellement chaque adresse IP de cette plage. Toute matrice de stockage atteinte s'affiche sur la page découverte et peut être ajoutée à votre domaine de gestion.
+
+
+
+== Détection d'une seule baie de stockage
+
+Si vous choisissez de détecter une seule baie, entrez l'adresse IP unique de l'un des contrôleurs de la baie de stockage, puis ajoutez chaque baie de stockage.
+
+[NOTE]
+====
+Unified Manager détecte et affiche uniquement la seule adresse IP ou adresse IP dans une plage attribuée à un contrôleur. Si d'autres contrôleurs ou adresses IP sont attribués à ces contrôleurs se situent en dehors de cette adresse IP unique ou de cette plage d'adresses IP, Unified Manager ne les détecte pas et ne les affiche pas. Toutefois, une fois la matrice de stockage ajoutée, toutes les adresses IP associées sont découvertes et affichées dans la vue gestion.
+
+====
+
+
+== Informations d'identification de l'utilisateur
+
+Dans le cadre du processus de découverte, vous devez fournir le mot de passe administrateur pour chaque matrice de stockage que vous souhaitez ajouter.
+
+
+
+== Certificats de services Web
+
+Dans le cadre du processus de détection, Unified Manager vérifie que les baies de stockage découvertes utilisent des certificats par une source de confiance. Unified Manager utilise deux types d'authentification basée sur le certificat pour toutes les connexions qu'il établit avec le navigateur :
+
+* *Certificats de confiance*
++
+Pour les matrices découvertes par Unified Manager, vous devrez peut-être installer d'autres certificats de confiance fournis par l'autorité de certification.
+
++
+Utilisez le bouton *Importer* pour importer ces certificats. Si vous vous êtes déjà connecté à cette matrice, un ou les deux certificats de contrôleur ont expiré, sont révoqués ou un certificat racine ou intermédiaire manquant dans sa chaîne de certificats. Vous devez remplacer le certificat expiré ou révoqué ou ajouter le certificat racine ou intermédiaire manquant avant de gérer la matrice de stockage.
+
+* *Certificats auto-signés*
++
+Les certificats auto-signés peuvent également être utilisés. Si l'administrateur tente de détecter les matrices sans importer les certificats signés, Unified Manager affiche une boîte de dialogue d'erreur qui permet à l'administrateur d'accepter le certificat auto-signé. Le certificat auto-signé de la baie de stockage sera marqué comme approuvé et la baie de stockage sera ajoutée à Unified Manager.
+
++
+Si vous ne faites pas confiance aux connexions à la baie de stockage, sélectionnez *Annuler* et validez la stratégie de certificat de sécurité de la baie de stockage avant d'ajouter la baie de stockage à Unified Manager.
+
+

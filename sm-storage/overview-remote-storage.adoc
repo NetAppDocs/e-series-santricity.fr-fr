@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/overview-remote-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage 
+summary: 'Si vous disposez de la fonction stockage distant, vous pouvez importer des données à partir d"un système de stockage distant.' 
+---
+= Présentation des fonctionnalités de stockage distant
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous disposez de la fonction stockage distant, vous pouvez importer des données d'un système de stockage distant vers votre matrice de stockage.
+
+
+
+== Qu'est-ce que la fonctionnalité de stockage distant ?
+
+La fonction _stockage distant_ vous permet d'importer des données d'un système de stockage distant vers un système de stockage E-Series local. Le système distant peut être un autre système E-Series ou un système d'un autre fournisseur. Cette fonction est utile pour rationaliser la migration des données avec des temps d'arrêt minimes, notamment lors des mises à niveau de l'équipement.
+
+
+NOTE: Pour utiliser le stockage distant, cette fonction doit être activée dans l'ID du sous-modèle (SMID).
+
+En savoir plus :
+
+* link:rtv-how-remote-storage-works.html["Fonctionnement du stockage à distance"]
+* link:rtv-terminology.html["Terminologie Remote Storage"]
+* link:rtv-remote-storage-requirements.html["Besoins en stockage distant"]
+* link:rtv-remote-storage-volume-requirements.html["Exigences en termes de volume du stockage distant"]
+
+
+
+
+== Comment importer des données avec cette fonction ?
+
+L'assistant de stockage distant vous permet de mapper un périphérique de stockage distant (la source de l'importation de données) sur un volume cible du système E-Series. Cet assistant est disponible à partir du menu : stockage[stockage distant].
+
+En savoir plus :
+
+* link:rtv-import-remote-storage.html["Importer le stockage distant"]
+* link:rtv-manage-progress-of-remote-volume-import.html["Gérer la progression de l'importation des données"]
+

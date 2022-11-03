@@ -1,0 +1,114 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, setup wizard 
+summary: 'Utilisez l"assistant d"installation pour configurer votre baie de stockage, y compris le matériel, les hôtes, les applications, les charges de travail Pools, alertes et AutoSupport.' 
+---
+= Présentation de l'assistant d'installation
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez l'assistant d'installation pour configurer votre baie de stockage, y compris le matériel, les hôtes, les applications, les charges de travail Pools, alertes et AutoSupport.
+
+
+
+== Configuration initiale
+
+Lorsque vous ouvrez System Manager pour la première fois, l'assistant d'installation démarre. L'assistant d'installation vous invite à effectuer des tâches de configuration de base, telles que l'attribution d'un nom à votre baie de stockage, la configuration de vos hôtes, la sélection d'applications et la création de pools de stockage.
+
+
+NOTE: Avant de poursuivre la configuration initiale, accédez au Centre de mise à niveau (menu:support[Upgrade Center]) et vérifiez que votre logiciel SANtricity OS est à jour. Si nécessaire, effectuez une mise à niveau vers la dernière version et actualisez votre navigateur pour poursuivre l'installation. Pour plus d'informations, voir link:../sm-support/overview-upgrade-center.html["Présentation du centre de mise à niveau"].
+
+Si vous annulez l'assistant, vous ne pouvez pas le relancer manuellement. L'assistant redémarre automatiquement lorsque vous ouvrez System Manager ou actualisez votre navigateur et _au moins une_ des conditions suivantes est remplie :
+
+* Aucun pool et groupe de volumes n'est détecté.
+* Aucune charge de travail n'est détectée.
+* Aucune notification n'est configurée.
+
+
+
+
+== Terminologie
+
+L'assistant d'installation utilise les termes suivants.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Client supplémentaire
+ a| 
+Une application est un programme logiciel, tel que Microsoft SQL Server ou Microsoft Exchange.
+
+
+
+ a| 
+Alerte
+ a| 
+Les alertes signalent aux administrateurs les événements importants survenant sur les baies de stockage. Les alertes peuvent être envoyées par e-mail, des traps SNMP ou syslog.
+
+
+
+ a| 
+AutoSupport
+ a| 
+La fonction AutoSupport surveille l'état de santé d'une baie de stockage et envoie des interventions automatiques au support technique.
+
+
+
+ a| 
+Sous-jacent
+ a| 
+Le matériel du système de stockage comprend des baies de stockage, des contrôleurs et des disques.
+
+
+
+ a| 
+Hôte
+ a| 
+Un hôte est un serveur qui envoie des E/S à un volume d'une baie de stockage.
+
+
+
+ a| 
+Objet
+ a| 
+Un objet désigne un composant de stockage physique ou logique. Les objets logiques incluent les groupes de volumes, les pools et les volumes. Les objets physiques incluent la baie de stockage, les contrôleurs de baie, les hôtes et les disques.
+
+
+
+ a| 
+Piscine
+ a| 
+Un pool est un ensemble de disques regroupés de manière logique. Vous pouvez utiliser un pool pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes depuis un pool ou un groupe de volumes.)
+
+
+
+ a| 
+Volumétrie
+ a| 
+Un volume est un conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Il s'agit du composant logique créé pour que l'hôte puisse accéder au stockage de la matrice de stockage.
+
+Un volume est créé en fonction de la capacité disponible dans un pool ou un groupe de volumes. Un volume a une capacité définie. Bien qu'un volume soit composé de plusieurs lecteurs, un volume apparaît comme un composant logique pour l'hôte.
+
+
+
+ a| 
+Groupe de volumes
+ a| 
+Un groupe de volumes est un conteneur pour les volumes aux caractéristiques partagées. Un groupe de volumes a une capacité et un niveau RAID définis. Vous pouvez utiliser un groupe de volumes pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes à partir d'un groupe de volumes ou d'un pool.)
+
+
+
+ a| 
+Charge de travail
+ a| 
+Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
+
+|===

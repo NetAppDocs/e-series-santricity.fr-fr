@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/cache-settings-and-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
+summary: 'La mémoire cache est une zone de stockage volatile temporaire sur le contrôleur dont le temps d"accès est plus rapide que celui du lecteur.' 
+---
+= Paramètres du cache et performances
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La mémoire cache est une zone de stockage volatile temporaire sur le contrôleur dont le temps d'accès est plus rapide que celui du lecteur.
+
+La mise en cache permet d'améliorer les performances globales en termes d'E/S, comme suit :
+
+* Les données demandées par l'hôte pour une lecture peuvent déjà se trouver dans le cache à partir d'une opération précédente, ce qui élimine la nécessité d'accéder au disque.
+* Les données d'écriture sont initialement écrites dans le cache, ce qui libère l'application pour qu'elle puisse continuer à attendre que les données soient écrites sur le disque.
+
+
+Les paramètres de cache par défaut répondent aux exigences de la plupart des environnements, mais vous pouvez les modifier si vous le souhaitez.
+
+
+
+== Paramètres de cache de la baie de stockage
+
+Pour tous les volumes de la matrice de stockage, vous pouvez spécifier les valeurs suivantes à partir de la page système :
+
+* *Valeur de début pour le vidage* -- pourcentage de données non écrites dans le cache qui déclenche un vidage du cache (écrire sur le disque). Lorsque le cache contient le pourcentage de démarrage spécifié de données non écrites, un vidage est déclenché. Par défaut, le contrôleur commence à vider le cache lorsque celui-ci atteint 80 % de saturation.
+* *Taille de bloc de cache* -- la taille maximale de chaque bloc de cache, qui est une unité organisationnelle pour la gestion du cache. La taille du bloc cache est par défaut de 8 Kio, mais peut être définie sur 4, 8, 16 ou 32 Kio. La taille de bloc du cache doit idéalement être définie sur la taille d'E/S prédominante de vos applications. Les systèmes de fichiers ou les applications de bases de données utilisent généralement des tailles plus petites, tandis que la taille supérieure est adaptée aux applications qui nécessitent des transferts de données volumineux ou des E/S séquentielles
+
+
+
+
+== Paramètres de cache de volume
+
+Pour les volumes individuels d'une matrice de stockage, vous pouvez spécifier les valeurs suivantes à partir de la page volumes (menu:Storage[volumes]) :
+
+* *Cache de lecture* -- le cache de lecture est un tampon qui stocke les données lues à partir des lecteurs. Les données d'une opération de lecture peuvent déjà se trouver dans le cache à partir d'une opération précédente, ce qui évite d'avoir à accéder aux disques. Les données restent dans le cache de lecture jusqu'à ce qu'elles soient supprimées.
++
+** *Préextraction dynamique du cache de lecture* -- la préextraction dynamique de lecture du cache permet au contrôleur de copier des blocs de données séquentiels supplémentaires dans le cache pendant la lecture des blocs de données d'un lecteur vers le cache. Cette mise en cache augmente le risque que les futures demandes de données soient traitées à partir du cache. La lecture préalable en cache dynamique est importante pour les applications multimédia qui utilisent des E/S séquentielles Le taux et la quantité de données préextraites dans le cache sont auto-réglables en fonction du débit et de la taille de la demande des lectures de l'hôte. L'accès aléatoire n'entraîne pas la préextraction des données dans le cache. Cette fonction ne s'applique pas lorsque la mise en cache de lecture est désactivée.
+
+
+* *Cache d'écriture* -- le cache d'écriture est un tampon qui stocke les données de l'hôte qui n'ont pas encore été écrites sur les lecteurs. Les données restent dans le cache d'écriture jusqu'à ce qu'elles soient écrites sur les disques. La mise en cache d'écriture peut augmenter les performances d'E/S.
++
+[CAUTION]
+====
+*Perte de données possible* -- si vous activez l'option *mise en cache écriture sans piles* et ne disposez pas d'une alimentation universelle pour la protection, vous risquez de perdre des données. De plus, vous risquez de perdre des données si vous n'avez pas de batterie de contrôleur et que vous activez l'option *Write cache sans piles*.
+
+====
++
+** *La mise en cache d'écriture sans piles* -- le paramètre de mise en cache d'écriture sans piles permet de poursuivre la mise en cache même si les batteries sont manquantes, en panne, complètement déchargées ou pas complètement chargées. Il n'est généralement pas recommandé de choisir la mise en cache d'écriture sans piles car les données risquent d'être perdues en cas de coupure d'alimentation. En règle générale, la mise en cache des écritures est désactivée temporairement par le contrôleur jusqu'à ce que les batteries soient chargées ou qu'une batterie défectueuse soit remplacée.
+** *Mise en cache d'écriture avec mise en miroir* -- la mise en cache d'écriture avec mise en miroir se produit lorsque les données écrites dans la mémoire cache d'un contrôleur sont également écrites dans la mémoire cache de l'autre contrôleur. Par conséquent, si un contrôleur tombe en panne, l'autre peut mener à bien toutes les opérations d'écriture en attente. La mise en miroir du cache d'écriture n'est disponible que si la mise en cache d'écriture est activée et que deux contrôleurs sont présents. Lors de la création du volume, la mise en cache d'écriture avec mise en miroir est le paramètre par défaut.
+
+
+

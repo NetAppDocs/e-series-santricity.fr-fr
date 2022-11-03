@@ -1,0 +1,65 @@
+---
+permalink: um-manage/what-impact-does-synchronization-priority-have-on-synchronization-rates-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, synchronization, priority, rates 
+summary: La priorité de synchronisation définit le temps de traitement alloué aux activités de synchronisation par rapport aux performances du système. 
+---
+= Quel est l'impact de la priorité de synchronisation sur les taux de synchronisation ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La priorité de synchronisation définit le temps de traitement alloué aux activités de synchronisation par rapport aux performances du système.
+
+Le propriétaire du contrôleur du volume primaire effectue cette opération en arrière-plan. Parallèlement, le propriétaire du contrôleur traite les écritures d'E/S locales sur le volume primaire et les écritures distantes associées sur le volume secondaire. Étant donné que la resynchronisation renvoie les ressources de traitement du contrôleur à partir de l'activité d'E/S, la resynchronisation peut avoir un impact sur les performances de l'application hôte.
+
+Gardez ces consignes à l'esprit pour vous aider à déterminer la durée d'une priorité de synchronisation et la manière dont les priorités de synchronisation peuvent affecter les performances du système.
+
+Ces taux de priorité sont disponibles :
+
+* La plus faible
+* Faible
+* Moyen
+* Élevée
+* La plus haute
+
+
+Le taux de priorité le plus faible prend en charge les performances du système, mais la resynchronisation prend plus de temps. Le taux de priorité le plus élevé prend en charge la resynchronisation, mais la performance du système peut être compromise.
+
+Ces lignes directrices approxent les différences entre les priorités.
+
+[cols="45h,~"]
+|===
+| Taux de priorité pour la synchronisation complète | Temps écoulé par rapport au taux de synchronisation le plus élevé 
+
+
+ a| 
+La plus faible
+ a| 
+Environ huit fois plus longtemps qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Faible
+ a| 
+Environ six fois plus longtemps qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Moyen
+ a| 
+Environ trois fois et demie tant qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Élevée
+ a| 
+Environ deux fois plus longtemps qu'au taux de priorité le plus élevé.
+
+|===
+La taille des volumes et les charges des E/S hôte ont un impact sur les comparaisons de temps de synchronisation.

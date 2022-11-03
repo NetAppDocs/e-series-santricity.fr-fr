@@ -1,0 +1,62 @@
+---
+permalink: sm-storage/rtv-how-remote-storage-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage 
+summary: 'La fonction de stockage distant vous permet d"importer les données d"un système de stockage distant vers un système de stockage E-Series local. Cette fonction est utile pour rationaliser la migration des données avec des temps d"arrêt minimes, notamment lors des mises à niveau de l"équipement.' 
+---
+= Fonctionnement du stockage à distance
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction de stockage distant vous permet d'importer les données d'un système de stockage distant vers un système de stockage E-Series local. Cette fonction est utile pour rationaliser la migration des données avec des temps d'arrêt minimes, notamment lors des mises à niveau de l'équipement.
+
+Pour configurer la fonction de stockage distant, vous devez configurer le matériel, puis utiliser System Manager pour créer un objet de stockage distant. Une fois cette configuration terminée, le processus d'importation commence.
+
+
+
+== Configuration matérielle
+
+Utilisez le workflow suivant pour préparer les connexions matérielles.
+
+Ces étapes sont décrites plus en détail dans le guide de l'utilisateur sur la fonctionnalité de stockage distant, disponible sur le centre de documentation E-Series et SANtricity, à l'adresse https://docs.netapp.com/us-en/e-series/remote-storage-volumes/index.html["Présentation des volumes de stockage distant"^], et dans le https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Rapport technique sur le stockage à distance"^].
+
+Sur la baie de stockage E-Series locale :
+
+. Assurez-vous que chaque contrôleur dispose d'une connexion iSCSI au système de stockage distant. Avec cette connexion, le système E-Series local agit comme un initiateur iSCSI pouvant être configuré comme hôte sur le système distant.
+. Créer un volume de destination pour l'opération d'importation. Assurez-vous que la capacité du volume est égale ou supérieure au volume source du système de stockage distant, qu'il a une taille de bloc correspondante et qu'il n'est pas mappé. Voir link:create-volumes.html["Créer des volumes"].
+. Collectez le nom qualifié iSCSI (IQN) du système E-Series local à partir de son interface System Manager. L'IQN sera utilisé ultérieurement pour configurer le système E-Series local en tant qu'hôte sur le système de stockage distant. Dans System Manager, accédez à : menu:Paramètres[System > Paramètres iSCSI > IQN cible].
+
+
+Sur le système de stockage distant :
+
+. Configurez le système E-Series local en tant qu'hôte sur le système distant, à l'aide de son IQN. Veillez à définir le type d'hôte approprié, comme suit :
++
+** Si le système distant est un modèle E-Series, reportez-vous à la section link:overview-hosts.html["Présentation des hôtes et des clusters hôtes"]. Utilisez un type d'hôte « usine par défaut ».
+** Si le système distant provient d'un autre fournisseur, sélectionnez un type d'hôte approprié en fonction des options disponibles.
+
+
+. Arrêtez toutes les E/S, démontez tous les systèmes de fichiers et supprimez toute affectation aux hôtes ou aux applications du volume source.
+. Attribuez le volume à l'hôte du système de stockage E-Series local récemment créé.
+. Pour le volume source sélectionné, recueillez les informations suivantes à partir du système de stockage distant afin que l'importation puisse être créée :
++
+** Nom qualifié iSCSI (IQN)
+** Adresse IP iSCSI
+** Numéro de LUN du volume source
+
+
+
+
+
+
+== Configuration de System Manager
+
+Utilisez le workflow suivant pour créer un objet de stockage distant pour l'importation :
+
+. À l'aide de l'assistant stockage distant de l'interface System Manager, mappez un périphérique de stockage distant (source pour l'importation des données) sur un volume cible du système E-Series. Lorsque vous sélectionnez *Terminer*, le processus d'importation commence.
+. Surveillez l'importation à partir de la boîte de dialogue opérations de vue ou du panneau opérations en cours. Si nécessaire, vous pouvez également interrompre et reprendre le processus.
+. Si vous le souhaitez, vous pouvez rompre la connexion entre les volumes source et cible une fois l'importation terminée ou conserver la connexion pour les importations futures.
+

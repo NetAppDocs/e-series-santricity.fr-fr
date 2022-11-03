@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous mirroring, 
+summary: 'Vous configurez les paires en miroir dans l"interface Unified Manager, puis gérez les paires dans System Manager.' 
+---
+= Mise en miroir synchrone : que faut-il savoir avant de créer une paire en miroir ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous configurez les paires en miroir dans l'interface Unified Manager, puis gérez les paires dans System Manager.
+
+Avant de créer une paire symétrique, suivez les consignes suivantes :
+
+* Vous devez disposer de deux baies de stockage.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Vos baies de stockage locales et distantes sont connectées par une structure Fibre Channel.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* Vous avez installé Web Services Proxy et Unified Manager. Les paires en miroir sont configurées dans l'interface Unified Manager.
+* Les deux baies de stockage sont découvertes dans Unified Manager.
+

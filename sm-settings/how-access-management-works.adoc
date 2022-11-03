@@ -1,0 +1,80 @@
+---
+permalink: sm-settings/how-access-management-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
+summary: 'Access Management est une méthode pour établir l"authentification des utilisateurs dans SANtricity System Manager.' 
+---
+= Fonctionnement de Access Management
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Access Management est une méthode permettant d'établir l'authentification des utilisateurs dans System Manager.
+
+La configuration et l'authentification utilisateur fonctionnent comme suit :
+
+. Un administrateur se connecte à System Manager avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité.
++
+[NOTE]
+====
+Pour la première connexion, le nom d'utilisateur `admin` s'affiche automatiquement et ne peut pas être modifié. Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du système.
+
+====
+. L'administrateur accède à Access Management dans l'interface utilisateur. La baie de stockage est préconfigurée pour utiliser des rôles utilisateur locaux, une mise en œuvre des fonctionnalités RBAC (contrôle d'accès basé sur des rôles).
+. L'administrateur configure une ou plusieurs des méthodes d'authentification suivantes :
++
+** *Rôles d'utilisateur local* -- l'authentification est gérée via les fonctionnalités RBAC appliquées dans la matrice de stockage. Les rôles des utilisateurs locaux comprennent des profils utilisateur prédéfinis et des rôles avec des autorisations d'accès spécifiques. Les administrateurs peuvent utiliser ces rôles d'utilisateur local comme méthode unique d'authentification, ou les utiliser en combinaison avec un service d'annuaire. Aucune configuration n'est nécessaire, autre que la définition de mots de passe pour les utilisateurs.
+** *Services d'annuaire* -- l'authentification est gérée via un serveur LDAP (Lightweight Directory Access Protocol) et un service d'annuaire, comme Active Directory de Microsoft. Un administrateur se connecte au serveur LDAP, puis mappe les utilisateurs LDAP aux rôles utilisateur locaux intégrés à la baie de stockage.
+** *SAML* -- l'authentification est gérée par un fournisseur d'identité (IDP) à l'aide du langage SAML (Security assertion Markup Language) 2.0. Un administrateur établit la communication entre le système du fournisseur d'identités et la baie de stockage, puis il mappe les utilisateurs de ce fournisseur aux rôles des utilisateurs locaux intégrés dans la baie de stockage.
+
+
+. L'administrateur fournit aux utilisateurs des informations de connexion pour System Manager.
+. Les utilisateurs se connectent au système en saisissant leurs identifiants.
++
+[NOTE]
+====
+Si l'authentification est gérée au moyen de SAML et d'une authentification unique (Single Sign-on), le système peut contourner la boîte de dialogue de connexion de System Manager.
+
+====
++
+Pendant la connexion, le système effectue les tâches d'arrière-plan suivantes :
+
++
+** Authentifie le nom d'utilisateur et le mot de passe par rapport au compte d'utilisateur.
+** Détermine les autorisations de l'utilisateur en fonction des rôles affectés.
+** Permet à l'utilisateur d'accéder aux tâches dans l'interface utilisateur.
+** Affiche le nom d'utilisateur dans le coin supérieur droit de l'interface.
+
+
+
+
+
+
+== Tâches disponibles dans System Manager
+
+L'accès aux tâches dépend des rôles attribués à un utilisateur, qui comprennent les éléments suivants :
+
+* *Storage admin* -- accès en lecture/écriture complet aux objets de stockage (par exemple, volumes et pools de disques), mais pas d'accès à la configuration de sécurité.
+* *Security admin* -- accès à la configuration de sécurité dans Access Management, gestion des certificats, gestion du journal d'audit et possibilité d'activer ou de désactiver l'interface de gestion héritée (symbole).
+* *Support admin* -- accès à toutes les ressources matérielles de la baie de stockage, aux données de panne, aux événements MEL et aux mises à niveau du micrologiciel du contrôleur. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+* *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+Une tâche non disponible est grisée ou ne s'affiche pas dans l'interface utilisateur. Par exemple, un utilisateur ayant le rôle Monitor peut afficher toutes les informations relatives aux volumes, mais ne peut pas accéder aux fonctions permettant de modifier ce volume. Les onglets des fonctions telles que *Copy Services* et *Add to Workload* sont grisés ; seuls *View/Edit Settings* sont disponibles.
+
+
+
+== Restrictions liées à Unified Manager et Storage Manager
+
+Si le langage SAML est configuré pour une baie de stockage, les utilisateurs ne peuvent pas détecter ni gérer le stockage correspondant à cette baie à partir d'Unified Manager ou des interfaces Storage Manager héritées.
+
+Lorsque les rôles d'utilisateur local et les services d'annuaire sont configurés, les utilisateurs doivent saisir des informations d'identification avant d'exécuter l'une des fonctions suivantes :
+
+* Modification du nom de la matrice de stockage
+* Mise à niveau du micrologiciel du contrôleur
+* Chargement d'une configuration de matrice de stockage
+* Exécution d'un script
+* Tentative d'exécution d'une opération active lorsqu'une session inutilisée a expiré
+

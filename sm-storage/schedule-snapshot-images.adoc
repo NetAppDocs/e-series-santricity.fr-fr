@@ -1,0 +1,219 @@
+---
+permalink: sm-storage/schedule-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
+summary: 'Vous créez un planning Snapshot afin de permettre la restauration en cas de problème avec le volume de base et d"effectuer des sauvegardes planifiées. Des snapshots de volumes de base ou de groupes de cohérence Snapshot peuvent être créés selon un planning quotidien, hebdomadaire ou mensuel, à tout moment de la journée.' 
+---
+= Planifier les images d'instantané
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous créez un planning Snapshot afin de permettre la restauration en cas de problème avec le volume de base et d'effectuer des sauvegardes planifiées. Des snapshots de volumes de base ou de groupes de cohérence Snapshot peuvent être créés selon un planning quotidien, hebdomadaire ou mensuel, à tout moment de la journée.
+
+Le volume de base doit être optimal.
+
+Cette tâche décrit la procédure de création d'un planning de snapshots pour un groupe de cohérence ou un volume de base de snapshot existant.
+
+[NOTE]
+====
+Vous pouvez également créer un planning de snapshots simultanément pour créer une image Snapshot d'un volume de base ou d'un groupe de cohérence Snapshot.
+
+====
+.Étapes
+. Effectuez l'une des actions suivantes pour créer un planning de snapshots :
++
+** Sélectionnez menu:Storage[volumes].
++
+Sélectionnez l'objet (volume ou groupe de cohérence snapshot) pour ce planning de snapshots, puis sélectionnez menu:Services de copie [Créer planning de snapshots].
+
+** Sélectionnez menu:stockage[snapshots].
++
+Sélectionnez l'onglet *plannings*, puis cliquez sur *Créer*.
+
+
+
+. Sélectionnez l'objet (volume ou groupe de cohérence de snapshot) pour ce planning de snapshot, puis cliquez sur *Suivant*.
++
+La boîte de dialogue Créer une planification d'instantanés s'affiche.
+
+. Effectuez l'une des actions suivantes :
++
+** *Utilisez un programme précédemment défini à partir d'un autre objet instantané*.
++
+Assurez-vous que les options avancées sont affichées. Cliquez sur *Afficher plus d'options*. Cliquez sur *Importer le programme*, sélectionnez l'objet avec le programme à importer, puis cliquez sur *Importer*.
+
+** *Modifier les options de base ou avancées*.
++
+Dans le coin supérieur droit de la boîte de dialogue, cliquez sur *Afficher plus d'options* pour afficher toutes les options, puis reportez-vous au tableau suivant.
+
+
+
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+*Paramètres de base*
+
+
+
+ a| 
+Sélectionnez jours
+ a| 
+Sélectionnez les jours individuels de la semaine pour les images instantanées.
+
+
+
+ a| 
+Heure de début
+ a| 
+Dans la liste déroulante, sélectionnez une nouvelle heure de début pour les instantanés quotidiens (les sélections sont fournies par incréments d'une demi-heure). L'heure de début est par défaut d'une demi-heure avant l'heure actuelle.
+
+
+
+ a| 
+Fuseau horaire
+ a| 
+Dans la liste déroulante, sélectionnez le fuseau horaire de votre matrice.
+
+
+
+ a| 
+*Paramètres avancés*
+
+
+
+ a| 
+Jour / mois
+ a| 
+Choisissez l'une des options suivantes :
+
+** *Quotidien / hebdomadaire* -- sélectionnez des jours individuels pour les instantanés de synchronisation. Vous pouvez également cocher la case *Sélectionner tous les jours* en haut à droite si vous voulez un horaire quotidien.
+** *Mensuel / annuel* -- sélectionnez des mois individuels pour les instantanés de synchronisation. Dans le champ *on jour(s)*, saisissez les jours du mois pour les synchronisations. Les entrées valides sont *1* à *31* et *Last*. Vous pouvez séparer plusieurs jours par une virgule ou un point-virgule. Utilisez un tiret pour les dates incluses. Par exemple : 1,3,4,10-15,dernier. Vous pouvez également cocher la case *Sélectionner tous les mois* en haut à droite si vous voulez un horaire mensuel.
+
+
+
+
+ a| 
+Heure de début
+ a| 
+Dans la liste déroulante, sélectionnez une nouvelle heure de début pour les instantanés quotidiens (les sélections sont fournies par incréments d'une demi-heure). L'heure de début est par défaut d'une demi-heure avant l'heure actuelle.
+
+
+
+ a| 
+Fuseau horaire
+ a| 
+Dans la liste déroulante, sélectionnez le fuseau horaire de votre matrice.
+
+
+
+ a| 
+Snapshots par jour/heure entre les snapshots
+ a| 
+Sélectionnez le nombre d'images instantanées à créer par jour. Si vous sélectionnez plusieurs images, sélectionnez également le temps entre les images instantanées. Pour les images instantanées multiples, assurez-vous d'avoir une capacité réservée adéquate.
+
+
+
+ a| 
+Créer une image snapshot dès maintenant ?
+ a| 
+Cochez cette case pour créer une image instantanée en plus des images automatiques que vous planifiez.
+
+
+
+ a| 
+Date de début/fin ou aucune date de fin
+ a| 
+Entrez la date de début des synchronisations. Entrez également une date de fin ou sélectionnez *pas de date de fin*.
+
+|===
+====
+. Effectuez l'une des actions suivantes :
++
+** Si l'objet est un groupe de cohérence de snapshot, cliquez sur *Créer* pour accepter les paramètres et créer le planning.
+** Si l'objet est un volume, cliquez sur *Suivant* pour allouer la capacité réservée aux images de snapshot.
++
+La table Volume candidate affiche uniquement les candidats qui prennent en charge la capacité réservée spécifiée. La capacité réservée est la capacité physique allouée utilisée pour toute opération de service de copie et tout objet de stockage. Il n'est pas directement lisible par l'hôte.
+
+
+
+. Utilisez la zone de disque pour allouer la capacité réservée aux images de snapshot. Effectuez l'une des actions suivantes :
++
+** *Acceptez les paramètres par défaut.*
++
+Utilisez cette option recommandée pour attribuer la capacité réservée aux images de snapshot avec les paramètres par défaut.
+
+** *Allouez vos propres paramètres de capacité réservée pour répondre à vos besoins en stockage de données.*
++
+Si vous modifiez le paramètre de capacité réservée par défaut, cliquez sur *Actualiser les candidats* pour actualiser la liste des candidats pour la capacité réservée que vous avez spécifiée.
+
++
+Allouez la capacité réservée en suivant les instructions suivantes :
+
++
+*** Le paramètre par défaut pour la capacité réservée correspond à 40 % de la capacité du volume de base. En général, cette capacité est suffisante.
+*** La capacité nécessaire varie en fonction de la fréquence et de la taille des écritures d'E/S sur les volumes, ainsi que de la quantité et de la durée de la collecte des images de snapshot.
+
+
+
+
+. Cliquez sur *Suivant*.
++
+La boîte de dialogue Modifier les paramètres s'affiche.
+
+. Modifiez les paramètres de la planification des snapshots selon vos besoins, puis cliquez sur *Terminer*.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Limite d'image d'instantané*
+
+
+
+ a| 
+Activer la suppression automatique des images de snapshot lorsque...
+ a| 
+Gardez la case à cocher sélectionnée si vous souhaitez que les images instantanées soient automatiquement supprimées après la limite spécifiée ; utilisez la case à cocher pour modifier la limite. Si vous désactivez cette case à cocher, la création de l'image instantanée s'arrête après 32 images.
+
+
+
+ a| 
+*Paramètres de capacité réservés*
+
+
+
+ a| 
+M'avertir lorsque...
+ a| 
+Utilisez la boîte à plateau pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée pour un planning est presque pleine.
+
+Lorsque la capacité réservée de la planification dépasse le seuil spécifié, utilisez la notification préalable pour augmenter la capacité réservée ou supprimer des objets inutiles avant que l'espace restant ne soit saturé.
+
+
+
+ a| 
+Règle pour la capacité totale réservée
+ a| 
+Choisissez l'une des règles suivantes :
+
+** *Purge de l'image snapshot la plus ancienne* -- le système purge automatiquement l'image snapshot la plus ancienne, ce qui libère la capacité réservée de l'image snapshot pour réutilisation dans le groupe d'instantanés.
+** *Rejeter les écritures dans le volume de base* -- lorsque la capacité réservée atteint son pourcentage maximal défini, le système rejette toute demande d'écriture d'E/S au volume de base qui a déclenché l'accès à la capacité réservée.
+
+
+|===
+====
+

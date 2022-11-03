@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/how-do-i-interpret-iser-over-infiniband-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, iser, over, infiniband, statistics, 
+summary: 'La boîte de dialogue Afficher les statistiques iser sur InfiniBand affiche les statistiques de cible locale (protocole) et d"interface iser sur InfiniBand (IB). Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.' 
+---
+= Comment interpréter les statistiques iser sur InfiniBand ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Afficher les statistiques iser sur InfiniBand affiche les statistiques de cible locale (protocole) et d'interface iser sur InfiniBand (IB). Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
+
+* *Statistiques de la cible locale (Protocole)* -- fournit des statistiques pour l'iser sur la cible InfiniBand, qui montre un accès de niveau bloc à ses supports de stockage.
+* *ISER over InfiniBand interface statistics* -- fournit des statistiques pour tous les ports iser sur InfiniBand sur l'interface InfiniBand, qui inclut des statistiques de performance et des informations d'erreur de liaison associées à chaque port de commutateur.
+
+
+Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.

@@ -1,0 +1,21 @@
+---
+permalink: um-manage/why-dont-i-see-all-of-my-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, arrays missing 
+summary: 'Lors de l"opération Importer les paramètres, il se peut que certaines de vos matrices de stockage ne soient pas disponibles dans la boîte de dialogue de sélection de la cible.' 
+---
+= Pourquoi ne vois-je pas toutes mes baies de stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de l'opération Importer les paramètres, il se peut que certaines de vos matrices de stockage ne soient pas disponibles dans la boîte de dialogue de sélection de la cible.
+
+Les baies de stockage peuvent ne pas s'afficher pour les raisons suivantes :
+
+* La version du micrologiciel est inférieure à 8.50.
+* La matrice de stockage est hors ligne.
+* Le système ne peut pas communiquer avec cette matrice (par exemple, la matrice présente des problèmes de certificat, de mot de passe ou de mise en réseau).
+

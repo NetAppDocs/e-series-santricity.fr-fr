@@ -1,0 +1,50 @@
+---
+permalink: um-manage/requirements-for-replicating-storage-configurations.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, requirements, replicating, storage, configurations 
+summary: 'Avant d"importer une configuration de stockage d"une matrice de stockage à une autre, passez en revue les exigences et les directives.' 
+---
+= Conditions requises pour la réplication des configurations de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'importer une configuration de stockage d'une matrice de stockage à une autre, passez en revue les exigences et les directives.
+
+
+
+== Tiroirs
+
+* Les tiroirs où les contrôleurs résident doivent être identiques sur les baies source et cible.
+* Les identifiants des tiroirs doivent être identiques sur les baies source et cible.
+* Les tiroirs d'extension doivent être installés dans les mêmes emplacements avec les mêmes types de disques (si le disque est utilisé dans la configuration, l'emplacement des disques inutilisés n'a pas d'importance).
+
+
+
+
+== Contrôleurs
+
+* Le type de contrôleur peut être différent entre les baies source et cible (par exemple, importation d'un système E2800 vers un système E5700), mais le type de boîtier RBOD doit être identique.
+* Les HIC, y compris les capacités DA de l'hôte, doivent être identiques sur les baies source et cible.
+* L'importation d'une configuration recto-verso vers une configuration recto-verso n'est pas prise en charge. Cependant, l'importation d'une configuration recto-verso est autorisée.
+* Les paramètres FDE ne sont pas inclus dans le processus d'importation.
+
+
+
+
+== État
+
+* Les baies cibles doivent être en état optimal.
+* La baie source n'a pas besoin d'être en état optimal.
+
+
+
+
+== Stockage
+
+* La capacité du lecteur peut varier entre les matrices source et cible, tant que la capacité du volume sur la cible est supérieure à la source. (Il se peut qu'une baie cible dispose de lecteurs plus récents et de plus grande capacité qui ne soient pas entièrement configurés en volumes par l'opération de réplication.)
+* Les volumes de pool de disques de 64 To ou plus sur la baie source empêchent le processus d'importation sur les cibles.
+* Les volumes fins ne sont pas inclus dans le processus d'importation.
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-is-the-difference-between-internal-security-key-and-external-security-key-management.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, internal, security, key, external, security, key, management, 
+summary: 'Lorsque vous implémentez la fonction sécurité du lecteur, vous pouvez utiliser une clé de sécurité interne ou une clé de sécurité externe pour verrouiller les données lorsqu"un disque sécurisé est retiré de la matrice de stockage.' 
+---
+= Quelle est la différence entre une clé de sécurité interne et une gestion externe des clés de sécurité ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous implémentez la fonction sécurité du lecteur, vous pouvez utiliser une clé de sécurité interne ou une clé de sécurité externe pour verrouiller les données lorsqu'un disque sécurisé est retiré de la matrice de stockage.
+
+Une clé de sécurité est une chaîne de caractères partagée entre les disques et les contrôleurs sécurisés d'une matrice de stockage. Les clés internes sont conservées sur la mémoire persistante du contrôleur. Les clés externes sont conservées sur un serveur distinct de gestion des clés à l'aide d'un protocole KMIP (Key Management Interoperability Protocol).

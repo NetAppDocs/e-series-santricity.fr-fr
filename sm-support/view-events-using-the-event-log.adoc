@@ -1,0 +1,166 @@
+---
+permalink: sm-support/view-events-using-the-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, events, 
+summary: Vous pouvez afficher le journal des événements, qui fournit un historique des événements survenus sur la matrice de stockage. 
+---
+= Affichez les événements à l'aide du journal des événements
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher le journal des événements, qui fournit un historique des événements survenus sur la matrice de stockage.
+
+.Étapes
+. Sélectionnez menu:support[Journal des événements].
++
+La page Journal des événements s'affiche.
+
++
+.Détails de la page
+====
+[cols="25h,~"]
+|===
+| Élément | Description 
+
+
+ a| 
+Afficher tout le champ
+ a| 
+Permet de basculer entre tous les événements et uniquement les événements critiques et d'avertissement.
+
+
+
+ a| 
+Champ de filtre
+ a| 
+Filtre les événements. Utile pour afficher uniquement les événements liés à un composant spécifique, un événement spécifique, etc
+
+
+
+ a| 
+Sélectionnez l'icône colonnes.
+ a| 
+Permet de sélectionner d'autres colonnes à afficher. D'autres colonnes fournissent des informations supplémentaires sur l'événement.
+
+
+
+ a| 
+Cases à cocher
+ a| 
+Permet de sélectionner les événements à enregistrer. La case à cocher dans l'en-tête de la table sélectionne tous les événements.
+
+
+
+ a| 
+Colonne Date/heure
+ a| 
+Date et heure de l'événement, en fonction de l'horloge du contrôleur.
+
+
+NOTE: Le journal des événements trie initialement les événements en fonction du numéro de séquence. Généralement, cette séquence correspond à la date et à l'heure. Toutefois, les deux horloges de contrôleur de la matrice de stockage peuvent être désynchronisées. Dans ce cas, des incohérences apparaissent dans le journal des événements en fonction des événements et de la date et de l'heure affichées.
+
+
+
+ a| 
+Colonne priorité
+ a| 
+Ces valeurs de priorité existent :
+
+** *Critique* -- il existe un problème avec la matrice de stockage. Toutefois, si vous prenez des mesures immédiates, vous risquez d'éviter de perdre l'accès aux données. Des événements critiques sont utilisés pour les notifications d'alertes. Tous les événements critiques sont envoyés à n'importe quel client de gestion réseau (via des interruptions SNMP) ou au destinataire de l'e-mail que vous avez configuré.
+** *Avertissement* -- une erreur s'est produite qui a dégradé les performances et la capacité de la matrice de stockage à récupérer après une autre erreur.
+** *Information* -- informations non critiques relatives à la baie de stockage.
+
+
+
+
+ a| 
+Type de composant
+ a| 
+Composant affecté par l'événement. Le composant peut être du matériel, par exemple un lecteur ou un contrôleur, ou bien du logiciel, comme le micrologiciel d'un contrôleur.
+
+
+
+ a| 
+Emplacement des composants
+ a| 
+Emplacement physique du composant dans la matrice de stockage.
+
+
+
+ a| 
+Description
+ a| 
+Une description de l'événement.
+
+*Exemple* -- `Drive write failure - retries exhausted`
+
+
+
+ a| 
+Numéro de séquence
+ a| 
+Numéro de 64 bits qui identifie de manière unique une entrée de journal spécifique pour une matrice de stockage. Ce nombre est incrémenté d'une entrée avec chaque nouvelle entrée de journal d'événements. Pour afficher ces informations, cliquez sur l'icône *Sélectionner colonnes*.
+
+
+
+ a| 
+Type d'événement
+ a| 
+Un numéro à 4 chiffres qui identifie chaque type d'événement enregistré. Pour afficher ces informations, cliquez sur l'icône *Sélectionner colonnes*.
+
+
+
+ a| 
+Codes spécifiques à l'événement
+ a| 
+Ces informations sont utilisées par le support technique. Pour afficher ces informations, cliquez sur l'icône *Sélectionner colonnes*.
+
+
+
+ a| 
+Catégorie d'événement
+ a| 
+** **Défaillance** – un composant de la matrice de stockage est défectueux, par exemple, une panne de lecteur ou une défaillance de la batterie.
+** **Changement d'état** – élément de la matrice de stockage qui a changé d'état ; par exemple, un volume a été transféré à un état optimal, ou un contrôleur a été transféré à l'état hors ligne.
+** **Interne** – opérations du contrôleur interne qui ne nécessitent pas d'action de l'utilisateur; par exemple, le contrôleur a terminé le début de la journée.
+** **Commande** – Commande émise vers la matrice de stockage, par exemple un disque de secours a été affecté.
+** **Erreur** – une condition d'erreur a été détectée sur la matrice de stockage ; par exemple, un contrôleur ne peut pas synchroniser et purger le cache, ou une erreur de redondance est détectée sur la matrice de stockage.
+** **Général** – tout événement qui ne correspond pas bien à une autre catégorie. Pour afficher ces informations, cliquez sur l'icône **Sélectionner les colonnes**.
+
+
+
+
+ a| 
+Enregistré par colonne
+ a| 
+Nom du contrôleur qui a enregistré l'événement. Pour afficher ces informations, cliquez sur l'icône **Sélectionner les colonnes**.
+
+|===
+====
+. Pour récupérer de nouveaux événements de la matrice de stockage, cliquez sur **Actualiser**.
++
+L'enregistrement d'un événement peut prendre plusieurs minutes et son affichage sur la page Journal des événements.
+
+. Pour enregistrer le journal des événements dans un fichier :
++
+.. Cochez la case en regard de chaque événement que vous souhaitez enregistrer.
+.. Cliquez sur *Enregistrer*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `major-event-log-timestamp.log`.
+
+
+
+. Pour effacer des événements du journal des événements :
++
+Le journal des événements stocke environ 8,000 événements avant de remplacer un événement par un nouvel événement. Si vous voulez conserver les événements, vous pouvez les enregistrer et les effacer du journal des événements.
+
++
+.. Tout d'abord, enregistrez le journal des événements.
+.. Cliquez sur *Effacer tout* et confirmez que vous souhaitez effectuer l'opération.
+
+
+

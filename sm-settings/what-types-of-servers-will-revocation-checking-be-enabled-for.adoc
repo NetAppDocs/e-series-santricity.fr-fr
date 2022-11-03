@@ -1,0 +1,14 @@
+---
+permalink: sm-settings/what-types-of-servers-will-revocation-checking-be-enabled-for.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, servers, revocation, checking, 
+summary: 'La baie de stockage effectue une vérification de révocation chaque fois qu"elle se connecte à un serveur AutoSupport, à un serveur EKMS (External Key Management Server), à un serveur LDAPS (Lightweight Directory Access Protocol over SSL) ou à un serveur Syslog.' 
+---
+= Pour quels types de serveurs la vérification de révocation sera-t-elle activée ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La baie de stockage effectue une vérification de révocation chaque fois qu'elle se connecte à un serveur AutoSupport, à un serveur EKMS (External Key Management Server), à un serveur LDAPS (Lightweight Directory Access Protocol over SSL) ou à un serveur Syslog.

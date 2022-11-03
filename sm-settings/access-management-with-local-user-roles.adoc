@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/access-management-with-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
+summary: 'Pour la gestion des accès, les administrateurs peuvent utiliser les fonctionnalités RBAC (contrôle d"accès basé sur des rôles) appliquées dans la baie de stockage. Ces fonctionnalités sont appelées rôles d"utilisateur local.' 
+---
+= Gestion des accès avec rôles d'utilisateur local
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour la gestion des accès, les administrateurs peuvent utiliser les fonctionnalités RBAC (contrôle d'accès basé sur des rôles) appliquées dans la baie de stockage. Ces fonctionnalités sont appelées « rôles utilisateur locaux ».
+
+
+
+== Flux de travail de configuration
+
+Les rôles utilisateur locaux sont préconfigurés pour la matrice de stockage. Pour utiliser les rôles d'utilisateur local pour l'authentification, les administrateurs peuvent effectuer les opérations suivantes :
+
+. Un administrateur se connecte à System Manager avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité.
++
+[NOTE]
+====
+Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du système.
+
+====
+. Un administrateur examine les profils utilisateur, qui sont prédéfinis et ne peuvent pas être modifiés.
+. L'administrateur affecte éventuellement de nouveaux mots de passe pour chaque profil utilisateur.
+. Les utilisateurs se connectent au système avec leurs identifiants attribués.
+
+
+
+
+== Gestion
+
+Lors de l'utilisation de rôles d'utilisateur local uniquement pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :
+
+* Modifier les mots de passe.
+* Définissez une longueur minimale pour les mots de passe.
+* Autoriser les utilisateurs à se connecter sans mot de passe.
+

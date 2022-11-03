@@ -1,0 +1,130 @@
+---
+permalink: sm-settings/use-ca-signed-certificates-for-controllers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, controllers, 
+summary: Vous pouvez obtenir des certificats signés par une autorité de certification pour sécuriser les communications entre les contrôleurs et le navigateur utilisé pour accéder à System Manager. 
+---
+= Utiliser des certificats signés CA pour les contrôleurs
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez obtenir des certificats signés par une autorité de certification pour sécuriser les communications entre les contrôleurs et le navigateur utilisé pour accéder à System Manager.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+* Vous devez connaître l'adresse IP ou les noms DNS de chaque contrôleur.
+
+
+L'utilisation de certificats signés par l'autorité de certification est une procédure en trois étapes.
+
+
+
+== Étape 1 : compléter les RSC pour les contrôleurs
+
+Vous devez d'abord générer un fichier de requête de signature de certificat (CSR) pour chaque contrôleur de la matrice de stockage.
+
+Cette tâche décrit comment générer un fichier CSR à partir de System Manager. La RSC fournit des informations sur votre organisation, ainsi que l'adresse IP ou le nom DNS du contrôleur. Au cours de cette tâche, un fichier CSR est généré si la matrice de stockage dispose d'un contrôleur et de deux fichiers CSR s'il possède deux contrôleurs.
+
+[NOTE]
+====
+Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que OpenSSL et passer directement à  2: Submit the CSR files.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Dans l'onglet Array Management, sélectionnez *Complete CSR*.
++
+[NOTE]
+====
+Si une boîte de dialogue vous invite à accepter un certificat auto-signé pour le second contrôleur, cliquez sur *accepter le certificat auto-signé* pour continuer.
+
+====
+. Entrez les informations suivantes, puis cliquez sur *Suivant* :
++
+** *Organisation* -- le nom légal complet de votre entreprise ou organisation. Inclure les suffixes, tels que Inc. Ou Corp
+** *Unité organisationnelle (facultative)* -- la division de votre organisation qui gère le certificat.
+** *Ville/localité* -- la ville où se trouve votre baie de stockage ou votre entreprise.
+** *État/région (facultatif)* -- l'état ou la région où se trouve votre baie de stockage ou votre entreprise.
+** *Code ISO de pays* -- le code ISO à deux chiffres de votre pays (Organisation internationale de normalisation), tel que les États-Unis.
+
+
++
+[CAUTION]
+====
+Certains champs peuvent être pré-remplis avec les informations appropriées, telles que l'adresse IP du contrôleur. Ne modifiez pas les valeurs préremplies sauf si vous êtes certain qu'elles sont incorrectes. Par exemple, si vous n'avez pas encore effectué de RSC, l'adresse IP du contrôleur est définie sur « localhost ». Dans ce cas, vous devez remplacer ""localhost" par le nom DNS ou l'adresse IP du contrôleur.
+
+====
+. Vérifiez ou entrez les informations suivantes sur le contrôleur A de votre matrice de stockage :
++
+** *Contrôleur Un nom commun* -- l'adresse IP ou le nom DNS du contrôleur A est affiché par défaut. Vérifiez que cette adresse est correcte. Elle doit correspondre exactement à ce que vous entrez pour accéder à System Manager dans le navigateur. Le nom DNS ne peut pas commencer par un caractère générique.
+** *Contrôleur Une autre adresse IP* -- si le nom commun est une adresse IP, vous pouvez éventuellement entrer des adresses IP ou des alias supplémentaires pour le contrôleur A. Pour plusieurs entrées, utilisez un format délimité par des virgules.
+** *Contrôleur Autre nom DNS* -- si le nom commun est un nom DNS, entrez tout nom DNS supplémentaire pour le contrôleur A. Pour plusieurs entrées, utilisez un format délimité par des virgules. S'il n'y a pas de noms DNS alternatifs, mais que vous avez saisi un nom DNS dans le premier champ, copiez ce nom ici. Le nom DNS ne peut pas commencer par un caractère générique. Si la matrice de stockage ne comporte qu'un seul contrôleur, le bouton *Finish* est disponible.
++
+Si la matrice de stockage comporte deux contrôleurs, le bouton *Suivant* est disponible.
+
+
+
++
+[NOTE]
+====
+Ne cliquez pas sur le lien *Ignorer cette étape* lorsque vous créez une demande CSR. Ce lien est fourni dans les situations de récupération d'erreurs. Dans de rares cas, une requête CSR peut échouer sur un contrôleur, mais pas sur l'autre. Ce lien vous permet d'ignorer l'étape de création d'une requête CSR sur le contrôleur A s'il est déjà défini et de passer à l'étape suivante pour recréer une requête CSR sur le contrôleur B.
+
+====
+. S'il n'y a qu'un seul contrôleur, cliquez sur *Finish*. S'il y a deux contrôleurs, cliquez sur *Suivant* pour entrer les informations relatives au contrôleur B (comme ci-dessus), puis cliquez sur *Terminer*.
++
+Pour un seul contrôleur, un fichier CSR est téléchargé sur votre système local. Pour les doubles contrôleurs, deux fichiers CSR sont téléchargés. L'emplacement du dossier de téléchargement dépend de votre navigateur.
+
+. Accédez à  2: Submit the CSR files.
+
+
+
+
+== Étape 2 : soumettez les fichiers CSR
+
+Après avoir créé les fichiers de demande de signature de certificat (CSR), envoyez les fichiers à une autorité de certification (AC). Les systèmes E-Series nécessitent le format PEM (Base64 ASCII codage) pour les certificats signés, qui inclut les types de fichiers suivants : pem, .crt, .cer ou .key.
+
+.Étapes
+. Localisez les fichiers CSR téléchargés.
+. Envoyez les fichiers CSR à une autorité de certification (par exemple VeriSign ou DigiCert) et demandez des certificats signés au format PEM.
++
+[CAUTION]
+====
+*Après avoir soumis un fichier CSR à l'autorité de certification, ne régénérez PAS un autre fichier CSR.* chaque fois que vous générez une RSC, le système crée une paire de clés publique et privée. La clé publique fait partie de la RSC, tandis que la clé privée est conservée dans le magasin de clés du système. Lorsque vous recevez les certificats signés et que vous les importez, le système garantit que les clés privées et publiques sont la paire d'origine. Si les clés ne correspondent pas, les certificats signés ne fonctionneront pas et vous devez demander de nouveaux certificats à l'autorité de certification.
+
+====
+. Lorsque l'AC renvoie les certificats signés, accédez à  3: Import signed certificates for controllers.
+
+
+
+
+== Étape 3 : importation de certificats signés pour les contrôleurs
+
+Une fois que vous avez reçu des certificats signés de l'autorité de certification (CA), importez les fichiers des contrôleurs.
+
+.Avant de commencer
+* L'autorité de certification a renvoyé des fichiers de certificat signés. Ces fichiers incluent le certificat racine, un ou plusieurs certificats intermédiaires et les certificats de serveur.
+* Si l'autorité de certification a fourni un fichier de certificat chaîné (par exemple, un fichier .p7b), vous devez déballer le fichier chaîné dans des fichiers individuels : le certificat racine, un ou plusieurs certificats intermédiaires et les certificats de serveur qui identifient les contrôleurs. Vous pouvez utiliser Windows `certmgr` Utilitaire pour décompresser les fichiers (cliquez avec le bouton droit de la souris et sélectionnez menu:toutes les tâches[Exporter]). Le codage base-64 est recommandé. Une fois les exportations terminées, un fichier CER est affiché pour chaque fichier de certificat de la chaîne.
+* Vous avez copié les fichiers de certificat sur le système hôte sur lequel vous accédez à System Manager.
+
+
+.Étapes
+. Menu sélection:Paramètres[certificats]
+. Dans l'onglet gestion des baies, sélectionnez *Importer*.
++
+Une boîte de dialogue s'ouvre pour importer le(s) fichier(s) de certificat.
+
+. Cliquez sur les boutons *Browse* pour sélectionner d'abord les fichiers de certificat racine et intermédiaire, puis sélectionnez chaque certificat de serveur pour les contrôleurs. Les fichiers racine et intermédiaire sont les mêmes pour les deux contrôleurs. Seuls les certificats de serveur sont uniques pour chaque contrôleur. Si vous avez généré la RSC à partir d'un outil externe, vous devez également importer le fichier de clé privée créé avec la RSC.
++
+Les noms de fichiers s'affichent dans la boîte de dialogue.
+
+. Cliquez sur *Importer*.
++
+Les fichiers sont chargés et validés.
+
+
+
+La session est automatiquement interrompue. Vous devez vous reconnecter pour que les certificats prennent effet. Lorsque vous vous connectez de nouveau, les nouveaux certificats signés par l'autorité de certification sont utilisés pour votre session.

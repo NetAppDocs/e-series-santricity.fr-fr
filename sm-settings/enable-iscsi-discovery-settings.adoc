@@ -1,0 +1,59 @@
+---
+permalink: sm-settings/enable-iscsi-discovery-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
+summary: Vous pouvez activer les paramètres liés à la découverte de périphériques de stockage dans un réseau iSCSI. 
+---
+= Activer les paramètres de découverte iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer les paramètres liés à la découverte de périphériques de stockage dans un réseau iSCSI.
+
+Les paramètres de découverte de la cible vous permettent d'enregistrer les informations iSCSI de la baie de stockage à l'aide du protocole iSNS (Internet Storage Name Service) et de déterminer si vous souhaitez autoriser ou non des sessions de découverte sans nom.
+
+Si le serveur iSNS utilise une adresse IP statique, cette adresse doit être disponible pour l'enregistrement iSNS. IPv4 et IPv6 sont pris en charge.
+
+Vous pouvez activer les paramètres suivants relatifs à la découverte iSCSI :
+
+* *Activer le serveur iSNS pour enregistrer une cible* -- lorsque cette option est activée, la matrice de stockage enregistre son nom qualifié iSCSI (IQN) et les informations de port à partir du serveur iSNS. Ce paramètre permet la découverte iSNS, de sorte qu'un initiateur puisse récupérer l'IQN et les informations de port à partir du serveur iSNS.
+* *Activer les sessions de découverte sans nom* -- lorsque des sessions de découverte sans nom sont activées, l'initiateur (hôte iSCSI) n'a pas besoin de fournir l'IQN de la cible (contrôleur) pendant la séquence de connexion pour une connexion de type découverte. Lorsqu'ils sont désactivés, les hôtes doivent fournir l'IQN pour établir une session de découverte au contrôleur. Cependant, l'IQN cible est toujours requis pour une session normale (E/S Bearing). La désactivation de ce paramètre peut empêcher les hôtes iSCSI non autorisés de se connecter au contrôleur en utilisant uniquement son adresse IP.
+
+
+[NOTE]
+====
+Les paramètres et fonctions iSCSI s'affichent uniquement sur la page Paramètres si votre matrice de stockage prend en charge iSCSI.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *Paramètres iSCSI*, cliquez sur *Afficher/Modifier les paramètres de découverte de la cible*.
++
+La boîte de dialogue Paramètres de découverte cible s'affiche. Sous le champ *Activer le serveur iSNS*... , la boîte de dialogue indique si le contrôleur est déjà enregistré.
+
+. Pour enregistrer le contrôleur, sélectionnez *Activer le serveur iSNS pour enregistrer ma cible*, puis sélectionnez l'une des options suivantes :
++
+** *Obtenir automatiquement la configuration du serveur DHCP* -- sélectionnez cette option si vous souhaitez configurer le serveur iSNS à l'aide d'un serveur DHCP (Dynamic Host Configuration Protocol). Notez que si vous utilisez cette option, tous les ports iSCSI du contrôleur doivent être configurés pour utiliser également DHCP. Si nécessaire, mettez à jour les paramètres du port iSCSI de votre contrôleur pour activer cette option.
++
+[NOTE]
+====
+Pour que le serveur DHCP fournit l'adresse du serveur iSNS, vous devez configurer le serveur DHCP pour qu'il utilise l'option 43 -- « informations spécifiques au fournisseur ». Cette option doit contenir l'adresse IPv4 du serveur iSNS en octets de données 0xa-0xd (10-13).
+
+====
+** *Spécifiez manuellement la configuration statique* -- sélectionnez cette option si vous souhaitez entrer une adresse IP statique pour le serveur iSNS. (Si vous le souhaitez, vous pouvez couper et coller des adresses dans les champs.) Dans le champ, saisissez une adresse IPv4 ou IPv6. Si vous avez configuré les deux, IPv4 est la valeur par défaut. Saisissez également un port d'écoute TCP (utilisez la valeur par défaut 3205 ou entrez une valeur comprise entre 49152 et 65535).
+
+
+. Pour permettre à la matrice de stockage de participer à des sessions de découverte sans nom, sélectionnez *Activer des sessions de découverte sans nom*.
++
+** Lorsqu'ils sont activés, les initiateurs iSCSI ne sont pas nécessaires pour spécifier l'IQN cible afin d'extraire les informations du contrôleur.
+** Lorsqu'elles sont désactivées, les sessions de découverte sont empêchées, sauf si l'initiateur fournit l'IQN cible. La désactivation des sessions de découverte sans nom offre une sécurité supplémentaire.
+
+
+. Cliquez sur *Enregistrer*.
+
+
+Une barre de progression apparaît lorsque System Manager tente d'enregistrer le contrôleur avec le serveur iSNS. Ce processus peut prendre jusqu'à cinq minutes.

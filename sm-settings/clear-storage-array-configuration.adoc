@@ -1,0 +1,100 @@
+---
+permalink: sm-settings/clear-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
+summary: 'Utilisez l"opération Effacer la configuration pour supprimer tous les pools, groupes de volumes, volumes, définitions d"hôte et affectations d"hôte de la baie de stockage.' 
+---
+= Effacez la configuration de la matrice de stockage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez l'opération Effacer la configuration pour supprimer tous les pools, groupes de volumes, volumes, définitions d'hôte et affectations d'hôte de la baie de stockage.
+
+Avant de supprimer la configuration de la matrice de stockage, sauvegardez les données.
+
+Il existe deux options de configuration de matrice de stockage :
+
+* *Volume* -- généralement, vous pouvez utiliser l'option Volume pour reconfigurer une matrice de stockage de test en tant que matrice de stockage de production. Par exemple, vous pouvez configurer une matrice de stockage pour le test, puis, lorsque vous avez terminé le test, supprimer la configuration de test et configurer la matrice de stockage pour un environnement de production.
+* *Baie de stockage* -- généralement, vous pouvez utiliser l'option matrice de stockage pour déplacer une matrice de stockage vers un autre département ou groupe. Par exemple, il est possible d'utiliser une baie de stockage en ingénierie et, à ce jour, l'ingénierie bénéficie d'une nouvelle baie de stockage. Il vous faut donc transférer la baie de stockage actuelle vers l'administration, où elle sera reconfigurée.
++
+L'option matrice de stockage supprime certains paramètres supplémentaires.
+
+
+
+[cols="1a,1a,1a"]
+|===
+|  | Volumétrie | Baie de stockage 
+
+
+ a| 
+Supprime les pools et les groupes de volumes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Supprime des volumes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Supprime les hôtes et les clusters hôtes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Supprime les affectations d'hôtes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Supprime le nom de la matrice de stockage
+ a| 
+ a| 
+X
+
+
+
+ a| 
+Réinitialise les paramètres de cache de la matrice de stockage sur leur valeur par défaut
+ a| 
+ a| 
+X
+
+|===
+[CAUTION]
+====
+*Risque de perte de données* -- cette opération supprime toutes les données de votre matrice de stockage. (Il n'effectue pas d'effacement sécurisé.) Vous ne pouvez pas annuler cette opération après son démarrage. Effectuez cette opération uniquement lorsque le support technique vous y invite.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sélectionnez *Effacer la configuration de la matrice de stockage*.
+. Dans la liste déroulante, sélectionnez *Volume* ou *matrice de stockage*.
+. *Facultatif:* si vous souhaitez enregistrer la configuration (pas les données), utilisez les liens de la boîte de dialogue.
+. Confirmez que vous souhaitez effectuer l'opération.
+
+
+.Résultats
+* La configuration actuelle est supprimée, détruisant toutes les données existantes sur la matrice de stockage.
+* Tous les disques sont non assignés.
+

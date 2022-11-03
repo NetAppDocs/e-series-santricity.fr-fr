@@ -1,0 +1,36 @@
+---
+permalink: um-certificates/view-local-user-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, view, local, user, roles 
+summary: 'Dans l"onglet rôles d"utilisateur local, vous pouvez afficher les mappages des utilisateurs sur les rôles par défaut. Ces mappages font partie du RBAC (contrôle d"accès basé sur des rôles) appliqué dans le proxy de services Web pour SANtricity Unified Manager.' 
+---
+= Afficher les rôles d'utilisateur local
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans l'onglet rôles d'utilisateur local, vous pouvez afficher les mappages des utilisateurs sur les rôles par défaut. Ces mappages font partie du RBAC (contrôle d'accès basé sur des rôles) appliqué dans le proxy de services Web pour Unified Manager.
+
+Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+
+Les utilisateurs et les mappages ne peuvent pas être modifiés. Seuls les mots de passe peuvent être modifiés.
+
+.Étapes
+. Sélectionnez *Access Management*.
+. Sélectionnez l'onglet *rôles d'utilisateur local*.
++
+Les utilisateurs sont présentés dans le tableau :
+
++
+** *Admin* -- Super administrateur qui a accès à toutes les fonctions du système. Cet utilisateur inclut tous les rôles.
+** *Stockage* -- l'administrateur responsable de tout le provisionnement du stockage. Cet utilisateur comprend les rôles suivants : administrateur du stockage, administrateur du support et contrôle.
+** *Sécurité* -- l'utilisateur responsable de la configuration de la sécurité, y compris la gestion des accès et la gestion des certificats. Cet utilisateur inclut les rôles suivants : administrateur de sécurité et moniteur.
+** *Support* -- l'utilisateur responsable des ressources matérielles, des données de défaillance et des mises à niveau du micrologiciel. Cet utilisateur inclut les rôles suivants : support Admin et Monitor.
+** *Moniteur* -- Un utilisateur avec accès en lecture seule au système. Cet utilisateur inclut uniquement le rôle Monitor.
+** *rw* (lecture/écriture) -- cet utilisateur comprend les rôles suivants : administrateur de stockage, administrateur de support et moniteur.
+** *Ro* (lecture seule) -- cet utilisateur n'inclut que le rôle moniteur.
+
+
+

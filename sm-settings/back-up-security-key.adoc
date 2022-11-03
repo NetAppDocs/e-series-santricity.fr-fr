@@ -1,0 +1,54 @@
+---
+permalink: sm-settings/back-up-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backup, security, key, 
+summary: 'Après avoir créé ou modifié une clé de sécurité, vous pouvez créer une copie de sauvegarde du fichier de clé en cas de corruption de l"original.' 
+---
+= Sauvegarder la clé de sécurité
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir créé ou modifié une clé de sécurité, vous pouvez créer une copie de sauvegarde du fichier de clé en cas de corruption de l'original.
+
+Cette tâche décrit comment sauvegarder une clé de sécurité que vous avez créée précédemment. Au cours de cette procédure, vous créez une nouvelle phrase de passe pour la sauvegarde. Cette phrase de passe n'a pas besoin de correspondre à la phrase de passe utilisée lors de la création ou de la dernière modification de la clé d'origine. La phrase de passe est appliquée uniquement à la sauvegarde que vous créez.
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *gestion des clés de sécurité*, sélectionnez *touche de sauvegarde*.
++
+La boîte de dialogue Sauvegarder la clé de sécurité s'ouvre.
+
+. Dans les champs *définir une phrase de passe/saisir à nouveau une phrase de passe*, entrez et confirmez une phrase de passe pour cette sauvegarde.
++
+La valeur peut comporter entre 8 et 32 caractères et doit comprendre chacun des éléments suivants :
+
++
+** Une lettre majuscule (une ou plusieurs)
+** Un nombre (un ou plusieurs)
+** Caractère non alphanumérique, tel que !, *, @ (un ou plusieurs)
+
+
++
+[CAUTION]
+====
+*Assurez-vous d'enregistrer votre entrée pour une utilisation ultérieure*. Vous avez besoin de la phrase de passe pour accéder à la sauvegarde de cette clé de sécurité.
+
+====
+. Cliquez sur *Sauvegarder*.
++
+Une sauvegarde de la clé de sécurité est téléchargée sur votre hôte local, puis la boîte de dialogue *confirmer/Enregistrer la sauvegarde de la clé de sécurité* s'ouvre.
+
++
+[NOTE]
+====
+Le chemin du fichier de clé de sécurité téléchargé dépend de l'emplacement de téléchargement par défaut de votre navigateur.
+
+====
+. Enregistrez votre phrase de passe dans un emplacement sécurisé, puis cliquez sur *Fermer*.
+
+
+Vous devez valider la clé de sécurité de sauvegarde.

@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/rtv-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, destination, array 
+summary: 'Lors de la configuration d"une importation pour la fonction de stockage distant, il se peut que certains volumes n"apparaissent pas dans la liste des candidats cibles en raison de la taille du bloc, de la capacité ou de la disponibilité du volume.' 
+---
+= Pourquoi ne vois-je pas tous mes volumes sur ma baie de destination ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de la configuration d'une importation pour la fonction de stockage distant, il se peut que certains volumes n'apparaissent pas dans la liste des candidats cibles en raison de la taille du bloc, de la capacité ou de la disponibilité du volume.
+
+Pour apparaître dans la liste, les candidats en volume doivent avoir :
+
+* Capacité égale ou supérieure au volume distant.
+* Taille de bloc identique au volume distant.
+* État actuel de optimal.
+
+
+Volumes les candidats sont exclus de la liste s'ils ont :
+
+* N'importe laquelle des relations suivantes : copie de volume, snapshot ou mise en miroir.
+* Opération de reconfiguration en cours.
+* Mappage vers un autre périphérique (hôte ou cluster hôte).
+* Lecture du cache Flash activé.
+

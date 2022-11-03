@@ -1,0 +1,41 @@
+---
+indexpage:
+  tiles:
+  - title: Configuration
+    links:
+    - title: Présentation de l'interface de Unified Manager
+      url: "../um-admin/overview-interface-unified.html"
+    - title: Définissez le mot de passe administrateur
+      url: "../um-admin/administrator-password-protection-unified.html"
+  - title: Découvrir les baies
+    links:
+    - title: Découverte
+      url: "../um-manage/considerations-for-discovering-arrays.html"
+    - title: Une seule baie
+      url: "../um-manage/discover-single-array.html"
+    - title: Baies multiples
+      url: "../um-manage/discover-multiple-arrays.html"
+  - title: Gérez les baies
+    links:
+    - title: Groupes de baies de stockage
+      url: "../um-manage/overview-manage-groups.html"
+    - title: État de la matrice de stockage
+      url: "../um-manage/storage-array-status.html"
+    - title: Mise à niveau du logiciel
+      url: "../um-manage/upgrade-controller-firmware.html"
+  - title: Gérez les accès
+    links:
+    - title: Accès des utilisateurs
+      url: "../um-certificates/how-access-management-works-unified.html"
+    - title: Certificats
+      url: "../um-certificates/how-certificates-work-unified.html"
+    - title: Services d'annuaire
+      url: "../um-certificates/access-management-with-directory-services-unified.html"
+  - title: Gérer les paramètres
+    links:
+    - title: Importer les paramètres
+      url: "../um-manage/how-import-settings-works.html"
+    - title: Modifier les paramètres de mot de passe
+      url: "../um-certificates/change-local-user-passwords-settings-unified.html"
+    - title: Modifier les paramètres du serveur d'annuaire
+      url: "../um-certificates/edit-directory-server-settings-unified.html"

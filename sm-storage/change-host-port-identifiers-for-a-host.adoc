@@ -1,0 +1,77 @@
+---
+permalink: sm-storage/change-host-port-identifiers-for-a-host.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
+summary: 'Modifiez les identificateurs de port hôte lorsque vous souhaitez modifier le libellé utilisateur d"un identificateur de port hôte, ajouter un nouvel identificateur de port hôte à l"hôte ou supprimer un identificateur de port hôte de l"hôte.' 
+---
+= Modifiez les identifiants de port hôte d'un hôte
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Modifiez les identificateurs de port hôte lorsque vous souhaitez modifier le libellé utilisateur d'un identificateur de port hôte, ajouter un nouvel identificateur de port hôte à l'hôte ou supprimer un identificateur de port hôte de l'hôte.
+
+Lors de la modification des identificateurs de port hôte, gardez les consignes suivantes à l'esprit :
+
+* *Ajouter* -- lorsque vous ajoutez un port hôte, vous associez l'identificateur de port hôte à l'hôte que vous avez créé pour vous connecter à votre matrice de stockage. Vous pouvez saisir manuellement des informations de port à l'aide d'un utilitaire HBA (Host bus adapter).
+* *Edit* -- vous pouvez modifier les ports hôte pour déplacer (associer) un port hôte à un autre hôte. Vous avez peut-être déplacé l'adaptateur de bus hôte ou l'initiateur iSCSI vers un autre hôte. Vous devez donc déplacer (associer) le port hôte vers le nouvel hôte.
+* *Delete* -- vous pouvez supprimer des ports hôtes pour supprimer (dissocier) des ports hôtes d'un hôte.
+
+
+.Étapes
+. Sélectionnez menu:Storage[hosts].
+. Sélectionnez l'hôte auquel les ports seront associés, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+Si vous souhaitez ajouter des ports à un hôte dans un cluster hôte, développez le cluster hôte et sélectionnez l'hôte souhaité. Vous ne pouvez pas ajouter de ports au niveau du cluster hôte.
+
++
+Une boîte de dialogue qui affiche les paramètres actuels de l'hôte s'affiche.
+
+. Cliquez sur l'onglet *ports hôte*.
++
+La boîte de dialogue affiche les identificateurs de port hôte actuels.
+
+. Modifiez les paramètres de l'identificateur de port hôte selon les besoins.
++
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+Port hôte
+ a| 
+Vous pouvez choisir l'une des options suivantes :
+
+** *Ajouter* -- utilisez Ajouter pour associer un nouvel identifiant de port hôte à l'hôte. La longueur de l'identificateur de port hôte nom est déterminée par la technologie de l'interface hôte. Les noms d'identificateur de port hôte Fibre Channel et Infiniband doivent comporter 16 caractères. Les noms d'identificateur de port hôte iSCSI ont un maximum de 223 caractères. Le port doit être unique. Un numéro de port qui a déjà été configuré n'est pas autorisé.
+** *Supprimer* -- utilisez Supprimer pour supprimer (dissocier) un identificateur de port hôte. L'option Supprimer ne supprime pas physiquement le port hôte. Cette option supprime l'association entre le port hôte et l'hôte. Sauf si vous supprimez l'adaptateur de bus hôte ou l'initiateur iSCSI, le port hôte est toujours reconnu par le contrôleur.
++
+[NOTE]
+====
+Si vous supprimez un identificateur de port hôte, il n'est plus associé à cet hôte. De même, l'hôte perd l'accès à l'un de ses volumes affectés via cet identifiant de port hôte.
+
+====
+
+
+
+
+ a| 
+Étiquette
+ a| 
+Pour modifier le nom de l'étiquette du port, cliquez sur l'icône *Edit* (crayon). Le nom de l'étiquette de port doit être unique. Un nom d'étiquette déjà configuré n'est pas autorisé.
+
+
+
+ a| 
+Secret CHAP
+ a| 
+Apparaît uniquement pour les hôtes iSCSI. Vous pouvez définir ou modifier le secret CHAP pour les initiateurs (hôtes iSCSI).
+
+System Manager utilise la méthode CHAP (Challenge Handshake Authentication Protocol) qui valide l'identité des cibles et des initiateurs pendant la liaison initiale. L'authentification est basée sur une clé de sécurité partagée appelée secret CHAP.
+
+|===
+. Cliquez sur *Enregistrer*.
+

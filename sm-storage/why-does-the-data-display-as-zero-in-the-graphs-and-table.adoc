@@ -1,0 +1,69 @@
+---
+permalink: sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, zero, graphs, table 
+summary: 'Lorsqu"un zéro est affiché pour un point de données dans les graphiques et le tableau, il n"y a aucune activité d"E/S pour l"objet pour ce point dans le temps. Cette situation peut se produire car l"hôte n"initie pas les E/S à cet objet ou il peut s"agir d"un problème avec l"objet lui-même.' 
+---
+= Pourquoi les données s'affichent-elles comme zéro dans les graphiques et le tableau ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsqu'un zéro est affiché pour un point de données dans les graphiques et le tableau, il n'y a aucune activité d'E/S pour l'objet pour ce point dans le temps. Cette situation peut se produire car l'hôte n'initie pas les E/S à cet objet ou il peut s'agir d'un problème avec l'objet lui-même.
+
+Les données historiques de l'objet sont toujours disponibles pour l'affichage. Les graphiques et le tableau affichent des données non nulles une fois l'activité d'E/S lancée pour l'objet.
+
+Le tableau suivant répertorie les raisons les plus courantes pour lesquelles une valeur de point de données peut être égale à zéro pour un objet donné.
+
+[cols="25h,~"]
+|===
+| Type d'objet au niveau de la baie | Les données de motif s'affichent comme zéro 
+
+
+ a| 
+Volumétrie
+ a| 
+* Aucun hôte n'a été attribué au volume.
+
+
+
+
+ a| 
+Groupe de volumes
+ a| 
+* Le groupe de volumes est en cours d'importation.
+* Le groupe de volumes ne contient pas de volume affecté à un hôte, le groupe de volumes *_et_* ne contient aucune capacité réservée.
+
+
+
+
+ a| 
+Lecteur
+ a| 
+* Le disque est en panne.
+* Le lecteur a été retiré.
+* Le lecteur est dans un état inconnu.
+
+
+
+
+ a| 
+Contrôleur
+ a| 
+* Le contrôleur est hors ligne.
+* Le contrôleur est en panne.
+* Le contrôleur a été retiré.
+* L'état du contrôleur est inconnu.
+
+
+
+
+ a| 
+Baie de stockage
+ a| 
+* La matrice de stockage ne contient pas de volumes.
+
+
+|===

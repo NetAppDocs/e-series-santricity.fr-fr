@@ -1,0 +1,53 @@
+---
+permalink: sm-settings/configure-snmp-mib-variables.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, mib, variables, 
+summary: 'Pour les alertes SNMP, vous pouvez éventuellement configurer les variables MIB (Management information base) qui apparaissent dans les traps SNMP. Ces variables peuvent renvoyer le nom de la matrice de stockage, l"emplacement de la matrice et une personne à contacter.' 
+---
+= Configurer les variables MIB SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les alertes SNMP, vous pouvez éventuellement configurer les variables MIB (Management information base) qui apparaissent dans les traps SNMP. Ces variables peuvent renvoyer le nom de la matrice de stockage, l'emplacement de la matrice et une personne à contacter.
+
+Le fichier MIB doit être copié et compilé sur le serveur avec l'application de service SNMP.
+
+Si vous n'avez pas de fichier MIB, vous pouvez l'obtenir comme suit:
+
+* Accédez à https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^].
+* Cliquez sur *Téléchargements*, puis sélectionnez *Téléchargements*.
+* Cliquez sur *logiciel de contrôleur de système d'exploitation SANtricity E-Series*.
+* Sélectionnez *Télécharger la dernière version*.
+* Connectez-vous.
+* Acceptez la déclaration de mise en garde et le contrat de licence.
+* Faites défiler vers le bas jusqu'à ce que le fichier MIB de votre type de contrôleur, puis cliquez sur le lien pour télécharger le fichier.
+
+
+Cette tâche décrit comment définir des variables MIB pour les interruptions SNMP. Ces variables peuvent renvoyer les valeurs suivantes en réponse à SNMP GetRequests :
+
+* `sysName` (nom de la matrice de stockage)
+* `sysLocation` (emplacement de la baie de stockage)
+* `sysContact` (nom d'un administrateur)
+
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
+. Sélectionnez *configurer les variables MIB SNMP*.
++
+La boîte de dialogue configurer les variables MIB SNMP s'ouvre.
+
+. Entrez une ou plusieurs des valeurs suivantes, puis cliquez sur *Enregistrer*.
++
+** *Nom* -- la valeur de la variable MIB `sysName`. Par exemple, entrez un nom pour la matrice de stockage.
+** *Location* -- la valeur de la variable MIB `sysLocation`. Par exemple, entrez un emplacement de la matrice de stockage.
+** *Contact* -- la valeur de la variable MIB `sysContact`. Par exemple, entrez un administrateur responsable de la matrice de stockage.
+
+
+
+
+Ces valeurs apparaissent dans les messages d'interruption SNMP relatifs aux alertes de la baie de stockage.

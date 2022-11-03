@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/delete-events-from-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
+summary: 'Vous pouvez effacer le journal d"audit des anciens événements, ce qui facilite la recherche à travers les événements. Vous avez la possibilité d"enregistrer les anciens événements dans un fichier CSV (valeurs séparées par des virgules) lors de la suppression.' 
+---
+= Supprimer des événements du journal d'audit
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effacer le journal d'audit des anciens événements, ce qui facilite la recherche à travers les événements. Vous avez la possibilité d'enregistrer les anciens événements dans un fichier CSV (valeurs séparées par des virgules) lors de la suppression.
+
+Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Sélectionnez l'onglet *Journal d'audit*.
+. Sélectionnez *Supprimer*.
++
+La boîte de dialogue Supprimer le journal d'audit s'ouvre.
+
+. Sélectionnez ou entrez le nombre d'événements les plus anciens que vous souhaitez supprimer.
+. Si vous souhaitez exporter les événements supprimés dans un fichier CSV (recommandé), cochez la case. Vous êtes invité à saisir un nom de fichier et un emplacement lorsque vous cliquez sur *Supprimer* à l'étape suivante. Sinon, si vous ne souhaitez pas enregistrer les événements dans un fichier CSV, cochez la case pour le désélectionner.
+. Cliquez sur *Supprimer*.
++
+Une boîte de dialogue de confirmation s'ouvre.
+
+. Type `delete` Dans le champ, puis cliquez sur *Supprimer*.
++
+Les événements les plus anciens sont supprimés de la page Journal d'audit.
+
+

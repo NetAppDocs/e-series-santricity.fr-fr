@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, reconstruction, 
+summary: 'Vous pouvez afficher l"état de reconstruction du disque depuis le tableau de bord Operations en cours.' 
+---
+= Où puis-je afficher l'état d'un disque en cours de reconstruction ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher l'état de reconstruction du disque depuis le tableau de bord Operations en cours.
+
+Dans la page d'accueil, cliquez sur le lien *opérations en cours* dans le coin supérieur droit.
+
+Selon le disque, la reconstruction complète peut prendre beaucoup de temps. Si un volume est modifié, une reconstruction complète peut avoir lieu au lieu de la reconstruction rapide.

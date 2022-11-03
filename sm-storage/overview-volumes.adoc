@@ -1,0 +1,55 @@
+---
+permalink: sm-storage/overview-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: 'Vous pouvez créer un volume comme conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Lors de la création d"un volume, vous sélectionnez également une charge de travail pour personnaliser la configuration de la matrice de stockage d"une application spécifique.' 
+---
+= Présentation des volumes et des charges de travail
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer un volume comme conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Lors de la création d'un volume, vous sélectionnez également une charge de travail pour personnaliser la configuration de la matrice de stockage d'une application spécifique.
+
+
+
+== Qu'est-ce qu'un volume et une charge de travail ?
+
+Un _volume_ est le composant logique créé avec une capacité spécifique pour l'hôte à accéder. Bien qu'un volume soit composé de plusieurs lecteurs, un volume apparaît comme un composant logique pour l'hôte. Une fois un volume défini, vous pouvez l'ajouter à une charge de travail. Une _charge de travail_ est un objet de stockage qui prend en charge une application, telle que SQL Server ou Exchange, que vous pouvez utiliser pour optimiser le stockage de cette application.
+
+En savoir plus :
+
+* link:how-volumes-work.html["Fonctionnement des volumes"]
+* link:how-workloads-work.html["Fonctionnement des workloads"]
+* link:volume-terminology.html["Terminologie des volumes"]
+* link:capacity-for-volumes.html["Mode d'allocation de la capacité pour les volumes"]
+* link:actions-you-can-perform-on-volumes.html["Actions que vous pouvez effectuer sur des volumes"]
+
+
+
+
+== Comment créez-vous les volumes et les charges de travail ?
+
+Tout d'abord, vous créez un workload. Accédez au menu:Storage[volumes] et ouvrez un assistant qui vous guide tout au long des étapes. Vous créez ensuite un volume à partir de la capacité disponible dans un pool ou un groupe de volumes, puis vous affectez le workload que vous avez créé.
+
+En savoir plus :
+
+* link:workflow-for-creating-volumes.html["Flux de production pour la création de volumes"]
+* link:create-workloads.html["Créer des workloads"]
+* link:create-volumes.html["Créer des volumes"]
+* link:add-to-workload.html["Ajout de volumes à la charge de travail"]
+
+
+
+
+== Informations associées
+
+En savoir plus sur les concepts liés aux volumes :
+
+* link:data-integrity-and-data-security-for-volumes.html["Intégrité et sécurité des données des volumes"]
+* link:ssd-cache-and-volumes.html["SSD cache et les volumes"]
+* link:thin-volume-monitoring.html["Surveillance du volume fin"]
+

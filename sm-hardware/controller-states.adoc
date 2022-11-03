@@ -1,0 +1,50 @@
+---
+permalink: sm-hardware/controller-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, states, 
+summary: 'Vous pouvez placer un contrôleur dans trois États différents : en ligne, hors ligne et en mode de service.' 
+---
+= États du contrôleur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez placer un contrôleur dans trois États différents : en ligne, hors ligne et en mode de service.
+
+
+
+== État en ligne
+
+L'état en ligne est l'état de fonctionnement normal du contrôleur. Il signifie que le contrôleur fonctionne normalement et est disponible pour les opérations d'E/S.
+
+Lorsque vous mettez un contrôleur en ligne, son état est défini sur optimal.
+
+
+
+== État hors ligne
+
+L'état hors ligne est généralement utilisé pour préparer un contrôleur en vue d'un remplacement lorsqu'il y a deux contrôleurs dans la baie de stockage. Il est possible de mettre un contrôleur hors ligne de deux manières : vous pouvez lancer une commande explicite ou le contrôleur peut tomber en panne. Un contrôleur ne peut quitter l'état hors ligne qu'en émettant une autre commande explicite ou en remplaçant le contrôleur défectueux. Vous pouvez mettre un contrôleur hors ligne uniquement s'il existe deux contrôleurs dans la baie de stockage.
+
+Lorsqu'un contrôleur est hors ligne, les conditions suivantes sont réunies :
+
+* Le contrôleur n'est pas disponible pour les E/S.
+* Vous ne pouvez pas gérer la baie de stockage par le biais de ce contrôleur.
+* Tous les volumes qui appartiennent actuellement à ce contrôleur sont déplacés vers l'autre contrôleur.
+* La mise en miroir du cache est désactivée et tous les volumes sont modifiés en mode d'écriture via le cache.
+
+
+
+
+== Mode entretien
+
+Le mode service est généralement utilisé uniquement par le support technique pour déplacer tous les volumes de la baie de stockage vers un contrôleur, de sorte que l'autre contrôleur puisse être diagnostiqué. Un contrôleur doit être placé manuellement en mode maintenance et doit être remis en ligne manuellement une fois l'opération d'entretien terminée.
+
+Lorsqu'un contrôleur est en mode maintenance, les conditions suivantes sont réunies :
+
+* Le contrôleur n'est pas disponible pour les E/S.
+* Le support technique peut accéder au contrôleur via le port série ou la connexion réseau pour analyser les problèmes potentiels.
+* Tous les volumes qui appartiennent actuellement à ce contrôleur sont déplacés vers l'autre contrôleur.
+* La mise en miroir du cache est désactivée et tous les volumes sont modifiés en mode d'écriture via le cache.
+

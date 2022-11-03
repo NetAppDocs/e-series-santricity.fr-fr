@@ -1,0 +1,18 @@
+---
+permalink: sm-interface/where-can-i-find-more-information-about-display-preferences.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, display preferences 
+summary: 'Vous trouverez des informations sur les options d"affichage disponibles dans les rubriques d"aide suivantes.' 
+---
+= Où puis-je trouver plus d'informations sur les préférences d'affichage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour trouver des informations sur les options d'affichage disponibles :
+
+* Pour en savoir plus sur les unités par défaut pour l'affichage des valeurs de capacité, reportez-vous à la section link:set-default-units-for-capacity-values.html["Définissez les unités par défaut pour les valeurs de capacité"].
+* Pour en savoir plus sur la plage horaire par défaut pour l'affichage des graphiques de performances, reportez-vous à la section link:set-default-time-frame-for-performance-graphs.html["Définissez la plage horaire par défaut des graphiques de performances"].
+

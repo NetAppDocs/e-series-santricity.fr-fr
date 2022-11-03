@@ -1,0 +1,82 @@
+---
+permalink: sm-storage/rtv-what-do-i-need-to-know-before-starting-a-remote-storage-import.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, import 
+summary: 'La fonctionnalité stockage distant vous permet de copier des données d"un système de stockage distant vers un volume sur un système de stockage E-Series local. Avant d"utiliser cette fonction, consultez les directives suivantes.' 
+---
+= Que dois-je savoir avant de démarrer une importation du stockage à distance ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonctionnalité stockage distant vous permet de copier des données d'un système de stockage distant vers un volume sur un système de stockage E-Series local. Avant d'utiliser cette fonction, consultez les directives suivantes.
+
+
+
+== Configuration
+
+Avant de créer l'importation de stockage à distance, vous devez effectuer les opérations suivantes et vérifier les conditions suivantes :
+
+* Assurez-vous que chaque contrôleur du système de stockage E-Series local dispose d'une connexion iSCSI au système de stockage distant.
+* Sur votre système de stockage E-Series local, créez un volume cible pour l'opération d'importation. Assurez-vous que la capacité du volume est égale ou supérieure au volume source, qu'elle correspond au volume source et qu'elle n'est pas mappée. Voir link:create-volumes.html["Créer des volumes"].
+* Configurez le système de stockage E-Series local en tant qu'hôte sur le système distant à l'aide de son nom qualifié iSCSI (IQN). Vous pouvez afficher l'IQN à partir du menu:Paramètres[système > Paramètres iSCSI > IQN cible]. Veillez également à définir le type d'hôte approprié en fonction du système utilisé.
+* Arrêtez toutes les E/S, démontez tous les systèmes de fichiers et supprimez toute affectation aux hôtes ou aux applications du volume sélectionné sur le système de stockage distant.
+* Attribuez le volume au système de stockage distant à l'hôte du système de stockage E-Series local nouvellement créé.
+* Collectez les informations suivantes à partir du système de stockage distant afin que l'importation puisse être créée :
++
+** Nom qualifié iSCSI (IQN)
+** Adresse IP iSCSI
+** Le numéro de LUN du périphérique de stockage distant, où proviennent les données source
+
+
+* Une fois le processus d'importation lancé, l'ensemble du volume de destination local est écrasé par les données copiées. Toutes les nouvelles données écrites sur le volume de destination local sont propagées au volume sur le périphérique de stockage distant après la création de l'importation. Par conséquent, nous vous recommandons de sauvegarder les volumes sur le système de stockage distant avant de démarrer le processus d'importation.
+
+
+
+
+== Processus d'importation
+
+Les étapes suivantes présentent le processus d'importation.
+
+. Accédez à l'interface de System Manager, puis accédez à la page *Remote Storage*. Sélectionnez *Importer* pour lancer une nouvelle création d'importation. Pour obtenir des instructions détaillées, reportez-vous à la section link:rtv-import-remote-storage.html["Importer le stockage distant"].
++
+Si vous souhaitez effectuer une importation hors ligne, ne mappez pas le volume de destination avant la fin de l'importation.
+
+. Surveiller la progression de l'importation.
++
+Une fois l'importation lancée, le volume cible peut alors être mappé. Le temps nécessaire à l'importation dépend de la taille du périphérique de stockage distant (volume source), du paramètre de priorité de l'importation et de la charge d'E/S sur les systèmes de stockage et leurs volumes associés.
+
++
+Une fois l'importation terminée, le volume cible est une copie de la source.
+
+. Lorsque vous êtes prêt à rompre la relation de mappage, effectuez un *Disconnect* sur l'objet d'importation à partir du panneau *opérations en cours*.
+
+
+Une fois l'importation déconnectée, les performances de la destination locale sont de nouveau normales et ne sont plus affectées par la connexion distante.
+
+
+
+== Restrictions
+
+La fonction de stockage à distance comporte les restrictions suivantes :
+
+* La mise en miroir doit être désactivée.
+* Le volume de destination du système E-Series ne doit pas contenir de snapshots.
+* Le volume de destination du système E-Series ne doit pas être mappé à un hôte avant le démarrage de l'importation.
+* Le provisionnement des ressources doit être désactivé sur le volume de destination du système E-Series.
+* Les mappages directs du volume de stockage distant vers un ou plusieurs hôtes ne sont pas pris en charge.
+* Web Services Proxy n'est pas pris en charge.
+* Les secrets CHAP iSCSI ne sont pas pris en charge.
+* SMcli n'est pas pris en charge.
+* Le datastore VMware n'est pas pris en charge.
+* Un seul système de stockage de la paire relation/importation peut être mis à niveau à la fois lorsqu'une paire d'importation est présente.
+
+
+
+
+== Informations supplémentaires
+
+De plus amples informations sur la fonction de stockage distant sont disponibles à partir du https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Rapport technique sur le stockage à distance"^].

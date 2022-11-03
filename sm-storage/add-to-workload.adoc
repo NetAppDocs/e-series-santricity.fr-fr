@@ -1,0 +1,45 @@
+---
+permalink: sm-storage/add-to-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add workload, volume 
+summary: Vous pouvez ajouter un ou plusieurs volumes à une charge de travail existante ou nouvelle pour les volumes qui ne sont actuellement pas associés à une charge de travail. 
+---
+= Ajout de volumes à la charge de travail
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter un ou plusieurs volumes à une charge de travail existante ou nouvelle pour les volumes qui ne sont actuellement pas associés à une charge de travail.
+
+Les volumes ne sont pas associés à une charge de travail s'ils ont été créés à l'aide de l'interface de ligne de commande ou s'ils ont été migrés (importés/exportés) à partir d'une autre baie de stockage.
+
+.Étapes
+. Sélectionnez menu:Storage[volumes].
+. Sélectionnez l'onglet *applications et charges de travail*.
++
+La vue applications et charges de travail s'affiche.
+
+. Sélectionnez *Ajouter à la charge de travail*.
++
+La boîte de dialogue Sélectionner la charge de travail s'affiche.
+
+. Effectuez l'une des actions suivantes :
++
+** *Ajouter des volumes à une charge de travail existante* -- sélectionnez cette option pour ajouter des volumes à une charge de travail existante.
++
+Utilisez la liste déroulante pour sélectionner une charge de travail. Le type d'application associé du workload est attribué aux volumes que vous ajoutez à cette charge de travail.
+
+** *Ajouter des volumes à une nouvelle charge de travail* -- sélectionnez cette option pour définir une nouvelle charge de travail pour un type d'application et ajouter des volumes à la nouvelle charge de travail.
+
+
+. Sélectionnez *Suivant* pour continuer la séquence d'ajout à la charge de travail.
++
+La boîte de dialogue Sélectionner des volumes s'affiche.
+
+. Sélectionnez les volumes à ajouter à la charge de travail.
+. Vérifiez les volumes que vous souhaitez ajouter à la charge de travail sélectionnée.
+. Lorsque vous êtes satisfait de la configuration de votre charge de travail, cliquez sur *Finish*.
+

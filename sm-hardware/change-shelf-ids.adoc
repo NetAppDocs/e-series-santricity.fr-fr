@@ -1,0 +1,29 @@
+---
+permalink: sm-hardware/change-shelf-ids.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
+summary: 'L"ID du tiroir est un numéro qui identifie de manière unique un tiroir dans la baie de stockage. Les étagères sont numérotées consécutivement, en commençant par 00 ou 01, en haut à gauche de chaque vue de tablette.' 
+---
+= Modifiez les ID de tiroir
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'ID du tiroir est un numéro qui identifie de manière unique un tiroir dans la baie de stockage. Les étagères sont numérotées consécutivement, en commençant par 00 ou 01, en haut à gauche de chaque vue de tablette.
+
+Le firmware du contrôleur attribue automatiquement l'ID de tiroir, mais vous pouvez modifier ce numéro si vous souhaitez créer un autre schéma de commande.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Sélectionnez la liste déroulante du tiroir contrôleur ou du tiroir disque, puis sélectionnez *Modifier l'ID*.
+. Dans la boîte de dialogue Modifier l'ID de tiroir, sélectionnez la liste déroulante pour afficher les numéros disponibles.
++
+Cette boîte de dialogue n'affiche pas les ID actuellement attribués aux tiroirs actifs.
+
+. Sélectionnez un numéro disponible, puis cliquez sur *Enregistrer*.
++
+Selon le numéro que vous avez sélectionné, l'ordre des étagères peut être réorganisé sur la page matériel. Si vous le souhaitez, vous pouvez utiliser les flèches haut/bas situées en haut à droite de chaque étagère pour réajuster l'ordre.
+
+

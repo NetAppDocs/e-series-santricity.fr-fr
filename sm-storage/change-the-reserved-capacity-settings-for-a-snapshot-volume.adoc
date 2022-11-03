@@ -1,0 +1,43 @@
+---
+permalink: sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, volume 
+summary: 'Vous pouvez modifier les paramètres d"un volume d"instantané pour régler le point de pourcentage auquel le système envoie une notification d"alerte lorsque la capacité réservée d"un volume d"instantané est presque pleine.' 
+---
+= Modifiez les paramètres de capacité réservée d'un volume snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres d'un volume d'instantané pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée d'un volume d'instantané est presque pleine.
+
+.Étapes
+. Menu Sélectionner:Storage[pools & Volume Groups].
+. Cliquez sur l'onglet *capacité réservée*.
+. Sélectionnez le volume de snapshot que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Paramètres de capacité réservée du volume Snapshot s'affiche.
+
+. Modifiez les paramètres de capacité réservée pour le volume de snapshot, le cas échéant.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+M'avertir lorsque...
+ a| 
+Utilisez la boîte à plateau pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée d'un volume membre est presque pleine.
+
+Lorsque la capacité réservée du volume de snapshot dépasse le seuil spécifié, le système envoie une alerte, ce qui vous permet d'augmenter la capacité réservée ou de supprimer des objets inutiles.
+
+|===
+====
+. Cliquez sur *Enregistrer* pour appliquer vos modifications aux paramètres de capacité réservée du volume de snapshot.
+

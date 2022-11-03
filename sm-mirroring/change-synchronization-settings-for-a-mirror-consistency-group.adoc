@@ -1,0 +1,63 @@
+---
+permalink: sm-mirroring/change-synchronization-settings-for-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
+summary: 'Vous pouvez modifier les paramètres de synchronisation et les seuils d"avertissement utilisés par le groupe de cohérence miroir sur la matrice de stockage locale lorsque les données sont initialement synchronisées ou lorsque les données sont synchronisées à nouveau lors des opérations de mise en miroir asynchrone.' 
+---
+= Modifiez les paramètres de synchronisation d'un groupe de cohérence miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres de synchronisation et les seuils d'avertissement utilisés par le groupe de cohérence miroir sur la matrice de stockage locale lorsque les données sont initialement synchronisées ou lorsque les données sont synchronisées à nouveau lors des opérations de mise en miroir asynchrone.
+
+La modification des paramètres de synchronisation affecte les opérations de synchronisation de toutes les paires symétriques au sein du groupe de cohérence miroir.
+
+.Étapes
+. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Sélectionnez l'onglet *groupes de cohérence miroir*.
++
+Le tableau Groupe de cohérence en miroir s'affiche et affiche tous les groupes de cohérence en miroir associés à la matrice de stockage.
+
+. Sélectionnez le groupe de cohérence miroir à modifier, puis sélectionnez menu :plus[Modifier les paramètres].
++
+Le système affiche la boîte de dialogue Modifier les paramètres.
+
+. Modifiez les paramètres de synchronisation et d'alerte selon vos besoins, puis cliquez sur *Enregistrer*.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Synchroniser les paires symétriques...
+ a| 
+Indiquez si vous souhaitez synchroniser manuellement ou automatiquement les paires mises en miroir sur la matrice de stockage distante.
+
+** **Manuellement** – sélectionnez cette option pour synchroniser manuellement les paires mises en miroir sur la matrice de stockage distante.
+** **Automatiquement, toutes les** – sélectionnez cette option pour synchroniser automatiquement les paires mises en miroir sur la matrice de stockage distante en spécifiant l'intervalle entre le début de la mise à jour précédente et le début de la mise à jour suivante. L'intervalle par défaut est de 10 minutes.
+
+
+
+
+ a| 
+M'avertir...
+ a| 
+Si vous définissez la méthode de synchronisation pour qu'elle se produise automatiquement, définissez les alertes suivantes :
+
+** **Synchronisation** – permet de définir le délai après lequel System Manager envoie une alerte indiquant que la synchronisation n'est pas terminée.
+** **Point de récupération à distance** – définissez une limite de temps après laquelle System Manager envoie une alerte indiquant que les données de point de récupération de la baie de stockage distante sont antérieures à votre limite de temps définie. Définissez la limite de temps à partir de la fin de la mise à jour précédente.
+** **Seuil de capacité réservée** – définissez un montant de capacité réservée auquel System Manager envoie une alerte indiquant que vous approchez du seuil de capacité réservée. Définissez le seuil par pourcentage de capacité restante.
+
+
+|===
+====
+
+
+System Manager modifie les paramètres de synchronisation pour chaque paire en miroir du groupe de cohérence miroir.

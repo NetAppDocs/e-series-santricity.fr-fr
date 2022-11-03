@@ -1,0 +1,59 @@
+---
+permalink: san-getstarted/access-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access System Manager 
+summary: 'Pour accéder à l’interface utilisateur de System Manager, pointez un navigateur vers l’adresse IP du contrôleur. Un assistant d"installation vous aide à commencer la configuration du système.' 
+---
+= Accédez à System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour accéder à l’interface utilisateur de System Manager, pointez un navigateur vers l’adresse IP du contrôleur. Un assistant d'installation vous aide à commencer la configuration du système.
+
+.Avant de commencer
+* Installez et configurez votre matériel, comme décrit dans l'un des guides de configuration express :
++
+** https://docs.netapp.com/us-en/e-series/config-linux/index.html["Configuration Linux Express"^]
+** https://docs.netapp.com/us-en/e-series/config-vmware/index.html["Configuration VMware Express"^]
+** https://docs.netapp.com/us-en/e-series/config-windows/index.html["Configuration Windows Express"^]
+
+
+* Configurez une station de gestion répondant aux exigences suivantes :
++
+** Connecté à un réseau d'1 Gbit/s ou plus.
+** Connecté au même sous-réseau que les ports de gestion du stockage.
+** Utilisé comme station séparée, plutôt qu'comme hôte (E/S connecté) pour la gestion des données.
+** Configuration pour la gestion hors bande, dans laquelle une station de gestion du stockage envoie des commandes au système de stockage via les connexions Ethernet au contrôleur.
+** Configurer avec un navigateur pris en charge. Voir link:supported-browsers-os.html["Navigateurs et systèmes d'exploitation pris en charge"].
+
+
+
+
+.Étapes
+. Depuis votre navigateur, saisissez l'URL suivante : `+https://<IPAddress>+`
++
+`IPAddress` est l'adresse de l'un des contrôleurs de la baie de stockage.
+
++
+La première fois que System Manager est ouvert sur une matrice qui n'a pas été configurée, l'invite définir le mot de passe administrateur s'affiche.
+
+. Entrez le mot de passe du Gestionnaire système pour le rôle admin dans les champs définir le mot de passe administrateur et confirmer le mot de passe, puis cliquez sur *définir le mot de passe*.
++
+L'assistant d'installation démarre lors de la première connexion.
+
+. Utilisez l'assistant de configuration pour effectuer les tâches suivantes :
++
+** *Vérifier le matériel (contrôleurs et lecteurs)* -- vérifier le nombre de contrôleurs et de lecteurs dans la matrice de stockage. Attribuez un nom à la matrice.
+** *Vérifier les hôtes et les systèmes d'exploitation* -- vérifier les types d'hôte et de système d'exploitation auxquels la matrice de stockage peut accéder.
+** *Accept pools* -- acceptez la configuration de pool recommandée pour la méthode d'installation express. Un pool est un groupe logique de lecteurs.
+** *Configurer les alertes* -- permettre à System Manager de recevoir des notifications automatiques en cas de problème avec la matrice de stockage.
+** *Activer AutoSupport* -- surveille automatiquement l'état de santé de votre matrice de stockage et envoie des interventions au support technique.
+
+
+
+
+Pour plus d'informations sur l'assistant d'installation, reportez-vous à la section link:../sm-interface/setup-wizard-overview.html["Présentation de l'assistant d'installation"].

@@ -1,0 +1,29 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, communities, smpv2c, traps, 
+summary: Vous pouvez modifier les noms de communauté pour les déroutements SNMPv2c. 
+---
+= Modifier des communautés pour les déroutements SNMPv2c
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les noms de communauté pour les déroutements SNMPv2c.
+
+Un nom de communauté doit être créé.
+
+.Étapes
+. Sélectionnez menu:Réglage[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations d'interruption et les noms de communauté apparaissent dans le tableau.
+
+. Sélectionnez *configurer les communautés*.
+. Entrez le nouveau nom de communauté, puis cliquez sur *Enregistrer*. Les noms de communauté ne peuvent contenir que des caractères ASCII imprimables.
+
+
+L'onglet SNMP de la page alertes affiche le nom de communauté mis à jour.

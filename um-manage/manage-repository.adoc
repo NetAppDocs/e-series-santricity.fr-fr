@@ -1,0 +1,56 @@
+---
+permalink: um-manage/manage-repository.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, software, repository 
+summary: Le référentiel logiciel répertorie tous les fichiers logiciels associés au proxy de services Web. 
+---
+= Gérez un référentiel logiciel
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le référentiel logiciel répertorie tous les fichiers logiciels associés au proxy de services Web.
+
+Si vous ne voyez pas le fichier que vous souhaitez utiliser, vous pouvez utiliser l'option gérer le référentiel logiciel pour importer un ou plusieurs fichiers SANtricity OS vers le système hôte sur lequel s'exécutent le proxy de services Web et Unified Manager. Vous pouvez également choisir de supprimer un ou plusieurs fichiers SANtricity OS disponibles dans le référentiel logiciel.
+
+Si vous ajoutez des fichiers SANtricity OS, vérifiez que les fichiers OS sont disponibles sur votre système local.
+
+.Étapes
+. Dans la vue principale, sélectionnez *Manage*, puis menu:Upgrade Center[Manage Software Repository].
++
+La boîte de dialogue gérer le référentiel logiciel s'affiche.
+
+. Effectuez l'une des actions suivantes :
++
+[cols="25h,~"]
+|===
+| Option | Procédez comme ça 
+
+
+ a| 
+Importer
+ a| 
+.. Cliquez sur *Importer.*
+.. Cliquez sur *Parcourir*, puis naviguez jusqu'à l'emplacement où les fichiers OS que vous souhaitez ajouter résident.
++
+Les fichiers OS possèdent un nom de fichier similaire à `N2800-830000-000.dlp`.
+
+.. Sélectionnez un ou plusieurs fichiers OS à ajouter, puis cliquez sur *Importer*.
+
+
+
+
+ a| 
+Supprimer
+ a| 
+.. Sélectionnez un ou plusieurs fichiers OS que vous souhaitez supprimer du référentiel logiciel.
+.. Cliquez sur *Supprimer*.
+
+
+|===
+
+
+Si vous avez sélectionné l'importation, le ou les fichiers sont téléchargés et validés. Si vous avez sélectionné Supprimer, les fichiers sont supprimés du référentiel logiciel.

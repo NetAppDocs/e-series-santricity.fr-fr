@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/rtv-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, terms 
+summary: 'Découvrez comment les conditions générales du stockage à distance s"appliquent à votre baie de stockage.' 
+---
+= Terminologie Remote Storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les conditions générales du stockage à distance s'appliquent à votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+IQN
+ a| 
+Identificateur de nom qualifié iSCSI (IQN), qui est un nom unique pour un initiateur ou une cible iSCSI.
+
+
+
+ a| 
+LUN
+ a| 
+Numéro d'unité logique utilisé pour identifier une unité logique pouvant être présentée à un hôte pour y accéder.
+
+
+
+ a| 
+Système de stockage distant
+ a| 
+Système de stockage où résident les données initialement. Le système de stockage distant peut être un modèle de système E-Series ou un système d'un autre fournisseur.
+
+
+
+ a| 
+Périphérique de stockage distant
+ a| 
+Périphérique physique ou logique où les données sont initialement stockées sur le système distant. Dans les systèmes de stockage E-Series, on parle de « volume ».
+
+
+
+ a| 
+Objet de stockage distant
+ a| 
+Objet contenant des informations permettant au système E-Series d'identifier et de se connecter au système de stockage distant. Ces informations incluent les adresses IQN et IP du système de stockage distant. L'objet de stockage distant représente la communication entre le système de stockage distant et le système E-Series.
+
+
+
+ a| 
+Volume de stockage distant
+ a| 
+Volume standard du système E-Series qui permet d'accéder aux données à un périphérique de stockage distant.
+
+
+
+ a| 
+Volumétrie
+ a| 
+Conteneur dans lequel les données sont stockées. Il s'agit du composant logique créé pour que l'hôte puisse accéder aux données.
+
+|===

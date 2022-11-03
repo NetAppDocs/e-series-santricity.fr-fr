@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/delete-trap-destinations.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
+summary: 'Vous pouvez supprimer une adresse de destination d"interruption afin que le moniteur d"événements de la matrice de stockage n"envoie plus d"interruptions SNMP à cette adresse.' 
+---
+= Supprimer les destinations d'interruption
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer une adresse de destination d'interruption afin que le moniteur d'événements de la matrice de stockage n'envoie plus d'interruptions SNMP à cette adresse.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Les adresses de destination des interruptions apparaissent dans le tableau.
+
+. Sélectionnez une destination d'interruption, puis cliquez sur *Supprimer* dans le coin supérieur droit de la page.
+. Confirmez l'opération, puis cliquez sur *Supprimer*.
++
+L'adresse de destination n'apparaît plus sur la page alertes.
+
+
+
+La destination de trap supprimée ne reçoit plus d'interruptions SNMP du moniteur d'événements de la matrice de stockage.

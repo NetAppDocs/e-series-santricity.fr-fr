@@ -1,0 +1,183 @@
+---
+permalink: sm-storage/create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, volume 
+summary: 'La création d"un volume Snapshot permet à l"hôte d"accéder à une image Snapshot d"un volume ou d"un groupe de cohérence de snapshot. Vous pouvez désigner le volume snapshot comme étant en lecture seule ou en lecture-écriture.' 
+---
+= Créer un volume snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La création d'un volume Snapshot permet à l'hôte d'accéder à une image Snapshot d'un volume ou d'un groupe de cohérence de snapshot. Vous pouvez désigner le volume snapshot comme étant en lecture seule ou en lecture-écriture.
+
+La séquence de création du volume de snapshot permet de créer un volume de snapshot à partir d'une image de snapshot et offre des options permettant d'allouer de la capacité réservée si le volume est en lecture/écriture. Un volume snapshot peut être désigné comme l'un des suivants :
+
+* Un volume Snapshot en lecture seule fournit à une application hôte un accès en lecture seule à une copie des données contenues dans l'image snapshot sans possibilité de modifier l'image snapshot. Aucun volume snapshot en lecture seule ne dispose d'une capacité réservée associée.
+* Un volume Snapshot de lecture/écriture fournit à l'application hôte un accès en écriture à une copie des données contenues dans l'image Snapshot. Sa propre capacité réservée est utilisée pour enregistrer les modifications ultérieures apportées par l'application hôte au volume de base sans affecter l'image snapshot référencée.
+
+
+Le processus de création d'un volume de snapshot est une procédure en plusieurs étapes.
+
+
+
+== Étape 1 : consultez les membres d'un volume de snapshot
+
+Sélectionnez une image Snapshot d'un volume de base ou d'un groupe de cohérence Snapshot. Si vous sélectionnez une image snapshot de groupe de cohérence, les volumes membres du groupe de cohérence de snapshot s'affichent pour révision.
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Sélectionnez l'onglet *Snapshot volumes*.
+. Sélectionnez *Créer*.
++
+La boîte de dialogue Créer un volume Snapshot s'affiche.
+
+. Sélectionnez l'image snapshot (volume ou groupe de cohérence snapshot) que vous souhaitez convertir en volume snapshot, puis cliquez sur *Suivant*. Utilisez une entrée de texte dans le champ *Filter* pour réduire la liste.
++
+Si la sélection concerne une image snapshot de groupe de cohérence de snapshot, la boîte de dialogue membres de l'évaluation s'affiche.
+
++
+Dans la boîte de dialogue vérifier les membres, vérifiez la liste des volumes sélectionnés pour la conversion en volumes de snapshot, puis cliquez sur *Suivant*.
+
+. Accédez à  2: Assign snapshot volume to host.
+
+
+
+
+== Étape 2 : affecter un volume de snapshot à l'hôte
+
+Sélectionnez un hôte ou un cluster hôte spécifique pour l'attribuer au volume snapshot. Cette affectation permet à un hôte ou un cluster hôte d'accéder au volume Snapshot. Vous pouvez choisir d'attribuer un hôte ultérieurement, si nécessaire.
+
+.Avant de commencer
+* Des hôtes ou des clusters hôtes valides existent sous la page hôtes.
+* Les identifiants de port hôte doivent avoir été définis pour l'hôte.
+* Avant de créer un volume DA, vérifiez que votre connexion d'hôte planifiée prend en charge la fonction Data assurance (DA). Si l'une des connexions hôte sur les contrôleurs de votre matrice de stockage ne prend pas en charge DA, les hôtes associés ne peuvent pas accéder aux données sur les volumes DA.
+
+
+Lorsque vous attribuez des volumes, gardez les consignes suivantes à l'esprit :
+
+* Le système d'exploitation d'un hôte peut disposer de limites spécifiques sur le nombre de volumes accessibles par l'hôte.
+* Vous pouvez définir une affectation d'hôte pour chaque volume snapshot de la matrice de stockage.
+* Les volumes affectés sont partagés entre les contrôleurs de la baie de stockage.
+* Le même numéro d'unité logique (LUN) ne peut pas être utilisé deux fois par un hôte ou un cluster hôte pour accéder à un volume Snapshot. Vous devez utiliser une LUN unique.
+
+
+[NOTE]
+====
+L'affectation d'un volume à un hôte échoue si vous essayez d'attribuer un volume à un cluster hôte qui entre en conflit avec une affectation établie pour un hôte du cluster hôte.
+
+====
+.Étapes
+. Dans la boîte de dialogue *affecter à l'hôte*, sélectionnez l'hôte ou le cluster hôte que vous souhaitez attribuer au nouveau volume. Si vous souhaitez créer le volume sans affecter d'hôte, sélectionnez *attribuer ultérieurement* dans la liste déroulante.
+. Sélectionnez le mode d'accès. Options au choix :
++
+** *Lecture/écriture* -- cette option fournit à l'hôte un accès en lecture/écriture au volume snapshot et nécessite une capacité réservée.
+** *Lecture seule* -- cette option fournit à l'hôte un accès en lecture seule au volume snapshot et ne nécessite pas de capacité réservée.
+
+
+. Cliquez sur *Suivant* et effectuez l'une des opérations suivantes :
++
+** Si le volume de votre snapshot est en lecture/écriture, la boîte de dialogue capacité de révision s'affiche. Accédez à  3: Reserve capacity for a snapshot volume.
+** Si votre volume de snapshot est en lecture seule, la boîte de dialogue Modifier la priorité s'affiche. Accédez à  4: Edit settings for a snapshot volume.
+
+
+
+
+
+
+== Étape 3 : réserver de la capacité pour un volume Snapshot
+
+Associer la capacité réservée à un volume snapshot de lecture/écriture. System Manager suggère les volumes et la capacité en fonction des propriétés du volume de base ou du groupe de cohérence Snapshot. Vous pouvez accepter la configuration de capacité réservée recommandée ou personnaliser le stockage alloué.
+
+Vous pouvez augmenter ou réduire la capacité réservée du volume Snapshot selon vos besoins. Si vous constatez que la capacité réservée de snapshot est supérieure à vos besoins, vous pouvez réduire sa taille afin de libérer de l'espace nécessaire à d'autres volumes logiques.
+
+.Étapes
+. Utilisez la zone de disque pour allouer la capacité réservée au volume de snapshot.
++
+Le tableau Volume candidate affiche uniquement les candidats qui prennent en charge la capacité réservée spécifiée.
+
++
+Effectuez l'une des actions suivantes :
+
++
+** *Acceptez les paramètres par défaut*.
++
+Utilisez cette option recommandée pour allouer la capacité réservée au volume snapshot avec les paramètres par défaut.
+
+** *Allouez vos propres paramètres de capacité réservée pour répondre à vos besoins de stockage de données*.
++
+Si vous modifiez le paramètre de capacité réservée par défaut, cliquez sur *Actualiser les candidats* pour actualiser la liste des candidats pour la capacité réservée que vous avez spécifiée.
+
++
+Allouez la capacité réservée en suivant les instructions suivantes.
+
++
+*** Le paramètre par défaut pour la capacité réservée correspond à 40 % de la capacité du volume de base et cette capacité est généralement suffisante.
+*** La capacité nécessaire varie en fonction de la fréquence et de la taille des écritures d'E/S sur les volumes, ainsi que de la quantité et de la durée de la collecte des images de snapshot.
+
+
+
+
+. *Facultatif:* si vous créez le volume d'instantané pour un groupe de cohérence d'instantané, l'option "changer candidat" apparaît dans le tableau réservé candidats. Cliquez sur *changer candidat* pour sélectionner un autre candidat à capacité réservée.
+. Cliquez sur *Suivant* et allez à  4: Edit settings for a snapshot volume.
+
+
+
+
+== Étape 4 : modifiez les paramètres d'un volume de snapshot
+
+Modifiez les paramètres d'un volume Snapshot, comme son nom, la mise en cache, les seuils d'alerte de capacité réservée, etc.
+
+Pour améliorer les performances en lecture seule, vous pouvez ajouter le volume au cache SSD. La fonction SSD cache se compose d'un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage.
+
+.Étapes
+. Acceptez ou modifiez les paramètres du volume d'instantané, le cas échéant.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Paramètres de volume de snapshot*
+
+
+
+ a| 
+Nom
+ a| 
+Spécifiez le nom du volume de snapshot.
+
+
+
+ a| 
+Activez SSD cache
+ a| 
+Sélectionnez cette option pour activer la mise en cache en lecture seule sur les disques SSD. REMARQUE : cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+
+
+ a| 
+*Paramètres de capacité réservés*
+
+
+
+ a| 
+M'avertir lorsque...
+ a| 
+*Apparaît uniquement pour un volume snapshot en lecture/écriture*.
+
+Utilisez la case à cocher pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée d'un groupe d'instantanés approche pleine.
+
+Lorsque la capacité réservée du groupe de snapshots dépasse le seuil spécifié, utilisez la notification préalable pour augmenter la capacité réservée ou supprimer des objets inutiles avant que l'espace restant ne soit vide.
+
+|===
+====
+. Vérifiez la configuration de volume de snapshot. Cliquez sur *Retour* pour apporter des modifications.
+. Lorsque vous êtes satisfait de la configuration du volume de snapshot, cliquez sur *Terminer*.
+

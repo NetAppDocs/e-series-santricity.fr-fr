@@ -1,0 +1,38 @@
+---
+permalink: sm-mirroring/suspend-and-resume-synchronization-for-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirrored, pair, 
+summary: 'Vous pouvez utiliser l"option suspendre et reprendre pour contrôler quand synchroniser les données sur le volume principal et le volume secondaire dans une paire en miroir.' 
+---
+= Suspendre et reprendre la synchronisation pour une paire en miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser l'option suspendre et reprendre pour contrôler quand synchroniser les données sur le volume principal et le volume secondaire dans une paire en miroir.
+
+Si une paire en miroir est suspendue manuellement, la paire en miroir ne se synchronise pas tant qu'elle n'est pas rétablie manuellement.
+
+.Étapes
+. Menu sélection:stockage[mise en miroir synchrone].
+. Sélectionnez la paire en miroir que vous souhaitez suspendre ou reprendre, puis sélectionnez menu:plus[suspendre] ou menu:plus[reprendre].
++
+Le système affiche une confirmation.
+
+. Sélectionnez *Oui* pour confirmer.
+
+
+System Manager effectue les actions suivantes :
+
+* Suspend ou reprend le transfert de données entre la paire symétrique sans supprimer la relation miroir.
+* Pour une paire _suspendue_ symétrique :
++
+** Affiche *suspendu* dans la table paire symétrique.
+** Consigne toutes les données écrites sur le volume primaire de la paire en miroir pendant la suspension de la synchronisation.
+
+
+* Pour une paire _repris_ mise en miroir, écrit automatiquement les données dans le volume secondaire de la paire mise en miroir lorsque la synchronisation reprend. Aucune synchronisation complète n'est requise.
+

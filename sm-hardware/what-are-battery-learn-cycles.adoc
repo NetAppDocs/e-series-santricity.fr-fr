@@ -1,0 +1,39 @@
+---
+permalink: sm-hardware/what-are-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, battery, learn, cycle, 
+summary: 'Un cycle d"apprentissage est un cycle automatique d"étalonnage de la jauge de batterie intelligente.' 
+---
+= Quels sont les cycles d'apprentissage de la batterie ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un cycle d'apprentissage est un cycle automatique d'étalonnage de la jauge de batterie intelligente.
+
+Un cycle d'apprentissage comprend les phases suivantes :
+
+* Décharge contrôlée de la batterie
+* Période de repos
+* Charge
+
+
+Les batteries sont déchargées à un seuil prédéfini. Au cours de cette phase, la jauge de la batterie est étalonnée.
+
+Un cycle d'apprentissage nécessite les paramètres suivants :
+
+* Batteries complètement chargées
+* Aucune batterie surchauffée
+
+
+Les cycles d'apprentissage des systèmes de contrôleur duplex se produisent simultanément. Pour les contrôleurs ayant une alimentation de secours provenant de plusieurs batteries ou ensembles de cellules de batterie, les cycles d'apprentissage se produisent séquentiellement.
+
+Les cycles d'apprentissage sont programmés pour démarrer automatiquement à intervalles réguliers, en même temps et le même jour de la semaine. L'intervalle entre les cycles est décrit en semaines.
+
+[NOTE]
+====
+Un cycle d'apprentissage peut prendre plusieurs heures.
+
+====

@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/overview-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, system settings 
+summary: Vous pouvez configurer System Manager pour des paramètres généraux de la baie et des fonctions complémentaires. 
+---
+= Présentation des paramètres
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer System Manager pour des paramètres généraux de la baie et des fonctions complémentaires.
+
+
+
+== Quels paramètres puis-je configurer ?
+
+Les paramètres de la matrice sont les suivants :
+
+* link:cache-settings-and-performance.html["Paramètres du cache et performances"]
+* link:automatic-load-balancing-overview.html"["Équilibrage automatique de la charge"]
+* link:how-add-on-features-work.html["Fonctionnalités complémentaires"]
+* link:overview-drive-security.html["Sécurité du lecteur"]
+
+
+
+
+== Tâches associées
+
+En savoir plus sur les tâches liées aux paramètres système :
+
+* link:download-cli.html["Télécharger l'interface de ligne de commande"]
+* link:create-internal-security-key.html["Créer une clé de sécurité interne"]
+* link:create-external-security-key.html["Créer une clé de sécurité externe"]
+* link:../sm-hardware/configure-iscsi-ports-hardware.html["Configurez les ports iSCSI"]
+* link:../sm-hardware/configure-nvme-over-infiniband-ports-hardware.html["Configurez les ports NVMe sur IB"]
+* link:../sm-hardware/configure-nvme-over-roce-ports-hardware.html["Configurez les ports NVMe over RoCE"]
+

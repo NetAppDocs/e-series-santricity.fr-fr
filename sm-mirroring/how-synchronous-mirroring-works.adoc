@@ -1,0 +1,95 @@
+---
+permalink: sm-mirroring/how-synchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: La mise en miroir synchrone réplique les volumes de données en temps réel pour assurer une disponibilité continue. 
+---
+= Fonctionnement de la mise en miroir synchrone
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La mise en miroir synchrone réplique les volumes de données en temps réel pour assurer une disponibilité continue.
+
+[NOTE]
+====
+La mise en miroir n'est pas disponible sur la baie de stockage EF600 ou EF300.
+
+====
+La mise en miroir synchrone atteint l'objectif de point de restauration (RPO) de zéro perte de données en mettant à disposition une copie des données importantes en cas d'incident sur l'une des deux baies de stockage. La copie est identique aux données de production à chaque instant, car chaque écriture est effectuée sur le volume primaire, une écriture est effectuée sur le volume secondaire. L'hôte ne reçoit pas de confirmation de la réussite de l'écriture tant que le volume secondaire n'a pas été mis à jour avec les modifications apportées au volume principal.
+
+Ce type de mise en miroir est idéal pour la continuité de l'activité telles que la reprise après incident.
+
+
+
+== Relation de mise en miroir synchrone
+
+Une relation de mise en miroir synchrone se compose d'un volume primaire et d'un volume secondaire sur des baies de stockage distinctes. La matrice de stockage contenant le volume primaire est généralement située sur le site primaire et sert les hôtes actifs. La matrice de stockage contenant le volume secondaire se trouve généralement sur un site secondaire et contient une réplique des données. Le volume secondaire est utilisé si la matrice de stockage du volume primaire n'est pas disponible en raison, par exemple, d'une panne totale de courant, d'un incendie ou d'une défaillance matérielle du site principal.
+
+
+
+== Session de mise en miroir synchrone
+
+Le processus de configuration de la mise en miroir synchrone implique de configurer des volumes en paires. Après avoir créé une paire mise en miroir, composée d'un volume primaire sur une baie de stockage et d'un volume secondaire sur une autre baie de stockage, vous pouvez démarrer la mise en miroir synchrone. Les étapes de la mise en miroir synchrone sont décrites ci-dessous.
+
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[session de mise en miroir de synchronisation sam 1130 dwg]
+
+. Une écriture provient de l'hôte.
+. L'écriture est appliquée au volume principal, propagée au système distant, puis appliquée au volume secondaire.
+. La baie de stockage du volume primaire envoie un message d'achèvement d'E/S au système hôte _après_ que les deux opérations d'écriture ont été correctement terminées.
+
+
+La capacité réservée est utilisée pour consigner des informations sur la requête d'écriture entrante d'un hôte.
+
+Lorsque le propriétaire actuel du contrôleur du volume primaire reçoit une requête d'écriture d'un hôte, le contrôleur consigne d'abord les informations relatives à l'écriture dans la capacité réservée du volume primaire. Il écrit ensuite les données sur le volume primaire. Ensuite, le contrôleur lance une opération d'écriture à distance pour copier les blocs de données concernés vers le volume secondaire de la baie de stockage distante.
+
+L'application hôte doit attendre l'écriture sur la baie de stockage locale et sur le réseau de la baie de stockage distante, Une connexion très rapide entre la baie de stockage locale et la baie de stockage distante est nécessaire pour maintenir la relation en miroir sans réduire excessivement les performances des E/S locales.
+
+
+
+== Reprise après incident
+
+La mise en miroir synchrone conserve une copie des données physiquement distantes du site où elles résident. En cas d'incident sur le site primaire, lors d'une panne de courant ou d'une inondation, ces données sont accessibles rapidement depuis le site secondaire.
+
+Le volume secondaire n'est pas disponible pour héberger les applications pendant l'opération de mise en miroir synchrone. En cas d'incident au niveau de la baie de stockage locale, il est donc possible de basculer vers la baie de stockage distante. Pour basculer, promouvoir le volume secondaire dans le rôle principal. L'hôte de reprise peut alors accéder au volume nouvellement promu et les opérations commerciales peuvent se poursuivre.
+
+
+
+== Paramètres de synchronisation
+
+Lorsque vous créez une paire en miroir, vous définissez également la priorité de synchronisation et la stratégie de resynchronisation que la paire en miroir utilise pour terminer l'opération de resynchronisation après une interruption de communication.
+
+Si la liaison de communication entre les deux matrices de stockage cesse de fonctionner, les hôtes continuent de recevoir des accusés de réception de la matrice de stockage locale, évitant ainsi toute perte d'accès. Lorsque la liaison de communication fonctionne de nouveau, toutes les données non répliquées peuvent être resynchronisés automatiquement ou manuellement sur la matrice de stockage distante.
+
+La resynchronisation automatique des données dépend de la règle de resynchronisation de la paire en miroir. Une règle de resynchronisation automatique permet à la paire en miroir de resynchroniser automatiquement lorsque le lien fonctionne à nouveau. Une règle de resynchronisation manuelle exige que vous repuissiez la synchronisation manuellement après un problème de communication. La resynchronisation manuelle est la règle recommandée.
+
+Vous pouvez modifier les paramètres de synchronisation d'une paire en miroir uniquement sur la matrice de stockage qui contient le volume principal.
+
+
+
+== Données non synchronisées
+
+Les volumes primaire et secondaire ne sont plus synchronisés lorsque la baie de stockage du volume primaire ne parvient pas à écrire les données sur le volume secondaire. Cela peut être causé par les problèmes suivants :
+
+* Problèmes de réseau entre les matrices de stockage locales et distantes
+* Un volume secondaire en panne
+* La synchronisation est suspendue manuellement sur la paire en miroir
+
+
+
+
+== Paire mise en miroir orpheline
+
+Un volume de paires mises en miroir orphelin existe lorsqu'un volume membre a été supprimé d'un côté (côté principal ou côté secondaire) mais pas de l'autre côté.
+
+Les volumes de paires mises en miroir orphelins sont détectés lors de la restauration de la communication inter-baies et les deux côtés de la configuration miroir réconcilient les paramètres de miroir.
+
+Vous pouvez supprimer une paire en miroir pour corriger un état de paire en miroir orphelin.
+
+
+
+== Configuration et gestion
+
+Pour activer et configurer la mise en miroir entre deux baies, vous devez utiliser l'interface Unified Manager. Une fois la mise en miroir activée, vous pouvez gérer les paires en miroir et les paramètres de synchronisation dans System Manager.

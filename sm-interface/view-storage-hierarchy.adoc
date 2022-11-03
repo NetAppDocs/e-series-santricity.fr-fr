@@ -1,0 +1,121 @@
+---
+permalink: sm-interface/view-storage-hierarchy.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, storage hierarchy 
+summary: 'La hiérarchie de stockage de l"interface principale fournit une vue organisée des divers composants matériels et objets de stockage gérés par votre matrice de stockage.' 
+---
+= Afficher la hiérarchie de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La hiérarchie de stockage de l'interface principale fournit une vue organisée des divers composants matériels et objets de stockage gérés par votre matrice de stockage.
+
+Pour afficher la hiérarchie de stockage, accédez à la page d'accueil et cliquez sur la flèche déroulante d'un composant de matrice de stockage ou d'un objet de stockage. Une matrice de stockage se compose d'un ensemble de composants physiques et logiques.
+
+
+
+== Composants physiques
+
+Les composants physiques d'une matrice de stockage sont décrits dans ce tableau.
+
+[cols="25h,~"]
+|===
+| Composant | Description 
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+Tiroir
+ a| 
+Un tiroir est une armoire installée dans une armoire ou un rack. Il contient les composants matériels de la matrice de stockage. Il existe deux types de tiroirs : un tiroir contrôleur et un tiroir disque. Un tiroir contrôleur inclut des contrôleurs et des disques. Un tiroir disque inclut des modules d'entrée/sortie (IOM) et des disques.
+
+[NOTE]
+====
+Si votre matrice de stockage contient différents types de supports ou différents types d'interface, un tiroir disque pour chaque type de disque s'affiche.
+
+====
+
+
+ a| 
+Lecteur
+ a| 
+Un lecteur est un périphérique mécanique électromagnétique ou une mémoire à semi-conducteurs qui fournit le support de stockage physique pour les données.
+
+
+
+ a| 
+Hôte
+ a| 
+Un hôte est un serveur qui envoie des E/S à un volume d'une baie de stockage.
+
+
+
+ a| 
+Adaptateur de bus hôte (HBA)
+ a| 
+Une carte HBA (Host bus adapter) est une carte qui réside dans un hôte et qui contient un ou plusieurs ports hôtes.
+
+
+
+ a| 
+Port hôte
+ a| 
+Un port hôte est un port sur un adaptateur de bus hôte (HBA, host bus adapter) qui fournit la connexion physique à un contrôleur et est utilisé pour les opérations d'E/S.
+
+
+
+ a| 
+Client de gestion
+ a| 
+Un client de gestion est l'ordinateur sur lequel un navigateur est installé pour accéder à System Manager.
+
+|===
+
+
+== Composants logiques
+
+Les disques de la matrice de stockage fournissent la capacité de stockage physique des données. Utilisez System Manager pour configurer la capacité physique en composants logiques, comme les pools, les groupes de volumes et les volumes. Ces composants sont les outils que vous utilisez pour configurer, stocker, maintenir et conserver les données sur la baie de stockage. Les composants logiques d'une matrice de stockage sont décrits dans ce tableau.
+
+[cols="25h,~"]
+|===
+| Composant | Description 
+
+
+ a| 
+Piscine
+ a| 
+Un pool est un ensemble de disques regroupés de manière logique. Vous pouvez utiliser un pool pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes depuis un pool ou un groupe de volumes.)
+
+
+
+ a| 
+Groupe de volumes
+ a| 
+Un groupe de volumes est un conteneur pour les volumes aux caractéristiques partagées. Un groupe de volumes a une capacité et un niveau RAID définis. Vous pouvez utiliser un groupe de volumes pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes à partir d'un groupe de volumes ou d'un pool.)
+
+
+
+ a| 
+Volumétrie
+ a| 
+Un volume est un conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Il s'agit du composant logique créé pour que l'hôte puisse accéder au stockage de la matrice de stockage.
+
+
+
+ a| 
+Numéro d'unité logique (LUN)
+ a| 
+Un numéro d'unité logique (LUN) est le numéro attribué à l'espace d'adresse qu'un hôte utilise pour accéder à un volume. Le volume est présenté à l'hôte comme capacité sous la forme d'une LUN.
+
+Chaque hôte dispose de son propre espace d'adresse de LUN. Par conséquent, la même LUN peut être utilisée par différents hôtes pour accéder à différents volumes.
+
+|===

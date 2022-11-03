@@ -1,0 +1,90 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
+summary: Pour un planning de snapshots, vous pouvez modifier les heures de collecte automatique ou la fréquence de collecte. 
+---
+= Modifiez les paramètres d'un planning de snapshots
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour un planning de snapshots, vous pouvez modifier les heures de collecte automatique ou la fréquence de collecte.
+
+Vous pouvez importer des paramètres à partir d'un planning de snapshots existant ou modifier les paramètres selon vos besoins.
+
+Étant donné qu'une planification de snapshots est associée à un groupe de snapshots ou à un groupe de cohérence de snapshots, la capacité réservée peut être affectée par les modifications des paramètres de planification.
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Cliquez sur l'onglet *plannings*.
+. Sélectionnez le planning de snapshots que vous souhaitez modifier, puis cliquez sur *Modifier*.
++
+La boîte de dialogue Modifier le planning d'instantané s'affiche.
+
+. Effectuez l'une des opérations suivantes :
++
+** *Utilisez un programme précédemment défini à partir d'un autre objet instantané* -- cliquez sur *Importer planification*, sélectionnez l'objet avec le programme à importer, puis cliquez sur *Importer*.
+** *Modifier les paramètres de planification* -- Voir les détails de champ ci-dessous.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+Jour / mois
+ a| 
+Choisissez l'une des options suivantes :
+
+*** *Quotidien / hebdomadaire* -- sélectionnez des jours individuels pour les instantanés de synchronisation. Vous pouvez également cocher la case *Sélectionner tous les jours* en haut à droite si vous voulez un horaire quotidien.
+*** *Mensuel / annuel* -- sélectionnez des mois individuels pour les instantanés de synchronisation. Dans le champ *on jour(s)*, saisissez les jours du mois pour les synchronisations. Les entrées valides sont *1* à *31* et *Last*. Vous pouvez séparer plusieurs jours par une virgule ou un point-virgule. Utilisez un tiret pour les dates incluses. Par exemple : 1,3,4,10-15,dernier. Vous pouvez également cocher la case *Sélectionner tous les mois* en haut à droite si vous voulez un horaire mensuel.
+
+
+
+
+ a| 
+Heure de début
+ a| 
+Dans la liste déroulante, sélectionnez une nouvelle heure de début pour les instantanés quotidiens. Les sélections sont fournies par incréments d'une demi-heure. L'heure de début est par défaut d'une demi-heure avant l'heure actuelle.
+
+
+
+ a| 
+Fuseau horaire
+ a| 
+Dans la liste déroulante, sélectionnez le fuseau horaire de votre matrice de stockage.
+
+
+
+ a| 
+Snapshots par jour
+
+Durée entre les snapshots
+ a| 
+Sélectionnez le nombre d'images instantanées à créer par jour.
+
+Si vous sélectionnez plusieurs points, sélectionnez également la durée entre les points de restauration. Pour plusieurs points de restauration, assurez-vous de disposer d'une capacité réservée adéquate.
+
+
+
+ a| 
+Date de début
+
+Date de fin
+
+Aucune date de fin
+ a| 
+Entrez la date de début des synchronisations. Entrez également une date de fin ou sélectionnez *pas de date de fin*.
+
+|===
+====
+
+
+. Cliquez sur *Enregistrer*.
+

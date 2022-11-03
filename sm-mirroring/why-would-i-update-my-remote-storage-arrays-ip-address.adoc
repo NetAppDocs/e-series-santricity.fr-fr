@@ -1,0 +1,20 @@
+---
+permalink: sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, 
+summary: 'Vous mettez à jour l"adresse IP de la matrice de stockage distante lorsque l"adresse IP d"un port iSCSI change et que la matrice de stockage locale ne parvient pas à communiquer avec la matrice de stockage distante.' 
+---
+= Pourquoi mettre à jour l'adresse IP de ma matrice de stockage distante ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous mettez à jour l'adresse IP de votre matrice de stockage distante lorsque l'adresse IP d'un port iSCSI change et que la matrice de stockage locale ne parvient pas à communiquer avec la matrice de stockage distante.
+
+Lors de l'établissement d'une relation de mise en miroir asynchrone avec une connexion iSCSI, les matrices de stockage locales et distantes stockent un enregistrement de l'adresse IP de la matrice de stockage distante dans la configuration de mise en miroir asynchrone. Si l'adresse IP d'un port iSCSI change, la matrice de stockage distante qui tente d'utiliser ce port rencontre une erreur de communication.
+
+La matrice de stockage avec l'adresse IP modifiée envoie un message à chaque matrice de stockage distante associée aux groupes de cohérence miroir configurés pour effectuer une mise en miroir sur une connexion iSCSI. Les matrices de stockage qui reçoivent ce message mettent automatiquement à jour leur adresse IP cible distante.
+
+Si la matrice de stockage avec l'adresse IP modifiée ne parvient pas à envoyer son message inter-matrice à une matrice de stockage distante, le système vous envoie une alerte du problème de connectivité. Utilisez l'option mettre à jour l'adresse IP distante pour rétablir la connexion avec la matrice de stockage locale.

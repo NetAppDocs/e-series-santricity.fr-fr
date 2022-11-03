@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/thin-volume-monitoring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, thin, volume, monitoring 
+summary: 'Vous pouvez surveiller les volumes fins en termes d"espace, puis générer des alertes appropriées pour éviter les conditions de capacité insuffisante.' 
+---
+= Surveillance du volume fin
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez surveiller les volumes fins en termes d'espace, puis générer des alertes appropriées pour éviter les conditions de capacité insuffisante.
+
+Les environnements à provisionnement fin peuvent allouer davantage d'espace logique qu'avec le stockage physique sous-jacent. Sélectionnez l'onglet menu:Storage[volumes > Thin Volume Monitoring] pour surveiller la croissance de vos volumes fins avant d'atteindre la limite de capacité maximale allouée.
+
+Vous pouvez utiliser la vue surveillance fine pour effectuer les opérations suivantes :
+
+* Définissez la limite de capacité allouée à laquelle un volume fin peut se développer automatiquement.
+* Définissez le point de pourcentage auquel une alerte (seuil d'avertissement dépassé) est envoyée dans la zone Notifications de la page d'accueil lorsqu'un volume fin est proche de la limite de capacité allouée maximale.
+
+
+Pour augmenter la capacité d'un volume fin, augmentez sa capacité indiquée.
+
+[NOTE]
+====
+System Manager ne propose pas d'option pour la création des volumes fins. Si vous souhaitez créer des volumes fins, utilisez l'interface de ligne de commande (CLI).
+
+====
+[NOTE]
+====
+Les volumes fins ne sont pas disponibles sur les systèmes de stockage EF600 ou EF300.
+
+====

@@ -1,0 +1,28 @@
+---
+permalink: sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ipv6, stateless, address, auto, configuration, 
+summary: 'Grâce à la configuration automatique sans état, les hôtes ne peuvent obtenir d"adresses ni d"autres informations de configuration à partir d"un serveur.' 
+---
+= Qu'est-ce que IPv6 sans état prend en charge la configuration automatique ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grâce à la configuration automatique sans état, les hôtes ne peuvent obtenir d'adresses ni d'autres informations de configuration à partir d'un serveur.
+
+La configuration automatique sans état dans IPv6 comprend des adresses locales de liaison, une multidiffusion et le protocole de découverte de voisinage (ND). IPv6 peut générer l'ID d'interface d'une adresse à partir de l'adresse de la couche de liaison de données sous-jacente.
+
+Mais la configuration automatique sans état et la configuration automatique avec état sont complémentaires. Par exemple, l'hôte peut utiliser la configuration automatique sans état pour configurer ses propres adresses, mais utiliser la configuration automatique avec état pour obtenir d'autres informations. La configuration automatique avec état permet aux hôtes d'obtenir des adresses et d'autres informations de configuration à partir d'un serveur. Le protocole Internet version 6 (IPv6) définit également une méthode permettant de renumérote toutes les adresses IP d'un réseau. IPv6 définit une méthode permettant aux périphériques du réseau de configurer automatiquement leur adresse IP et d'autres paramètres sans serveur.
+
+Les périphériques effectuent ces étapes lors de l'utilisation d'une configuration automatique sans état :
+
+. *Générer une adresse lien-local* -- le périphérique génère une adresse lien-local, qui a 10 bits, suivie de 54 zéros, puis de l'ID d'interface 64 bits.
+. *Tester l'unicité d'une adresse lien-local* -- le noeud teste pour s'assurer que l'adresse lien-local qu'il génère n'est pas déjà en cours d'utilisation sur le réseau local. Le nœud envoie un message de sollicitation de voisin à l'aide du protocole ND. En réponse, le réseau local écoute un message publicitaire voisin, qui indique qu'un autre appareil utilise déjà l'adresse lien-local. Si c'est le cas, une nouvelle adresse lien-local doit être générée ou la configuration automatique échoue et une autre méthode doit être utilisée.
+. *Affecter une adresse lien-local* -- si le périphérique réussit le test d'unicité, le périphérique attribue l'adresse lien-local à son interface IP. L'adresse lien-local peut être utilisée pour la communication sur le réseau local, mais pas sur Internet.
+. *Contactez le routeur* -- le nœud tente de contacter un routeur local pour plus d'informations sur la poursuite de la configuration. Ce contact est effectué soit en écoutant les messages publicitaires de routeur envoyés périodiquement par les routeurs, soit en envoyant un message de sollicitation de routeur spécifique afin de demander à un routeur des informations sur les prochaines étapes.
+. *Fournir une direction au nœud* -- le routeur fournit une direction au nœud sur la façon de procéder à la configuration automatique. Le routeur indique également à l'hôte comment déterminer l'adresse Internet globale.
+. *Configurer l'adresse globale* -- l'hôte se configure avec son adresse Internet unique globale. Cette adresse est généralement constituée d'un préfixe réseau fourni à l'hôte par le routeur.
+

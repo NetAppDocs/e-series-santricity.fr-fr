@@ -1,0 +1,79 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
+summary: 'Modifiez les paramètres d"un groupe de cohérence de snapshot si vous souhaitez modifier son nom, ses paramètres de suppression automatique ou le nombre maximal d"images de snapshot autorisées.' 
+---
+= Modifiez les paramètres d'un groupe de cohérence de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Modifiez les paramètres d'un groupe de cohérence de snapshot si vous souhaitez modifier son nom, ses paramètres de suppression automatique ou le nombre maximal d'images de snapshot autorisées.
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Cliquez sur l'onglet *groupes de cohérence Snapshot*.
+. Sélectionnez le groupe de cohérence de snapshot que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Paramètres du groupe de cohérence de l'instantané s'affiche.
+
+. Modifiez les paramètres du groupe de cohérence Snapshot, si nécessaire.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Paramètres de groupe de cohérence de snapshot*
+
+
+
+ a| 
+Nom
+ a| 
+Vous pouvez modifier le nom du groupe de cohérence de snapshot.
+
+
+
+ a| 
+Suppression automatique
+ a| 
+Gardez la case à cocher sélectionnée si vous souhaitez que les images instantanées soient automatiquement supprimées après la limite spécifiée ; utilisez la case à cocher pour modifier la limite. Si vous désactivez cette case à cocher, la création de l'image instantanée s'arrête après 32 images.
+
+
+
+ a| 
+Limite d'image snapshot
+ a| 
+Vous pouvez modifier le nombre maximal d'images d'instantané autorisées pour un groupe d'instantanés.
+
+
+
+ a| 
+Planification Snapshot
+ a| 
+Ce champ indique si une planification est associée au groupe de cohérence de snapshot.
+
+
+
+ a| 
+*Objets associés*
+
+
+
+ a| 
+Volumes membres
+ a| 
+Vous pouvez afficher la quantité de volumes membres associés au groupe de cohérence de snapshot.
+
+|===
+====
+. Cliquez sur *Enregistrer*.
+

@@ -1,0 +1,195 @@
+---
+permalink: sm-support/review-the-possible-software-and-firmware-upgrade-errors.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, software, firmware, upgrade, errors 
+summary: Des erreurs peuvent se produire lors de la mise à niveau du logiciel du contrôleur ou de la mise à niveau du micrologiciel du lecteur. 
+---
+= Examinez les éventuelles erreurs de mise à niveau du logiciel et du micrologiciel
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Des erreurs peuvent se produire lors de la mise à niveau du logiciel du contrôleur ou de la mise à niveau du micrologiciel du lecteur.
+
+[cols="25h,~,~"]
+|===
+| Erreur de téléchargement du micrologiciel | Description | Action recommandée 
+
+
+ a| 
+Disques affectés en panne
+ a| 
+Echec de la mise à niveau d'un lecteur affecté dans la matrice de stockage.
+ a| 
+L'une des raisons de la défaillance est que le lecteur ne possède pas la signature appropriée. Assurez-vous que le disque concerné est un disque autorisé. Contactez le support technique pour plus d'informations.
+
+Lorsque vous remplacez un lecteur, assurez-vous que sa capacité est supérieure ou égale à celle du lecteur défectueux que vous remplacez.
+
+Vous pouvez remplacer le disque défectueux alors que la matrice de stockage reçoit des E/S.
+
+
+
+ a| 
+Disques de secours intégrés
+ a| 
+Si le lecteur est marqué comme disque de secours et est utilisé pour un groupe de volumes, le processus de mise à niveau du micrologiciel échoue.
+ a| 
+Ce problème d'erreur doit être corrigé avant de pouvoir mettre à niveau le micrologiciel. Lancez System Manager et utilisez le gourou de la restauration pour résoudre le problème.
+
+
+
+ a| 
+Groupes de volumes incomplets
+ a| 
+Si un lecteur faisant partie d'un groupe de volumes est contourné, supprimé ou ne répond pas, il est considéré comme un groupe de volumes incomplet. Un groupe de volumes incomplet empêche les mises à niveau du micrologiciel.
+ a| 
+Si un ou plusieurs groupes de volumes ou pools de disques sont incomplets, vous devez corriger cette condition d'erreur avant de pouvoir mettre à niveau le micrologiciel. Lancez System Manager et utilisez le gourou de la restauration pour résoudre le problème.
+
+
+
+ a| 
+Opérations exclusives (autres que l'analyse des supports en arrière-plan/parité) actuellement en cours d'exécution sur tous les groupes de volumes
+ a| 
+Impossible de mettre à niveau le micrologiciel si des opérations exclusives sont en cours sur un volume.
+ a| 
+Si une ou plusieurs opérations exclusives sont en cours, les opérations doivent être effectuées avant la mise à niveau du micrologiciel. Utilisez System Manager pour surveiller la progression des opérations.
+
+
+
+ a| 
+Volumes manquants
+ a| 
+Impossible de mettre à niveau le micrologiciel si un volume est manquant.
+ a| 
+Vous devez corriger la condition de volume manquant avant de pouvoir mettre à niveau le micrologiciel. Lancez System Manager et utilisez le gourou de la restauration pour résoudre le problème.
+
+
+
+ a| 
+L'un ou l'autre des contrôleurs est dans un état autre que optimal
+ a| 
+Impossible de mettre à niveau le firmware si l'un des contrôleurs est dans un état autre que optimal.
+ a| 
+L'un des contrôleurs de la baie de stockage doit faire attention. Ce problème doit être résolu avant la mise à niveau du firmware. Lancez System Manager et utilisez le gourou de la restauration pour résoudre le problème.
+
+
+
+ a| 
+Échec de la vérification du contrôleur de base de données SPM Verify Database Controller
+ a| 
+Impossible de mettre à niveau le micrologiciel car la base de données des mappages des partitions de stockage est corrompue.
+ a| 
+Une erreur de mappage de la base de données de mappage des partitions de stockage s'est produite sur un contrôleur. Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Validation de la base de données de configuration (si prise en charge par la version du contrôleur de la matrice de stockage)
+ a| 
+Impossible de mettre à niveau le micrologiciel car la base de données de configuration est endommagée.
+ a| 
+Une erreur de base de données de configuration s'est produite sur un contrôleur. Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Vérifications liées À MEL
+ a| 
+Impossible de mettre à niveau le micrologiciel car le journal des événements contient des erreurs.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Plus de 10 événements MEL informationnels ou critiques de DDE ont été rapportés au cours des 7 derniers jours
+ a| 
+Impossible de mettre à niveau le micrologiciel car il y a plus de 10 événements MEL DDE informationnels ou critiques signalés au cours des sept derniers jours.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Plus de 2 pages 2C des événements MEL critiques ont été rapportés au cours des 7 derniers jours
+ a| 
+Impossible de mettre à niveau le micrologiciel car il y a plus de deux événements MEL critiques de page 2C signalés au cours des sept derniers jours.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Plus de 2 événements MEL critiques de disque dur ont été signalés au cours des 7 derniers jours
+ a| 
+Impossible de mettre à niveau le micrologiciel car il y a plus de deux événements MEL critiques de canal de disque dégradés signalés au cours des sept derniers jours.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Plus de 4 entrées MEL critiques au cours des 7 derniers jours
+ a| 
+Impossible de mettre à niveau le micrologiciel car il y a plus de quatre entrées critiques du journal des événements signalées au cours des sept derniers jours.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Une adresse IP de gestion valide est requise.
+ a| 
+Une adresse IP de contrôleur valide est requise pour effectuer cette opération.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+La commande nécessite une adresse IP de gestion active pour chaque contrôleur à fournir.
+ a| 
+Une adresse IP de contrôleur pour chaque contrôleur associé à la matrice de stockage est requise pour cette opération.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Type de fichier de téléchargement non traité renvoyé.
+ a| 
+Le fichier de téléchargement spécifié n'est pas pris en charge.
+ a| 
+Contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Une erreur s'est produite lors de la procédure de téléchargement du micrologiciel.
+ a| 
+Le téléchargement du firmware a échoué, car le contrôleur ne peut pas traiter la demande. Vérifiez que la matrice de stockage est optimale et relancez l'opération.
+ a| 
+Si cette erreur se produit à nouveau après avoir vérifié que la baie de stockage est optimale, contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Une erreur s'est produite lors de la procédure d'activation du micrologiciel.
+ a| 
+L'activation du micrologiciel a échoué car le contrôleur ne peut pas traiter la demande. Vérifiez que la matrice de stockage est optimale et relancez l'opération.
+ a| 
+Si cette erreur se produit à nouveau après avoir vérifié que la baie de stockage est optimale, contactez le support technique pour résoudre ce problème.
+
+
+
+ a| 
+Le délai d'expiration a été atteint en attente du redémarrage du contrôleur \{0}.
+ a| 
+Le logiciel de gestion ne peut pas se reconnecter au contrôleur \{0} après un redémarrage. Vérifiez qu'il y a un chemin de connexion opérationnelle à la matrice de stockage et réessayez l'opération si elle ne s'est pas terminée correctement.
+ a| 
+Si cette erreur se produit à nouveau après avoir vérifié que la baie de stockage est optimale, contactez le support technique pour résoudre ce problème.
+
+|===
+Vous pouvez corriger certaines de ces conditions à l'aide de la fonctionnalité Recovery Guru dans System Manager. Toutefois, pour certaines conditions, vous devrez peut-être contacter le support technique. Les informations relatives au dernier téléchargement du micrologiciel du contrôleur sont disponibles sur la matrice de stockage. Ces informations aident le support technique à comprendre les conditions d'erreur qui ont empêché la mise à niveau et le téléchargement du firmware.

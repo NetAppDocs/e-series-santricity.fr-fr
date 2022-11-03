@@ -1,0 +1,26 @@
+---
+permalink: sm-storage/why-would-i-create-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency, group 
+summary: Lorsque vous souhaitez vous assurer que les images de snapshot sont prises sur plusieurs volumes en même temps, vous créez un groupe de cohérence de snapshot. 
+---
+= Pourquoi créer un groupe de cohérence de snapshot ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous souhaitez vous assurer que les images de snapshot sont prises sur plusieurs volumes en même temps, vous créez un groupe de cohérence de snapshot.
+
+Par exemple, une base de données composée de plusieurs volumes qui doivent rester cohérents à des fins de restauration nécessite qu'un groupe de cohérence Snapshot collecte des snapshots coordonnés de tous les volumes et les utilise pour restaurer l'ensemble de la base de données.
+
+Les volumes inclus dans un groupe de cohérence de snapshot sont appelés _member volumes_.
+
+Vous pouvez effectuer les opérations de snapshot suivantes sur un groupe de cohérence Snapshot :
+
+* Créez une image snapshot d'un groupe de cohérence de snapshot pour obtenir simultanément des images des volumes membres.
+* Créez un programme permettant au groupe de cohérence de snapshot de capturer automatiquement les images périodiques simultanées des volumes membres.
+* Créez un volume Snapshot accessible par l'hôte d'une image de groupe de cohérence de snapshot.
+* Effectuez une opération de restauration pour un groupe de cohérence de snapshot.
+

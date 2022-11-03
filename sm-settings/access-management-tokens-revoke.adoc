@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/access-management-tokens-revoke.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, revoke tokens 
+summary: 'Vous pouvez révoquer tous les jetons d"accès si vous déterminez qu"un token a été compromis.' 
+---
+= Révoquer les jetons d'accès
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez révoquer tous les jetons d'accès si vous déterminez qu'un jeton a été compromis ou si vous souhaitez effectuer une rotation manuelle des clés pour les clés cryptographiques utilisées pour signer et valider les jetons d'accès.
+
+Cette opération régénère les touches utilisées pour signer les jetons. Une fois les clés réinitialisées, les jetons _All_ émis sont immédiatement invalidés. Comme la baie de stockage ne effectue pas le suivi des jetons, les jetons individuels ne peuvent pas être révoqués.
+
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Sélectionnez l'onglet *Access Tokens*.
+. Sélectionnez *révoquer tous les tokens d'accès*.
+. Dans la boîte de dialogue, cliquez sur *Oui*.
+
+
+Après révocation de tous les jetons, vous pouvez créer de nouveaux jetons et les utiliser immédiatement.

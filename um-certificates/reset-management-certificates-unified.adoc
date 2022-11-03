@@ -1,0 +1,32 @@
+---
+permalink: um-certificates/reset-management-certificates-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
+summary: 'Vous pouvez rétablir le certificat de gestion à l"état d"origine auto-signé en usine.' 
+---
+= Réinitialisez les certificats de gestion
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez rétablir le certificat de gestion à l'état d'origine auto-signé en usine.
+
+Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+Cette tâche supprime le certificat de gestion actuel du système hôte sur lequel le proxy de services Web et Unified Manager sont installés. Une fois le certificat réinitialisé, le système hôte reprend à l'aide du certificat auto-signé.
+
+.Étapes
+. Sélectionnez *gestion des certificats*.
+. Dans l'onglet gestion, sélectionnez *Réinitialiser*.
++
+Une boîte de dialogue confirmer la réinitialisation du certificat de gestion s'ouvre.
+
+. Type `reset` Dans le champ, puis cliquez sur *Réinitialiser*.
++
+Une fois que votre navigateur a été actualisé, le navigateur risque de bloquer l'accès au site de destination et de signaler que le site utilise HTTP strict transport Security. Cette condition survient lorsque vous revenez à des certificats auto-signés. Pour effacer la condition qui bloque l'accès à la destination, vous devez effacer les données de navigation du navigateur.
+
+
+
+Le système revient à utiliser le certificat auto-signé à partir du serveur. Par conséquent, le système invite les utilisateurs à accepter manuellement le certificat auto-signé pour leurs sessions.

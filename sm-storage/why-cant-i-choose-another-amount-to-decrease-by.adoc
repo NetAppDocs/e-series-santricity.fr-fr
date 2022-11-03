@@ -1,0 +1,26 @@
+---
+permalink: sm-storage/why-cant-i-choose-another-amount-to-decrease-by.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, decrease, reserved capacity 
+summary: 'Vous pouvez diminuer la capacité réservée uniquement par la quantité que vous avez utilisée pour l"augmenter. La capacité réservée pour les volumes membres ne peut être supprimée que dans l"ordre inverse dans lequel ils ont été ajoutés.' 
+---
+= Pourquoi ne puis-je pas choisir un autre montant à diminuer de ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez diminuer la capacité réservée uniquement par la quantité que vous avez utilisée pour l'augmenter. La capacité réservée pour les volumes membres ne peut être supprimée que dans l'ordre inverse dans lequel ils ont été ajoutés.
+
+Vous ne pouvez pas réduire la capacité réservée d'un objet de stockage si l'une des conditions suivantes existe :
+
+* Si l'objet de stockage est un volume par paire en miroir.
+* Si l'objet de stockage ne contient qu'un seul volume pour la capacité réservée. L'objet de stockage doit contenir au moins deux volumes pour la capacité réservée.
+* Si l'objet de stockage est un volume de snapshot désactivé.
+* Si l'objet de stockage contient une ou plusieurs images de snapshot associées.
+
+
+Vous pouvez supprimer des volumes pour la capacité réservée uniquement dans l'ordre inverse de leur ajout.
+
+Vous ne pouvez pas réduire la capacité réservée d'un volume snapshot en lecture seule car il ne dispose d'aucune capacité réservée associée. Seuls les snapshots qui sont en lecture/écriture nécessitent une capacité réservée.

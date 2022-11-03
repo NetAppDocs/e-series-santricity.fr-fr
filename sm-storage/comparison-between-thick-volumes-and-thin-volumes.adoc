@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/comparison-between-thick-volumes-and-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
+summary: 'Un volume lourd est toujours entièrement provisionné, ce qui signifie que toute la capacité est allouée au moment de la création du volume. Un volume fin fait toujours l"objet d"un provisionnement fin, ce qui signifie que la capacité est allouée au fur et à mesure de l"écriture des données sur le volume.' 
+---
+= Comparaison entre les volumes non fin et les volumes fins
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volume lourd est toujours entièrement provisionné, ce qui signifie que toute la capacité est allouée au moment de la création du volume. Un volume fin fait toujours l'objet d'un provisionnement fin, ce qui signifie que la capacité est allouée au fur et à mesure de l'écriture des données sur le volume.
+
+[NOTE]
+====
+System Manager ne propose pas d'option pour la création des volumes fins. Si vous souhaitez créer des volumes fins, utilisez l'interface de ligne de commande (CLI).
+
+====
+[cols="25h,~"]
+|===
+| Type de volume | Description 
+
+
+ a| 
+Volumes non fin
+ a| 
+* Des volumes non fin sont créés à partir d'un pool ou d'un groupe de volumes.
+* Avec des volumes non volumineux, il existe un espace de stockage considérable en prévision des besoins futurs.
+* Les volumes non fin sont créés avec la taille entière du volume préalloué sur un stockage physique au moment de la création du volume. Cette pré-allocation signifie que la création d'un volume de 100 Gio consomme réellement 100 Gio de capacité allouée sur vos disques. Toutefois, l'espace peut rester inutilisé, ce qui entraîne une sous-utilisation de la capacité de stockage.
+* Lors de la création d'importants volumes, veillez à ne pas sur-allouer de la capacité à un seul volume. La sur-allocation de la capacité d'un seul volume peut rapidement consommer tout le stockage physique du système.
+* N'oubliez pas que la capacité de stockage est également nécessaire pour les services de copie (images Snapshot, volumes Snapshot, copies de volume et mise en miroir asynchrone). Il n'est donc pas nécessaire d'allouer toute la capacité aux volumes non volumineux. Un espace insuffisant peut bloquer les écritures vers le pool ou le groupe de volumes. Si cette situation se produit, un avertissement de seuil d'alerte de capacité libre s'affiche.
+
+
+
+
+ a| 
+Volumes fins
+ a| 
+* Les volumes fins sont uniquement créés à partir d'un pool, pas à partir d'un groupe de volumes.
+* Les volumes fins doivent être RAID 6.
+* Les volumes fins ne sont pas disponibles sur les systèmes de stockage EF600 ou EF300.
+* Vous devez utiliser l'interface de ligne de commandes pour créer des volumes fins.
+* Contrairement aux volumes lourds, l'espace requis pour le volume fin n'est pas alloué pendant la création, mais est fourni à la demande ultérieurement.
+* Un thin volume vous permet de sur-allouer sa taille. Vous pouvez donc attribuer une taille de LUN supérieure à la taille du volume. Vous pouvez ensuite augmenter le volume en fonction des besoins (si nécessaire, ajouter des lecteurs lors du processus) sans augmenter la taille du LUN, et donc sans déconnecter les utilisateurs.
+* Vous pouvez utiliser le provisionnement fin de la récupération d'espace bloc (UNMAP) pour récupérer les blocs d'un volume à provisionnement fin sur la baie de stockage via une commande SCSI UNMAP émise par l'hôte. Une baie de stockage qui prend en charge le provisionnement fin peut réaffecter l'espace récupéré afin de satisfaire les demandes d'allocation d'un autre volume provisionné au sein d'une même baie de stockage. Ce qui permet de mieux créer des rapports sur la consommation de l'espace disque et d'optimiser l'utilisation des ressources.
+
+
+|===
+
+
+== Restrictions relatives au volume fin
+
+Les volumes fins prennent en charge toutes les opérations sous forme de volumes lourds, à l'exception des exceptions suivantes :
+
+* Vous ne pouvez pas modifier la taille du segment d'un volume fin.
+* Vous ne pouvez pas activer la vérification de redondance préalable à la lecture d'un volume fin.
+* Vous ne pouvez pas utiliser un volume fin comme volume cible dans une opération de copie de volume.
+* Vous pouvez modifier la limite de capacité allouée d'un thin volume et le seuil d'avertissement uniquement du côté principal d'une paire en miroir asynchrone. Les modifications apportées à ces paramètres du côté principal sont automatiquement propagées au côté secondaire.
+

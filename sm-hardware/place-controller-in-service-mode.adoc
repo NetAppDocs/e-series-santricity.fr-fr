@@ -1,0 +1,37 @@
+---
+permalink: sm-hardware/place-controller-in-service-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, place, controller, service, mode, 
+summary: Si vous y êtes invité, vous pouvez placer un contrôleur en mode maintenance. 
+---
+= Placer le contrôleur en mode maintenance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous y êtes invité, vous pouvez placer un contrôleur en mode maintenance.
+
+.Avant de commencer
+* La baie de stockage doit disposer de deux contrôleurs. Le contrôleur que vous n'êtes pas en mode maintenance doit être en ligne (en l'état optimal).
+* Assurez-vous qu'aucun volume n'est en cours d'utilisation ou que vous avez installé un pilote multivoie sur tous les hôtes qui utilisent ces volumes.
+
+
+[NOTE]
+====
+Si vous placez un contrôleur en mode maintenance, les performances risquent d'être considérablement améliorées. Ne placez pas de contrôleur en mode maintenance sauf si vous y êtes invité par le support technique.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur que vous souhaitez placer en mode de service.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *placer en mode service* et confirmez que vous souhaitez effectuer l'opération.
+

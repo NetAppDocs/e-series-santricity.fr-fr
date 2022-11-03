@@ -1,0 +1,104 @@
+---
+permalink: sm-storage/capacity-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
+summary: Les lecteurs de votre matrice de stockage fournissent la capacité de stockage physique de vos données. Avant de commencer à stocker des données, vous devez configurer la capacité allouée dans des composants logiques appelés pools ou groupes de volumes. Ces objets de stockage vous permettent de configurer, de stocker, de maintenir et de préserver les données de votre matrice de stockage. 
+---
+= Mode d'allocation de la capacité pour les volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les lecteurs de votre matrice de stockage fournissent la capacité de stockage physique de vos données. Avant de commencer à stocker des données, vous devez configurer la capacité allouée dans des composants logiques appelés pools ou groupes de volumes. Ces objets de stockage vous permettent de configurer, de stocker, de maintenir et de préserver les données de votre matrice de stockage.
+
+
+
+== Utilisation de la capacité pour créer et développer des volumes
+
+Vous pouvez créer des volumes à partir de la capacité non affectée ou de la capacité disponible dans un pool ou un groupe de volumes.
+
+* Lorsque vous créez un volume à partir de capacité non allouée, vous pouvez créer un pool ou un groupe de volumes et le volume en même temps.
+* Lorsque vous créez un volume à partir de la capacité disponible, vous créez un volume supplémentaire sur un pool ou un groupe de volumes existant.
+
+
+Après avoir augmenté la capacité du volume, vous devez augmenter manuellement la taille du système de fichiers pour qu'elle corresponde. La façon dont vous faites cela dépend du système de fichiers que vous utilisez. Pour plus de détails, reportez-vous à la documentation du système d'exploitation hôte.
+
+
+
+== Types de capacité pour les volumes non fin et les volumes non fin
+
+Vous pouvez créer des volumes non fin ou non épais. Les capacités signalées et les capacités allouées sont identiques pour les volumes non volumineux, mais sont différentes pour les volumes fins.
+
+* Pour un volume non fin, la capacité indiquée du volume correspond à la quantité de capacité de stockage physique allouée. L'intégralité de la capacité de stockage physique doit être présente. L'espace physiquement alloué est égal à l'espace signalé à l'hôte.
++
+Vous définissez normalement la capacité déclarée du volume lourd comme étant la capacité maximale à laquelle le volume augmentera. Grâce aux volumes non volumineux, vos applications bénéficient d'une performance élevée et prévisible, principalement parce que toute la capacité utilisateur est réservée et allouée à la création.
+
+* Pour un volume fin, la capacité indiquée correspond à la capacité signalée aux hôtes, tandis que la capacité allouée correspond à la quantité d'espace disque actuellement allouée pour l'écriture des données.
++
+La capacité indiquée peut être supérieure à la capacité allouée sur la baie de stockage. Les volumes fins peuvent être dimensionnés pour s'adapter à la croissance des données, sans tenir compte des ressources actuellement disponibles.
+
+
+
+[NOTE]
+====
+SANtricity System Manager ne permet pas de créer des volumes fins. Si vous souhaitez créer des volumes fins, utilisez l'interface de ligne de commande (CLI).
+
+====
+
+
+== Des limites de capacité pour les volumes non volumineux
+
+La capacité minimale d'un thick volume est de 1 Mio, et la capacité maximale est déterminée par le nombre et la capacité des disques du pool ou du groupe de volumes.
+
+Lorsque vous augmentez la capacité indiquée pour un volume lourd, gardez les consignes suivantes à l'esprit :
+
+* Vous pouvez indiquer jusqu'à trois décimales (par exemple, 65.375 Gio).
+* La capacité doit être inférieure (ou égale à) à la capacité maximale disponible dans le groupe de volumes.
++
+Lorsque vous créez un volume, une certaine capacité supplémentaire est pré-allouée à la migration DSS (Dynamic segment Size). La migration DSS est une fonction du logiciel qui vous permet de modifier la taille du segment d'un volume.
+
+* Les volumes supérieurs à 2 Tio sont pris en charge par certains systèmes d'exploitation hôtes (la capacité maximale signalée est déterminée par le système d'exploitation hôte). En réalité, certains systèmes d'exploitation hôtes prennent en charge des volumes jusqu'à 128 To. Pour plus de détails, reportez-vous à la documentation du système d'exploitation hôte.
+
+
+
+
+== Limites de capacité pour les volumes fins
+
+Vous pouvez créer des volumes fins disposant d'une capacité importante indiquée et d'une capacité allouée relativement faible, ce qui est intéressant en termes d'utilisation et d'efficacité du stockage. Les volumes fins peuvent vous aider à simplifier l'administration du stockage, car la capacité allouée peut augmenter en fonction de l'évolution des besoins des applications, sans interrompre l'application, ce qui permet une meilleure utilisation du stockage.
+
+Outre la capacité indiquée et la capacité allouée, les volumes fins contiennent également de la capacité écrite. La capacité écrite correspond à la quantité de capacité écrite à partir de la capacité réservée allouée aux volumes fins.
+
+Le tableau suivant répertorie les limites de capacité pour un volume fin.
+
+[cols="3*"]
+|===
+| Type de capacité | Taille minimale | Taille maximale 
+
+
+ a| 
+Signalé
+ a| 
+32 Mio
+ a| 
+256 To
+
+
+
+ a| 
+Alloué
+ a| 
+4 Mio
+ a| 
+64 To
+
+|===
+Pour un volume fin, si la capacité maximale rapportée de 256 Tio a été atteinte, vous ne pouvez pas augmenter sa capacité. Assurez-vous que la capacité réservée du volume fin est définie sur une taille supérieure à la capacité maximale indiquée.
+
+Le système étend automatiquement la capacité allouée en fonction de la limite de capacité allouée. La limite de capacité allouée vous permet de limiter la croissance automatique du volume fin en dessous de la capacité indiquée. Lorsque le volume de données écrites se rapproche de la capacité allouée, vous pouvez modifier la limite de capacité allouée.
+
+Pour modifier la limite de capacité allouée, sélectionnez menu:Storage[volumes > onglet Thin Volume Monitoring > change Limit].
+
+System Manager n'alloue pas la capacité pleine lors de la création d'un volume fin, cette capacité disponible insuffisante peut exister dans le pool. Un espace insuffisant peut bloquer les écritures dans le pool, non seulement pour les volumes fins, mais également pour d'autres opérations nécessitant de la capacité du pool (par exemple, des images de snapshot ou des volumes de snapshot). Toutefois, vous pouvez toujours effectuer des opérations de lecture à partir du pool. Si cette situation se produit, un avertissement de seuil d'alerte s'affiche.

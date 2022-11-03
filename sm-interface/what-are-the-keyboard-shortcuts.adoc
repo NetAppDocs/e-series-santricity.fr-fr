@@ -1,0 +1,200 @@
+---
+permalink: sm-interface/what-are-the-keyboard-shortcuts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, keyboard shortcuts 
+summary: 'Vous pouvez naviguer dans System Manager à l"aide du clavier seul.' 
+---
+= Quels sont les raccourcis clavier ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez naviguer dans System Manager à l'aide du clavier seul.
+
+
+
+== Navigation générale
+
+[cols="1a,1a"]
+|===
+| Action | Raccourci clavier 
+
+
+ a| 
+Passer à l'élément suivant.
+ a| 
+Onglet
+
+
+
+ a| 
+Permet de passer à l'élément précédent.
+ a| 
+Maj + Tab
+
+
+
+ a| 
+Sélectionnez un élément.
+ a| 
+Entrez
+
+
+
+ a| 
+Liste déroulante--permet de passer à l'élément suivant ou précédent.
+ a| 
+Flèche vers le bas ou flèche vers le haut
+
+
+
+ a| 
+Case à cocher--sélectionnez un élément.
+ a| 
+Barre d'espace
+
+
+
+ a| 
+Boutons radio--basculer entre les éléments.
+ a| 
+Flèche vers le bas ou flèche vers le haut
+
+
+
+ a| 
+Texte extensible--développer ou élément de contrat.
+ a| 
+Entrez
+
+|===
+
+
+== Navigation dans le tableau
+
+[cols="1a,1a"]
+|===
+| Action | Raccourci clavier 
+
+
+ a| 
+Sélectionnez une ligne.
+ a| 
+Pour sélectionner une ligne, puis appuyez sur entrée
+
+
+
+ a| 
+Faites défiler vers le haut ou vers le bas.
+ a| 
+Flèche vers le bas/flèche vers le haut ou page vers le bas/page vers le haut
+
+
+
+ a| 
+Modifier l'ordre de tri d'une colonne.
+ a| 
+Pour sélectionner un en-tête de colonne, puis appuyez sur entrée
+
+|===
+
+
+== Navigation dans le calendrier
+
+[cols="1a,1a"]
+|===
+| Action | Raccourci clavier 
+
+
+ a| 
+Passer au mois précédent.
+ a| 
+Page précédente
+
+
+
+ a| 
+Passer au mois suivant.
+ a| 
+Page suivante
+
+
+
+ a| 
+Passer à l'année précédente.
+ a| 
+Contrôle + page précédente
+
+
+
+ a| 
+Passez à l'année suivante.
+ a| 
+Contrôle + page vers le bas
+
+
+
+ a| 
+Ouvrez le sélecteur de date s'il est fermé.
+ a| 
+Ctrl + Accueil
+
+
+
+ a| 
+Passer au mois en cours.
+ a| 
+Control / Command + Home
+
+
+
+ a| 
+Passer au jour précédent.
+ a| 
+Commande / commande + gauche
+
+
+
+ a| 
+Passer au jour suivant.
+ a| 
+Commande / commande + droite
+
+
+
+ a| 
+Passer à la semaine précédente.
+ a| 
+Commande / commande + haut
+
+
+
+ a| 
+Passez à la semaine suivante.
+ a| 
+Commande / commande + descente
+
+
+
+ a| 
+Sélectionnez la date de mise au point.
+ a| 
+Entrez
+
+
+
+ a| 
+Fermez le sélecteur de date et effacez la date.
+ a| 
+Commande / commande + fin
+
+
+
+ a| 
+Fermez le sélecteur de date sans sélection.
+ a| 
+Echappement
+
+|===

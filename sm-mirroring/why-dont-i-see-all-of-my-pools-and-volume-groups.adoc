@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, secondary, volume, 
+summary: 'Lorsque vous créez un volume secondaire pour la paire asynchrone en miroir, le système affiche la liste de tous les pools et groupes de volumes éligibles pour cette paire asynchrone en miroir. Tout pool ou groupe de volumes non éligible à l"utilisation ne s"affiche pas dans cette liste.' 
+---
+= Pourquoi ne vois-je pas tous mes pools et groupes de volumes ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous créez un volume secondaire pour la paire asynchrone en miroir, le système affiche la liste de tous les pools et groupes de volumes éligibles pour cette paire asynchrone en miroir. Tout pool ou groupe de volumes non éligible à l'utilisation ne s'affiche pas dans cette liste.
+
+Les pools ou groupes de volumes ne peuvent être admissibles pour aucune des raisons suivantes.
+
+* Les capacités de sécurité d'un pool ou d'un groupe de volumes ne correspondent pas.
+* Un pool ou un groupe de volumes est dans un état non optimal.
+* La capacité d'un pool ou d'un groupe de volumes est trop faible.
+

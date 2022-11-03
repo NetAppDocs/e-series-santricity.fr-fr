@@ -1,0 +1,71 @@
+---
+permalink: sm-hardware/view-hardware-components.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, hardware, components, filtering, 
+summary: La page matériel fournit des fonctions de tri et de filtrage qui facilitent la recherche des composants. 
+---
+= Afficher les composants matériels
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page matériel fournit des fonctions de tri et de filtrage qui facilitent la recherche des composants.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Utilisez les fonctions décrites dans le tableau suivant pour afficher les composants matériels.
+
+
+[cols="25h,~"]
+|===
+| Fonction | Description 
+
+
+ a| 
+Vues avant et arrière des étagères
+ a| 
+Pour basculer entre les vues avant et arrière de la tablette, sélectionnez *Afficher arrière de la tablette* ou *Afficher avant de la tablette* à l'extrême droite (le lien qui apparaît dépend de la vue actuelle). La vue avant montre les lecteurs et les baies de lecteur vides. La vue arrière montre les contrôleurs, ainsi que tous les modules d'E/S (ESM), les blocs d'alimentation/ventilation ou les baies de contrôleur vides. En bas de la page, vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso*.
+
+
+
+ a| 
+Filtres de vue de conduite
+ a| 
+Si la matrice de stockage contient des lecteurs de différents types d'attributs physiques et logiques, la page *Hardware* inclut des filtres d'affichage des lecteurs. Ces champs de filtre vous aident à localiser rapidement des lecteurs spécifiques en limitant les types de lecteurs affichés sur la page. Sous *Afficher les lecteurs qui sont...*, cliquez sur le champ de filtre à gauche (par défaut, indique *tout type de lecteur*) pour afficher une liste déroulante des attributs physiques (par exemple, capacité et vitesse). Cliquez sur le champ de filtre à droite (par défaut, affiche *Anywhere dans la matrice de stockage*) pour afficher une liste déroulante d'attributs logiques (par exemple, affectation de groupes de volumes). Vous pouvez utiliser ces filtres ensemble ou séparément.
+
+[NOTE]
+====
+Si la matrice de stockage contient des lecteurs qui partagent tous les mêmes attributs physiques, le champ *n'importe quel type de lecteur* sur la gauche n'apparaît pas. Si les lecteurs sont tous dans le même emplacement logique, le champ *Anywhere dans la matrice de stockage* de droite n'apparaît pas.
+
+====
+
+
+ a| 
+Légende
+ a| 
+Les composants sont affichés dans certaines couleurs pour décrire leur état de rôle. Pour développer et réduire les descriptions de ces États, cliquez sur *Légende*.
+
+
+
+ a| 
+Afficher les détails de l'icône d'état
+ a| 
+Les indicateurs d'état peuvent inclure des descriptions de texte pour les États de disponibilité. Cliquez sur *Afficher les détails de l'icône d'état* pour afficher ou masquer ce texte d'état.
+
+
+
+ a| 
+Icônes de tiroirs/tiroirs
+ a| 
+Chaque vue du tiroir fournit une liste des commandes associées, ainsi que les propriétés et l'état. Cliquez sur *Shelf* pour afficher la liste déroulante des commandes. Vous pouvez également sélectionner l'une des icônes en haut pour afficher l'état et les propriétés des composants individuels : contrôleurs, modules d'alimentation, ventilateurs, température, Batteries et modules SFP.
+
+
+
+ a| 
+Ordre des étagères
+ a| 
+Les tiroirs peuvent être réorganisés sur la page matériel. Utilisez les flèches haut et bas situées en haut à droite de chaque vue de tablette pour modifier l'ordre supérieur/inférieur des étagères.
+
+|===

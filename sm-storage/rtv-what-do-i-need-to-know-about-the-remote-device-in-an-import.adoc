@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/rtv-what-do-i-need-to-know-about-the-remote-device-in-an-import.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, volume, import 
+summary: 'Lors de l"utilisation de la fonction de stockage à distance, notez que le volume distant est la source d"où proviennent les données.' 
+---
+= Que dois-je savoir sur le volume distant lors d'une importation ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de l'utilisation de la fonction de stockage à distance, notez que le volume distant est la source d'où proviennent les données.
+
+Lorsque l'importation est en cours, les données sont transférées du volume distant vers le volume cible sur le système de stockage de destination. Ces deux volumes doivent avoir une taille de bloc correspondante.

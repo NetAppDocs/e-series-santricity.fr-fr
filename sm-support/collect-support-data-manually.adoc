@@ -1,0 +1,39 @@
+---
+permalink: sm-support/collect-support-data-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, support, data, manually 
+summary: 'Vous pouvez rassembler plusieurs types de données d"inventaire, d"état et de performance sur votre matrice de stockage dans un seul fichier. Le support technique peut utiliser ce fichier pour le dépannage et une analyse plus approfondie.' 
+---
+= Collectez manuellement les données de support
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez rassembler plusieurs types de données d'inventaire, d'état et de performance sur votre matrice de stockage dans un seul fichier. Le support technique peut utiliser ce fichier pour le dépannage et une analyse plus approfondie.
+
+++ ++
+
+[NOTE]
+====
+Si la fonction AutoSupport est activée, vous pouvez également collecter ces données en accédant à l'onglet *AutoSupport* et en sélectionnant *Envoyer l'intervention AutoSupport*.
+
+====
+Vous ne pouvez exécuter qu'une seule opération de collecte à la fois. Si vous tentez de démarrer une autre opération, un message d'erreur s'affiche.
+
+[NOTE]
+====
+Effectuez cette opération uniquement lorsque le support technique vous y invite.
+
+====
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *collecter les données de support*.
+. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `support-data.7z`. Si votre tiroir contient des tiroirs, les données de diagnostic pour ce tiroir sont archivées dans un fichier compressé distinct nommé `tray-component-state-capture.7z`.
+
+. Suivez les instructions fournies par le support technique pour leur envoyer le fichier.
+

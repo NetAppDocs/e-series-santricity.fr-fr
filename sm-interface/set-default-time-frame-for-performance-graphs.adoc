@@ -1,0 +1,22 @@
+---
+permalink: sm-interface/set-default-time-frame-for-performance-graphs.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, time, graphs 
+summary: Vous pouvez modifier la plage horaire par défaut affichée par les graphiques de performance. 
+---
+= Définissez la plage horaire par défaut des graphiques de performances
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier la plage horaire par défaut affichée par les graphiques de performance.
+
+Les graphiques de performance affichés sur la page d'accueil et sur la page performances affichent initialement une période d'une heure. Les préférences sont stockées dans le stockage local du navigateur pour que tous les utilisateurs puissent disposer de leurs propres paramètres.
+
+.Étapes
+. Sélectionnez menu:Préférences[définir les préférences].
+. Dans la liste déroulante, sélectionnez *5 minutes*, *1 heure*, *8 heures*, *1 jour* ou *7 jours*, et confirmez que vous souhaitez effectuer l'opération.
+

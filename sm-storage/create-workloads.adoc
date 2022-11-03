@@ -1,0 +1,43 @@
+---
+permalink: sm-storage/create-workloads.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, workloads 
+summary: 'Vous pouvez créer des charges de travail pour tout type d"application.' 
+---
+= Créer des workloads
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des charges de travail pour tout type d'application.
+
+Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
+
+System Manager recommande une configuration de volume optimisée uniquement pour les types d'applications suivants :
+
+* Microsoft® SQL Server™
+* Microsoft® Exchange Server™
+* Vidéosurveillance
+* VMware ESXi ™ (pour les volumes à utiliser avec le système de fichiers des machines virtuelles)
+
+
+Tenez compte des recommandations suivantes :
+
+* _Lorsque vous utilisez une charge de travail spécifique à une application_, le système recommande une configuration de volume optimisée afin de minimiser les conflits entre les E/S des charges de travail d'application et tout autre trafic depuis votre instance d'application. Vous pouvez vérifier la configuration de volume recommandée, puis modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.
+* _Lorsque vous utilisez d'autres types d'applications_, vous spécifiez manuellement la configuration du volume à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.
+
+
+.Étapes
+. Sélectionnez menu:Storage[volumes].
+. Sélectionnez menu:Créer [charge de travail].
++
+La boîte de dialogue Créer une charge de travail d'application s'affiche.
+
+. Utilisez la liste déroulante pour sélectionner le type d'application pour laquelle vous souhaitez créer la charge de travail, puis saisissez un nom de charge de travail.
+. Cliquez sur *Créer*.
+
+
+Vous êtes prêt à ajouter de la capacité de stockage au workload que vous avez créé. Utilisez l'option *Create Volume* pour créer un ou plusieurs volumes pour une application et pour allouer des quantités spécifiques de capacité à chaque volume.

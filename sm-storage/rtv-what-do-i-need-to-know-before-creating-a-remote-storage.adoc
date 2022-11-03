@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/rtv-what-do-i-need-to-know-before-creating-a-remote-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, connection 
+summary: Pour configurer la fonction de stockage distant, vous devez connecter directement le périphérique distant et les systèmes de stockage cible via iSCSI. 
+---
+= Que dois-je savoir avant de créer une connexion de stockage à distance ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer la fonction de stockage distant, vous devez connecter directement le périphérique distant et les systèmes de stockage cible via iSCSI.
+
+Pour configurer la connexion au système iSCSI, reportez-vous à :
+
+* link:../sm-hardware/configure-iscsi-ports-hardware.html["Configurez les ports iSCSI"]
+* https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Rapport technique sur le stockage à distance"^]
+

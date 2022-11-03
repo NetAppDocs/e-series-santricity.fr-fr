@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/rtv-remote-storage-volume-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, volume, requirements 
+summary: 'Les volumes utilisés pour les importations doivent satisfaire aux exigences en matière de taille, de statut et d"autres critères.' 
+---
+= Exigences en termes de volume du stockage distant
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les volumes utilisés pour les importations doivent satisfaire aux exigences en matière de taille, de statut et d'autres critères.
+
+
+
+== Volume de stockage distant
+
+Le volume source d'une importation est appelé « volume de stockage distant ». Ce volume doit répondre aux critères suivants :
+
+* Ne peut pas faire partie d'une autre importation
+* Le statut doit être en ligne
+
+
+Une fois l'importation lancée, le micrologiciel du contrôleur crée un volume de stockage distant en arrière-plan. Du fait de ce processus d'arrière-plan, le volume de stockage distant n'est pas gérable dans System Manager et ne peut être utilisé que pour l'opération d'importation.
+
+Une fois créé, le volume de stockage distant est traité comme tout autre volume standard sur le système E-Series, à l'exception des cas suivants :
+
+* Peut être utilisé comme proxy pour le périphérique de stockage distant.
+* Ne peut pas être utilisé comme candidats pour d'autres copies de volume ou instantanés.
+* Impossible de modifier le paramètre Data assurance pendant l'importation.
+* Ne peut pas être mappé à des hôtes, car ils sont strictement réservés à l'opération d'importation.
+
+
+Chaque volume de stockage distant est associé à un seul objet de stockage distant. Toutefois, un objet de stockage distant peut être associé à plusieurs volumes de stockage distant. Le volume de stockage distant est identifié de manière unique à l'aide de l'une des combinaisons suivantes :
+
+* Identificateur d'objet de stockage distant
+* Numéro de LUN du périphérique de stockage distant
+
+
+
+
+== Candidats au volume cible
+
+Le volume cible correspond au volume de destination sur le système E-Series local. Le volume de destination doit répondre aux critères suivants :
+
+* Doit être un volume RAID/DDP
+* Doit avoir une capacité égale ou supérieure au volume de stockage distant.
+* Doit avoir une taille de bloc identique au volume de stockage distant.
+* Doit avoir un état valide (optimal).
+* Ne peut avoir aucune des relations suivantes : copie de volume, copies Snapshot, mise en miroir asynchrone ou synchrone.
+* Ne peut pas faire l'objet d'opérations de reconfiguration : extension de volume dynamique, extension de capacité dynamique, taille de segment dynamique, migration RAID dynamique, réduction dynamique de la capacité, Ou défragmentation.
+* Ne peut pas être mappé à un hôte avant le début de l'importation (cependant, il peut être mappé une fois l'importation terminée).
+* Flash Read cache (FRC) ne peut pas être activé.
+
+
+System Manager vérifie automatiquement ces exigences dans le cadre de l'assistant d'importation de stockage distant. Seuls les volumes qui répondent à toutes les exigences sont affichés pour la sélection du volume de destination.

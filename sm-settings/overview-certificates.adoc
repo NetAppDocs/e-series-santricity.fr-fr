@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/overview-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, 
+summary: 'Vous pouvez utiliser System Manager pour créer des demandes de signature de certificat (RSC), importer des certificats et gérer des certificats existants.' 
+---
+= Présentation des certificats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser System Manager pour créer des demandes de signature de certificat (RSC), importer des certificats et gérer des certificats existants.
+
+
+
+== Que sont les certificats ?
+
+_Certificates_ sont des fichiers numériques qui identifient des entités en ligne, telles que des sites Web et des serveurs, pour des communications sécurisées sur Internet. Il existe deux types de certificats : un certificat _signé_ est validé par une autorité de certification (CA) et un certificat _auto-signé_ est validé par le propriétaire de l'entité au lieu d'un tiers.
+
+En savoir plus :
+
+* link:how-certificates-work-sam.html["Fonctionnement des certificats"]
+* link:certificate-terminology.html["Terminologie du certificat"]
+
+
+
+
+== Comment configurer les certificats signés ?
+
+Vous générez d'abord une demande de signature à partir de System Manager, puis envoyez le fichier à une autorité de certification. Une fois que l'autorité de certification a renvoyé les fichiers de certificat, vous les importez à l'aide de System Manager.
+
+En savoir plus :
+
+* link:use-ca-signed-certificates-for-controllers.html["Utiliser des certificats signés CA pour les contrôleurs"]
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Utilisez des certificats signés par l'autorité de certification pour l'authentification avec un serveur de gestion des clés"]
+
+
+
+
+== Informations associées
+
+En savoir plus sur les tâches liées aux certificats :
+
+* link:view-imported-certificates.html["Afficher les informations de certificat importé"]
+* link:enable-certificate-revocation-checking.html["Activez la vérification de révocation de certificats"]
+

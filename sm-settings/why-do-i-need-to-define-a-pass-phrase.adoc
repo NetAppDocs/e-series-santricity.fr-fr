@@ -1,0 +1,14 @@
+---
+permalink: sm-settings/why-do-i-need-to-define-a-pass-phrase.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, define, pass, phrase, 
+summary: 'La phrase de passe est utilisée pour crypter et décrypter le fichier de clé de sécurité stocké sur le client de gestion local. Sans la phrase de passe, la clé de sécurité ne peut pas être décryptée et utilisée pour déverrouiller les données à partir d"un lecteur compatible avec la sécurité si elle est réinstallée dans une autre matrice de stockage.' 
+---
+= Pourquoi dois-je définir une phrase de passe ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La phrase de passe est utilisée pour crypter et décrypter le fichier de clé de sécurité stocké sur le client de gestion local. Sans la phrase de passe, la clé de sécurité ne peut pas être décryptée et utilisée pour déverrouiller les données à partir d'un lecteur compatible avec la sécurité si elle est réinstallée dans une autre matrice de stockage.

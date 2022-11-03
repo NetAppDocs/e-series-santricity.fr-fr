@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/unassign-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unassign, volumes 
+summary: 'Annulez l"affectation des volumes des hôtes ou des clusters hôtes si vous ne avez plus besoin d"accéder aux E/S à ce volume depuis l"hôte ou le cluster hôte.' 
+---
+= Annuler l'attribution des volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Annulez l'affectation des volumes des hôtes ou des clusters hôtes si vous ne avez plus besoin d'accéder aux E/S à ce volume depuis l'hôte ou le cluster hôte.
+
+Gardez ces directives à l'esprit lorsque vous déassigner un volume :
+
+* Si vous supprimez le dernier volume affecté d'un cluster hôte et que le cluster hôte dispose également d'hôtes avec des volumes affectés spécifiques, assurez-vous de supprimer ou de déplacer ces affectations avant de supprimer la dernière affectation pour le cluster hôte.
+* Si un cluster hôte, un hôte ou un port hôte est affecté à un volume enregistré sur le système d'exploitation, vous devez effacer cet enregistrement avant de pouvoir supprimer ces nœuds.
+
+
+.Étapes
+. Sélectionnez menu:Storage[hosts].
+. Sélectionnez l'hôte ou le cluster hôte que vous souhaitez modifier, puis cliquez sur *Annuler l'attribution de volumes*.
++
+Une boîte de dialogue s'affiche et affiche tous les volumes actuellement affectés.
+
+. Cochez la case en regard de chaque volume que vous souhaitez annuler l'affectation ou cochez la case de l'en-tête de tableau pour sélectionner tous les volumes.
+. Cliquez sur *non assigner*.
+
+
+.Résultats
+* Les volumes qui n'ont pas été attribués sont disponibles pour une nouvelle affectation.
+* Jusqu'à ce que les changements soient configurés sur l'hôte, le volume est toujours reconnu par le système d'exploitation hôte.
+

@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, volume, reserved, capacity 
+summary: 'Un volume snapshot permet à l"hôte d"accéder aux données de l"image snapshot. Le volume snapshot contient sa propre capacité réservée, qui enregistre toutes les modifications apportées au volume de base sans affecter l"image snapshot d"origine. Les images snapshot ne sont pas accessibles en lecture ou en écriture aux hôtes. Pour lire ou écrire des données de snapshot, créez un volume de snapshot et affectez-le à un hôte.' 
+---
+= Qu'est-ce qu'un volume Snapshot et quand a-t-il besoin de capacité réservée ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volume snapshot permet à l'hôte d'accéder aux données de l'image snapshot. Le volume snapshot contient sa propre capacité réservée, qui enregistre toutes les modifications apportées au volume de base sans affecter l'image snapshot d'origine. Les images snapshot ne sont pas accessibles en lecture ou en écriture aux hôtes. Pour lire ou écrire des données de snapshot, créez un volume de snapshot et affectez-le à un hôte.
+
+Vous pouvez créer deux types de volumes de snapshot. Le type de volume du snapshot détermine s'il utilise la capacité réservée.
+
+* *Lecture seule* -- Un volume de snapshot créé en lecture seule fournit à une application hôte un accès en lecture seule à une copie des données contenues dans l'image de snapshot. Un volume Snapshot en lecture seule n'utilise pas la capacité réservée.
+* *Read-write* -- Un volume de snapshot créé en lecture-écriture vous permet d'apporter des modifications au volume de snapshot sans affecter l'image de snapshot référencée. Un volume snapshot de lecture/écriture utilise la capacité réservée pour stocker ces modifications. Vous pouvez convertir à tout moment un volume Snapshot en lecture seule en écriture.
+

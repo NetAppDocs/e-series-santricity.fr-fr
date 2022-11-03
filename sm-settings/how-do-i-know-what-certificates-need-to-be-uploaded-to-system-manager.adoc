@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
+summary: 'Pour la gestion externe des clés, vous importez deux types de certificats pour l"authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.' 
+---
+= Comment puis-je savoir quels certificats doivent être téléchargés sur System Manager pour la gestion externe des clés ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour la gestion externe des clés, vous importez deux types de certificats pour l'authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.
+
+Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol). Pour obtenir un certificat client, utilisez System Manager pour effectuer une RSC pour la matrice de stockage. Vous pouvez ensuite télécharger la RSC sur un serveur de gestion des clés et générer un certificat client à partir de ce serveur. Une fois que vous avez un certificat client, copiez ce fichier vers l'hôte sur lequel vous accédez à System Manager.
+
+Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP. Récupérez le fichier de certificat du serveur à partir du serveur de gestion des clés, puis copiez-le vers l'hôte sur lequel vous accédez à System Manager.

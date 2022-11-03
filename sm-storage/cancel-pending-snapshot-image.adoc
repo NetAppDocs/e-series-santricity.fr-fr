@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/cancel-pending-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
+summary: 'Vous pouvez annuler une image snapshot en attente avant la fin de celle-ci. Les snapshots se produisent de manière asynchrone, et le statut du snapshot est en attente jusqu"à la fin du Snapshot. L"image d"instantané se termine dès que l"opération de synchronisation est terminée.' 
+---
+= Annuler l'image snapshot en attente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez annuler une image snapshot en attente avant la fin de celle-ci. Les snapshots se produisent de manière asynchrone, et le statut du snapshot est en attente jusqu'à la fin du Snapshot. L'image d'instantané se termine dès que l'opération de synchronisation est terminée.
+
+Une image instantanée est en attente en raison des conditions simultanées suivantes :
+
+* Le volume de base d'un snapshot group ou un ou plusieurs volumes membres d'un groupe de cohérence qui contient cette image Snapshot est membre d'un groupe de miroirs asynchrone.
+* Le ou les volumes font actuellement l'objet d'une opération de synchronisation de mise en miroir asynchrone.
+
+
+.Étapes
+. Menu Sélectionner:Storage[pools & Volume Groups].
+. Cliquez sur l'onglet *capacité réservée*.
+. Sélectionnez le groupe de snapshots pour lequel vous souhaitez annuler une image de snapshot en attente, puis cliquez sur Menu:tâches rares[Annuler l'image de snapshot en attente].
+. Cliquez sur *Oui* pour confirmer que vous souhaitez annuler l'image d'instantané en attente.
+

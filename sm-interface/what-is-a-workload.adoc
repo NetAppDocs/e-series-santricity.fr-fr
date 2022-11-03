@@ -1,0 +1,18 @@
+---
+permalink: sm-interface/what-is-a-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload 
+summary: Pour certaines applications de votre réseau, telles que SQL Server ou Exchange, vous pouvez définir une charge de travail qui optimise le stockage de cette application. 
+---
+= Qu'est-ce qu'une charge de travail ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour certaines applications de votre réseau, telles que SQL Server ou Exchange, vous pouvez définir une charge de travail qui optimise le stockage de cette application.
+
+Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
+
+Lors de la création de volumes, le système vous invite à répondre aux questions relatives à l'utilisation d'un workload. Par exemple, si vous créez des volumes pour Microsoft Exchange, vous devez connaître le nombre de boîtes aux lettres dont vous avez besoin, les besoins moyens de vos boîtes aux lettres et le nombre de copies de la base de données que vous souhaitez. Le système utilise ces informations pour créer une configuration de volume optimale, qui peut être modifiée selon les besoins.

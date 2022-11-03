@@ -1,0 +1,55 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-upgrading-the-santricity-os-software.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrading, santricity, os, software 
+summary: Avant de mettre à niveau le logiciel et le micrologiciel de votre contrôleur, tenez compte de ces éléments. 
+---
+= Que dois-je savoir avant de mettre à niveau le logiciel SANtricity OS ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de mettre à niveau le logiciel et le micrologiciel de votre contrôleur, tenez compte de ces éléments.
+
+* Vous avez lu le document et le `readme.txt` et vous avez déterminé que vous souhaitez effectuer la mise à niveau.
+* Vous savez si vous souhaitez mettre à niveau le firmware du module d'E/S.
++
+Normalement, vous devez mettre à niveau tous les composants en même temps. Toutefois, vous pouvez décider de ne pas mettre à niveau le firmware du module d'E/S si vous ne souhaitez pas le mettre à niveau dans le cadre de la mise à niveau du logiciel du contrôleur SANtricity OS ou si le support technique vous a demandé de rétrograder le micrologiciel de votre module d'E/S (vous ne pouvez que le rétrograder en utilisant l'interface de ligne de commande).
+
+* Vous savez si vous voulez mettre à niveau le fichier NVSRAM du contrôleur.
++
+Normalement, vous devez mettre à niveau tous les composants en même temps. Toutefois, vous pouvez décider de ne pas mettre à niveau le fichier NVSRAM du contrôleur si votre fichier a été corrigé ou est une version personnalisée et que vous ne souhaitez pas le remplacer.
+
+* Vous savez si vous souhaitez activer maintenant ou ultérieurement.
++
+Voici quelques raisons d'activer ultérieurement :
+
++
+** *Temps de jour* -- l'activation du logiciel et du micrologiciel peut prendre un certain temps, vous pouvez donc attendre que les charges d'E/S soient plus légères. Les contrôleurs basculent pendant l'activation, pour que les performances soient inférieures à la normale jusqu'à la fin de la mise à niveau.
+** *Type de paquet* -- vous pouvez tester le nouveau logiciel et le nouveau micrologiciel sur une matrice de stockage avant de mettre à niveau les fichiers sur d'autres matrices de stockage.
+
+
+
+
+Ces composants font partie de la mise à niveau logicielle du contrôleur SANtricity OS :
+
+* *Logiciel de gestion* -- System Manager est le logiciel qui gère la matrice de stockage.
+* *Micrologiciel de contrôleur* -- le micrologiciel de contrôleur gère les E/S entre les hôtes et les volumes.
+* *NVSRAM de contrôleur* -- NVSRAM de contrôleur est un fichier de contrôleur qui spécifie les paramètres par défaut des contrôleurs.
+* *Micrologiciel IOM* -- le firmware du module d'E/S (IOM) gère la connexion entre un contrôleur et un tiroir de disque. Il surveille également l'état des composants.
+* *Supervisor Software* -- le logiciel Supervisor est la machine virtuelle sur un contrôleur dans lequel le logiciel s'exécute.
+
+
+Dans le cadre du processus de mise à niveau, le pilote multivoie/relais et/ou le pilote HBA de l'hôte peuvent également être mis à niveau afin que l'hôte puisse interagir correctement avec les contrôleurs.
+
+[NOTE]
+====
+Pour déterminer si c'est le cas, reportez-vous à la https://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^].
+
+====
+Si votre matrice de stockage ne contient qu'un seul contrôleur ou si aucun pilote multivoie n'est installé, arrêtez l'activité d'E/S vers la matrice de stockage pour éviter les erreurs d'application. Si votre baie de stockage est équipée de deux contrôleurs et qu'un pilote multivoie est installé, il n'est pas nécessaire d'arrêter l'activité d'E/S.
+
+
+CAUTION: Ne modifiez pas la matrice de stockage pendant la mise à niveau.

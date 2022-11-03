@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, iser, infiniBand, 
+summary: Le tableau suivant répertorie les fonctions de System Manager que vous pouvez utiliser pour configurer et gérer des sessions iser sur InfiniBand. 
+---
+= Que dois-je faire d'autre pour configurer ou diagnostiquer iser sur InfiniBand ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau suivant répertorie les fonctions de System Manager que vous pouvez utiliser pour configurer et gérer des sessions iser sur InfiniBand.
+
+[NOTE]
+====
+Les paramètres iser over InfiniBand sont disponibles uniquement si le contrôleur de votre baie de stockage comprend un port de gestion hôte iser sur InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Configurez iser sur les ports InfiniBand
+ a| 
+. Sélectionnez *matériel*.
+. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez un contrôleur.
+. Sélectionnez *configurer iser sur les ports InfiniBand*.
+
+
+ou
+
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *iser sur les paramètres InfiniBand*, puis sélectionnez *configurer iser sur les ports InfiniBand*.
+
+
+
+
+ a| 
+Afficher les statistiques iser sur InfiniBand
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler vers le bas jusqu'à *iser sur les paramètres InfiniBand*, puis sélectionnez *Afficher iser sur les statistiques InfiniBand*.
+
+
+|===

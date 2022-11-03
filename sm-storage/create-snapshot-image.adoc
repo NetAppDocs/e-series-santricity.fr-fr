@@ -1,0 +1,98 @@
+---
+permalink: sm-storage/create-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, image 
+summary: 'Vous pouvez créer manuellement une image Snapshot à partir d"un volume de base ou d"un groupe de cohérence Snapshot. Il s"agit également d"un instantané ou d"une image instantanée.' 
+---
+= Créer une image snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer manuellement une image Snapshot à partir d'un volume de base ou d'un groupe de cohérence Snapshot. Il s'agit également d'un snapshot _instantané_ ou _instantané_.
+
+.Avant de commencer
+* Le volume de base doit être optimal.
+* L'entraînement doit être optimal.
+* Le groupe de snapshots ne peut pas être désigné comme « traité ».
+* Le volume de capacité réservée doit avoir les mêmes paramètres Data assurance (DA) que le volume de base associé pour le groupe de snapshots.
+
+
+.Étapes
+. Effectuez l'une des actions suivantes pour créer une image instantanée :
++
+** Sélectionnez menu:Storage[volumes]. Sélectionnez l'objet (volume de base ou groupe de cohérence snapshot), puis sélectionnez menu :Services de copie [Créer snapshot instantané].
+** Sélectionnez menu:stockage[snapshots]. Sélectionnez l'onglet *Images snapshot*, puis sélectionnez menu:Créer[instantané].
++
+La boîte de dialogue Créer une image instantanée s'affiche. Sélectionnez l'objet (volume de base ou groupe de cohérence snapshot), puis cliquez sur *Suivant*. Si une image snapshot précédente a été créée pour le volume ou le groupe de cohérence snapshot, le système crée immédiatement l'instantané. Sinon, si c'est la première fois qu'une image Snapshot est créée pour le volume ou le groupe de cohérence de snapshot, la boîte de dialogue confirmer la création d'une image Snapshot s'affiche.
+
+
+
+. Cliquez sur *Créer* pour accepter la notification indiquant que la capacité réservée est nécessaire et pour passer à l'étape réserver la capacité.
++
+La boîte de dialogue réserver la capacité s'affiche.
+
+. Utilisez la case à cocher pour régler le pourcentage de capacité, puis cliquez sur *Suivant* pour accepter le volume candidat mis en surbrillance dans le tableau.
++
+La boîte de dialogue Modifier les paramètres s'affiche.
+
+. Sélectionnez les paramètres de l'image instantanée selon vos besoins et confirmez que vous souhaitez effectuer l'opération.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Paramètres d'image snapshot*
+
+
+
+ a| 
+Limite d'image snapshot
+ a| 
+Gardez la case à cocher sélectionnée si vous souhaitez que les images instantanées soient automatiquement supprimées après la limite spécifiée ; utilisez la case à cocher pour modifier la limite. Si vous désactivez cette case à cocher, la création de l'image instantanée s'arrête après 32 images.
+
+
+
+ a| 
+*Paramètres de capacité réservés*
+
+
+
+ a| 
+M'avertir lorsque...
+ a| 
+Utilisez la case à cocher pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée d'un groupe d'instantanés approche pleine.
+
+Lorsque la capacité réservée du groupe de snapshots dépasse le seuil spécifié, utilisez la notification préalable pour augmenter la capacité réservée ou supprimer des objets inutiles avant que l'espace restant ne soit vide.
+
+
+
+ a| 
+Règle pour la capacité totale réservée
+ a| 
+Choisissez l'une des règles suivantes :
+
+** *Purge de l'image snapshot la plus ancienne* -- le système purge automatiquement l'image snapshot la plus ancienne du groupe de snapshots, ce qui libère la capacité réservée de l'image snapshot pour être réutilisée dans le groupe.
+** *Rejeter les écritures dans le volume de base* -- lorsque la capacité réservée atteint son pourcentage maximal défini, le système rejette toute demande d'écriture d'E/S au volume de base qui a déclenché l'accès à la capacité réservée.
+
+
+|===
+====
+
+
+.Résultats
+* System Manager affiche la nouvelle image snapshot dans le tableau Images Snapshot. Le tableau répertorie la nouvelle image par horodatage ainsi que le volume de base associé ou le groupe de cohérence snapshot.
+* La création de snapshots peut rester dans un état en attente pour les conditions suivantes :
++
+** Le volume de base contenant cette image snapshot est membre d'un groupe de miroirs asynchrone.
+** Le volume de base est actuellement en cours de synchronisation. La création de l'image instantanée se termine dès que l'opération de synchronisation est terminée.
+
+
+

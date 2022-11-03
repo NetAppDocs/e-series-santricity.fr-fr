@@ -1,0 +1,16 @@
+---
+permalink: sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, firmware, upgrade, slow 
+summary: La progression de la mise à niveau du micrologiciel dépend de la charge globale du système. 
+---
+= Pourquoi ma mise à niveau du micrologiciel avance-t-elle si lentement ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La progression de la mise à niveau du micrologiciel dépend de la charge globale du système.
+
+Lors d'une mise à niveau en ligne du firmware d'un disque, si un transfert de volume a lieu pendant le processus de reconstruction rapide, le système lance une reconstruction complète sur le volume transféré. Cette opération peut prendre beaucoup de temps. Le temps de reconstruction complet réel dépend de plusieurs facteurs, notamment la quantité d'activité d'E/S survenant pendant l'opération de reconstruction, le nombre de disques du groupe de volumes, le paramètre de priorité de reconstruction et la performance du disque.

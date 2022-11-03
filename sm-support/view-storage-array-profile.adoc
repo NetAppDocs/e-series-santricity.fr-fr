@@ -1,0 +1,105 @@
+---
+permalink: sm-support/view-storage-array-profile.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
+summary: Le profil de la matrice de stockage fournit une description de tous les composants et propriétés de la matrice de stockage. 
+---
+= Afficher le profil de la matrice de stockage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le profil de la matrice de stockage fournit une description de tous les composants et propriétés de la matrice de stockage.
+
+Vous pouvez utiliser le profil de la matrice de stockage comme aide lors de la récupération ou comme vue d'ensemble de la configuration actuelle de la matrice de stockage. Vous pouvez enregistrer une copie du profil de la baie de stockage sur le client de gestion et conserver une copie papier du profil de la baie de stockage avec la baie de stockage. Créez une nouvelle copie du profil de la matrice de stockage si votre configuration change.
+
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Ressources de support].
+. Faites défiler vers le bas jusqu'à *lancer les informations détaillées de la matrice de stockage*, puis sélectionnez *profil de la matrice de stockage*.
++
+Le rapport s'affiche à l'écran.
+
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Section | Description 
+
+
+ a| 
+Baie de stockage
+ a| 
+Affiche toutes les options que vous pouvez configurer et les options statiques du système pour votre matrice de stockage. Ces options incluent le nombre de contrôleurs, de tiroirs disques, de disques, de pools de disques, de groupes de volumes, Volumes et disques de secours ; nombre maximal de tiroirs disques, de disques, de disques SSD et de volumes autorisés ; nombre de groupes de snapshots, d'images de snapshot, de volumes et de groupes de cohérence ; informations sur les fonctionnalités ; informations sur les versions de micrologiciel ; informations sur le numéro de série du châssis ; informations sur le statut AutoSupport et informations sur la planification AutoSupport ; Les paramètres de collecte automatique des données de support et de collecte planifiée des données de support, WWID (Storage array World Wide identifier) et les paramètres de cache et d'analyse des supports.
+
+
+
+ a| 
+Stockage
+ a| 
+Affiche la liste de tous les périphériques de stockage de la matrice de stockage. Selon la configuration de votre matrice de stockage, la section stockage peut afficher ces sous-sections.
+
+** *Pools de disques* -- affiche la liste de tous les pools de disques de la matrice de stockage.
+** *Groupes de volumes* -- affiche la liste de tous les groupes de volumes de la matrice de stockage. Les volumes et la capacité disponible sont répertoriés dans l'ordre dans lequel ils ont été créés.
+** *Volumes* -- affiche la liste de tous les volumes de la matrice de stockage. Les informations répertoriées incluent le nom du volume, l'état du volume, la capacité, le niveau RAID, le groupe de volumes ou le pool de disques, le type de disque et des informations supplémentaires.
+** *Volumes manquants* -- affiche la liste de tous les volumes de la matrice de stockage dont l'état est actuellement manquant. Les informations répertoriées comprennent l'identifiant WWID (World Wide identifier) pour chaque volume manquant.
+
+
+
+
+ a| 
+Services de copie
+ a| 
+Affiche la liste de tous les services de copie utilisés pour la matrice de stockage. Selon la configuration de votre matrice de stockage, la section Copy Services peut afficher les sous-sections suivantes :
+
+** *Copies de volume* -- affiche la liste de toutes les paires de copies de la matrice de stockage. Les informations répertoriées incluent le nombre de copies, les noms des paires de copies, l'état, l'horodatage de début et des détails supplémentaires.
+** *Groupes d'instantanés* -- affiche la liste de tous les groupes d'instantanés de la baie de stockage.
+** *Images Snapshot* -- affiche la liste de tous les instantanés de la matrice de stockage.
+** *Volumes de snapshot* -- affiche la liste de tous les volumes de snapshot de la baie de stockage.
+** *Groupes de cohérence* -- affiche la liste de tous les groupes de cohérence de la baie de stockage.
+** *Volumes membres* -- affiche la liste de tous les volumes membres du groupe de cohérence dans la matrice de stockage.
+** *Mirror Groups* -- affiche la liste de tous les volumes mis en miroir.
+** *Capacité réservée* -- affiche la liste de tous les volumes de capacité réservée dans la baie de stockage.
+
+
+
+
+ a| 
+Affectations d'hôte
+ a| 
+Affiche la liste des affectations d'hôtes dans la matrice de stockage. Les informations répertoriées incluent le nom du volume, le numéro d'unité logique (LUN), l'ID de contrôleur, le nom d'hôte ou le nom du cluster d'hôte et l'état du volume. Les informations supplémentaires répertoriées comprennent les définitions de topologie et les définitions de types d'hôtes.
+
+
+
+ a| 
+Sous-jacent
+ a| 
+Affiche la liste de tous les composants matériels de la matrice de stockage. En fonction de la configuration de votre matrice de stockage, la section matériel peut afficher ces sous-sections.
+
+** *Contrôleurs* -- affiche la liste de tous les contrôleurs de la matrice de stockage et comprend l'emplacement, l'état et la configuration du contrôleur. En outre, il inclut des informations sur le canal du lecteur, le canal hôte et le port Ethernet.
+** *Lecteurs* -- affiche la liste de tous les lecteurs de la matrice de stockage. Les disques sont répertoriés dans l'ID de tiroir, l'ID de tiroir et l'ordre d'ID de slot. Les informations répertoriées incluent l'ID du tiroir, l'ID du tiroir, l'ID du slot, le statut, la capacité brute, Le type de support, le type d'interface, le débit de données actuel, l'ID du produit et la version du micrologiciel pour chaque lecteur. La section disques comprend également des informations sur les canaux des disques, des informations sur la couverture du disque de secours et la durée de vie des disques (uniquement pour les disques SSD). Les informations relatives à la durée de vie des disques incluent le pourcentage d'endurance utilisé, qui correspond au volume de données écrites sur les disques SSD à ce jour, divisé par la limite théorique totale d'écriture des disques.
+** *Canaux de lecteur* -- affiche des informations sur tous les canaux de lecteur de la matrice de stockage. Les informations répertoriées comprennent l'état du canal, l'état de la liaison (le cas échéant), le nombre de lecteurs et le nombre d'erreurs cumulé.
+** *Clayettes* -- affiche les informations pour tous les tiroirs de la matrice de stockage. Les informations répertoriées incluent les types de disques et les informations d'état pour chaque composant du tiroir. Ses blocs-batteries, émetteurs-récepteurs SFP (Small Form-Factor Pluggable), boîtiers de ventilateurs d'alimentation ou blocs d'E/S (IOM) peuvent être inclus. La section matériel indique également l'identifiant de clé de sécurité si une clé de sécurité est utilisée par la matrice de stockage.
+
+
+
+
+ a| 
+Caractéristiques
+ a| 
+La présente une liste des packs de fonctionnalités installés et le nombre maximal autorisé de groupes de snapshots, de snapshots (hérités) et de volumes par hôte ou cluster hôte. Les informations de la section fonctionnalités comprennent également la sécurité du lecteur, c'est-à-dire si la matrice de stockage est activée ou désactivée.
+
+|===
+====
+. Pour rechercher le profil de la matrice de stockage, saisissez un terme de recherche dans la zone de texte *Rechercher*, puis cliquez sur *Rechercher*.
++
+Tous les termes correspondants sont mis en évidence. Pour faire défiler tous les résultats un par un, continuez à cliquer sur *Rechercher*.
+
+. Pour enregistrer le profil de la matrice de stockage, cliquez sur *Enregistrer*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `storage-array-profile.txt`.
+
+

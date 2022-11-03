@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, syslog, server, audit, logs, 
+summary: 'Si vous avez configuré un serveur syslog avec un protocole TLS, le serveur ne peut pas recevoir de messages si le certificat devient non valide pour une raison quelconque. Un message d"erreur concernant le certificat non valide est affiché dans le journal d"audit.' 
+---
+= Le serveur syslog ne reçoit plus les journaux d'audit. Que dois-je faire ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez configuré un serveur syslog avec un protocole TLS, le serveur ne peut pas recevoir de messages si le certificat devient non valide pour une raison quelconque. Un message d'erreur concernant le certificat non valide est affiché dans le journal d'audit.
+
+Pour résoudre ce problème, vous devez d'abord corriger le certificat du serveur syslog. Une fois qu'une chaîne de certificats valide est en place, accédez au menu:Paramètres[Journal d'audit > configurer les serveurs Syslog > tout tester].

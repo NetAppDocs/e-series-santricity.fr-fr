@@ -1,0 +1,34 @@
+---
+permalink: sm-support/collect-configuration-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, configuration data 
+summary: 'Vous pouvez enregistrer les données de configuration RAID depuis le contrôleur, qui inclut toutes les données des groupes de volumes et des pools de disques. Vous pouvez ensuite contacter le support technique pour obtenir de l"aide sur la restauration des données.' 
+---
+= Collecte des données de configuration
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez enregistrer les données de configuration RAID depuis le contrôleur, qui inclut toutes les données des groupes de volumes et des pools de disques. Vous pouvez ensuite contacter le support technique pour obtenir de l'aide sur la restauration des données.
+
+Cette tâche décrit comment enregistrer l'état actuel de la base de données de configuration RAID. Ces données sont extraites de l'emplacement de mémoire RPA du contrôleur.
+
+[NOTE]
+====
+La fonction de collecte de données de configuration enregistre les mêmes informations que la commande CLI pour `save storageArray dbmDatabase`.
+
+====
+Cette tâche doit être effectuée uniquement lors des instructions d'une opération Recovery Guru ou du support technique.
+
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *collecter les données de configuration*.
+. Dans la boîte de dialogue, cliquez sur *collect*.
++
+Le fichier, `configurationData-<arrayName>-<dateTime>.7z`, Est enregistré dans le dossier Téléchargements de votre navigateur.
+
+. Contactez le support technique pour plus d'informations sur leur envoi et leur chargement dans le système.
+

@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/what-does-the-mib-s-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mibs, graph, 
+summary: 'Le graphique MIB/s affiche les statistiques de vitesse de transfert en mébioctets par seconde. Sur la page d"accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.' 
+---
+= Que montre le graphique MIB/s ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le graphique MIB/s affiche les statistiques de vitesse de transfert en mébioctets par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.
+
+MIB/s est une abréviation de _mébioctets par seconde_, ou 1,048,576 octets par seconde. Positionnez le curseur de votre souris sur un point du graphique pour afficher les valeurs suivantes à cet endroit dans le temps :
+
+* Quantité de données lues.
+* Quantité de données écrites.
+* Quantité totale combinée de données lues et écrites.
+

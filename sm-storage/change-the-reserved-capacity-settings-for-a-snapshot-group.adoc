@@ -1,0 +1,113 @@
+---
+permalink: sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, group 
+summary: 'Vous pouvez modifier les paramètres d"un groupe de snapshots pour modifier son nom, ses paramètres de suppression automatique, le nombre maximal d"images de snapshot autorisées, le point de pourcentage auquel System Manager envoie une notification d"alerte de capacité réservée, ou la règle à utiliser lorsque la capacité réservée atteint son pourcentage maximal défini.' 
+---
+= Modifiez les paramètres de capacité réservée d'un groupe de snapshots
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les paramètres d'un groupe de snapshots pour modifier son nom, ses paramètres de suppression automatique, le nombre maximal d'images de snapshot autorisées, le point de pourcentage auquel System Manager envoie une notification d'alerte de capacité réservée, ou la règle à utiliser lorsque la capacité réservée atteint son pourcentage maximal défini.
+
+Lors de la création d'un groupe de snapshots, la capacité réservée est créée pour stocker les données de toutes les images de snapshot contenues dans le groupe.
+
+.Étapes
+. Menu Sélectionner:Storage[pools & Volume Groups].
+. Cliquez sur l'onglet *capacité réservée*.
+. Sélectionnez le groupe de snapshots que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Paramètres de groupe d'instantanés s'affiche.
+
+. Modifiez les paramètres du groupe de snapshots, le cas échéant.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Paramètres de groupe d'instantanés*
+
+
+
+ a| 
+Nom
+ a| 
+Nom du groupe de snapshots. La spécification d'un nom pour le groupe de snapshots est requise.
+
+
+
+ a| 
+Suppression automatique
+ a| 
+Paramètre qui maintient le nombre total d'images de snapshot dans le groupe à un maximum défini par l'utilisateur ou en dessous. Lorsque cette option est activée, System Manager supprime automatiquement l'image snapshot la plus ancienne du groupe à chaque création d'un nouvel instantané, afin de respecter le nombre maximal d'images instantanées autorisées pour le groupe.
+
+
+
+ a| 
+Limite d'image snapshot
+ a| 
+Valeur configurable qui spécifie le nombre maximal d'images instantanées autorisées pour un groupe de snapshots.
+
+
+
+ a| 
+Planification Snapshot
+ a| 
+Si Oui, une planification est définie pour la création automatique de snapshots.
+
+
+
+ a| 
+*Paramètres de capacité réservés*
+
+
+
+ a| 
+M'avertir lorsque...
+ a| 
+Utilisez la case à cocher pour régler le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'un groupe d'instantanés approche pleine.
+
+Lorsque la capacité réservée du groupe de snapshots dépasse le seuil spécifié, System Manager envoie une alerte pour augmenter la capacité réservée ou supprimer des objets inutiles.
+
+
+
+ a| 
+Règle pour la capacité totale réservée
+ a| 
+Vous pouvez choisir l'une des règles suivantes :
+
+** *Purge de l'image snapshot la plus ancienne* -- System Manager purge automatiquement l'image snapshot la plus ancienne du groupe de snapshots, ce qui libère la capacité réservée de l'image snapshot pour être réutilisée dans le groupe.
+** *Rejeter les écritures dans le volume de base* -- lorsque la capacité réservée atteint son pourcentage maximal défini, System Manager rejette toute demande d'écriture d'E/S au volume de base qui a déclenché l'accès à la capacité réservée.
+
+
+
+
+ a| 
+*Objets associés*
+
+
+
+ a| 
+Volume de base
+ a| 
+Nom du volume de base utilisé pour le groupe. Un volume de base est la source à partir de laquelle une image snapshot est créée. Il peut s'agir d'un volume non fin ou non fin et est généralement attribué à un hôte. Le volume de base peut résider dans un groupe de volumes ou un pool de disques.
+
+
+
+ a| 
+Images de snapshot
+ a| 
+Nombre d'images créées à partir de ce groupe. Une image Snapshot est une copie logique des données de volume, capturées à un point dans le temps spécifique. Comme un point de restauration, les images instantanées vous permettent de revenir à un jeu de données correct connu. Bien que l'hôte puisse accéder à l'image snapshot, il ne peut pas y lire ni y écrire directement.
+
+|===
+====
+. Cliquez sur *Enregistrer* pour appliquer vos modifications aux paramètres du groupe de snapshots.
+

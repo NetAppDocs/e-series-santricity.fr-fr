@@ -1,0 +1,23 @@
+---
+permalink: sm-hardware/turn-on-shelf-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
+summary: 'Pour trouver l"emplacement physique d"un shelf affiché sur la page Hardware, vous pouvez activer le voyant de localisation du shelf.' 
+---
+= Allumer le feu de localisation de tablette
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour trouver l'emplacement physique d'un tiroir affiché sur la page Hardware, vous pouvez activer le voyant de localisation du tiroir.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Sélectionnez la liste déroulante pour le tiroir contrôleur ou le tiroir disque, puis sélectionnez *Activer le localisateur light*.
++
+Le voyant de positionnement de la tablette s'allume.
+
+. Une fois la tablette physiquement installée, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
+

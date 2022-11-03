@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/delete-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, image 
+summary: 'Supprimez des images de snapshot pour nettoyer l"image snapshot la plus ancienne d"un groupe de snapshots ou d"un groupe de cohérence de snapshot.' 
+---
+= Supprimer l'image snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Supprimez des images de snapshot pour nettoyer l'image snapshot la plus ancienne d'un groupe de snapshots ou d'un groupe de cohérence de snapshot.
+
+Vous pouvez supprimer une image Snapshot ou bien supprimer des images Snapshot de groupes de cohérence avec le même horodatage de création. Vous pouvez également supprimer des instantanés d'un groupe de snapshots.
+
+Vous ne pouvez pas supprimer une image Snapshot s'il ne s'agit pas de l'image Snapshot la plus ancienne pour le volume de base ou le groupe de cohérence Snapshot associé.
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Cliquez sur l'onglet *Images snapshot*.
+. Sélectionnez l'image instantanée que vous souhaitez supprimer et confirmez que vous souhaitez effectuer l'opération.
++
+Si vous avez sélectionné une image Snapshot d'un groupe de cohérence de snapshot, sélectionnez chaque volume membre à supprimer, puis confirmez que vous souhaitez effectuer l'opération.
+
+. Cliquez sur *Supprimer*.
+
+
+System Manager effectue les actions suivantes :
+
+* Supprime l'image snapshot de la matrice de stockage.
+* Libère la capacité réservée pour une réutilisation dans le groupe de snapshots ou dans le groupe de cohérence de snapshot.
+* Désactive tous les volumes de snapshot associés qui existent pour l'image de snapshot supprimée.
+* Dans le cadre de la suppression d'un groupe de cohérence de snapshot, tous les volumes membres associés à l'image de snapshot supprimée sont déplacées vers un état arrêté.
+

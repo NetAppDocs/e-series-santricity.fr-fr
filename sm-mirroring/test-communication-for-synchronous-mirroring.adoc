@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/test-communication-for-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
+summary: 'Vous pouvez tester la communication entre une matrice de stockage locale et une matrice de stockage distante afin de diagnostiquer d"éventuels problèmes de communication pour une paire en miroir qui participe à la mise en miroir synchrone.' 
+---
+= Tester la communication pour la mise en miroir synchrone
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez tester la communication entre une matrice de stockage locale et une matrice de stockage distante afin de diagnostiquer d'éventuels problèmes de communication pour une paire en miroir qui participe à la mise en miroir synchrone.
+
+Deux tests différents sont exécutés :
+
+* *Communication* -- vérifie que les deux matrices de stockage ont un chemin de communication. Le test de communication valide que la matrice de stockage locale peut communiquer avec la matrice de stockage distante et que le volume secondaire associé à la paire en miroir existe sur la matrice de stockage distante.
+* *Latence* -- envoie une commande d'unité de test SCSI au volume secondaire de la matrice de stockage distante associée à la paire en miroir pour tester la latence minimale, moyenne et maximale.
+
+
+.Étapes
+. Menu sélection:stockage[mise en miroir synchrone].
+. Sélectionnez la paire symétrique que vous souhaitez tester, puis sélectionnez *Test communication*.
+. Vérifiez les informations affichées dans la fenêtre Résultats et, si nécessaire, suivez les mesures correctives indiquées.
++
+[NOTE]
+====
+Si le test de communication échoue, le test continue à s'exécuter après la fermeture de cette boîte de dialogue jusqu'à ce que la communication entre la paire en miroir soit restaurée.
+
+====
+

@@ -1,0 +1,24 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificate, revocation, checking, 
+summary: 'System Manager vous permet de rechercher des certificats révoqués à l"aide d"un serveur OCSP (Online Certificate Status Protocol) au lieu de télécharger des listes de révocation de certificats.' 
+---
+= Que dois-je savoir au sujet de la vérification de révocation de certificats ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager vous permet de rechercher des certificats révoqués à l'aide d'un serveur OCSP (Online Certificate Status Protocol) au lieu de télécharger des listes de révocation de certificats.
+
+Les certificats révoqués ne doivent plus être approuvés. Un certificat peut être révoqué pour plusieurs raisons : par exemple, si l'autorité de certification (AC) a émis incorrectement le certificat, si une clé privée a été compromise ou si l'entité identifiée n'a pas respecté les exigences de la politique.
+
+Après avoir établi une connexion à un serveur OCSP dans System Manager, la matrice de stockage effectue une vérification de révocation chaque fois qu'elle se connecte à un serveur AutoSupport, à un serveur EKMS (External Key Management Server), à un serveur LDAPS (Lightweight Directory Access Protocol over SSL) ou à un serveur Syslog. La baie de stockage tente de valider les certificats de ces serveurs pour s'assurer qu'ils n'ont pas été révoqués. Le serveur renvoie alors la valeur "bon", "révoqué" ou "inconnu" pour ce certificat. Si le certificat est révoqué ou si la matrice ne peut pas contacter le serveur OCSP, la connexion est refusée.
+
+[NOTE]
+====
+La spécification d'une adresse de réponse OCSP dans System Manager ou dans l'interface de ligne de commande (CLI) remplace l'adresse OCSP trouvée dans le fichier de certificat.
+
+====

@@ -1,0 +1,46 @@
+---
+permalink: sm-hardware/configure-nvme-over-infiniband-ports-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, infiniband, ports, nvme, 
+summary: 'Si votre contrôleur inclut une connexion NVMe over InfiniBand, vous pouvez configurer les paramètres du port NVMe à partir de la page Hardware (matériel).' 
+---
+= Configurer les ports NVMe over InfiniBand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si votre contrôleur inclut une connexion NVMe over InfiniBand, vous pouvez configurer les paramètres du port NVMe à partir de la page Hardware (matériel).
+
+.Avant de commencer
+* Votre contrôleur doit inclure un port hôte NVMe over InfiniBand. Sinon, les paramètres NVMe over InfiniBand ne sont pas disponibles dans System Manager.
+* Vous devez connaître l'adresse IP de la connexion hôte.
+
+
+[NOTE]
+====
+Les paramètres et les fonctions de NVMe over InfiniBand n'apparaissent que si le contrôleur de votre baie de stockage est équipé d'un port NVMe over InfiniBand.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur associé au port NVMe over InfiniBand que vous souhaitez configurer.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *configurer NVMe sur les ports InfiniBand*.
++
+La boîte de dialogue configurer NVMe sur les ports InfiniBand s'ouvre.
+
+. Sélectionnez le port HIC que vous souhaitez configurer dans la liste déroulante, puis saisissez l'adresse IP.
++
+Si vous configurez une baie de stockage EF600 avec une HIC compatible 200 Go, cette boîte de dialogue affiche deux champs d'adresse IP, un pour un port physique (externe) et un pour un port virtuel (interne). Vous devez attribuer une adresse IP unique aux deux ports. Ces paramètres permettent à l'hôte d'établir un chemin entre chaque port et pour la HIC d'obtenir des performances optimales. Si vous n'attribuez pas d'adresse IP au port virtuel, la HIC fonctionne à environ la moitié de sa vitesse.
+
+. Cliquez sur *configurer*.
+. Terminez la configuration, puis réinitialisez le port NVMe over InfiniBand en cliquant sur *Yes*.
+

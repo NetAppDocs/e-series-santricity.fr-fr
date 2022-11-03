@@ -1,0 +1,24 @@
+---
+permalink: sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Cannot, Access, Other, Controller 
+summary: 'Lorsque vous effectuez certaines opérations liées aux certificats d"autorité de certification (par exemple, importation d"un certificat), une boîte de dialogue vous invitant à accepter un certificat auto-signé pour le second contrôleur s"affiche.' 
+---
+= Pourquoi la boîte de dialogue Impossible d'accéder à un autre contrôleur s'affiche-t-elle ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous effectuez certaines opérations liées aux certificats d'autorité de certification (par exemple, importation d'un certificat), une boîte de dialogue vous invitant à accepter un certificat auto-signé pour le second contrôleur s'affiche.
+
+Dans les matrices de stockage avec deux contrôleurs (configurations duplex), cette boîte de dialogue apparaît parfois si SANtricity System Manager ne peut pas communiquer avec le second contrôleur ou si votre navigateur n'accepte pas le certificat pendant une opération donnée.
+
+Si cette boîte de dialogue s'ouvre, cliquez sur *accepter le certificat auto-signé* pour continuer. Si une autre boîte de dialogue vous invite à saisir un mot de passe, entrez votre mot de passe administrateur utilisé pour accéder à System Manager.
+
+Si cette boîte de dialogue s'affiche de nouveau et que vous ne pouvez pas terminer une tâche de certificat, essayez l'une des procédures suivantes :
+
+* Utilisez un autre type de navigateur pour accéder à ce contrôleur, accepter le certificat et continuer.
+* Accédez au second contrôleur avecSystem Manager, acceptez le certificat auto-signé, puis revenez au premier contrôleur et continuez.
+

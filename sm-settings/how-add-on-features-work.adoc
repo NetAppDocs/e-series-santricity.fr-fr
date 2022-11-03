@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/how-add-on-features-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, features, 
+summary: 'Les extensions sont des fonctionnalités qui ne sont pas incluses dans la configuration standard de System Manager et peuvent nécessiter une clé pour l"activation. Une fonction complémentaire peut être une fonction premium unique ou un pack de fonctions fourni.' 
+---
+= Fonctionnement des fonctions complémentaires
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les extensions sont des fonctionnalités qui ne sont pas incluses dans la configuration standard de System Manager et peuvent nécessiter une clé pour l'activation. Une fonction complémentaire peut être une fonction premium unique ou un pack de fonctions fourni.
+
+Les étapes suivantes fournissent une vue d'ensemble de l'activation d'un pack de fonctions ou de fonctionnalités Premium :
+
+. Obtenir les informations suivantes :
++
+** Le numéro de série du châssis et l'identifiant d'activation de la fonction, qui identifient la matrice de stockage pour la fonction à installer. Ces éléments sont disponibles dans System Manager.
+** Code d'activation de la fonctionnalité, disponible sur le site de support lors de l'achat de cette fonctionnalité.
+
+
+. Vous pouvez obtenir la clé de fonction en contactant votre fournisseur de stockage ou en accédant au site d'activation de la fonction Premium. Indiquez le numéro de série du châssis, l'identifiant d'activation et le code de fonction pour l'activation.
+. À l'aide de System Manager, activez la fonction premium ou le pack de fonctionnalités à l'aide du fichier de clé de fonction.
+

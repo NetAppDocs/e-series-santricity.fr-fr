@@ -1,0 +1,29 @@
+---
+permalink: sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
+summary: 'Vous pouvez afficher la quantité de données non synchronisées entre les groupes de cohérence miroir sur la matrice de stockage locale et sur la matrice de stockage distante. Lorsque le groupe de cohérence miroir est à l"état non synchronisé, aucune activité de mise en miroir n"a lieu.' 
+---
+= Afficher la quantité de données non synchronisées entre les groupes de cohérence miroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher la quantité de données non synchronisées entre les groupes de cohérence miroir sur la matrice de stockage locale et sur la matrice de stockage distante. Lorsque le groupe de cohérence miroir est à l'état non synchronisé, aucune activité de mise en miroir n'a lieu.
+
+Vous pouvez effectuer cette tâche lorsque le groupe de cohérence miroir sélectionné contient des paires en miroir et lorsque la synchronisation n'est pas en cours.
+
+.Étapes
+. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Sélectionnez l'onglet *groupes de cohérence miroir*.
++
+Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.
+
+. Cliquez sur menu:plus[Afficher le volume de données non synchronisé].
++
+S'il existe des données non synchronisées, les valeurs de la table reflètent cette valeur. La colonne quantité de données répertorie la quantité de données non synchronisées dans MIB.
+
+

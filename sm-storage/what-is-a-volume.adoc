@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-a-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume 
+summary: 'Un volume est un conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Il s"agit du composant logique créé pour que l"hôte puisse accéder au stockage de la matrice de stockage.' 
+---
+= Qu'est-ce qu'un volume ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volume est un conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Il s'agit du composant logique créé pour que l'hôte puisse accéder au stockage de la matrice de stockage.
+
+Un volume est créé en fonction de la capacité disponible dans un pool ou un groupe de volumes. Un volume a une capacité définie. Bien qu'un volume soit composé de plusieurs lecteurs, un volume apparaît comme un composant logique pour l'hôte.

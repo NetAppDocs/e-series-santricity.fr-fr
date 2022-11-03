@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/why-use-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, images 
+summary: Vous pouvez utiliser les snapshots pour vous protéger contre et permettre la restauration après une perte ou une corruption accidentelle ou malveillante. 
+---
+= Pourquoi utiliser des images instantanées ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser les snapshots pour vous protéger contre et permettre la restauration après une perte ou une corruption accidentelle ou malveillante.
+
+Sélectionnez un volume de base ou un groupe de volumes de base, appelé groupe de cohérence snapshot, puis capturez des snapshots de l'une ou plusieurs des manières suivantes :
+
+* Vous pouvez créer une image Snapshot d'un seul volume de base ou d'un groupe de cohérence Snapshot comprenant plusieurs volumes de base.
+* Vous pouvez créer des snapshots manuellement ou planifier la capture automatique d'images Snapshot périodiques d'un volume de base ou d'un groupe de cohérence Snapshot.
+* Vous pouvez créer un volume instantané accessible par l'hôte d'une image instantanée.
+* Vous pouvez effectuer une opération de retour arrière pour restaurer une image instantanée.
+
+
+Le système conserve plusieurs images instantanées en tant que points de restauration que vous pouvez utiliser pour revenir aux jeux de données de qualité connus à des points spécifiques dans le temps. La restauration permet une protection contre la suppression accidentelle de données et la corruption.

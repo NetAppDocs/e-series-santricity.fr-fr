@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/why-do-i-need-reserved-capacity-for-every-member-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, member, volume 
+summary: 'Chaque volume membre d"un groupe de cohérence de snapshot doit avoir sa propre capacité réservée pour enregistrer les modifications apportées par l"application hôte au volume de base sans affecter l"image de snapshot du groupe de cohérence référencé. La capacité réservée fournit à l"application hôte un accès en écriture à une copie des données contenues dans le volume membre désigné comme lecture-écriture.' 
+---
+= Pourquoi ai-je besoin de capacité réservée pour chaque volume de membre ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Chaque volume membre d'un groupe de cohérence de snapshot doit avoir sa propre capacité réservée pour enregistrer les modifications apportées par l'application hôte au volume de base sans affecter l'image de snapshot du groupe de cohérence référencé. La capacité réservée fournit à l'application hôte un accès en écriture à une copie des données contenues dans le volume membre désigné comme lecture-écriture.
+
+Une image Snapshot de groupe de cohérence n'est pas directement accessible en lecture ou en écriture aux hôtes. Au contraire, l'image snapshot est utilisée pour enregistrer uniquement les données capturées à partir du volume de base.
+
+Lors de la création d'un volume Snapshot de groupe de cohérence désigné comme lecture/écriture, System Manager crée une capacité réservée pour chaque volume membre du groupe de cohérence. Cette capacité réservée fournit à l'application hôte l'accès en écriture à une copie des données contenues dans l'image snapshot du groupe de cohérence.

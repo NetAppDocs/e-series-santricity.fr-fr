@@ -1,0 +1,118 @@
+---
+permalink: sm-settings/view-audit-log-activity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
+summary: 'En affichant les journaux d"audit, les utilisateurs disposant d"autorisations d"administrateur de sécurité peuvent surveiller les actions des utilisateurs, les échecs d"authentification, les tentatives de connexion non valides et la durée de vie des sessions utilisateur.' 
+---
+= Afficher l'activité du journal d'audit
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En affichant les journaux d'audit, les utilisateurs disposant d'autorisations d'administrateur de sécurité peuvent surveiller les actions des utilisateurs, les échecs d'authentification, les tentatives de connexion non valides et la durée de vie des sessions utilisateur.
+
+Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Sélectionnez l'onglet **Journal d'audit**.
++
+L'activité du journal d'audit s'affiche sous forme de tableau, qui contient les colonnes d'informations suivantes :
+
++
+** *Date/heure* -- horodatage du moment où la matrice de stockage a détecté l'événement (en GMT).
+** *Nom d'utilisateur* -- le nom d'utilisateur associé à l'événement. Pour toute action non authentifiée sur la matrice de stockage, « N/A » apparaît comme nom d'utilisateur. Les actions non authentifiées peuvent être déclenchées par le proxy interne ou un autre mécanisme.
+** *Code d'état* -- Code d'état HTTP de l'opération (200, 400, etc.) et texte descriptif associé à l'événement.
+** *URL accédée* -- URL complète (y compris l'hôte) et chaîne de requête.
+** *Adresse IP du client* -- adresse IP du client associé à l'événement.
+** *Source* -- Source de consignation associée à l'événement, qui peut être System Manager, CLI, Web Services ou support Shell.
+** *Description* -- informations supplémentaires sur l'événement, le cas échéant.
+
+
+. Utilisez les sélections de la page Journal d'audit pour afficher et gérer les événements.
++
+.Détails de la sélection
+====
+[cols="25h,~"]
+|===
+| Sélection | Description 
+
+
+ a| 
+Afficher les événements du...
+ a| 
+Événements de limite indiqués par plage de dates (24 dernières heures, 7 derniers jours, 30 derniers jours ou une plage de dates personnalisée).
+
+
+
+ a| 
+Filtre
+ a| 
+Limiter les événements indiqués par les caractères saisis dans le champ. Utilisez les guillemets ("") pour une correspondance exacte, entrez `OR` pour retourner un ou plusieurs mots, ou entrez un tiret ( -- ) pour omettre des mots.
+
+
+
+ a| 
+Actualisez
+ a| 
+Sélectionnez *Actualiser* pour mettre à jour la page avec les événements les plus courants.
+
+
+
+ a| 
+Afficher/modifier les paramètres
+ a| 
+Sélectionnez *Afficher/Modifier les paramètres* pour ouvrir une boîte de dialogue qui vous permet de spécifier une stratégie de journalisation complète et le niveau d'actions à enregistrer.
+
+
+
+ a| 
+Supprimer des événements
+ a| 
+Sélectionnez *Supprimer* pour ouvrir une boîte de dialogue qui vous permet de supprimer d'anciens événements de la page.
+
+
+
+ a| 
+Afficher/masquer les colonnes
+ a| 
+Cliquez sur l'icône de colonne *Afficher/Masquer* image:../media/sam-1140-ss-access-columns.gif[""] pour sélectionner des colonnes supplémentaires à afficher dans le tableau. Les colonnes supplémentaires incluent :
+
+** *Méthode* -- la méthode HTTP (PAR exemple, POST, GET, DELETE, etc.).
+** *Commande CLI exécutée* -- la commande CLI (grammaire) exécutée pour les requêtes Secure CLI.
+** *CLI Return Status* -- Un code d'état CLI ou une demande de fichiers d'entrée du client.
+** *Symbole procédure* -- la procédure de symbole exécutée.
+** *Type d'événement SSH* -- Type d'événements Secure Shell (SSH), tels que login, logout et login_fail.
+** *SSH session PID* -- Numéro d'ID de processus de la session SSH.
+** *Durée(s) de session SSH* -- nombre de secondes pendant lesquelles l'utilisateur a été connecté.
+** *Type d'authentification* -- les types peuvent inclure l'utilisateur local, LDAP, SAML et le jeton d'accès.
+** *ID d'authentification* -- ID de la session authentifiée.
+
+
+
+
+ a| 
+Activer/désactiver les filtres de colonne
+ a| 
+Cliquez sur l'icône *basculer* image:../media/sam-1140-ss-access-toggle.gif[""] pour ouvrir des champs de filtrage pour chaque colonne. Entrez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.
+
+
+
+ a| 
+Annuler les modifications
+ a| 
+Cliquez sur l'icône *Annuler* image:../media/sam-1140-ss-access-undo.gif[""] pour rétablir la configuration par défaut de la table.
+
+
+
+ a| 
+Exporter
+ a| 
+Cliquez sur *Exporter* pour enregistrer les données de la table dans un fichier CSV (valeurs séparées par des virgules).
+
+|===
+====
+

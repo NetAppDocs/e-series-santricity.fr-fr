@@ -1,0 +1,34 @@
+---
+permalink: sm-interface/home-page.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, home page 
+summary: 'La page d"accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d"accueil est le premier écran affiché.' 
+---
+= Page d'accueil
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page d'accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d'accueil est le premier écran affiché.
+
+Le tableau de bord comprend quatre zones récapitulatives contenant des informations clés sur l'état et l'état de santé de votre baie de stockage. Vous trouverez plus d'informations dans la zone de résumé.
+
+* *Notifications*
++
+La zone Notifications affiche les notifications de problèmes indiquant l'état de la matrice de stockage et de ses composants. De plus, ce portlet affiche des alertes automatisées qui peuvent vous aider à résoudre les problèmes avant qu'ils n'affectent d'autres domaines de votre environnement de stockage.
+
+* *Performance*
++
+La zone Performance vous permet de comparer et de comparer l'utilisation des ressources au fil du temps. Vous pouvez afficher les metrics de performances d'une baie de stockage pour le temps de réponse (IOPS), les taux de transfert (MIB/s) et la capacité de traitement utilisée (CPU).
+
+* *Capacité*
++
+La zone capacité affiche un graphique indiquant la capacité allouée, la capacité de stockage disponible et la capacité de stockage non affectée dans votre baie de stockage.
+
+* *Hiérarchie de stockage*
++
+La zone hiérarchie de stockage fournit une vue organisée des divers composants matériels et objets de stockage gérés par votre matrice de stockage. Cliquez sur la flèche de la liste déroulante pour effectuer une certaine action sur ce composant matériel ou objet de stockage.
+
+

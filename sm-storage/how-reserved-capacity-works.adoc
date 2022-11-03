@@ -1,0 +1,71 @@
+---
+permalink: sm-storage/how-reserved-capacity-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
+summary: La capacité réservée est automatiquement créée lors des opérations de copie, telles que les snapshots ou la mise en miroir asynchrone de vos volumes. 
+---
+= Fonctionnement de la capacité réservée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacité réservée est automatiquement créée lors des opérations de copie, telles que les snapshots ou la mise en miroir asynchrone de vos volumes.
+
+L'objectif de la capacité réservée est de stocker les modifications des données sur ces volumes en cas de problème. Tout comme les volumes, la capacité réservée est créée à partir de pools ou de groupes de volumes.
+
+
+
+== Copie des objets de service utilisant la capacité réservée
+
+La capacité réservée est le mécanisme de stockage sous-jacent utilisé par ces objets de service de copie :
+
+* Groupes de snapshots
+* Volumes snapshot de lecture/écriture
+* Volumes membres de groupe de cohérence
+* Volumes par paire en miroir
+
+
+Lors de la création ou de l'extension de ces objets de service de copie, vous devez créer de la capacité réservée à partir d'un pool ou d'un groupe de volumes. La capacité réservée est généralement de 40 % du volume de base pour les opérations Snapshot et de 20 % du volume de base pour les opérations de mise en miroir asynchrone. La capacité réservée varie toutefois en fonction du nombre de modifications apportées aux données d'origine.
+
+
+
+== Des volumes fins et une capacité réservée
+
+Pour un volume fin, si la capacité maximale rapportée de 256 Tio a été atteinte, vous ne pouvez pas augmenter sa capacité. Assurez-vous que la capacité réservée du volume fin est définie sur une taille supérieure à la capacité maximale indiquée. (Un volume fin fait toujours l'objet d'un provisionnement fin, ce qui signifie que la capacité est allouée au fur et à mesure de l'écriture des données sur le volume.)
+
+Si vous créez de la capacité réservée à l'aide d'un volume fin dans un pool, examinez les actions suivantes et obtenez des résultats sur la capacité réservée :
+
+* En cas de défaillance de la capacité réservée d'un volume fin, cette allocation n'est pas automatiquement répercuée sur l'état en panne. Cependant, comme toutes les opérations d'E/S d'un volume fin requièrent l'accès au volume de capacité réservé, les opérations d'E/S résultent toujours d'une condition de vérification renvoyée à l'hôte requérant. En cas de problème sous-jacent avec le volume de capacité réservé, le volume de capacité réservé est renvoyé à un état optimal et le volume fin redevient fonctionnel.
+* Si vous utilisez un thin volume existant pour terminer une paire en miroir asynchrone, ce thin volume est réinitialisé avec un nouveau volume de capacité réservée. Seuls les blocs provisionnés du côté principal sont transférés au cours du processus de synchronisation initial.
+
+
+
+
+== Alertes de capacité
+
+L'objet de service de copie dispose d'un seuil d'alerte et d'avertissement de capacité configurable, ainsi que d'une réponse configurable lorsque la capacité réservée est pleine.
+
+Lorsque la capacité réservée d'un volume d'objet de service de copie approche du point de remplissage, une alerte est émise à l'utilisateur. Par défaut, cette alerte est émise lorsque le volume de capacité réservée est plein à 75 %. Vous pouvez toutefois régler ce point d'alerte vers le haut ou vers le bas si nécessaire. Si vous recevez cette alerte, vous pouvez augmenter la capacité du volume de capacité réservé à ce moment-là. Chaque objet de service de copie peut être configuré indépendamment à cet égard.
+
+
+
+== Volumes de capacité réservée orphelins
+
+Un volume de capacité réservée orphelin est un volume qui ne stocke plus les données pour les opérations de copie du service, car son objet de service de copie associé a été supprimé. Lorsque l'objet de service de copie a été supprimé, son volume de capacité réservé doit également avoir été supprimé. Cependant, la suppression du volume de capacité réservée n'a pas pu être faite.
+
+Comme les volumes de capacité réservée orphelins ne sont pas accessibles par aucun hôte, ils sont des candidats à la restauration. Supprimez manuellement le volume de capacité réservée orpheline, ce qui vous permet d'utiliser sa capacité pour d'autres opérations.
+
+System Manager vous signale les volumes de capacité réservée orphelins par un message du type « récupérer la capacité inutilisée » dans la zone Notifications de la page d'accueil. Vous pouvez cliquer sur *récupérer la capacité inutilisée* pour afficher la boîte de dialogue récupérer la capacité inutilisée, où vous pouvez supprimer le volume de capacité réservé orphelin.
+
+
+
+== Caractéristiques de la capacité réservée
+
+* La capacité allouée à des capacités réservées doit être prise en compte lors de la création du volume afin de conserver une capacité disponible suffisante.
+* La capacité réservée peut être inférieure au volume de base (la taille minimale est de 8 Mio).
+* Certains espaces sont consommés par les métadonnées, mais ils sont très peu (192 Kio). Il n'est donc pas nécessaire de les prendre en compte pour déterminer la taille du volume de capacité réservé.
+* La capacité réservée n'est pas directement lisible ou inscriptible depuis un hôte.
+* Il existe de la capacité réservée pour chaque volume de snapshot en lecture/écriture, groupe de snapshots, volume membre du groupe de cohérence et volume de paire en miroir.
+

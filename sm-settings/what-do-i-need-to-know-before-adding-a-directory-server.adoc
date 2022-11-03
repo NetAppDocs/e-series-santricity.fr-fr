@@ -1,0 +1,19 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-adding-a-directory-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, adding, directory, server, 
+summary: 'Avant d"ajouter un serveur d"annuaire dans Access Management, assurez-vous de respecter les exigences suivantes.' 
+---
+= Que dois-je savoir avant d'ajouter un serveur d'annuaire ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'ajouter un serveur d'annuaire dans Access Management, assurez-vous de respecter les exigences suivantes.
+
+* Les groupes d'utilisateurs doivent être définis dans votre service d'annuaire.
+* Les informations d'identification du serveur LDAP doivent être disponibles, y compris le nom de domaine, l'URL du serveur, et éventuellement le nom d'utilisateur et le mot de passe du compte BIND.
+* Pour les serveurs LDAPS utilisant un protocole sécurisé, la chaîne de certificats du serveur LDAP doit être installée sur votre ordinateur local.
+

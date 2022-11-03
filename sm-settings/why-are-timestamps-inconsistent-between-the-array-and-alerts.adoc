@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/why-are-timestamps-inconsistent-between-the-array-and-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, timestamps, inconsistent, array, alerts, 
+summary: 'Lorsque la matrice de stockage envoie des alertes, elle ne corrige pas le fuseau horaire du serveur ou de l"hôte cible qui reçoit les alertes. À la place, la matrice de stockage utilise l"heure locale (GMT) pour créer l"horodatage utilisé pour l"enregistrement d"alerte. Par conséquent, vous pouvez constater des incohérences entre les horodatages de la baie de stockage et le serveur ou l"hôte recevant une alerte.' 
+---
+= Pourquoi les horodatages sont-ils incohérents entre la baie et les alertes ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque la matrice de stockage envoie des alertes, elle ne corrige pas le fuseau horaire du serveur ou de l'hôte cible qui reçoit les alertes. À la place, la matrice de stockage utilise l'heure locale (GMT) pour créer l'horodatage utilisé pour l'enregistrement d'alerte. Par conséquent, vous pouvez constater des incohérences entre les horodatages de la baie de stockage et le serveur ou l'hôte recevant une alerte.
+
+Comme la matrice de stockage ne corrige pas le fuseau horaire lors de l'envoi d'alertes, l'horodatage des alertes est fonction du GMT-relatif, avec un décalage de fuseau horaire de zéro. Pour calculer un horodatage approprié à votre fuseau horaire local, vous devez déterminer votre décalage horaire par rapport à GMT, puis ajouter ou soustraire cette valeur de l'horodatage.
+
+[NOTE]
+====
+Pour éviter ce problème, configurez le protocole NTP (Network Time Protocol) sur les contrôleurs de la matrice de stockage. NTP garantit que les contrôleurs sont toujours synchronisés au bon moment.
+
+====

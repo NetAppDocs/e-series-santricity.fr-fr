@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/solid-state-disks-ssds.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
+summary: Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs. 
+---
+= Disques SSD
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs.
+
+
+
+== Avantages des SSD
+
+Voici les avantages des disques SSD par rapport aux disques durs :
+
+* Démarrage plus rapide (pas de démarrage)
+* Réduisez la latence
+* Augmentation des opérations d'E/S par seconde (IOPS)
+* Plus grande fiabilité avec moins de pièces mobiles
+* Baisse de la consommation électrique
+* Moins de chaleur produite et moins de refroidissement nécessaire
+
+
+
+
+== Identification des disques SSD
+
+Dans la page Hardware, vous pouvez localiser les disques SSD dans la vue avant du tiroir. Recherchez les baies de lecteur qui affichent une icône de boulon d'éclair, indiquant qu'un disque SSD est installé.
+
+
+
+== Groupes de volumes
+
+Tous les disques d'un groupe de volumes doivent être du même type de support (tous disques SSD ou tous disques durs). Les groupes de volumes ne peuvent pas avoir une combinaison de types de supports ou d'interfaces.
+
+
+
+== Mise en cache
+
+La mise en cache d'écriture du contrôleur est toujours activée pour les disques SSD. La mise en cache en écriture améliore les performances et augmente la durée de vie des disques SSD.
+
+Outre le cache du contrôleur, vous pouvez implémenter la fonctionnalité SSD cache pour améliorer les performances globales du système. Dans le cache SSD, les données sont copiées à partir des volumes et stockées sur deux volumes RAID internes (un par contrôleur).

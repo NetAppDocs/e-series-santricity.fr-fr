@@ -1,0 +1,64 @@
+---
+permalink: sm-storage/change-allocated-capacity-limit-for-a-thin-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
+summary: 'Pour les volumes fins capables d"allouer de l"espace à la demande, vous pouvez modifier la limite qui restreint la capacité allouée à laquelle un volume fin peut se développer automatiquement.' 
+---
+= Modifier la limite de capacité allouée pour un volume fin
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les volumes fins capables d'allouer de l'espace à la demande, vous pouvez modifier la limite qui restreint la capacité allouée à laquelle un volume fin peut se développer automatiquement.
+
+Vous pouvez également modifier le point de pourcentage auquel une alerte (seuil d'avertissement dépassé) est envoyée dans la zone Notifications de la page d'accueil lorsqu'un volume fin est proche de la limite de capacité allouée. Vous pouvez choisir d'activer ou de désactiver cette notification d'alerte.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+Le système étend automatiquement la capacité allouée en fonction de la limite de capacité allouée. La limite de capacité allouée vous permet de limiter la croissance automatique du volume fin en dessous de la capacité indiquée. Lorsque le volume de données écrites se rapproche de la capacité allouée, vous pouvez modifier la limite de capacité allouée.
+
+Lors de la modification du seuil d'avertissement et de la limite de capacité allouée d'un volume fin, vous devez prendre en compte l'espace qui doit être utilisé par les données utilisateur du volume et copier les données de services.
+
+.Étapes
+. Sélectionnez menu:Storage[volumes].
+. Sélectionnez l'onglet *Thin Volume Monitoring*.
++
+La vue surveillance du volume fin s'affiche.
+
+. Sélectionnez le volume fin que vous souhaitez modifier, puis sélectionnez *Modifier la limite*.
++
+La boîte de dialogue Modifier la limite s'affiche. Le paramètre limite de capacité allouée et seuil d'avertissement pour le volume fin sélectionné s'affiche dans cette boîte de dialogue.
+
+. Modifiez la limite de capacité allouée et le seuil d'avertissement selon les besoins.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+Modifier la limite de capacité allouée à...
+ a| 
+Seuil d'écriture défaillant, ce qui empêche le volume fin de consommer des ressources supplémentaires. Ce seuil est un pourcentage de la taille de capacité indiquée du volume.
+
+
+
+ a| 
+M'avertir lorsque... (seuil d'avertissement)
+ a| 
+Cochez la case si vous souhaitez que le système génère une alerte lorsqu'un volume fin se trouve à proximité de la limite de capacité allouée. L'alerte est envoyée à la zone Notifications de la page d'accueil. Ce seuil est un pourcentage de la taille de capacité indiquée du volume.
+
+Décochez la case pour désactiver la notification d'alerte de seuil d'avertissement.
+
+|===
+====
+. Cliquez sur *Enregistrer*.
+

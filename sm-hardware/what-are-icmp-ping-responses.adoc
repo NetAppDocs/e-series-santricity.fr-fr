@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/what-are-icmp-ping-responses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, icmp, ping, responses, message, protocol, 
+summary: 'Le protocole ICMP (Internet Control message Protocol) est l"un des protocoles de la suite TCP/IP.' 
+---
+= Que sont les réponses PING ICMP ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le protocole ICMP (Internet Control message Protocol) est l'un des protocoles de la suite TCP/IP.
+
+Le `ICMP echo request` et le(`ICMP echo reply` les messages sont généralement appelés `ping` messages. `Ping` est un outil de dépannage utilisé par les administrateurs système pour tester manuellement la connectivité entre les périphériques réseau, ainsi que pour tester le retard du réseau et la perte de paquets. Le `ping` commande envoie un `ICMP echo request` sur un périphérique du réseau, et le périphérique répond immédiatement avec un(`ICMP echo reply`. Parfois, la politique de sécurité réseau d'une entreprise exige `ping` (`ICMP echo reply`) d'être désactivé sur tous les appareils pour les rendre plus difficiles à découvrir par des personnes non autorisées.

@@ -1,0 +1,37 @@
+---
+permalink: sm-support/view-iscsi-statistics-packages-support.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages 
+summary: Vous pouvez afficher les données relatives aux connexions iSCSI à votre matrice de stockage. 
+---
+= Afficher les modules de statistiques iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les données relatives aux connexions iSCSI à votre matrice de stockage.
+
+System Manager affiche ces types de statistiques iSCSI. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
+
+* *Ethernet MAC statistics* -- fournit des statistiques sur le contrôle d'accès aux médias (MAC). MAC fournit également un mécanisme d'adressage appelé l'adresse physique ou l'adresse MAC. L'adresse MAC est une adresse unique attribuée à chaque carte réseau. L'adresse MAC permet de livrer des paquets de données à une destination au sein du sous-réseau.
+* *Ethernet TCP/IP statistics* -- fournit des statistiques sur le TCP/IP, qui est le protocole TCP (transmission Control Protocol) et le protocole IP (Internet Protocol) du périphérique iSCSI. Avec TCP, les applications sur les hôtes en réseau peuvent créer des connexions entre elles, sur lesquelles elles peuvent échanger des données en paquets. L'IP est un protocole orienté données qui communique les données sur un interréseau commuté par paquets. Les statistiques IPv4 et IPv6 sont affichées séparément.
+* *Statistiques de la cible/de l'initiateur local (Protocole)* -- affiche les statistiques de la cible iSCSI, qui fournit un accès de niveau bloc à son support de stockage, et affiche les statistiques iSCSI de la matrice de stockage lorsqu'elle est utilisée comme initiateur dans les opérations de mise en miroir asynchrone.
+* *Statistiques sur les États opérationnels DCBX* -- affiche les États opérationnels des diverses fonctions d'échange de pontage de Data Center (DCBX).
+* *LLDP TLV statistics* -- affiche les statistiques TLV (Link Layer Discovery Protocol) Type Length Value (TLV).
+* *DCBX TLV statistics* -- affiche les informations qui identifient les ports hôtes de la matrice de stockage dans un environnement de pontage du datacenter (DCB). Ces informations sont partagées avec des pairs du réseau à des fins d'identification et de capacités.
+
+
+Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.
+
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Afficher les packages de statistiques iSCSI*.
+. Cliquez sur un onglet pour afficher les différents ensembles de statistiques.
+. Pour définir la ligne de base, cliquez sur *définir la nouvelle ligne de base*.
++
+La définition de la ligne de base définit un nouveau point de départ pour la collecte des statistiques. La même ligne de base est utilisée pour toutes les statistiques iSCSI.
+
+

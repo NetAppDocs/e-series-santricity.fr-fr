@@ -1,0 +1,40 @@
+---
+permalink: sm-hardware/unassign-hot-spares.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
+summary: Vous pouvez remplacer un disque de secours par un lecteur non affecté. 
+---
+= Annuler l'affectation des disques de secours
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez remplacer un disque de secours par un lecteur non affecté.
+
+Le disque de secours doit être en état optimal, Veille.
+
+Vous ne pouvez pas annuler l'affectation d'un disque de secours qui prend actuellement le relais pour un disque défectueux. Si le disque de secours n'est pas à l'état optimal, suivez les procédures Recovery Guru pour corriger les problèmes avant de tenter d'annuler l'affectation du disque.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Sélectionnez le disque de secours (affiché en rose) que vous souhaitez annuler.
++
+S'il y a des lignes diagonales à travers la baie de lecteur rose, le disque de secours est en cours d'utilisation et ne peut pas être non affecté.
+
++
+Le menu contextuel du lecteur s'ouvre.
+
+. Dans la liste déroulante du lecteur, sélectionnez *Annuler l'attribution du disque de secours*.
++
+La boîte de dialogue affiche tous les groupes de volumes concernés par la suppression de ce disque de secours et si d'autres disques de secours les protègent.
+
+. Confirmer l'opération déassigner.
+
+
+Le disque est renvoyé à non affecté (affiché en gris).

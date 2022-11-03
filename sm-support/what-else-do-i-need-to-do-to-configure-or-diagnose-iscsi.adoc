@@ -1,0 +1,103 @@
+---
+permalink: sm-support/what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, iscsi 
+summary: Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone. Les tableaux suivants répertorient les fonctions de System Manager que vous pouvez utiliser pour configurer et gérer ces sessions iSCSI. 
+---
+= Que dois-je faire d'autre pour configurer ou diagnostiquer l'iSCSI ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone. Les tableaux suivants répertorient les fonctions de System Manager que vous pouvez utiliser pour configurer et gérer ces sessions iSCSI.
+
+[NOTE]
+====
+Les paramètres iSCSI ne sont disponibles que si votre matrice de stockage prend en charge iSCSI.
+
+====
+
+
+== Configurez iSCSI
+
+[cols="1a,1a"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Gérer les paramètres iSCSI
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler vers le bas jusqu'à *Paramètres iSCSI* pour afficher toutes les fonctions de gestion.
+
+
+
+
+ a| 
+Configurez les ports iSCSI
+ a| 
+. Sélectionnez *matériel*.
+. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez un contrôleur.
+. Sélectionnez *configurer les ports iSCSI*.
+
+
+
+
+ a| 
+Définissez le secret CHAP de l'hôte
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres iSCSI*, puis sélectionnez *configurer l'authentification*.
+
+
+ou
+
+. Sélectionnez menu:Storage[hosts].
+. Sélectionnez un membre hôte.
+. Cliquez sur l'onglet Menu:Afficher/Modifier les paramètres[ports hôte].
+
+
+|===
+
+
+== Diagnostic iSCSI
+
+[cols="1a,1a"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Afficher ou mettre fin aux sessions iSCSI
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres iSCSI*, puis sélectionnez *Afficher/mettre fin aux sessions iSCSI*.
+
+
+ou
+
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Afficher/mettre fin aux sessions iSCSI*.
+
+
+
+
+ a| 
+Afficher les statistiques iSCSI
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres iSCSI*, puis sélectionnez *Afficher les packages de statistiques iSCSI*.
+
+
+ou
+
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Afficher les packages de statistiques iSCSI*.
+
+
+|===

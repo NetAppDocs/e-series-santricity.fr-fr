@@ -1,0 +1,40 @@
+---
+permalink: sm-storage/cancel-snapshot-image-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
+summary: 'Vous pouvez annuler une restauration active en cours (copie active des données), une restauration en attente (dans une file d"attente en attente de démarrage des ressources) ou une restauration interrompue en raison d"une erreur.' 
+---
+= Annuler le retour arrière de l'image instantanée
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez annuler une restauration active en cours (copie active des données), une restauration en attente (dans une file d'attente en attente de démarrage des ressources) ou une restauration interrompue en raison d'une erreur.
+
+Lorsque vous annulez une opération de restauration en cours, le volume de base revient à un état inutilisable et apparaît comme ayant échoué. Par conséquent, envisagez d'annuler une opération de restauration uniquement lorsque des options de restauration existent pour restaurer le contenu du volume de base.
+
+[NOTE]
+====
+Si le groupe d'instantanés sur lequel réside l'image instantanée comporte une ou plusieurs images d'instantané qui ont été automatiquement supprimées, il se peut que l'image d'instantané utilisée pour l'opération de restauration ne soit pas disponible pour les retours ultérieurs.
+
+====
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Cliquez sur l'onglet *Images snapshot*.
+. Sélectionnez le retour arrière actif ou suspendu, puis sélectionnez menu:Retour arrière[Annuler].
++
+La boîte de dialogue confirmer l'annulation de la restauration s'affiche.
+
+. Cliquez sur *Oui* pour confirmer.
+
+
+System Manager arrête l'opération de restauration. Le volume de base est utilisable, mais des données incohérentes ou non intactes peuvent être présentes.
+
+Après avoir annulé une opération de restauration, vous devez effectuer l'une des actions suivantes :
+
+* Réinitialiser le contenu du volume de base.
+* Effectuez une nouvelle opération de restauration pour restaurer le volume de base à l'aide de la même image snapshot que celle utilisée dans l'opération Annuler la restauration ou d'une image snapshot différente pour effectuer la nouvelle opération de restauration.
+

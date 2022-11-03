@@ -1,0 +1,22 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrading, drive, firmware 
+summary: Avant de mettre à niveau le micrologiciel de votre lecteur, tenez compte de ces éléments. 
+---
+= Que dois-je savoir avant de mettre à niveau le micrologiciel du lecteur ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de mettre à niveau le micrologiciel de votre lecteur, tenez compte de ces éléments.
+
+* Par mesure de précaution, sauvegardez vos données à l'aide de la sauvegarde disque à disque, de la copie de volume (vers un groupe de volumes non affecté par la mise à niveau du micrologiciel planifiée) ou d'un miroir distant.
+* Il est possible que vous ne souhaitiez mettre à niveau que quelques lecteurs pour tester le comportement du nouveau micrologiciel afin de vous assurer qu'il fonctionne correctement. Si le nouveau micrologiciel fonctionne correctement, mettez à niveau les lecteurs restants.
+* Si des disques défectueux sont défectueux, corrigez-les avant de lancer la mise à niveau du micrologiciel.
+* Si les disques peuvent effectuer une mise à niveau hors ligne, arrêtez l'activité d'E/S sur tous les volumes associés aux disques. Lorsque les E/S sont arrêtées, aucune opération de configuration associée à ces volumes ne peut avoir lieu.
+* Ne retirez aucun lecteur lors de la mise à niveau du micrologiciel du lecteur.
+* Ne modifiez pas la configuration de la matrice de stockage lors de la mise à niveau du micrologiciel du lecteur.
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-headroom-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, headroom, graph, show, performance, capability 
+summary: 'Le graphique marge est lié aux performances restantes pour les contrôleurs de baie de stockage. Ce graphique est visible sur la page d"accueil et sur l"onglet vue physique de la mosaïque Performance.' 
+---
+= Que montre le graphique marge ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le graphique marge est lié aux performances restantes pour les contrôleurs de baie de stockage. Ce graphique est visible sur la page d'accueil et sur l'onglet vue physique de la mosaïque Performance.
+
+Le graphique marge affiche la capacité de performances restante des objets physiques du système de stockage. Placez le curseur de la souris sur un point du graphique pour afficher les pourcentages d'IOPS et la capacité MIB/s restants pour le contrôleur A et pour le contrôleur B.

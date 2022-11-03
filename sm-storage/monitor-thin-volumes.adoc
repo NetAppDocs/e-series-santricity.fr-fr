@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/monitor-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, monitor, thin, volumes 
+summary: 'Vous pouvez surveiller les volumes fins en termes d"espace, puis générer des alertes appropriées afin d"éviter toute condition de capacité insuffisante.' 
+---
+= Surveiller les volumes fins
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez surveiller les volumes fins en termes d'espace, puis générer des alertes appropriées afin d'éviter toute condition de capacité insuffisante.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+[NOTE]
+====
+SANtricity System Manager ne permet pas de créer des volumes fins. Si vous souhaitez créer des volumes fins, utilisez l'interface de ligne de commande (CLI).
+
+====

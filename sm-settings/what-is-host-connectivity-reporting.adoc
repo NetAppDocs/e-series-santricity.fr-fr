@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/what-is-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host, connectivity, reporting, 
+summary: 'Lorsque le reporting sur la connectivité hôte est activé, la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d"interruption de la connexion.' 
+---
+= Qu'est-ce que le reporting sur la connectivité hôte ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque le reporting sur la connectivité hôte est activé, la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d'interruption de la connexion.
+
+La connexion peut être interrompue en cas de câble desserré, endommagé ou manquant, ou d'un autre problème avec l'hôte. Dans ces cas, le système peut ouvrir un message Recovery Guru :
+
+* *Redondance de l'hôte perdue* -- s'ouvre si l'un des contrôleurs ne peut pas communiquer avec l'hôte.
+* *Type d'hôte incorrect* -- s'ouvre si le type d'hôte n'est pas spécifié correctement sur la matrice de stockage, ce qui peut entraîner des problèmes de basculement.
+
+
+Vous pouvez désactiver le reporting de la connectivité hôte dans les situations où le redémarrage d'un contrôleur peut prendre plus de temps que le délai de connexion. La désactivation de cette fonction supprime les messages de récupération Gurus.
+
+[NOTE]
+====
+La désactivation de la fonction de génération de rapports sur la connectivité hôte désactive également l'équilibrage automatique de la charge, qui surveille et équilibre l'utilisation des ressources du contrôleur. Cependant, si vous réactivez le rapport de connectivité hôte, la fonction d'équilibrage automatique de la charge n'est pas réactivée automatiquement.
+
+====

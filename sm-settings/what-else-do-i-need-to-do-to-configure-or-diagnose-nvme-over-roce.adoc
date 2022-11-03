@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-roce.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, nvme, roce, 
+summary: Vous pouvez configurer et gérer NVMe over RoCE à partir des pages Hardware and Settings. 
+---
+= Que dois-je faire pour configurer ou diagnostiquer NVMe over RoCE ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer et gérer NVMe over RoCE à partir des pages Hardware and Settings.
+
+[NOTE]
+====
+Les paramètres NVMe over RoCE sont disponibles uniquement si le contrôleur de votre baie de stockage inclut un port NVMe over RoCE.
+
+====
+[cols="35h,~"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Configurez les ports NVMe over RoCE
+ a| 
+. Sélectionnez *matériel*.
+. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez un contrôleur.
+. Sélectionnez *configurer les ports NVMe over RoCE*.
+
+
+ou
+
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *NVMe over RoCE settings*, puis sélectionnez *Configure NVMe over RoCE ports*.
+
+
+
+
+ a| 
+Affichez les statistiques NVMe over Fabrics
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres NVMe over RoCE*, puis sélectionnez *Afficher les statistiques NVMe over Fabrics*.
+
+
+|===

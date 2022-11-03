@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-are-hosts-and-host-clusters.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts, clusters, server, 
+summary: 'Un hôte est un serveur qui envoie des E/S à un volume d"une baie de stockage. Un cluster hôte est un groupe d"hôtes. Vous créez un cluster hôte pour vous permettre d"attribuer facilement les mêmes volumes à plusieurs hôtes.' 
+---
+= Qu'est-ce que les hôtes et les clusters hôtes ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un hôte est un serveur qui envoie des E/S à un volume d'une baie de stockage. Un cluster hôte est un groupe d'hôtes. Vous créez un cluster hôte pour vous permettre d'attribuer facilement les mêmes volumes à plusieurs hôtes.
+
+Vous définissez un hôte séparément. Il peut s'agir d'une entité indépendante ou être ajouté à un cluster hôte. Vous pouvez affecter des volumes à un hôte individuel ou faire partie d'un cluster hôte qui partage l'accès à un ou plusieurs volumes avec d'autres hôtes du cluster hôte.
+
+Le cluster hôte est une entité logique que vous créez dans SANtricity System Manager. Vous devez ajouter des hôtes au cluster hôte avant de pouvoir affecter des volumes.

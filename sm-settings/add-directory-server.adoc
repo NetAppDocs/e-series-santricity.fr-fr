@@ -1,0 +1,171 @@
+---
+permalink: sm-settings/add-directory-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, directory, server, 
+summary: 'Pour configurer l"authentification pour Access Management, vous pouvez établir des communications entre la matrice de stockage et un serveur LDAP, puis mapper les groupes d"utilisateurs LDAP aux rôles prédéfinis de la baie.' 
+---
+= Ajouter un serveur d'annuaire LDAP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer l'authentification pour Access Management, vous pouvez établir des communications entre la matrice de stockage et un serveur LDAP, puis mapper les groupes d'utilisateurs LDAP aux rôles prédéfinis de la baie.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+* Les groupes d'utilisateurs doivent être définis dans votre service d'annuaire.
+* Les informations d'identification du serveur LDAP doivent être disponibles, y compris le nom de domaine, l'URL du serveur, et éventuellement le nom d'utilisateur et le mot de passe du compte BIND.
+* Pour les serveurs LDAPS utilisant un protocole sécurisé, la chaîne de certificats du serveur LDAP doit être installée sur votre ordinateur local.
+
+
+L'ajout d'un serveur de répertoires est un processus en deux étapes. Vous devez d'abord entrer le nom de domaine et l'URL. Si votre serveur utilise un protocole sécurisé, vous devez également télécharger un certificat d'autorité de certification pour l'authentification s'il est signé par une autorité de signature non standard. Si vous disposez d'informations d'identification pour un compte BIND, vous pouvez également saisir votre nom de compte d'utilisateur et votre mot de passe. Ensuite, vous associez les groupes d'utilisateurs du serveur LDAP aux rôles prédéfinis de la matrice de stockage.
+
+[NOTE]
+====
+Lors de la procédure d'ajout d'un serveur LDAP, l'interface de gestion héritée est désactivée. L'interface de gestion héritée (symbole) est une méthode de communication entre la baie de stockage et le client de gestion. Lorsque cette option est désactivée, la baie de stockage et le client de gestion utilisent une méthode de communication plus sécurisée (API REST via https).
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans l'onglet Services d'annuaire, sélectionnez *Ajouter un serveur d'annuaire*.
++
+La boîte de dialogue Ajouter un serveur de répertoire s'ouvre.
+
+. Dans l'onglet Paramètres du serveur, entrez les informations d'identification du serveur LDAP.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Paramètres de configuration*
+
+
+
+ a| 
+Domaine(s)
+ a| 
+Entrez le nom de domaine du serveur LDAP. Pour plusieurs domaines, entrez les domaines dans une liste séparée par des virgules. Le nom de domaine est utilisé dans le login (_username_@_domain_) pour spécifier le serveur de répertoire à authentifier.
+
+
+
+ a| 
+URL du serveur
+ a| 
+Saisissez l'URL d'accès au serveur LDAP sous la forme de `ldap[s]://*host*:*port*`.
+
+
+
+ a| 
+Télécharger le certificat (facultatif)
+ a| 
+
+NOTE: Ce champ apparaît uniquement si un protocole LDAPS est spécifié dans le champ URL du serveur ci-dessus.
+
+Cliquez sur *Parcourir* et sélectionnez un certificat d'autorité de certification à télécharger. Il s'agit du certificat ou de la chaîne de certificats sécurisés utilisés pour l'authentification du serveur LDAP.
+
+
+
+ a| 
+Lier un compte (facultatif)
+ a| 
+Entrez un compte utilisateur en lecture seule pour les requêtes de recherche sur le serveur LDAP et pour la recherche dans les groupes. Entrez le nom du compte au format LDAP. Par exemple, si l'utilisateur bind est appelé « bindacct », vous pouvez alors entrer une valeur telle que « CN=bindacct,CN=Users,DC=cpoc,DC=local ».
+
+
+
+ a| 
+Liaison du mot de passe (facultatif)
+ a| 
+
+NOTE: Ce champ s'affiche lorsque vous saisissez un compte de liaison ci-dessus.
+
+Saisissez le mot de passe du compte de liaison.
+
+
+
+ a| 
+Testez la connexion au serveur avant d'ajouter
+ a| 
+Cochez cette case pour vous assurer que la matrice de stockage peut communiquer avec la configuration du serveur LDAP que vous avez saisie. Le test se produit après avoir cliqué sur *Ajouter* en bas de la boîte de dialogue. Si cette case est cochée et que le test échoue, la configuration n'est pas ajoutée. Vous devez résoudre l'erreur ou désélectionner la case à cocher pour ignorer le test et ajouter la configuration.
+
+
+
+ a| 
+**Paramètres des privilèges**
+
+
+
+ a| 
+Rechercher un NA de base
+ a| 
+Entrez le contexte LDAP pour rechercher des utilisateurs, généralement sous la forme de `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Attribut de nom d'utilisateur
+ a| 
+Saisissez l'attribut lié à l'ID utilisateur pour l'authentification. Par exemple : `sAMAccountName`.
+
+
+
+ a| 
+Attribut de groupe\(s\)
+ a| 
+Entrez une liste d'attributs de groupe sur l'utilisateur, qui est utilisée pour le mappage groupe-rôle. Par exemple : `memberOf, managedObjects`.
+
+|===
+====
+. Cliquez sur l'onglet **Role Mapping**.
+. Attribuez des groupes LDAP aux rôles prédéfinis. Un groupe peut avoir plusieurs rôles attribués.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Mappages*
+
+
+
+ a| 
+DN du groupe
+ a| 
+Spécifiez le nom unique (DN) du groupe pour lequel le groupe d'utilisateurs LDAP doit être mappé. Les expressions régulières sont prises en charge. Ces caractères spéciaux d'expression régulière doivent être échappé avec une barre oblique inverse (`\`) s'ils ne font pas partie d'un modèle d'expression régulier : \.[]{}()<>*+-=!?^$|
+
+
+
+ a| 
+Rôles
+ a| 
+Cliquez dans le champ et sélectionnez l'un des rôles de la matrice de stockage à mapper sur le DN du groupe. Vous devez sélectionner individuellement chaque rôle que vous souhaitez inclure pour ce groupe. Le rôle de contrôle est requis en association avec les autres rôles pour se connecter à SANtricity System Manager. Les rôles mappés incluent les autorisations suivantes :
+
+** *Storage admin* -- accès en lecture/écriture complet aux objets de stockage (par exemple, volumes et pools de disques), mais pas d'accès à la configuration de sécurité.
+** *Security admin* -- accès à la configuration de sécurité dans Access Management, gestion des certificats, gestion du journal d'audit et possibilité d'activer ou de désactiver l'interface de gestion héritée (symbole).
+** *Support admin* -- accès à toutes les ressources matérielles de la baie de stockage, aux données de panne, aux événements MEL et aux mises à niveau du micrologiciel du contrôleur. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+** *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+|===
+====
++
+[NOTE]
+====
+Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrateur. System Manager ne fonctionnera pas correctement pour un utilisateur sans le rôle Monitor présent.
+
+====
+. Si vous le souhaitez, cliquez sur *Ajouter un autre mappage* pour entrer plus de mappages de groupe à rôle.
+. Lorsque vous avez terminé les mappages, cliquez sur *Ajouter*.
++
+Le système effectue une validation, en vous assurant que la matrice de stockage et le serveur LDAP peuvent communiquer. Si un message d'erreur s'affiche, vérifiez les informations d'identification saisies dans la boîte de dialogue et entrez-les à nouveau si nécessaire.
+
+

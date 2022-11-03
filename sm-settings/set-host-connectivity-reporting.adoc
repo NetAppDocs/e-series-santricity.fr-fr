@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/set-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
+summary: 'Vous pouvez activer le reporting sur la connectivité des hôtes afin que la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d"interruption de la connexion. Cette fonctionnalité est activée par défaut.' 
+---
+= Définissez les rapports sur la connectivité hôte
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez activer le reporting sur la connectivité des hôtes afin que la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d'interruption de la connexion. Cette fonctionnalité est activée par défaut.
+
+Si vous désactivez les rapports sur la connectivité hôte, le système ne surveille plus les problèmes de connectivité ou de pilote multivoie lorsqu'un hôte est connecté à la matrice de stockage.
+
+[NOTE]
+====
+La désactivation du reporting sur la connectivité hôte désactive également l'équilibrage automatique de la charge, qui surveille et équilibre l'utilisation des ressources du contrôleur.
+
+====
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Additional Settings*, puis cliquez sur *Enable/Disable Host Connectivity Reporting*.
++
+Le texte en dessous de cette option indique si elle est actuellement activée ou désactivée.
+
++
+Une boîte de dialogue de confirmation s'ouvre.
+
+. Cliquez sur *Oui* pour continuer.
++
+En sélectionnant cette option, vous basculez la fonction entre activé/désactivé.
+
+

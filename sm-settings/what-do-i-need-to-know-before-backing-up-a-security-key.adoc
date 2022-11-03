@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backing up, security, key, 
+summary: 'Si votre clé de sécurité d"origine est corrompue et que vous n"avez pas de sauvegarde, vous perdrez l"accès aux données des disques s"ils sont migrés d"une matrice de stockage à une autre.' 
+---
+= Que dois-je savoir avant de sauvegarder une clé de sécurité ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si votre clé de sécurité d'origine est corrompue et que vous n'avez pas de sauvegarde, vous perdrez l'accès aux données des disques s'ils sont migrés d'une matrice de stockage à une autre.
+
+Avant de sauvegarder une clé de sécurité, gardez les consignes suivantes à l'esprit :
+
+* Assurez-vous de connaître l'identifiant de clé de sécurité et la phrase de passe du fichier de clé d'origine.
++
+[NOTE]
+====
+Seules les clés internes utilisent des identifiants. Lorsque vous avez créé l'identificateur, des caractères supplémentaires ont été générés automatiquement et ajoutés aux deux extrémités de la chaîne d'identificateur. Les caractères générés garantissent que l'identificateur est unique.
+
+====
+* Vous créez une nouvelle phrase de passe pour la sauvegarde. Cette phrase de passe n'a pas besoin de correspondre à la phrase de passe utilisée lors de la création ou de la dernière modification de la clé d'origine. La phrase de passe est uniquement appliquée à la sauvegarde que vous créez.
++
+[NOTE]
+====
+La phrase de passe pour la sécurité des disques ne doit pas être confondue avec le mot de passe administrateur de la matrice de stockage. La phrase de passe pour la sécurité des disques protège les sauvegardes d'une clé de sécurité. Le mot de passe administrateur protège l'ensemble de la matrice de stockage contre tout accès non autorisé.
+
+====
+* Le fichier de la clé de sécurité de sauvegarde est téléchargé sur votre client de gestion. Le chemin du fichier téléchargé peut dépendre de l'emplacement de téléchargement par défaut de votre navigateur. Assurez-vous d'enregistrer l'emplacement de stockage de vos informations de clé de sécurité.
+

@@ -1,0 +1,19 @@
+---
+permalink: sm-hardware/what-should-i-do-after-configuring-the-management-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, management, ports, 
+summary: 'Si vous avez modifié l"adresse IP de la baie de stockage, vous pouvez mettre à jour la vue de la baie globale dans SANtricity Unified Manager.' 
+---
+= Que dois-je faire après avoir configuré les ports de gestion ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez modifié l'adresse IP de la matrice de stockage, vous pouvez mettre à jour la vue de la baie globale dans Unified Manager.
+
+Pour mettre à jour la vue de la baie globale dans Unified Manager, ouvrez l'interface et accédez au menu :Manage[Discover].
+
+Si vous utilisez toujours SANtricity Storage Manager, accédez à la fenêtre de gestion d'entreprise (EMW), où vous devez supprimer et réajouter la nouvelle adresse IP.

@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-is-security-capable-drive-security.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, secure-capable, drive, security 
+summary: 'La sécurité du lecteur est une fonction qui empêche tout accès non autorisé aux données sur les disques sécurisés lorsqu"ils sont retirés de la matrice de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).' 
+---
+= Qu'est-ce que la fonction de sécurité (Drive Security) ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sécurité du lecteur est une fonction qui empêche tout accès non autorisé aux données sur les disques sécurisés lorsqu'ils sont retirés de la matrice de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).

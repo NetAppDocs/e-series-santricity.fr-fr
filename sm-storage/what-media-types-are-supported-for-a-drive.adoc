@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-media-types-are-supported-for-a-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, media, types, supported, hdd, hard disk, ssd 
+summary: 'Les types de supports suivants sont pris en charge : disque dur et disque SSD.' 
+---
+= Quels types de supports sont pris en charge pour un lecteur ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les types de supports suivants sont pris en charge : disque dur et disque SSD.

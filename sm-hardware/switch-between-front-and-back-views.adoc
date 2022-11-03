@@ -1,0 +1,29 @@
+---
+permalink: sm-hardware/switch-between-front-and-back-views.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, front, back, views, shelves 
+summary: La page matériel peut afficher la vue avant ou la vue arrière des tiroirs. 
+---
+= Permet de basculer entre les vues avant et arrière
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page matériel peut afficher la vue avant ou la vue arrière des tiroirs.
+
+La vue arrière montre les contrôleurs/modules d'E/S et les blocs d'alimentation. La vue avant montre les lecteurs.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso*, en bas de la page.
+

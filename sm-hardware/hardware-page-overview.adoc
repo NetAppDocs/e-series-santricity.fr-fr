@@ -1,0 +1,72 @@
+---
+permalink: sm-hardware/hardware-page-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
+summary: 'La page matériel fournit une représentation graphique des composants physiques de la baie de stockage. À partir de là, vous pouvez vérifier l"état des composants et exécuter certaines fonctions associées à ces composants.' 
+---
+= Page matérielle et composants
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page matériel fournit une représentation graphique des composants physiques de la baie de stockage. À partir de là, vous pouvez vérifier l'état des composants et exécuter certaines fonctions associées à ces composants.
+
+
+
+== Tiroirs
+
+Un tiroir est un composant qui contient le matériel de la baie de stockage (contrôleurs, blocs d'alimentation/ventilateurs et lecteurs). Il existe deux types d'étagères :
+
+* *Tiroir contrôleur* -- contient les lecteurs, les blocs d'alimentation/de ventilation et les contrôleurs.
+* *Tiroir disque* (ou *tiroir d'extension*) -- contient des lecteurs, des blocs d'alimentation/de ventilation et deux modules d'entrée/sortie (IOM). Les IOM, également appelée modules de services environnementaux (ESM), incluent des ports SAS qui connectent le tiroir disque au tiroir contrôleur.
+
+
+Les tiroirs sont disponibles en trois tailles pour accueillir jusqu'à 12, 24 ou 60 disques. Chaque tiroir inclut un numéro d'ID, qui est attribué par le firmware du contrôleur. L'ID s'affiche en haut à gauche de la vue du tiroir.
+
+La vue des tiroirs de la page Hardware indique les composants avant ou arrière. Vous pouvez basculer entre les deux vues en sélectionnant *Afficher le verso de la tablette* ou *Afficher le recto de la tablette* dans le coin supérieur droit de la vue de la tablette. Vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso* en bas de la page. Les vues avant et arrière montrent les éléments suivants :
+
+* *Composants avant* -- lecteurs et baies de lecteur vides.
+* *Composants Back* -- contrôleurs et blocs d'alimentation/ventilateurs (pour les tiroirs de contrôleurs) ou blocs d'alimentation/ventilateurs (pour les tiroirs disques).
+
+
+Vous pouvez effectuer les fonctions suivantes associées aux tiroirs :
+
+* Allumez le feu de localisation du tiroir pour trouver l'emplacement physique du shelf dans l'armoire ou le rack.
+* Modifiez le numéro d'ID affiché en haut à gauche de la vue du tiroir.
+* Afficher les paramètres de tiroir, comme les types de disques installés et le numéro de série.
+* Déplacez les vues de tiroir vers le haut ou vers le bas pour qu'elles correspondent à l'organisation physique de la baie de stockage.
+
+
+
+
+== Contrôleurs
+
+Un contrôleur est une combinaison de matériel et de firmware qui implémente la matrice de stockage et les fonctions de gestion. Elle inclut la mémoire cache, la prise en charge des lecteurs et l'interface hôte.
+
+Vous pouvez effectuer les fonctions suivantes associées aux contrôleurs :
+
+* Configuration des ports de gestion pour les adresses IP et la vitesse
+* Configurez les connexions des hôtes iSCSI (si vous disposez d'hôtes iSCSI).
+* Configurez un serveur NTP (Network Time Protocol) et un serveur DNS (Domain Name System).
+* Afficher l'état et les paramètres du contrôleur
+* Permet aux utilisateurs de l'extérieur du réseau local de démarrer une session SSH et de modifier les paramètres sur le contrôleur.
+* Mettre le contrôleur hors ligne, en ligne ou en mode de service.
+
+
+
+
+== Disques
+
+La baie de stockage peut inclure des disques durs ou des SSD. Selon la taille du tiroir, il est possible d'installer jusqu'à 12, 24 ou 60 disques sur le shelf.
+
+Vous pouvez effectuer les fonctions suivantes relatives aux lecteurs :
+
+* Activez le voyant de localisation du disque afin de trouver l'emplacement physique du disque dans le shelf.
+* Afficher l'état et les paramètres du lecteur.
+* Ré-affectez un disque (remplacez logiquement un disque défectueux par un disque non affecté) et reconstruisez manuellement le disque si nécessaire.
+* Echec manuel d'un lecteur pour le remplacer. (Si un lecteur est défaillant, vous pouvez copier son contenu avant de le remplacer.)
+* Affecter ou annuler l'affectation de disques de rechange.
+* Effacer les lecteurs.
+

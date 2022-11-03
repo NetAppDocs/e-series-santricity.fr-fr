@@ -1,0 +1,58 @@
+---
+permalink: sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
+summary: 'Vous pouvez modifier le rôle entre les volumes d"une paire en miroir. Pour ce faire, vous pouvez rétrograder le volume principal au rôle secondaire ou promouvoir le volume secondaire au rôle principal.' 
+---
+= Changement de rôle entre les volumes d'une paire en miroir
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le rôle entre les volumes d'une paire en miroir. Pour ce faire, vous pouvez rétrograder le volume principal au rôle secondaire ou promouvoir le volume secondaire au rôle principal.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+Passez en revue les informations suivantes concernant l'opération de changement de rôle :
+
+* Lorsqu'un volume primaire est rétrogradé au rôle secondaire, le volume secondaire de cette paire en miroir est promu au rôle principal et inversement.
+* Lorsque le volume primaire est rétrogradé au rôle secondaire, les hôtes qui ont été affectés à ce volume n'ont plus accès en écriture à celui-ci.
+* Lorsque le volume secondaire est promu au rôle principal, tous les hôtes qui accèdent à ce volume peuvent désormais l'écrire.
+* Si la matrice de stockage locale ne parvient pas à communiquer avec la matrice de stockage distante, vous pouvez forcer le changement de rôle sur la matrice de stockage locale.
+
+
+
+
+== Forcer le changement de rôle
+
+Vous pouvez forcer un changement de rôle entre les volumes d'une paire en miroir lorsqu'un problème de communication entre la matrice de stockage locale et la matrice de stockage distante empêche la promotion du volume secondaire ou la rétrogradation du volume primaire.
+
+Vous pouvez forcer le volume du côté secondaire à passer au rôle principal. L'hôte de restauration peut alors accéder au volume nouvellement promu et les opérations commerciales peuvent se poursuivre.
+
+[NOTE]
+====
+Lorsque la matrice de stockage distante a été restaurée et que tout problème de communication a été résolu, une condition de conflit de volume primaire avec mise en miroir synchrone se produit. Les étapes de restauration incluent la resynchronisation des volumes. Utilisez le gourou de la restauration pour effectuer une restauration suite à cette erreur.
+
+====
+
+
+== Quand une promotion forcée est-elle autorisée et non autorisée ?
+
+La promotion forcée d'un volume dans une paire symétrique n'est pas autorisée dans les conditions suivantes :
+
+* L'un des volumes d'une paire en miroir est en cours de synchronisation initiale.
+* La paire en miroir est à l'état échec, rôle-changement-en-attente ou rôle-changement-en-cours ou en cas d'échec de l'un des volumes de capacité réservée associés.
+
+
+
+
+== Changement de rôle en cours
+
+Si deux baies de stockage dans une configuration de mise en miroir sont déconnectées, et que le volume principal d'une paire en miroir est réduit en force à un rôle secondaire, et que le volume secondaire d'une paire en miroir est promu par la force vers un rôle principal, Une fois la communication restaurée, les volumes des deux baies de stockage sont placés à l'état role-change-in-Progress.
+
+Le système termine le processus de modification de rôle en transférant les journaux de modification, en resynchronisant, en redéfinissant l'état de la paire en miroir à un état de fonctionnement normal et en continuant à synchroniser.

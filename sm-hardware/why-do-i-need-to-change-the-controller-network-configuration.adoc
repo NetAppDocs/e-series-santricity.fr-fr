@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, network, configuration, gateway, 
+summary: 'Vous devez définir la configuration réseau de chaque contrôleur (son adresse IP (Internet Protocol), son masque de sous-réseau (masque de sous-réseau) et sa passerelle) lorsque vous utilisez la gestion hors bande.' 
+---
+= Pourquoi dois-je modifier la configuration du réseau du contrôleur ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez définir la configuration réseau de chaque contrôleur (son adresse IP (Internet Protocol), le masque de sous-réseau (masque de sous-réseau) et la passerelle), lorsque vous utilisez la gestion hors bande.
+
+Vous pouvez définir la configuration du réseau à l'aide d'un serveur DHCP (Dynamic Host Configuration Protocol). Si vous n'utilisez pas de serveur DHCP, vous devez entrer la configuration du réseau manuellement.

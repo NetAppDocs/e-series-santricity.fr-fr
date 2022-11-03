@@ -1,0 +1,43 @@
+---
+permalink: um-manage/create-storage-array-group.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, storage, array, group 
+summary: Vous créez des groupes de stockage, puis ajoutez des matrices de stockage aux groupes. Le groupe de stockage définit les disques qui fournissent le stockage qui constitue le volume. 
+---
+= Configurer le groupe de matrices de stockage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous créez des groupes de stockage, puis ajoutez des matrices de stockage aux groupes.
+
+La configuration des groupes est une procédure en deux étapes.
+
+
+
+== Étape 1 : créer un groupe
+
+Vous commencez par créer un groupe. Le groupe de stockage définit les disques qui fournissent le stockage qui constitue le volume.
+
+.Étapes
+. Sur la page gérer, sélectionnez menu:gérer les groupes[Créer un groupe de matrices de stockage].
+. Dans le champ *Nom*, saisissez un nom pour le nouveau groupe.
+. Sélectionnez les matrices de stockage que vous souhaitez ajouter au nouveau groupe.
+. Cliquez sur *Créer*.
+
+
+
+
+== Étape 2 : ajouter une matrice de stockage au groupe
+
+Vous pouvez ajouter une ou plusieurs matrices de stockage à un groupe créé par l'utilisateur.
+
+.Étapes
+. Dans la vue principale, sélectionnez *gérer*, puis sélectionnez le groupe auquel vous souhaitez ajouter des matrices de stockage.
+. Sélectionnez menu:gérer les groupes[Ajouter des matrices de stockage au groupe].
+. Sélectionnez les matrices de stockage que vous souhaitez ajouter au groupe.
+. Cliquez sur *Ajouter.*
+

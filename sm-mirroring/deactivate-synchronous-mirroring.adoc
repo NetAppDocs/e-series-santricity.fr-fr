@@ -1,0 +1,31 @@
+---
+permalink: sm-mirroring/deactivate-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, deactivate, synchronous, mirroring, adapter, host, bus, 
+summary: 'Vous pouvez désactiver la fonction de mise en miroir synchrone sur une matrice de stockage pour rétablir l"utilisation normale du port hôte 4 de l"adaptateur de bus hôte (HBA), réservé à la transmission des données en miroir.' 
+---
+= Désactiver la mise en miroir synchrone
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez désactiver la fonction de mise en miroir synchrone sur une matrice de stockage pour rétablir l'utilisation normale du port hôte 4 de l'adaptateur de bus hôte (HBA), réservé à la transmission des données en miroir.
+
+Vous devez avoir supprimé toutes les relations de miroir synchrone. Vérifiez que toutes les paires mises en miroir ont été supprimées de la matrice de stockage.
+
+.Étapes
+. Menu sélection:stockage[mise en miroir synchrone].
+. Sélectionner menu:tâches rares[Désactiver].
++
+Le système affiche une confirmation.
+
+. Sélectionnez *Oui* pour confirmer.
+
+
+.Résultats
+* Le port hôte 4 de l'adaptateur de bus hôte du contrôleur, dédié aux communications de mise en miroir synchrone, peut désormais accepter les requêtes de lecture et d'écriture de l'hôte.
+* Les volumes de capacité réservés sur la matrice de stockage sont supprimés.
+

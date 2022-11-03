@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/nvme-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, nvme, 
+summary: 'Certains contrôleurs incluent un port pour l"implémentation du protocole NVMe (non-volatile Memory Express) over Fabrics. NVMe assure une communication hautes performances entre les hôtes et la baie de stockage.' 
+---
+= Présentation de NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Certains contrôleurs incluent un port pour l'implémentation du protocole NVMe (non-volatile Memory Express) over Fabrics. NVMe assure une communication hautes performances entre les hôtes et la baie de stockage.
+
+
+
+== Qu'est-ce que NVMe ?
+
+_NVM_ correspond à la mémoire non volatile et à la mémoire persistante utilisée dans de nombreux types de périphériques de stockage. _NVMe_ (NVM Express) est une interface ou un protocole normalisé spécialement conçu pour la communication multi-files hautes performances avec les périphériques NVM.
+
+
+
+== Qu'est-ce que NVMe over Fabrics ?
+
+_NVMe over Fabrics (NVMe-of)_ est une spécification technologique qui permet le transfert des commandes et des données basées sur des messages NVMe entre un ordinateur hôte et le stockage sur un réseau. Un hôte peut accéder à une baie de stockage NVMe (appelée « sous-système ») à l'aide d'une structure. Les commandes NVMe sont activées et encapsulées dans des couches d'abstraction de transport du côté de l'hôte et du côté du sous-système. Cela étend l'interface NVMe haute performance de bout en bout de l'hôte au stockage et standardise et simplifiant l'ensemble des commandes.
+
+Le stockage NVMe-of est présenté à un hôte comme un périphérique de stockage bloc local. Le volume (appelé _namespace_) peut être monté sur un système de fichiers comme n'importe quel autre périphérique de stockage bloc. Vous pouvez utiliser l'API REST, SMcli ou SANtricity System Manager pour provisionner le stockage selon vos besoins.
+
+
+
+== Qu'est-ce qu'un nom qualifié NVMe (NQN) ?
+
+Le nom qualifié NVMe (NQN) permet d'identifier la cible de stockage à distance. Le nom qualifié NVMe de la baie de stockage est toujours attribué par le sous-système et ne peut pas être modifié. Il n'existe qu'un seul nom qualifié NVMe pour l'ensemble de la baie. Le nom qualifié NVMe est limité à 223 caractères. Vous pouvez le comparer à un nom qualifié iSCSI.
+
+
+
+== Qu'est-ce qu'un espace de noms et un ID d'espace de noms ?
+
+Un namespace est l'équivalent d'une unité logique en SCSI, qui se rapporte à un volume de la baie. L'ID d'espace de noms (NSID) est équivalent à un numéro d'unité logique (LUN) dans SCSI. Vous créez le NSID au moment de la création de l'espace de noms et pouvez le définir sur une valeur comprise entre 1 et 255.
+
+
+
+== Qu'est-ce qu'un contrôleur NVMe ?
+
+Similaire à un SCSI I_T nexus, qui représente le chemin entre l'initiateur de l'hôte et la cible du système de stockage, un contrôleur NVMe créé lors du processus de connexion de l'hôte fournit un chemin d'accès entre un hôte et les espaces de noms de la baie de stockage. Un NQN pour l'hôte plus un identifiant de port hôte identifient un contrôleur NVMe de manière unique. Un contrôleur NVMe ne peut être associé qu'à un seul hôte, mais il peut accéder à plusieurs namespaces.
+
+Vous configurez les hôtes susceptibles d'accéder à quels espaces de noms et définissez l'ID d'espace de noms de l'hôte à l'aide de SANtricity System Manager. Ensuite, une fois le contrôleur NVMe créé, la liste des ID d'espace de noms accessibles par le contrôleur NVMe est créée et utilisée pour configurer les connexions autorisées.

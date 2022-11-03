@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/what-is-cache-flushing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, flushing, 
+summary: 'Lorsque la quantité de données non écrites dans le cache atteint un certain niveau, le contrôleur écrit régulièrement les données mises en cache sur un disque. Ce processus d"écriture est appelé vidage.' 
+---
+= Qu'est-ce que le vidage du cache ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque la quantité de données non écrites dans le cache atteint un certain niveau, le contrôleur écrit régulièrement les données mises en cache sur un disque. Ce processus d'écriture est appelé « rinçage ».
+
+Le contrôleur utilise deux algorithmes pour le vidage du cache : à la demande et selon l'âge. Le contrôleur utilise un algorithme basé sur la demande jusqu'à ce que la quantité de données mises en cache tombe en dessous du seuil de vidage du cache. Par défaut, un vidage commence lorsque 80 % du cache est utilisé.
+
+Dans System Manager, vous pouvez définir le seuil de "Démarrer la demande de vidage du cache" afin de prendre en charge au mieux le type d'E/S utilisé dans votre environnement. Dans un environnement principalement constitué d'opérations d'écriture, vous devez définir le pourcentage « `Démarrer la demande de vidage du cache' » élevé pour augmenter la probabilité que de nouvelles requêtes d'écriture puissent être traitées par le cache sans avoir à accéder au disque. Un pourcentage élevé limite le nombre de purges du cache afin que plus de données restent dans le cache, ce qui augmente le risque d'accès au cache.
+
+Dans un environnement où les E/S sont irrégulières (avec rafales de données), vous pouvez utiliser de faibles bouffées vasomotrices dans le cache afin que le système purge fréquemment les données en rafale. Dans un environnement d'E/S diversifié qui traite une variété de charges, ou lorsque le type de charges est inconnu, définir le seuil à 50 pour cent comme une bonne masse moyenne. Notez que si vous choisissez un pourcentage de départ inférieur à 80 %, vous pourriez constater une baisse des performances, car il se peut que les données requises pour une lecture d'hôte ne soient pas disponibles. Si vous choisissez un pourcentage inférieur, le nombre d'écritures sur le disque nécessaire au maintien du niveau du cache augmente, ce qui augmente la surcharge du système.
+
+L'algorithme basé sur l'âge spécifie la période pendant laquelle les données d'écriture peuvent rester dans le cache avant qu'elles ne puissent être transférées vers les disques. Les contrôleurs utilisent l'algorithme selon l'âge jusqu'à ce que le seuil de vidage du cache soit atteint. La valeur par défaut est de 10 secondes, mais cette période est comptabilisée uniquement pendant les périodes d'inactivité. Vous ne pouvez pas modifier le temps de vidage dans System Manager ; vous devez plutôt utiliser la commande *set Storage Array* dans l'interface de ligne de commande (CLI).
+
+[CAUTION]
+====
+*Perte de données possible* -- si vous activez l'option *mise en cache écriture sans piles* et ne disposez pas d'une alimentation universelle pour la protection, vous risquez de perdre des données. De plus, vous risquez de perdre des données si vous n'avez pas de batterie de contrôleur et que vous activez l'option *Write cache sans piles*.
+
+====

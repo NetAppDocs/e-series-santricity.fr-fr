@@ -1,0 +1,154 @@
+---
+permalink: sm-hardware/configure-iscsi-ports-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, iscsi, ports, 
+summary: Si votre contrôleur inclut une connexion hôte iSCSI, vous pouvez configurer les paramètres du port iSCSI à partir de la page matériel. 
+---
+= Configurez les ports iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si votre contrôleur inclut une connexion hôte iSCSI, vous pouvez configurer les paramètres du port iSCSI à partir de la page matériel.
+
+.Avant de commencer
+* Votre contrôleur doit inclure des ports iSCSI, sinon les paramètres iSCSI ne sont pas disponibles.
+* Vous devez connaître la vitesse du réseau (le taux de transfert de données entre les ports et l'hôte).
+
+
+[NOTE]
+====
+Les paramètres et fonctions iSCSI apparaissent uniquement si votre matrice de stockage prend en charge iSCSI.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur avec les ports iSCSI que vous souhaitez configurer.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *configurer les ports iSCSI*.
++
+[NOTE]
+====
+L'option *Configure iSCSI ports* apparaît uniquement si System Manager détecte des ports iSCSI sur le contrôleur.
+
+====
++
+La boîte de dialogue configurer les ports iSCSI s'ouvre.
+
+. Dans la liste déroulante, sélectionnez le port à configurer, puis cliquez sur *Suivant*.
+. Sélectionnez les paramètres du port de configuration, puis cliquez sur *Suivant*.
++
+Pour afficher tous les paramètres de port, cliquez sur le lien *Afficher plus de paramètres de port* à droite de la boîte de dialogue.
+
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Paramètre de port | Description 
+
+
+ a| 
+Vitesse du port ethernet configuré (apparaît uniquement pour certains types de cartes d'interface hôte)
+ a| 
+Sélectionnez la vitesse correspondant à la capacité de vitesse du SFP sur le port.
+
+
+
+ a| 
+Mode FEC (Forward Error correction) (correction d'erreur avant) (s'affiche uniquement pour certains types de cartes d'interface hôte)
+ a| 
+Si vous le souhaitez, sélectionnez l'un des modes FEC pour le port hôte spécifié.
+
+
+NOTE: Le mode Reed Solomon ne prend pas en charge la vitesse du port 25 Gbits/s.
+
+
+
+ a| 
+Activez IPv4 / Activer IPv6
+ a| 
+Sélectionnez une ou les deux options pour activer la prise en charge des réseaux IPv4 et IPv6.
+
+
+NOTE: Pour désactiver l'accès aux ports, décochez les deux cases.
+
+
+
+ a| 
+Port d'écoute TCP (disponible en cliquant sur *Afficher plus de paramètres de port*.)
+ a| 
+Si nécessaire, entrez un nouveau numéro de port.
+
+Le port d'écoute est le numéro de port TCP utilisé par le contrôleur pour écouter les connexions iSCSI provenant d'initiateurs iSCSI hôtes. Le port d'écoute par défaut est 3260. Vous devez entrer 3260 ou une valeur comprise entre 49152 et 65535.
+
+
+
+ a| 
+Taille MTU (disponible en cliquant sur *Afficher plus de paramètres de port*).
+ a| 
+Si nécessaire, entrez une nouvelle taille en octets pour l'unité de transmission maximale (MTU).
+
+La taille par défaut de l'unité de transmission maximale (MTU) est de 1500 octets par trame. Vous devez entrer une valeur comprise entre 1500 et 9000.
+
+
+
+ a| 
+Activer les réponses PING ICMP
+ a| 
+Sélectionnez cette option pour activer le protocole ICMP (Internet Control message Protocol). Les systèmes d'exploitation des ordinateurs en réseau utilisent ce protocole pour envoyer des messages. Ces messages ICMP déterminent si un hôte est accessible et combien de temps il faut pour obtenir des paquets depuis et vers cet hôte.
+
+|===
+====
++
+Si vous avez sélectionné *Activer IPv4*, une boîte de dialogue s'ouvre pour sélectionner les paramètres IPv4 après avoir cliqué sur *Suivant*. Si vous avez sélectionné *Activer IPv6*, une boîte de dialogue s'ouvre pour sélectionner les paramètres IPv6 après avoir cliqué sur *Suivant*. Si vous avez sélectionné les deux options, la boîte de dialogue des paramètres IPv4 s'ouvre en premier, puis après avoir cliqué sur *Suivant*, la boîte de dialogue des paramètres IPv6 s'ouvre.
+
+. Configurez les paramètres IPv4 et/ou IPv6, automatiquement ou manuellement. Pour afficher tous les paramètres de port, cliquez sur le lien *Afficher plus de paramètres* à droite de la boîte de dialogue.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Paramètre de port | Description 
+
+
+ a| 
+Obtention automatique de la configuration
+ a| 
+Sélectionnez cette option pour obtenir la configuration automatiquement.
+
+
+
+ a| 
+Spécifiez manuellement la configuration statique
+ a| 
+Sélectionnez cette option, puis entrez une adresse statique dans les champs. (Si vous le souhaitez, vous pouvez couper et coller des adresses dans les champs.) Pour IPv4, incluez le masque de sous-réseau réseau et la passerelle. Pour IPv6, incluez l'adresse IP routable et l'adresse IP du routeur.
+
+
+
+ a| 
+Activez la prise en charge VLAN (disponible en cliquant sur *Afficher plus de paramètres*).
+ a| 
+Sélectionnez cette option pour activer un VLAN et entrer son ID. Un VLAN est un réseau logique qui se comporte comme il est physiquement séparé des autres réseaux locaux (LAN) physiques et virtuels pris en charge par les mêmes commutateurs, les mêmes routeurs, ou les deux.
+
+
+
+ a| 
+Activez la priorité ethernet (disponible en cliquant sur *Afficher plus de paramètres*).
+ a| 
+Sélectionnez cette option pour activer le paramètre qui détermine la priorité d'accès au réseau. Utilisez le curseur pour sélectionner une priorité entre 1 (le plus faible) et 7 (le plus élevé).
+
+Dans un environnement de réseau local partagé (LAN), tel qu'Ethernet, de nombreuses stations peuvent se disputes l'accès au réseau. L'accès est le premier arrivé, premier servi. Deux stations peuvent essayer d'accéder au réseau en même temps, ce qui entraîne l'arrêt des deux stations et l'attente avant de réessayer. Ce processus est réduit pour l'Ethernet commuté, où une seule station est connectée à un port de commutateur.
+
+|===
+====
+. Cliquez sur *Terminer*.
+

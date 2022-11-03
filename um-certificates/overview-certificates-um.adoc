@@ -1,0 +1,38 @@
+---
+permalink: um-certificates/overview-certificates-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, certificate management 
+summary: 'La gestion des certificats vous permet de créer des demandes de signature de certificats (RSC), d"importer des certificats et de gérer des certificats existants.' 
+---
+= Présentation des certificats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La gestion des certificats vous permet de créer des demandes de signature de certificats (RSC), d'importer des certificats et de gérer des certificats existants.
+
+
+
+== Que sont les certificats ?
+
+_Certificates_ sont des fichiers numériques qui identifient des entités en ligne, telles que des sites Web et des serveurs, pour des communications sécurisées sur Internet. Il existe deux types de certificats : un certificat _signé_ est validé par une autorité de certification (CA) et un certificat _auto-signé_ est validé par le propriétaire de l'entité au lieu d'un tiers.
+
+En savoir plus :
+
+* link:how-certificates-work-unified.html["Fonctionnement des certificats"]
+* link:certificate-terminology-unified.html["Terminologie du certificat"]
+
+
+
+
+== Comment configurer les certificats ?
+
+Dans la gestion des certificats, vous pouvez configurer les certificats pour la station de gestion hébergeant Unified Manager et importer également des certificats pour les contrôleurs des matrices.
+
+En savoir plus :
+
+* link:use-ca-signed-certificate-um.html["Utiliser des certificats signés par l'autorité de certification pour le système de gestion"]
+* link:import-array-certificates-unified.html["Importer des certificats pour les tableaux"]
+

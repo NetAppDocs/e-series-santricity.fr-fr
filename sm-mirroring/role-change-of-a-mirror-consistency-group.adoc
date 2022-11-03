@@ -1,0 +1,66 @@
+---
+permalink: sm-mirroring/role-change-of-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
+summary: Vous pouvez modifier le rôle entre les paires en miroir dans un groupe de cohérence en miroir. Pour ce faire, vous pouvez rétrograder le groupe de cohérence miroir principal au rôle secondaire, ou promouvoir le groupe de cohérence miroir secondaire au rôle principal. 
+---
+= Changement de rôle d'un groupe de cohérence miroir
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le rôle entre les paires en miroir dans un groupe de cohérence en miroir. Pour ce faire, vous pouvez rétrograder le groupe de cohérence miroir principal au rôle secondaire, ou promouvoir le groupe de cohérence miroir secondaire au rôle principal.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+Passez en revue les informations suivantes concernant l'opération de changement de rôle :
+
+* Le changement de rôle affecte toutes les paires symétriques au sein du groupe de cohérence miroir sélectionné.
+* Lorsqu'un groupe de cohérence miroir est rétrogradé au rôle secondaire, toutes les paires mises en miroir de ce groupe de cohérence sont également rétrogradés au rôle secondaire, et inversement.
+* Lorsque le groupe de cohérence du miroir principal est rétrogradé au rôle secondaire, les hôtes qui ont été affectés aux volumes membres de ce groupe ne leur ont plus accès en écriture.
+* Lorsqu'un groupe de cohérence miroir est promu au rôle principal, tous les hôtes qui accèdent aux volumes membres de ce groupe peuvent désormais les écrire dans ce groupe.
+* Si la matrice de stockage locale ne parvient pas à communiquer avec la matrice de stockage distante, vous pouvez forcer le changement de rôle sur la matrice de stockage locale.
+
+
+
+
+== Forcer le changement de rôle
+
+Vous pouvez forcer un changement de rôle entre les groupes de cohérence miroir lorsqu'un problème de communication entre la matrice de stockage locale et la matrice de stockage distante empêche la promotion des volumes membres au sein du groupe de cohérence miroir secondaire ou la rétrogradation des volumes membres au sein du miroir primaire groupe.
+
+Vous pouvez forcer le groupe de cohérence miroir sur le côté secondaire à passer au rôle principal. L'hôte de restauration peut ensuite accéder aux volumes membres nouvellement promus au sein de ce groupe de cohérence miroir, et les opérations de l'entreprise peuvent continuer.
+
+
+
+== Quand une promotion forcée est-elle autorisée et non autorisée ?
+
+La promotion forcée d'un groupe de cohérence miroir n'est autorisée que si tous les volumes membres du groupe de cohérence miroir ont été synchronisés et ont des points de restauration cohérents.
+
+La promotion forcée d'un groupe de cohérence miroir n'est pas autorisée dans les conditions suivantes :
+
+* Tout volume membre d'un groupe de cohérence miroir est en cours de synchronisation initiale.
+* Aucun des volumes membres d'un groupe de cohérence miroir ne possède d'image instantanée du point de récupération (par exemple, en raison d'une erreur de capacité réservée complète).
+* Le groupe de cohérence miroir ne contient pas les volumes membres.
+* Le groupe de cohérence miroir est aux États échec, rôle-changement-en-attente ou rôle-changement-en-cours, ou si l'un des volumes membres associés ou de capacité réservée est en échec.
+
+
+
+
+== Conflit de rôle de groupe miroir
+
+Lorsqu'un problème de communication entre les matrices de stockage locales et distantes a été résolu, une condition de conflit de rôle de groupe miroir se produit. Utilisez le gourou de la restauration pour effectuer une restauration suite à cette erreur. Une promotion forcée n'est pas autorisée lors de la résolution d'un conflit de deux rôles.
+
+Pour éviter un conflit de rôle de groupe miroir et les étapes de restauration suivantes, attendez que la connexion entre les baies de stockage soit opérationnelle pour forcer le changement de rôle.
+
+
+
+== Changement de rôle en cours
+
+Si deux baies de stockage dans une configuration de mise en miroir sont déconnectées, et que le côté principal d'un groupe de cohérence miroir est réduit à un rôle secondaire, et que la partie secondaire d'un groupe de cohérence miroir est promue à son rôle principal, Une fois la communication restaurée, les groupes de cohérence miroir sur les deux baies de stockage sont placés dans l'état « role-change-in-Progress ».
+
+Le système termine le processus de modification de rôle en transférant les journaux de modification, en resynchronisant, en redéfinissant l'état du groupe de cohérence miroir à un état de fonctionnement normal et en continuant à synchroniser régulièrement.

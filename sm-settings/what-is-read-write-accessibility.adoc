@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/what-is-read-write-accessibility.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, read/write, accessibility, 
+summary: 'La fenêtre Drive Settings (Paramètres du lecteur) contient des informations sur les attributs Drive Security (sécurité du lecteur). Accessible en lecture/écriture est l’un des attributs qui s’affiche si les données d’un lecteur ont été verrouillées.' 
+---
+= Qu'est-ce que l'accessibilité en lecture/écriture ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fenêtre Drive Settings (Paramètres du lecteur) contient des informations sur les attributs Drive Security (sécurité du lecteur). « Accessible en lecture/écriture » est l'un des attributs qui s'affiche si les données d'un lecteur ont été verrouillées.
+
+Pour afficher les attributs de sécurité du lecteur, accédez à la page matériel. Sélectionnez un lecteur, cliquez sur *Afficher les paramètres*, puis sur *Afficher plus de paramètres*. En bas de la page, la valeur de l'attribut accessible en lecture/écriture est *Oui* lorsque le lecteur est déverrouillé. La valeur de l'attribut accessible en lecture/écriture est *non, clé de sécurité non valide* lorsque le lecteur est verrouillé. Vous pouvez déverrouiller un lecteur sécurisé en important une clé de sécurité (allez dans le menu Paramètres[système > déverrouiller les lecteurs sécurisés]).

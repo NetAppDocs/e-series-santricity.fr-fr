@@ -1,0 +1,29 @@
+---
+permalink: sm-hardware/turn-on-drive-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
+summary: 'À partir de la page matériel, vous pouvez activer le voyant de localisation pour trouver l"emplacement physique d"un lecteur dans la matrice de stockage.' 
+---
+= Allumer le feu de position de conduite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page matériel, vous pouvez activer le voyant de localisation pour trouver l'emplacement physique d'un lecteur dans la matrice de stockage.
+
+Vous pouvez localiser des lecteurs uniques ou multiples affichés sur la page matériel.
+
+.Étapes
+. Sélectionnez *matériel*.
+. Pour localiser un ou plusieurs lecteurs, effectuez l'une des opérations suivantes :
++
+** *Lecteur unique* -- dans le graphique de la tablette, recherchez le lecteur que vous souhaitez localiser physiquement dans la matrice. (Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du meuble*.) Cliquez sur le lecteur pour afficher son menu contextuel, puis sélectionnez *Activer le voyant de localisation*.
++
+Le témoin de localisation du lecteur s'allume. Une fois le lecteur physiquement localisé, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
+
+** *Lecteurs multiples* -- dans les champs de filtre, sélectionnez un type de lecteur physique dans la liste déroulante gauche et un type de lecteur logique dans la liste déroulante droite. Le nombre de disques correspondant à vos critères est indiqué à l'extrême droite des champs. Vous pouvez ensuite cliquer sur *Activer les voyants de localisation* ou sélectionner *localiser tous les lecteurs filtrés* dans le menu contextuel. Lorsque vous avez physiquement localisé les lecteurs, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
+
+
+

@@ -1,0 +1,56 @@
+---
+permalink: um-manage/discover-single-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
+summary: 'Utilisez l"option Ajouter/découvrir une baie de stockage unique pour détecter et ajouter manuellement une baie de stockage unique au réseau de votre entreprise.' 
+---
+= Découvrir une seule baie
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez l'option Add/Discover Single Storage Array pour détecter et ajouter manuellement une baie de stockage unique au réseau de votre entreprise.
+
+.Avant de commencer
+* La matrice de stockage doit être correctement installée et configurée.
+* Les mots de passe de la baie de stockage doivent être configurés à l'aide de la mosaïque Access Management de System Manager.
+
+
+.Étapes
+. Dans la page gérer, sélectionnez *Ajouter/découvrir*.
++
+La boîte de dialogue Ajouter/découvrir s'affiche.
+
+. Sélectionnez le bouton radio *découvrir une seule matrice de stockage*.
+. Entrez l'adresse IP de l'un des contrôleurs de la matrice de stockage, puis cliquez sur *Démarrer la détection*.
++
+La connexion de Unified Manager à la baie de stockage spécifiée peut prendre plusieurs minutes.
+
++
+[NOTE]
+====
+Le message matrice de stockage non accessible s'affiche lorsque la connexion à l'adresse IP du contrôleur spécifié a échoué.
+
+====
+. Si vous y êtes invité, résolvez les certificats auto-signés.
++
+Dans le cadre du processus de détection, le système vérifie que les matrices de stockage découvertes utilisent des certificats par une source fiable. S'il ne parvient pas à localiser un certificat numérique pour une matrice de stockage, il vous invite à résoudre le certificat qui n'est pas signé par une autorité de certification reconnue (CA) en ajoutant une exception de sécurité.
+
+. Si vous y êtes invité, résolvez tous les certificats non fiables.
++
+Des certificats non fiables se produisent lorsqu'une baie de stockage tente d'établir une connexion sécurisée à Unified Manager, mais que la connexion ne parvient pas à confirmer la sécurité. Résolvez les certificats non approuvés en important un certificat d'autorité de certification (CA) émis par un tiers de confiance.
+
+. Cliquez sur *Suivant*.
+. *Facultatif :* associez la matrice de stockage découverte à un groupe : dans la liste déroulante, sélectionnez le groupe à associer à la matrice de stockage.
++
+Le groupe « tous » est sélectionné par défaut.
+
+. Entrez le mot de passe administrateur de la matrice de stockage que vous souhaitez ajouter à votre domaine de gestion, puis cliquez sur *OK*.
+
+
+La matrice de stockage est ajoutée à Unified Manager et, si elle est spécifiée, elle est également ajoutée au groupe sélectionné.
+
+Si la collecte automatique des données de support est activée, les données de support sont automatiquement collectées pour une matrice de stockage que vous ajoutez.

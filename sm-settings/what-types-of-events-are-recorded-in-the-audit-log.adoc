@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/what-types-of-events-are-recorded-in-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, events, recorded, audit, log, 
+summary: 'Le journal d"audit peut enregistrer les événements de modification ou les événements de modification et de lecture seule.' 
+---
+= Quels types d'événements sont enregistrés dans le journal d'audit ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le journal d'audit peut enregistrer les événements de modification ou les événements de modification et de lecture seule.
+
+Selon les paramètres de la stratégie, les types d'événements suivants sont affichés :
+
+* *Événements de modification* -- actions de l'utilisateur depuis System Manager qui impliquent des modifications du système, telles que le provisionnement du stockage.
+* *Événements de modification et de lecture seule* -- actions utilisateur impliquant des modifications du système, ainsi que des événements impliquant l'affichage ou le téléchargement d'informations, tels que l'affichage des affectations de volume.
+

@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/take-action-on-a-copy-volume-operation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: 'Vous pouvez afficher une opération de copie de volume en cours et en cours d"arrêt, modifier la priorité, re-copier ou effacer une opération de copie de volume.' 
+---
+= Agir sur une opération de copie de volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher une opération de copie de volume en cours et en cours d'arrêt, modifier la priorité, re-copier ou effacer une opération de copie de volume.
+
+.Étapes
+. Sélectionner menu:Accueil [opérations de visualisation en cours].
++
+La boîte de dialogue opérations en cours s'affiche.
+
+. Recherchez l'opération Copier le volume sur laquelle vous souhaitez effectuer l'action, puis cliquez sur le lien dans la colonne *actions* pour effectuer l'une des actions suivantes.
++
+Lisez tous les textes de mise en garde fournis dans les boîtes de dialogue, en particulier lors de l'arrêt d'une opération.
+
++
+[cols="25h,~"]
+|===
+| Action | Description 
+
+
+ a| 
+Arrêter
+ a| 
+Vous pouvez arrêter une opération de copie de volume alors que l'opération est à l'état en cours, en attente ou en échec.
+
+Lorsque le volume de copie est arrêté, tous les hôtes mappés ont accès en écriture au volume source. Si les données sont écrites sur le volume source, les données du volume cible ne correspondent plus aux données du volume source.
+
+
+
+ a| 
+Changer la priorité
+ a| 
+Vous pouvez modifier la priorité d'une opération de copie de volume alors que l'opération est à l'état en cours pour sélectionner la vitesse à laquelle une opération de copie de volume se termine.
+
+
+
+ a| 
+Recopier
+ a| 
+Vous pouvez recréer un volume lorsque vous avez arrêté une opération de copie de volume et que vous souhaitez le redémarrer ou lorsqu'une opération de copie de volume a échoué ou a été interrompue. L'opération Copier le volume démarre depuis le début.
+
+L'action de copie écrase les données existantes sur le volume cible et échoue tous les volumes de snapshot associés au volume cible, le cas échéant.
+
+
+
+ a| 
+Clair
+ a| 
+Vous pouvez supprimer l'opération de copie de volume lorsque l'opération est à l'état en cours, en attente ou en échec.
+
+[NOTE]
+====
+Assurez-vous de vouloir effectuer cette opération avant de sélectionner *Effacer*. Il n'y a pas de boîte de dialogue de confirmation.
+
+====
+|===
+

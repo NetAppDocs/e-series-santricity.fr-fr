@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/edit-key-management-server-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
+summary: Si vous avez configuré la gestion externe des clés, vous pouvez afficher et modifier les paramètres du serveur de gestion des clés à tout moment. 
+---
+= Modifier les paramètres du serveur de gestion des clés
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez configuré la gestion externe des clés, vous pouvez afficher et modifier les paramètres du serveur de gestion des clés à tout moment.
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *gestion des clés de sécurité*, sélectionnez *Afficher/Modifier les paramètres du serveur de gestion des clés*.
+. Modifiez les informations dans les champs suivants :
++
+** *Adresse du serveur de gestion des clés* -- Entrez le nom de domaine complet ou l'adresse IP (IPv4 ou IPv6) du serveur utilisé pour la gestion des clés.
+** *Numéro de port de gestion des clés* -- Entrez le numéro de port utilisé pour les communications KMIP (Key Management Interoperability Protocol).
++
+*Facultatif:* vous pouvez inclure un autre serveur de clés en cliquant sur *Ajouter un serveur de clés*.
+
+
+
+. Cliquez sur *Enregistrer*.
+

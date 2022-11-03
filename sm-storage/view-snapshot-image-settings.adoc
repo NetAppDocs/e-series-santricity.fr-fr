@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/view-snapshot-image-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, snapshot, image, settings 
+summary: Vous pouvez afficher les propriétés, le statut, la capacité réservée et les objets associés affectés à chaque image snapshot. 
+---
+= Afficher les paramètres d'image de snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les propriétés, le statut, la capacité réservée et les objets associés affectés à chaque image snapshot.
+
+Les objets associés à une image Snapshot incluent le volume de base ou le groupe de cohérence Snapshot pour lequel cette image Snapshot est un point de restauration, le groupe de snapshots associé et tous les volumes de snapshot créés à partir de l'image Snapshot. Utilisez les paramètres de snapshot pour déterminer si vous souhaitez copier ou convertir l'image de snapshot.
+
+.Étapes
+. Sélectionnez menu:stockage[snapshots].
+. Cliquez sur l'onglet *Images snapshot*.
+. Sélectionnez l'image instantanée que vous souhaitez afficher, puis cliquez sur *Paramètres d'affichage*.
++
+La boîte de dialogue Paramètres d'image instantanée s'affiche.
+
+. Afficher les paramètres de l'image d'instantané.
+

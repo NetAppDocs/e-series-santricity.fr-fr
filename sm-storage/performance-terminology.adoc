@@ -1,0 +1,130 @@
+---
+permalink: sm-storage/performance-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, terms 
+summary: Découvrez les performances de votre baie de stockage. 
+---
+= Terminologie des performances
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez les performances de votre baie de stockage.
+
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+Client supplémentaire
+ a| 
+Une application est un programme logiciel, tel que SQL ou Exchange.
+
+
+
+ a| 
+CPU
+ a| 
+L'UC est courte pour l'unité de traitement centrale. CPU indique le pourcentage de la capacité de traitement de la baie de stockage utilisée.
+
+
+
+ a| 
+Hôte
+ a| 
+Un hôte est un serveur qui envoie des E/S à un volume d'une baie de stockage.
+
+
+
+ a| 
+D'IOPS
+ a| 
+Les IOPS sont des opérations d'entrée/sortie par seconde.
+
+
+
+ a| 
+Latence
+ a| 
+La valeur de latence correspond à l'intervalle de temps entre une requête, par exemple pour une commande de lecture ou d'écriture, et la réponse de l'hôte ou de la baie de stockage.
+
+
+
+ a| 
+LUN
+ a| 
+Un numéro d'unité logique (LUN) est le numéro attribué à l'espace d'adresse qu'un hôte utilise pour accéder à un volume. Le volume est présenté à l'hôte comme capacité sous la forme d'une LUN.
+
+Chaque hôte dispose de son propre espace d'adresse de LUN. Par conséquent, la même LUN peut être utilisée par différents hôtes pour accéder à différents volumes.
+
+
+
+ a| 
+Mio
+ a| 
+MIB est une abréviation de mebibyte (méga octet binaire). Un Mio est 220, ou 1,048,576 octets. Comparer avec Mo, ce qui signifie une valeur de base 10. Un Mo équivaut à 1,024 octets.
+
+
+
+ a| 
+Objet
+ a| 
+Un objet désigne un composant de stockage physique ou logique.
+
+Les objets logiques incluent les groupes de volumes, les pools et les volumes. Les objets physiques incluent la baie de stockage, les contrôleurs de baie, les hôtes et les disques.
+
+
+
+ a| 
+Piscine
+ a| 
+Un pool est un ensemble de disques regroupés de manière logique. Vous pouvez utiliser un pool pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes depuis un pool ou un groupe de volumes.)
+
+
+
+ a| 
+Lecture
+ a| 
+La lecture est courte pour « l'opération de lecture », qui se produit lorsque l'hôte demande des données à partir de la baie de stockage.
+
+
+
+ a| 
+Volumétrie
+ a| 
+Un volume est un conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Il s'agit du composant logique créé pour que l'hôte puisse accéder au stockage de la matrice de stockage.
+
+Un volume est créé en fonction de la capacité disponible dans un pool ou un groupe de volumes. Un volume a une capacité définie. Bien qu'un volume soit composé de plusieurs lecteurs, un volume apparaît comme un composant logique pour l'hôte.
+
+
+
+ a| 
+Nom du volume
+ a| 
+Un nom de volume est une chaîne de caractères affectée au volume lors de sa création. Vous pouvez accepter le nom par défaut ou fournir un nom plus descriptif indiquant le type de données stockées dans le volume.
+
+
+
+ a| 
+Groupe de volumes
+ a| 
+Un groupe de volumes est un conteneur pour les volumes aux caractéristiques partagées. Un groupe de volumes a une capacité et un niveau RAID définis. Vous pouvez utiliser un groupe de volumes pour créer un ou plusieurs volumes accessibles à un hôte. (Vous créez des volumes à partir d'un groupe de volumes ou d'un pool.)
+
+
+
+ a| 
+Charge de travail
+ a| 
+Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
+
+
+
+ a| 
+Écriture
+ a| 
+L'écriture est courte pour « opération d'écriture » lorsque les données sont envoyées par l'hôte vers la baie pour stockage.
+
+|===

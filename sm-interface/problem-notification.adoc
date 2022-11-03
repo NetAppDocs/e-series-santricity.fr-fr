@@ -1,0 +1,71 @@
+---
+permalink: sm-interface/problem-notification.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, notifications 
+summary: System Manager utilise des icônes et plusieurs autres méthodes pour vous informer que des problèmes existent avec la baie de stockage. 
+---
+= Aperçu des notifications de problèmes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager utilise des icônes et plusieurs autres méthodes pour vous informer que des problèmes existent avec la baie de stockage.
+
+
+
+== Icônes
+
+System Manager utilise ces icônes pour indiquer l'état de la matrice de stockage et de ses composants.
+
+[cols="1a,1a"]
+|===
+| Icône | Description 
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-success.gif[""]
+ a| 
+Optimale
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-failure.gif[""]
+ a| 
+Non optimal ou en panne
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-service.gif[""]
+ a| 
+Nécessite une attention ou une réparation
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-caution.gif[""]
+ a| 
+Avertissement
+
+|===
+System Manager affiche ces icônes à différents emplacements.
+
+* La zone Notifications de la page d'accueil affiche l'icône en échec et un message.
+* L'icône de la page d'accueil dans la zone de navigation affiche l'icône échec.
+* Sur la page composants, les graphiques des lecteurs et des contrôleurs affichent l'icône en panne.
+
+
+
+
+== Alertes et LED
+
+En outre, System Manager vous informe des problèmes de différentes manières.
+
+* System Manager envoie des notifications SNMP ou des e-mails d'erreur.
+* Les voyants d'action de service requis sur le matériel s'allument.
+
+
+Lorsque vous recevez une notification d'un problème, utilisez le gourou de la restauration pour vous aider à le résoudre. Si nécessaire, utilisez la documentation matérielle avec les étapes de reprise pour remplacer les composants défectueux.

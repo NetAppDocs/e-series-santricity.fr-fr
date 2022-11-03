@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/permissions-for-mapped-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, permissions, mapped, roles, 
+summary: 'Les fonctionnalités RBAC (contrôle d"accès basé sur des rôles) appliquées sur la baie de stockage incluent des profils utilisateur prédéfinis avec un ou plusieurs rôles qui leur sont mappés. Chaque rôle inclut des autorisations d"accès aux tâches dans SANtricity System Manager.' 
+---
+= Autorisations pour les rôles mappés
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les fonctionnalités RBAC (contrôle d'accès basé sur des rôles) appliquées sur la baie de stockage incluent des profils utilisateur prédéfinis avec un ou plusieurs rôles qui leur sont mappés. Chaque rôle inclut des autorisations d'accès aux tâches dans System Manager.
+
+Les profils utilisateur et les rôles mappés sont accessibles à partir du menu:Paramètres[Access Management > local User Roles] dans l'interface utilisateur de System Manager.
+
+Les rôles permettent à l'utilisateur d'accéder aux tâches comme suit :
+
+* *Storage admin* -- accès en lecture/écriture complet aux objets de stockage (par exemple, volumes et pools de disques), mais pas d'accès à la configuration de sécurité.
+* *Security admin* -- accès à la configuration de sécurité dans Access Management, gestion des certificats, gestion du journal d'audit et possibilité d'activer ou de désactiver l'interface de gestion héritée (symbole).
+* *Support admin* -- accès à toutes les ressources matérielles de la baie de stockage, aux données de panne, aux événements MEL et aux mises à niveau du micrologiciel du contrôleur. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+* *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+Si un utilisateur ne dispose pas des autorisations pour une tâche donnée, cette tâche est grisée ou ne s'affiche pas dans l'interface utilisateur.

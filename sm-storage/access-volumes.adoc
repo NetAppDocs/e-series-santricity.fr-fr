@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/access-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access volumes 
+summary: 'Un volume d"accès est un volume configuré en usine sur la matrice de stockage utilisé pour la communication avec la matrice de stockage et l"hôte via la connexion E/S de l"hôte. Le volume d"accès requiert un numéro d"unité logique (LUN).' 
+---
+= Accéder aux volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volume d'accès est un volume configuré en usine sur la matrice de stockage utilisé pour la communication avec la matrice de stockage et l'hôte via la connexion E/S de l'hôte. Le volume d'accès requiert un numéro d'unité logique (LUN).
+
+Le volume d'accès est utilisé dans deux instances :
+
+* *Création automatique d'hôte* -- le volume d'accès est utilisé par l'utilitaire HCA (Host Context Agent) pour transmettre les informations d'hôte (nom, ports, type d'hôte) à System Manager pour la création automatique d'hôte.
+* *Gestion intrabande* -- le volume d'accès est utilisé pour une connexion intrabande pour gérer la matrice de stockage. Cette opération ne peut être effectuée que si vous gérez la baie de stockage à l'aide de l'interface de ligne de commande.
++
+[NOTE]
+====
+La gestion intrabande n'est pas disponible pour les systèmes de stockage EF600 ou EF300.
+
+====
+
+
+Un volume d'accès est automatiquement créé lors de la première affectation d'un volume à un hôte. Par exemple, si vous affectez Volume_1 et Volume_2 à un hôte, trois volumes (Volume_1, Volume_2 et Access) s'affichent lorsque vous affichez les résultats de cette affectation.
+
+Si vous n'êtes pas en train de créer automatiquement des hôtes ou de gérer une baie de stockage en bande avec l'interface de ligne de commande, vous n'avez pas besoin du volume d'accès et vous pouvez libérer la LUN en supprimant le volume d'accès. Cette action supprime l'affectation de volume à LUN ainsi que toutes les connexions de gestion intrabande avec l'hôte.

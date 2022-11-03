@@ -1,0 +1,174 @@
+---
+permalink: sm-storage/view-performance-data-graphical.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, graphical, performance, 
+summary: Vous pouvez afficher les données de performances graphiques pour les objets logiques, les objets physiques, les applications et les workloads. 
+---
+= Affichez les données de performances graphiques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher les données de performances graphiques pour les objets logiques, les objets physiques, les applications et les workloads.
+
+Les graphiques de performances affichent des données historiques ainsi que des données en temps réel actuellement capturées. Une ligne verticale sur le graphique, appelée mise à jour en direct, distingue les données historiques des données en temps réel.
+
+*Affichage de la page d'accueil*
+
+La page d'accueil contient un graphique présentant les performances au niveau de la matrice de stockage. Vous pouvez sélectionner des mesures limitées dans cette vue ou cliquer sur *Afficher les détails de performances* pour sélectionner toutes les mesures disponibles.
+
+*Vue détaillée*
+
+Les graphiques disponibles dans la vue détaillée des performances sont répartis sous trois onglets :
+
+* *Logical View* -- affiche les données de performances des objets logiques regroupés par groupes de volumes et pools. Les objets logiques incluent les groupes de volumes, les pools et les volumes.
+* *Vue physique* -- affiche les données de performances du contrôleur, des canaux hôtes, des canaux de lecteur et des lecteurs.
+* *Applications et charges de travail Voir* -- affiche une liste d'objets logiques (volumes) regroupés en fonction des types d'applications et des charges de travail que vous avez définis.
+
+
+.Étapes
+. Sélectionnez *Accueil*.
+. Pour sélectionner une vue de niveau baie, cliquez sur le bouton IOPS, MIB/s ou CPU.
+. Pour plus de détails, cliquez sur *Afficher les détails de performance*.
+. Sélectionnez l'onglet *vue logique*, *vue physique* ou l'onglet *applications et charges de travail vue*.
++
+Selon le type d'objet, différents graphiques apparaissent dans chaque onglet.
+
++
+[cols="25h,~"]
+|===
+| Afficher les onglets | Données de performances affichées pour chaque type d'objet 
+
+
+ a| 
+Vue logique
+ a| 
+** *Storage array*: IOPS, MIB/s
+** *Pools* : latence, IOPS, MIB/s
+** *Groupes de volumes* : latence, IOPS, MIB/s
+** *Volumes* : latence, IOPS, MIB/s
+
+
+
+
+ a| 
+Vue physique
+ a| 
+** *Contrôleurs* : IOPS, MIB/s, CPU, marge
+** *Canaux hôtes* : latence, IOPS, MIB/s, marge
+** *Canaux de lecteur* : latence, IOPS, MIB/s
+** *Disques* : latence, IOPS, MIB/s
+
+
+
+
+ a| 
+Vue des applications et des charges de travail
+ a| 
+** *Storage array*: IOPS, MIB/s
+** *Applications* : latence, IOPS, MIB/s
+** *Workloads* : latence, IOPS, MIB/s
+** *Volumes* : latence, IOPS, MIB/s
+
+
+|===
+. Utilisez les options pour afficher les objets et les informations dont vous avez besoin.
++
+.Options
+====
+[cols="25h,~"]
+|===
+| Options d'affichage des objets | Description 
+
+
+ a| 
+Développez un tiroir pour afficher la liste des objets.
+ a| 
+_Tiroirs de navigation_ contiennent des objets de stockage, tels que des pools, des groupes de volumes et des lecteurs.
+
+Cliquez sur le tiroir pour afficher la liste des objets du tiroir.
+
+
+
+ a| 
+Sélectionnez les objets à afficher.
+ a| 
+Cochez la case à gauche de chaque objet pour choisir les données de performances à afficher.
+
+
+
+ a| 
+Utilisez filtre pour rechercher des noms d'objet ou des noms partiels.
+ a| 
+Dans la zone filtre, entrez le nom ou le nom partiel des objets à lister uniquement ces objets dans le tiroir.
+
+
+
+ a| 
+Cliquez sur *Actualiser les graphiques* après avoir sélectionné des objets.
+ a| 
+Après avoir sélectionné des objets dans les tiroirs, sélectionnez *Actualiser les graphiques* pour afficher les données graphiques des éléments que vous avez sélectionnés.
+
+
+
+ a| 
+Masquer ou afficher le graphique
+ a| 
+Sélectionnez le titre du graphique à masquer ou à afficher.
+
+|===
+====
+. Si nécessaire, utilisez les options supplémentaires pour afficher les données de performances.
++
+.Ou des options supplémentaires
+====
+[cols="25h,~"]
+|===
+| Option | Description 
+
+
+ a| 
+Délai
+ a| 
+Sélectionnez la durée que vous souhaitez afficher (5 minutes, 1 heure, 8 heures, 1 jour, 7 jours, ou 30 jours). La valeur par défaut est 1 heure.
+
+
+NOTE: Le chargement des données de performances sur une période de 30 jours peut prendre plusieurs minutes. Ne vous éloignez pas de la page Web, n'actualisez pas la page Web ou ne fermez pas le navigateur pendant le chargement des données.
+
+
+
+ a| 
+Détails du point de données
+ a| 
+Passez le curseur de la souris sur le graphique pour afficher les mesures d'un point de données particulier.
+
+
+
+ a| 
+Barre de défilement
+ a| 
+Utilisez la barre de défilement située sous le graphique pour afficher une période antérieure ou ultérieure.
+
+
+
+ a| 
+Barre de zoom
+ a| 
+Sous le graphique, faites glisser les poignées de la barre de zoom pour effectuer un zoom arrière sur une plage de temps. Plus la barre de zoom est large, moins les détails du graphique sont détaillés.
+
+Pour réinitialiser le graphique, sélectionnez l'une des options d'intervalle de temps.
+
+
+
+ a| 
+Glisser-déposer
+ a| 
+Sur le graphique, faites glisser le curseur d'un point dans le temps vers un autre pour effectuer un zoom avant sur une plage de temps.
+
+Pour réinitialiser le graphique, sélectionnez l'une des options d'intervalle de temps.
+
+|===
+====
+

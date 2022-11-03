@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/configure-syslog-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, syslog, server, alerts, 
+summary: 'Pour configurer les alertes syslog, vous devez entrer une adresse de serveur syslog et un port UDP. Jusqu"à cinq serveurs syslog sont autorisés.' 
+---
+= Configurer le serveur syslog pour les alertes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer les alertes syslog, vous devez entrer une adresse de serveur syslog et un port UDP. Jusqu'à cinq serveurs syslog sont autorisés.
+
+.Avant de commencer
+* L'adresse du serveur syslog doit être disponible. Cette adresse peut être un nom de domaine complet, une adresse IPv4 ou une adresse IPv6.
+* Le numéro de port UDP du serveur syslog doit être disponible. Ce port est généralement 514.
+
+
+Cette tâche décrit comment saisir l'adresse et le port du serveur syslog, puis tester l'adresse que vous avez saisie.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *Syslog*.
++
+Si un serveur syslog n'est pas encore défini, la page alertes affiche « Ajouter des serveurs Syslog ».
+
+. Cliquez sur *Ajouter des serveurs Syslog*.
++
+La boîte de dialogue Ajouter un serveur Syslog s'ouvre.
+
+. Entrez des informations pour un ou plusieurs serveurs syslog (maximum de cinq), puis cliquez sur *Ajouter*.
++
+** *Adresse du serveur* -- Entrez un nom de domaine complet, une adresse IPv4 ou une adresse IPv6.
+** *Port UDP* -- généralement, le port UDP pour syslog est 514. Le tableau affiche les serveurs syslog configurés.
+
+
+. Pour envoyer une alerte de test aux adresses du serveur, sélectionnez *Tester tous les serveurs Syslog*.
+
+
+Le moniteur d'événements envoie des alertes au serveur syslog lorsqu'un événement alertable se produit.

@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/why-would-i-want-to-manually-configure-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manually, configure, pool 
+summary: Les exemples suivants décrivent les raisons pour lesquelles vous souhaiteriez configurer manuellement un pool. 
+---
+= Pourquoi dois-je configurer manuellement un pool ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les exemples suivants décrivent les raisons pour lesquelles vous souhaiteriez configurer manuellement un pool.
+
+* Si vous avez plusieurs applications sur votre baie de stockage et que vous ne souhaitez pas les concurrencer pour les mêmes ressources de lecteur, vous pouvez envisager de créer manuellement un pool de plus petite taille pour une ou plusieurs applications.
++
+Vous pouvez attribuer seulement un ou deux volumes au lieu d'attribuer une charge de travail à un grand pool comportant de nombreux volumes sur lesquels répartir les données. La création manuelle d'un pool distinct dédié à la charge de travail d'une application spécifique permet aux opérations des baies de stockage d'être plus rapides, avec moins de conflits.
+
++
+Pour créer manuellement un pool : sélectionnez *Storage*, puis *pools et groupes de volumes*. Dans l'onglet toutes les capacités, cliquez sur menu:Créer [Pool].
+
+* S'il existe plusieurs pools de même type de lecteur, un message s'affiche indiquant que System Manager ne peut pas recommander automatiquement les disques d'un pool. Cependant, vous pouvez ajouter manuellement les lecteurs à un pool existant.
++
+Pour ajouter manuellement des disques à un pool existant : à partir de la page pools et groupes de volumes, sélectionnez le pool, puis cliquez sur *Ajouter capacité*.
+
+

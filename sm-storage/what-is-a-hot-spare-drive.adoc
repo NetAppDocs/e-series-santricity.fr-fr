@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/what-is-a-hot-spare-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drive 
+summary: 'Les disques de secours servent de disques de secours au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Il s"agit de lecteurs entièrement fonctionnels qui ne contiennent aucune donnée. Si un disque tombe en panne dans le groupe de volumes, le contrôleur reconstruit automatiquement les données du disque défectueux vers un disque de secours.' 
+---
+= Qu'est-ce qu'un disque de secours ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les disques de secours servent de disques de secours au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Il s'agit de lecteurs entièrement fonctionnels qui ne contiennent aucune donnée. Si un disque tombe en panne dans le groupe de volumes, le contrôleur reconstruit automatiquement les données du disque défectueux vers un disque de secours.
+
+Si un lecteur tombe en panne dans la matrice de stockage, le disque de secours est automatiquement remplacé par le disque défectueux sans nécessiter de remplacement physique. Si le disque de secours est disponible lorsqu'un disque tombe en panne, le contrôleur utilise les données de redondance pour reconstruire les données du disque défaillant vers le disque de secours.
+
+Un disque de secours n'est pas dédié à un groupe de volumes spécifique. À la place, vous pouvez utiliser un disque de secours pour tout disque défectueux de la baie de stockage de la même capacité ou de la même capacité. Un disque de secours doit être du même type de support (HDD ou SSD) que les lecteurs qu'il protège.
+
+[NOTE]
+====
+Les disques de secours ne sont pas pris en charge par les pools. Au lieu de disques de secours, les pools utilisent la capacité de conservation de chaque disque qui comprend le pool.
+
+====

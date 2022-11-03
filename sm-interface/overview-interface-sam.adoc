@@ -1,0 +1,97 @@
+---
+permalink: sm-interface/overview-interface-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: 'Vous naviguez dans l"interface principale pour accéder aux fonctionnalités et aux tâches de System Manager.' 
+---
+= Présentation de l'interface de System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager est une interface web qui permet de gérer une baie de stockage à partir d'une seule vue.
+
+
+
+== Page d'accueil
+
+La page d'accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d'accueil est le premier écran affiché.
+
+Le tableau de bord comprend quatre zones récapitulatives contenant des informations clés sur l'état et l'état de santé de votre baie de stockage. Vous trouverez plus d'informations dans la zone de résumé.
+
+[cols="25h,~"]
+|===
+| De service | Description 
+
+
+ a| 
+Notifications
+ a| 
+La zone Notifications affiche les notifications de problèmes indiquant l'état de la matrice de stockage et de ses composants. De plus, ce portlet affiche des alertes automatisées qui peuvent vous aider à résoudre les problèmes avant qu'ils n'affectent d'autres domaines de votre environnement de stockage.
+
+
+
+ a| 
+Performance
+ a| 
+La zone Performance vous permet de comparer et de comparer l'utilisation des ressources au fil du temps. Vous pouvez afficher les metrics de performances d'une baie de stockage pour le temps de réponse (IOPS), les taux de transfert (MIB/s) et la capacité de traitement utilisée (CPU).
+
+
+
+ a| 
+Puissance
+ a| 
+La zone capacité affiche un graphique indiquant la capacité allouée, la capacité de stockage disponible et la capacité de stockage non affectée dans votre baie de stockage.
+
+
+
+ a| 
+Hiérarchie du stockage
+ a| 
+La zone hiérarchie de stockage fournit une vue organisée des divers composants matériels et objets de stockage gérés par votre matrice de stockage. Cliquez sur la flèche de la liste déroulante pour effectuer une certaine action sur ce composant matériel ou objet de stockage.
+
+|===
+
+
+== Paramètres d'interface
+
+Vous pouvez modifier les préférences d'affichage et d'autres paramètres à partir de l'interface principale.
+
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+Afficher les préférences
+ a| 
+Modifiez les valeurs de capacité et le délai à partir du menu déroulant Préférences dans le coin supérieur droit de l'interface.
+
+
+
+ a| 
+Délais de connexion
+ a| 
+Configurez les délais de connexion pour que les sessions inactives des utilisateurs soient déconnectées au bout d'un délai spécifié.
+
+
+
+ a| 
+Aide
+ a| 
+Accédez à la documentation d'aide et aux autres ressources dans le menu déroulant situé dans le coin supérieur droit de l'interface.
+
+|===
+
+
+== Identifiants de connexion et mots de passe des utilisateurs
+
+L'utilisateur actuel connecté au système s'affiche en haut à droite de l'interface.
+
+Pour plus d'informations sur les utilisateurs et les mots de passe, voir :
+
+* link:administrator-password-protection.html["Définissez la protection par mot de passe de l'administrateur"]
+* link:../sm-settings/change-passwords.html["Modifier les mots de passe"]
+

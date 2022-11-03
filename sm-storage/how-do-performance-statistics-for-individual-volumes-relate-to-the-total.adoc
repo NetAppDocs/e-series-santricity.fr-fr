@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/how-do-performance-statistics-for-individual-volumes-relate-to-the-total.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, statistics, 
+summary: Les statistiques des pools et des groupes de volumes sont calculées par agréger tous les volumes, y compris les volumes à capacité réservée. 
+---
+= Comment les statistiques de performances de chaque volume sont-elles liées au total ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les statistiques des pools et des groupes de volumes sont calculées par agréger tous les volumes, y compris les volumes à capacité réservée.
+
+La capacité réservée est utilisée en interne par le système de stockage pour prendre en charge les volumes fins, les snapshots et la mise en miroir asynchrone, et n'est pas visible pour les hôtes d'E/S. Par conséquent, les statistiques de pool, de contrôleur et de matrice de stockage peuvent ne pas correspondre à la somme des volumes visibles.
+
+Toutefois, pour les statistiques relatives aux applications et aux charges de travail, seuls les volumes visibles sont agrégés.

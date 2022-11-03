@@ -1,0 +1,64 @@
+---
+permalink: sm-settings/overview-drive-security.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, system, security, key, management, 
+summary: La gestion des clés de sécurité est disponible à partir de la page système. 
+---
+= Présentation de la sécurité des lecteurs
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer la sécurité des lecteurs et la gestion des clés à partir de la page gestion des clés de sécurité.
+
+
+
+== Qu'est-ce que la sécurité du lecteur ?
+
+_Drive Security_ est une fonction qui empêche tout accès non autorisé aux données sur des lecteurs sécurisés lorsqu'ils sont retirés de la matrice de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard). Lorsque les disques FDE ou FIPS sont physiquement retirés de la baie, ils ne peuvent pas fonctionner tant qu'ils ne sont pas installés dans une autre baie. À ce stade, les disques sont verrouillés en sécurité jusqu'à ce que la clé de sécurité appropriée soit fournie. Une clé _Security_ est une chaîne de caractères partagée entre ces types de lecteurs et les contrôleurs d'une matrice de stockage.
+
+En savoir plus :
+
+* link:how-the-drive-security-feature-works.html["Fonctionnement de la fonction de sécurité du lecteur"]
+* link:how-security-key-management-works.html["Fonctionnement de la gestion des clés de sécurité"]
+* link:drive-security-terminology.html["Terminologie de sécurité des lecteurs"]
+
+
+
+
+== Comment configurer la gestion des clés ?
+
+Pour mettre en œuvre la sécurité des disques, vous devez avoir des disques FDE ou FIPS installés dans la baie. Pour configurer la gestion des clés de ces disques, accédez au menu:Paramètres[système > gestion des clés de sécurité] où vous pouvez créer une clé interne à partir de la mémoire persistante du contrôleur ou une clé externe à partir d'un serveur de gestion des clés. Enfin, vous activez la sécurité des disques pour les pools et les groupes de volumes en sélectionnant « sécurisé » dans les paramètres du volume.
+
+En savoir plus :
+
+* link:create-internal-security-key.html["Créer une clé de sécurité interne"]
+* link:create-external-security-key.html["Créer une clé de sécurité externe"]
+* link:../sm-storage/create-pool-manually.html["Créer le pool manuellement"]
+* link:../sm-storage/create-volume-group.html["Créer des groupes de volumes"]
+
+
+
+
+== Comment déverrouiller les lecteurs ?
+
+Si vous avez configuré la gestion des clés et que vous déplacez ensuite les disques sécurisés d'une matrice de stockage à une autre, vous devez réattribuer la clé de sécurité à la nouvelle matrice de stockage pour accéder aux données cryptées des lecteurs.
+
+En savoir plus :
+
+* link:unlock-drives-using-an-internal-security-key.html["Déverrouiller les disques lors de l'utilisation de la gestion interne des clés"]
+* link:unlock-drives-using-an-external-security-key.html["Déverrouillez les disques grâce à la gestion externe des clés"]
+
+
+
+
+== Informations associées
+
+En savoir plus sur les tâches liées à la gestion des clés :
+
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Utilisez des certificats signés par l'autorité de certification pour l'authentification avec un serveur de gestion des clés"]
+* link:back-up-security-key.html["Sauvegarder la clé de sécurité"]
+

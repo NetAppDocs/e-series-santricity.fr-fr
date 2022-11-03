@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/what-does-the-iops-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, iops, graph, show 
+summary: 'Le graphique Op E/S par sec affiche les statistiques des opérations d"entrée/sortie par seconde. Sur la page d"accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.' 
+---
+= Que montre le graphique IOPS ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le graphique Op E/S par sec affiche les statistiques des opérations d'entrée/sortie par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.
+
+IOPS est une abréviation de _Input/Output (E/S) Operations per second_. Positionnez le curseur de votre souris sur un point du graphique pour afficher les valeurs suivantes à cet endroit dans le temps :
+
+* Nombre d'opérations de lecture.
+* Nombre d'opérations d'écriture.
+* Total des opérations de lecture et d'écriture combinées.
+

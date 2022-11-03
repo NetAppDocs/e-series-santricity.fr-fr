@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: unified-manager/index.html 
+summary: 'La documentation du logiciel SANtricity vous permet d"installer, de configurer et de gérer votre baie de stockage.' 
+---
+= Gestion de plusieurs baies avec Unified Manager 5.3
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

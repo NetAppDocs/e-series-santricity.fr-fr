@@ -1,0 +1,62 @@
+---
+permalink: sm-hardware/replace-drive-logically-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, replace, drive, logically, 
+summary: 'Si un disque tombe en panne ou si vous souhaitez le remplacer pour une autre raison et que vous disposez d"un disque non affecté dans votre baie de stockage, vous pouvez remplacer de manière logique le disque défectueux par le disque non affecté. Si vous n"avez pas de lecteur non affecté, vous pouvez remplacer physiquement le lecteur.' 
+---
+= Remplacer l'entraînement logiquement
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si un disque tombe en panne ou que vous souhaitez le remplacer pour une autre raison, vous pouvez logiquement remplacer le disque défectueux par un disque non attribué ou un disque de rechange entièrement intégré.
+
+Lorsque vous remplacez logiquement un lecteur, il est affecté et est ensuite un membre permanent du pool ou du groupe de volumes associé.
+
+Vous utilisez l'option de remplacement logique pour remplacer les types de lecteurs suivants :
+
+* Disques défaillants
+* Disques manquants
+* Les disques SSD que le gourou de la restauration a averti que les systèmes approchent de leur fin de vie
+* Les disques durs que le Recovery Guru vous a informés d'une panne imminente du disque dur
+* Disques affectés (disponibles uniquement pour les disques d'un groupe de volumes, pas dans un pool)
+
+
+Le disque de remplacement doit présenter les caractéristiques suivantes :
+
+* Dans l'état optimal
+* Dans l'état non affecté
+* Les mêmes attributs que le lecteur remplacé (type de support, type d'interface, etc.)
+* Fonctionnalité FDE identique (recommandée, mais non requise)
+* La même capacité DA (recommandée, mais non requise)
+
+
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Cliquez sur le lecteur que vous souhaitez remplacer logiquement.
++
+Le menu contextuel du lecteur s'affiche.
+
+. Cliquez sur *logiquement replace*.
+. *Facultatif:* cochez la case *Fail drive after it is replace* pour faire échouer le disque d'origine après son remplacement.
++
+Cette case à cocher n'est activée que si le disque affecté à l'origine n'est pas défectueux ou manquant.
+
+. Dans la table *sélectionnez un lecteur de remplacement*, sélectionnez le lecteur de remplacement que vous souhaitez utiliser.
++
+Le tableau répertorie uniquement les lecteurs compatibles avec le lecteur que vous remplacez. Si possible, sélectionnez un disque qui protège les pertes de tiroirs et la perte de tiroirs.
+
+. Cliquez sur *remplacer*.
++
+Si le disque d'origine est défaillant ou manquant, les données sont reconstruites sur le disque de remplacement à l'aide des informations de parité. Cette reconstruction commence automatiquement. Les voyants de panne du lecteur s'éteignent et les voyants d'activité des lecteurs du pool ou du groupe de volumes clignotent.
+
++
+Si le lecteur d'origine n'est pas défectueux ou manquant, ses données sont copiées sur le lecteur de remplacement. Cette opération de copie commence automatiquement. Une fois l'opération de copie terminée, le système transfère le lecteur d'origine à l'état non affecté ou, si la case a été cochée, à l'état échec.
+
+

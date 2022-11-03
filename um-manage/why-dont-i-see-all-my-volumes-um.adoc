@@ -1,0 +1,22 @@
+---
+permalink: um-manage/why-dont-i-see-all-my-volumes-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, volumes missing 
+summary: Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles. 
+---
+= Pourquoi ne vois pas tous mes volumes ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes peuvent ne pas être éligibles pour les raisons suivantes :
+
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Pour la mise en miroir synchrone, les volumes primaires et secondaires d'une paire mise en miroir doivent être des volumes standard. Elles ne peuvent pas être de volumes fins ou de snapshot.
+* Pour la mise en miroir asynchrone, l'extension automatique des volumes thin doit être activée.
+

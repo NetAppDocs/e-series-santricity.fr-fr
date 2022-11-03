@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/which-registration-methods-are-automatically-supported-for-iscsi.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, registration, methods,  automatically, supported, iscsi, 
+summary: 'L"implémentation iSCSI prend en charge la méthode de découverte iSNS (Internet Storage Name Service) ou l"utilisation de la commande Envoyer les cibles.' 
+---
+= Quelles sont les méthodes d'enregistrement automatiquement prises en charge pour iSCSI ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'implémentation iSCSI prend en charge la méthode de découverte iSNS (Internet Storage Name Service) ou l'utilisation de la commande Envoyer les cibles.
+
+La méthode iSNS permet la découverte iSNS entre les initiateurs (hôtes iSCSI) et les cibles (contrôleurs). Vous enregistrez le contrôleur cible pour fournir au serveur iSNS le nom qualifié iSCSI (IQN) et les informations de port du contrôleur.
+
+Si vous ne configurez pas iSNS, l'hôte iSCSI peut envoyer la commande Envoyer les cibles au cours d'une session de découverte iSCSI. En réponse, le contrôleur renvoie les informations relatives au port (par exemple, l'IQN cible, l'adresse IP du port, le port d'écoute et le groupe de ports cible). Cette méthode de découverte n'est pas requise si vous utilisez iSNS, car l'initiateur hôte peut récupérer les adresses IP cibles du serveur iSNS.

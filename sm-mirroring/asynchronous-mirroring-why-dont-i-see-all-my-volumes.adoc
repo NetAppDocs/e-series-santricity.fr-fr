@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, volumes 
+summary: Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles. 
+---
+= Mise en miroir asynchrone - Pourquoi ne pas voir tous mes volumes ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes ne peuvent être admissibles pour aucune des raisons suivantes :
+
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Pour les volumes fins, l'extension automatique doit être activée.
+

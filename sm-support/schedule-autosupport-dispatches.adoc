@@ -1,0 +1,32 @@
+---
+permalink: sm-support/schedule-autosupport-dispatches.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
+summary: System Manager crée automatiquement un calendrier par défaut pour les interventions AutoSupport. Si vous préférez, vous pouvez spécifier votre propre horaire. 
+---
+= Planifiez des interventions AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager crée automatiquement un calendrier par défaut pour les interventions AutoSupport. Si vous préférez, vous pouvez spécifier votre propre horaire.
+
+La fonctionnalité AutoSupport doit être activée. Vous pouvez vérifier si elle est activée ou non sur la page AutoSupport.
+
+.Description de la tâche
+* *Heure quotidienne* -- les interventions quotidiennes sont collectées et envoyées chaque jour pendant la période que vous spécifiez. System Manager sélectionne une durée aléatoire dans la plage. Toutes les heures sont exprimées en heure universelle (UTC), elle peut être différente de l'heure locale de la baie de stockage. Vous devez convertir l'heure locale de la matrice de stockage en heure UTC.
+* *Jour hebdomadaire* -- les interventions hebdomadaires sont collectées et envoyées une fois par semaine. System Manager sélectionne un jour aléatoire parmi les jours que vous spécifiez. Désélectionnez les jours où vous ne souhaitez pas autoriser une intervention hebdomadaire. System Manager sélectionne un jour aléatoire parmi les jours que vous autorisez.
+* *Heure hebdomadaire* -- les interventions hebdomadaires sont collectées et envoyées une fois par semaine pendant la période spécifiée. System Manager sélectionne une durée aléatoire dans la plage. Toutes les heures sont exprimées en heure universelle (UTC), elle peut être différente de l'heure locale de la baie de stockage. Vous devez convertir l'heure locale de la matrice de stockage en heure UTC.
+
+
+.Étapes
+. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Sélectionnez *Programmer les dispatch AutoSupport*.
++
+L'assistant programmation des correctifs AutoSupport s'affiche.
+
+. Suivez les étapes de l'assistant.
+

@@ -1,0 +1,41 @@
+---
+permalink: um-manage/overview-import-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, settings 
+summary: 'Vous pouvez importer des paramètres d"une matrice de stockage à une autre, y compris des alertes, des AutoSupport et des services d"annuaire.' 
+---
+= Vue d'ensemble de l'importation des paramètres
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction Importer les paramètres vous permet d'effectuer une opération par lots pour importer les paramètres d'une matrice à plusieurs tableaux. Cette fonctionnalité permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.
+
+
+
+== Quels paramètres peuvent être importés ?
+
+Vous pouvez importer des méthodes d'alerte, des configurations AutoSupport, des services d'annuaire, des configurations de stockage (groupes de volumes et pools, par exemple) et des paramètres système (équilibrage automatique de la charge).
+
+En savoir plus :
+
+* link:how-import-settings-works.html["Fonctionnement des paramètres d'importation"]
+* link:requirements-for-replicating-storage-configurations.html["Conditions requises pour la réplication des configurations de stockage"]
+
+
+
+
+== Comment effectuer une importation par lots ?
+
+Sur une baie de stockage à utiliser comme source, ouvrez System Manager et configurez les paramètres souhaités. Ensuite, depuis Unified Manager, accédez à la page gérer et importez les paramètres vers une ou plusieurs baies.
+
+En savoir plus :
+
+* link:import-alert-settings.html["Importer les paramètres d'alerte"]
+* link:import-autosupport-settings.html["Importer les paramètres AutoSupport"]
+* link:import-directory-services-settings.html["Importer les paramètres des services d'annuaire"]
+* link:import-storage-configuration-settings.html["Importer les paramètres de configuration du stockage"]
+* link:import-system-settings.html["Importer les paramètres système"]
+

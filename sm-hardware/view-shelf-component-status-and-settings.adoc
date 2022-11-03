@@ -1,0 +1,126 @@
+---
+permalink: sm-hardware/view-shelf-component-status-and-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
+summary: 'La page matériel fournit l"état et les paramètres des composants du tiroir, y compris les alimentations, les ventilateurs et les batteries.' 
+---
+= Consultez l'état et les paramètres des composants du tiroir
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La page matériel fournit l'état et les paramètres des composants du tiroir, y compris les alimentations, les ventilateurs et les batteries.
+
+Les composants disponibles dépendent du type de tiroir :
+
+* *Tiroir disque* -- contient un ensemble de disques, de blocs d'alimentation/de ventilateurs, de modules d'entrée/sortie (IOM) et d'autres composants de support dans un seul tiroir.
+* *Tiroir contrôleur* -- contient un jeu de disques, un ou deux boîtiers de contrôleur, des blocs d'alimentation/de ventilation et d'autres composants de support dans un seul shelf.
+
+
+.Étapes
+. Sélectionnez *matériel*.
+. Sélectionnez la liste déroulante pour le tiroir contrôleur ou le tiroir disque, puis sélectionnez *View Settings*.
++
+La boîte de dialogue Shelf Components Settings s'ouvre, avec des onglets affichant l'état et les paramètres associés aux composants du tiroir. Selon le type d'étagère sélectionné, certains onglets décrits dans le tableau peuvent ne pas s'afficher.
+
++
+[cols="25h,~"]
+|===
+| Onglet | Description 
+
+
+ a| 
+Tiroir
+ a| 
+L'onglet *Shelf* affiche les propriétés suivantes :
+
+** *ID de tiroir* -- identifie de manière unique une étagère dans la matrice de stockage. Le firmware du contrôleur attribue ce numéro, mais vous pouvez le modifier en sélectionnant menu :Shelf[change ID].
+** *Redondance du chemin du tiroir* -- indique si les connexions entre le tiroir et le contrôleur ont d'autres méthodes en place (Oui) ou non (non).
+** *Types de lecteurs actuels* -- affiche le type de technologie intégrée aux lecteurs (par exemple, un lecteur SAS qui est sécurisé). S'il existe plusieurs types de lecteurs, les deux technologies sont affichées.
+** *Numéro de série* -- indique le numéro de série de la tablette.
+
+
+
+
+ a| 
+IOM (ESM)
+ a| 
+L'onglet *IOM (ESMS)* affiche l'état du module d'entrée/sortie (IOM), également appelé module de service environnemental (ESM). Il surveille l'état des composants d'un tiroir disque et sert de point de connexion entre le tiroir disque et le contrôleur.
+
+L'état peut être optimal, défectueux, optimal (Miswire) ou non certifié. Les autres informations incluent la version du micrologiciel et la version des paramètres de configuration.
+
+Sélectionnez *Afficher plus de paramètres* pour afficher les débits de données maximum et actuel, ainsi que l'état de la communication de la carte (Oui ou non).
+
+[NOTE]
+====
+Vous pouvez également consulter ce statut en sélectionnant l'icône IOM image:../media/sam1130-ss-hardware-iom-icon.gif[""], En regard de la liste déroulante étagère.
+
+====
+
+
+ a| 
+Blocs d'alimentation
+ a| 
+L'onglet *blocs d'alimentation* indique l'état du boîtier du bloc d'alimentation et de l'alimentation elle-même. L'état peut être optimal, échec, suppression ou Inconnu. Il indique également le numéro de référence de l'alimentation.
+
+[NOTE]
+====
+Vous pouvez également afficher cet état en sélectionnant l'icône alimentation image:../media/sam1130-ss-hardware-power-icon.gif[""], En regard de la liste déroulante étagère.
+
+====
+
+
+ a| 
+Ventilateurs
+ a| 
+L'onglet *fans* affiche l'état du boîtier du ventilateur et du ventilateur lui-même. L'état peut être optimal, échec, suppression ou Inconnu.
+
+[NOTE]
+====
+Vous pouvez également afficher cet état en sélectionnant l'icône ventilateur image:../media/sam1130-ss-hardware-fan-icon.gif[""], En regard de la liste déroulante étagère.
+
+====
+
+
+ a| 
+Température
+ a| 
+L'onglet *température* indique l'état de température des composants de l'étagère, tels que les capteurs, les contrôleurs et les boîtiers d'alimentation/ventilateur. L'état peut être optimal, la température nominale dépassée, la température maximale dépassée ou Inconnu.
+
+[NOTE]
+====
+Vous pouvez également afficher cet état en sélectionnant l'icône température image:../media/sam1130-ss-hardware-temp-icon.gif[""], En regard de la liste déroulante étagère.
+
+====
+
+
+ a| 
+Batteries
+ a| 
+L'onglet *batteries* indique l'état des batteries du contrôleur. L'état peut être optimal, échoué, supprimé ou inconnu. Les autres informations incluent l'âge de la batterie, les jours jusqu'au remplacement, les cycles d'apprentissage et les semaines entre les cycles d'apprentissage.
+
+[NOTE]
+====
+Vous pouvez également afficher cet état en sélectionnant l'icône batteries image:../media/sam1130-ss-hardware-battery-icon.gif[""], En regard de la liste déroulante étagère.
+
+====
+
+
+ a| 
+SFP
+ a| 
+L'onglet *SFP* affiche l'état des émetteurs-récepteurs SFP (Small Form-factor Pluggable) sur les contrôleurs. L'état peut être optimal, échoué ou inconnu.
+
+Sélectionnez *Afficher plus de paramètres* pour voir le numéro de pièce, le numéro de série et le fournisseur des SFP.
+
+[NOTE]
+====
+Vous pouvez également consulter ce statut en sélectionnant l'icône SFP image:../media/sam1130-ss-hardware-sfp-icon.gif[""], En regard de la liste déroulante étagère.
+
+====
+|===
+. Cliquez sur *Fermer*.
+

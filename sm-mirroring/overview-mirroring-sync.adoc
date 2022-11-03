@@ -1,0 +1,59 @@
+---
+permalink: sm-mirroring/overview-mirroring-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
+summary: La fonctionnalité de mise en miroir synchrone permet la réplication des données en ligne en temps réel entre les baies de stockage sur une distance distante. 
+---
+= Présentation de la mise en miroir synchrone
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonctionnalité de mise en miroir synchrone permet la réplication des données en ligne en temps réel entre les baies de stockage sur une distance distante.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+
+
+== Qu'est-ce que la mise en miroir synchrone ?
+
+_Synchronous Mirroring_ réplique les volumes de données en temps réel pour assurer une disponibilité continue. Les contrôleurs de baies de stockage gèrent la mise en miroir, qui est transparente pour les machines hôtes et les applications logicielles.
+
+Ce type de mise en miroir est idéal pour la continuité de l'activité telles que la reprise après incident.
+
+En savoir plus :
+
+* link:how-synchronous-mirroring-works.html["Fonctionnement de la mise en miroir synchrone"]
+* link:synchronous-mirroring-terminology.html["Terminologie de la mise en miroir synchrone"]
+* link:synchronous-mirroring-status.html["État de la mise en miroir synchrone"]
+* link:volume-ownership-sync.html["Propriété de volume"]
+* link:role-change-of-volumes-in-a-mirrored-pair.html["Changement de rôle entre les volumes d'une paire en miroir"]
+
+
+
+
+== Comment configurer la mise en miroir synchrone ?
+
+Vous devez utiliser l'interface Unified Manager pour effectuer la configuration initiale de mise en miroir entre les baies. Une fois configuré, vous pouvez gérer les paires en miroir dans System Manager.
+
+En savoir plus :
+
+* link:requirements-for-using-synchronous-mirroring.html["Requise pour l'utilisation de la mise en miroir synchrone"]
+* link:workflow-for-mirroring-a-volume-synchronously.html["Workflow de mise en miroir d'un volume de manière synchrone"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Création d'une paire mise en miroir synchrone (dans Unified Manager)"]
+
+
+
+
+== Informations associées
+
+En savoir plus sur les concepts liés à la mise en miroir synchrone :
+
+* link:synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html["Ce que vous devez savoir avant de créer une paire en miroir"]
+* link:how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html["La différence entre la mise en miroir asynchrone et la mise en miroir synchrone"]
+

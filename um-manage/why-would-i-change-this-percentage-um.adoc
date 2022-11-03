@@ -1,0 +1,20 @@
+---
+permalink: um-manage/why-would-i-change-this-percentage-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, change, percentage 
+summary: 'La capacité réservée est généralement de 20 % du volume de base pour les opérations de mise en miroir asynchrone. En général, cette capacité est suffisante.' 
+---
+= Pourquoi changer ce pourcentage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacité réservée est généralement de 20 % du volume de base pour les opérations de mise en miroir asynchrone. En général, cette capacité est suffisante.
+
+La capacité nécessaire varie, selon la fréquence et la taille des écritures d'E/S sur le volume de base et le temps d'utilisation du service de copie de l'objet de stockage. En général, choisissez un pourcentage plus élevé pour la capacité réservée si l'une ou les deux conditions suivantes existent :
+
+* Si la durée de vie d'une opération de service de copie d'un objet de stockage spécifique sera très longue.
+* Si un pourcentage élevé de blocs de données change sur le volume de base en raison d'une forte activité d'E/S. Utilisez l'historique des performances ou d'autres utilitaires du système d'exploitation pour déterminer les activités d'E/S types sur le volume de base.
+

@@ -1,0 +1,37 @@
+---
+permalink: um-manage/overview-manage-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, groups 
+summary: À partir de la page gérer les groupes, vous pouvez créer un ensemble de groupes de matrices de stockage pour faciliter la gestion. 
+---
+= Vue d'ensemble des groupes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page gérer les groupes, vous pouvez créer un ensemble de groupes de matrices de stockage pour faciliter la gestion.
+
+
+
+== Qu'est-ce qu'un groupe de baies ?
+
+Vous pouvez gérer votre infrastructure physique et virtualisée en regroupant un ensemble de baies de stockage. Vous pouvez regrouper les baies de stockage par groupe pour faciliter l'exécution des tâches de surveillance ou de reporting.
+
+Il existe deux types de groupes :
+
+* *All Group* -- le groupe All est le groupe par défaut et inclut toutes les matrices de stockage découvertes dans votre organisation. Le groupe tous est accessible depuis la vue principale.
+* *Groupe créé par l'utilisateur* -- Un groupe créé par l'utilisateur comprend les matrices de stockage que vous sélectionnez manuellement pour ajouter à ce groupe. Les groupes créés par l'utilisateur sont accessibles depuis la vue principale.
+
+
+
+
+== Comment configurer des groupes ?
+
+À partir de la page gérer les groupes, vous pouvez créer un groupe, puis ajouter des matrices à ce groupe.
+
+En savoir plus :
+
+* link:create-storage-array-group.html["Configurer le groupe de matrices de stockage"]
+

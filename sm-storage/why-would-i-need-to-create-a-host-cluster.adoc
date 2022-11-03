@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-would-i-need-to-create-a-host-cluster.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, cluster 
+summary: 'Si vous souhaitez que deux hôtes ou plus partagent l"accès au même ensemble de volumes, vous devez créer un cluster hôte. Normalement, chaque hôte est équipé d"un logiciel de mise en cluster installé sur lui afin de coordonner l"accès au volume.' 
+---
+= Pourquoi aurais-je besoin de créer un cluster hôte ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous souhaitez que deux hôtes ou plus partagent l'accès au même ensemble de volumes, vous devez créer un cluster hôte. Normalement, chaque hôte est équipé d'un logiciel de mise en cluster installé sur lui afin de coordonner l'accès au volume.

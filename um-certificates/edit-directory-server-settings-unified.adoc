@@ -1,0 +1,150 @@
+---
+permalink: um-certificates/edit-directory-server-settings-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, edit, directory, server, settings, role, mappings 
+summary: 'Si vous avez déjà configuré un serveur d"annuaire dans Access Management, vous pouvez modifier ses paramètres à tout moment. Les paramètres incluent les informations de connexion du serveur et les mappages de groupe à rôle.' 
+---
+= Modifier les paramètres du serveur d'annuaire et les mappages de rôles
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous avez déjà configuré un serveur d'annuaire dans Access Management, vous pouvez modifier ses paramètres à tout moment. Les paramètres incluent les informations de connexion du serveur et les mappages de groupe à rôle.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+* Un serveur d'annuaire doit être défini.
+
+
+.Étapes
+. Sélectionnez *Access Management*.
+. Sélectionnez l'onglet *Services Annuaire*.
+. Si plusieurs serveurs sont définis, sélectionnez le serveur que vous souhaitez modifier dans la table.
+. Sélectionnez *Afficher/Modifier les paramètres*.
++
+La boîte de dialogue Paramètres du serveur d'annuaire s'ouvre.
+
+. Dans l'onglet *Paramètres du serveur*, modifiez les paramètres souhaités.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Paramètres de configuration*
+
+
+
+ a| 
+Domaine(s)
+ a| 
+Nom(s) de domaine du ou des serveurs LDAP. Pour plusieurs domaines, entrez les domaines dans une liste séparée par des virgules. Le nom de domaine est utilisé dans le login (_username_@_domain_) pour spécifier le serveur de répertoire à authentifier.
+
+
+
+ a| 
+URL du serveur
+ a| 
+URL d'accès au serveur LDAP sous la forme de `ldap[s]://host:port`.
+
+
+
+ a| 
+Lier un compte (facultatif)
+ a| 
+Le compte utilisateur en lecture seule pour rechercher des requêtes sur le serveur LDAP et pour effectuer des recherches dans les groupes.
+
+
+
+ a| 
+Liaison du mot de passe (facultatif)
+ a| 
+Mot de passe du compte BIND. (Ce champ s'affiche lorsqu'un compte de liaison est saisi.)
+
+
+
+ a| 
+Testez la connexion au serveur avant d'enregistrer
+ a| 
+Vérifie que le système peut communiquer avec la configuration du serveur LDAP. Le test se produit après avoir cliqué sur *Enregistrer*. Si cette case est cochée et que le test échoue, la configuration n'est pas modifiée. Vous devez résoudre l'erreur ou décocher la case pour ignorer le test et modifier de nouveau la configuration.
+
+
+
+ a| 
+*Paramètres des privilèges*
+
+
+
+ a| 
+Rechercher un NA de base
+ a| 
+Contexte LDAP pour rechercher des utilisateurs, généralement sous la forme de `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Attribut de nom d'utilisateur
+ a| 
+Attribut lié à l'ID utilisateur pour l'authentification. Par exemple :
+`sAMAccountName`.
+
+
+
+ a| 
+Attribut(s) de groupe
+ a| 
+Liste des attributs de groupe sur l'utilisateur, qui est utilisée pour le mappage groupe-rôle. Par exemple :
+`memberOf, managedObjects`.
+
+|===
+====
+. Dans l'onglet *Role Mapping*, modifiez le mappage souhaité.
++
+.Détails du champ
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Mappages*
+
+
+
+ a| 
+DN du groupe
+ a| 
+Nom de domaine du groupe d'utilisateurs LDAP à mapper. Les expressions régulières sont prises en charge. Ces caractères spéciaux d'expression régulière doivent être échappé avec une barre oblique inverse (\) s'ils ne font pas partie d'un modèle d'expression régulier :
+
+\.[]{}()<>*+-=!?^$|
+
+
+
+ a| 
+Rôles
+ a| 
+Rôles à mapper sur le DN du groupe. Vous devez sélectionner individuellement chaque rôle que vous souhaitez inclure pour ce groupe. Le rôle de contrôle est requis en association avec les autres rôles pour se connecter à SANtricity Unified Manager. Les rôles incluent les éléments suivants :
+
+** *Storage admin* -- accès en lecture/écriture complet aux objets de stockage sur les baies, mais pas à la configuration de sécurité.
+** *Security admin* -- accès à la configuration de sécurité dans Access Management et Certificate Management.
+** *Support admin* -- accès à toutes les ressources matérielles sur les matrices de stockage, aux données de panne et aux événements MEL. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+** *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+|===
+====
++
+
+NOTE: Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrateur.
+
+. Si vous le souhaitez, cliquez sur *Ajouter un autre mappage* pour entrer plus de mappages de groupe à rôle.
+. Cliquez sur *Enregistrer*.
+
+
+Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.

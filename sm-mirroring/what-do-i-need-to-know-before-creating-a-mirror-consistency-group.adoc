@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirror, consistency, group, 
+summary: Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir. 
+---
+= Que dois-je savoir avant de créer un groupe de cohérence miroir ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir.
+
+[NOTE]
+====
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+
+====
+Vous créez un groupe de cohérence dans Unified Manager dans l'assistant de création de paires en miroir.
+
+Voici les conditions requises pour Unified Manager :
+
+* Le service Web Services Proxy doit être en cours d'exécution.
+* Unified Manager doit s'exécuter sur votre hôte local via une connexion HTTPS.
+* Unified Manager doit afficher des certificats SSL valides pour la matrice de stockage. Vous pouvez accepter un certificat auto-signé ou installer votre propre certificat de sécurité à l'aide d'Unified Manager et accéder au menu :Certificate[Certificate Management].
+
+
+Assurez-vous également de répondre aux exigences suivantes pour les baies de stockage :
+
+* Les deux baies de stockage doivent être découvertes dans Unified Manager.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vos baies de stockage locales et distantes sont connectées via une structure Fibre Channel ou une interface iSCSI.
+

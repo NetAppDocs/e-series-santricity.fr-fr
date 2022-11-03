@@ -1,0 +1,41 @@
+---
+permalink: sm-support/overview-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, event, log 
+summary: Utilisez le journal des événements pour afficher un historique des changements et événements survenus sur la baie de stockage. 
+---
+= Présentation du journal des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le journal des événements fournit un rapport historique des événements survenus sur la baie de stockage, ce qui aide le support technique dans le cadre d'événements de dépannage entraînant des défaillances.
+
+Vous pouvez utiliser le journal des événements comme outil de diagnostic supplémentaire du Recovery Guru pour le suivi des événements de la matrice de stockage. Référez-vous toujours au gourou de la restauration lorsque vous tentez de récupérer des pannes de composants dans la baie de stockage.
+
+
+
+== Catégories d'événements
+
+Les événements du journal des événements sont classés selon la catégorie des États. Les événements sur lesquels vous devez prendre des mesures ont les États suivants :
+
+* Primordial
+* Avertissement
+
+
+Les événements à titre informatif et ne nécessitant aucune action immédiate sont les suivants :
+
+* Informatif
+
+
+
+
+== Événements critiques
+
+Les événements critiques indiquent un problème au niveau de la baie de stockage. Si vous résolvez immédiatement l'événement critique, vous risquez d'éviter toute perte d'accès aux données.
+
+Lorsqu'un événement critique se produit, il est consigné dans le journal des événements. Tous les événements critiques sont envoyés à la console de gestion SNMP ou au destinataire que vous avez configuré pour recevoir des notifications d'alerte. Si l'ID du tiroir n'est pas connu au moment de l'événement, l'ID du tiroir est indiqué par « tiroir inconnu ».
+
+Lorsque vous recevez un événement critique, reportez-vous à la procédure Recovery Guru qui décrit la description détaillée de l'événement critique. Suivez la procédure Recovery Guru pour corriger les événements stratégiques. Pour corriger certains événements critiques, contactez le support technique.

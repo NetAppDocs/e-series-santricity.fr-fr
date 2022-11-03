@@ -1,0 +1,73 @@
+---
+permalink: sm-hardware/limit-the-drive-view.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
+summary: 'Si la matrice de stockage inclut des lecteurs avec différents types d"attributs physiques et logiques, la page matériel fournit des champs de filtre qui vous aident à limiter l"affichage du lecteur et à localiser des lecteurs spécifiques.' 
+---
+= Limiter la vue de conduite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si la matrice de stockage inclut des lecteurs avec différents types d'attributs physiques et logiques, la page matériel fournit des champs de filtre qui vous aident à limiter l'affichage du lecteur et à localiser des lecteurs spécifiques.
+
+Les filtres de lecteur peuvent limiter la vue à certains types de lecteurs physiques (par exemple, tous les disques SAS), avec certains attributs de sécurité (par exemple, les disques sécurisés), à certains emplacements logiques (par exemple, le groupe de volumes 1). Vous pouvez utiliser ces filtres ensemble ou séparément.
+
+[NOTE]
+====
+Si tous les lecteurs partagent les mêmes attributs physiques, le champ de filtre *Afficher les lecteurs qui sont...* n'apparaît pas. Si tous les lecteurs partagent les mêmes attributs logiques, *Anywhere dans le champ filtre de la matrice de stockage* n'apparaît pas.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Dans le premier champ de filtre (sous *Afficher les lecteurs qui sont...*), cliquez sur la flèche déroulante pour afficher les types de lecteurs disponibles et les attributs de sécurité.
++
+Les types de disques peuvent inclure :
+
++
+** Type de support de disque (SSD, HDD)
+** Type d'interface de disque
+** Capacité des disques (maximale à minimale)
+** La vitesse de disque (la plus élevée à la plus basse) peut inclure les attributs de sécurité suivants :
+** Sécurité
+** Sécurité
+** Compatibilité DA (Data assurance)
+** Conforme à la norme FIPS
+** Conforme FIPS (FIPS 140-2)
+** Conforme FIPS (FIPS 140-3)
++
+Si l'un de ces attributs est le même pour tous les lecteurs, ils ne sont pas affichés dans la liste déroulante. Par exemple, si la baie de stockage inclut tous les disques SSD avec des interfaces SAS et des vitesses de 15 15000 tr/min, mais que certains disques SSD ont des capacités différentes, la liste déroulante affiche uniquement les capacités comme choix de filtrage.
+
++
+Lorsque vous sélectionnez une option dans le champ, les lecteurs qui ne correspondent pas à vos critères de filtre sont grisés dans la vue graphique.
+
+
+
+. Dans la deuxième zone de filtre, cliquez sur la flèche de la liste déroulante pour afficher les emplacements logiques disponibles pour les lecteurs.
++
+[NOTE]
+====
+Si vous devez effacer vos critères de filtre, sélectionnez *Effacer* à l'extrême droite des zones de filtre.
+
+====
++
+Les emplacements logiques peuvent inclure :
+
++
+** Pools
+** Groupes de volumes
+** Disque de secours
+** Cache SSD
+** Non attribué
++
+Lorsque vous sélectionnez une option dans le champ, les lecteurs qui ne correspondent pas à vos critères de filtre sont grisés dans la vue graphique.
+
+
+
+. Vous pouvez également sélectionner *Activer les voyants de localisation* à l'extrémité droite des champs de filtre pour activer les voyants de localisation des lecteurs affichés.
++
+Cette action vous aide à localiser physiquement les lecteurs de la matrice de stockage.
+
+

@@ -1,0 +1,74 @@
+---
+permalink: sm-settings/access-management-with-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, saml 
+summary: Pour Access Management, les administrateurs peuvent utiliser les fonctionnalités SAML 2.0 intégrées à la baie. 
+---
+= Gestion des accès avec SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour Access Management, les administrateurs peuvent utiliser les fonctionnalités SAML 2.0 intégrées à la baie.
+
+
+
+== Flux de travail de configuration
+
+La configuration SAML fonctionne comme suit :
+
+. Un administrateur se connecte à System Manager avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité.
++
+[NOTE]
+====
+Le `admin` L'utilisateur dispose d'un accès complet à toutes les fonctions de System Manager.
+
+====
+. L'administrateur accède à l'onglet *SAML* sous Access Management.
+. Un administrateur configure les communications avec le fournisseur d'identité (IDP). Un IDP est un système externe utilisé pour demander des informations d'identification à un utilisateur et déterminer si l'utilisateur est authentifié avec succès. Pour configurer les communications avec la baie de stockage, l'administrateur télécharge le fichier de métadonnées IDP depuis le système IDP, puis utilise System Manager pour télécharger le fichier vers la baie de stockage.
+. Un administrateur établit une relation de confiance entre le fournisseur de services et le PDI. Un fournisseur de services contrôle les autorisations utilisateur. Dans ce cas, le contrôleur de la baie de stockage fait office de fournisseur de services. Pour configurer les communications, l'administrateur utilise System Manager pour exporter un fichier de métadonnées Service Provider pour chaque contrôleur. À partir du système IDP, l'administrateur importe ensuite ces fichiers de métadonnées vers le IDP.
++
+[NOTE]
+====
+Les administrateurs doivent également s'assurer que le IDP prend en charge la possibilité de renvoyer un ID de nom lors de l'authentification.
+
+====
+. L'administrateur mappe les rôles de la baie de stockage avec les attributs utilisateur définis dans le IDP. Pour ce faire, l'administrateur utilise System Manager pour créer les mappages.
+. L'administrateur teste la connexion SSO à l'URL IDP. Ce test garantit que la matrice de stockage et le IDP peuvent communiquer.
++
+[CAUTION]
+====
+Une fois le langage SAML activé, vous ne pouvez pas le désactiver via l'interface utilisateur, ni modifier les paramètres IDP. Si vous devez désactiver ou modifier la configuration SAML, contactez le support technique pour obtenir de l'aide.
+
+====
+. Depuis System Manager, l'administrateur active le langage SAML pour la baie de stockage.
+. Les utilisateurs se connectent au système à l'aide de leurs identifiants SSO.
+
+
+
+
+== Gestion
+
+Lorsque vous utilisez SAML pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :
+
+* Modifiez ou créez de nouveaux mappages de rôles
+* Exporter les fichiers du fournisseur de services
+
+
+
+
+== Restrictions d'accès
+
+Lorsque le langage SAML est activé, les utilisateurs ne peuvent pas détecter ni gérer le stockage de cette baie à partir d'Unified Manager ou de l'interface Storage Manager héritée.
+
+En outre, les clients suivants ne peuvent pas accéder aux ressources et aux services de la baie de stockage :
+
+* Fenêtre de gestion Enterprise (EMW)
+* Interface de ligne de commandes
+* Clients SDK (Software Developer kits)
+* Clients intrabande
+* Clients API REST HTTP Basic Authentication
+* Connectez-vous à l'aide d'un terminal API REST standard
+

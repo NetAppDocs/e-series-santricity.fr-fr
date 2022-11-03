@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/how-do-i-interpret-nvme-over-fabrics-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, nvme, over, Fabrics, statistics, 
+summary: 'La boîte de dialogue Afficher les statistiques NVMe over Fabrics affiche les statistiques du sous-système NVMe et de l"interface RDMA. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.' 
+---
+= Comment interpréter les statistiques NVMe over Fabrics ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La boîte de dialogue Afficher les statistiques NVMe over Fabrics affiche les statistiques du sous-système NVMe et de l'interface RDMA. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
+
+* *Statistiques du sous-système NVMe* -- affiche les statistiques du contrôleur NVMe et de sa file d'attente. Le contrôleur NVMe fournit un chemin d'accès entre un hôte et les espaces de noms de la baie de stockage. Vous pouvez consulter les statistiques du sous-système NVMe pour des éléments tels que les échecs de connexion, les réinitialisations et les arrêts de service. Pour plus d'informations sur ces statistiques, cliquez sur *Afficher la légende pour les en-têtes de tableau*.
+* *Statistiques de l'interface RDMA* -- fournit des statistiques sur tous les ports NVMe over Fabrics de l'interface RDMA, qui incluent des statistiques de performances et des informations sur les erreurs de liaison associées à chaque port de commutateur. Cet onglet s'affiche uniquement lorsque les ports NVMe over Fabrics sont disponibles. Pour plus d'informations sur les statistiques, cliquez sur *Afficher la légende pour les en-têtes de tableau*.
+
+
+Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.

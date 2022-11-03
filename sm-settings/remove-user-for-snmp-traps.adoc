@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/remove-user-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, users, snmpv3, traps, 
+summary: Vous pouvez supprimer un utilisateur pour les interruptions SNMPv3. 
+---
+= Supprimer les utilisateurs pour les interruptions SNMPv3
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez supprimer un utilisateur pour les interruptions SNMPv3.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations des interruptions et les noms d'utilisateur apparaissent sur la page alertes.
+
+. Sélectionnez *configurer les utilisateurs*.
++
+La boîte de dialogue configurer les utilisateurs SNMPv3 s'ouvre.
+
+. Sélectionnez le nom d'utilisateur à supprimer, puis cliquez sur *Supprimer*.
+. Confirmez l'opération, puis cliquez sur *Supprimer*.
+
+
+Le nom d'utilisateur et sa destination de déroutement associée sont supprimés de la page alertes.

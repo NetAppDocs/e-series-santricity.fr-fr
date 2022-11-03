@@ -1,0 +1,135 @@
+---
+permalink: sm-hardware/drive-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, states, 
+summary: System Manager indique différents États pour les disques. 
+---
+= États des disques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager indique différents États pour les disques.
+
+
+
+== États d'accessibilité
+
+[cols="25h,~"]
+|===
+| État | Définition 
+
+
+ a| 
+Contourné
+ a| 
+Le lecteur est physiquement présent, mais le contrôleur ne peut pas communiquer avec lui sur l'un ou l'autre des ports.
+
+
+
+ a| 
+Incompatible
+ a| 
+L'une des conditions suivantes existe :
+
+* Le lecteur n'est pas certifié pour une utilisation dans la matrice de stockage.
+* Le lecteur a une taille de secteur différente.
+* Les données de configuration du lecteur sont inutilisables au niveau d'une version antérieure ou ultérieure du firmware.
+
+
+
+
+ a| 
+Supprimé
+ a| 
+Le lecteur n'a pas été retiré correctement de la matrice de stockage.
+
+
+
+ a| 
+Présents
+ a| 
+Le contrôleur peut communiquer avec le lecteur sur les deux ports.
+
+
+
+ a| 
+Ne répond pas
+ a| 
+Le lecteur ne répond pas aux commandes.
+
+|===
+
+
+== États de rôle
+
+[cols="25h,~"]
+|===
+| État | Définition 
+
+
+ a| 
+Affecté
+ a| 
+Le lecteur est membre d'un pool ou d'un groupe de volumes.
+
+
+
+ a| 
+Disque de secours utilisé
+ a| 
+Le disque est actuellement utilisé comme remplacement d'un disque défectueux. Les disques de secours ne sont utilisés que dans des groupes de volumes, pas dans des pools.
+
+
+
+ a| 
+Disque de secours
+ a| 
+Le disque est prêt à être utilisé comme remplacement d'un disque défectueux. Les disques de secours ne sont utilisés que dans des groupes de volumes, pas dans des pools.
+
+
+
+ a| 
+Non attribué
+ a| 
+Le lecteur n'est pas membre d'un pool ou d'un groupe de volumes.
+
+|===
+
+
+== États de disponibilité
+
+[cols="25h,~"]
+|===
+| État | Définition 
+
+
+ a| 
+Échec
+ a| 
+Le lecteur ne fonctionne pas. Les données du lecteur ne sont pas disponibles.
+
+
+
+ a| 
+Défaillance imminente
+ a| 
+Il a été détecté que le disque pourrait tomber en panne bientôt. Les données du lecteur sont toujours disponibles.
+
+
+
+ a| 
+Hors ligne
+ a| 
+Le lecteur n'est pas disponible pour le stockage des données car il fait généralement partie d'un groupe de volumes en cours d'exportation ou est en cours de mise à niveau du micrologiciel.
+
+
+
+ a| 
+Optimale
+ a| 
+Le lecteur fonctionne normalement.
+
+|===

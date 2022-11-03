@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/manage-application-workloads.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, applications, workloads 
+summary: 'Vous pouvez gérer les applications et les charges de travail pour afficher tous les volumes existants de la baie de stockage regroupés par nom de charge de travail et par type d"application. Vous pouvez également ajouter des volumes à une charge de travail existante ou nouvelle, modifier les paramètres d"une charge de travail existante et créer de nouveaux volumes et charges de travail.' 
+---
+= Gestion des applications et des workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez gérer les applications et les charges de travail pour afficher tous les volumes existants de la baie de stockage regroupés par nom de charge de travail et par type d'application. Vous pouvez également ajouter des volumes à une charge de travail existante ou nouvelle, modifier les paramètres d'une charge de travail existante et créer de nouveaux volumes et charges de travail.

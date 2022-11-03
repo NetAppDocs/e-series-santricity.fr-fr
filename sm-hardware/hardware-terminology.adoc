@@ -1,0 +1,491 @@
+---
+permalink: sm-hardware/hardware-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, terms 
+summary: 'Découvrez les conditions matérielles qui s"appliquent à votre baie de stockage.' 
+---
+= Terminologie matérielle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les conditions matérielles suivantes s'appliquent aux baies de stockage.
+
+.Termes généraux relatifs au matériel :
+====
+[cols="25h,~"]
+|===
+| Composant | Description 
+
+
+ a| 
+Baie
+ a| 
+Une baie est un slot dans le shelf où un lecteur ou un autre composant est installé.
+
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+Tiroir contrôleur
+ a| 
+Un tiroir de contrôleur contient un ensemble de disques et un ou plusieurs boîtiers de contrôleur. Un boîtier de contrôleur contient les contrôleurs, les cartes d'interface hôte (HIC) et les batteries.
+
+
+
+ a| 
+Lecteur
+ a| 
+Un lecteur est un périphérique mécanique électromagnétique ou une mémoire à semi-conducteurs qui fournit le support de stockage physique pour les données.
+
+
+
+ a| 
+Tiroir disque
+ a| 
+Un tiroir disque, également appelé tiroir d'extension, contient un ensemble de disques et deux modules d'entrée/sortie (IOM). Les IOM contiennent des ports SAS qui connectent un tiroir disque à un tiroir contrôleur ou à d'autres tiroirs disques.
+
+
+
+ a| 
+MODULE D'E/S (ESM)
+ a| 
+Un module d'E/S est un module d'entrée/sortie qui inclut des ports SAS pour la connexion du tiroir disque au tiroir contrôleur. Dans les précédents modèles de contrôleur, le module d'E/S était appelé module de services environnementaux (ESM).
+
+
+
+ a| 
+Cartouche d'alimentation/ventilateur
+ a| 
+Une cartouche d'alimentation/ventilateur est un ensemble qui glisse dans une étagère. Elle comprend une alimentation électrique et un ventilateur intégré.
+
+
+
+ a| 
+SFP
+ a| 
+Un SFP est un émetteur-récepteur SFP (Small Form-Factor Pluggable).
+
+
+
+ a| 
+Tiroir
+ a| 
+Un tiroir est une armoire installée dans une armoire ou un rack. Il contient les composants matériels de la matrice de stockage. Il existe deux types de tiroirs : un tiroir contrôleur et un tiroir disque. Un tiroir contrôleur inclut des contrôleurs et des disques. Un tiroir disque inclut des modules d'entrée/sortie (IOM) et des disques.
+
+
+
+ a| 
+Baie de stockage
+ a| 
+Une baie de stockage comprend les tiroirs, les contrôleurs, les disques, les logiciels et les firmwares.
+
+|===
+====
+.Termes relatifs aux contrôleurs :
+====
+[cols="25h,~"]
+|===
+| Composant | Description 
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+Tiroir contrôleur
+ a| 
+Un tiroir de contrôleur contient un ensemble de disques et un ou plusieurs boîtiers de contrôleur. Un boîtier de contrôleur contient les contrôleurs, les cartes d'interface hôte (HIC) et les batteries.
+
+
+
+ a| 
+DHCP
+ a| 
+Le protocole DHCP (Dynamic Host Configuration Protocol) est un protocole utilisé sur les réseaux IP (Internet Protocol) pour la distribution dynamique des paramètres de configuration du réseau, tels que les adresses IP.
+
+
+
+ a| 
+DNS
+ a| 
+Le système de noms de domaine (DNS) est un système d'attribution de nom aux périphériques connectés à Internet ou à un réseau privé. Le serveur DNS gère un répertoire de noms de domaine et les convertit en adresses IP (Internet Protocol).
+
+
+
+ a| 
+Configurations recto verso
+ a| 
+Le mode duplex est une configuration à deux contrôleurs dans la matrice de stockage. Les systèmes duplex sont entièrement redondants pour les contrôleurs, les chemins de volume logique et les chemins de disque. En cas de panne d'un contrôleur, l'autre contrôleur prend le relais afin de maintenir la disponibilité. Les systèmes duplex sont également dotés de ventilateurs et d'alimentations redondants.
+
+
+
+ a| 
+Connexions duplex intégral / semi-duplex
+ a| 
+Duplex intégral et semi-duplex font référence aux modes de connexion. En mode duplex intégral, deux périphériques peuvent communiquer simultanément dans les deux sens. En mode semi-duplex, les périphériques peuvent communiquer dans une direction à la fois (un périphérique envoie un message pendant que l'autre périphérique le reçoit).
+
+
+
+ a| 
+HIC
+ a| 
+Une carte d'interface hôte (HIC) peut être installée en option dans un boîtier de contrôleur. Les ports hôtes intégrés au contrôleur sont appelés ports hôtes de base. Les ports hôtes intégrés dans la HIC sont appelés ports HIC.
+
+
+
+ a| 
+Réponse PING ICMP
+ a| 
+Le protocole ICMP (Internet Control message Protocol) est un protocole utilisé par les systèmes d'exploitation d'ordinateurs en réseau pour envoyer des messages. Les messages ICMP déterminent si un hôte est accessible et combien de temps il faut pour obtenir des paquets depuis et vers cet hôte.
+
+
+
+ a| 
+Adresse MAC
+ a| 
+Les identificateurs de contrôle d'accès aux médias (adresses MAC) sont utilisés par Ethernet pour faire la distinction entre des canaux logiques distincts connectant deux ports sur la même interface réseau de transport physique.
+
+
+
+ a| 
+client de gestion
+ a| 
+Un client de gestion est l'ordinateur sur lequel un navigateur est installé pour accéder à System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Une unité de transmission maximale (MTU) est le paquet ou la trame de la plus grande taille qui peut être envoyé dans un réseau.
+
+
+
+ a| 
+NTP
+ a| 
+Le protocole NTP (Network Time Protocol) est un protocole de mise en réseau pour la synchronisation de l'horloge entre les systèmes informatiques des réseaux de données.
+
+
+
+ a| 
+Configurations simplex
+ a| 
+Simplex est une configuration à un contrôleur dans la baie de stockage. Un système simplex n'offre pas la redondance des contrôleurs ou des chemins d'accès aux disques, mais dispose de ventilateurs et d'alimentations redondants.
+
+
+
+ a| 
+VLAN
+ a| 
+Un réseau local virtuel (VLAN) est un réseau logique qui se comporte comme s'il est physiquement séparé des autres réseaux pris en charge par les mêmes périphériques (commutateurs, routeurs, etc.).
+
+|===
+====
+.Termes du lecteur :
+====
+[cols="25h,~"]
+|===
+| Composant | Description 
+
+
+ a| 
+DA
+ a| 
+Data assurance (DA) est une fonctionnalité qui vérifie et corrige les erreurs susceptibles de se produire lors du transfert des données entre les contrôleurs et les disques. Data assurance peut être activé au niveau du pool ou du groupe de volumes, avec des hôtes qui utilisent une interface d'E/S DA, telle que Fibre Channel.
+
+
+
+ a| 
+Fonction de sécurité du lecteur
+ a| 
+La sécurité des disques est une fonctionnalité de baie de stockage qui fournit une couche de sécurité supplémentaire avec des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard). Lorsque ces disques sont utilisés avec la fonction sécurité des lecteurs, ils ont besoin d'une clé de sécurité pour accéder à leurs données. Lorsque les lecteurs sont physiquement retirés de la matrice, ils ne peuvent pas fonctionner tant qu'ils ne sont pas installés dans une autre matrice. À ce moment, ils seront dans un état de sécurité verrouillé jusqu'à ce que la clé de sécurité correcte soit fournie.
+
+
+
+ a| 
+Tiroir disque
+ a| 
+Un tiroir disque, également appelé tiroir d'extension, contient un ensemble de disques et deux modules d'entrée/sortie (IOM). Les IOM contiennent des ports SAS qui connectent un tiroir disque à un tiroir contrôleur ou à d'autres tiroirs disques.
+
+
+
+ a| 
+DULBE
+ a| 
+La gestion des erreurs de bloc logique (DULBE) est une option sur les disques NVMe, qui permet à la baie de stockage EF300 ou EF600 de prendre en charge les volumes provisionnés par ressource.
+
+
+
+ a| 
+Disques FDE
+ a| 
+Les disques FDE (Full Disk Encryption) cryptant les disques au niveau du matériel. Le disque dur contient une puce ASIC qui chiffre les données pendant les écritures, puis décrypte les données pendant les lectures.
+
+
+
+ a| 
+Disques FIPS
+ a| 
+Les disques FIPS utilisent la norme FIPS (Federal information Processing Standards) 140-2 de niveau 2. Ce sont pour l'essentiel des disques FDE conformes aux normes gouvernementales américaines en matière de sécurité des algorithmes et des méthodes de cryptage solides. Les disques FIPS sont plus stricts que les disques FDE.
+
+
+
+ a| 
+DISQUES DURS
+ a| 
+Les disques durs sont des dispositifs de stockage des données qui utilisent des plateaux en métal rotatifs avec un revêtement magnétique.
+
+
+
+ a| 
+Disques de secours
+ a| 
+Les disques de secours servent de disques de secours au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Il s'agit de lecteurs entièrement fonctionnels qui ne contiennent aucune donnée. Si un disque tombe en panne dans le groupe de volumes, le contrôleur reconstruit automatiquement les données du disque défectueux vers un disque de secours.
+
+
+
+ a| 
+NVMe
+ a| 
+Le protocole NVMe (non-volatile Memory Express) est une interface conçue pour les périphériques de stockage Flash, tels que les disques SSD. NVMe réduit la surcharge E/S et améliore les performances par rapport aux interfaces de périphérique logique précédentes.
+
+
+
+ a| 
+SAS
+ a| 
+SAS (Serial Attached SCSI) est un protocole série point à point qui relie les contrôleurs directement aux disques durs.
+
+
+
+ a| 
+Disques sécurisés
+ a| 
+Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard), qui cryptent les données pendant les écritures et décomposent les données pendant les lectures. Ces lecteurs sont considérés comme sécurisés-_compatibles_ car ils peuvent être utilisés pour des raisons de sécurité supplémentaires à l'aide de la fonction sécurité des lecteurs. Si la fonction de sécurité des disques est activée pour les groupes de volumes et les pools utilisés avec ces disques, les lecteurs deviennent sécurisés --_Enabled_.
+
+
+
+ a| 
+Disques sécurisés
+ a| 
+Les lecteurs sécurisés sont utilisés avec la fonction de sécurité des lecteurs. Lorsque vous activez la fonction sécurité du lecteur, puis appliquez la sécurité du lecteur à un pool ou à un groupe de volumes sur des lecteurs sécurisés_ compatibles_, les lecteurs deviennent sécurisés___-activés____. L'accès en lecture et en écriture n'est disponible que par l'intermédiaire d'un contrôleur configuré avec la clé de sécurité adéquate. Cette sécurité supplémentaire empêche tout accès non autorisé aux données d'un disque physiquement retiré de la matrice de stockage.
+
+
+
+ a| 
+SSD
+ a| 
+Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs.
+
+|===
+====
+.Termes iSCSI :
+====
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+CHAP
+ a| 
+La méthode CHAP (Challenge Handshake Authentication Protocol) valide l'identité des cibles et des initiateurs pendant la liaison initiale. L'authentification est basée sur une clé de sécurité partagée appelée CHAP __secret_.
+
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+DHCP
+ a| 
+Le protocole DHCP (Dynamic Host Configuration Protocol) est un protocole utilisé sur les réseaux IP (Internet Protocol) pour la distribution dynamique des paramètres de configuration du réseau, tels que les adresses IP.
+
+
+
+ a| 
+RÉMUNÉRATION VARIABLE
+ a| 
+InfiniBand (IB) est une norme de communication pour la transmission des données entre les serveurs hautes performances et les systèmes de stockage.
+
+
+
+ a| 
+Réponse PING ICMP
+ a| 
+Le protocole ICMP (Internet Control message Protocol) est un protocole utilisé par les systèmes d'exploitation d'ordinateurs en réseau pour envoyer des messages. Les messages ICMP déterminent si un hôte est accessible et combien de temps il faut pour obtenir des paquets depuis et vers cet hôte.
+
+
+
+ a| 
+IQN
+ a| 
+Un identificateur IQN (iSCSI qualifié Name) est un nom unique pour un initiateur iSCSI ou une cible iSCSI.
+
+
+
+ a| 
+Iser
+ a| 
+ISCSI Extensions for RDMA (iser) est un protocole qui étend le protocole iSCSI aux transports RDMA, comme InfiniBand ou Ethernet.
+
+
+
+ a| 
+ISNS
+ a| 
+Le service iSNS (Internet Storage Name Service) est un protocole qui permet la découverte, la gestion et la configuration automatisées des périphériques iSCSI et Fibre Channel sur les réseaux TCP/IP.
+
+
+
+ a| 
+Adresse MAC
+ a| 
+Les identificateurs de contrôle d'accès aux médias (adresses MAC) sont utilisés par Ethernet pour faire la distinction entre des canaux logiques distincts connectant deux ports sur la même interface réseau de transport physique.
+
+
+
+ a| 
+Client de gestion
+ a| 
+Un client de gestion est l'ordinateur sur lequel un navigateur est installé pour accéder à System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Une unité de transmission maximale (MTU) est le paquet ou la trame de la plus grande taille qui peut être envoyé dans un réseau.
+
+
+
+ a| 
+RDMA
+ a| 
+Remote Direct Memory Access (RDMA) est une technologie qui permet aux ordinateurs réseau d'échanger des données dans la mémoire principale sans impliquer le système d'exploitation de l'un ou l'autre des ordinateurs.
+
+
+
+ a| 
+Session de découverte sans nom
+ a| 
+Lorsque l'option pour les sessions de découverte sans nom est activée, les initiateurs iSCSI ne sont pas nécessaires pour spécifier l'IQN cible afin d'extraire les informations du contrôleur.
+
+|===
+====
+.Termes NVMe :
+====
+[cols="25h,~"]
+|===
+| Durée | Description 
+
+
+ a| 
+InfiniBand
+ a| 
+InfiniBand (IB) est une norme de communication pour la transmission des données entre les serveurs hautes performances et les systèmes de stockage.
+
+
+
+ a| 
+Espace de noms
+ a| 
+Un espace de noms est un stockage NVM formaté pour un accès au bloc. Il est similaire à une unité logique de SCSI, qui se rapporte à un volume de la baie de stockage.
+
+
+
+ a| 
+ID d'espace de noms
+ a| 
+L'ID de namespace est l'identifiant unique du contrôleur NVMe pour le namespace et peut être défini sur une valeur comprise entre 1 et 255. Il est similaire à un numéro d'unité logique (LUN) dans SCSI.
+
+
+
+ a| 
+NQN
+ a| 
+Le nom qualifié NVMe (NQN) est utilisé pour identifier la cible de stockage à distance (la baie de stockage).
+
+
+
+ a| 
+NVM
+ a| 
+La mémoire non volatile (NVM) est la mémoire persistante utilisée dans de nombreux types de périphériques de stockage.
+
+
+
+ a| 
+NVMe
+ a| 
+Le protocole NVMe (non-volatile Memory Express) est une interface conçue pour les périphériques de stockage Flash, tels que les disques SSD. NVMe réduit la surcharge E/S et améliore les performances par rapport aux interfaces de périphérique logique précédentes.
+
+
+
+ a| 
+NVMe-of
+ a| 
+NVMe-of (non-volatile Memory Express over Fabrics) est une spécification qui permet le transfert des commandes et des données NVMe sur un réseau entre un hôte et un système de stockage.
+
+
+
+ a| 
+Contrôleur NVMe
+ a| 
+Un contrôleur NVMe est créé lors du processus de connexion de l'hôte. Il fournit un chemin d'accès entre un hôte et les espaces de noms dans la baie de stockage.
+
+
+
+ a| 
+File d'attente NVMe
+ a| 
+Une file d'attente permet de transmettre des commandes et des messages via l'interface NVMe.
+
+
+
+ a| 
+Sous-système NVMe
+ a| 
+La baie de stockage avec une connexion hôte NVMe.
+
+
+
+ a| 
+RDMA
+ a| 
+L'accès direct à la mémoire à distance (RDMA) permet un déplacement plus direct des données depuis et vers un serveur en implémentant un protocole de transport sur le matériel des cartes d'interface réseau (NIC).
+
+
+
+ a| 
+ROCE
+ a| 
+RDMA over Converged Ethernet (RoCE) est un protocole réseau qui permet un accès direct à la mémoire à distance (RDMA over Converged Ethernet) sur un réseau Ethernet.
+
+
+
+ a| 
+SSD
+ a| 
+Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs.
+
+|===
+====

@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/edit-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
+summary: Vous pouvez modifier les adresses e-mail des destinataires qui reçoivent des alertes par e-mail. 
+---
+= Modifiez les adresses e-mail des alertes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les adresses e-mail des destinataires qui reçoivent des alertes par e-mail.
+
+L'adresse e-mail que vous souhaitez modifier doit être définie dans l'onglet E-mail de la page alertes.
+
+.Étapes
+. Sélectionnez menu:Paramètres[alertes].
+. Sélectionnez l'onglet *E-mail*.
+. Dans le tableau *Email Address*, sélectionnez l'adresse à modifier, puis cliquez sur l'icône *Edit* (crayon) à l'extrême droite.
++
+La ligne devient un champ modifiable.
+
+. Entrez une nouvelle adresse, puis cliquez sur l'icône *Enregistrer* (coche).
++
+[NOTE]
+====
+Pour annuler les modifications, sélectionnez l'icône *Annuler* (X).
+
+====
+
+
+L'onglet E-mail de la page alertes affiche les adresses e-mail mises à jour.

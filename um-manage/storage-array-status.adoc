@@ -1,0 +1,72 @@
+---
+permalink: um-manage/storage-array-status.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, storage, array, status, communication, 
+summary: 'Unified Manager affiche l"état de chaque baie de stockage qui a été découverte.' 
+---
+= Afficher l'état de la matrice de stockage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager affiche l'état de chaque baie de stockage qui a été découverte.
+
+Accédez à la page *gérer - tout*. À partir de cette page, vous pouvez afficher l'état de la connexion entre le proxy de services Web et cette matrice de stockage.
+
+Les indicateurs d'état sont décrits dans le tableau suivant.
+
+[cols="25h,~"]
+|===
+| État | Indique 
+
+
+ a| 
+Optimale
+ a| 
+La baie de stockage est dans un état optimal. Il n'y a pas de problème de certificat et le mot de passe est valide.
+
+
+
+ a| 
+Mot de passe non valide
+ a| 
+Un mot de passe de matrice de stockage non valide a été fourni.
+
+
+
+ a| 
+Certificat non fiable
+ a| 
+Une ou plusieurs connexions avec la matrice de stockage ne sont pas fiables car le certificat HTTPS est auto-signé et n'a pas été importé, ou le certificat est signé par l'autorité de certification et les certificats d'autorité de certification racine et intermédiaire n'ont pas été importés.
+
+
+
+ a| 
+Nécessite une attention particulière
+ a| 
+Il y a un problème avec la baie de stockage qui nécessite votre intervention pour la corriger.
+
+
+
+ a| 
+Verrouillage
+ a| 
+La matrice de stockage est dans un état verrouillé.
+
+
+
+ a| 
+Inconnu
+ a| 
+La baie de stockage n'a jamais été contactée. Cela peut se produire lorsque le proxy de services Web est en cours de démarrage et n'a pas encore été mis en contact avec la matrice de stockage, ou la matrice de stockage est hors ligne et n'a jamais été contacté depuis le démarrage du proxy de services Web.
+
+
+
+ a| 
+Hors ligne
+ a| 
+Le proxy de services Web avait déjà contacté la matrice de stockage, mais il lui a perdu toute connexion.
+
+|===

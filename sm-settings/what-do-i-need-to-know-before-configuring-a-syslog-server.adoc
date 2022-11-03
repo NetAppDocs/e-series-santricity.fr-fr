@@ -1,0 +1,23 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuring, syslog, server, 
+summary: 'Vous pouvez archiver les journaux d"audit sur un serveur syslog externe.' 
+---
+= Que dois-je savoir avant de configurer un serveur syslog ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez archiver les journaux d'audit sur un serveur syslog externe.
+
+Avant de configurer un serveur syslog, gardez les consignes suivantes à l'esprit.
+
+* Assurez-vous de connaître l'adresse du serveur, le protocole et le numéro de port. L'adresse du serveur peut être un nom de domaine complet, une adresse IPv4 ou une adresse IPv6.
+* Si votre serveur utilise un protocole sécurisé (par exemple TLS), un certificat d'autorité de certification (CA) doit être disponible sur votre système local. Les certificats CA identifient les propriétaires de sites Web pour des connexions sécurisées entre serveurs et clients.
+* Après la configuration, tous les nouveaux journaux d'audit sont envoyés au serveur syslog. Les journaux précédents ne sont pas transférés.
+* Les paramètres de règles de remplacement (disponibles à partir de *Afficher/Modifier les paramètres*) n'affectent pas la gestion des journaux avec une configuration de serveur syslog.
+* Les journaux d'audit suivent le format de messagerie RFC 5424.
+

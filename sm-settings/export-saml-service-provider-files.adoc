@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Si nécessaire, vous pouvez exporter les métadonnées du Service Provider pour la matrice de stockage et réimporter le(s) fichier(s) dans le système IDP (Identity Provider).' 
+---
+= Exporter les fichiers SAML Service Provider
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si nécessaire, vous pouvez exporter les métadonnées du Service Provider pour la matrice de stockage et réimporter le(s) fichier(s) dans le système IDP (Identity Provider).
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+* SAML est configuré et activé.
+
+
+Dans cette tâche, vous exportez les métadonnées des contrôleurs (un fichier par contrôleur). Le PDI a besoin de ces métadonnées pour établir une relation de confiance avec les contrôleurs et traiter les demandes d'authentification. Le fichier inclut des informations telles que le nom de domaine du contrôleur ou l'adresse IP que le IDP peut utiliser pour envoyer des demandes.
+
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Sélectionnez l'onglet *SAML*.
+. Sélectionnez *Exporter*.
++
+La boîte de dialogue Exporter les fichiers du fournisseur de services s'ouvre.
+
+. Pour chaque contrôleur, cliquez sur *Exporter* pour enregistrer le fichier de métadonnées sur votre système local.
++
+[NOTE]
+====
+Les champs de nom de domaine de chaque contrôleur sont en lecture seule.
+
+====
++
+Notez l'emplacement de stockage du fichier.
+
+. À partir du système local, recherchez le ou les fichiers de métadonnées du Service Provider que vous avez exportés.
++
+Il existe un fichier au format XML pour chaque contrôleur.
+
+. À partir du serveur IDP, importez le ou les fichiers de métadonnées du fournisseur de services. Vous pouvez importer les fichiers directement ou saisir manuellement les informations du contrôleur.
+. Cliquez sur *Fermer*.
+

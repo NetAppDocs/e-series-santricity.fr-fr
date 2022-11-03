@@ -1,0 +1,52 @@
+---
+permalink: sm-settings/view-imported-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
+summary: 'À partir de la page certificats, vous pouvez afficher le type de certificat, l"autorité d"émission et la plage de dates valide des certificats de la matrice de stockage.' 
+---
+= Afficher les informations de certificat importé
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+À partir de la page certificats, vous pouvez afficher le type de certificat, l'autorité d'émission et la plage de dates valide des certificats de la matrice de stockage.
+
+Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+.Étapes
+. Sélectionnez menu:Paramètres[certificats].
+. Sélectionnez l'un des onglets pour afficher des informations sur les certificats.
++
+[cols="25h,~"]
+|===
+| Onglet | Description 
+
+
+ a| 
+Gestion de la baie
+ a| 
+Afficher des informations sur les certificats signés par l'autorité de certification importés pour chaque contrôleur, y compris le fichier racine, le(s) fichier(s) intermédiaire(s) et le(s) fichier(s) du serveur.
+
+
+
+ a| 
+Fiabilité
+ a| 
+Afficher des informations sur tous les autres types de certificats importés pour les contrôleurs. Utilisez le champ filtre sous *Afficher les certificats qui sont...* pour afficher les certificats installés par l'utilisateur ou pré-installés.
+
+** *Installé par l'utilisateur* -- certificats qu'un utilisateur a chargés sur la matrice de stockage, qui peuvent inclure des certificats de confiance lorsque le contrôleur agit comme un client (au lieu d'un serveur), des certificats LDAPS et des certificats de fédération d'identité.
+** *Certificats pré-installés* -- certificats auto-signés inclus avec la matrice de stockage.
+
+
+
+
+ a| 
+Gestion des clés
+ a| 
+Afficher des informations sur les certificats signés par l'autorité de certification importés pour un serveur de gestion de clés externe.
+
+|===
+

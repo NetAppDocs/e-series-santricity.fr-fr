@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/view-iser-over-infiniband-statistics-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iser, over, infiniBand, statistics, 
+summary: Si le contrôleur de votre matrice de stockage comprend un port iser sur InfiniBand, vous pouvez afficher les données relatives aux connexions hôte. 
+---
+= Afficher les statistiques iser sur InfiniBand
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si le contrôleur de votre baie de stockage inclut un port iser via InfiniBand, vous pouvez afficher les données relatives aux connexions hôte.
+
+System Manager affiche les types suivants de statistiques iser sur InfiniBand. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
+
+* *Statistiques de la cible locale (Protocole)* -- fournit des statistiques pour l'iser sur la cible InfiniBand, qui montre un accès de niveau bloc à ses supports de stockage.
+* *ISER over InfiniBand interface statistics* -- fournit des statistiques pour tous les ports iser sur l'interface InfiniBand, qui inclut des statistiques de performance et des informations d'erreur de liaison associées à chaque port de commutateur.
+
+
+Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sélectionnez *Afficher iser sur les statistiques InfiniBand*.
+. Cliquez sur un onglet pour afficher les différents ensembles de statistiques.
+. *Facultatif:* pour définir la ligne de base, cliquez sur *définir une nouvelle ligne de base*.
++
+La définition de la ligne de base définit un nouveau point de départ pour la collecte des statistiques. La même base est utilisée pour toutes les statistiques iser sur InfiniBand.
+
+

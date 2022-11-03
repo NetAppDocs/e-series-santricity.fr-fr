@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/when-should-i-synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clock, 
+summary: 'Vous devez synchroniser manuellement les horloges de contrôleur dans la matrice de stockage si vous remarquez que les horodateurs affichés dans System Manager ne sont pas alignés avec les horodatages affichés dans votre client de gestion (l"ordinateur qui accède à System Manager via le navigateur). Cette tâche n"est nécessaire que si le NTP (Network Time Protocol) n"est pas activé dans System Manager.' 
+---
+= Quand dois-je synchroniser les horloges de la matrice de stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devez synchroniser manuellement les horloges de contrôleur dans la matrice de stockage si vous remarquez que les horodateurs affichés dans System Manager ne sont pas alignés avec les horodatages affichés dans votre client de gestion (l'ordinateur qui accède à System Manager via le navigateur). Cette tâche n'est nécessaire que si le NTP (Network Time Protocol) n'est pas activé dans System Manager.
+
+[NOTE]
+====
+Nous vous recommandons vivement d'utiliser un serveur NTP au lieu de synchroniser manuellement les horloges. NTP synchronise automatiquement les horloges avec un serveur externe à l'aide du protocole SNTP (simple Network Time Protocol).
+
+====
+Vous pouvez vérifier l'état de la synchronisation à partir de la boîte de dialogue Synchroniser les horloges de la matrice de stockage, disponible à partir de la page système. Si les heures affichées dans la boîte de dialogue ne correspondent pas, exécutez une synchronisation. Vous pouvez afficher régulièrement cette boîte de dialogue, qui indique si les affichages d'horloge du contrôleur ont été écartés et ne sont plus synchronisés.

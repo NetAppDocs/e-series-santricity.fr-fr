@@ -1,0 +1,56 @@
+---
+permalink: sm-storage/overview-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts 
+summary: Vous pouvez configurer les hôtes et les clusters hôtes, qui définissent les connexions entre la baie de stockage et les serveurs de données. 
+---
+= Présentation des hôtes et des clusters hôtes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez configurer les hôtes et les clusters hôtes, qui définissent les connexions entre la baie de stockage et les serveurs de données.
+
+
+
+== Qu'est-ce que les hôtes et les clusters hôtes ?
+
+Un _host_ est un serveur qui envoie des E/S à un volume situé sur une baie de stockage. Un _cluster_hôte est un groupe d'hôtes, que vous pouvez créer pour affecter les mêmes volumes à plusieurs hôtes.
+
+En savoir plus :
+
+* link:host-terminology.html["Terminologie hôte"]
+* link:access-volumes.html["Accéder aux volumes"]
+* link:maximum-number-of-luns.html["Nombre maximal de LUN"]
+
+
+
+
+== Comment configurer des hôtes et des clusters hôtes ?
+
+Pour définir des connexions hôte, vous pouvez soit autoriser un agent de contexte hôte (HCA) à détecter automatiquement les hôtes, soit accéder au menu:Storage[hosts] pour configurer manuellement l'hôte. Si vous souhaitez que deux hôtes ou plus partagent l'accès au même ensemble de volumes, vous pouvez alors définir un cluster et affecter les volumes à ce cluster.
+
+En savoir plus :
+
+* link:automatic-versus-manual-host-creation.html["Création automatique ou manuelle des hôtes"]
+* link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Mode d'affectation des volumes aux hôtes et aux clusters hôtes"]
+* link:workflow-for-creating-hosts-and-assigning-volumes.html["Workflow pour la création d'hôtes et l'affectation de volumes"]
+* link:create-host-automatically.html["Créer l'hôte automatiquement"]
+* link:create-host-manually.html["Créer l'hôte manuellement"]
+* link:create-host-cluster.html["Création d'un cluster hôte"]
+* link:assign-volumes.html["Attribuez des volumes aux hôtes"]
+
+
+
+
+== Informations associées
+
+En savoir plus sur les tâches liées aux hôtes :
+
+* link:../sm-settings/set-automatic-load-balancing.html["Définir l'équilibrage automatique de la charge"]
+* link:../sm-settings/set-host-connectivity-reporting.html["Définissez les rapports sur la connectivité hôte"]
+* link:../sm-settings/change-default-host-type.html["Modifier le type d'hôte par défaut"]
+
