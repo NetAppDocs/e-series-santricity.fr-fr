@@ -14,6 +14,7 @@ summary: 'Vous pouvez modifier le rôle entre les groupes de cohérence miroir �
 [role="lead"]
 Vous pouvez modifier le rôle entre les groupes de cohérence miroir à des fins d'administration ou en cas d'incident sur la baie de stockage locale.
 
+.Description de la tâche
 Les groupes de cohérence en miroir créés sur la matrice de stockage locale détiennent le rôle principal. Les groupes de cohérence en miroir créés sur la matrice de stockage distante détiennent le rôle secondaire. Vous pouvez rétrograder le groupe de cohérence du miroir local à un rôle secondaire ou promouvoir le groupe de cohérence du miroir distant en rôle principal.
 
 .Étapes
@@ -35,6 +36,7 @@ Le système affiche la boîte de dialogue Impossible de contacter la matrice de 
 ====
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Le tableau Groupe de cohérence miroir affiche l'état « en attente » ou « en cours » en regard du groupe de cohérence miroir en cours de modification du rôle. Vous pouvez annuler une opération de changement de rôle en attente en cliquant sur le lien *Annuler* qui se trouve dans la cellule du tableau.

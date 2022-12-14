@@ -14,6 +14,7 @@ summary: Vous pouvez effectuer un processus de copie de volume sur un volume Sna
 [role="lead"]
 Vous pouvez effectuer un processus de copie de volume sur un volume Snapshot ou un volume Snapshot de groupe de cohérence.
 
+.Description de la tâche
 Vous pouvez copier un volume de snapshot sur le volume cible, comme cela a été effectué lors d'une opération de copie de volume normale. Toutefois, les snapshots ne peuvent pas rester en ligne pendant le processus de copie du volume.
 
 .Étapes

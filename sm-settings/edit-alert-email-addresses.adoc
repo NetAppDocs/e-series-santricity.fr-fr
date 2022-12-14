@@ -14,6 +14,7 @@ summary: Vous pouvez modifier les adresses e-mail des destinataires qui reçoive
 [role="lead"]
 Vous pouvez modifier les adresses e-mail des destinataires qui reçoivent des alertes par e-mail.
 
+.Avant de commencer
 L'adresse e-mail que vous souhaitez modifier doit être définie dans l'onglet E-mail de la page alertes.
 
 .Étapes
@@ -32,4 +33,5 @@ Pour annuler les modifications, sélectionnez l'icône *Annuler* (X).
 ====
 
 
+.Résultats
 L'onglet E-mail de la page alertes affiche les adresses e-mail mises à jour.

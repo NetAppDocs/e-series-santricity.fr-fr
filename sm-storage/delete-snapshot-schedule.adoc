@@ -14,6 +14,7 @@ summary: 'Si vous ne souhaitez plus collecter d"images de snapshot, vous pouvez 
 [role="lead"]
 Si vous ne souhaitez plus collecter d'images de snapshot, vous pouvez supprimer un planning de snapshots existant.
 
+.Description de la tâche
 Lorsque vous supprimez un planning de snapshots, les images de snapshot associées ne sont pas supprimées avec lui. Si vous pensez que la collection d'images d'instantanés peut être reprise à un moment donné, vous devez interrompre la planification d'instantanés au lieu de la supprimer.
 
 .Étapes
@@ -22,4 +23,5 @@ Lorsque vous supprimez un planning de snapshots, les images de snapshot associé
 . Sélectionnez la planification de snapshots que vous souhaitez supprimer et confirmez l'opération.
 
 
+.Résultats
 Le système supprime tous les attributs de planification du volume de base ou du groupe de cohérence snapshot.

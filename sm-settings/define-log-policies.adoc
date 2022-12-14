@@ -14,8 +14,10 @@ summary: 'Vous pouvez modifier la stratégie d"écrasement et les types d"évén
 [role="lead"]
 Vous pouvez modifier la stratégie d'écrasement et les types d'événements enregistrés dans le journal d'audit.
 
+.Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
+.Description de la tâche
 Cette tâche décrit comment modifier les paramètres du journal d'audit, qui incluent la stratégie de remplacement des anciens événements et la stratégie d'enregistrement des types d'événements.
 
 .Étapes
@@ -28,6 +30,7 @@ La boîte de dialogue Paramètres du journal d'audit s'ouvre.
 . Modifiez la politique de remplacement ou les types d'événements enregistrés.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

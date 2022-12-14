@@ -18,6 +18,7 @@ Le système DNS (Domain Name System) est utilisé pour résoudre les noms de dom
 * Vous connaissez l'adresse du serveur DNS principal et d'un serveur DNS de sauvegarde facultatif. Ces adresses peuvent être des adresses IPv4 ou IPv6.
 
 
+.Description de la tâche
 Cette procédure décrit comment spécifier une adresse de serveur DNS principal et de sauvegarde. Le serveur DNS de sauvegarde peut être configuré de manière facultative pour une utilisation en cas de défaillance d'un serveur DNS principal.
 
 [NOTE]
@@ -55,4 +56,5 @@ Si la matrice de stockage est définie pour utiliser une adresse DNS statique, a
 . Répétez ces étapes pour l'autre contrôleur.
 
 
+.Résultats
 La configuration DNS s'affiche dans les paramètres du contrôleur, onglet *DNS / NTP*.

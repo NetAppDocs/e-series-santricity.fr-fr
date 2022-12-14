@@ -19,6 +19,7 @@ Vous pouvez rétablir les certificats sur les contrôleurs de l'utilisation de c
 * Les certificats signés CA doivent être importés au préalable.
 
 
+.Description de la tâche
 La fonction Réinitialiser supprime les fichiers de certificat actuellement signés par l'autorité de certification de chaque contrôleur. Les contrôleurs retournent à l'utilisation de certificats auto-signés.
 
 .Étapes
@@ -33,4 +34,5 @@ Une fois que votre navigateur a été actualisé, le navigateur risque de bloque
 
 
 
+.Résultats
 Les contrôleurs retournent à l'utilisation de certificats auto-signés. Par conséquent, le système invite les utilisateurs à accepter manuellement le certificat auto-signé pour leurs sessions.

@@ -14,6 +14,7 @@ summary: 'Pour activer une fonction premium ou un pack de fonctionnalités sur v
 [role="lead"]
 Pour activer une fonction premium ou un pack de fonctionnalités sur votre matrice de stockage, vous devez d'abord obtenir un fichier de clé de fonction. Une clé n'est associée qu'à une seule baie de stockage.
 
+.Description de la tâche
 Dans cette tâche, vous apprendrez à rassembler les informations requises pour la fonction, puis à envoyer une demande pour un fichier de clé de fonction. Informations requises :
 
 * Numéro de série du châssis
@@ -45,4 +46,5 @@ Vous pouvez également accéder à http://partnerspfk.netapp.com["Activation de 
 
 
 
+.Une fois que vous avez terminé
 Lorsque vous disposez d'un fichier de clé de fonction, vous pouvez activer la fonction premium ou le pack de fonctions.

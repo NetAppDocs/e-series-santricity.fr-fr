@@ -13,6 +13,7 @@ summary: 'Si la matrice de stockage inclut des lecteurs avec différents types d
 [role="lead"]
 Si la matrice de stockage inclut des lecteurs avec différents types d'attributs physiques et logiques, la page matériel fournit des champs de filtre qui vous aident à limiter l'affichage du lecteur et à localiser des lecteurs spécifiques.
 
+.Description de la tâche
 Les filtres de lecteur peuvent limiter la vue à certains types de lecteurs physiques (par exemple, tous les disques SAS), avec certains attributs de sécurité (par exemple, les disques sécurisés), à certains emplacements logiques (par exemple, le groupe de volumes 1). Vous pouvez utiliser ces filtres ensemble ou séparément.
 
 [NOTE]

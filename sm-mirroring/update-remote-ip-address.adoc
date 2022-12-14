@@ -14,6 +14,7 @@ summary: 'Vous pouvez mettre à jour l"adresse IP iSCSI de votre matrice de stoc
 [role="lead"]
 Vous pouvez mettre à jour l'adresse IP iSCSI de votre matrice de stockage distante afin de rétablir la connexion avec la matrice de stockage locale.
 
+.Avant de commencer
 La matrice de stockage locale et la matrice de stockage distante doivent être configurées pour la mise en miroir asynchrone à l'aide d'une connexion iSCSI.
 
 .Étapes
@@ -29,4 +30,5 @@ Le système affiche la boîte de dialogue mettre à jour l'adresse IP distante.
 . Sélectionnez *Update* pour mettre à jour l'adresse IP iSCSI de votre matrice de stockage distante.
 
 
+.Résultats
 Le système réinitialise l'adresse IP de la matrice de stockage distante pour rétablir la connexion avec la matrice de stockage locale.

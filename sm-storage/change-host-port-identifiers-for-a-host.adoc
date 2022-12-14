@@ -14,6 +14,7 @@ summary: 'Modifiez les identificateurs de port hôte lorsque vous souhaitez modi
 [role="lead"]
 Modifiez les identificateurs de port hôte lorsque vous souhaitez modifier le libellé utilisateur d'un identificateur de port hôte, ajouter un nouvel identificateur de port hôte à l'hôte ou supprimer un identificateur de port hôte de l'hôte.
 
+.Description de la tâche
 Lors de la modification des identificateurs de port hôte, gardez les consignes suivantes à l'esprit :
 
 * *Ajouter* -- lorsque vous ajoutez un port hôte, vous associez l'identificateur de port hôte à l'hôte que vous avez créé pour vous connecter à votre matrice de stockage. Vous pouvez saisir manuellement des informations de port à l'aide d'un utilitaire HBA (Host bus adapter).

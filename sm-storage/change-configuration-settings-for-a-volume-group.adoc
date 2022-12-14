@@ -14,6 +14,7 @@ summary: 'Vous pouvez modifier les paramètres d"un groupe de volumes, y compris
 [role="lead"]
 Vous pouvez modifier les paramètres d'un groupe de volumes, y compris son nom et son niveau RAID.
 
+.Avant de commencer
 Si vous modifiez le niveau RAID pour répondre aux besoins de performances des applications qui accèdent au groupe de volumes, veillez à respecter les prérequis suivants :
 
 * Le groupe de volumes doit avoir le statut optimal.
@@ -29,6 +30,7 @@ La boîte de dialogue Paramètres du groupe de volumes s'affiche.
 . Sélectionnez l'onglet *Paramètres*, puis modifiez les paramètres du groupe de volumes selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -75,4 +77,5 @@ Une boîte de dialogue de confirmation s'affiche si la capacité est réduite, s
 
 
 
+.Résultats
 Si vous modifiez le niveau RAID d'un groupe de volumes, System Manager modifie les niveaux RAID de chaque volume qui comprend ce groupe. Les performances peuvent être légèrement affectées pendant l'opération.

@@ -14,6 +14,7 @@ summary: Pour un planning de snapshots, vous pouvez modifier les heures de colle
 [role="lead"]
 Pour un planning de snapshots, vous pouvez modifier les heures de collecte automatique ou la fréquence de collecte.
 
+.Description de la tâche
 Vous pouvez importer des paramètres à partir d'un planning de snapshots existant ou modifier les paramètres selon vos besoins.
 
 Étant donné qu'une planification de snapshots est associée à un groupe de snapshots ou à un groupe de cohérence de snapshots, la capacité réservée peut être affectée par les modifications des paramètres de planification.
@@ -31,6 +32,7 @@ La boîte de dialogue Modifier le planning d'instantané s'affiche.
 ** *Modifier les paramètres de planification* -- Voir les détails de champ ci-dessous.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

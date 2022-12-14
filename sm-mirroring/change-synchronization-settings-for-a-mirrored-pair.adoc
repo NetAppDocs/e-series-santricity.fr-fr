@@ -14,6 +14,7 @@ summary: 'Vous pouvez modifier la priorité de synchronisation et la règle de r
 [role="lead"]
 Vous pouvez modifier la priorité de synchronisation et la règle de resynchronisation utilisée par la paire en miroir pour terminer l'opération de resynchronisation après une interruption de communication.
 
+.Description de la tâche
 Vous pouvez modifier les paramètres de synchronisation d'une paire en miroir uniquement sur la matrice de stockage qui contient le volume principal.
 
 .Étapes
@@ -28,6 +29,7 @@ La priorité de synchronisation détermine la quantité de ressources système u
 
 +
 .En savoir plus sur les taux de synchronisation
+[%collapsible]
 ====
 Il existe cinq taux de priorité de synchronisation :
 

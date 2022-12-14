@@ -14,6 +14,7 @@ summary: 'Vous pouvez modifier, ajouter ou supprimer des paramètres de connexio
 [role="lead"]
 Vous pouvez modifier, ajouter ou supprimer des paramètres de connexion pour n'importe quelle configuration de stockage distant via l'option Afficher/Modifier les paramètres.
 
+.Description de la tâche
 Les modifications apportées aux propriétés de connexion affectent les importations en cours. Pour éviter les interruptions, modifiez uniquement les propriétés de connexion lorsque les importations ne sont pas en cours d'exécution.
 
 .Étapes

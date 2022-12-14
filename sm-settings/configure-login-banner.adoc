@@ -14,6 +14,7 @@ summary: 'Vous pouvez créer une bannière de connexion qui est présentée aux 
 [role="lead"]
 Vous pouvez créer une bannière de connexion présentée aux utilisateurs avant d'établir des sessions dans System Manager. La bannière peut inclure un avis consultatif et un message de consentement.
 
+.Description de la tâche
 Lorsque vous créez une bannière, elle apparaît avant l'écran de connexion dans une boîte de dialogue.
 
 .Étapes
@@ -32,4 +33,5 @@ N'utilisez pas de balises HTML ou autres balises de marquage pour le formatage.
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 Lors de la prochaine connexion des utilisateurs à System Manager, le texte s'ouvre dans une boîte de dialogue. Les utilisateurs doivent cliquer sur *OK* pour accéder à l'écran de connexion.

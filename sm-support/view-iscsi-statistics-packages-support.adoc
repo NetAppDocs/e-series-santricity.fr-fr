@@ -14,6 +14,7 @@ summary: Vous pouvez afficher les données relatives aux connexions iSCSI à vot
 [role="lead"]
 Vous pouvez afficher les données relatives aux connexions iSCSI à votre matrice de stockage.
 
+.Description de la tâche
 System Manager affiche ces types de statistiques iSCSI. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
 
 * *Ethernet MAC statistics* -- fournit des statistiques sur le contrôle d'accès aux médias (MAC). MAC fournit également un mécanisme d'adressage appelé l'adresse physique ou l'adresse MAC. L'adresse MAC est une adresse unique attribuée à chaque carte réseau. L'adresse MAC permet de livrer des paquets de données à une destination au sein du sous-réseau.

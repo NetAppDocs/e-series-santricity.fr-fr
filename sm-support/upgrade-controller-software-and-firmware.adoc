@@ -33,6 +33,7 @@ Voici quelques raisons d'activer ultérieurement :
 * Vous savez si vous souhaitez utiliser le contrôle d'accès basé sur des rôles dans votre baie de stockage.
 
 
+.Description de la tâche
 Vous pouvez choisir de mettre à niveau uniquement le fichier du logiciel OS ou uniquement le fichier NVSRAM du contrôleur ou de mettre à niveau les deux fichiers.
 
 Effectuez cette opération uniquement lorsque le support technique vous y invite.

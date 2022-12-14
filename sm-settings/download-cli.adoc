@@ -16,6 +16,7 @@ Depuis System Manager, vous pouvez télécharger le pack de l'interface de ligne
 
 La CLI fournit une méthode de configuration et de contrôle des matrices de stockage au format texte. Il communique via https et utilise la même syntaxe que la CLI disponible dans le pack logiciel de gestion installé en externe. Aucune clé n'est requise pour télécharger l'interface de ligne de commande.
 
+.Avant de commencer
 Un environnement d'exécution Java (JRE), version 8 et supérieure, doit être disponible sur le système de gestion dans lequel vous prévoyez d'exécuter les commandes CLI.
 
 .Étapes

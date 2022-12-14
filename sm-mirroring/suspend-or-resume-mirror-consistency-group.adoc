@@ -14,6 +14,7 @@ summary: 'Vous pouvez interrompre ou reprendre la synchronisation des données s
 [role="lead"]
 Vous pouvez interrompre ou reprendre la synchronisation des données sur toutes les paires mises en miroir d'un groupe de cohérence miroir, ce qui est plus efficace que la suspension ou la reprise de la synchronisation sur des paires mises en miroir individuelles.
 
+.Description de la tâche
 La suspension et la reprise de la synchronisation sur les groupes permettent de réduire tout impact sur les performances de l'application hôte, ce qui peut se produire lorsque toutes les données modifiées de la baie de stockage locale sont copiées sur la baie de stockage distante.
 
 L'état du groupe de cohérence miroir et de ses paires symétriques restent suspendus jusqu'à ce que vous utilisiez l'option reprendre pour reprendre l'activité de synchronisation.
@@ -31,6 +32,7 @@ Le système affiche une confirmation.
 . Sélectionnez *Oui* pour confirmer.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Suspend ou reprend le transfert de données entre toutes les paires symétriques d'un groupe de cohérence miroir sans supprimer la relation miroir.

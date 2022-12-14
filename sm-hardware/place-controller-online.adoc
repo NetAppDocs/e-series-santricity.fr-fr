@@ -26,6 +26,7 @@ Le menu contextuel du contrôleur s'affiche.
 . Sélectionnez *placer en ligne* et confirmez que vous souhaitez effectuer l'opération.
 
 
+.Résultats
 La détection d'un chemin préféré restauré par le pilote multivoie peut prendre jusqu'à 10 minutes.
 
 Tous les volumes possédés à l'origine par ce contrôleur sont automatiquement redéplacés vers le contrôleur au fur et à mesure que des demandes d'E/S sont reçues pour chaque volume. Dans certains cas, vous devrez peut-être redistribuer manuellement les volumes à l'aide de la commande *rerépartir les volumes*.

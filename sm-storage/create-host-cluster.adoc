@@ -14,6 +14,7 @@ summary: 'Vous créez un cluster hôte alors que deux hôtes ou plus requièrent
 [role="lead"]
 Vous créez un cluster hôte alors que deux hôtes ou plus requièrent l'accès E/S aux mêmes volumes.
 
+.Description de la tâche
 Notez les consignes suivantes lorsque vous créez un cluster hôte :
 
 * Cette opération ne démarre que si la création du cluster comporte au moins deux hôtes.
@@ -36,6 +37,7 @@ La boîte de dialogue Créer un cluster hôte s'affiche.
 . Sélectionnez les paramètres du cluster hôte selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -65,4 +67,5 @@ DA augmente l'intégrité des données dans l'ensemble du système de stockage. 
 
 
 
+.Résultats
 Le nouveau cluster hôte apparaît dans le tableau, avec les hôtes affectés dans les lignes en dessous.

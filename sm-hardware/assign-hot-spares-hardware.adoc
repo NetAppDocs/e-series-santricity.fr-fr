@@ -25,6 +25,7 @@ Vous pouvez attribuer un disque de secours en tant que disque de secours pour un
 
 
 
+.Description de la tâche
 Cette tâche explique comment affecter manuellement un disque de secours à partir de la page matériel. La couverture recommandée est de deux disques de secours par jeu de disques.
 
 [NOTE]
@@ -61,4 +62,5 @@ Le lecteur s'affiche en rose sur la page matériel, ce qui indique qu'il s'agit 
 
 
 
+.Résultats
 En cas de panne d'un disque au sein d'un groupe de volumes RAID 1, RAID 5 ou RAID 6, le contrôleur utilise automatiquement les données de redondance pour reconstruire les données du disque défaillant vers le disque de secours.

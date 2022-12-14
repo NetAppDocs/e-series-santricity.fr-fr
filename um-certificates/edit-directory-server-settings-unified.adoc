@@ -29,6 +29,7 @@ La boîte de dialogue Paramètres du serveur d'annuaire s'ouvre.
 . Dans l'onglet *Paramètres du serveur*, modifiez les paramètres souhaités.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -106,6 +107,7 @@ Liste des attributs de groupe sur l'utilisateur, qui est utilisée pour le mappa
 . Dans l'onglet *Role Mapping*, modifiez le mappage souhaité.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -147,4 +149,5 @@ NOTE: Le rôle Monitor est requis pour tous les utilisateurs, y compris l'admini
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.

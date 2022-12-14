@@ -13,6 +13,7 @@ summary: Pour afficher et prendre des mesures sur les opérations à long terme,
 [role="lead"]
 Pour afficher et prendre des mesures sur les opérations à long terme, utilisez la page opérations en cours.
 
+.Description de la tâche
 Pour chaque opération répertoriée sur la page opérations en cours, un pourcentage d'achèvement et une estimation du temps restant pour terminer l'opération sont indiqués. Dans certains cas, vous pouvez arrêter une opération ou la placer à une priorité plus ou moins élevée. Vous pouvez également effacer une opération de copie de volume terminée de la liste.
 
 .Étapes

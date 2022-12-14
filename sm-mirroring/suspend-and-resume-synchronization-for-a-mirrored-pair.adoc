@@ -14,6 +14,7 @@ summary: 'Vous pouvez utiliser l"option suspendre et reprendre pour contrôler q
 [role="lead"]
 Vous pouvez utiliser l'option suspendre et reprendre pour contrôler quand synchroniser les données sur le volume principal et le volume secondaire dans une paire en miroir.
 
+.Description de la tâche
 Si une paire en miroir est suspendue manuellement, la paire en miroir ne se synchronise pas tant qu'elle n'est pas rétablie manuellement.
 
 .Étapes
@@ -25,6 +26,7 @@ Le système affiche une confirmation.
 . Sélectionnez *Oui* pour confirmer.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Suspend ou reprend le transfert de données entre la paire symétrique sans supprimer la relation miroir.

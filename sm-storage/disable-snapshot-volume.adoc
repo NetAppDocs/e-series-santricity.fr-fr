@@ -14,6 +14,7 @@ summary: 'Lorsque vous n"en avez plus besoin ou que vous souhaitez temporairemen
 [role="lead"]
 Lorsque vous n'en avez plus besoin ou que vous souhaitez temporairement l'arrêter, vous pouvez désactiver un volume snapshot ou un volume snapshot dans un groupe de cohérence snapshot.
 
+.Description de la tâche
 Utilisez l'option Désactiver si l'une des conditions suivantes s'applique :
 
 * Lorsque vous avez terminé d'utiliser le volume Snapshot du volume de snapshot ou du groupe de cohérence de snapshot pour le moment.

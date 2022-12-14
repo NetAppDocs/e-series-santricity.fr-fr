@@ -14,6 +14,7 @@ summary: Vous pouvez afficher les propriétés, le statut, la capacité réserv�
 [role="lead"]
 Vous pouvez afficher les propriétés, le statut, la capacité réservée et les objets associés affectés à chaque image snapshot.
 
+.Description de la tâche
 Les objets associés à une image Snapshot incluent le volume de base ou le groupe de cohérence Snapshot pour lequel cette image Snapshot est un point de restauration, le groupe de snapshots associé et tous les volumes de snapshot créés à partir de l'image Snapshot. Utilisez les paramètres de snapshot pour déterminer si vous souhaitez copier ou convertir l'image de snapshot.
 
 .Étapes

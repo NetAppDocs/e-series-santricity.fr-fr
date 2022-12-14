@@ -23,4 +23,5 @@ La boîte de dialogue Activer les voyants de localisation de la matrice de stock
 . Une fois la matrice de stockage physiquement installée, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
 
 
+.Résultats
 Les voyants de localisation s'éteignent et la boîte de dialogue se ferme.

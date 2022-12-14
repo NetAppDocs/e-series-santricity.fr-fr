@@ -27,4 +27,5 @@ L'adresse de destination n'apparaît plus sur la page alertes.
 
 
 
+.Résultats
 La destination de trap supprimée ne reçoit plus d'interruptions SNMP du moniteur d'événements de la matrice de stockage.

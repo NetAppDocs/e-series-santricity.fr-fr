@@ -13,8 +13,10 @@ summary: 'Vous pouvez rétablir le certificat de gestion à l"état d"origine au
 [role="lead"]
 Vous pouvez rétablir le certificat de gestion à l'état d'origine auto-signé en usine.
 
+.Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
+.Description de la tâche
 Cette tâche supprime le certificat de gestion actuel du système hôte sur lequel le proxy de services Web et Unified Manager sont installés. Une fois le certificat réinitialisé, le système hôte reprend à l'aide du certificat auto-signé.
 
 .Étapes
@@ -29,4 +31,5 @@ Une fois que votre navigateur a été actualisé, le navigateur risque de bloque
 
 
 
+.Résultats
 Le système revient à utiliser le certificat auto-signé à partir du serveur. Par conséquent, le système invite les utilisateurs à accepter manuellement le certificat auto-signé pour leurs sessions.

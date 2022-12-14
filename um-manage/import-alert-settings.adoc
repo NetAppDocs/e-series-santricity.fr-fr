@@ -19,6 +19,7 @@ Vous pouvez importer des configurations d'alertes d'une matrice de stockage vers
 * La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
 
 
+.Description de la tâche
 Vous pouvez sélectionner des alertes par e-mail, SNMP ou syslog pour l'opération d'importation. Les paramètres importés comprennent :
 
 * *Alertes par e-mail* -- Une adresse de serveur de messagerie et les adresses e-mail des destinataires de l'alerte.
@@ -49,4 +50,5 @@ La page opérations affiche les résultats de l'opération d'importation. Si l'o
 
 
 
+.Résultats
 Les baies de stockage cibles sont désormais configurées de façon à envoyer des alertes aux administrateurs par e-mail, SNMP ou syslog.

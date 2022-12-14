@@ -14,6 +14,7 @@ summary: 'Vous pouvez activer ou désactiver l"interface de gestion héritée (s
 [role="lead"]
 Vous pouvez activer ou désactiver l'interface de gestion héritée (symbole), qui est une méthode de communication entre la matrice de stockage et le client de gestion.
 
+.Description de la tâche
 Par défaut, l'interface de gestion héritée est activée. Si vous la désactivez, la baie de stockage et le client de gestion utiliseront une méthode de communication plus sécurisée (API REST via https). Cependant, certains outils et tâches peuvent être affectés si ils sont désactivés.
 
 [NOTE]

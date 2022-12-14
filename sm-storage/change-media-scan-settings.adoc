@@ -14,6 +14,7 @@ summary: Une analyse des supports est une opération en arrière-plan qui analys
 [role="lead"]
 Une analyse des supports est une opération en arrière-plan qui analyse toutes les données et informations de redondance du volume. Utilisez cette option pour activer ou désactiver les paramètres de numérisation de supports pour un ou plusieurs volumes, ou pour modifier la durée de numérisation.
 
+.Avant de commencer
 Comprenez les éléments suivants :
 
 * Les analyses de supports s'exécutent en continu à un taux constant en fonction de la capacité à scanner et de la durée d'acquisition. Les acquisitions en arrière-plan peuvent être temporairement suspendues par une tâche en arrière-plan de priorité plus élevée (par exemple, reconstruction), mais reprendront à la même vitesse constante.
@@ -27,6 +28,7 @@ Si le contrôle de redondance détecte une incohérence entre les données et le
 
 
 
+.Description de la tâche
 Les analyses des supports détectent et répare les erreurs de support sur les blocs de disque qui sont rarement lus par les applications. Cela peut éviter les pertes de données en cas de panne de disque, car les données des disques défaillants sont reconstruites à l'aide des informations de redondance et des données des autres disques du groupe ou du pool de volumes.
 
 Vous pouvez effectuer les opérations suivantes :

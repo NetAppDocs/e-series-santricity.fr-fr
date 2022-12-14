@@ -19,6 +19,7 @@ Pour configurer la mise en miroir asynchrone, vous créez une paire en miroir qu
 Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
 
 ====
+.Avant de commencer
 Avant de créer une paire en miroir, répondez aux exigences suivantes pour Unified Manager :
 
 * Le service Web Services Proxy doit être en cours d'exécution.
@@ -39,6 +40,7 @@ Assurez-vous également de répondre aux exigences suivantes en matière de baie
 * Le volume secondaire doit être au moins aussi grand que le volume primaire.
 
 
+.Description de la tâche
 Le processus de création d'une paire miroir asynchrone est une procédure à plusieurs étapes.
 
 
@@ -84,7 +86,7 @@ Si votre matrice de stockage distante est protégée par un mot de passe, le sys
 
 
 
-. Sélectionnez *Suivant* et allez à  2: Select the primary volume.
+. Sélectionnez *Suivant* et allez à <<Étape 2 : sélectionnez le volume principal>>.
 +
 Si vous avez défini un nouveau groupe de cohérence en miroir, Unified Manager crée d'abord le groupe de cohérence en miroir sur la baie de stockage locale, puis crée le groupe de cohérence en miroir sur la baie de stockage distante. Vous pouvez afficher et gérer le groupe de cohérence miroir en lançant System Manager pour chaque baie.
 
@@ -121,7 +123,7 @@ Gardez à l'esprit les consignes suivantes :
 
 
 
-. Sélectionnez *Suivant* et allez à  3: Select the secondary volume.
+. Sélectionnez *Suivant* et allez à <<Étape 3 : sélectionnez le volume secondaire>>.
 
 
 
@@ -152,6 +154,7 @@ Gardez à l'esprit les consignes suivantes :
 . Sélectionnez *Finish* pour terminer la séquence de mise en miroir asynchrone.
 
 
+.Résultats
 Unified Manager effectue les actions suivantes :
 
 * Commence la synchronisation initiale entre la matrice de stockage locale et la matrice de stockage distante.

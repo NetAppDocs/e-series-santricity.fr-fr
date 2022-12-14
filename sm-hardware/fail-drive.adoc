@@ -13,6 +13,7 @@ summary: Si vous y êtes invité, vous pouvez faire échouer manuellement un dis
 [role="lead"]
 Si vous y êtes invité, vous pouvez faire échouer manuellement un disque.
 
+.Description de la tâche
 System Manager surveille les disques de la matrice de stockage. Lorsqu'il détecte qu'un disque génère beaucoup d'erreurs, le gourou de la restauration vous informe d'une panne de disque imminente. Si cela se produit et que vous disposez d'un disque de remplacement, vous devrez peut-être faire échouer le disque afin de prendre une action préventive. Si vous ne disposez pas d'un disque de remplacement, vous pouvez attendre que le disque tombe en panne.
 
 [CAUTION]

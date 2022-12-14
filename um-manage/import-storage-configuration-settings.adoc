@@ -37,6 +37,7 @@ Vous pouvez importer la configuration de stockage d'une matrice de stockage vers
 
 
 
+.Description de la tâche
 Les paramètres importés comprennent les volumes configurés (volumes épais et non référentiels uniquement), les groupes de volumes, les pools et les affectations de disques de secours.
 
 .Étapes
@@ -62,4 +63,5 @@ La page opérations affiche les résultats de l'opération d'importation. Si l'o
 
 
 
+.Résultats
 Les baies de stockage cibles sont désormais configurées avec la même configuration de stockage que la baie source.

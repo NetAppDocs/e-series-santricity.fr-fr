@@ -19,6 +19,7 @@ Après avoir restauré une configuration de matrice de stockage, utilisez l'opé
 * Vous devez effectuer des vérifications de validation ou vérifier avec le support technique pour vous assurer que la restauration a réussi. Après avoir déterminé que la restauration a réussi, le mode de récupération peut être effacé.
 
 
+.Description de la tâche
 La matrice de stockage contient une base de données de configuration qui inclut un enregistrement de sa configuration logique (pools, groupes de volumes, volumes, etc.). Si vous effacez intentionnellement la configuration de la matrice de stockage ou si la base de données de configuration est corrompue, la matrice de stockage passe en mode de restauration. Le mode de récupération arrête les E/S et bloque la base de données de configuration, ce qui vous donne le temps d'effectuer l'une des opérations suivantes :
 
 * Restaurez la configuration à partir de la sauvegarde automatique enregistrée dans les périphériques Flash du contrôleur. Pour ce faire, contactez le support technique.

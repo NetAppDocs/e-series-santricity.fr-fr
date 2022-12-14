@@ -14,6 +14,7 @@ summary: Vous supprimez une paire en miroir pour supprimer la relation de miroir
 [role="lead"]
 Vous supprimez une paire en miroir pour supprimer la relation de miroir du volume primaire sur la matrice de stockage locale et du volume secondaire sur la matrice de stockage distante.
 
+.Description de la tâche
 Consultez les informations suivantes sur les paires en miroir orphelines :
 
 * Une paire mise en miroir orpheline existe lorsqu'un volume membre d'un groupe de miroirs de cohérence a été supprimé d'un côté (côté de la baie de stockage locale ou côté de la baie de stockage distante), mais pas de l'autre.
@@ -31,6 +32,7 @@ Le tableau paires mises en miroir apparaît et affiche toutes les paires mises e
 . Confirmez que vous souhaitez supprimer la paire symétrique, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime la relation miroir du groupe de cohérence miroir sur la matrice de stockage locale et sur la matrice de stockage distante, et supprime la capacité réservée.

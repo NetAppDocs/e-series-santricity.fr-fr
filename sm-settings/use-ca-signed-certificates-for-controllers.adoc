@@ -19,6 +19,7 @@ Vous pouvez obtenir des certificats signés par une autorité de certification p
 * Vous devez connaître l'adresse IP ou les noms DNS de chaque contrôleur.
 
 
+.Description de la tâche
 L'utilisation de certificats signés par l'autorité de certification est une procédure en trois étapes.
 
 
@@ -27,11 +28,12 @@ L'utilisation de certificats signés par l'autorité de certification est une pr
 
 Vous devez d'abord générer un fichier de requête de signature de certificat (CSR) pour chaque contrôleur de la matrice de stockage.
 
+.Description de la tâche
 Cette tâche décrit comment générer un fichier CSR à partir de System Manager. La RSC fournit des informations sur votre organisation, ainsi que l'adresse IP ou le nom DNS du contrôleur. Au cours de cette tâche, un fichier CSR est généré si la matrice de stockage dispose d'un contrôleur et de deux fichiers CSR s'il possède deux contrôleurs.
 
 [NOTE]
 ====
-Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que OpenSSL et passer directement à  2: Submit the CSR files.
+Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que OpenSSL et passer directement à <<Étape 2 : soumettez les fichiers CSR>>.
 
 ====
 .Étapes
@@ -78,7 +80,7 @@ Ne cliquez pas sur le lien *Ignorer cette étape* lorsque vous créez une demand
 +
 Pour un seul contrôleur, un fichier CSR est téléchargé sur votre système local. Pour les doubles contrôleurs, deux fichiers CSR sont téléchargés. L'emplacement du dossier de téléchargement dépend de votre navigateur.
 
-. Accédez à  2: Submit the CSR files.
+. Accédez à <<Étape 2 : soumettez les fichiers CSR>>.
 
 
 
@@ -96,7 +98,7 @@ Après avoir créé les fichiers de demande de signature de certificat (CSR), en
 *Après avoir soumis un fichier CSR à l'autorité de certification, ne régénérez PAS un autre fichier CSR.* chaque fois que vous générez une RSC, le système crée une paire de clés publique et privée. La clé publique fait partie de la RSC, tandis que la clé privée est conservée dans le magasin de clés du système. Lorsque vous recevez les certificats signés et que vous les importez, le système garantit que les clés privées et publiques sont la paire d'origine. Si les clés ne correspondent pas, les certificats signés ne fonctionneront pas et vous devez demander de nouveaux certificats à l'autorité de certification.
 
 ====
-. Lorsque l'AC renvoie les certificats signés, accédez à  3: Import signed certificates for controllers.
+. Lorsque l'AC renvoie les certificats signés, accédez à <<Étape 3 : importation de certificats signés pour les contrôleurs>>.
 
 
 
@@ -127,4 +129,5 @@ Les fichiers sont chargés et validés.
 
 
 
+.Résultat
 La session est automatiquement interrompue. Vous devez vous reconnecter pour que les certificats prennent effet. Lorsque vous vous connectez de nouveau, les nouveaux certificats signés par l'autorité de certification sont utilisés pour votre session.

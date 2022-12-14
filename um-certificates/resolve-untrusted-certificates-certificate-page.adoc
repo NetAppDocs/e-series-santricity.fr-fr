@@ -27,6 +27,7 @@ Des certificats non fiables se produisent lorsqu'une baie de stockage tente d'é
 
 
 
+.Description de la tâche
 Vous devrez peut-être installer d'autres certificats de confiance si l'un des éléments suivants est vrai :
 
 * Vous avez ajouté récemment une baie de stockage.

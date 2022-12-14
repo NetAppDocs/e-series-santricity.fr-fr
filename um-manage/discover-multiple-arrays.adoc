@@ -119,6 +119,7 @@ Vous devez entrer les mots de passe des matrices de stockage que vous souhaitez 
 . Cliquez sur *Terminer*.
 
 
+.Une fois que vous avez terminé
 Les matrices de stockage sont ajoutées à votre domaine de gestion et associées au groupe sélectionné (si spécifié).
 
 [NOTE]

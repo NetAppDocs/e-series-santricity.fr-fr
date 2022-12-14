@@ -24,4 +24,5 @@ La boîte de dialogue confirmer la suppression du serveur Syslog s'ouvre.
 . Confirmez l'opération, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 Le serveur que vous avez supprimé ne reçoit plus d'alertes du moniteur d'événements.

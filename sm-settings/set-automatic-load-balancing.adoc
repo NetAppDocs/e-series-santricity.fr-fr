@@ -14,6 +14,7 @@ summary: 'La fonction d"équilibrage de charge automatique assure la gestion et 
 [role="lead"]
 La fonction d'équilibrage de charge automatique assure la gestion et l'équilibrage dynamiques du trafic d'E/S entrant provenant des hôtes sur les deux contrôleurs. Cette fonctionnalité est activée par défaut, mais vous pouvez la désactiver dans System Manager.
 
+.Description de la tâche
 Lorsque l'équilibrage automatique de la charge est activé, il exécute les fonctions suivantes :
 
 * Surveille et équilibre automatiquement l'utilisation des ressources du contrôleur.

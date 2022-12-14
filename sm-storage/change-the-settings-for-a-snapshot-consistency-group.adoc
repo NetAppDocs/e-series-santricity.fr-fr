@@ -24,6 +24,7 @@ La boîte de dialogue Paramètres du groupe de cohérence de l'instantané s'aff
 . Modifiez les paramètres du groupe de cohérence Snapshot, si nécessaire.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

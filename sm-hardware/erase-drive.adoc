@@ -14,8 +14,10 @@ summary: 'Vous pouvez utiliser l"option Effacer pour préparer un lecteur non af
 [role="lead"]
 Vous pouvez utiliser l'option Effacer pour préparer un lecteur non affecté à retirer du système. Cette procédure supprime définitivement les données, en veillant à ce qu'elles ne puissent plus être lues.
 
+.Avant de commencer
 Le lecteur doit être à l'état non affecté.
 
+.Description de la tâche
 Utilisez l'option Effacer uniquement si vous souhaitez supprimer définitivement toutes les données d'un disque. Si le lecteur est sécurisé, l'option Effacer effectue une suppression cryptographique et réinitialise les attributs de sécurité du lecteur en mode sécurisé.
 
 [NOTE]
@@ -55,6 +57,8 @@ Assurez-vous de poursuivre cette opération. Lorsque vous cliquez sur Oui dans l
 . Dans la boîte de dialogue temps d'achèvement estimé, cliquez sur *Oui* pour continuer l'opération d'effacement.
 
 
+.Résultats
 L'opération d'effacement peut prendre plusieurs minutes ou plusieurs heures. Vous pouvez afficher l'état dans le menu:Accueil[Afficher les opérations en cours]. Une fois l'opération d'effacement terminée, les lecteurs peuvent être utilisés dans un autre groupe de volumes ou un autre pool de disques, ou dans une autre matrice de stockage.
 
+.Une fois que vous avez terminé
 Si vous souhaitez réutiliser le lecteur, vous devez d'abord l'initialiser. Pour ce faire, sélectionnez *initialiser* dans le menu contextuel du lecteur.

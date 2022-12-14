@@ -16,8 +16,10 @@ Pour plus de sécurité sur un réseau iSCSI, vous pouvez définir l'authentific
 
 System Manager utilise la méthode CHAP (Challenge Handshake Authentication Protocol) qui valide l'identité des cibles et des initiateurs pendant la liaison initiale. L'authentification est basée sur une clé de sécurité partagée appelée secret_CHAP_.
 
+.Avant de commencer
 Vous pouvez définir le secret CHAP pour les initiateurs (hôtes iSCSI) avant ou après avoir défini le secret CHAP pour les cibles (contrôleurs). Avant de suivre les instructions de cette tâche, vous devez attendre que les hôtes aient d'abord établi une connexion iSCSI, puis définir le secret CHAP sur les hôtes individuels. Une fois les connexions effectuées, les noms IQN des hôtes et leurs secrets CHAP sont répertoriés dans la boîte de dialogue pour l'authentification iSCSI (décrite dans cette tâche) et vous n'avez pas besoin de les saisir manuellement.
 
+.Description de la tâche
 Vous pouvez sélectionner l'une des méthodes d'authentification suivantes :
 
 * *Authentification unidirectionnelle* -- utilisez ce paramètre pour permettre au contrôleur d'authentifier l'identité des hôtes iSCSI (authentification unidirectionnelle).
@@ -65,4 +67,5 @@ Si le secret CHAP d'un hôte a été configuré précédemment, les caractères 
 . Cliquez sur *Terminer*.
 
 
+.Résultats
 L'authentification se produit pendant la séquence de connexion iSCSI entre les contrôleurs et les hôtes iSCSI, à moins que vous n'ayez spécifié aucune authentification.

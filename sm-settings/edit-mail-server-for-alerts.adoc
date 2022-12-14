@@ -14,6 +14,7 @@ summary: 'Vous pouvez modifier l"adresse du serveur de messagerie et l"adresse d
 [role="lead"]
 Vous pouvez modifier l'adresse du serveur de messagerie et l'adresse de l'expéditeur utilisée pour les alertes par e-mail.
 
+.Avant de commencer
 L'adresse du serveur de messagerie que vous modifiez doit être disponible. L'adresse peut être une adresse IPv4 ou IPv6 ou un nom de domaine complet.
 
 [NOTE]

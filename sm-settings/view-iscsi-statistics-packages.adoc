@@ -14,6 +14,7 @@ summary: Vous pouvez afficher les données relatives aux connexions iSCSI à vot
 [role="lead"]
 Vous pouvez afficher les données relatives aux connexions iSCSI à votre matrice de stockage.
 
+.Description de la tâche
 System Manager affiche ces types de statistiques iSCSI. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
 
 * *Ethernet MAC statistics* -- fournit des statistiques sur le contrôle d'accès aux médias (MAC). MAC fournit également un mécanisme d'adressage appelé l'adresse physique ou l'adresse MAC. L'adresse MAC est une adresse unique attribuée à chaque carte réseau. L'adresse MAC permet de livrer des paquets de données à une destination au sein du sous-réseau.
@@ -45,6 +46,7 @@ Pour plus d'informations sur les différents types de statistiques, reportez-vou
 Lorsque vous sélectionnez les statistiques MAC Ethernet, les statistiques de réception et de transmission s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
 
 .Statistiques de transmission MAC :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -157,6 +159,7 @@ Nombre de trames Jumbo
 |===
 ====
 .Statistiques de réception MAC :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -275,6 +278,7 @@ Nombre d'erreurs de détection de porteuse
 Lorsque vous sélectionnez Ethernet TCP/IP, les statistiques TCP et IP s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
 
 .Statistiques TCP Ethernet :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -373,6 +377,7 @@ Nombre de mises à jour de fenêtre reçues
 |===
 ====
 .Statistiques IP Ethernet :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -463,6 +468,7 @@ Erreur de réassemblage du datagramme, décompte du délai d'exécution
 Lorsque vous sélectionnez les statistiques cible (protocole) ou initiateur local (protocole), les statistiques iSCSI apparaissent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
 
 .Statistiques iSCSI :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -546,6 +552,7 @@ Nombre de connexions iSCSI inattendues
 Lorsque vous sélectionnez Statistiques sur l'état opérationnel de l'échange de pontage de centre de données (DCBX), les statistiques DCBX s'affichent.
 
 .Statistiques DCBX :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -604,6 +611,7 @@ NOTE: Vous trouverez des statistiques supplémentaires sur l'état opérationnel
 Lorsque vous sélectionnez Link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics (Statistiques de longueur de type (TLV)), deux ensembles de statistiques apparaissent : un pour le périphérique local et un pour le périphérique distant. Le périphérique local fait référence au contrôleur. Le périphérique distant fait référence au périphérique homologue auquel le contrôleur est connecté, généralement un commutateur.
 
 .Statistiques TLV LLDP :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -667,6 +675,7 @@ Lorsque vous sélectionnez Statistiques de type valeur de longueur (TLV) d'écha
 
 
 .Statistiques DCBX TLV :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

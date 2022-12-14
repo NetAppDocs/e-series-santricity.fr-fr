@@ -14,8 +14,10 @@ summary: 'Vous pouvez enregistrer les informations de configuration d"une matric
 [role="lead"]
 Vous pouvez enregistrer les informations de configuration d'une matrice de stockage dans un fichier de script pour gagner du temps lors de la configuration de matrices de stockage supplémentaires avec la même configuration.
 
+.Avant de commencer
 La matrice de stockage ne doit pas être en cours d'opération qui modifie ses paramètres de configuration logique. Comme la création ou la suppression de volumes, le téléchargement du firmware des contrôleurs, l'attribution ou la modification des disques de secours, ou l'ajout de capacité (disques) à un groupe de volumes.
 
+.Description de la tâche
 L'enregistrement de la configuration de la matrice de stockage génère un script d'interface de ligne de commande (CLI) contenant les paramètres de la matrice de stockage, la configuration de volume, la configuration de l'hôte ou les affectations de l'hôte au volume pour une matrice de stockage. Vous pouvez utiliser ce script CLI généré pour répliquer une configuration vers une autre matrice de stockage avec la même configuration matérielle.
 
 Cependant, vous ne devez pas utiliser ce script CLI généré pour la reprise après sinistre. Pour effectuer une restauration de système, utilisez le fichier de sauvegarde de la base de données de configuration que vous créez manuellement ou contactez le support technique afin d'obtenir ces données à partir des dernières données d'Auto-support.
@@ -60,6 +62,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 
 
+.Une fois que vous avez terminé
 Pour charger la configuration enregistrée de la matrice de stockage sur une autre matrice de stockage, utilisez l'interface de ligne de commande SANtricity (SMcli) avec le `-f` pour appliquer le `.cfg` fichier.
 
 [NOTE]

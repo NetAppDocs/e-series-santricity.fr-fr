@@ -18,6 +18,7 @@ Le propriétaire du contrôleur du volume primaire effectue cette opération en 
 Gardez ces consignes à l'esprit pour vous aider à déterminer la durée d'une priorité de synchronisation et la manière dont les priorités de synchronisation peuvent affecter les performances du système.
 
 .A propos des taux de priorité de synchronisation
+[%collapsible]
 ====
 Ces taux de priorité sont disponibles :
 

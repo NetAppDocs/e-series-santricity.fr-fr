@@ -14,8 +14,10 @@ summary: 'Vous créez un planning Snapshot afin de permettre la restauration en 
 [role="lead"]
 Vous créez un planning Snapshot afin de permettre la restauration en cas de problème avec le volume de base et d'effectuer des sauvegardes planifiées. Des snapshots de volumes de base ou de groupes de cohérence Snapshot peuvent être créés selon un planning quotidien, hebdomadaire ou mensuel, à tout moment de la journée.
 
+.Avant de commencer
 Le volume de base doit être optimal.
 
+.Description de la tâche
 Cette tâche décrit la procédure de création d'un planning de snapshots pour un groupe de cohérence ou un volume de base de snapshot existant.
 
 [NOTE]
@@ -54,6 +56,7 @@ Dans le coin supérieur droit de la boîte de dialogue, cliquez sur *Afficher pl
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -173,6 +176,7 @@ La boîte de dialogue Modifier les paramètres s'affiche.
 . Modifiez les paramètres de la planification des snapshots selon vos besoins, puis cliquez sur *Terminer*.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

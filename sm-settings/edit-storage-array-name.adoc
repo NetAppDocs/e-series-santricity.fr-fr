@@ -37,4 +37,5 @@ Si vous souhaitez fermer le champ modifiable sans effectuer de modifications, cl
 ====
 
 
+.Résultats
 Le nouveau nom apparaît dans la barre de titre de SANtricity System Manager.

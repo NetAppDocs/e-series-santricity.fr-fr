@@ -14,8 +14,10 @@ summary: 'System Manager vous permet d"envoyer des interventions AutoSupport au 
 [role="lead"]
 System Manager vous permet d'envoyer des interventions AutoSupport au support technique sans attendre une intervention planifiée.
 
+.Avant de commencer
 La fonctionnalité AutoSupport doit être activée. Vous pouvez vérifier si elle est activée ou non sur la page AutoSupport.
 
+.Description de la tâche
 Cette opération collecte les données d'assistance et les envoie automatiquement au support technique, de sorte qu'ils puissent résoudre les problèmes.
 
 .Étapes

@@ -21,6 +21,7 @@ La page Journal des événements s'affiche.
 
 +
 .Détails de la page
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

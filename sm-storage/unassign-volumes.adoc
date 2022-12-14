@@ -14,6 +14,7 @@ summary: 'Annulez l"affectation des volumes des hôtes ou des clusters hôtes si
 [role="lead"]
 Annulez l'affectation des volumes des hôtes ou des clusters hôtes si vous ne avez plus besoin d'accéder aux E/S à ce volume depuis l'hôte ou le cluster hôte.
 
+.Description de la tâche
 Gardez ces directives à l'esprit lorsque vous déassigner un volume :
 
 * Si vous supprimez le dernier volume affecté d'un cluster hôte et que le cluster hôte dispose également d'hôtes avec des volumes affectés spécifiques, assurez-vous de supprimer ou de déplacer ces affectations avant de supprimer la dernière affectation pour le cluster hôte.

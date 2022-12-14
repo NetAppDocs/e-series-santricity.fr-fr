@@ -25,6 +25,7 @@ Vous pouvez attribuer un disque de secours en tant que disque de secours pour un
 
 
 
+.Description de la tâche
 Cette tâche explique comment affecter manuellement un disque de secours à partir de la page matériel. La couverture recommandée est de deux disques de secours par jeu de disques.
 
 [CAUTION]

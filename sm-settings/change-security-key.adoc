@@ -58,4 +58,5 @@ Le chemin du fichier téléchargé peut dépendre de l'emplacement de téléchar
 . Enregistrez votre identifiant de clé, votre phrase de passe et l'emplacement du fichier de clé téléchargé, puis cliquez sur *Fermer*.
 
 
+.Une fois que vous avez terminé
 Vous devez valider la clé de sécurité pour vous assurer que le fichier clé n'est pas corrompu.

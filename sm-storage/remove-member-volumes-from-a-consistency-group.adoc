@@ -14,6 +14,7 @@ summary: 'Vous pouvez supprimer un volume membre d"un groupe de cohérence Snaps
 [role="lead"]
 Vous pouvez supprimer un volume membre d'un groupe de cohérence Snapshot existant.
 
+.Description de la tâche
 Lorsque vous supprimez un volume membre d'un groupe de cohérence de snapshot, System Manager supprime automatiquement les objets de snapshot associés à ce volume membre.
 
 .Étapes
@@ -24,6 +25,7 @@ Lorsque vous supprimez un volume membre d'un groupe de cohérence de snapshot, S
 . Confirmez que vous souhaitez effectuer l'opération, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime toutes les images de snapshot et tous les volumes de snapshot associés au volume membre.

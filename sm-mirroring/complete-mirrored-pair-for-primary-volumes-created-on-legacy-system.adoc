@@ -14,6 +14,7 @@ summary: 'Si vous avez créé un volume primaire sur une baie de stockage exista
 [role="lead"]
 Si vous avez créé un volume primaire sur une baie de stockage existante qui ne peut pas être gérée par System Manager, vous pouvez créer le volume secondaire sur cette baie à l'aide de System Manager.
 
+.Description de la tâche
 Vous pouvez réaliser une mise en miroir asynchrone entre les baies existantes qui utilisent une interface différente et les baies plus récentes pouvant être gérées par System Manager.
 
 * Si vous effectuez une mise en miroir entre deux matrices de stockage qui utilisent System Manager, vous pouvez ignorer cette tâche car vous avez déjà terminé la paire en miroir dans la séquence de création de paires en miroir.
@@ -64,6 +65,7 @@ La capacité nécessaire varie, selon la fréquence et la taille des E/S écrite
 . Sélectionnez *Complete*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Crée le volume secondaire sur la matrice de stockage distante et alloue la capacité réservée pour le côté distant de la paire en miroir.

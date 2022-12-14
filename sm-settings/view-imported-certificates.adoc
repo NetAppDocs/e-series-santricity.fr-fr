@@ -14,6 +14,7 @@ summary: 'À partir de la page certificats, vous pouvez afficher le type de cert
 [role="lead"]
 À partir de la page certificats, vous pouvez afficher le type de certificat, l'autorité d'émission et la plage de dates valide des certificats de la matrice de stockage.
 
+.Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 .Étapes

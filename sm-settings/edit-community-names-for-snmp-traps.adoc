@@ -14,6 +14,7 @@ summary: Vous pouvez modifier les noms de communauté pour les déroutements SNM
 [role="lead"]
 Vous pouvez modifier les noms de communauté pour les déroutements SNMPv2c.
 
+.Avant de commencer
 Un nom de communauté doit être créé.
 
 .Étapes
@@ -26,4 +27,5 @@ Les destinations d'interruption et les noms de communauté apparaissent dans le 
 . Entrez le nouveau nom de communauté, puis cliquez sur *Enregistrer*. Les noms de communauté ne peuvent contenir que des caractères ASCII imprimables.
 
 
+.Résultats
 L'onglet SNMP de la page alertes affiche le nom de communauté mis à jour.

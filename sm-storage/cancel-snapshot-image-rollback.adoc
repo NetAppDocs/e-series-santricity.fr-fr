@@ -14,6 +14,7 @@ summary: 'Vous pouvez annuler une restauration active en cours (copie active des
 [role="lead"]
 Vous pouvez annuler une restauration active en cours (copie active des données), une restauration en attente (dans une file d'attente en attente de démarrage des ressources) ou une restauration interrompue en raison d'une erreur.
 
+.Description de la tâche
 Lorsque vous annulez une opération de restauration en cours, le volume de base revient à un état inutilisable et apparaît comme ayant échoué. Par conséquent, envisagez d'annuler une opération de restauration uniquement lorsque des options de restauration existent pour restaurer le contenu du volume de base.
 
 [NOTE]
@@ -31,8 +32,10 @@ La boîte de dialogue confirmer l'annulation de la restauration s'affiche.
 . Cliquez sur *Oui* pour confirmer.
 
 
+.Résultats
 System Manager arrête l'opération de restauration. Le volume de base est utilisable, mais des données incohérentes ou non intactes peuvent être présentes.
 
+.Une fois que vous avez terminé
 Après avoir annulé une opération de restauration, vous devez effectuer l'une des actions suivantes :
 
 * Réinitialiser le contenu du volume de base.

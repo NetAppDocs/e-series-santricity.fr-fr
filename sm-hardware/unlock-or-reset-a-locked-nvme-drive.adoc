@@ -19,6 +19,7 @@ Si vous insérez un ou plusieurs disques NVMe ou FIPS verrouillés dans une matr
 * Pour l'option Réinitialiser, vous devez trouver le PSID sur chaque lecteur que vous souhaitez réinitialiser. Pour localiser le PSID, retirez physiquement le lecteur et localisez la chaîne PSID (32 caractères maximum) sur l'étiquette du lecteur, puis réinstallez le lecteur.
 
 
+.Description de la tâche
 Cette tâche explique comment déverrouiller les données des disques NVMe ou FIPS en important un fichier de clé de sécurité dans la baie de stockage. Dans les cas où la clé de sécurité n'est pas disponible, cette tâche explique également comment effectuer une réinitialisation sur un lecteur verrouillé.
 
 [NOTE]
@@ -59,4 +60,5 @@ Pour déverrouiller toutes les unités NVMe ou FIPS, il vous suffit d'effectuer 
 
 
 
+.Résultats
 Le lecteur peut désormais être utilisé dans un autre groupe de volumes ou un autre pool de disques, ou dans une autre matrice de stockage.

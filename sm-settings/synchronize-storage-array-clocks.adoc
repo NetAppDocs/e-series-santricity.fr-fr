@@ -14,6 +14,7 @@ summary: 'Si le protocole NTP (Network Time Protocol) n"est pas activé, vous po
 [role="lead"]
 Si le protocole NTP (Network Time Protocol) n'est pas activé, vous pouvez définir manuellement les horloges sur les contrôleurs afin qu'elles soient synchronisées avec le client de gestion (système utilisé pour exécuter le navigateur qui accède à System Manager).
 
+.Description de la tâche
 La synchronisation garantit que les horodatages des événements dans le journal des événements correspondent aux horodatages écrits dans les fichiers journaux de l'hôte. Pendant le processus de synchronisation, les contrôleurs restent disponibles et opérationnels.
 
 [NOTE]
@@ -41,4 +42,5 @@ Pour les baies de stockage simplex, un seul contrôleur est affiché.
 . Si les heures indiquées dans la boîte de dialogue ne correspondent pas, cliquez sur *Synchroniser*.
 
 
+.Résultats
 Une fois la synchronisation réussie, les horodatages des événements sont identiques pour le journal des événements et les journaux hôtes.

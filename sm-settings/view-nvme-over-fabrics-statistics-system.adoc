@@ -14,6 +14,7 @@ summary: Vous pouvez afficher les données relatives aux connexions NVMe over Fa
 [role="lead"]
 Vous pouvez afficher les données relatives aux connexions NVMe over Fabrics avec votre baie de stockage.
 
+.Description de la tâche
 System Manager affiche ces types de statistiques NVMe over Fabrics. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
 
 * *Statistiques du sous-système NVMe* -- affiche les statistiques du contrôleur NVMe et de sa file d'attente. Le contrôleur NVMe fournit un chemin d'accès entre un hôte et les espaces de noms de la baie de stockage. Vous pouvez consulter les statistiques du sous-système NVMe pour des éléments tels que les échecs de connexion, les réinitialisations et les arrêts de service.

@@ -23,6 +23,7 @@ Vous pouvez configurer une connexion au serveur NTP (Network Time Protocol) afin
 Si vous saisissez un ou plusieurs noms de domaine pour les serveurs NTP, vous devez également configurer un serveur DNS afin de résoudre l'adresse du serveur NTP. Vous devez configurer le serveur DNS uniquement sur les contrôleurs sur lesquels vous avez configuré NTP et fourni un nom de domaine.
 
 ====
+.Description de la tâche
 Le protocole NTP permet à la matrice de stockage de synchroniser automatiquement les horloges du contrôleur avec un hôte externe à l'aide du protocole SNTP (simple Network Time Protocol). Le contrôleur interroge régulièrement le serveur NTP configuré, puis utilise les résultats pour mettre à jour son horloge interne de l'heure du jour. Si le protocole NTP est activé sur un seul contrôleur, l'autre contrôleur synchronise régulièrement son horloge avec le contrôleur sur lequel le protocole NTP est activé. Si le protocole NTP n'est pas activé pour aucun contrôleur, les contrôleurs synchronisent régulièrement leurs horloges entre eux.
 
 [NOTE]
@@ -64,4 +65,5 @@ Si la matrice de stockage est définie pour utiliser une adresse NTP statique, a
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 La configuration du serveur NTP s'affiche dans les paramètres du contrôleur, onglet *DNS / NTP*.

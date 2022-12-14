@@ -19,6 +19,7 @@ Pour configurer les alertes syslog, vous devez entrer une adresse de serveur sys
 * Le numéro de port UDP du serveur syslog doit être disponible. Ce port est généralement 514.
 
 
+.Description de la tâche
 Cette tâche décrit comment saisir l'adresse et le port du serveur syslog, puis tester l'adresse que vous avez saisie.
 
 .Étapes
@@ -40,4 +41,5 @@ La boîte de dialogue Ajouter un serveur Syslog s'ouvre.
 . Pour envoyer une alerte de test aux adresses du serveur, sélectionnez *Tester tous les serveurs Syslog*.
 
 
+.Résultats
 Le moniteur d'événements envoie des alertes au serveur syslog lorsqu'un événement alertable se produit.

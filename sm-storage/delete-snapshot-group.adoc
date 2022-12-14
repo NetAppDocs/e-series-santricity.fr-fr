@@ -14,6 +14,7 @@ summary: 'Vous supprimez un groupe de snapshots lorsque vous souhaitez supprimer
 [role="lead"]
 Vous supprimez un groupe de snapshots lorsque vous souhaitez supprimer définitivement ses données et le supprimer du système. La suppression d'un groupe de snapshots récupère la capacité réservée pour réutilisation dans le pool ou le groupe de volumes.
 
+.Description de la tâche
 Lorsqu'un groupe de snapshots est supprimé, toutes les images de snapshot du groupe sont également supprimées.
 
 .Étapes
@@ -26,6 +27,7 @@ La boîte de dialogue confirmer la suppression du groupe d'instantanés s'affich
 . Type `delete` pour confirmer.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime toutes les images de snapshot associées au groupe de snapshots.

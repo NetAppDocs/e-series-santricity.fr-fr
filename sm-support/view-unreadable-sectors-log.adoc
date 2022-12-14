@@ -14,6 +14,7 @@ summary: Vous pouvez enregistrer le journal secteurs illisibles et envoyer le fi
 [role="lead"]
 Vous pouvez enregistrer le journal secteurs illisibles et envoyer le fichier au support technique pour analyse.
 
+.Description de la tâche
 Le journal secteurs illisibles contient des enregistrements détaillés des secteurs illisibles provoqués par les lecteurs qui génèrent des erreurs irrécupérables du support. Les secteurs illisibles sont détectés pendant les E/S normales et pendant les opérations de modification, telles que les reconstructions. Lorsque des secteurs illisibles sont détectés sur une matrice de stockage, une alerte nécessitant une attention s'affiche pour la matrice de stockage. Le gourou de la récupération distingue quel état de secteur illisible a besoin d'attention. Les données contenues dans un secteur illisible ne peuvent pas être récupérées et doivent être considérées comme perdues.
 
 Le journal secteurs illisibles peut stocker jusqu'à 1,000 secteurs illisibles. Lorsque le journal secteurs illisibles atteint 1,000 entrées, les conditions suivantes s'appliquent :

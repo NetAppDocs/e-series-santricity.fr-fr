@@ -13,6 +13,7 @@ summary: Vous pouvez afficher les données de performances graphiques pour les o
 [role="lead"]
 Vous pouvez afficher les données de performances graphiques pour les objets logiques, les objets physiques, les applications et les workloads.
 
+.Description de la tâche
 Les graphiques de performances affichent des données historiques ainsi que des données en temps réel actuellement capturées. Une ligne verticale sur le graphique, appelée mise à jour en direct, distingue les données historiques des données en temps réel.
 
 *Affichage de la page d'accueil*
@@ -77,6 +78,7 @@ Vue des applications et des charges de travail
 . Utilisez les options pour afficher les objets et les informations dont vous avez besoin.
 +
 .Options
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -123,6 +125,7 @@ Sélectionnez le titre du graphique à masquer ou à afficher.
 . Si nécessaire, utilisez les options supplémentaires pour afficher les données de performances.
 +
 .Ou des options supplémentaires
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

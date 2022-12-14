@@ -24,6 +24,7 @@ Pour utiliser la fonction sécurité des lecteurs, vous pouvez créer une clé d
 Si des disques FDE et FIPS sont tous deux installés dans la baie de stockage, ils partagent la même clé de sécurité.
 
 ====
+.Description de la tâche
 Dans cette tâche, vous définissez un identifiant et une phrase de passe à associer à la clé de sécurité interne.
 
 [NOTE]
@@ -74,6 +75,7 @@ Le chemin du fichier téléchargé peut dépendre de l'emplacement de téléchar
 . Enregistrez votre identifiant de clé, votre phrase de passe et l'emplacement du fichier de clé téléchargé, puis cliquez sur *Fermer*.
 
 
+.Résultats
 Vous pouvez désormais créer des groupes ou des pools de volumes sécurisés ou activer la sécurité sur des groupes et pools de volumes existants.
 
 [NOTE]
@@ -81,4 +83,5 @@ Vous pouvez désormais créer des groupes ou des pools de volumes sécurisés ou
 Chaque fois que l'alimentation des lecteurs est coupée, puis remise sous tension, tous les lecteurs sécurisés sont mis à l'état verrouillé par sécurité. Dans cet état, les données sont inaccessibles jusqu'à ce que le contrôleur applique la clé de sécurité correcte lors de l'initialisation du lecteur. Si quelqu'un supprime physiquement un disque verrouillé et l'installe dans un autre système, l'état sécurité verrouillée empêche l'accès non autorisé à ses données.
 
 ====
+.Une fois que vous avez terminé
 Vous devez valider la clé de sécurité pour vous assurer que le fichier clé n'est pas corrompu.

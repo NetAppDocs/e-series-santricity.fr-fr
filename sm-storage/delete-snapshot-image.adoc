@@ -14,6 +14,7 @@ summary: 'Supprimez des images de snapshot pour nettoyer l"image snapshot la plu
 [role="lead"]
 Supprimez des images de snapshot pour nettoyer l'image snapshot la plus ancienne d'un groupe de snapshots ou d'un groupe de cohérence de snapshot.
 
+.Description de la tâche
 Vous pouvez supprimer une image Snapshot ou bien supprimer des images Snapshot de groupes de cohérence avec le même horodatage de création. Vous pouvez également supprimer des instantanés d'un groupe de snapshots.
 
 Vous ne pouvez pas supprimer une image Snapshot s'il ne s'agit pas de l'image Snapshot la plus ancienne pour le volume de base ou le groupe de cohérence Snapshot associé.
@@ -28,6 +29,7 @@ Si vous avez sélectionné une image Snapshot d'un groupe de cohérence de snaps
 . Cliquez sur *Supprimer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime l'image snapshot de la matrice de stockage.

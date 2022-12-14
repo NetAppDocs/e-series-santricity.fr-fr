@@ -20,6 +20,7 @@ Vous pouvez activer les vérifications automatiques des certificats révoqués, 
 * Si vous souhaitez spécifier votre propre serveur OCSP, vous devez connaître l'URL de ce serveur.
 
 
+.Description de la tâche
 La vérification automatique de révocation est utile dans les cas où l'AC a émis un certificat de façon incorrecte ou si une clé privée est compromise.
 
 Au cours de cette tâche, vous pouvez configurer un serveur OCSP ou utiliser le serveur spécifié dans le fichier de certificat. Le serveur OCSP détermine si l'autorité de certification a révoqué des certificats avant leur date d'expiration prévue, puis bloque l'accès de l'utilisateur à un site si le certificat est révoqué.
@@ -40,4 +41,5 @@ Vous pouvez également activer la vérification de révocation à partir de l'on
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 Si la matrice de stockage tente de se connecter à un serveur dont le certificat est révoqué, la connexion est refusée et un événement est consigné.

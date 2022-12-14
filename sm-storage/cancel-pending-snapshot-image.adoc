@@ -14,6 +14,7 @@ summary: 'Vous pouvez annuler une image snapshot en attente avant la fin de cell
 [role="lead"]
 Vous pouvez annuler une image snapshot en attente avant la fin de celle-ci. Les snapshots se produisent de manière asynchrone, et le statut du snapshot est en attente jusqu'à la fin du Snapshot. L'image d'instantané se termine dès que l'opération de synchronisation est terminée.
 
+.Description de la tâche
 Une image instantanée est en attente en raison des conditions simultanées suivantes :
 
 * Le volume de base d'un snapshot group ou un ou plusieurs volumes membres d'un groupe de cohérence qui contient cette image Snapshot est membre d'un groupe de miroirs asynchrone.

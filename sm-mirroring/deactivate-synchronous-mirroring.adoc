@@ -14,6 +14,7 @@ summary: 'Vous pouvez désactiver la fonction de mise en miroir synchrone sur un
 [role="lead"]
 Vous pouvez désactiver la fonction de mise en miroir synchrone sur une matrice de stockage pour rétablir l'utilisation normale du port hôte 4 de l'adaptateur de bus hôte (HBA), réservé à la transmission des données en miroir.
 
+.Avant de commencer
 Vous devez avoir supprimé toutes les relations de miroir synchrone. Vérifiez que toutes les paires mises en miroir ont été supprimées de la matrice de stockage.
 
 .Étapes

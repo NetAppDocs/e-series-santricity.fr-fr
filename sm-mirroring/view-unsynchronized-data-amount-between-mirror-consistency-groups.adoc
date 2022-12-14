@@ -14,6 +14,7 @@ summary: 'Vous pouvez afficher la quantité de données non synchronisées entre
 [role="lead"]
 Vous pouvez afficher la quantité de données non synchronisées entre les groupes de cohérence miroir sur la matrice de stockage locale et sur la matrice de stockage distante. Lorsque le groupe de cohérence miroir est à l'état non synchronisé, aucune activité de mise en miroir n'a lieu.
 
+.Description de la tâche
 Vous pouvez effectuer cette tâche lorsque le groupe de cohérence miroir sélectionné contient des paires en miroir et lorsque la synchronisation n'est pas en cours.
 
 .Étapes

@@ -16,8 +16,10 @@ Vous pouvez activer les paramètres liés à la découverte de périphériques d
 
 Les paramètres de découverte de la cible vous permettent d'enregistrer les informations iSCSI de la baie de stockage à l'aide du protocole iSNS (Internet Storage Name Service) et de déterminer si vous souhaitez autoriser ou non des sessions de découverte sans nom.
 
+.Avant de commencer
 Si le serveur iSNS utilise une adresse IP statique, cette adresse doit être disponible pour l'enregistrement iSNS. IPv4 et IPv6 sont pris en charge.
 
+.Description de la tâche
 Vous pouvez activer les paramètres suivants relatifs à la découverte iSCSI :
 
 * *Activer le serveur iSNS pour enregistrer une cible* -- lorsque cette option est activée, la matrice de stockage enregistre son nom qualifié iSCSI (IQN) et les informations de port à partir du serveur iSNS. Ce paramètre permet la découverte iSNS, de sorte qu'un initiateur puisse récupérer l'IQN et les informations de port à partir du serveur iSNS.
@@ -56,4 +58,5 @@ Pour que le serveur DHCP fournit l'adresse du serveur iSNS, vous devez configure
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 Une barre de progression apparaît lorsque System Manager tente d'enregistrer le contrôleur avec le serveur iSNS. Ce processus peut prendre jusqu'à cinq minutes.

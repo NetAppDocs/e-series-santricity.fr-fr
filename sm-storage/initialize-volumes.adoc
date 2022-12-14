@@ -25,6 +25,7 @@ Un volume est automatiquement initialisé lors de sa première création. Cepend
 Vous ne pouvez pas annuler l'opération après son démarrage. Toutes les données de volume sont effacées. N'essayez pas cette opération à moins que le gourou de la restauration vous conseille de le faire. Contactez le support technique avant de commencer cette procédure.
 
 ====
+.Description de la tâche
 Lorsque vous initialisez un volume, celui-ci conserve son WWN, ses affectations d'hôtes, sa capacité allouée et ses paramètres de capacité réservée. Il conserve également les mêmes paramètres d'assurance de données et de sécurité.
 
 Les types de volumes suivants _ne peuvent pas_ être initialisés :
@@ -48,6 +49,7 @@ La boîte de dialogue initialiser les volumes s'affiche. Tous les volumes de la 
 . Sélectionnez un ou plusieurs volumes à initialiser et confirmez que vous souhaitez effectuer l'opération.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Efface toutes les données des volumes qui ont été initialisés.

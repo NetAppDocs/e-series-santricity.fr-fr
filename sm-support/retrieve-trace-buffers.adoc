@@ -14,6 +14,7 @@ summary: Vous pouvez récupérer les tampons de trace depuis les contrôleurs et
 [role="lead"]
 Vous pouvez récupérer les tampons de trace depuis les contrôleurs et envoyer le fichier au support technique pour analyse.
 
+.Description de la tâche
 Le micrologiciel utilise les tampons de trace pour enregistrer le traitement, en particulier les conditions d'exception, qui peuvent être utiles pour le débogage. Vous pouvez récupérer les tampons de trace sans interrompre le fonctionnement de la matrice de stockage et avec un impact minimal sur les performances.
 
 [NOTE]

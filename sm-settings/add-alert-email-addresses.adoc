@@ -25,4 +25,5 @@ La boîte de dialogue Ajouter des e-mails s'ouvre.
 . Cliquez sur *Ajouter*.
 
 
+.Résultats
 L'onglet E-mail de la page alertes affiche les nouvelles adresses e-mail.

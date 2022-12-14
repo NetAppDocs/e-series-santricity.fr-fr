@@ -13,6 +13,7 @@ summary: 'L"ID du tiroir est un numéro qui identifie de manière unique un tiro
 [role="lead"]
 L'ID du tiroir est un numéro qui identifie de manière unique un tiroir dans la baie de stockage. Les étagères sont numérotées consécutivement, en commençant par 00 ou 01, en haut à gauche de chaque vue de tablette.
 
+.Description de la tâche
 Le firmware du contrôleur attribue automatiquement l'ID de tiroir, mais vous pouvez modifier ce numéro si vous souhaitez créer un autre schéma de commande.
 
 .Étapes

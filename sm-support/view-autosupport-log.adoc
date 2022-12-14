@@ -14,6 +14,7 @@ summary: 'Le journal AutoSupport fournit des informations sur le statut, l"histo
 [role="lead"]
 Le journal AutoSupport fournit des informations sur le statut, l'historique d'intervention et les erreurs rencontrées lors de la livraison des interventions AutoSupport.
 
+.Description de la tâche
 Plusieurs fichiers journaux peuvent exister. Lorsque le fichier journal actuel atteint 200 Ko, il est archivé et un nouveau fichier journal est créé. Le nom du fichier journal archivé est `ASUPMessages.n`, où _n_ est un entier compris entre 1 et 9. Si plusieurs fichiers journaux existent, vous pouvez choisir d'afficher le journal le plus récent ou un journal précédent.
 
 * *Journal actuel* -- affiche une liste des derniers événements capturés.

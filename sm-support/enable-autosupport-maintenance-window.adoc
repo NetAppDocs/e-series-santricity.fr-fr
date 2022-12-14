@@ -31,4 +31,5 @@ La création automatique de ticket AutoSupport en cas d'événements d'erreur es
 
 
 
+.Une fois que vous avez terminé
 La fenêtre de maintenance ne démarre pas tant que la requête de la baie de stockage n'est pas traitée par les serveurs AutoSupport. Attendez que vous ayez reçu un e-mail de confirmation avant d'effectuer toute opération de maintenance sur votre baie de stockage.

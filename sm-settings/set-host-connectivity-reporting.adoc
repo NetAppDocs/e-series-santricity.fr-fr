@@ -14,6 +14,7 @@ summary: 'Vous pouvez activer le reporting sur la connectivité des hôtes afin 
 [role="lead"]
 Vous pouvez activer le reporting sur la connectivité des hôtes afin que la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d'interruption de la connexion. Cette fonctionnalité est activée par défaut.
 
+.Description de la tâche
 Si vous désactivez les rapports sur la connectivité hôte, le système ne surveille plus les problèmes de connectivité ou de pilote multivoie lorsqu'un hôte est connecté à la matrice de stockage.
 
 [NOTE]

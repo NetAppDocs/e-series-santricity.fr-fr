@@ -36,6 +36,7 @@ Veillez à ne pas supprimer vos autorisations lorsque le langage SAML est activ�
 ====
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -82,4 +83,5 @@ NOTE: Le rôle Monitor est requis pour tous les utilisateurs, y compris l'admini
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.

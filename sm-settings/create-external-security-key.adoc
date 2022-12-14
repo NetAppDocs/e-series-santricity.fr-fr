@@ -33,6 +33,7 @@ Pour plus d'informations sur le certificat du serveur, consultez la documentatio
 ====
 
 
+.Description de la tâche
 Dans cette tâche, vous définissez l'adresse IP du serveur de gestion des clés et le numéro de port qu'il utilise, puis chargez les certificats pour la gestion des clés externes.
 
 .Étapes
@@ -113,6 +114,7 @@ Les résultats du test s'affichent dans la boîte de dialogue.
 
 
 
+.Résultats
 Lorsque la gestion externe des clés est activée, vous pouvez créer des groupes ou des pools de volumes sécurisés ou activer la sécurité sur les groupes et pools de volumes existants.
 
 [NOTE]
@@ -120,4 +122,5 @@ Lorsque la gestion externe des clés est activée, vous pouvez créer des groupe
 Chaque fois que l'alimentation des lecteurs est coupée, puis remise sous tension, tous les lecteurs sécurisés sont mis à l'état verrouillé par sécurité. Dans cet état, les données sont inaccessibles jusqu'à ce que le contrôleur applique la clé de sécurité correcte lors de l'initialisation du lecteur. Si quelqu'un supprime physiquement un disque verrouillé et l'installe dans un autre système, l'état sécurité verrouillée empêche l'accès non autorisé à ses données.
 
 ====
+.Une fois que vous avez terminé
 Vous devez valider la clé de sécurité pour vous assurer que le fichier clé n'est pas corrompu.

@@ -14,6 +14,7 @@ summary: 'Pour les hôtes qui ne peuvent pas être découverts automatiquement, 
 [role="lead"]
 Pour les hôtes qui ne peuvent pas être découverts automatiquement, vous pouvez créer manuellement un hôte. La création d'un hôte est l'une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d'autoriser l'accès E/S aux volumes.
 
+.Description de la tâche
 Tenez compte des consignes suivantes lorsque vous créez un hôte :
 
 * Vous devez définir les ports d'identificateur d'hôte associés à l'hôte.
@@ -31,6 +32,7 @@ La boîte de dialogue Créer un hôte s'affiche.
 . Sélectionnez les paramètres de l'hôte, le cas échéant.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -97,6 +99,7 @@ Actuellement, la seule méthode d'authentification iSCSI utilisée par System Ma
 . Cliquez sur *Créer*.
 
 
+.Résultats
 Une fois l'hôte créé, le système crée un nom par défaut pour chaque port hôte configuré pour l'hôte (libellé utilisateur).
 
 L'alias par défaut est <``Hostname_Port Number``>. Par exemple, l'alias par défaut du premier port créé pour `host IPT is IPT_1`.

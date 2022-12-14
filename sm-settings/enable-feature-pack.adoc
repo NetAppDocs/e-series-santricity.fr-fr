@@ -29,6 +29,7 @@ Le fichier Feature Pack est chargé sur le client de gestion (le système avec u
 Vous devez planifier une fenêtre de maintenance des temps d'indisponibilité et arrêter toutes les opérations d'E/S entre l'hôte et les contrôleurs. Par ailleurs, notez que vous ne pouvez pas accéder aux données de la baie de stockage tant que vous n'avez pas terminé la conversion.
 
 ====
+.Description de la tâche
 Cette tâche explique comment utiliser System Manager pour activer un pack de fonctionnalités. Lorsque vous avez terminé, vous devez redémarrer la matrice de stockage.
 
 .Étapes

@@ -27,6 +27,7 @@ Le système affiche une confirmation.
 . Sélectionnez *Oui* pour confirmer.
 
 
+.Résultats
 Le système effectue les opérations suivantes :
 
 * Lance la resynchronisation des données sur toutes les paires symétriques au sein du groupe de cohérence miroir sélectionné.

@@ -16,6 +16,7 @@ Le référentiel logiciel répertorie tous les fichiers logiciels associés au p
 
 Si vous ne voyez pas le fichier que vous souhaitez utiliser, vous pouvez utiliser l'option gérer le référentiel logiciel pour importer un ou plusieurs fichiers SANtricity OS vers le système hôte sur lequel s'exécutent le proxy de services Web et Unified Manager. Vous pouvez également choisir de supprimer un ou plusieurs fichiers SANtricity OS disponibles dans le référentiel logiciel.
 
+.Avant de commencer
 Si vous ajoutez des fichiers SANtricity OS, vérifiez que les fichiers OS sont disponibles sur votre système local.
 
 .Étapes
@@ -53,4 +54,5 @@ Supprimer
 |===
 
 
+.Résultats
 Si vous avez sélectionné l'importation, le ou les fichiers sont téléchargés et validés. Si vous avez sélectionné Supprimer, les fichiers sont supprimés du référentiel logiciel.

@@ -14,6 +14,7 @@ summary: 'L"inventaire des logiciels et des micrologiciels répertorie les versi
 [role="lead"]
 L'inventaire des logiciels et des micrologiciels répertorie les versions de micrologiciel de chaque composant de la matrice de stockage.
 
+.Description de la tâche
 Une matrice de stockage est composée de nombreux composants, dont des contrôleurs, des disques, des tiroirs et des modules d'entrée/sortie (IOM). Chacun de ces composants contient du firmware. Certaines versions du micrologiciel dépendent d'autres versions du micrologiciel. Pour capturer des informations sur toutes les versions de micrologiciel de votre matrice de stockage, consultez l'inventaire des logiciels et micrologiciels. Le support technique peut analyser l'inventaire des logiciels et des micrologiciels afin de détecter les incohérences de micrologiciel.
 
 .Étapes

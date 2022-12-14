@@ -34,6 +34,7 @@ Certains onglets ont un lien pour *Afficher plus de paramètres* en haut à droi
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

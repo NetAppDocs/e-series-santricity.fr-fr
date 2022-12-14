@@ -51,6 +51,7 @@ Le groupe « tous » est sélectionné par défaut.
 . Entrez le mot de passe administrateur de la matrice de stockage que vous souhaitez ajouter à votre domaine de gestion, puis cliquez sur *OK*.
 
 
+.Une fois que vous avez terminé
 La matrice de stockage est ajoutée à Unified Manager et, si elle est spécifiée, elle est également ajoutée au groupe sélectionné.
 
 Si la collecte automatique des données de support est activée, les données de support sont automatiquement collectées pour une matrice de stockage que vous ajoutez.

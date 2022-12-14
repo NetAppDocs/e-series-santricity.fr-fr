@@ -19,6 +19,7 @@ Vous pouvez importer la configuration système d'une matrice de stockage vers d'
 * La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
 
 
+.Description de la tâche
 Les paramètres importés incluent les paramètres de numérisation des supports pour un volume, les paramètres SSD pour les contrôleurs et l'équilibrage automatique de la charge (n'inclut pas les rapports de connectivité hôte).
 
 .Étapes
@@ -44,4 +45,5 @@ La page opérations affiche les résultats de l'opération d'importation. Si l'o
 
 
 
+.Résultats
 Les matrices de stockage cibles sont maintenant configurées avec les mêmes paramètres système que la matrice source.

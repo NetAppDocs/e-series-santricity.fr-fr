@@ -14,6 +14,7 @@ summary: Le contrôleur inclut un port Ethernet utilisé pour la gestion du syst
 [role="lead"]
 Le contrôleur inclut un port Ethernet utilisé pour la gestion du système. Si nécessaire, vous pouvez modifier ses paramètres de transmission et ses adresses IP.
 
+.Description de la tâche
 Au cours de cette procédure, vous sélectionnez le port 1, puis déterminez la vitesse et la méthode d'adressage du port. Le port 1 se connecte au réseau sur lequel le client de gestion peut accéder au contrôleur et à System Manager.
 
 [NOTE]
@@ -39,6 +40,7 @@ La boîte de dialogue configurer les ports de gestion s'ouvre.
 . Sélectionnez les paramètres du port de configuration, puis cliquez sur *Suivant*.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -65,6 +67,7 @@ Si vous sélectionnez *Activer IPv4*, une boîte de dialogue s'ouvre pour sélec
 . Configurez les paramètres IPv4 et/ou IPv6, automatiquement ou manuellement.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -91,4 +94,5 @@ NOTE: Si vous modifiez la configuration de l'adresse IP, le chemin de gestion de
 . Cliquez sur *Terminer*.
 
 
+.Résultats
 La configuration du port de gestion s'affiche dans les paramètres du contrôleur, onglet ports de gestion.

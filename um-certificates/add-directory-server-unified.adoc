@@ -20,6 +20,7 @@ Pour configurer l'authentification pour Access Management, vous établissez des 
 * Pour les serveurs LDAPS utilisant un protocole sécurisé, la chaîne de certificats du serveur LDAP doit être installée sur votre ordinateur local.
 
 
+.Description de la tâche
 L'ajout d'un serveur de répertoires est un processus en deux étapes. Vous devez d'abord entrer le nom de domaine et l'URL. Si votre serveur utilise un protocole sécurisé, vous devez également télécharger un certificat d'autorité de certification pour l'authentification s'il est signé par une autorité de signature non standard. Si vous disposez d'informations d'identification pour un compte BIND, vous pouvez également saisir votre nom de compte d'utilisateur et votre mot de passe. Ensuite, vous associez les groupes d'utilisateurs du serveur LDAP aux rôles d'utilisateur locaux.
 
 .Étapes
@@ -31,6 +32,7 @@ La boîte de dialogue Ajouter un serveur de répertoire s'ouvre.
 . Dans l'onglet *Paramètres du serveur*, entrez les informations d'identification du serveur LDAP.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -122,6 +124,7 @@ Entrez une liste d'attributs de groupe sur l'utilisateur, qui est utilisée pour
 . Attribuez des groupes LDAP aux rôles prédéfinis. Un groupe peut avoir plusieurs rôles attribués.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

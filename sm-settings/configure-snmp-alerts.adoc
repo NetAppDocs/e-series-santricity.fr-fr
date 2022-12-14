@@ -32,6 +32,7 @@ Si vous ne possédez pas le fichier MIB, vous pouvez l'obtenir sur le site de su
 
 
 
+.Description de la tâche
 Cette tâche décrit comment identifier le serveur SNMP pour les destinations de déroutement, puis tester votre configuration.
 
 .Étapes
@@ -75,4 +76,5 @@ La boîte de dialogue Ajouter des destinations de recouvrement s'ouvre.
 . Pour vous assurer qu'une interruption est valide, sélectionnez une destination d'interruption dans le tableau, puis cliquez sur *Test Trap destination* pour envoyer une interruption de test à l'adresse configurée.
 
 
+.Résultats
 Le moniteur d'événements envoie des interruptions SNMP au(x) serveur(s) chaque fois qu'un événement alertable se produit.

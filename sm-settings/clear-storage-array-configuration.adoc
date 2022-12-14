@@ -14,8 +14,10 @@ summary: 'Utilisez l"opération Effacer la configuration pour supprimer tous les
 [role="lead"]
 Utilisez l'opération Effacer la configuration pour supprimer tous les pools, groupes de volumes, volumes, définitions d'hôte et affectations d'hôte de la baie de stockage.
 
+.Avant de commencer
 Avant de supprimer la configuration de la matrice de stockage, sauvegardez les données.
 
+.Description de la tâche
 Il existe deux options de configuration de matrice de stockage :
 
 * *Volume* -- généralement, vous pouvez utiliser l'option Volume pour reconfigurer une matrice de stockage de test en tant que matrice de stockage de production. Par exemple, vous pouvez configurer une matrice de stockage pour le test, puis, lorsque vous avez terminé le test, supprimer la configuration de test et configurer la matrice de stockage pour un environnement de production.

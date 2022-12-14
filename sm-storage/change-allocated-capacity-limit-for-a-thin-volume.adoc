@@ -38,6 +38,7 @@ La boîte de dialogue Modifier la limite s'affiche. Le paramètre limite de capa
 . Modifiez la limite de capacité allouée et le seuil d'avertissement selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

@@ -16,6 +16,7 @@ Vous utilisez un groupe de volumes pour créer un ou plusieurs volumes accessibl
 
 De plus, des disques de capacité supérieure et la possibilité de répartir les volumes entre les contrôleurs permettent de créer plusieurs volumes par groupe de volumes et d'utiliser la capacité de stockage et de protéger vos données.
 
+.Avant de commencer
 Avant de créer un groupe de volumes, consultez les instructions suivantes :
 
 * Vous avez besoin d'au moins un lecteur non affecté.
@@ -65,6 +66,7 @@ Les caractéristiques de conduite affichées dépendent de la méthode automatiq
 
 +
 .Caractéristiques de l'entraînement automatique de la méthode
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -164,6 +166,7 @@ Affiche les tailles de blocs pouvant être créées pour les volumes du groupe :
 ====
 +
 .Caractéristiques d'entraînement de méthode manuelle
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

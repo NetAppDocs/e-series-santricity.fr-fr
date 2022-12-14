@@ -14,8 +14,10 @@ summary: 'Vous pouvez tester la liaison de communication pour diagnostiquer d"é
 [role="lead"]
 Vous pouvez tester la liaison de communication pour diagnostiquer d'éventuels problèmes de communication entre la matrice de stockage locale et la matrice de stockage distante associée à un groupe de cohérence miroir.
 
+.Avant de commencer
 Le groupe de cohérence en miroir que vous souhaitez tester doit exister sur les baies de stockage locales et distantes.
 
+.Description de la tâche
 Vous pouvez exécuter quatre tests différents :
 
 * *Connectivity* -- vérifie que les deux contrôleurs ont un chemin de communication. Le test de connectivité envoie un message inter-baies entre les baies de stockage, puis valide l'existence du groupe de cohérence du miroir correspondant sur la baie de stockage distante. Il valide également que les volumes membres du groupe de cohérence miroir sur la baie de stockage distante correspondent aux volumes membres du groupe de cohérence miroir sur la baie de stockage locale.
@@ -68,6 +70,7 @@ La raison peut être que la matrice de stockage locale n'est pas connectée ou q
 |===
 
 
+.Résultats
 Une fois le test de communication terminé, cette boîte de dialogue affiche un état Normal, réussi ou échec.
 
 Si le test de communication renvoie un état d'échec, le test continue à s'exécuter après la fermeture de cette boîte de dialogue jusqu'à ce que la communication entre les groupes de cohérence miroir soit restaurée.

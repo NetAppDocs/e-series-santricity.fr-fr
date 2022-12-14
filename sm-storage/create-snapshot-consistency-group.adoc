@@ -16,6 +16,7 @@ Pour vous assurer que vous disposez de copies cohérentes, vous pouvez créer un
 
 Ce groupe vous permet de créer des images de snapshot de tous les volumes en même temps pour plus de cohérence. Chaque volume appartenant à un groupe de cohérence de snapshot est appelé volume_membre_. Lorsque vous ajoutez un volume à un groupe de cohérence de snapshot, le système crée automatiquement un nouveau groupe de snapshots correspondant à ce volume membre.
 
+.Description de la tâche
 La séquence de création de groupe de cohérence de snapshot vous permet de sélectionner les volumes membres du groupe et d'allouer de la capacité aux volumes membres.
 
 La procédure à suivre pour créer un groupe de cohérence de snapshots est en plusieurs étapes.
@@ -26,6 +27,7 @@ La procédure à suivre pour créer un groupe de cohérence de snapshots est en 
 
 Sélectionnez les membres pour spécifier une collection de volumes comprenant le groupe de cohérence de snapshot. Toutes les actions que vous effectuez sur le groupe de cohérence de snapshot s'étendent de manière uniforme sur les volumes membres sélectionnés.
 
+.Avant de commencer
 Les volumes membres doivent être optimaux.
 
 .Étapes
@@ -36,7 +38,7 @@ Les volumes membres doivent être optimaux.
 La boîte de dialogue Créer un groupe de cohérence Snapshot s'affiche.
 
 . Sélectionnez le ou les volumes à ajouter en tant que volumes membres au groupe de cohérence snapshot.
-. Cliquez sur *Suivant* et allez à  2: Reserve capacity for snapshot consistency group.
+. Cliquez sur *Suivant* et allez à <<Étape 2 : réserver de la capacité du groupe de cohérence Snapshot>>.
 
 
 
@@ -45,6 +47,7 @@ La boîte de dialogue Créer un groupe de cohérence Snapshot s'affiche.
 
 Associez la capacité réservée au groupe de cohérence des snapshots. System Manager suggère les volumes et la capacité en fonction des propriétés du groupe de cohérence Snapshot. Vous pouvez accepter la configuration de capacité réservée recommandée ou personnaliser le stockage alloué.
 
+.Description de la tâche
 Dans la boîte de dialogue réserver la capacité, la table Volume candidate affiche uniquement les candidats qui prennent en charge la capacité réservée spécifiée. La capacité réservée est la capacité physique allouée utilisée pour toute opération de service de copie et tout objet de stockage. Il n'est pas directement lisible par l'hôte.
 
 .Étapes
@@ -66,7 +69,7 @@ Allouez la capacité réservée en suivant les instructions suivantes.
 
 
 . *Facultatif:* si vous modifiez le paramètre de capacité réservée par défaut, cliquez sur *Actualiser les candidats* pour actualiser la liste des candidats pour la capacité réservée que vous avez spécifiée.
-. Cliquez sur *Suivant* et allez à  3: Edit settings for snapshot consistency group.
+. Cliquez sur *Suivant* et allez à <<Étape 3 : modifiez les paramètres du groupe de cohérence des snapshots>>.
 
 
 
@@ -75,12 +78,14 @@ Allouez la capacité réservée en suivant les instructions suivantes.
 
 Acceptez les paramètres de suppression automatique et les seuils d'alerte de capacité réservée pour le groupe de cohérence Snapshot ou sélectionnez-les.
 
+.Description de la tâche
 La séquence de création de groupe de cohérence de snapshot vous permet de sélectionner les volumes membres du groupe et d'allouer de la capacité aux volumes membres.
 
 .Étapes
 . Acceptez ou modifiez les paramètres par défaut du groupe de cohérence de snapshot, le cas échéant.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

@@ -16,6 +16,7 @@ Généralement, vous supprimez des volumes si les volumes ont été créés avec
 
 La suppression d'un volume augmente la capacité disponible dans le pool ou le groupe de volumes. Vous pouvez sélectionner un ou plusieurs volumes à supprimer.
 
+.Avant de commencer
 Sur les volumes que vous prévoyez de supprimer, vérifiez les points suivants :
 
 * Toutes les données sont sauvegardées.
@@ -23,6 +24,7 @@ Sur les volumes que vous prévoyez de supprimer, vérifiez les points suivants :
 * Tous les périphériques et systèmes de fichiers sont démontés.
 
 
+.Description de la tâche
 Vous ne pouvez pas supprimer un volume dont l'une des conditions suivantes est présente :
 
 * Le volume est en cours d'initialisation.
@@ -53,6 +55,7 @@ La boîte de dialogue Supprimer les volumes s'affiche.
 . Cliquez sur *Supprimer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime toutes les images de snapshot, les planifications et les volumes de snapshot associés.

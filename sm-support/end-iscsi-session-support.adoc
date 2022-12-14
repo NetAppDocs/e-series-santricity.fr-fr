@@ -14,6 +14,7 @@ summary: 'Vous pouvez mettre fin à une session iSCSI qui n"est plus nécessaire
 [role="lead"]
 Vous pouvez mettre fin à une session iSCSI qui n'est plus nécessaire. Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone.
 
+.Description de la tâche
 Pour les raisons suivantes, vous pouvez mettre fin à une session iSCSI :
 
 * *Accès non autorisé* -- si un initiateur iSCSI est connecté et ne doit pas y avoir accès, vous pouvez mettre fin à la session iSCSI pour forcer l'initiateur iSCSI à se tenir hors de la matrice de stockage. L'initiateur iSCSI aurait pu se connecter car la méthode d'authentification aucun était disponible.

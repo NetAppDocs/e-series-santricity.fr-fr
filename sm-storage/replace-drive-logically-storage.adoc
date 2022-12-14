@@ -13,6 +13,7 @@ summary: 'Si un disque tombe en panne ou si vous souhaitez le remplacer pour une
 [role="lead"]
 Si un disque tombe en panne ou si vous souhaitez le remplacer pour une autre raison et que vous disposez d'un disque non affecté dans votre baie de stockage, vous pouvez remplacer de manière logique le disque défectueux par le disque non affecté. Si vous n'avez pas de lecteur non affecté, vous pouvez remplacer physiquement le lecteur.
 
+.Description de la tâche
 Lorsque vous remplacez logiquement un lecteur par un lecteur non affecté, le disque non affecté est affecté et est alors membre permanent du pool ou groupe de volumes associé. Vous utilisez l'option de remplacement logique pour remplacer les types de lecteurs suivants :
 
 * Disques défaillants

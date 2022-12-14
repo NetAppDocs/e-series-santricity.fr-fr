@@ -13,8 +13,10 @@ summary: Vous pouvez remplacer un disque de secours par un lecteur non affecté.
 [role="lead"]
 Vous pouvez remplacer un disque de secours par un lecteur non affecté.
 
+.Avant de commencer
 Le disque de secours doit être en état optimal, Veille.
 
+.Description de la tâche
 Vous ne pouvez pas annuler l'affectation d'un disque de secours qui prend actuellement le relais pour un disque défectueux. Si le disque de secours n'est pas à l'état optimal, suivez les procédures Recovery Guru pour corriger les problèmes avant de tenter d'annuler l'affectation du disque.
 
 .Étapes
@@ -37,4 +39,5 @@ La boîte de dialogue affiche tous les groupes de volumes concernés par la supp
 . Confirmer l'opération déassigner.
 
 
+.Résultats
 Le disque est renvoyé à non affecté (affiché en gris).

@@ -14,6 +14,7 @@ summary: Pour tous les volumes de la matrice de stockage, vous pouvez régler le
 [role="lead"]
 Pour tous les volumes de la matrice de stockage, vous pouvez régler les paramètres de mémoire cache pour les vidage et la taille du bloc.
 
+.Description de la tâche
 La mémoire cache est une zone de stockage volatile temporaire sur le contrôleur, qui a un temps d'accès plus rapide que le support du lecteur. Pour régler les performances du cache, vous pouvez régler les paramètres suivants :
 
 [cols="25h,~"]

@@ -14,6 +14,7 @@ summary: 'Vous pouvez suspendre temporairement la collecte planifiée d"images d
 [role="lead"]
 Vous pouvez suspendre temporairement la collecte planifiée d'images de snapshot lorsque vous devez conserver de l'espace de stockage. Cette méthode est plus efficace que la suppression et la recrércréation ultérieure de la planification des snapshots.
 
+.Description de la tâche
 L'état du planning de snapshots reste suspendu jusqu'à ce que vous utilisiez l'option *Activer* pour reprendre l'activité de snapshot planifiée.
 
 .Étapes

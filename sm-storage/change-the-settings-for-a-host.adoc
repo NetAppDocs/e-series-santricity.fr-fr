@@ -24,6 +24,7 @@ Une boîte de dialogue qui affiche les paramètres actuels de l'hôte s'affiche.
 . Modifiez les paramètres selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

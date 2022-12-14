@@ -14,6 +14,7 @@ summary: 'Vous pouvez enregistrer les données de configuration RAID depuis le c
 [role="lead"]
 Vous pouvez enregistrer les données de configuration RAID depuis le contrôleur, qui inclut toutes les données des groupes de volumes et des pools de disques. Vous pouvez ensuite contacter le support technique pour obtenir de l'aide sur la restauration des données.
 
+.Description de la tâche
 Cette tâche décrit comment enregistrer l'état actuel de la base de données de configuration RAID. Ces données sont extraites de l'emplacement de mémoire RPA du contrôleur.
 
 [NOTE]

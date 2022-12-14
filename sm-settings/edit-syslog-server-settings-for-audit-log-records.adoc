@@ -37,4 +37,5 @@ Les serveurs syslog configurés sont affichés sur la page.
 . Pour tester la nouvelle connexion avec la matrice de stockage, sélectionnez *Tester tout*.
 
 
+.Résultats
 Après la configuration, tous les nouveaux journaux d'audit sont envoyés au serveur syslog. Les journaux précédents ne sont pas transférés.

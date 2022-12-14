@@ -14,6 +14,7 @@ summary: 'Modifiez les paramètres du cache de lecture et d"écriture pour affec
 [role="lead"]
 Modifiez les paramètres du cache de lecture et d'écriture pour affecter les performances d'E/S globales d'un volume.
 
+.Description de la tâche
 Gardez ces consignes à l'esprit lorsque vous modifiez les paramètres de cache d'un volume :
 
 * Après avoir ouvert la boîte de dialogue Modifier les paramètres de cache, une icône peut s'afficher en regard des propriétés de cache sélectionnées. Cette icône indique que le contrôleur a temporairement suspendu les opérations de mise en cache.
@@ -32,6 +33,7 @@ La boîte de dialogue Modifier les paramètres de cache s'affiche. Tous les volu
 . Sélectionnez l'onglet *Basic* pour modifier les paramètres de mise en cache de lecture et d'écriture.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -58,6 +60,7 @@ NOTE: Le cache est automatiquement vidé après la désactivation de la mise en 
 . Sélectionnez l'onglet *Avancé* pour modifier les paramètres avancés pour les volumes épais. Les paramètres de cache avancés sont disponibles uniquement pour les volumes épais.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

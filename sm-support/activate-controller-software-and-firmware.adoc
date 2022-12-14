@@ -14,6 +14,7 @@ summary: 'Vous pouvez choisir d"activer les fichiers de mise à niveau immédiat
 [role="lead"]
 Vous pouvez choisir d'activer les fichiers de mise à niveau immédiatement ou d'attendre jusqu'à ce que le moment soit plus opportun.
 
+.Description de la tâche
 Vous pouvez télécharger et transférer les fichiers sans les activer. Vous pouvez choisir de l'activer ultérieurement pour les raisons suivantes :
 
 * *Temps de jour* -- l'activation du logiciel et du micrologiciel peut prendre un certain temps, vous pouvez donc attendre que les charges d'E/S soient plus légères. Les contrôleurs basculent pendant l'activation, pour que les performances soient inférieures à la normale jusqu'à la fin de la mise à niveau.

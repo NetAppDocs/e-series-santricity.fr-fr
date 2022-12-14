@@ -14,6 +14,7 @@ summary: 'Vous pouvez créer des charges de travail pour tout type d"application
 [role="lead"]
 Vous pouvez créer des charges de travail pour tout type d'application.
 
+.Description de la tâche
 Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
 
 System Manager recommande une configuration de volume optimisée uniquement pour les types d'applications suivants :
@@ -40,4 +41,5 @@ La boîte de dialogue Créer une charge de travail d'application s'affiche.
 . Cliquez sur *Créer*.
 
 
+.Une fois que vous avez terminé
 Vous êtes prêt à ajouter de la capacité de stockage au workload que vous avez créé. Utilisez l'option *Create Volume* pour créer un ou plusieurs volumes pour une application et pour allouer des quantités spécifiques de capacité à chaque volume.

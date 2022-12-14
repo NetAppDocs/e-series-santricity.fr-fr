@@ -14,6 +14,7 @@ summary: 'La page matériel fournit l"état et les paramètres des composants du
 [role="lead"]
 La page matériel fournit l'état et les paramètres des composants du tiroir, y compris les alimentations, les ventilateurs et les batteries.
 
+.Description de la tâche
 Les composants disponibles dépendent du type de tiroir :
 
 * *Tiroir disque* -- contient un ensemble de disques, de blocs d'alimentation/de ventilateurs, de modules d'entrée/sortie (IOM) et d'autres composants de support dans un seul tiroir.

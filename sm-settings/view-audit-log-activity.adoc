@@ -14,6 +14,7 @@ summary: 'En affichant les journaux d"audit, les utilisateurs disposant d"autori
 [role="lead"]
 En affichant les journaux d'audit, les utilisateurs disposant d'autorisations d'administrateur de sécurité peuvent surveiller les actions des utilisateurs, les échecs d'authentification, les tentatives de connexion non valides et la durée de vie des sessions utilisateur.
 
+.Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 .Étapes
@@ -35,6 +36,7 @@ L'activité du journal d'audit s'affiche sous forme de tableau, qui contient les
 . Utilisez les sélections de la page Journal d'audit pour afficher et gérer les événements.
 +
 .Détails de la sélection
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

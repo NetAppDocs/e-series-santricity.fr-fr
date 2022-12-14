@@ -13,6 +13,7 @@ summary: 'Un cycle d"apprentissage est un cycle automatique d"étalonnage de la 
 [role="lead"]
 Un cycle d'apprentissage est un cycle automatique d'étalonnage de la jauge de batterie intelligente. Les cycles sont programmés pour démarrer automatiquement, à la même journée et à la même heure, par intervalles de 8 semaines (par contrôleur). Si vous souhaitez définir un autre programme, vous pouvez régler les cycles d'apprentissage.
 
+.Description de la tâche
 La mise à jour des cycles d'apprentissage affecte les deux batteries du contrôleur.
 
 .Étapes

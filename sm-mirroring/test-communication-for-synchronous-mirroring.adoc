@@ -14,6 +14,7 @@ summary: 'Vous pouvez tester la communication entre une matrice de stockage loca
 [role="lead"]
 Vous pouvez tester la communication entre une matrice de stockage locale et une matrice de stockage distante afin de diagnostiquer d'éventuels problèmes de communication pour une paire en miroir qui participe à la mise en miroir synchrone.
 
+.Description de la tâche
 Deux tests différents sont exécutés :
 
 * *Communication* -- vérifie que les deux matrices de stockage ont un chemin de communication. Le test de communication valide que la matrice de stockage locale peut communiquer avec la matrice de stockage distante et que le volume secondaire associé à la paire en miroir existe sur la matrice de stockage distante.

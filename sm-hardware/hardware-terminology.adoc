@@ -14,6 +14,7 @@ summary: 'Découvrez les conditions matérielles qui s"appliquent à votre baie 
 Les conditions matérielles suivantes s'appliquent aux baies de stockage.
 
 .Termes généraux relatifs au matériel :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -91,6 +92,7 @@ Une baie de stockage comprend les tiroirs, les contrôleurs, les disques, les lo
 |===
 ====
 .Termes relatifs aux contrôleurs :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -196,6 +198,7 @@ Un réseau local virtuel (VLAN) est un réseau logique qui se comporte comme s'i
 |===
 ====
 .Termes du lecteur :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -294,6 +297,7 @@ Les disques SSD sont des dispositifs de stockage de données qui utilisent la m�
 |===
 ====
 .Termes iSCSI :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -392,6 +396,7 @@ Lorsque l'option pour les sessions de découverte sans nom est activée, les ini
 |===
 ====
 .Termes NVMe :
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

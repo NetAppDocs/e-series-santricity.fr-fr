@@ -19,6 +19,7 @@ Vous pouvez recréer un volume Snapshot ou un volume Snapshot de groupe de cohé
 * Tous les volumes de snapshot membres doivent être dans un état désactivé avant de pouvoir recréer le volume de snapshot de groupe de cohérence.
 
 
+.Description de la tâche
 Vous ne pouvez pas recréer un volume snapshot membre individuel ; vous pouvez recréer uniquement le volume snapshot de groupe de cohérence d'instantanés global.
 
 [NOTE]
@@ -51,6 +52,7 @@ Sélectionnez cette option pour créer une nouvelle image instantanée à partir
 . Cliquez sur *recréer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime tout `write` sur tout volume de référentiel snapshot associé.

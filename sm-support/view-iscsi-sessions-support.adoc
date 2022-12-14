@@ -23,6 +23,7 @@ La liste des sessions iSCSI en cours s'affiche.
 . Pour afficher des informations supplémentaires sur une session iSCSI spécifique, sélectionnez une session, puis cliquez sur *Afficher les détails*.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

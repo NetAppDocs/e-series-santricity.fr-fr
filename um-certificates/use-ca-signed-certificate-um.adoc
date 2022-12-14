@@ -14,8 +14,10 @@ summary: Vous pouvez obtenir et importer des certificats signés par une autorit
 [role="lead"]
 Vous pouvez obtenir et importer des certificats signés par une autorité de certification pour un accès sécurisé au système de gestion hébergeant Unified Manager.
 
+.Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
+.Description de la tâche
 L'utilisation de certificats signés par l'autorité de certification est une procédure en trois étapes.
 
 
@@ -26,7 +28,7 @@ Vous devez d'abord générer un fichier de demande de signature de certificat (C
 
 [NOTE]
 ====
-Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que OpenSSL et passer directement à  2: Submit CSR file.
+Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que OpenSSL et passer directement à <<Étape 2 : soumettez le fichier CSR>>.
 
 ====
 .Étapes
@@ -50,7 +52,7 @@ Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que Ope
 
 . Assurez-vous que les informations sur l'hôte sont correctes. Si ce n'est pas le cas, les certificats renvoyés de l'autorité de certification échoueront lorsque vous tentez de les importer.
 . Cliquez sur *Terminer*.
-. Accédez à  2: Submit CSR file.
+. Accédez à <<Étape 2 : soumettez le fichier CSR>>.
 
 
 
@@ -74,7 +76,7 @@ L'emplacement du dossier de téléchargement dépend de votre navigateur.
 *Après avoir soumis un fichier CSR à l'autorité de certification, ne régénérez PAS un autre fichier CSR.* chaque fois que vous générez une RSC, le système crée une paire de clés publique et privée. La clé publique fait partie de la RSC, tandis que la clé privée est conservée dans le magasin de clés du système. Lorsque vous recevez les certificats signés et que vous les importez, le système garantit que les clés privées et publiques sont la paire d'origine. Si les clés ne correspondent pas, les certificats signés ne fonctionneront pas et vous devez demander de nouveaux certificats à l'autorité de certification.
 
 ====
-. Lorsque l'AC renvoie les certificats signés, accédez à  3: Import management certificates.
+. Lorsque l'AC renvoie les certificats signés, accédez à <<Étape 3 : certificats de gestion des importations>>.
 
 
 
@@ -102,4 +104,5 @@ Les noms de fichier s'affichent dans la boîte de dialogue.
 . Cliquez sur *Importer*.
 
 
+.Résultats
 Les fichiers sont chargés et validés. Les informations de certificat s'affichent sur la page gestion des certificats.

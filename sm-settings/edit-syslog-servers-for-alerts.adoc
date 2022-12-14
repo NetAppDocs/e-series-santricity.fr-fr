@@ -24,4 +24,5 @@ La ligne devient un champ modifiable.
 . Modifiez l'adresse du serveur et le numéro de port UDP, puis cliquez sur l'icône *Enregistrer* (coche).
 
 
+.Résultats
 L'adresse du serveur mise à jour apparaît dans le tableau.

@@ -28,6 +28,7 @@ Par exemple, si vous connectez huit hôtes différents à la baie de stockage et
 
 
 
+[]
 ====
 
 ====

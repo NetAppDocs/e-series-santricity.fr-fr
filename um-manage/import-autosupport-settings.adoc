@@ -19,6 +19,7 @@ Vous pouvez importer une configuration AutoSupport d'une baie de stockage vers d
 * La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
 
 
+.Description de la tâche
 Les paramètres importés comprennent les fonctionnalités séparées (AutoSupport de base, AutoSupport OnDemand et diagnostic à distance), la fenêtre de maintenance, la méthode de livraison, et les plannings d'intervention.
 
 .Étapes
@@ -44,4 +45,5 @@ La page opérations affiche les résultats de l'opération d'importation. Si l'o
 
 
 
+.Résultats
 Les baies de stockage cibles sont désormais configurées avec les mêmes paramètres AutoSupport que la baie source.

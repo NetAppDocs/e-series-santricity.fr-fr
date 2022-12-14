@@ -13,8 +13,10 @@ summary: 'Dans l"onglet rôles d"utilisateur local, vous pouvez afficher les map
 [role="lead"]
 Dans l'onglet rôles d'utilisateur local, vous pouvez afficher les mappages des utilisateurs sur les rôles par défaut. Ces mappages font partie du RBAC (contrôle d'accès basé sur des rôles) appliqué dans le proxy de services Web pour Unified Manager.
 
+.Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
+.Description de la tâche
 Les utilisateurs et les mappages ne peuvent pas être modifiés. Seuls les mots de passe peuvent être modifiés.
 
 .Étapes

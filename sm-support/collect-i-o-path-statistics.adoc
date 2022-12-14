@@ -14,6 +14,7 @@ summary: 'Vous pouvez enregistrer le fichier de statistiques du chemin d"E/S et 
 [role="lead"]
 Vous pouvez enregistrer le fichier de statistiques du chemin d'E/S et l'envoyer au support technique pour analyse.
 
+.Description de la tâche
 Le support technique utilise les statistiques de chemin d'E/S pour vous aider à diagnostiquer les problèmes de performance. Les problèmes de performances applicatives peuvent être causés par l'utilisation de la mémoire, l'utilisation du CPU, la latence du réseau, la latence des E/S ou d'autres problèmes. Les statistiques de chemin d'E/S sont collectées automatiquement lors de la collecte des données de support ou vous pouvez les collecter manuellement. De plus, si AutoSupport est activé, les statistiques de chemin d'E/S sont collectées et envoyées automatiquement au support technique.
 
 Les compteurs des statistiques de chemin d'E/S sont réinitialisés une fois que vous avez confirmé la collecte des statistiques de chemin d'E/S. Les compteurs sont réinitialisés même si vous annulez l'opération par la suite. Les compteurs sont également réinitialisés lorsque le contrôleur se réinitialise (redémarre).

@@ -14,6 +14,7 @@ summary: 'Utilisez le paramètre Modifier le système d"exploitation hôte par d
 [role="lead"]
 Utilisez le paramètre Modifier le système d'exploitation hôte par défaut pour modifier le type d'hôte par défaut au niveau de la matrice de stockage. En général, vous modifiez le type d'hôte par défaut avant de connecter les hôtes à la baie de stockage ou lorsque vous connectez des hôtes supplémentaires.
 
+.Description de la tâche
 Tenez compte des recommandations suivantes :
 
 * Si tous les hôtes que vous prévoyez de vous connecter à la baie de stockage ont le même système d'exploitation (environnement hôte homogène), modifiez le type d'hôte pour qu'il corresponde au système d'exploitation.

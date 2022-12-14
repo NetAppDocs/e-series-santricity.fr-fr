@@ -14,6 +14,7 @@ summary: Vous pouvez modifier la plage horaire par défaut affichée par les gra
 [role="lead"]
 Vous pouvez modifier la plage horaire par défaut affichée par les graphiques de performance.
 
+.Description de la tâche
 Les graphiques de performance affichés sur la page d'accueil et sur la page performances affichent initialement une période d'une heure. Les préférences sont stockées dans le stockage local du navigateur pour que tous les utilisateurs puissent disposer de leurs propres paramètres.
 
 .Étapes

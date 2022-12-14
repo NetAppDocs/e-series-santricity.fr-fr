@@ -19,6 +19,7 @@ Pour configurer la mise en miroir synchrone, vous créez une paire en miroir qui
 Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
 
 ====
+.Avant de commencer
 Avant de créer une paire en miroir, répondez aux exigences suivantes pour Unified Manager :
 
 * Le service Web Services Proxy doit être en cours d'exécution.
@@ -40,6 +41,7 @@ Assurez-vous également de répondre aux exigences suivantes en matière de baie
 * Le volume secondaire doit être au moins aussi grand que le volume principal.
 
 
+.Description de la tâche
 Le processus de création de paires mises en miroir synchrones est une procédure en plusieurs étapes.
 
 
@@ -55,7 +57,7 @@ Dans cette étape, vous sélectionnez le volume primaire à utiliser dans la rel
 L'assistant Créer une paire symétrique synchrone s'ouvre.
 
 . Dans la liste des volumes éligibles, sélectionnez un volume que vous souhaitez utiliser comme volume principal dans le miroir.
-. Sélectionnez *Suivant* et allez à  2: Select the secondary volume.
+. Sélectionnez *Suivant* et allez à <<Étape 2 : sélectionnez le volume secondaire>>.
 
 
 
@@ -84,7 +86,7 @@ Si votre matrice de stockage distante est protégée par un mot de passe, le sys
 Si un volume secondaire est choisi avec une capacité supérieure à celle du volume primaire, la capacité utilisable est limitée à la taille du volume primaire.
 
 ====
-. Cliquez sur *Suivant* et allez à  3: Select synchronization settings.
+. Cliquez sur *Suivant* et allez à <<Étape 3 : sélectionnez les paramètres de synchronisation>>.
 
 
 
@@ -127,6 +129,7 @@ Pour reprendre la synchronisation manuellement, accédez à System Manager et s�
 . Cliquez sur *Finish* pour terminer la séquence de mise en miroir synchrone.
 
 
+.Résultats
 Une fois la mise en miroir activée, le système effectue les actions suivantes :
 
 * Commence la synchronisation initiale entre la matrice de stockage locale et la matrice de stockage distante.
@@ -141,4 +144,5 @@ La capacité de chaque volume est de 128 Mio. Cependant, si les volumes sont pla
 
 
 
+.Une fois que vous avez terminé
 Accédez à System Manager et sélectionnez menu:Home [opérations de visualisation en cours] pour afficher la progression de l'opération de mise en miroir synchrone. Cette opération peut être longue et peut affecter les performances du système.

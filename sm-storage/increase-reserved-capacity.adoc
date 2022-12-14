@@ -24,6 +24,7 @@ Si aucune capacité disponible n'est disponible dans un pool ou un groupe de vol
 
 
 
+.Description de la tâche
 La capacité réservée peut être augmentée uniquement par incréments de 8 Gio pour les objets de stockage suivants :
 
 * Groupe de snapshots
@@ -53,6 +54,7 @@ Si la capacité disponible n'existe pas dans le pool ou le groupe de volumes qui
 . Cliquez sur *augmenter*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Augmente la capacité réservée pour l'objet de stockage.

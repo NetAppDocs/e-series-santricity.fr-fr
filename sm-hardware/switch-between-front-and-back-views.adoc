@@ -13,6 +13,7 @@ summary: La page matériel peut afficher la vue avant ou la vue arrière des tir
 [role="lead"]
 La page matériel peut afficher la vue avant ou la vue arrière des tiroirs.
 
+.Description de la tâche
 La vue arrière montre les contrôleurs/modules d'E/S et les blocs d'alimentation. La vue avant montre les lecteurs.
 
 .Étapes

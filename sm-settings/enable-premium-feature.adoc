@@ -19,6 +19,7 @@ Une fonctionnalité Premium est une option supplémentaire qui requiert une clé
 * Vous avez chargé le fichier de clés sur le client de gestion (le système avec un navigateur pour accéder à System Manager).
 
 
+.Description de la tâche
 Cette tâche explique comment utiliser System Manager pour activer une fonctionnalité Premium.
 
 [NOTE]

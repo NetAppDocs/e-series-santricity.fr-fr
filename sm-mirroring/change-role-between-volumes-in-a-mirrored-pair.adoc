@@ -14,6 +14,7 @@ summary: 'Il est possible d"inverser le rôle entre les deux volumes d"une paire
 [role="lead"]
 Vous pouvez effectuer une inversion de rôle entre les deux volumes d'une paire en miroir qui participent à la mise en miroir synchrone. Cette tâche peut être nécessaire à des fins administratives ou en cas d'incident sur la baie de stockage locale.
 
+.Description de la tâche
 Vous pouvez rétrograder le volume principal au rôle secondaire ou promouvoir le volume secondaire au rôle principal. Tous les hôtes qui accèdent au volume primaire ont un accès en lecture/écriture au volume. Lorsque le volume primaire devient un volume secondaire, seules les écritures distantes initiées par le contrôleur principal sont écrites sur le volume.
 
 .Étapes
@@ -31,6 +32,7 @@ Si la matrice de stockage locale ne parvient pas à communiquer avec la matrice 
 ====
 
 
+.Résultats
 System Manager effectue l'action suivante :
 
 * Si le volume associé de la paire en miroir peut être contacté, les rôles entre les volumes changent. System Manager promeut le volume secondaire de la paire en miroir au rôle principal ou démesure le volume primaire de la paire en miroir au rôle secondaire (selon votre sélection).

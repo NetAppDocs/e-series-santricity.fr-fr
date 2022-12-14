@@ -18,6 +18,7 @@ Si vous y êtes invité, vous pouvez mettre un contrôleur hors ligne.
 * Assurez-vous qu'aucun volume n'est en cours d'utilisation ou que vous avez installé un pilote multivoie sur tous les hôtes qui utilisent ces volumes.
 
 
+.Description de la tâche
 ++ ++
 
 [CAUTION]
@@ -38,4 +39,5 @@ Le menu contextuel du contrôleur s'affiche.
 . Sélectionnez *mettre hors ligne* et confirmez que vous souhaitez effectuer l'opération.
 
 
+.Résultats
 System Manager peut prendre plusieurs minutes pour mettre à jour l'état du contrôleur hors ligne. Ne pas commencer d'autres opérations tant que le statut n'a pas été mis à jour.

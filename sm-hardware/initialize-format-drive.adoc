@@ -13,6 +13,7 @@ summary: 'Si vous déplacez les lecteurs affectés d"une matrice de stockage à 
 [role="lead"]
 Si vous déplacez les lecteurs affectés d'une matrice de stockage à une autre, vous devez initialiser (formater) les lecteurs avant de pouvoir les utiliser dans la nouvelle matrice de stockage.
 
+.Description de la tâche
 L'initialisation supprime les informations de configuration précédentes d'un lecteur et les renvoie à l'état non affecté. Le lecteur peut alors être ajouté à un nouveau pool ou groupe de volumes dans la nouvelle matrice de stockage.
 
 Utilisez l'opération d'initialisation de l'entraînement lorsque vous déplacez un seul lecteur. Il n'est pas nécessaire d'initialiser les lecteurs si vous déplacez un groupe de volumes entier d'une matrice de stockage à une autre.

@@ -24,6 +24,7 @@ Vous pouvez supprimer les certificats installés par l'utilisateur précédemmen
 Vous risquez de perdre l'accès à un système si vous supprimez un certificat utilisé pour authentifier les contrôleurs et un autre serveur, tel qu'un serveur LDAP, avant d'importer un certificat de remplacement.
 
 ====
+.Description de la tâche
 Cette tâche décrit comment supprimer des certificats installés par l'utilisateur. Les certificats pré-installés et auto-signés ne peuvent pas être supprimés.
 
 .Étapes

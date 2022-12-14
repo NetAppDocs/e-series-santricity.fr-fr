@@ -20,6 +20,7 @@ Vous pouvez ajouter un nouveau volume membre à un groupe de cohérence de snaps
 * Chaque volume de capacité réservée doit avoir les mêmes paramètres d'assurance de données (DA) et de sécurité que le volume membre associé.
 
 
+.Description de la tâche
 Vous pouvez ajouter des volumes standard ou des volumes fins au groupe de cohérence Snapshot. Le volume de base peut résider dans un pool ou un groupe de volumes.
 
 .Étapes

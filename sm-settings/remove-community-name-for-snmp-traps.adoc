@@ -31,4 +31,5 @@ Si les destinations d'interruption sont associées à ce nom de communauté, la 
 . Confirmez l'opération, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 Le nom de communauté et sa destination de déroutement associée sont supprimés de la page alertes.

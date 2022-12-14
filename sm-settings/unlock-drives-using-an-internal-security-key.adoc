@@ -28,6 +28,7 @@ Les instructions détaillées relatives à la migration d'un groupe de volumes s
 * Le fichier de clé de sécurité est disponible sur le client de gestion (le système avec un navigateur utilisé pour accéder à System Manager). Si vous déplacez les disques vers une matrice de stockage gérée par un autre système, vous devez déplacer le fichier de clé de sécurité vers ce client de gestion.
 
 
+.Description de la tâche
 Lorsque vous utilisez la gestion interne des clés, la clé de sécurité est stockée localement sur la matrice de stockage. Une clé de sécurité est une chaîne de caractères partagée par le contrôleur et les lecteurs pour l'accès en lecture/écriture. Lorsque les lecteurs sont physiquement retirés de la matrice et installés dans une autre, ils ne peuvent pas fonctionner tant que vous n'avez pas fourni la clé de sécurité adéquate.
 
 [NOTE]
@@ -60,8 +61,10 @@ Si l'opération de déverrouillage a réussi, la boîte de dialogue affiche : «
 
 
 
+.Résultats
 Lorsque tous les disques sont verrouillés et déverrouillés, chaque contrôleur de la baie de stockage est redémarré. Toutefois, si certains disques sont déjà déverrouillés dans la baie de stockage cible, les contrôleurs ne redémarreront pas.
 
+.Une fois que vous avez terminé
 Sur la baie de destination (la baie avec les nouveaux disques installés), vous pouvez maintenant importer des groupes de volumes.
 
 

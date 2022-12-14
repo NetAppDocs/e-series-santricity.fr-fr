@@ -24,6 +24,7 @@ NOTE: Par défaut, le provisionnement de ressources est activé sur les système
 * Vous devez disposer de groupes ou de pools de volume SSD, où tous les disques prennent en charge la fonctionnalité de restauration d'erreur DULBE (Logical Block Error Enable) de NVMe avec une gestion simplifiée ou non écrite.
 
 
+.Description de la tâche
 Lorsque vous réactivez le provisionnement de ressources pour les nouveaux groupes ou pools de volumes, seuls les nouveaux groupes et pools de volumes sont affectés. Tous les groupes et pools de volumes existants sur lesquels le provisionnement de ressources est activé restent inchangés.
 
 .Étapes
@@ -35,4 +36,5 @@ La description du paramètre indique si le provisionnement de ressources est act
 . Dans la boîte de dialogue, confirmer l'opération.
 
 
+.Résultats
 L'activation ou la désactivation du provisionnement des ressources concerne uniquement les nouveaux pools SSD ou les groupes de volumes que vous créez. Les pools ou groupes de volumes existants restent inchangés.

@@ -52,4 +52,5 @@ La boîte de dialogue Ajouter des destinations de recouvrement s'ouvre.
 . Pour vous assurer qu'une interruption est valide, sélectionnez une destination d'interruption dans le tableau, puis cliquez sur *Test Trap destination* pour envoyer une interruption de test à l'adresse configurée.
 
 
+.Résultats
 Le moniteur d'événements envoie des interruptions SNMP au(x) serveur(s) chaque fois qu'un événement alertable se produit.

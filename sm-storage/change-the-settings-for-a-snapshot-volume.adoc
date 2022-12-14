@@ -24,6 +24,7 @@ La boîte de dialogue Paramètres du volume de snapshot s'affiche.
 . Affichez ou modifiez les paramètres du volume de snapshot selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

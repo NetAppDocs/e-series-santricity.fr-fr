@@ -28,4 +28,5 @@ La boîte de dialogue configurer les utilisateurs SNMPv3 s'ouvre.
 . Confirmez l'opération, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 Le nom d'utilisateur et sa destination de déroutement associée sont supprimés de la page alertes.

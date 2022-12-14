@@ -19,6 +19,7 @@ Si le contrôleur rejette une connexion parce qu'il ne peut pas valider la chaî
 * Les fichiers de certificat sont installés sur votre système local.
 
 
+.Description de la tâche
 L'importation de certificats à partir de l'onglet approuvé peut être nécessaire si vous souhaitez autoriser un autre serveur à contacter les contrôleurs (par exemple, un serveur LDAP ou un serveur syslog utilisant TLS).
 
 .Étapes
@@ -34,4 +35,5 @@ Les noms de fichiers s'affichent dans la boîte de dialogue.
 . Cliquez sur *Importer*.
 
 
+.Résultats
 Les fichiers sont chargés et validés.

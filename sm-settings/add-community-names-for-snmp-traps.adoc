@@ -28,4 +28,5 @@ La boîte de dialogue configurer les communautés s'ouvre.
 . Entrez le nouveau nom de communauté, puis cliquez sur *Enregistrer*.
 
 
+.Résultats
 Le nouveau nom de communauté apparaît dans l'onglet SNMP de la page alertes.

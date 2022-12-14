@@ -33,6 +33,7 @@ Vous ne pouvez sélectionner qu'un seul pool ou groupe de volumes à la fois. Fa
 . Sélectionnez menu:tâches rares[Supprimer] et confirmez.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime toutes les données du pool ou du groupe de volumes.

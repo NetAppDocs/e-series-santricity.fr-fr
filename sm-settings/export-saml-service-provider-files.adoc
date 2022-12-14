@@ -19,6 +19,7 @@ Si nécessaire, vous pouvez exporter les métadonnées du Service Provider pour 
 * SAML est configuré et activé.
 
 
+.Description de la tâche
 Dans cette tâche, vous exportez les métadonnées des contrôleurs (un fichier par contrôleur). Le PDI a besoin de ces métadonnées pour établir une relation de confiance avec les contrôleurs et traiter les demandes d'authentification. Le fichier inclut des informations telles que le nom de domaine du contrôleur ou l'adresse IP que le IDP peut utiliser pour envoyer des demandes.
 
 .Étapes

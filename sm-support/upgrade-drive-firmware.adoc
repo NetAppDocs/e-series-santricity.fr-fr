@@ -79,6 +79,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 
 .Erreurs et actions recommandées
+[%collapsible]
 ====
 [cols="40h,~"]
 |===
@@ -197,4 +198,5 @@ Contactez le support technique pour résoudre ce problème.
 
 |===
 ====
+.Une fois que vous avez terminé
 La mise à niveau du micrologiciel de votre lecteur est terminée. Vous pouvez reprendre les opérations normales.

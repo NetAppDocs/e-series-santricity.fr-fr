@@ -13,6 +13,7 @@ summary: 'Si un disque tombe en panne ou si vous souhaitez le remplacer pour une
 [role="lead"]
 Si un disque tombe en panne ou que vous souhaitez le remplacer pour une autre raison, vous pouvez logiquement remplacer le disque défectueux par un disque non attribué ou un disque de rechange entièrement intégré.
 
+.Description de la tâche
 Lorsque vous remplacez logiquement un lecteur, il est affecté et est ensuite un membre permanent du pool ou du groupe de volumes associé.
 
 Vous utilisez l'option de remplacement logique pour remplacer les types de lecteurs suivants :
@@ -24,6 +25,7 @@ Vous utilisez l'option de remplacement logique pour remplacer les types de lecte
 * Disques affectés (disponibles uniquement pour les disques d'un groupe de volumes, pas dans un pool)
 
 
+.Avant de commencer
 Le disque de remplacement doit présenter les caractéristiques suivantes :
 
 * Dans l'état optimal

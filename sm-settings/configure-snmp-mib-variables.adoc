@@ -14,6 +14,7 @@ summary: 'Pour les alertes SNMP, vous pouvez éventuellement configurer les vari
 [role="lead"]
 Pour les alertes SNMP, vous pouvez éventuellement configurer les variables MIB (Management information base) qui apparaissent dans les traps SNMP. Ces variables peuvent renvoyer le nom de la matrice de stockage, l'emplacement de la matrice et une personne à contacter.
 
+.Avant de commencer
 Le fichier MIB doit être copié et compilé sur le serveur avec l'application de service SNMP.
 
 Si vous n'avez pas de fichier MIB, vous pouvez l'obtenir comme suit:
@@ -27,6 +28,7 @@ Si vous n'avez pas de fichier MIB, vous pouvez l'obtenir comme suit:
 * Faites défiler vers le bas jusqu'à ce que le fichier MIB de votre type de contrôleur, puis cliquez sur le lien pour télécharger le fichier.
 
 
+.Description de la tâche
 Cette tâche décrit comment définir des variables MIB pour les interruptions SNMP. Ces variables peuvent renvoyer les valeurs suivantes en réponse à SNMP GetRequests :
 
 * `sysName` (nom de la matrice de stockage)
@@ -50,4 +52,5 @@ La boîte de dialogue configurer les variables MIB SNMP s'ouvre.
 
 
 
+.Résultats
 Ces valeurs apparaissent dans les messages d'interruption SNMP relatifs aux alertes de la baie de stockage.

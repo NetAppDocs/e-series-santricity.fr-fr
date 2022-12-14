@@ -14,6 +14,7 @@ summary: Il est possible de supprimer les groupes de cohérence des miroirs qui 
 [role="lead"]
 Il est possible de supprimer les groupes de cohérence des miroirs qui ne sont plus nécessaires sur la baie de stockage locale et sur la baie de stockage distante.
 
+.Avant de commencer
 Toutes les paires mises en miroir doivent être supprimées du groupe de cohérence miroir.
 
 .Étapes
@@ -29,10 +30,12 @@ Le système affiche une confirmation.
 . Sélectionnez *Oui* pour supprimer le groupe de cohérence miroir.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime d'abord le groupe de cohérence miroir sur la baie de stockage locale, puis supprime le groupe de cohérence miroir sur la matrice de stockage distante.
 * Supprime le groupe de cohérence miroir du tableau Groupe de cohérence miroir.
 
 
+.Une fois que vous avez terminé
 Il peut arriver que le groupe de cohérence miroir soit correctement supprimé de la matrice de stockage locale, mais qu'une erreur de communication empêche la suppression du groupe de cohérence miroir de la matrice de stockage distante. Dans ce cas, vous devez accéder à la matrice de stockage distante pour supprimer le groupe de cohérence miroir correspondant.

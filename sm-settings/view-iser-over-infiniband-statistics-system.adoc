@@ -14,6 +14,7 @@ summary: Si le contrôleur de votre matrice de stockage comprend un port iser su
 [role="lead"]
 Si le contrôleur de votre baie de stockage inclut un port iser via InfiniBand, vous pouvez afficher les données relatives aux connexions hôte.
 
+.Description de la tâche
 System Manager affiche les types suivants de statistiques iser sur InfiniBand. Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
 
 * *Statistiques de la cible locale (Protocole)* -- fournit des statistiques pour l'iser sur la cible InfiniBand, qui montre un accès de niveau bloc à ses supports de stockage.

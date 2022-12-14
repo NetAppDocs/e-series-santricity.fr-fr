@@ -19,6 +19,7 @@ Vous pouvez désactiver la mise en miroir asynchrone sur les matrices de stockag
 * La matrice de stockage locale et la matrice de stockage distante doivent être connectées via une structure Fibre Channel ou une interface iSCSI.
 
 
+.Description de la tâche
 Lorsque vous désactivez la mise en miroir asynchrone, aucune activité de mise en miroir ne peut se produire sur les matrices de stockage locales et distantes.
 
 .Étapes

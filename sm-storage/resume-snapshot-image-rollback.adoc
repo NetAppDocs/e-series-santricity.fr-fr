@@ -23,6 +23,7 @@ L'opération reprend.
 
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Si l'opération de retour arrière reprend, vous pouvez afficher la progression de l'opération de restauration dans la fenêtre opérations en cours.

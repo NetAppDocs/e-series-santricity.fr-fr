@@ -14,8 +14,10 @@ summary: Vous pouvez supprimer les groupes de cohérence Snapshot qui ne sont pl
 [role="lead"]
 Vous pouvez supprimer les groupes de cohérence Snapshot qui ne sont plus nécessaires.
 
+.Avant de commencer
 Confirmez que les images de tous les volumes membres ne sont plus nécessaires à des fins de sauvegarde ou de test.
 
+.Description de la tâche
 Cette opération supprime toutes les images ou tous les planifications de snapshot associées au groupe de cohérence de snapshot.
 
 .Étapes
@@ -28,6 +30,7 @@ La boîte de dialogue confirmer la suppression du groupe de cohérence Snapshot 
 . Confirmez que vous souhaitez effectuer cette opération, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime toutes les images snapshot et tous les volumes snapshot existants du groupe de cohérence snapshot.

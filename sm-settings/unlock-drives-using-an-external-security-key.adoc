@@ -34,6 +34,7 @@ Les instructions détaillées relatives à la migration d'un groupe de volumes s
 Pour plus d'informations sur le certificat du serveur, consultez la documentation de votre serveur de gestion des clés.
 
 ====
+.Description de la tâche
 Lorsque vous utilisez la gestion externe des clés, la clé de sécurité est stockée en externe sur un serveur conçu pour protéger les clés de sécurité. Une clé de sécurité est une chaîne de caractères partagée par le contrôleur et les lecteurs pour l'accès en lecture/écriture. Lorsque les lecteurs sont physiquement retirés de la matrice et installés dans une autre, ils ne peuvent pas fonctionner tant que vous n'avez pas fourni la clé de sécurité adéquate.
 
 [NOTE]
@@ -69,8 +70,10 @@ Si l'opération de déverrouillage a réussi, la boîte de dialogue affiche : «
 
 
 
+.Résultats
 Lorsque tous les disques sont verrouillés et déverrouillés, chaque contrôleur de la baie de stockage est redémarré. Toutefois, si certains disques sont déjà déverrouillés dans la baie de stockage cible, les contrôleurs ne redémarreront pas.
 
+.Une fois que vous avez terminé
 Sur la baie de destination (la baie avec les nouveaux disques installés), vous pouvez maintenant importer des groupes de volumes.
 
 

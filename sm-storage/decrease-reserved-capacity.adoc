@@ -21,6 +21,7 @@ L'option réduire la capacité permet de réduire la capacité réservée aux ob
 * Si l'objet de stockage est un groupe de snapshots, il ne doit pas contenir d'images de snapshot associées.
 
 
+.Description de la tâche
 Consultez les directives suivantes :
 
 * Vous pouvez supprimer des volumes de capacité réservée dans l'ordre inverse de leur ajout.
@@ -37,6 +38,7 @@ La boîte de dialogue diminuer la capacité réservée s'affiche.
 . Sélectionnez la capacité dont vous souhaitez diminuer la capacité réservée, puis cliquez sur *diminuer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Met à jour la capacité de l'objet de stockage.

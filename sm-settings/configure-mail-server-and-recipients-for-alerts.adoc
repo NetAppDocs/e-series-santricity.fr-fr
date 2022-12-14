@@ -26,6 +26,7 @@ Pour utiliser un nom de domaine complet, vous devez configurer un serveur DNS su
 * L'adresse e-mail du ou des destinataires de l'alerte doit être disponible. Le destinataire est généralement une adresse pour un administrateur réseau ou un administrateur de stockage. Vous pouvez entrer jusqu'à 20 adresses électroniques.
 
 
+.Description de la tâche
 Cette tâche décrit comment configurer le serveur de messagerie, saisir les adresses e-mail de l'expéditeur et des destinataires, et tester toutes les adresses e-mail saisies à partir de la page alertes.
 
 [NOTE]
@@ -72,4 +73,5 @@ Les adresses e-mail s'affichent sur la page alertes.
 . Si vous voulez vous assurer que les adresses électroniques sont valides, cliquez sur *Tester tous les e-mails* pour envoyer des messages de test aux destinataires.
 
 
+.Résultats
 Une fois que vous avez configuré des alertes par e-mail, le moniteur d'événements envoie des e-mails aux destinataires spécifiés lorsqu'un événement alertable se produit.

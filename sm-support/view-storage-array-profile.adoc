@@ -14,6 +14,7 @@ summary: Le profil de la matrice de stockage fournit une description de tous les
 [role="lead"]
 Le profil de la matrice de stockage fournit une description de tous les composants et propriétés de la matrice de stockage.
 
+.Description de la tâche
 Vous pouvez utiliser le profil de la matrice de stockage comme aide lors de la récupération ou comme vue d'ensemble de la configuration actuelle de la matrice de stockage. Vous pouvez enregistrer une copie du profil de la baie de stockage sur le client de gestion et conserver une copie papier du profil de la baie de stockage avec la baie de stockage. Créez une nouvelle copie du profil de la matrice de stockage si votre configuration change.
 
 .Étapes
@@ -24,6 +25,7 @@ Le rapport s'affiche à l'écran.
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

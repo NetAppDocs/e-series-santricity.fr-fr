@@ -14,6 +14,7 @@ summary: 'Vous pouvez modifier les paramètres de synchronisation et les seuils 
 [role="lead"]
 Vous pouvez modifier les paramètres de synchronisation et les seuils d'avertissement utilisés par le groupe de cohérence miroir sur la matrice de stockage locale lorsque les données sont initialement synchronisées ou lorsque les données sont synchronisées à nouveau lors des opérations de mise en miroir asynchrone.
 
+.Description de la tâche
 La modification des paramètres de synchronisation affecte les opérations de synchronisation de toutes les paires symétriques au sein du groupe de cohérence miroir.
 
 .Étapes
@@ -29,6 +30,7 @@ Le système affiche la boîte de dialogue Modifier les paramètres.
 . Modifiez les paramètres de synchronisation et d'alerte selon vos besoins, puis cliquez sur *Enregistrer*.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -60,4 +62,5 @@ Si vous définissez la méthode de synchronisation pour qu'elle se produise auto
 ====
 
 
+.Résultats
 System Manager modifie les paramètres de synchronisation pour chaque paire en miroir du groupe de cohérence miroir.

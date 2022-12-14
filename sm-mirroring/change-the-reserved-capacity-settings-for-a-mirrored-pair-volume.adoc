@@ -24,6 +24,7 @@ La boîte de dialogue Paramètres de capacité réservée du volume de la paire 
 . Modifiez les paramètres de capacité réservée pour le volume de paire en miroir selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

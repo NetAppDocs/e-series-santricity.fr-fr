@@ -13,6 +13,7 @@ summary: 'À partir de la page matériel, vous pouvez activer le voyant de local
 [role="lead"]
 À partir de la page matériel, vous pouvez activer le voyant de localisation pour trouver l'emplacement physique d'un lecteur dans la matrice de stockage.
 
+.Description de la tâche
 Vous pouvez localiser des lecteurs uniques ou multiples affichés sur la page matériel.
 
 .Étapes

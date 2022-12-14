@@ -19,6 +19,7 @@ La fonction AutoSupport prend en charge les protocoles HTTPS, HTTP et SMTP pour 
 * Un serveur DNS doit être installé et configuré sur votre réseau. L'adresse du serveur DNS doit être configurée dans System Manager (cette tâche est disponible à partir de la page Hardware).
 
 
+.Description de la tâche
 Étudiez les différents protocoles :
 
 * *HTTPS* -- vous permet de vous connecter directement au serveur d'assistance technique de destination via HTTPS. Si vous souhaitez activer AutoSupport OnDemand ou diagnostic à distance, la méthode de livraison AutoSupport doit être définie sur HTTPS.

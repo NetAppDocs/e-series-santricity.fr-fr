@@ -20,11 +20,13 @@ Vous pouvez copier les données d'un volume vers un autre volume de la même bai
 * Si vous avez déjà utilisé le volume cible dans une opération de copie de volume, vous n'avez plus besoin de ces données ou que vous avez sauvegardé les données.
 
 
+.Description de la tâche
 Le volume source est le volume qui accepte les E/S hôte et stocke les données d'application. Lorsqu'un volume de copie est démarré, les données du volume source sont copiées dans leur intégralité vers le volume cible.
 
 Le volume cible est un volume standard qui conserve une copie des données du volume source. Le volume cible est identique au volume source une fois l'opération Copier le volume terminée. Le volume cible doit avoir une capacité identique ou supérieure à celle du volume source ; cependant, il peut avoir un niveau RAID différent.
 
 .Plus d'informations sur les copies en ligne et hors ligne
+[%collapsible]
 ====
 *Copie en ligne*
 
@@ -56,6 +58,7 @@ La priorité de copie détermine la quantité de ressources système utilisées 
 
 +
 .En savoir plus sur les taux de priorité de copie
+[%collapsible]
 ====
 Il existe cinq taux de priorité de copie :
 
@@ -90,6 +93,8 @@ Allouez la capacité réservée en suivant les instructions suivantes :
 
 
 
+.Résultats
 System Manager copie toutes les données du volume source vers le volume cible. Une fois l'opération Copier le volume terminée, le volume cible devient automatiquement en lecture seule pour les hôtes.
 
+.Une fois que vous avez terminé
 Sélectionnez menu:Accueil[opérations de visualisation en cours] pour afficher la progression de l'opération Copier le volume. Cette opération peut être longue et peut affecter les performances du système.

@@ -31,6 +31,7 @@ La boîte de dialogue Afficher les statistiques de cache SSD s'affiche et affich
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

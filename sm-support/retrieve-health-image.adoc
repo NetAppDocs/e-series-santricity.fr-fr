@@ -14,6 +14,7 @@ summary: 'Vous pouvez vérifier une image d"état de santé du contrôleur. Une 
 [role="lead"]
 Vous pouvez vérifier une image d'état de santé du contrôleur. Une image de santé est un « dump » de données brutes de la mémoire du processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.
 
+.Description de la tâche
 Le firmware génère automatiquement une image de l'état de santé lorsqu'il détecte certaines erreurs. Après la génération d'une image de santé, le contrôleur qui a connu le redémarrage de l'erreur et un événement est consigné dans le journal des événements.
 
 Si AutoSupport est activé, l'image d'état de santé est automatiquement envoyée au support technique. Si vous n'avez pas activé AutoSupport, vous devez contacter le support technique pour obtenir des instructions sur la récupération de l'image de santé et son envoi à des fins d'analyse.

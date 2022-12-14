@@ -16,6 +16,7 @@ Vous pouvez supprimer un volume Snapshot ou un volume Snapshot de groupe de coh�
 
 Vous pouvez également indiquer si vous souhaitez supprimer le volume de capacité réservé de snapshot associé à un `read-write` volume de snapshot ou conservez le volume de capacité réservé de l'instantané comme volume non attribué.
 
+.Description de la tâche
 La suppression d'un volume de base supprime automatiquement tout volume snapshot associé ou tout volume snapshot de groupe de cohérence. Vous ne pouvez pas supprimer un volume de snapshot qui se trouve dans une copie de volume avec l'état *en cours*.
 
 .Étapes
@@ -28,6 +29,7 @@ System Manager affiche tous les volumes de snapshot associés à la matrice de s
 . Confirmez que vous souhaitez effectuer l'opération, puis cliquez sur *Supprimer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Supprime tous les volumes snapshot membres (pour un volume snapshot de groupe de cohérence Snapshot).

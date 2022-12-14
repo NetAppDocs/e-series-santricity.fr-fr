@@ -14,6 +14,7 @@ summary: 'Après avoir créé ou modifié une clé de sécurité, vous pouvez cr
 [role="lead"]
 Après avoir créé ou modifié une clé de sécurité, vous pouvez créer une copie de sauvegarde du fichier de clé en cas de corruption de l'original.
 
+.Description de la tâche
 Cette tâche décrit comment sauvegarder une clé de sécurité que vous avez créée précédemment. Au cours de cette procédure, vous créez une nouvelle phrase de passe pour la sauvegarde. Cette phrase de passe n'a pas besoin de correspondre à la phrase de passe utilisée lors de la création ou de la dernière modification de la clé d'origine. La phrase de passe est appliquée uniquement à la sauvegarde que vous créez.
 
 .Étapes
@@ -51,4 +52,5 @@ Le chemin du fichier de clé de sécurité téléchargé dépend de l'emplacemen
 . Enregistrez votre phrase de passe dans un emplacement sécurisé, puis cliquez sur *Fermer*.
 
 
+.Une fois que vous avez terminé
 Vous devez valider la clé de sécurité de sauvegarde.

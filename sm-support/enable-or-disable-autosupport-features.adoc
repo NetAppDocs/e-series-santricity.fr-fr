@@ -14,8 +14,10 @@ summary: Vous activez la fonctionnalité AutoSupport et les fonctionnalités ind
 [role="lead"]
 Vous activez la fonctionnalité AutoSupport et les fonctionnalités individuelles de AutoSupport lors de la configuration initiale, ou vous pouvez les activer ou les désactiver ultérieurement.
 
+.Avant de commencer
 Si vous souhaitez activer AutoSupport OnDemand ou diagnostic à distance, la méthode de livraison AutoSupport doit être définie sur HTTPS.
 
+.Description de la tâche
 Vous pouvez désactiver la fonctionnalité AutoSupport à tout moment, mais il est vivement recommandé de la laisser activée. L'activation de la fonctionnalité AutoSupport peut considérablement accélérer l'identification et la résolution des problèmes sur la baie de stockage.
 
 La fonctionnalité AutoSupport comprend trois fonctions individuelles que vous pouvez activer séparément.
