@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:34:33 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:36:49 +0000">12/15/2022</time>
     
   
 
@@ -9933,9 +9933,11 @@
 <p>Pour sécuriser les communications entre un serveur de gestion des clés et les contrôleurs de la matrice de stockage, vous devez configurer les ensembles appropriés de certificats.</p>
 </div>
 <div class="paragraph">
+<div class="title">Avant de commencer</div>
 <p>Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d&#8217;administrateur de sécurité. Sinon, les fonctions de certificat n&#8217;apparaissent pas.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>L&#8217;authentification entre les contrôleurs et un serveur de gestion des clés est une procédure en deux étapes.</p>
 </div>
 </div>
@@ -9990,7 +9992,7 @@
 <p>Demandez un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés.</p>
 </li>
 <li>
-<p>Lorsque vous disposez d&#8217;un certificat client, accédez à  2: Import certificates for the key management server.</p>
+<p>Lorsque vous disposez d&#8217;un certificat client, accédez à <a href="#étape-2-importation-de-certificats-pour-le-serveur-de-gestion-des-clés">Étape 2 : importation de certificats pour le serveur de gestion des clés</a>.</p>
 </li>
 </ol>
 </div>
@@ -10006,7 +10008,7 @@
 <div class="title">Avant de commencer</div>
 <ul>
 <li>
-<p>Vous avez signé un fichier de certificat client (voir  1: Complete and submit CSR for authentication with a key management server), et vous avez copié ce fichier sur l&#8217;hôte où vous accédez à System Manager. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).</p>
+<p>Vous avez signé un fichier de certificat client (voir <a href="#étape-1-compléter-et-soumettre-une-rsc-pour-authentification-avec-un-serveur-de-gestion-des-clés">Étape 1 : compléter et soumettre une RSC pour authentification avec un serveur de gestion des clés</a>), et vous avez copié ce fichier sur l&#8217;hôte où vous accédez à System Manager. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).</p>
 </li>
 <li>
 <p>Vous devez récupérer un fichier de certificat à partir du serveur de gestion des clés, puis le copier vers l&#8217;hôte sur lequel vous accédez à System Manager. Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP. Vous pouvez utiliser un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.</p>

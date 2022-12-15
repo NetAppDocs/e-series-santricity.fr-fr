@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:34:33 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:36:49 +0000">12/15/2022</time>
     
   
 
@@ -9936,6 +9936,7 @@
 <p>Ce groupe vous permet de créer des images de snapshot de tous les volumes en même temps pour plus de cohérence. Chaque volume appartenant à un groupe de cohérence de snapshot est appelé volume_membre_. Lorsque vous ajoutez un volume à un groupe de cohérence de snapshot, le système crée automatiquement un nouveau groupe de snapshots correspondant à ce volume membre.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>La séquence de création de groupe de cohérence de snapshot vous permet de sélectionner les volumes membres du groupe et d&#8217;allouer de la capacité aux volumes membres.</p>
 </div>
 <div class="paragraph">
@@ -9950,6 +9951,7 @@
 <p>Sélectionnez les membres pour spécifier une collection de volumes comprenant le groupe de cohérence de snapshot. Toutes les actions que vous effectuez sur le groupe de cohérence de snapshot s&#8217;étendent de manière uniforme sur les volumes membres sélectionnés.</p>
 </div>
 <div class="paragraph">
+<div class="title">Avant de commencer</div>
 <p>Les volumes membres doivent être optimaux.</p>
 </div>
 <div class="olist arabic">
@@ -9971,7 +9973,7 @@
 <p>Sélectionnez le ou les volumes à ajouter en tant que volumes membres au groupe de cohérence snapshot.</p>
 </li>
 <li>
-<p>Cliquez sur <strong>Suivant</strong> et allez à  2: Reserve capacity for snapshot consistency group.</p>
+<p>Cliquez sur <strong>Suivant</strong> et allez à <a href="#étape-2-réserver-de-la-capacité-du-groupe-de-cohérence-snapshot">Étape 2 : réserver de la capacité du groupe de cohérence Snapshot</a>.</p>
 </li>
 </ol>
 </div>
@@ -9984,6 +9986,7 @@
 <p>Associez la capacité réservée au groupe de cohérence des snapshots. System Manager suggère les volumes et la capacité en fonction des propriétés du groupe de cohérence Snapshot. Vous pouvez accepter la configuration de capacité réservée recommandée ou personnaliser le stockage alloué.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Dans la boîte de dialogue réserver la capacité, la table Volume candidate affiche uniquement les candidats qui prennent en charge la capacité réservée spécifiée. La capacité réservée est la capacité physique allouée utilisée pour toute opération de service de copie et tout objet de stockage. Il n&#8217;est pas directement lisible par l&#8217;hôte.</p>
 </div>
 <div class="olist arabic">
@@ -10022,7 +10025,7 @@
 <p><strong>Facultatif:</strong> si vous modifiez le paramètre de capacité réservée par défaut, cliquez sur <strong>Actualiser les candidats</strong> pour actualiser la liste des candidats pour la capacité réservée que vous avez spécifiée.</p>
 </li>
 <li>
-<p>Cliquez sur <strong>Suivant</strong> et allez à  3: Edit settings for snapshot consistency group.</p>
+<p>Cliquez sur <strong>Suivant</strong> et allez à <a href="#étape-3-modifiez-les-paramètres-du-groupe-de-cohérence-des-snapshots">Étape 3 : modifiez les paramètres du groupe de cohérence des snapshots</a>.</p>
 </li>
 </ol>
 </div>
@@ -10035,6 +10038,7 @@
 <p>Acceptez les paramètres de suppression automatique et les seuils d&#8217;alerte de capacité réservée pour le groupe de cohérence Snapshot ou sélectionnez-les.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>La séquence de création de groupe de cohérence de snapshot vous permet de sélectionner les volumes membres du groupe et d&#8217;allouer de la capacité aux volumes membres.</p>
 </div>
 <div class="olist arabic">
@@ -10042,8 +10046,8 @@
 <ol class="arabic">
 <li>
 <p>Acceptez ou modifiez les paramètres par défaut du groupe de cohérence de snapshot, le cas échéant.</p>
-<div class="exampleblock">
-<div class="title">Exemple 1. Détails du champ</div>
+<details>
+<summary class="title">Détails du champ</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10113,7 +10117,7 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Une fois que vous avez satisfait de la configuration de votre groupe de cohérence de snapshot, cliquez sur <strong>Finish</strong>.</p>

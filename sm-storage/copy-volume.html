@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:34:33 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:36:49 +0000">12/15/2022</time>
     
   
 
@@ -9945,13 +9945,14 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Le volume source est le volume qui accepte les E/S hôte et stocke les données d&#8217;application. Lorsqu&#8217;un volume de copie est démarré, les données du volume source sont copiées dans leur intégralité vers le volume cible.</p>
 </div>
 <div class="paragraph">
 <p>Le volume cible est un volume standard qui conserve une copie des données du volume source. Le volume cible est identique au volume source une fois l&#8217;opération Copier le volume terminée. Le volume cible doit avoir une capacité identique ou supérieure à celle du volume source ; cependant, il peut avoir un niveau RAID différent.</p>
 </div>
-<div class="exampleblock">
-<div class="title">Exemple 1. Plus d&#8217;informations sur les copies en ligne et hors ligne</div>
+<details>
+<summary class="title">Plus d&#8217;informations sur les copies en ligne et hors ligne</summary>
 <div class="content">
 <div class="paragraph">
 <p><strong>Copie en ligne</strong></p>
@@ -9966,7 +9967,7 @@
 <p>Une copie hors ligne lit les données du volume source et les copie vers un volume cible, tout en suspendant toutes les mises à jour du volume source avec la copie en cours. Toutes les mises à jour du volume source sont suspendues pour éviter la création d&#8217;incohérences chronologiques sur le volume cible. La relation de copie de volume hors ligne se situe entre un volume source et un volume cible.</p>
 </div>
 </div>
-</div>
+</details>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -10004,8 +10005,8 @@
 <div class="paragraph">
 <p>La priorité de copie détermine la quantité de ressources système utilisées pour effectuer l&#8217;opération de copie de volume par rapport aux demandes d&#8217;E/S de service.</p>
 </div>
-<div class="exampleblock">
-<div class="title">Exemple 2. En savoir plus sur les taux de priorité de copie</div>
+<details>
+<summary class="title">En savoir plus sur les taux de priorité de copie</summary>
 <div class="content">
 <div class="paragraph">
 <p>Il existe cinq taux de priorité de copie :</p>
@@ -10033,7 +10034,7 @@
 <p>Si la priorité de copie est définie sur le taux le plus faible, l&#8217;activité d&#8217;E/S est prioritaire et l&#8217;opération de copie de volume prend plus de temps. Si la priorité de copie est définie sur le taux le plus élevé, l&#8217;opération de copie de volume est prioritaire, mais l&#8217;activité d&#8217;E/S de la matrice de stockage peut être affectée.</p>
 </div>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Indiquez si vous souhaitez créer une copie en ligne ou hors ligne. Pour créer une copie en ligne, cochez la case <strong>garder le volume source en ligne pendant l&#8217;opération de copie</strong>.</p>
@@ -10073,9 +10074,11 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Résultats</div>
 <p>System Manager copie toutes les données du volume source vers le volume cible. Une fois l&#8217;opération Copier le volume terminée, le volume cible devient automatiquement en lecture seule pour les hôtes.</p>
 </div>
 <div class="paragraph">
+<div class="title">Une fois que vous avez terminé</div>
 <p>Sélectionnez <span class="menuseq"><b class="menu">Accueil</b>&#160;<b class="caret">&#8250;</b> <b class="menuitem">opérations de visualisation en cours</b></span> pour afficher la progression de l&#8217;opération Copier le volume. Cette opération peut être longue et peut affecter les performances du système.</p>
 </div>
 

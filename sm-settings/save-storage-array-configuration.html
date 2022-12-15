@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:34:33 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:36:49 +0000">12/15/2022</time>
     
   
 
@@ -9931,9 +9931,11 @@
 <p>Vous pouvez enregistrer les informations de configuration d&#8217;une matrice de stockage dans un fichier de script pour gagner du temps lors de la configuration de matrices de stockage supplémentaires avec la même configuration.</p>
 </div>
 <div class="paragraph">
+<div class="title">Avant de commencer</div>
 <p>La matrice de stockage ne doit pas être en cours d&#8217;opération qui modifie ses paramètres de configuration logique. Comme la création ou la suppression de volumes, le téléchargement du firmware des contrôleurs, l&#8217;attribution ou la modification des disques de secours, ou l&#8217;ajout de capacité (disques) à un groupe de volumes.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>L&#8217;enregistrement de la configuration de la matrice de stockage génère un script d&#8217;interface de ligne de commande (CLI) contenant les paramètres de la matrice de stockage, la configuration de volume, la configuration de l&#8217;hôte ou les affectations de l&#8217;hôte au volume pour une matrice de stockage. Vous pouvez utiliser ce script CLI généré pour répliquer une configuration vers une autre matrice de stockage avec la même configuration matérielle.</p>
 </div>
 <div class="paragraph">
@@ -10035,6 +10037,7 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Une fois que vous avez terminé</div>
 <p>Pour charger la configuration enregistrée de la matrice de stockage sur une autre matrice de stockage, utilisez l&#8217;interface de ligne de commande SANtricity (SMcli) avec le <code>-f</code> pour appliquer le <code>.cfg</code> fichier.</p>
 </div>
 <div class="admonitionblock note">

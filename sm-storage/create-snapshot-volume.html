@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:34:33 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:36:49 +0000">12/15/2022</time>
     
   
 
@@ -9933,6 +9933,7 @@
 <p>La création d&#8217;un volume Snapshot permet à l&#8217;hôte d&#8217;accéder à une image Snapshot d&#8217;un volume ou d&#8217;un groupe de cohérence de snapshot. Vous pouvez désigner le volume snapshot comme étant en lecture seule ou en lecture-écriture.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>La séquence de création du volume de snapshot permet de créer un volume de snapshot à partir d&#8217;une image de snapshot et offre des options permettant d&#8217;allouer de la capacité réservée si le volume est en lecture/écriture. Un volume snapshot peut être désigné comme l&#8217;un des suivants :</p>
 </div>
 <div class="ulist">
@@ -9981,7 +9982,7 @@
 </div>
 </li>
 <li>
-<p>Accédez à  2: Assign snapshot volume to host.</p>
+<p>Accédez à <a href="Étape 2 : affecter un volume de snapshot à l&.html#8217;hôte">Étape 2 : affecter un volume de snapshot à l&.html</a>.</p>
 </li>
 </ol>
 </div>
@@ -10008,6 +10009,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Lorsque vous attribuez des volumes, gardez les consignes suivantes à l&#8217;esprit :</p>
 </div>
 <div class="ulist">
@@ -10064,10 +10066,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Si le volume de votre snapshot est en lecture/écriture, la boîte de dialogue capacité de révision s&#8217;affiche. Accédez à  3: Reserve capacity for a snapshot volume.</p>
+<p>Si le volume de votre snapshot est en lecture/écriture, la boîte de dialogue capacité de révision s&#8217;affiche. Accédez à <a href="#étape-3-réserver-de-la-capacité-pour-un-volume-snapshot">Étape 3 : réserver de la capacité pour un volume Snapshot</a>.</p>
 </li>
 <li>
-<p>Si votre volume de snapshot est en lecture seule, la boîte de dialogue Modifier la priorité s&#8217;affiche. Accédez à  4: Edit settings for a snapshot volume.</p>
+<p>Si votre volume de snapshot est en lecture seule, la boîte de dialogue Modifier la priorité s&#8217;affiche. Accédez à <a href="Étape 4 : modifiez les paramètres d&.html#8217;un volume de snapshot">Étape 4 : modifiez les paramètres d&.html</a>.</p>
 </li>
 </ul>
 </div>
@@ -10083,6 +10085,7 @@
 <p>Associer la capacité réservée à un volume snapshot de lecture/écriture. System Manager suggère les volumes et la capacité en fonction des propriétés du volume de base ou du groupe de cohérence Snapshot. Vous pouvez accepter la configuration de capacité réservée recommandée ou personnaliser le stockage alloué.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Vous pouvez augmenter ou réduire la capacité réservée du volume Snapshot selon vos besoins. Si vous constatez que la capacité réservée de snapshot est supérieure à vos besoins, vous pouvez réduire sa taille afin de libérer de l&#8217;espace nécessaire à d&#8217;autres volumes logiques.</p>
 </div>
 <div class="olist arabic">
@@ -10130,7 +10133,7 @@
 <p><strong>Facultatif:</strong> si vous créez le volume d&#8217;instantané pour un groupe de cohérence d&#8217;instantané, l&#8217;option "changer candidat" apparaît dans le tableau réservé candidats. Cliquez sur <strong>changer candidat</strong> pour sélectionner un autre candidat à capacité réservée.</p>
 </li>
 <li>
-<p>Cliquez sur <strong>Suivant</strong> et allez à  4: Edit settings for a snapshot volume.</p>
+<p>Cliquez sur <strong>Suivant</strong> et allez à <a href="Étape 4 : modifiez les paramètres d&.html#8217;un volume de snapshot">Étape 4 : modifiez les paramètres d&.html</a>.</p>
 </li>
 </ol>
 </div>
@@ -10143,6 +10146,7 @@
 <p>Modifiez les paramètres d&#8217;un volume Snapshot, comme son nom, la mise en cache, les seuils d&#8217;alerte de capacité réservée, etc.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Pour améliorer les performances en lecture seule, vous pouvez ajouter le volume au cache SSD. La fonction SSD cache se compose d&#8217;un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage.</p>
 </div>
 <div class="olist arabic">
@@ -10150,8 +10154,8 @@
 <ol class="arabic">
 <li>
 <p>Acceptez ou modifiez les paramètres du volume d&#8217;instantané, le cas échéant.</p>
-<div class="exampleblock">
-<div class="title">Exemple 1. Détails du champ</div>
+<details>
+<summary class="title">Détails du champ</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10206,7 +10210,7 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Vérifiez la configuration de volume de snapshot. Cliquez sur <strong>Retour</strong> pour apporter des modifications.</p>
