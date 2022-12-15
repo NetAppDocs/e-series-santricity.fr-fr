@@ -1812,7 +1812,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-mirroring/</loc>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/unified-manager/</loc>
       
       <lastmod>2022-11-15T17:34:33+00:00</lastmod>
       
@@ -1826,49 +1826,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/system-manager/</loc>
-      
-      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-support/</loc>
-      
-      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-settings/</loc>
-      
-      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-interface/</loc>
-      
-      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-hardware/</loc>
-      
-      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-storage/</loc>
-      
-      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/unified-manager/</loc>
       
       <lastmod>2022-11-15T17:34:33+00:00</lastmod>
       
@@ -1883,6 +1841,48 @@
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity/um-certificates/</loc>
+      
+      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-interface/</loc>
+      
+      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-mirroring/</loc>
+      
+      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-storage/</loc>
+      
+      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/system-manager/</loc>
+      
+      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-hardware/</loc>
+      
+      <lastmod>2022-11-15T17:34:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity/sm-support/</loc>
       
       <lastmod>2022-11-15T17:34:33+00:00</lastmod>
       
@@ -2668,7 +2668,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity//search.html</loc>
       
-      <lastmod>2022-11-15T17:34:52+00:00</lastmod>
+      <lastmod>2022-12-15T12:16:34+00:00</lastmod>
       
     </url>
   
