@@ -8712,4 +8712,6 @@
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Gérer les certificats</block>
   <block id="c62c395ffcd8aa3e5d38fe7155d2f510" category="sidebar">Logiciel SANtricity</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">Nouvelles fonctionnalités de la version 11.75</block>
+  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">Les systèmes doivent exécuter la version 11.70.5 pour effectuer une mise à niveau vers la version 11.80.x ou ultérieure.</block>
 </blocks>

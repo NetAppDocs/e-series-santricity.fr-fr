@@ -16,6 +16,12 @@ Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System M
 
 
 
+== Nouvelles fonctionnalités de la version 11.75
+
+Les systèmes doivent exécuter la version 11.70.5 pour effectuer une mise à niveau vers la version 11.80.x ou ultérieure.
+
+
+
 == Nouvelles fonctionnalités de la version 11.74
 
 [cols="35h,~"]
