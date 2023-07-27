@@ -13,11 +13,6 @@ summary: 'L"état du miroir définit l"état des groupes de cohérence en miroir
 [role="lead"]
 L'état du miroir définit l'état des groupes de cohérence en miroir et des paires de volumes en miroir.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 
 
 == Statut des groupes de cohérence en miroir

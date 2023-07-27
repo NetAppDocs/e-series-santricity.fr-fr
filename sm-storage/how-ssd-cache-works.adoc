@@ -13,11 +13,6 @@ summary: 'La fonctionnalité SSD cache est une solution basée sur le contrôleu
 [role="lead"]
 La fonctionnalité SSD cache est une solution basée sur le contrôleur qui met en cache les données les plus utilisées (données actives) sur des disques SSD à faible latence afin d'accélérer dynamiquement les performances du système. SSD cache est exclusivement utilisé pour les lectures d'hôte.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 
 
 == Comparaison entre SSD cache et le cache principal
@@ -30,7 +25,7 @@ SSD cache fonctionne différemment du cache primaire :
 +
 Dans le cache primaire, les données sont stockées dans la DRAM après la lecture de l'hôte.
 
-* La fonctionnalité SSD cache est utilisée uniquement pour placer les données en cache afin d'améliorer les performances globales du système.
+* SSD cache n'est utilisé que s'il est avantageux de placer les données en cache pour améliorer les performances globales du système.
 +
 Dans SSD cache, les données sont copiées à partir des volumes et stockées sur deux volumes RAID internes (un par contrôleur) qui sont automatiquement créés lors de la création d'un SSD cache.
 

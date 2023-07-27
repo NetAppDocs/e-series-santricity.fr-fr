@@ -13,11 +13,6 @@ summary: 'Vous configurez la mise en miroir asynchrone à l"aide du workflow sui
 [role="lead"]
 Vous configurez la mise en miroir asynchrone à l'aide du workflow suivant.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 . Effectuer la configuration initiale dans Unified Manager :
 +
 .. Sélectionnez la matrice de stockage locale comme source pour le transfert de données.

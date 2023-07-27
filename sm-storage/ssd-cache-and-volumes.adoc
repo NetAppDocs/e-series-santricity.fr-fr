@@ -13,11 +13,6 @@ summary: 'Vous pouvez ajouter un volume à SSD cache pour améliorer les perform
 [role="lead"]
 Vous pouvez ajouter un volume à SSD cache pour améliorer les performances en lecture seule. La fonctionnalité SSD cache se compose d'un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 
 
 == Volumes

@@ -94,7 +94,7 @@ Nom unique d'une connexion au sein de la session entre l'initiateur et la cible.
 
 
  a| 
-Identificateur de port Ethernet
+Identificateur de port
  a| 
 Port du contrôleur associé à la connexion.
 

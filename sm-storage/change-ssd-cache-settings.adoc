@@ -14,11 +14,6 @@ summary: 'Vous pouvez modifier le nom de la mémoire SSD cache et afficher son �
 [role="lead"]
 Vous pouvez modifier le nom de la mémoire SSD cache et afficher son état, ses capacités maximales et actuelles, la sécurité des disques et l'état Data assurance, ainsi que ses volumes et disques associés.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 .Étapes
 . Menu Sélectionner:Storage[pools & Volume Groups].
 . Sélectionnez le cache SSD que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.

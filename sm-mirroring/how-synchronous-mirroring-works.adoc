@@ -15,7 +15,7 @@ La mise en miroir synchrone réplique les volumes de données en temps réel pou
 
 [NOTE]
 ====
-La mise en miroir n'est pas disponible sur la baie de stockage EF600 ou EF300.
+La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF600 ou EF300.
 
 ====
 La mise en miroir synchrone atteint l'objectif de point de restauration (RPO) de zéro perte de données en mettant à disposition une copie des données importantes en cas d'incident sur l'une des deux baies de stockage. La copie est identique aux données de production à chaque instant, car chaque écriture est effectuée sur le volume primaire, une écriture est effectuée sur le volume secondaire. L'hôte ne reçoit pas de confirmation de la réussite de l'écriture tant que le volume secondaire n'a pas été mis à jour avec les modifications apportées au volume principal.

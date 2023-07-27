@@ -14,11 +14,6 @@ summary: Pour configurer la mise en miroir asynchrone, vous créez une paire en 
 [role="lead"]
 Pour configurer la mise en miroir asynchrone, vous créez une paire en miroir qui comprend un volume primaire sur la baie locale et un volume secondaire sur la baie distante.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 .Avant de commencer
 Avant de créer une paire en miroir, répondez aux exigences suivantes pour Unified Manager :
 

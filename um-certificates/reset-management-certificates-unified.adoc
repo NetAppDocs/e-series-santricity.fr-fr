@@ -20,8 +20,8 @@ Vous devez être connecté avec un profil utilisateur qui inclut les autorisatio
 Cette tâche supprime le certificat de gestion actuel du système hôte sur lequel le proxy de services Web et Unified Manager sont installés. Une fois le certificat réinitialisé, le système hôte reprend à l'aide du certificat auto-signé.
 
 .Étapes
-. Sélectionnez *gestion des certificats*.
-. Dans l'onglet gestion, sélectionnez *Réinitialiser*.
+. Sélectionnez *Paramètres > certificats*.
+. Sélectionnez l'onglet *Array Management*, puis sélectionnez *Reset*.
 +
 Une boîte de dialogue confirmer la réinitialisation du certificat de gestion s'ouvre.
 

@@ -13,11 +13,6 @@ summary: Vous pouvez modifier le rôle entre les paires en miroir dans un groupe
 [role="lead"]
 Vous pouvez modifier le rôle entre les paires en miroir dans un groupe de cohérence en miroir. Pour ce faire, vous pouvez rétrograder le groupe de cohérence miroir principal au rôle secondaire, ou promouvoir le groupe de cohérence miroir secondaire au rôle principal.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 Passez en revue les informations suivantes concernant l'opération de changement de rôle :
 
 * Le changement de rôle affecte toutes les paires symétriques au sein du groupe de cohérence miroir sélectionné.

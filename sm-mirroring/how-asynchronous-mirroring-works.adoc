@@ -13,11 +13,6 @@ summary: 'La mise en miroir asynchrone copie les volumes de données à la deman
 [role="lead"]
 La mise en miroir asynchrone copie les volumes de données à la demande ou selon une planification. La mise en miroir permet de réduire ou d'éviter les temps d'indisponibilité dus à la corruption ou à la perte de données.
 
-[NOTE]
-====
-La mise en miroir n'est pas disponible sur la baie de stockage EF600 ou EF300.
-
-====
 La mise en miroir asynchrone capture l'état du volume primaire à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image. Le site primaire peut être mis à jour immédiatement et le site secondaire peut être mis à jour à mesure que la bande passante le permet. Les informations sont mises en cache et envoyées ultérieurement, au fur et à mesure que les ressources réseau deviennent disponibles.
 
 Ce type de mise en miroir est idéal pour répondre à la demande en cas de non-fonctionnement continu et, de manière générale, il est bien plus efficace du réseau pour les processus périodiques, comme la sauvegarde et l'archivage. Les raisons d'utiliser la mise en miroir asynchrone sont les suivantes :

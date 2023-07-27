@@ -29,7 +29,7 @@ Si vous prévoyez de configurer la mise en miroir, gardez les exigences suivante
 
 [NOTE]
 ====
-La mise en miroir n'est pas disponible sur la baie de stockage EF600 ou EF300.
+La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF600 ou EF300.
 
 ====
 * Vous devez disposer de deux baies de stockage.
@@ -77,6 +77,10 @@ La communication iSCSI entre contrôleurs doit utiliser un port de connexion hô
 == Candidats aux volumes en miroir
 
 * Le niveau RAID, les paramètres de mise en cache et la taille des segments peuvent être différents sur les volumes primaire et secondaire d'une paire en miroir.
++
+
+NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire d'une paire en miroir asynchrone doivent correspondre au même protocole, au même niveau de tiroir, à la même taille de segment, au même type de sécurité et au même niveau RAID. Les paires en miroir asynchrones non éligibles n'apparaîtront pas dans la liste des volumes disponibles.
+
 * Le volume secondaire doit être au moins aussi grand que le volume primaire.
 * Un volume ne peut participer qu'à une seule relation miroir.
 * Dans le cas d'une paire mise en miroir synchrone, les volumes primaire et secondaire doivent être des volumes standard. Elles ne peuvent pas être de volumes fins ou de snapshot.

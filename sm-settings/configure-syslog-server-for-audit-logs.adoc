@@ -48,4 +48,4 @@ Si le certificat devient non valide ultérieurement, l'établissement de liaison
 
 
 .Résultats
-Après la configuration, tous les nouveaux journaux d'audit sont envoyés au serveur syslog. Les journaux précédents ne sont pas transférés.
+Après la configuration, tous les nouveaux journaux d'audit sont envoyés au serveur syslog. Les journaux précédents ne sont pas transférés. Pour configurer davantage les paramètres syslog des alertes, reportez-vous à la section https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-alerts.html["Configurer le serveur syslog pour les alertes"].

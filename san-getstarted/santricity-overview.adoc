@@ -15,12 +15,12 @@ Les systèmes E-Series incluent le logiciel SANtricity pour le provisionnement d
 
 Ce site explique comment utiliser les interfaces de gestion SANtricity suivantes :
 
-* System Manager : interface Web utilisée pour gérer un contrôleur dans une baie de stockage.
+* System Manager : interface web utilisée pour gérer une baie de stockage individuelle de votre réseau.
 * Unified Manager :- interface web utilisée pour afficher et gérer toutes les baies de stockage de votre réseau.
 
 
 
-NOTE: Les baies de stockage EF600 et EF300 ne prennent pas en charge la mise en miroir, les volumes fins ou les fonctionnalités de cache SSD.
+NOTE: Les baies de stockage EF600 et EF300 ne prennent pas en charge la mise en miroir synchrone ou les volumes fins.
 
 
 
@@ -92,7 +92,7 @@ Affichez les données de diagnostic, gérez les mises à niveau et configurez Au
 
 == SANtricity Unified Manager
 
-Unified Manager est un logiciel en ligne utilisé pour gérer l'ensemble de votre domaine. Une vue centrale permet de voir l'état des baies E-Series et EF-Series les plus récentes, notamment les systèmes E2800, EF280, EF300, E5700, EF570, Et EF600. Vous pouvez également effectuer des opérations par lots sur des matrices de stockage sélectionnées.
+Unified Manager est un logiciel en ligne utilisé pour gérer l'ensemble de votre domaine. La vue centrale présente le statut de toutes les baies E-Series et EF-Series les plus récentes, telles que les baies E2800, EF280, EF300, E5700, EF570, Et EF600. Vous pouvez également effectuer des opérations par lots sur des matrices de stockage sélectionnées.
 
 Unified Manager est installé sur un serveur de gestion avec le proxy de services Web. Pour accéder à Unified Manager, ouvrez un navigateur et entrez l'URL pointant vers le serveur sur lequel le proxy de services Web est installé.
 

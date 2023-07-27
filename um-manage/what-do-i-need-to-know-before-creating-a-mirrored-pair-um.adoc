@@ -25,6 +25,6 @@ Avant de créer une paire symétrique, suivez ces instructions.
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
 
 ====

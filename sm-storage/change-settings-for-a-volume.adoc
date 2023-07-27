@@ -17,6 +17,9 @@ Vous pouvez modifier les paramètres d'un volume : son nom, son affectation hôt
 .Avant de commencer
 Le volume que vous souhaitez modifier est à l'état optimal.
 
+
+NOTE: Certaines opérations peuvent ne pas être disponibles lorsque des modifications des paramètres de volume sont en cours
+
 .Étapes
 . Sélectionnez menu:Storage[volumes].
 . Sélectionnez le volume à modifier, puis *Afficher/Modifier les paramètres*.
@@ -163,9 +166,6 @@ Affiche le paramètre de mise en cache, que vous pouvez modifier pour avoir un i
  a| 
 Cache SSD
  a| 
-
-NOTE: Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
 La présente le paramètre SSD cache, que vous pouvez activer sur des volumes compatibles afin d'améliorer les performances en lecture seule. Les volumes sont compatibles s'ils partagent les mêmes capacités de sécurité de lecteur et de Data assurance.
 
 *La fonctionnalité SSD cache utilise un ou plusieurs disques SSD pour implémenter un cache de lecture*. Les disques SSD améliorent les performances applicatives en raison des temps de lecture raccourcis. Comme le cache de lecture se trouve dans la baie de stockage, la mise en cache est partagée entre toutes les applications qui utilisent la baie de stockage. Il vous suffit de sélectionner le volume que vous voulez mettre en cache, puis la mise en cache est automatique et dynamique.

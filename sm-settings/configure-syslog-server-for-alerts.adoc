@@ -42,4 +42,4 @@ La boîte de dialogue Ajouter un serveur Syslog s'ouvre.
 
 
 .Résultats
-Le moniteur d'événements envoie des alertes au serveur syslog lorsqu'un événement alertable se produit.
+Le moniteur d'événements envoie des alertes au serveur syslog lorsqu'un événement alertable se produit. Pour configurer davantage les paramètres syslog des journaux d'audit, reportez-vous à la section https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-audit-logs.html["Configuration du serveur syslog pour les journaux d'audit"].

@@ -16,6 +16,9 @@ Vous pouvez configurer les délais d'expiration pour Unified Manager de sorte qu
 .Description de la tâche
 Par défaut, le délai d'expiration de la session pour Unified Manager est de 30 minutes. Vous pouvez régler cette heure ou désactiver complètement les délais de session.
 
+
+NOTE: Si Access Management est configuré à l'aide des fonctionnalités SAML (Security assertion Markup Language) intégrées à la baie, une expiration de session peut se produire lorsque la session SSO de l'utilisateur atteint sa limite maximale. Cela peut survenir avant le délai d'expiration de la session System Manager.
+
 .Étapes
 . Dans la barre de menus, sélectionnez la flèche de la liste déroulante à côté de votre nom de connexion utilisateur.
 . Sélectionnez *Activer/Désactiver le délai de session*.

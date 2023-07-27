@@ -19,3 +19,6 @@ Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette lis
 * Le volume participe déjà à une relation de mise en miroir.
 * Pour les volumes fins, l'extension automatique doit être activée.
 
+
+
+NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire d'une paire en miroir asynchrone doivent correspondre au même protocole, au même niveau de tiroir, à la même taille de segment, au même type de sécurité et au même niveau RAID. Les paires en miroir asynchrones non éligibles n'apparaîtront pas dans la liste des volumes disponibles.

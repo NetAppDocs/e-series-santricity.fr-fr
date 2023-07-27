@@ -16,7 +16,7 @@ Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
 
 ====
 Vous créez un groupe de cohérence dans Unified Manager dans l'assistant de création de paires en miroir.

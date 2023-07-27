@@ -18,4 +18,5 @@ Des erreurs de connexion peuvent se produire pour l'une des raisons suivantes :
 * Vous avez saisi un nom d'utilisateur ou un mot de passe incorrect.
 * Vous disposez de privilèges insuffisants.
 * Vous avez tenté de vous connecter plusieurs fois sans succès, ce qui a déclenché le mode de verrouillage. Attendez 10 minutes pour vous reconnecter.
+* L'authentification SAML est activée. Actualisez votre navigateur pour vous connecter.
 

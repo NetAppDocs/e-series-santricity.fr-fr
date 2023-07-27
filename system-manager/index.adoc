@@ -4,7 +4,7 @@ sidebar: sidebar
 permalink: system-manager/index.html 
 summary: 'La documentation du logiciel SANtricity vous permet d"installer, de configurer et de gérer votre baie de stockage.' 
 ---
-= Gestion de baie unique avec System Manager 11.7
+= Gestion de baie unique avec System Manager 11.8
 :hardbreaks:
 :allow-uri-read: 
 :linkattrs: 

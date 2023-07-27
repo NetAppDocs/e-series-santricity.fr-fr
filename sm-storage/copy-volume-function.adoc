@@ -86,7 +86,7 @@ Oui.
  a| 
 Volume fin
  a| 
-Oui.
+Oui^1^
  a| 
 Oui.
  a| 
@@ -97,7 +97,7 @@ Non
  a| 
 Volume Snapshot
  a| 
-Oui^1^
+Oui^2^
  a| 
 Non
  a| 
@@ -119,13 +119,15 @@ Non
  a| 
 Volume primaire du miroir distant
  a| 
-Oui^2^
+Oui^3^
  a| 
 Non
  a| 
 Oui.
 
 |===
-^1^ vous ne pouvez pas utiliser la copie du volume de snapshot tant que la copie en ligne n'est pas terminée.
+^1^ le volume cible doit avoir une capacité égale ou supérieure à la capacité indiquée pour le volume fin.
 
-^2^ si le volume source est un volume primaire, la capacité du volume cible doit être égale ou supérieure à la capacité utilisable du volume source.
+^2^ vous ne pouvez pas utiliser la copie du volume de snapshot tant que l'opération de copie en ligne n'est pas terminée.
+
+^3^ si le volume source est un volume primaire, la capacité du volume cible doit être égale ou supérieure à la capacité utilisable du volume source.

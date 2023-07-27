@@ -1,0 +1,45 @@
+---
+permalink: um-certificates/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Si nécessaire, vous pouvez exporter les métadonnées du fournisseur de services pour la baie de stockage et réimporter le fichier dans le système du fournisseur d"identités.' 
+---
+= Exporter les fichiers SAML Service Provider
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si nécessaire, vous pouvez exporter les métadonnées du fournisseur de services pour la baie de stockage et réimporter le fichier dans le système du fournisseur d'identités.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+* SAML est configuré et activé.
+
+
+.Description de la tâche
+Cette tâche permet d'exporter des métadonnées à partir du contrôleur. L'IDP a besoin de ces métadonnées pour établir une relation de confiance avec le contrôleur et pour traiter les demandes d'authentification. Le fichier inclut des informations telles que le nom de domaine du contrôleur ou l'adresse IP que le IDP peut utiliser pour envoyer des demandes.
+
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Sélectionnez l'onglet *SAML*.
+. Sélectionnez *Exporter*.
++
+La boîte de dialogue Exporter les fichiers du fournisseur de services s'ouvre.
+
+. Cliquez sur *Exporter* pour enregistrer le fichier de métadonnées sur votre système local.
++
+[NOTE]
+====
+Le champ du nom de domaine est en lecture seule.
+
+====
++
+Notez l'emplacement de stockage du fichier.
+
+. À partir du système local, localisez le fichier de métadonnées du fournisseur de services au format XML que vous avez exporté.
+. À partir du serveur IDP, importez le fichier de métadonnées du fournisseur de services. Vous pouvez importer le fichier directement ou saisir manuellement les informations relatives au contrôleur.
+. Cliquez sur *Fermer*.
+

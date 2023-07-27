@@ -13,11 +13,6 @@ summary: La fonction de mise en miroir asynchrone fournit un mécanisme basé su
 [role="lead"]
 La fonction de mise en miroir asynchrone fournit un mécanisme basé sur le firmware au niveau du contrôleur pour la réplication des données entre une baie de stockage locale et une baie de stockage distante.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 
 
 == Qu'est-ce que la mise en miroir asynchrone ?

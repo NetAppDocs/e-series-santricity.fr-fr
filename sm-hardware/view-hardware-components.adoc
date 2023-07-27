@@ -24,9 +24,9 @@ La page matériel fournit des fonctions de tri et de filtrage qui facilitent la 
 
 
  a| 
-Vues avant et arrière des étagères
+Vues des lecteurs, des contrôleurs et des composants
  a| 
-Pour basculer entre les vues avant et arrière de la tablette, sélectionnez *Afficher arrière de la tablette* ou *Afficher avant de la tablette* à l'extrême droite (le lien qui apparaît dépend de la vue actuelle). La vue avant montre les lecteurs et les baies de lecteur vides. La vue arrière montre les contrôleurs, ainsi que tous les modules d'E/S (ESM), les blocs d'alimentation/ventilation ou les baies de contrôleur vides. En bas de la page, vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso*.
+Pour basculer entre les vues des tiroirs avant et arrière, sélectionnez *lecteurs* ou *contrôleurs et composants* à l'extrême droite (le lien qui s'affiche dépend de la vue actuelle). La vue *lecteurs* affiche les lecteurs et les baies de lecteurs vides. La vue *contrôleurs et composants* affiche les contrôleurs, les modules IOM (ESM), les boîtiers d'alimentation/ventilateur ou les baies de contrôleur vides. Au bas de la page, vous pouvez également sélectionner *Afficher tous les lecteurs*.
 
 
 

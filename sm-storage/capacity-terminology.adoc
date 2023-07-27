@@ -160,11 +160,6 @@ La capacité réservée est la capacité physique allouée utilisée pour toute 
  a| 
 Cache SSD
  a| 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 SSD cache est un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage. La fonctionnalité SSD cache met en cache les données les plus fréquemment utilisées (données actives) sur des disques SSD à faible latence afin d'accélérer de manière dynamique les charges de travail des applications.
 
 

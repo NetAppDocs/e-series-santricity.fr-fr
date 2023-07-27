@@ -17,18 +17,14 @@ Pour accélérer dynamiquement les performances du système, vous pouvez utilise
 .Avant de commencer
 Votre baie de stockage doit contenir des disques SSD.
 
-[NOTE]
-====
-SSD cache n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 .Description de la tâche
-Lorsque vous créez SSD cache, vous pouvez utiliser un ou plusieurs disques. Comme le cache de lecture se trouve dans la baie de stockage, la mise en cache est partagée entre toutes les applications qui utilisent la baie de stockage. Vous sélectionnez les volumes à mettre en cache, puis la mise en cache est automatique et dynamique.
+Lorsque vous créez un nouveau cache SSD, vous pouvez utiliser un ou plusieurs disques. Comme le cache de lecture se trouve dans la baie de stockage, la mise en cache est partagée entre toutes les applications qui utilisent la baie de stockage. Vous sélectionnez les volumes à mettre en cache, puis la mise en cache est automatique et dynamique.
 
-Suivez ces instructions lors de la création de SSD cache.
+Suivez les instructions ci-dessous lors de la création d'un nouveau SSD cache.
 
 * Vous ne pouvez activer la sécurité sur le SSD cache que lorsque vous le créez, pas plus tard.
 * Un seul SSD cache est pris en charge par baie de stockage.
+* Si le cache SSD est activé sur un seul volume, la totalité du cache SSD est attribuée au contrôleur propriétaire de ce volume.
 * La capacité maximale de cache SSD utilisable sur une baie de stockage dépend de la capacité du cache principal du contrôleur.
 * Le cache SSD n'est pas pris en charge sur les images des snapshots.
 * Si vous importez ou exportez des volumes SSD cache activés ou désactivés, les données mises en cache ne sont ni importées ni exportées.

@@ -13,11 +13,6 @@ summary: Vous pouvez modifier le propriétaire du contrôleur préféré dans un
 [role="lead"]
 Vous pouvez modifier le propriétaire du contrôleur préféré dans une paire en miroir.
 
-[NOTE]
-====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
-
-====
 Si le volume primaire de la paire en miroir est détenu par le contrôleur A, le volume secondaire sera également détenu par le contrôleur A de la baie de stockage distante. La modification du propriétaire du volume primaire entraîne automatiquement la modification du propriétaire du volume secondaire pour s'assurer que les deux volumes appartiennent au même contrôleur. Les modifications de propriété actuelles du côté principal se propagent automatiquement aux modifications de propriété actuelles correspondantes du côté secondaire.
 
 Par exemple, un volume primaire appartient au contrôleur A, puis vous remplacez le propriétaire du contrôleur par le contrôleur B. Dans ce cas, la prochaine écriture à distance modifie le propriétaire du contrôleur du volume secondaire du contrôleur A à B. Les modifications de propriété du contrôleur côté secondaire sont contrôlées par le côté principal, ce qui n'implique aucune intervention spéciale de la part de l'administrateur du stockage.

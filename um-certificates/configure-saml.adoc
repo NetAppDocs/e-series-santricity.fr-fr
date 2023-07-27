@@ -1,0 +1,219 @@
+---
+permalink: um-certificates/configure-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, configure, saml, 
+summary: 'Pour configurer l"authentification pour Access Management, vous pouvez utiliser les fonctionnalités SAML (Security assertion Markup Language) intégrées à la matrice de stockage. Cette configuration établit une connexion entre un fournisseur d"identité et le fournisseur de stockage.' 
+---
+= Configurez SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour configurer l'authentification pour Access Management, vous pouvez utiliser les fonctionnalités SAML (Security assertion Markup Language) intégrées à la matrice de stockage. Cette configuration établit une connexion entre un fournisseur d'identité et le fournisseur de stockage.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
+* Vous devez connaître l'adresse IP ou le nom de domaine du contrôleur dans la matrice de stockage.
+* Un administrateur IDP a configuré un système IDP.
+* Un administrateur IDP s'est assuré que le IDP prend en charge la possibilité de renvoyer un ID de nom lors de l'authentification.
+* Un administrateur s'est assuré que le serveur IDP et l'horloge du contrôleur sont synchronisés (via un serveur NTP ou en ajustant les paramètres d'horloge du contrôleur).
+* Un fichier de métadonnées IDP est téléchargé à partir du système IDP et est disponible sur le système local utilisé pour accéder à Unified Manager.
+
+
+.Description de la tâche
+Un fournisseur d'identité (IDP) est un système externe utilisé pour demander des informations d'identification à un utilisateur et déterminer si cet utilisateur est correctement authentifié. Le IDP peut être configuré pour fournir une authentification multifacteur et utiliser n'importe quelle base de données utilisateur, telle qu'Active Directory. Votre équipe de sécurité est responsable du maintien du PDI. Un SP (Service Provider) est un système qui contrôle l'authentification des utilisateurs et l'accès. Lorsque Access Management est configuré avec SAML, la baie de stockage agit comme fournisseur de services pour demander l'authentification auprès du fournisseur d'identités. Pour établir une connexion entre le IDP et la matrice de stockage, vous partagez les fichiers de métadonnées entre ces deux entités. Ensuite, vous associez les entités utilisateur IDP aux rôles de baie de stockage. Enfin, vous testez la connexion et les connexions SSO avant d'activer SAML.
+
+[NOTE]
+====
+*SAML et les services d'annuaire*. Si vous activez SAML lorsque les services d'annuaire sont configurés comme méthode d'authentification, SAML remplace les services d'annuaire SAML dans Unified Manager. Si vous désactivez SAML ultérieurement, la configuration Directory Services retourne à sa configuration précédente.
+
+====
+[CAUTION]
+====
+*Modification et désactivation.* une fois le langage SAML activé, vous _ne pouvez pas_ le désactiver via l'interface utilisateur, ni modifier les paramètres IDP. Si vous devez désactiver ou modifier la configuration SAML, contactez le support technique pour obtenir de l'aide.
+
+====
+La configuration de l'authentification SAML est une procédure en plusieurs étapes.
+
+
+
+== Étape 1 : téléchargez le fichier de métadonnées IDP
+
+Pour fournir à la baie de stockage des informations de connexion IDP, vous importez les métadonnées IDP dans Unified Manager. Le système IDP a besoin de ces métadonnées pour rediriger les demandes d'authentification vers l'URL correcte et valider les réponses reçues.
+
+.Étapes
+. Sélectionnez menu:Paramètres[gestion des accès].
+. Sélectionnez l'onglet *SAML*.
++
+La page affiche un aperçu des étapes de configuration.
+
+. Cliquez sur le lien *Import Identity Provider (IDP) file*.
++
+La boîte de dialogue Importer le fichier du fournisseur d'identités s'ouvre.
+
+. Cliquez sur *Parcourir* pour sélectionner et télécharger le fichier de métadonnées IDP que vous avez copié sur votre système local.
++
+Une fois le fichier sélectionné, l'ID entité IDP s'affiche.
+
+. Cliquez sur *Importer*.
+
+
+
+
+== Étape 2 : exporter les fichiers du fournisseur de services
+
+Pour établir une relation de confiance entre le fournisseur de services intégré et la baie de stockage, vous importez les métadonnées du fournisseur de services dans le fournisseur de services intégré. Le PDI a besoin de ces métadonnées pour établir une relation de confiance avec le contrôleur et pour traiter les demandes d'autorisation. Le fichier contient des informations telles que le nom de domaine du contrôleur ou l'adresse IP, afin que le IDP puisse communiquer avec les fournisseurs de services.
+
+.Étapes
+. Cliquez sur le lien *Exporter les fichiers du fournisseur de services*.
++
+La boîte de dialogue Exporter les fichiers du fournisseur de services s'ouvre.
+
+. Entrez l'adresse IP du contrôleur ou le nom DNS dans le champ *Controller A*, puis cliquez sur *Exporter* pour enregistrer le fichier de métadonnées sur votre système local.
++
+Après avoir cliqué sur *Exporter*, les métadonnées du fournisseur de services sont téléchargées sur votre système local. Notez l'emplacement de stockage du fichier.
+
+. À partir du système local, localisez le fichier de métadonnées du fournisseur de services au format XML que vous avez exporté.
+. À partir du serveur IDP, importez le fichier de métadonnées du fournisseur de services pour établir la relation de confiance. Vous pouvez importer le fichier directement ou saisir manuellement les informations du contrôleur à partir du fichier.
+
+
+
+
+== Étape 3 : rôles de carte
+
+Pour fournir aux utilisateurs l'autorisation et l'accès à Unified Manager, vous devez mapper les attributs d'utilisateur et les appartenances aux groupes d'un fournisseur d'identités aux rôles prédéfinis de la baie de stockage.
+
+.Avant de commencer
+* Un administrateur IDP a configuré les attributs utilisateur et l'appartenance au groupe dans le système IDP.
+* Le fichier de métadonnées IDP est importé dans Unified Manager.
+* Un fichier de métadonnées de fournisseur de services pour le contrôleur est importé dans le système IDP pour la relation de confiance.
+
+
+.Étapes
+. Cliquez sur le lien *mapping Unified Manager* roles.
++
+La boîte de dialogue Role Mapping s'ouvre.
+
+. Attribuez des attributs utilisateur IDP et des groupes aux rôles prédéfinis. Un groupe peut avoir plusieurs rôles attribués.
++
+.Détails du champ
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Réglage | Description 
+
+
+ a| 
+*Mappages*
+
+
+
+ a| 
+Attribut utilisateur
+ a| 
+Spécifiez l'attribut (par exemple, « membre de ») pour le groupe SAML à mapper.
+
+
+
+ a| 
+Valeur d'attribut
+ a| 
+Spécifiez la valeur d'attribut du groupe à mapper. Les expressions régulières sont prises en charge. Ces caractères spéciaux d'expression régulière doivent être échappé avec une barre oblique inverse (`\`) s'ils ne font pas partie d'un modèle d'expression régulier : \.[]{}()<>*+-=!?^$|
+
+
+
+ a| 
+Rôles
+ a| 
+Cliquez dans le champ et sélectionnez l'un des rôles de la matrice de stockage à mapper à l'attribut. Vous devez sélectionner individuellement chaque rôle à inclure. Le rôle Monitor est requis en combinaison avec d'autres rôles pour se connecter à Unified Manager. Le rôle d'administrateur de sécurité est également requis pour au moins un groupe.
+
+Les rôles mappés incluent les autorisations suivantes :
+
+** *Storage admin* -- accès en lecture/écriture complet aux objets de stockage (par exemple, volumes et pools de disques), mais pas d'accès à la configuration de sécurité.
+** *Security admin* -- accès à la configuration de sécurité dans Access Management, gestion des certificats, gestion du journal d'audit et possibilité d'activer ou de désactiver l'interface de gestion héritée (symbole).
+** *Support admin* -- accès à toutes les ressources matérielles de la baie de stockage, aux données de panne, aux événements MEL et aux mises à niveau du micrologiciel du contrôleur. Aucun accès aux objets de stockage ou à la configuration de sécurité.
+** *Monitor* -- accès en lecture seule à tous les objets de stockage, mais pas d'accès à la configuration de sécurité.
+
+
+|===
+====
++
+[NOTE]
+====
+Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrateur. Unified Manager ne fonctionnera pas correctement pour un utilisateur sans le rôle Monitor.
+
+====
+. Si vous le souhaitez, cliquez sur *Ajouter un autre mappage* pour entrer plus de mappages de groupe à rôle.
++
+[NOTE]
+====
+Les mappages de rôles peuvent être modifiés après l'activation de SAML.
+
+====
+. Lorsque vous avez terminé les mappages, cliquez sur *Enregistrer*.
+
+
+
+
+== Étape 4 : testez la connexion SSO
+
+Pour vous assurer que le système IDP et la matrice de stockage peuvent communiquer, vous pouvez éventuellement tester une connexion SSO. Ce test est également effectué au cours de la dernière étape de l'activation de SAML.
+
+.Avant de commencer
+* Le fichier de métadonnées IDP est importé dans Unified Manager.
+* Un fichier de métadonnées de fournisseur de services pour le contrôleur est importé dans le système IDP pour la relation de confiance.
+
+
+.Étapes
+. Sélectionnez le lien *Test SSO Login*.
++
+Une boîte de dialogue s'ouvre pour saisir les informations d'identification SSO.
+
+. Saisissez les informations d'identification d'un utilisateur disposant des autorisations d'administrateur de sécurité et de contrôle.
++
+Une boîte de dialogue s'ouvre pendant que le système teste la connexion.
+
+. Rechercher un message Test réussi. Si le test s'exécute correctement, passez à l'étape suivante pour l'activation de SAML.
++
+Si le test ne s'effectue pas correctement, un message d'erreur s'affiche avec des informations supplémentaires. Assurez-vous que :
+
++
+** L'utilisateur appartient à un groupe avec des autorisations pour Security Admin et Monitor.
+** Les métadonnées que vous avez téléchargées pour le serveur IDP sont correctes.
+** L'adresse du contrôleur dans les fichiers de métadonnées du processeur de service est correcte.
+
+
+
+
+
+
+== Étape 5 : activer SAML
+
+La dernière étape consiste à terminer la configuration SAML pour l'authentification des utilisateurs. Au cours de ce processus, le système vous demande également de tester une connexion SSO. Le processus de test de connexion SSO est décrit à l'étape précédente.
+
+.Avant de commencer
+* Le fichier de métadonnées IDP est importé dans Unified Manager.
+* Un fichier de métadonnées de fournisseur de services pour le contrôleur est importé dans le système IDP pour la relation de confiance.
+* Au moins un mappage de rôle moniteur et administrateur de sécurité est configuré.
+
+
+[CAUTION]
+====
+*Modification et désactivation.* une fois le langage SAML activé, vous _ne pouvez pas_ le désactiver via l'interface utilisateur, ni modifier les paramètres IDP. Si vous devez désactiver ou modifier la configuration SAML, contactez le support technique pour obtenir de l'aide.
+
+====
+.Étapes
+. Dans l'onglet *SAML*, sélectionnez le lien *Activer SAML*.
++
+La boîte de dialogue confirmer l'activation de SAML s'ouvre.
+
+. Type `enable`, Puis cliquez sur *Activer*.
+. Saisissez les informations d'identification de l'utilisateur pour un test de connexion SSO.
+
+
+.Résultats
+Une fois que le système active SAML, il met fin à toutes les sessions actives et commence à authentifier les utilisateurs via SAML.

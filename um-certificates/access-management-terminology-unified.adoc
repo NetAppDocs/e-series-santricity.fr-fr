@@ -61,6 +61,13 @@ Le contrôle d'accès basé sur les rôles (RBAC) est une méthode qui permet de
 
 
  a| 
+SAML
+ a| 
+Le langage SAML (Security assertion Markup Language) est une norme XML pour l'authentification et l'autorisation entre deux entités. SAML permet l'authentification multifacteur, dans laquelle les utilisateurs doivent fournir au moins deux éléments pour prouver leur identité (par exemple, un mot de passe et une empreinte digitale). La fonction SAML intégrée à la baie de stockage est conforme à la norme SAML2.0 pour l'assertion, l'authentification et l'autorisation d'identité.
+
+
+
+ a| 
 SSO
  a| 
 Single Sign-on (SSO) est un service d'authentification qui permet à un ensemble d'informations d'identification de connexion d'accéder à plusieurs applications.

@@ -163,7 +163,7 @@ Spécifiez le nom du volume de snapshot.
  a| 
 Activez SSD cache
  a| 
-Sélectionnez cette option pour activer la mise en cache en lecture seule sur les disques SSD. REMARQUE : cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+Sélectionnez cette option pour activer la mise en cache en lecture seule sur les disques SSD.
 
 
 
