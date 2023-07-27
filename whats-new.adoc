@@ -12,7 +12,7 @@ summary: Nouvelles fonctionnalités de SANtricity OS.
 
 
 [role="lead"]
-Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.8x.
+Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.8.
 
 
 
