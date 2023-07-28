@@ -27,6 +27,9 @@ Vous pouvez choisir de l'activer ultérieurement pour les raisons suivantes :
 
 
 
+
+IMPORTANT: Les systèmes doivent exécuter SANtricity OS 11.70.5 pour effectuer une mise à niveau vers la version 11.80.x ou ultérieure.
+
 .Description de la tâche
 ++ ++
 

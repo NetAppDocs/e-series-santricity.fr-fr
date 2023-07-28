@@ -8363,7 +8363,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">Remarque : pour les systèmes d'exploitation SANtricity E-Series/EF-Series</block>
-  <block id="2dae7f81af3097152530b0bc519d7eb1" category="paragraph"><block ref="2dae7f81af3097152530b0bc519d7eb1" category="inline-link-rx"></block></block>
   <block id="589c6e07e079f4086ec279a5e83c238d" category="sidebar">Le logiciel SANtricity vous permet d'optimiser les performances et l'utilisation de vos baies 100 % Flash hybrides E-Series et EF-Series pour les applications à forte charge de travail, comme l'analytique des données, la vidéosurveillance, et les sauvegardes et les restaurations.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
   <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interface de System Manager</block>
@@ -8726,4 +8725,6 @@
   <block id="d10baea6d3a0d4c1b494ce57d94cdadb" category="paragraph">Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.8.</block>
   <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11.80 Notes de mise à jour</block>
   <block id="b1aa5c2649b826498df008931f57355f" category="list-text"><block ref="b1aa5c2649b826498df008931f57355f" category="inline-link-rx"></block></block>
+  <block id="14061ba06990b3ff80809e75e9263c4d" category="admonition">Les systèmes doivent exécuter SANtricity OS 11.70.5 pour effectuer une mise à niveau vers la version 11.80.x ou ultérieure.</block>
+  <block id="df9168fd1981b1464f7c0d38b2207c30" category="paragraph"><block ref="df9168fd1981b1464f7c0d38b2207c30" category="inline-link-rx"></block></block>
 </blocks>
