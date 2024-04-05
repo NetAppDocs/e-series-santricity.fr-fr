@@ -8359,7 +8359,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">Remarque : pour les systèmes d'exploitation SANtricity E-Series/EF-Series</block>
-  <block id="589c6e07e079f4086ec279a5e83c238d" category="sidebar">Le logiciel SANtricity vous permet d'optimiser les performances et l'utilisation de vos baies 100 % Flash hybrides E-Series et EF-Series pour les applications à forte charge de travail, comme l'analytique des données, la vidéosurveillance, et les sauvegardes et les restaurations.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
   <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interface de System Manager</block>
   <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Interface Unified Manager</block>
@@ -8612,7 +8611,6 @@
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Utiliser les certificats d'hôte de gestion</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Utiliser les certificats de matrice</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Gérer les certificats</block>
-  <block id="c62c395ffcd8aa3e5d38fe7155d2f510" category="sidebar">Logiciel SANtricity</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity version 11.7</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
@@ -8741,4 +8739,5 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">Amélioration des pools de disques</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">Les pools de disques créés avec des contrôleurs exécutant la version 11.80 ou supérieure seront des pools _version 1_ et non des pools _version 0_. Une opération de mise à niveau vers une version antérieure est limitée lorsqu'un pool de disques _version 1_ existe.</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">La version d'un pool de disques peut être identifiée dans le profil de la matrice de stockage.</block>
+  <block id="e7ad6d421850c5694f6bdc4321ac3507" category="sidebar">Avec le logiciel SANtricity 11.80, vous exploitez tout le potentiel de vos baies Flash hybrides E-Series et 100 % Flash EF-Series pour les applications à forte charge de travail, notamment l'analytique, la vidéosurveillance, la sauvegarde et la restauration.</block>
 </blocks>

@@ -1,9 +1,13 @@
 ---
 indexpage:
-  lead: Le logiciel SANtricity vous permet d'optimiser les performances et l'utilisation
-    de vos baies 100 % Flash hybrides E-Series et EF-Series pour les applications
-    à forte charge de travail, comme l'analytique des données, la vidéosurveillance,
-    et les sauvegardes et les restaurations.
+  title: Documentation du logiciel SANtricity 11.80
+  summary: SANtricity System Manager et Unified Manager
+  keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
+    data analytics
+  lead: Avec le logiciel SANtricity 11.80, vous exploitez tout le potentiel de vos
+    baies Flash hybrides E-Series et 100 % Flash EF-Series pour les applications à
+    forte charge de travail, notamment l'analytique, la vidéosurveillance, la sauvegarde
+    et la restauration.
   tiles:
   - title: Commencez
     links:

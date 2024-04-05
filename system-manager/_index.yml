@@ -1,5 +1,11 @@
 ---
 indexpage:
+  title: Gestion de baie unique avec System Manager 11.8
+  summary: La documentation du logiciel SANtricity vous permet d'installer, de configurer
+    et de gérer votre baie de stockage.
+  keywords: santricity, install, setup, maintain, storage array
+  lead: La documentation du logiciel SANtricity vous permet d'installer, de configurer
+    et de gérer votre baie de stockage.
   tiles:
   - title: Configurer la matrice
     links:
