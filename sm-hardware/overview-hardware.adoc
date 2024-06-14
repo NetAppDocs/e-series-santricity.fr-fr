@@ -34,7 +34,7 @@ En savoir plus :
 
 == Comment voir les composants matériels ?
 
-Accédez à la page matériel, qui fournit une représentation graphique des composants physiques de la baie de stockage. Vous pouvez basculer entre les vues avant et arrière des étagères de la matrice en sélectionnant *Afficher le verso des étagères* ou *Afficher le recto des étagères* dans le coin supérieur droit de la vue de tablette.
+Accédez à la page matériel, qui fournit une représentation graphique des composants physiques de la baie de stockage. Vous pouvez basculer entre les vues avant et arrière des tiroirs en sélectionnant l'onglet *lecteurs* ou *contrôleurs* en haut à droite de la vue des tiroirs.
 
 En savoir plus :
 

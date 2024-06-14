@@ -22,7 +22,7 @@ Pour la version SANtricity 11.74 et ultérieure, vous pouvez également configur
 ====
 .Étapes
 . Sélectionnez *matériel*.
-. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.
 

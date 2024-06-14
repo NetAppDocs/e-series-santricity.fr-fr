@@ -24,7 +24,7 @@ N'utilisez pas le port 2 sur l'un ou l'autre des contrôleurs. Le port 2 est ré
 ====
 .Étapes
 . Sélectionnez *matériel*.
-. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.
 

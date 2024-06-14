@@ -28,7 +28,7 @@ Les paramètres NVMe over InfiniBand sont disponibles uniquement si le contrôle
 Configurer les ports NVMe over InfiniBand
  a| 
 . Sélectionnez *matériel*.
-. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez l'onglet *contrôleurs et composants*.
 . Sélectionnez un contrôleur.
 . Sélectionnez *configurer NVMe sur les ports InfiniBand*.
 

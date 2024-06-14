@@ -28,7 +28,7 @@ Les paramètres iser over InfiniBand sont disponibles uniquement si le contrôle
 Configurez iser sur les ports InfiniBand
  a| 
 . Sélectionnez *matériel*.
-. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez l'onglet *contrôleurs et composants*.
 . Sélectionnez un contrôleur.
 . Sélectionnez *configurer iser sur les ports InfiniBand*.
 

@@ -23,7 +23,7 @@ System Manager surveille les disques de la matrice de stockage. Lorsqu'il détec
 ====
 .Étapes
 . Sélectionnez *matériel*.
-. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
+. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
 +
 Le graphique change pour afficher les disques au lieu des contrôleurs.
 

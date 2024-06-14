@@ -129,12 +129,17 @@ Indique si le lecteur a l'option de libération ou non écrite de l'erreur de bl
 Si vous ajoutez des disques à un pool ou à un groupe de volumes, une boîte de dialogue de confirmation s'affiche si vous avez sélectionné un lecteur qui empêche le pool ou le groupe de volumes d'avoir un ou plusieurs des attributs suivants :
 
 +
-** Protection contre les pertes de tablette
-** Protection contre les pertes de tiroirs
+** Protection contre les pertes de tiroirs ^*^
+** Protection contre la perte de tiroir ^*^
 ** Fonctionnalité Full Disk Encryption
 ** Fonctionnalité Data assurance
 ** Capacité DULBE
 
+
+
+
+
+NOTE: ^*^ actuellement, la boîte de dialogue de confirmation ne s’affiche pas lors de l’ajout de lecteurs à un pool avec protection contre la perte de tiroirs ou protection contre la perte de tiroirs.
 
 . Pour continuer, cliquez sur *Oui* ; sinon, cliquez sur *Annuler*.
 

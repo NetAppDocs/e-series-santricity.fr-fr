@@ -15,7 +15,7 @@ Le cluster par défaut est une entité définie par le système qui permet à to
 
 [NOTE]
 ====
-Si vous souhaitez que les hôtes disposent d'un accès spécifique à certains volumes de la baie de stockage, vous devez _pas_ utiliser le cluster par défaut. À la place, vous devez associer les identificateurs de port hôte à leurs hôtes correspondants. Cette tâche peut être effectuée manuellement pendant l'opération Créer un hôte ou automatiquement à l'aide de l'agent de contexte hôte (HCA) installé sur chaque hôte. Ensuite, vous affectez des volumes à un hôte individuel ou à un cluster hôte.
+Si vous souhaitez que les hôtes disposent d'un accès spécifique à certains volumes de la baie de stockage, vous devez _pas_ utiliser le cluster par défaut. À la place, vous devez associer les identificateurs de port hôte à leurs hôtes correspondants. Cette tâche peut être effectuée manuellement pendant l'opération Créer un hôte. Ensuite, vous affectez des volumes à un hôte individuel ou à un cluster hôte.
 
 ====
 Vous devez _uniquement_ utiliser le cluster par défaut dans des situations spéciales où votre environnement de stockage externe est recommandé pour permettre à tous les hôtes et tous les identificateurs de port hôte connectés à la matrice de stockage ont accès à tous les volumes (mode accès total) sans spécifiquement faire connaître les hôtes à la matrice de stockage ou à l'interface utilisateur.

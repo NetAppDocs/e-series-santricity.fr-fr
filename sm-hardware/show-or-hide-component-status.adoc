@@ -17,8 +17,8 @@ Vous pouvez afficher les descriptions d'état des disques, des contrôleurs, des
 . Sélectionnez *matériel*.
 . Pour voir les composants avant ou arrière :
 +
-** Si vous souhaitez voir les composants du contrôleur et du boîtier alimentation/ventilateur, mais que les lecteurs sont affichés, cliquez sur *Afficher l'arrière du tiroir*.
-** Si vous souhaitez voir les lecteurs, mais que les composants du contrôleur et du boîtier alimentation/ventilateur sont affichés, cliquez sur *Afficher l'avant du shelf*.
+** Si vous souhaitez voir les composants du contrôleur et du boîtier d'alimentation/ventilateur, mais que les lecteurs sont affichés, cliquez sur l'onglet *contrôleurs et composants*.
+** Si vous voulez voir les lecteurs, mais que les composants du contrôleur et du boîtier d'alimentation/ventilateur sont affichés, cliquez sur l'onglet *lecteurs*.
 
 
 . Pour afficher ou masquer les descriptions d'état des fenêtres contextuelles :

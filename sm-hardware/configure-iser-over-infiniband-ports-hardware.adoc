@@ -20,7 +20,7 @@ Si votre contrôleur inclut un port iser sur InfiniBand, vous pouvez configurer 
 
 .Étapes
 . Sélectionnez *matériel*.
-. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.
 

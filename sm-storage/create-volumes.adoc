@@ -344,8 +344,8 @@ System Manager crée les nouveaux volumes dans les pools et groupes de volumes s
 
 .Une fois que vous avez terminé
 * Apportez les modifications nécessaires au système d'exploitation sur l'hôte de l'application afin que les applications puissent utiliser le volume.
-* Exécutez soit le système basé sur l'hôte `hot_add` utilitaire ou utilitaire propre à un système d'exploitation (disponible auprès d'un fournisseur tiers), puis exécutez le `SMdevices` utilitaire permettant de mettre en corrélation les noms des volumes avec les noms des matrices de stockage hôte.
+* Exécutez l'utilitaire spécifique au système d'exploitation (disponible auprès d'un fournisseur tiers), puis exécutez la commande SMcli `-identifyDevices` pour mettre en corrélation les noms de volumes avec les noms de matrices de stockage hôte.
 +
-Le `hot_add` utilitaire et le `SMdevices` l'utilitaire est inclus dans le `SMutils` création de package. Le `SMutils` package est un ensemble d'utilitaires permettant de vérifier ce que l'hôte voit de la baie de stockage. Il est inclus dans l'installation du logiciel SANtricity.
+Le SMcli est disponible directement via le Gestionnaire système SANtricity. Cette version téléchargeable du SMcli est disponible sur les systèmes EF600, EF300, E5700, EF570, E2800, Et des contrôleurs EF280. Pour télécharger le SMcli dans le Gestionnaire système SANtricity, sélectionnez *Paramètres* > *système* et *Add-ons* > *interface de ligne de commande* .
 
 

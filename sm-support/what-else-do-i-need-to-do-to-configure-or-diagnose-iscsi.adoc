@@ -41,7 +41,7 @@ Gérer les paramètres iSCSI
 Configurez les ports iSCSI
  a| 
 . Sélectionnez *matériel*.
-. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez l'onglet *contrôleurs et composants*.
 . Sélectionnez un contrôleur.
 . Sélectionnez *configurer les ports iSCSI*.
 

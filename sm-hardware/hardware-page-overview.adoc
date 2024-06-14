@@ -25,7 +25,7 @@ Un tiroir est un composant qui contient le matériel de la baie de stockage (con
 
 Les tiroirs sont disponibles en trois tailles pour accueillir jusqu'à 12, 24 ou 60 disques. Chaque tiroir inclut un numéro d'ID, qui est attribué par le firmware du contrôleur. L'ID s'affiche en haut à gauche de la vue du tiroir.
 
-La vue des tiroirs de la page Hardware indique les composants avant ou arrière. Vous pouvez basculer entre les deux vues en sélectionnant *Afficher le verso de la tablette* ou *Afficher le recto de la tablette* dans le coin supérieur droit de la vue de la tablette. Vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso* en bas de la page. Les vues avant et arrière montrent les éléments suivants :
+La vue des tiroirs de la page Hardware indique les composants avant ou arrière. Vous pouvez basculer entre les deux vues en sélectionnant l'onglet *lecteurs* ou *contrôleur* en haut à droite de la vue du tiroir. Vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso* en bas de la page. Les vues avant et arrière montrent les éléments suivants :
 
 * *Composants avant* -- lecteurs et baies de lecteur vides.
 * *Composants Back* -- contrôleurs et blocs d'alimentation/ventilateurs (pour les tiroirs de contrôleurs) ou blocs d'alimentation/ventilateurs (pour les tiroirs disques).

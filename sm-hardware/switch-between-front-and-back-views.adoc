@@ -18,11 +18,11 @@ La vue arrière montre les contrôleurs/modules d'E/S et les blocs d'alimentatio
 
 .Étapes
 . Sélectionnez *matériel*.
-. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.
 
-. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
+. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
 +
 Le graphique change pour afficher les disques au lieu des contrôleurs.
 

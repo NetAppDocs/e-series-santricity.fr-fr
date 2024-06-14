@@ -28,7 +28,7 @@ Les paramètres NVMe over RoCE sont disponibles uniquement si le contrôleur de 
 Configurez les ports NVMe over RoCE
  a| 
 . Sélectionnez *matériel*.
-. Sélectionnez *Afficher le verso de la tablette*.
+. Sélectionnez l'onglet *contrôleurs et composants*.
 . Sélectionnez un contrôleur.
 . Sélectionnez *configurer les ports NVMe over RoCE*.
 

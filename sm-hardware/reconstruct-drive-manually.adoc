@@ -20,7 +20,7 @@ Effectuez cette opération uniquement lorsque vous y êtes invité par le suppor
 ====
 .Étapes
 . Sélectionnez *matériel*.
-. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
+. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
 +
 Le graphique change pour afficher les disques au lieu des contrôleurs.
 

@@ -20,7 +20,7 @@ Vous pouvez localiser des lecteurs uniques ou multiples affichés sur la page ma
 . Sélectionnez *matériel*.
 . Pour localiser un ou plusieurs lecteurs, effectuez l'une des opérations suivantes :
 +
-** *Lecteur unique* -- dans le graphique de la tablette, recherchez le lecteur que vous souhaitez localiser physiquement dans la matrice. (Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du meuble*.) Cliquez sur le lecteur pour afficher son menu contextuel, puis sélectionnez *Activer le voyant de localisation*.
+** *Lecteur unique* -- dans le graphique de la tablette, recherchez le lecteur que vous souhaitez localiser physiquement dans la matrice. (Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.) Cliquez sur le lecteur pour afficher son menu contextuel, puis sélectionnez *Activer le centreur lumineux*.
 +
 Le témoin de localisation du lecteur s'allume. Une fois le lecteur physiquement localisé, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
 
