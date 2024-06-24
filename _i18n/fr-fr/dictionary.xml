@@ -7570,11 +7570,6 @@
   <block id="3cdebc422ce56a03d6b4ab54c2320f0f" category="list-text">Supprime toutes les relations de mise en miroir.</block>
   <block id="14ab600a49776be57a71f0fa17dc5b38" category="list-text">Augmente la capacité disponible dans le pool ou le groupe de volumes.</block>
   <block id="499a0602905ccb67c6d649daa6d57413" category="summary">Vous pouvez créer des charges de travail pour tout type d'application.</block>
-  <block id="ef722b0d3f28d401f565985f472c4438" category="paragraph">System Manager recommande une configuration de volume optimisée uniquement pour les types d'applications suivants :</block>
-  <block id="f2087899e2afadc125d10b2957ade872" category="list-text">Vidéosurveillance</block>
-  <block id="7cfedcca8ce6dbe00da8fe3e6fe966f8" category="list-text">VMware ESXi ™ (pour les volumes à utiliser avec le système de fichiers des machines virtuelles)</block>
-  <block id="d5f2262b63d7e86589dbf70c4e5e35b2" category="list-text">_Lorsque vous utilisez une charge de travail spécifique à une application_, le système recommande une configuration de volume optimisée afin de minimiser les conflits entre les E/S des charges de travail d'application et tout autre trafic depuis votre instance d'application. Vous pouvez vérifier la configuration de volume recommandée, puis modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.</block>
-  <block id="bf4bffd53bcd7e30e99315e12ac6f419" category="list-text">_Lorsque vous utilisez d'autres types d'applications_, vous spécifiez manuellement la configuration du volume à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.</block>
   <block id="65d1a857de2802d1a9f3295655aaf36f" category="list-text">Sélectionnez menu:Créer [charge de travail].</block>
   <block id="d8b1db89e135bdbc13b725e8d595018b" category="paragraph">La boîte de dialogue Créer une charge de travail d'application s'affiche.</block>
   <block id="c587f872ee4cedc5f46714cc4a3af851" category="list-text">Utilisez la liste déroulante pour sélectionner le type d'application pour laquelle vous souhaitez créer la charge de travail, puis saisissez un nom de charge de travail.</block>
@@ -8737,4 +8732,7 @@
   <block id="71f3dfbf2b051795606c83f3a9eae5ae" category="list-text">Si vous voulez voir les lecteurs, mais que les composants du contrôleur et du boîtier d'alimentation/ventilateur sont affichés, cliquez sur l'onglet *lecteurs*.</block>
   <block id="581cfab734318e947b176853c8e56d50" category="paragraph">Accédez à la page matériel, qui fournit une représentation graphique des composants physiques de la baie de stockage. Vous pouvez basculer entre les vues avant et arrière des tiroirs en sélectionnant l'onglet *lecteurs* ou *contrôleurs* en haut à droite de la vue des tiroirs.</block>
   <block id="c30b45aee772a1884388fa957f41c7d5" category="list-text">*Lecteur unique* -- dans le graphique de la tablette, recherchez le lecteur que vous souhaitez localiser physiquement dans la matrice. (Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.) Cliquez sur le lecteur pour afficher son menu contextuel, puis sélectionnez *Activer le centreur lumineux*.</block>
+  <block id="043a86bd47391543c74c9ed90a2dde13" category="admonition">Vous pouvez uniquement étendre la capacité d'un volume jusqu'à 128 Tio à la fois.</block>
+  <block id="82d00f5ad15a08dba27d16e49e8748f1" category="paragraph">Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application.</block>
+  <block id="056bd960f994268c2245e42ab49c22b9" category="paragraph">Une application peut être utilisée comme un logiciel tel que SQL Server ou Exchange. Vous définissez une ou plusieurs charges de travail pour prendre en charge chaque application.</block>
 </blocks>

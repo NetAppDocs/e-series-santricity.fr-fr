@@ -21,6 +21,9 @@ Vous pouvez augmenter la capacité indiquée (la capacité signalée aux hôtes)
 * Aucun disque de secours n'est utilisé dans le volume. (S'applique uniquement aux volumes de groupes de volumes.)
 
 
+
+NOTE: Vous pouvez uniquement étendre la capacité d'un volume jusqu'à 128 Tio à la fois.
+
 .Description de la tâche
 N'oubliez pas les besoins de capacité futurs que vous pourriez avoir pour d'autres volumes de ce pool ou de ce groupe de volumes. Assurez-vous d'autoriser une capacité suffisante pour créer des images de snapshot, des volumes de snapshot ou des miroirs distants.
 
