@@ -103,6 +103,7 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 ** Si le volume principal n'utilise pas la sécurité du lecteur, le volume secondaire ne doit pas utiliser la sécurité du lecteur.
 
 
+* Les volumes principal et secondaire doivent partager le même type de disque. La combinaison de disques NVMe et SAS entre les volumes principal et secondaire n'est pas prise en charge.
 
 
 
@@ -111,6 +112,12 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 
 * Un volume de capacité réservée est nécessaire pour un volume primaire et pour un volume secondaire d'une paire en miroir afin d'obtenir les informations d'écriture de journalisation pour une restauration après la réinitialisation du contrôleur et toute autre interruption temporaire.
 * Comme le volume primaire et le volume secondaire d'une paire en miroir nécessitent une capacité réservée supplémentaire, vous devez garantir que la capacité disponible sur les deux baies de stockage de la relation en miroir est suffisante.
+* Le volume de capacité réservée doit partager le même type de disque que les volumes en miroir associés.
++
+** Si le volume de capacité réservée est créé sur des disques NVMe, ses volumes en miroir doivent également être créés sur des disques NVMe.
+** Si le volume de capacité réservée est créé sur des disques SAS, ses volumes en miroir doivent également être créés sur des disques SAS.
+
+
 
 
 
