@@ -8737,4 +8737,7 @@
   <block id="73e974e4615b6eb8c4db3e6a55137a8f" category="list-text">Le volume de capacité réservée doit partager le même type de disque que les volumes en miroir associés.</block>
   <block id="bf9f60c11f9080af705719592217436d" category="list-text">Si le volume de capacité réservée est créé sur des disques NVMe, ses volumes en miroir doivent également être créés sur des disques NVMe.</block>
   <block id="402b0811b7e491a20af6474c5296c733" category="list-text">Si le volume de capacité réservée est créé sur des disques SAS, ses volumes en miroir doivent également être créés sur des disques SAS.</block>
+  <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">Nouvelles fonctionnalités de la version 11.80.1R1</block>
+  <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Augmentation de la longueur des clés des nouveaux certificats de gestion auto-signés et signés par une autorité de certification.</block>
+  <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">La taille de la clé de certificat de gestion pour le certificat auto-signé des applications SANtricity System Manager et Unified Manager a été modifiée de 2048 à 3072 bits. Cette modification s'applique aux certificats nouvellement générés auto-signés et signés par une autorité de certification à partir des applications SANtricity. La longueur de clé est fixe et n'est pas affectée par les définitions de taille de clé par défaut dans NVSRAM.</block>
 </blocks>
