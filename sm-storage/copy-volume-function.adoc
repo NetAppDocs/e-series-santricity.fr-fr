@@ -110,7 +110,7 @@ Volume de base Snapshot
  a| 
 Oui.
  a| 
-Non
+Oui.
  a| 
 Non
 
@@ -121,9 +121,9 @@ Volume primaire du miroir distant
  a| 
 Oui^3^
  a| 
-Non
- a| 
 Oui.
+ a| 
+Non
 
 |===
 ^1^ le volume cible doit avoir une capacité égale ou supérieure à la capacité indiquée pour le volume fin.
