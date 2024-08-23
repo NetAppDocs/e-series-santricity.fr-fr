@@ -33,6 +33,15 @@ L'option matrice de stockage supprime certains paramètres supplémentaires.
 
 
  a| 
+Désactive ARVM
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
 Supprime les pools et les groupes de volumes
  a| 
 X
