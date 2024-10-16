@@ -8741,4 +8741,8 @@
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Augmentation de la longueur des clés des nouveaux certificats de gestion auto-signés et signés par une autorité de certification.</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">La taille de la clé de certificat de gestion pour le certificat auto-signé des applications SANtricity System Manager et Unified Manager a été modifiée de 2048 à 3072 bits. Cette modification s'applique aux certificats nouvellement générés auto-signés et signés par une autorité de certification à partir des applications SANtricity. La longueur de clé est fixe et n'est pas affectée par les définitions de taille de clé par défaut dans NVSRAM.</block>
   <block id="56ef6aeb1657a77ed998f95bff3a67c0" category="paragraph">Désactive ARVM</block>
+  <block id="bb81ad14bd710a498f194a6ac67fea61" category="paragraph">Les volumes source et cible de copie doivent avoir les mêmes tailles de bloc adressables par l'hôte/logiques (taille de secteur) rapportées.</block>
+  <block id="56ce420df3a94d675f30cc6b382c3082" category="paragraph">Les tailles de bloc de volume signalées sont les suivantes :</block>
+  <block id="6451d4e0b30d3e2a2b45dc3de85ffe6d" category="list-text">*Taille de bloc native* – la taille de bloc du volume correspond à la taille de bloc du disque, 512 ou 4K.</block>
+  <block id="7de7e0688d2ed2bd02ab78f61c88a723" category="list-text">*Taille de bloc 512 émulée* - les lecteurs sont de 4 Ko, mais la taille de bloc indiquée est de 512.</block>
 </blocks>

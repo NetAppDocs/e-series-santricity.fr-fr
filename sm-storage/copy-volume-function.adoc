@@ -27,6 +27,14 @@ En cas de modification d'un volume, la fonction Copy Volume vous permet de copie
 * Remplacez un volume fin par un volume non fin.
 
 
+Les volumes source et cible de copie doivent avoir les mêmes tailles de bloc adressables par l'hôte/logiques (taille de secteur) rapportées.
+
+Les tailles de bloc de volume signalées sont les suivantes :
+
+* *Taille de bloc native* – la taille de bloc du volume correspond à la taille de bloc du disque, 512 ou 4K.
+* *Taille de bloc 512 émulée* - les lecteurs sont de 4 Ko, mais la taille de bloc indiquée est de 512.
+
+
 
 
 == Remplacez un volume fin par un volume non fin
