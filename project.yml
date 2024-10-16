@@ -14,7 +14,7 @@ settings:
     url: "/e-series-santricity-117"
   - version-number: '11.6'
     url: "/e-series-santricity-116"
-  langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,it-it
+  langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: Documents relatifs à SANtricity 11.8
