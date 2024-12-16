@@ -1,10 +1,10 @@
 ---
 indexpage:
-  title: Documentation du logiciel SANtricity 11.80
+  title: Documentation du logiciel SANtricity 11.90
   summary: SANtricity System Manager et Unified Manager
   keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
     data analytics
-  lead: Avec le logiciel SANtricity 11.80, vous exploitez tout le potentiel de vos
+  lead: Avec le logiciel SANtricity 11.90, vous exploitez tout le potentiel de vos
     baies Flash hybrides E-Series et 100 % Flash EF-Series pour les applications à
     forte charge de travail, notamment l'analytique, la vidéosurveillance, la sauvegarde
     et la restauration.
@@ -31,7 +31,7 @@ indexpage:
       url: https://docs.netapp.com/us-en/e-series/vcenter-plugin/san-spvc-ic-overview.html
     - title: Fournisseurs SMI-S
       url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
-  - title: Add-ons pour les applications de performance
+  - title: Applications et add-ons haute performance
     links:
     - title: Application SANtricity pour Splunk Enterprise
       url: https://splunkbase.splunk.com/app/1932/
@@ -49,7 +49,7 @@ indexpage:
       url: https://fieldportal.netapp.com/content/1417672
     - title: NetApp Fusion (connexion requise)
       url: https://fusion.netapp.com/
-  - title: Les outils prennent en charge
+  - title: Outils et assistance
     links:
     - title: Matrice d'interopérabilité NetApp
       url: http://mysupport.netapp.com/matrix/
