@@ -25,7 +25,7 @@ L'extension entraîne l'ajout de capacité disponible dans le pool ou le groupe 
 +
 ** 2,048 volumes (EF600 et E5700 Series)
 ** 1,024 volumes (EF300)
-** 512 volumes (E2800 Series)
+** 512 volumes (E4000 et E2800 Series)
 
 
 * Si le pool ou le groupe de volumes contient tous les lecteurs sécurisés, ajoutez uniquement des lecteurs capables de sécuriser pour continuer à utiliser les capacités de cryptage des lecteurs sécurisés.

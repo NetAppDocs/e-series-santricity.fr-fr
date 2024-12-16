@@ -75,7 +75,6 @@
   <block id="6170b65edb40652e04798be920528567" category="section-title">Session de mise en miroir asynchrone</block>
   <block id="8fb8d903583a69bb2f7020ec24064893" category="paragraph">La mise en miroir asynchrone capture l'état du volume primaire à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image. La mise en miroir asynchrone permet la mise à jour immédiate du site principal et la mise à jour du site secondaire en fonction de la bande passante. Les informations sont mises en cache et envoyées ultérieurement, au fur et à mesure que les ressources réseau deviennent disponibles.</block>
   <block id="19b4bf527badd2db202d583a7bd23286" category="paragraph">Une session de mise en miroir asynchrone active comporte quatre étapes principales.</block>
-  <block id="834ed858f1d2c14d8ca3f69c81de7838" category="image-alt">session de mise en miroir asynchrone sam 1130 dwg</block>
   <block id="ea9236b1994427da950532ff1ad6ef63" category="list-text">Une opération d'écriture a d'abord lieu sur la matrice de stockage du volume primaire.</block>
   <block id="1d85d4b999c9737e96173727c950997a" category="list-text">L'état de l'opération est renvoyé à l'hôte.</block>
   <block id="97a3671a1a3bdec2619c9f84dcfc1dcb" category="list-text">Toutes les modifications apportées au volume primaire sont consignées et suivies.</block>
@@ -100,7 +99,6 @@
   <block id="9f4645b3e7816bed7c06b6e2e5dbb245" category="paragraph">Chaque volume d'une paire en miroir nécessite sa propre capacité réservée.</block>
   <block id="283d6774e86cefbd518fde4d2ea2ca96" category="section-title">Configuration et gestion</block>
   <block id="5d6ce5e91e102eae3fd6a15e3e186794" category="paragraph">Pour activer et configurer la mise en miroir entre deux baies, vous devez utiliser l'interface Unified Manager. Une fois la mise en miroir activée, vous pouvez gérer les paires en miroir et les paramètres de synchronisation dans System Manager.</block>
-  <block id="e35d3866f0babedb61a0f1ba9102cafd" category="doc">SANtricity System Manager 11.7</block>
   <block id="1866ca64bf91acf982f0825105cd98a1" category="summary">Vous pouvez augmenter la capacité réservée par incréments de 4 Gio.</block>
   <block id="5e79bfcdaf2980a36b13dea84317bc33" category="doc">Pourquoi ne puis-je pas augmenter la capacité réservée avec le montant demandé ?</block>
   <block id="d2c3016b1c4893861f6df9e9ca35fb38" category="paragraph">Consultez les directives suivantes :</block>
@@ -423,7 +421,6 @@
   <block id="319b2d26a90387684f3c24237199e24b" category="paragraph">Une relation de mise en miroir synchrone se compose d'un volume primaire et d'un volume secondaire sur des baies de stockage distinctes. La matrice de stockage contenant le volume primaire est généralement située sur le site primaire et sert les hôtes actifs. La matrice de stockage contenant le volume secondaire se trouve généralement sur un site secondaire et contient une réplique des données. Le volume secondaire est utilisé si la matrice de stockage du volume primaire n'est pas disponible en raison, par exemple, d'une panne totale de courant, d'un incendie ou d'une défaillance matérielle du site principal.</block>
   <block id="bac2102a46114a248b31ff7c2e7e56c2" category="section-title">Session de mise en miroir synchrone</block>
   <block id="e4c003afc3c4a600e425c7d2982c0d93" category="paragraph">Le processus de configuration de la mise en miroir synchrone implique de configurer des volumes en paires. Après avoir créé une paire mise en miroir, composée d'un volume primaire sur une baie de stockage et d'un volume secondaire sur une autre baie de stockage, vous pouvez démarrer la mise en miroir synchrone. Les étapes de la mise en miroir synchrone sont décrites ci-dessous.</block>
-  <block id="15714a7f65c412a1a54f4b69a47c096c" category="image-alt">session de mise en miroir de synchronisation sam 1130 dwg</block>
   <block id="c491a6ad496588e8cb371fbe517667c6" category="list-text">Une écriture provient de l'hôte.</block>
   <block id="f2ad71987234926489fc2a10094f0944" category="list-text">L'écriture est appliquée au volume principal, propagée au système distant, puis appliquée au volume secondaire.</block>
   <block id="a6f33bea3a5bd85d4e296fd8831b9442" category="list-text">La baie de stockage du volume primaire envoie un message d'achèvement d'E/S au système hôte _après_ que les deux opérations d'écriture ont été correctement terminées.</block>
@@ -1269,7 +1266,6 @@
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="inline-link-macro">Présentation du matériel E-Series</block>
   <block id="44a8ec873829128f9b89b9d2c859f732" category="list-text">L'un des modèles de matrice répertoriés ici : <block ref="c0f66568c89b9be3af203a2398d42823" category="inline-link-macro-rx"></block></block>
   <block id="ec9c3d4f5f976606ad31387919bcffe8" category="list-text">Une connexion hors bande à un client de gestion de réseau avec un navigateur Web.</block>
-  <block id="cc4ea9328a87a53029aea9916fc48ae4" category="image-alt">single2800</block>
   <block id="837ea4d0617f9f8e763baafe4935ee16" category="summary">Vous pouvez importer des configurations d'alertes d'une matrice de stockage vers d'autres matrices de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.</block>
   <block id="011153437fded3b1023a7b02efb4f084" category="list-text">Les alertes sont configurées dans System Manager pour la baie de stockage que vous souhaitez utiliser comme source (menu : Paramètres[alertes]).</block>
   <block id="fb9e089e153b626e3844f208682e34db" category="paragraph">Vous pouvez sélectionner des alertes par e-mail, SNMP ou syslog pour l'opération d'importation. Les paramètres importés comprennent :</block>
@@ -1281,7 +1277,6 @@
   <block id="082027bfe4130225fed98f419dcfcbee" category="doc">Pourquoi ne vois pas tous mes volumes ?</block>
   <block id="d6a2f3fb02a6b5a0805cb96861b2ad88" category="list-text">Pour la mise en miroir synchrone, les volumes primaires et secondaires d'une paire mise en miroir doivent être des volumes standard. Elles ne peuvent pas être de volumes fins ou de snapshot.</block>
   <block id="d003fc64a90ec0d2d96a3a9a15d536f4" category="list-text">Pour la mise en miroir asynchrone, l'extension automatique des volumes thin doit être activée.</block>
-  <block id="90e8ac6688c66ac3fc81de93ba27235a" category="summary">SANtricity System Manager et Unified Manager</block>
   <block id="b0e20a5b05a72022c8f53f4a8d3aea80" category="summary">La documentation du logiciel SANtricity vous permet d'installer, de configurer et de gérer votre baie de stockage.</block>
   <block id="a68e42f8ba6fef756332c8e2507bd688" category="summary">La progression de la mise à niveau du micrologiciel dépend de la charge globale du système.</block>
   <block id="182309e939480b1bc525560bbc942506" category="doc">Pourquoi ma mise à niveau du micrologiciel avance-t-elle si lentement ?</block>
@@ -1572,7 +1567,6 @@
   <block id="53f6e38bfb8737cd78f3afe40356d59e" category="summary">Dans SANtricity System Manager, vous configurez la fonctionnalité AutoSupport en suivant ces étapes.</block>
   <block id="abcd71b1bdd83d175115a06e7bd6993c" category="doc">Workflow pour la fonctionnalité AutoSupport</block>
   <block id="fa1ad6ca18787ce10b28e8361e9f1ad1" category="paragraph">Dans System Manager, vous configurez la fonctionnalité AutoSupport en suivant ces étapes.</block>
-  <block id="3bd2ffe663bb769bb020a0e8f968a73a" category="image-alt">le flw sam1130 prend en charge la configuration de l'installation</block>
   <block id="443cf1e2c428e934274219aeac369658" category="summary">Vous pouvez enregistrer le fichier de statistiques du chemin d'E/S et l'envoyer au support technique pour analyse.</block>
   <block id="6739422a53818bdb36852797e1f9c3f6" category="doc">Collecte des statistiques sur les chemins d'E/S</block>
   <block id="f9ca73be8df98d300caf430674536c26" category="paragraph">Le support technique utilise les statistiques de chemin d'E/S pour vous aider à diagnostiquer les problèmes de performance. Les problèmes de performances applicatives peuvent être causés par l'utilisation de la mémoire, l'utilisation du CPU, la latence du réseau, la latence des E/S ou d'autres problèmes. Les statistiques de chemin d'E/S sont collectées automatiquement lors de la collecte des données de support ou vous pouvez les collecter manuellement. De plus, si AutoSupport est activé, les statistiques de chemin d'E/S sont collectées et envoyées automatiquement au support technique.</block>
@@ -1609,7 +1603,6 @@
   <block id="47c365409e53a20cd64997e83455ba87" category="paragraph">Vous pouvez prendre des mesures sur l'état de votre matrice de stockage actuelle en consultant le journal secteurs illisibles, en réactivant les ports de lecteur et en désactivant le mode de récupération.</block>
   <block id="0053cb3da5cd9357da42c9285388e7c5" category="summary">Dans SANtricity System Manager, vous pouvez mettre à niveau le logiciel et le firmware du contrôleur en procédant comme suit.</block>
   <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Flux de production pour la mise à niveau du logiciel du contrôleur et du firmware</block>
-  <block id="361638f3fa2ab614b999cb442c3951ea" category="image-alt">mise à niveau du micrologiciel flw sam1130</block>
   <block id="96a401a06cef5a915fce2a865f398ff3" category="summary">Le support technique peut utiliser les fichiers de support de récupération pour résoudre les problèmes. System Manager enregistre automatiquement ces fichiers.</block>
   <block id="826797a3791c77da7755188cc4e4f541" category="doc">Récupérer les fichiers de support de récupération</block>
   <block id="b05b836d4b850a9b5974a8ca6dd2f03a" category="paragraph">Le support technique vous a demandé de leur envoyer des fichiers supplémentaires pour le dépannage.</block>
@@ -1635,9 +1628,6 @@
   <block id="a8559bb45a3d0a180d3398ef27367a53" category="list-text">Aucune modification de configuration n'est en cours sur la matrice de stockage.</block>
   <block id="e6f2dc3aa8152d09abac598a55e9366f" category="list-text">Si les lecteurs ne peuvent effectuer qu'une mise à niveau hors ligne, l'activité d'E/S de tous les volumes associés aux lecteurs est interrompue.</block>
   <block id="27cbc683bae5b0ae674e1f14b28ba85b" category="list-text">Téléchargez les nouveaux fichiers du site de support sur votre client de gestion.</block>
-  <block id="1e85b82464e0b22d88d33677019d1e27" category="list-text">Sous mise à niveau du micrologiciel des disques, cliquez sur *NetApp support*.</block>
-  <block id="7c281e9bad492c4969c4b81a96defe2b" category="list-text">Sur le site Web de support NetApp, cliquez sur l'onglet *Downloads*.</block>
-  <block id="15e64f7564367057ae54ac605577e0dc" category="list-text">Sélectionnez *Disk Drive &amp; Firmware Matrix*.</block>
   <block id="97ee451d6d95940738f8ea5c329f19b4" category="list-text">Suivez les instructions restantes.</block>
   <block id="953a296f7b11258e3941c8cf2edc32a6" category="list-text">Sous mise à niveau du micrologiciel du lecteur, cliquez sur *commencer la mise à niveau*.</block>
   <block id="dc37cd015f10fb7e350ecaeb555ca0c1" category="paragraph">Une boîte de dialogue s'affiche, qui répertorie les fichiers du micrologiciel du lecteur actuellement utilisés.</block>
@@ -1695,19 +1685,14 @@
   <block id="2691094954160d37ae4a945492ed79dc" category="list-text">Sélectionnez *Envoyer l'intervention AutoSupport*.</block>
   <block id="4ebd83dae75ca11e33f268553f64b7a1" category="paragraph">La boîte de dialogue Envoyer l'intervention AutoSupport s'affiche.</block>
   <block id="a8fdcab87c50d1c3326d999ec15dd4d9" category="list-text">Confirmez l'opération en sélectionnant *Envoyer*.</block>
-  <block id="3962c67157856b85df4c5309ed0a5d1c" category="summary">La fonction AutoSupport prend en charge les protocoles HTTPS, HTTP et SMTP pour l'envoi d'interventions au support technique.</block>
   <block id="37d2d3abeb0c853792589ef5ef3ca6e2" category="doc">Configurer la méthode de livraison AutoSupport</block>
   <block id="eafe9700c0de4e0a4bf96ea8a52637c2" category="list-text">Un serveur DNS doit être installé et configuré sur votre réseau. L'adresse du serveur DNS doit être configurée dans System Manager (cette tâche est disponible à partir de la page Hardware).</block>
   <block id="f869702509af8522ab5a8d9317437a5c" category="paragraph">Étudiez les différents protocoles :</block>
   <block id="c320b46bad703dba81e017b358d86d07" category="list-text">*HTTPS* -- vous permet de vous connecter directement au serveur d'assistance technique de destination via HTTPS. Si vous souhaitez activer AutoSupport OnDemand ou diagnostic à distance, la méthode de livraison AutoSupport doit être définie sur HTTPS.</block>
-  <block id="85f5b44a49dc590cf656c27a9db9e5aa" category="list-text">*HTTP* -- vous permet de vous connecter directement au serveur de support technique de destination via HTTP.</block>
   <block id="5b999ecb8bff8dd3f70944baa491c671" category="list-text">*Email* -- vous permet d'utiliser un serveur de messagerie comme méthode de livraison pour envoyer des interventions AutoSupport.</block>
-  <block id="4b14e85f50ab6574b52c5f3998e5d090" category="paragraph">*Différences entre les méthodes HTTPS/HTTP et E-mail*. La méthode de distribution de l'e-mail, qui utilise SMTP, présente des différences importantes par rapport aux méthodes de distribution HTTPS et HTTP. Tout d'abord, la taille des interventions pour la méthode E-mail est limitée à 5 Mo, ce qui signifie que certaines collections de données ASUP ne seront pas envoyées. Deuxièmement, la fonctionnalité AutoSupport OnDemand est disponible uniquement sur les méthodes HTPP et HTTPS.</block>
   <block id="d15ef58f591a31679a31fd6a6870c0f9" category="list-text">Sélectionnez *configurer la méthode de livraison AutoSupport*.</block>
   <block id="b0e813c1d02ae767a417776fd8a8e6f9" category="paragraph">Une boîte de dialogue s'affiche, qui répertorie les méthodes de livraison d'expédition.</block>
   <block id="c143b9caf0caf400d47403e99931103b" category="list-text">Sélectionnez la méthode de livraison souhaitée, puis sélectionnez les paramètres pour cette méthode de livraison. Effectuez l'une des opérations suivantes :</block>
-  <block id="973964a77df9b69b12f27d0b8d26cc36" category="list-text">Si vous avez sélectionné HTTPS ou HTTP, sélectionnez l'un des paramètres de distribution suivants :</block>
-  <block id="46c1790980160f29ebbcc3dd7c68f99a" category="list-text">*Directement* -- ce paramètre de distribution est la sélection par défaut. Cette option vous permet de vous connecter directement au système de support technique de destination à l'aide du protocole HTTPS ou HTTP.</block>
   <block id="9ba064119aa4adae0694381c00680251" category="list-text">*Via serveur proxy* -- la sélection de cette option vous permet de spécifier les détails du serveur proxy HTTP requis pour établir la connexion avec le système de support technique de destination. Vous devez spécifier l'adresse hôte et le numéro de port. Toutefois, vous devez uniquement saisir les détails d'authentification de l'hôte (nom d'utilisateur et mot de passe) si nécessaire.</block>
   <block id="6a5001d36e6f16c8e2ba0dd5fc89f8de" category="list-text">*Via le script de configuration automatique du proxy (PAC)* -- spécifiez l'emplacement d'un fichier de script PAC (Proxy Auto-Configuration). Un fichier PAC permet au système de choisir automatiquement le serveur proxy approprié pour établir une connexion avec le système d'assistance technique de destination.</block>
   <block id="88816662b2b289f8f26259414739e64d" category="list-text">Si vous avez sélectionné E-mail, saisissez les informations suivantes :</block>
@@ -1728,7 +1713,6 @@
   <block id="4be68b270e1447a8440f754f0cb90864" category="paragraph">Vous pouvez mettre à niveau les logiciels et les micrologiciels de votre baie de stockage pour obtenir les dernières fonctionnalités et correctifs de bogues.</block>
   <block id="dd6dca7a34cf32b3f8427a9d77b44b4a" category="section-title">Composants inclus dans la mise à niveau du contrôleur OS</block>
   <block id="21a0e459f95483b7d5a2854659587a88" category="paragraph">Plusieurs composants de matrice de stockage contiennent des logiciels ou du matériel que vous pouvez souhaiter mettre à niveau occasionnellement.</block>
-  <block id="672f902afa2aa052ec3b55b9e3e0dfc2" category="image-alt">emplacements du micrologiciel de mise à niveau sam1130 dwg</block>
   <block id="d44c72698d05ea141ed24d5313992baa" category="paragraph">^1^ tiroir contrôleur ; ^2^ tiroir disque ; ^3^ logiciel, micrologiciel de contrôleur, NVSRAM contrôleur, Logiciel de supervision ; ^4^ microprogramme de lecteur ; ^5^ microprogramme de module d'E/S ; ^6^ microprogramme de lecteur</block>
   <block id="f13ad633a10532a718e640963e25ba41" category="paragraph">Vous pouvez afficher les versions actuelles de vos logiciels et micrologiciels dans la boîte de dialogue Inventaire des logiciels et micrologiciels. Accédez au menu :support[Upgrade Center], puis cliquez sur le lien *Software and Firmware Inventory*.</block>
   <block id="521132bf11403dff3ed68f00e8e5203a" category="inline-link">Matrice d'interopérabilité NetApp</block>
@@ -1996,7 +1980,6 @@
   <block id="6b82b68ee8e8a0e879e030cb59f06c65" category="list-text">Lorsque vous sélectionnez un fichier à mettre à niveau, le nom et la taille du fichier s'affichent.</block>
   <block id="b4d85d3d8454e416a479e3769d949502" category="list-text">*Facultatif:* si vous avez sélectionné un fichier logiciel SANtricity OS à mettre à niveau, vous pouvez transférer les fichiers vers le contrôleur sans les activer en cochant la case *transférer les fichiers maintenant, mais ne pas mettre à niveau (Activer la mise à niveau plus tard)*.</block>
   <block id="ea05f78407f270e18e03bc081fe2f071" category="paragraph">Vous pouvez annuler l'opération pendant le contrôle d'intégrité de pré-mise à niveau, mais pas pendant le transfert ou l'activation.</block>
-  <block id="46b89af2910d7de7887ff8b8413a9c3c" category="summary">La fonction AutoSupport prend en charge les protocoles HTTPS, HTTP et SMTP pour la distribution des interventions AutoSupport au support technique.</block>
   <block id="bc878a19fc67131e8323da1e755255c2" category="doc">Comment configurer la méthode de livraison pour la fonctionnalité AutoSupport ?</block>
   <block id="3419a57dc78279b5f8f98de3be93468b" category="list-text">*Facultatif; si vous voulez effectuer un test de configuration.* adresse e-mail où une confirmation est envoyée lorsque le système AutoSupport reçoit l'intervention de test.</block>
   <block id="aa4db1969c5e21c3c42143581ce200bd" category="summary">Lorsque vous sélectionnez collecter les données de configuration, le système enregistre l'état actuel de la base de données de configuration RAID.</block>
@@ -2137,7 +2120,6 @@
   <block id="99bed7435706b520211df81bb3b833a1" category="paragraph">Supprimer des événements</block>
   <block id="60adb5288f069f5a086cbcc875d0a4de" category="paragraph">Sélectionnez *Supprimer* pour ouvrir une boîte de dialogue qui vous permet de supprimer d'anciens événements de la page.</block>
   <block id="9ae16d2c540a91f8169558ca56bb3a04" category="paragraph">Afficher/masquer les colonnes</block>
-  <block id="0e5d8c77f64632d6949531c8786c2900" category="paragraph">Cliquez sur l'icône de colonne *Afficher/Masquer* <block ref="95c275e82bb68f68f11a49bb34fc239c" category="inline-image-macro-rx" type="image"></block> pour sélectionner des colonnes supplémentaires à afficher dans le tableau. Les colonnes supplémentaires incluent :</block>
   <block id="6e66f767222daf4c98d3fd8561adf903" category="list-text">*Méthode* -- la méthode HTTP (PAR exemple, POST, GET, DELETE, etc.).</block>
   <block id="456081dd7e5bfc028ec74475ecf409dc" category="list-text">*Commande CLI exécutée* -- la commande CLI (grammaire) exécutée pour les requêtes Secure CLI.</block>
   <block id="add1a37a426dc01049dba656a8fa8040" category="list-text">*CLI Return Status* -- Un code d'état CLI ou une demande de fichiers d'entrée du client.</block>
@@ -2148,9 +2130,7 @@
   <block id="73052dd870a19b2dc5141930065b6bed" category="list-text">*Type d'authentification* -- les types peuvent inclure l'utilisateur local, LDAP, SAML et le jeton d'accès.</block>
   <block id="b87bd6aac06ddb237e7299fad93cbef7" category="list-text">*ID d'authentification* -- ID de la session authentifiée.</block>
   <block id="510092612bcfdb2a09c7d8e879ec8e66" category="paragraph">Activer/désactiver les filtres de colonne</block>
-  <block id="43608f7f822df1b119fb2f0861752bd0" category="paragraph">Cliquez sur l'icône *basculer* <block ref="c402d3ee0f3c0bdb6f04456c65416b8c" category="inline-image-macro-rx" type="image"></block> pour ouvrir des champs de filtrage pour chaque colonne. Entrez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.</block>
   <block id="f15903c586acb55eceb753ce38b6087a" category="paragraph">Annuler les modifications</block>
-  <block id="8c9faddbe29c40713a51a79ae22b6638" category="paragraph">Cliquez sur l'icône *Annuler* <block ref="d42b2137813f4ca554a17d50c37e9052" category="inline-image-macro-rx" type="image"></block> pour rétablir la configuration par défaut de la table.</block>
   <block id="0095a9fa74d1713e43e370a7d7846224" category="paragraph">Exporter</block>
   <block id="4f5e62673b0e203ba449b54b3ace5662" category="paragraph">Cliquez sur *Exporter* pour enregistrer les données de la table dans un fichier CSV (valeurs séparées par des virgules).</block>
   <block id="d8746c6814d3e02171f274e779653cf5" category="summary">Vous pouvez à tout moment remplacer une clé de sécurité par une nouvelle clé. Vous devrez peut-être modifier une clé de sécurité dans les cas où vous pourriez avoir une violation de sécurité potentielle au sein de votre entreprise et vous assurer que le personnel non autorisé ne peut pas accéder aux données des lecteurs.</block>
@@ -2661,7 +2641,6 @@
   <block id="a3fabc0295d776f26ee76798f5e7eecb" category="paragraph">Vous devez d'abord générer un fichier de requête de signature de certificat (RSC), puis utiliser la RSC pour demander un certificat client signé à une autorité de certification (CA) approuvée par le serveur de gestion de clés. Vous pouvez également créer et télécharger un certificat client à partir du serveur de gestion des clés à l'aide du fichier CSR téléchargé. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).</block>
   <block id="ee0d5d80706867e431096b62cf3c5e2a" category="list-text">Dans l'onglet Key Management, sélectionnez *Complete CSR*.</block>
   <block id="2c80d3f5692bbddd81bc83e7968f3387" category="list-text">Saisissez les informations suivantes :</block>
-  <block id="06c5a678917197769985500f5054ae39" category="list-text">*Nom commun* -- Un nom qui identifie cette RSC, comme le nom de la matrice de stockage, qui sera affiché dans les fichiers de certificat.</block>
   <block id="f234c3b12dba6166f60bac9c363f54cc" category="list-text">*Organisation* -- le nom légal complet de votre entreprise ou organisation. Inclure les suffixes, tels que Inc. Ou Corp</block>
   <block id="69ac902b56aa279ba18618b1e6a972ae" category="list-text">*Unité organisationnelle (facultative)* -- la division de votre organisation qui gère le certificat.</block>
   <block id="f6a05afe4452342eb12066e4700bb036" category="list-text">*Ville/localité* -- la ville ou la localité où se trouve votre organisation.</block>
@@ -2669,7 +2648,6 @@
   <block id="0210750d504f0f88eaea1d4942a4d806" category="list-text">*Code ISO du pays* -- le code ISO à deux chiffres (Organisation internationale de normalisation), tel que les États-Unis, où se trouve votre organisation.</block>
   <block id="66d341303806090714534fa743e9440f" category="list-text">Cliquez sur *Télécharger*.</block>
   <block id="9dfff367ea9fa51616b265ac4bd0119b" category="paragraph">Un fichier CSR est enregistré sur votre système local.</block>
-  <block id="edc5180b61662fc1be0150bd95564929" category="list-text">Demandez un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés.</block>
   <block id="d95c637329a7d9e40b647471e048deee" category="list-text">Lorsque vous disposez d'un certificat client, accédez à <block ref="1f166b6040d8c5a8d4907b35fb575af0" category="inline-xref-macro-rx"></block>.</block>
   <block id="1603855b9dc7554f1873c8164f918999" category="section-title">Étape 2 : importation de certificats pour le serveur de gestion des clés</block>
   <block id="06c92dfc8076f143375a4f0958f180b2" category="paragraph">Lors de l'étape suivante, vous importez les certificats d'authentification entre la matrice de stockage et le serveur de gestion des clés. Il existe deux types de certificats : le certificat client valide les contrôleurs de la matrice de stockage, tandis que le certificat du serveur de gestion des clés valide le serveur. Vous devez charger à la fois le fichier de certificat client pour les contrôleurs et le fichier de certificat de serveur pour le serveur de gestion des clés.</block>
@@ -3059,7 +3037,6 @@
   <block id="4a3f946a5d672e0a36f3e78716d815a7" category="list-text"><block ref="4a3f946a5d672e0a36f3e78716d815a7" category="inline-link-macro-rx"></block></block>
   <block id="a337faa8760a049e5437a14ea0619b53" category="list-text"><block ref="a337faa8760a049e5437a14ea0619b53" category="inline-link-macro-rx"></block></block>
   <block id="6a2301b626e4d2e000e656bf3239c947" category="section-title">Comment configurer les certificats signés ?</block>
-  <block id="df65c54a9ec9667bc0283e4aa5ad95a8" category="paragraph">Vous générez d'abord une demande de signature à partir de System Manager, puis envoyez le fichier à une autorité de certification. Une fois que l'autorité de certification a renvoyé les fichiers de certificat, vous les importez à l'aide de System Manager.</block>
   <block id="07b1dc7e9a4e74582b63a798f9592f98" category="inline-link-macro">Utiliser des certificats signés CA pour les contrôleurs</block>
   <block id="f30ef1f319818cb54733253443bc4c9a" category="list-text"><block ref="f30ef1f319818cb54733253443bc4c9a" category="inline-link-macro-rx"></block></block>
   <block id="b84682914017c3d657e4a2beaf4a9364" category="paragraph">En savoir plus sur les tâches liées aux certificats :</block>
@@ -3639,7 +3616,6 @@
   <block id="b19f31a8ba2f57c8e0ce96c8e5fe2bfa" category="list-text">Autoriser les utilisateurs à se connecter sans mot de passe.</block>
   <block id="e78959343eccc5753e5a6f69aa17e104" category="summary">Pour la gestion externe des clés, vous importez deux types de certificats pour l'authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.</block>
   <block id="6bb1fc83f2153c8e3dfddfa5b556e792" category="doc">Comment puis-je savoir quels certificats doivent être téléchargés sur System Manager pour la gestion externe des clés ?</block>
-  <block id="21e61b7b89892f01884cffafc8c86a9c" category="paragraph">Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol). Pour obtenir un certificat client, utilisez System Manager pour effectuer une RSC pour la matrice de stockage. Vous pouvez ensuite télécharger la RSC sur un serveur de gestion des clés et générer un certificat client à partir de ce serveur. Une fois que vous avez un certificat client, copiez ce fichier vers l'hôte sur lequel vous accédez à System Manager.</block>
   <block id="9a4b083823a7c4b7786c0328f4a16e2a" category="paragraph">Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP. Récupérez le fichier de certificat du serveur à partir du serveur de gestion des clés, puis copiez-le vers l'hôte sur lequel vous accédez à System Manager.</block>
   <block id="fb54e765bb9bb24d7dfc00f7e905e4ac" category="summary">Après avoir créé ou modifié une clé de sécurité, vous pouvez créer une copie de sauvegarde du fichier de clé en cas de corruption de l'original.</block>
   <block id="b542bf5590249f6b6b7c894f0e3e359b" category="paragraph">Cette tâche décrit comment sauvegarder une clé de sécurité que vous avez créée précédemment. Au cours de cette procédure, vous créez une nouvelle phrase de passe pour la sauvegarde. Cette phrase de passe n'a pas besoin de correspondre à la phrase de passe utilisée lors de la création ou de la dernière modification de la clé d'origine. La phrase de passe est appliquée uniquement à la sauvegarde que vous créez.</block>
@@ -3708,7 +3684,6 @@
   <block id="f2b72ee0697939206bbf9a554cc366b7" category="paragraph">*Facultatif:* si vous souhaitez configurer un serveur de clés de sauvegarde, cliquez sur *Ajouter un serveur de clés*, puis entrez les informations de ce serveur. Le second serveur de clés sera utilisé si le serveur de clés principal ne peut pas être atteint. Assurez-vous que chaque serveur de clés a accès à la même base de données de clés ; sinon, la matrice affiche des erreurs et ne peut pas utiliser le serveur de sauvegarde.</block>
   <block id="b619226f7496b2687780134401626a39" category="admonition">Seul un serveur à clé unique est utilisé à la fois. Si la matrice de stockage ne parvient pas à atteindre le serveur de clés principal, elle contacte le serveur de clés de sauvegarde. Notez que vous devez maintenir la parité entre les deux serveurs ; le non-respect de cette consigne peut entraîner des erreurs.</block>
   <block id="faad8801d23a759f57b190bd195325f9" category="list-text">*Sélectionner le certificat client* -- cliquez sur le premier bouton *Parcourir* pour sélectionner le fichier de certificat pour les contrôleurs de la matrice de stockage.</block>
-  <block id="d73961b3c6886eb5d1b015bae50f3a4a" category="list-text">*Sélectionnez le certificat de serveur de gestion de clés* -- cliquez sur le deuxième bouton *Parcourir* pour sélectionner le fichier de certificat pour le serveur de gestion de clés. Vous pouvez choisir un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.</block>
   <block id="eb604adb06c0a47290c764815fd73159" category="list-text">Sous *Create/Backup Key*, vous pouvez créer une clé de sauvegarde à des fins de sécurité.</block>
   <block id="41706d1306339861705180e1825b2d9a" category="list-text">(Recommandé) pour créer une clé de sauvegarde, gardez la case à cocher sélectionnée, puis entrez et confirmez une phrase de passe. La valeur peut comporter entre 8 et 32 caractères et doit comprendre chacun des éléments suivants :</block>
   <block id="f8ee8cbfde4d939a5c373bfa17a57502" category="paragraph">*N'oubliez pas d'enregistrer vos entrées pour une utilisation ultérieure*. Si vous devez déplacer un lecteur sécurisé de la matrice de stockage, vous devez connaître la phrase de passe pour déverrouiller les données du lecteur.</block>
@@ -4145,7 +4120,6 @@
   <block id="38fdb2afc81bf942bd8dcf4208c5c967" category="summary">Pour accéder aux tâches de configuration des méthodes de livraison AutoSupport, accédez à support &gt; Centre de support, puis cliquez sur l'onglet AutoSupport.</block>
   <block id="6d145ddbb4b39d9e20b73518a03bfc4f" category="doc">Comment configurer la méthode de livraison pour AutoSupport ?</block>
   <block id="cf5b6a8826dfd986bff2c61c9d14df01" category="paragraph">Pour accéder aux tâches de configuration des méthodes de distribution AutoSupport, allez dans le menu :support[Centre de support], puis cliquez sur l'onglet *AutoSupport*.</block>
-  <block id="825eddaaf48335688b9a86b051806f05" category="paragraph">Les protocoles suivants sont pris en charge : HTTPS, HTTP et SMTP.</block>
   <block id="96830edba2b0d20286d9e38c88f41f0d" category="summary">Si vous ne voyez pas tous les composants matériels dans la boîte de dialogue vérifier le matériel, un tiroir disque peut ne pas être connecté correctement, ou qu'un tiroir incompatible est installé dans la baie de stockage.</block>
   <block id="7a3b89af3b52c55d1f98c18d0f91e932" category="doc">Que faire si je ne vois pas tous mes composants matériels ?</block>
   <block id="9446f92493638ff7ef1aefbdc315bdba" category="paragraph">Si vous ne voyez pas tous les composants matériels dans la boîte de dialogue vérifier le matériel, un tiroir disque peut ne pas être connecté correctement, ou qu'un tiroir incompatible est installé dans la baie de stockage.</block>
@@ -4209,12 +4183,8 @@
   <block id="8f67973007158337346584551b093be8" category="section-title">Icônes</block>
   <block id="e59947ee445b1ddcb1b36e841922561d" category="paragraph">System Manager utilise ces icônes pour indiquer l'état de la matrice de stockage et de ses composants.</block>
   <block id="817434295a673aed431435658b65d9a7" category="cell">Icône</block>
-  <block id="01e8bed710d86952b17238abf140b392" category="paragraph"><block ref="01e8bed710d86952b17238abf140b392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2a8cf90c6e77913075cd51690f39183a" category="paragraph"><block ref="2a8cf90c6e77913075cd51690f39183a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e6219fae40a2fc5edda2e7d21837dd11" category="paragraph">Non optimal ou en panne</block>
-  <block id="8b05fcd83de6b1289431c5434b4cd1e4" category="paragraph"><block ref="8b05fcd83de6b1289431c5434b4cd1e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e5e827d704d9b760ff1b338673a2c44" category="paragraph">Nécessite une attention ou une réparation</block>
-  <block id="026dd9b4d4767dc7f75d65a335da0f71" category="paragraph"><block ref="026dd9b4d4767dc7f75d65a335da0f71" category="inline-image-macro-rx" type="image"></block></block>
   <block id="764a2caff05993fc0d3eff5de7b225e9" category="paragraph">Avertissement</block>
   <block id="dab64d84f160f1ff1bd1dd11088b61a0" category="paragraph">System Manager affiche ces icônes à différents emplacements.</block>
   <block id="9acd806686dd3234546b1446cdcad0cf" category="list-text">La zone Notifications de la page d'accueil affiche l'icône en échec et un message.</block>
@@ -4411,7 +4381,6 @@
   <block id="4ed64ffa453acd1e92cad2b525ddd94d" category="paragraph">Avant de tomber en panne, assurez-vous de copier le contenu du disque. En fonction de votre configuration, vous risquez de perdre toute redondance de données ou de données sur le pool ou le groupe de volumes associé si vous ne copiez pas le contenu du disque en premier.</block>
   <block id="586a5fdfcf92424d25f4b58cb312a532" category="paragraph">Cette option permet une restauration plus rapide que la reconstruction et réduit le risque de panne d'un volume si un autre disque tombe en panne pendant l'opération de copie.</block>
   <block id="6f82e7d1008117fb1e1468824b0d9db5" category="list-text">Confirmez que vous souhaitez faire tomber le disque en panne.</block>
-  <block id="d2f974d9ab2113f12a2d0912cae37b90" category="paragraph">Une fois le lecteur défaillant, attendez au moins 30 secondes avant de le retirer.</block>
   <block id="1ec3846dcfd3d974528fc43c265f9737" category="summary">Si votre contrôleur inclut une connexion NVMe over InfiniBand, vous pouvez configurer les paramètres du port NVMe à partir de la page Hardware (matériel).</block>
   <block id="38fabb6ac932677fa94cdb8d2809d07d" category="list-text">Cliquez sur le contrôleur associé au port NVMe over InfiniBand que vous souhaitez configurer.</block>
   <block id="e06a7f7cb4a9947174a4b913a439875c" category="paragraph">La boîte de dialogue configurer NVMe sur les ports InfiniBand s'ouvre.</block>
@@ -4673,7 +4642,6 @@
   <block id="ef8d855bb7b58eb13043f4697e633ed7" category="paragraph">Si le contrôleur n'est pas en mesure d'obtenir une adresse DHCP sur un port réseau donné, il revient à une adresse IP par défaut, ce qui peut prendre jusqu'à 3 minutes. Les adresses IP par défaut sont les suivantes :</block>
   <block id="9dfbd8583086cdf43b044681817c83b8" category="paragraph">Lors de l'attribution d'adresses IP :</block>
   <block id="798c19059ebbea34781e20114772d59b" category="list-text">Réserver le port 2 sur les contrôleurs pour l'utilisation du support client. Ne modifiez pas les paramètres réseau par défaut (DHCP activé).</block>
-  <block id="85a4e345071b9de80c11ae8d3fd44e88" category="list-text">Pour définir des adresses IP statiques pour les contrôleurs E2800 et E5700, utilisez SANtricity System Manager. Pour définir des adresses IP statiques pour les contrôleurs E2700 et E5600, utilisez SANtricity Storage Manager. Une fois qu'une adresse IP statique est configurée, elle reste définie par tous les événements de liaison descendante/active.</block>
   <block id="631b8d83c6e19c17a00f6c995f136262" category="list-text">Pour utiliser DHCP pour attribuer l'adresse IP du contrôleur, connectez le contrôleur à un réseau capable de traiter les requêtes DHCP. Utilisez un bail DHCP permanent.</block>
   <block id="f0e8cd249b17b159ca6279e1cb49e5e9" category="paragraph">Les adresses par défaut ne sont pas conservées entre les événements de liaison descendante. Lorsqu'un port réseau d'un contrôleur est configuré pour utiliser DHCP, le contrôleur tente d'obtenir une adresse DHCP sur chaque événement de liaison, notamment pour l'insertion des câbles, les redémarrages et les cycles d'alimentation. Chaque fois qu'une tentative DHCP échoue, l'adresse IP statique par défaut de ce port est utilisée.</block>
   <block id="dd4da2d903f6a6bbef09a9c351c7c877" category="summary">Le contrôleur inclut un port Ethernet utilisé pour la gestion du système. Si nécessaire, vous pouvez modifier ses paramètres de transmission et ses adresses IP.</block>
@@ -5128,7 +5096,6 @@
   <block id="11922e324623e8ee6795b38fc97026aa" category="summary">Dans SANtricity System Manager, vous pouvez créer des volumes en suivant ces étapes.</block>
   <block id="fac200cebb0821f041baff659eae74b0" category="doc">Flux de production pour la création de volumes</block>
   <block id="26eaac99fa3741d6e7305e93cad51def" category="paragraph">Dans System Manager, vous pouvez créer des volumes en suivant ces étapes.</block>
-  <block id="8774cdb9b7bf373fd360b697dfc73074" category="image-alt">les volumes flw sam1130 sont créés</block>
   <block id="bf14dd0280604e6a034b2010188b827d" category="summary">Lors de la création et de l'utilisation d'instantanés, vérifiez les exigences et les directives suivantes.</block>
   <block id="18a7bcdcdad88277c3bc9fbb32c94192" category="doc">Exigences et consignes relatives aux snapshots</block>
   <block id="ad9f9d864463081efefa7e457113d2f2" category="section-title">Images Snapshot et groupes de snapshots</block>
@@ -5243,7 +5210,6 @@
   <block id="cb3a5458bc09e67d6ef6ce205d17d738" category="paragraph">Un _volume de base_ est le volume utilisé comme source pour une image d'instantané. Un volume de base peut être un volume non fin ou un volume non fin, et peut résider dans un pool ou un groupe de volumes.</block>
   <block id="1720719bd157b93b853ddc78630f4791" category="paragraph">Pour prendre des instantanés du volume de base, vous pouvez créer une image instantanée à tout moment, ou vous pouvez automatiser le processus en définissant un planning régulier pour les snapshots.</block>
   <block id="60d9df749d5dab9aa5752ca06b11d535" category="paragraph">La figure suivante montre les relations entre les objets de snapshot et le volume de base.</block>
-  <block id="3c42e408027c4d66c652218a672a0fe9" category="image-alt">sam1130 dwg vue d'ensemble des images instantanés</block>
   <block id="949c7d49ab9f67bc9d5777be798b8db7" category="paragraph">^1^ Volume de base ; ^2^ objets Snapshot du groupe (images et capacité réservée) ; ^3^ capacité réservée pour le groupe de snapshots.</block>
   <block id="1e6dcc27b41dd29b57867b26a6a96089" category="section-title">Capacité réservée et groupes snapshots</block>
   <block id="26ec84fa5045ca48c0f10d38ca70a090" category="paragraph">System Manager organise les images de snapshot en _snapshot Groups_. Lorsque System Manager établit le groupe de snapshots, il crée automatiquement _Reserved Capacity_ associé pour contenir les images de snapshot du groupe et pour garder le suivi des modifications ultérieures apportées aux snapshots supplémentaires.</block>
@@ -6257,9 +6223,7 @@
   <block id="f42ab20723d88e6ffea883aa8f45d665" category="summary">Dans System Manager, vous pouvez créer des images de snapshot et des volumes de snapshot en suivant ces étapes.</block>
   <block id="b4dcc45d10b6e6d4ae1dc448b727db43" category="doc">Flux de travail pour la création d'images de snapshot et de volumes de snapshot</block>
   <block id="a97efe42ec88f5615739c5ebf0085fd8" category="section-title">Flux de travail pour la création d'images de snapshot</block>
-  <block id="ef8bf440f203714f31690f3269f2a3be" category="image-alt">les instantanés de flw sam1130 créent des images ss</block>
   <block id="bb41f61d9b53608a25e359fed048aa2f" category="section-title">Flux de production de création de volumes Snapshot</block>
-  <block id="12da876cc8c4d30e71fe2566936ae1bc" category="image-alt">les snapshots de type flw sam1130 créent des volumes ss</block>
   <block id="28777dded0f4b7a62c3138973e35582c" category="summary">L'option réduire la capacité permet de réduire la capacité réservée aux objets de stockage suivants : groupe de snapshots, volume snapshot et volume membre du groupe de cohérence. Vous pouvez diminuer la capacité réservée uniquement en fonction de la ou des quantité(s) utilisée(s) pour l'augmenter.</block>
   <block id="fd9b60620868f54114ba56d583ad7b0e" category="doc">Réduction de la capacité réservée</block>
   <block id="115acc53492ff3d71c7e0717c01220a6" category="paragraph">L'option réduire la capacité permet de réduire la capacité réservée aux objets de stockage suivants : groupe de snapshots, volume snapshot et volume membre du groupe de cohérence. Vous pouvez diminuer la capacité réservée uniquement en fonction de la ou des quantité(s) utilisée(s) pour l'augmenter.</block>
@@ -6752,7 +6716,6 @@
   <block id="c256ddae26373a7f962ae46e150c1562" category="list-text">*Restauration de groupe de cohérence snapshot*, qui peut être utilisé pour restaurer un ou plusieurs volumes.</block>
   <block id="29012892288d1b7c8f199a16332574cb" category="paragraph">Pendant la restauration, la fonction snapshots préserve toutes les images d'instantané du groupe. Il permet également à l'hôte d'accéder au volume de base pendant ce processus, le cas échéant, pour les opérations d'E/S.</block>
   <block id="de283d7a9098bcc219049cc5e14d0cc8" category="paragraph">Lors du lancement d'une restauration, un processus d'arrière-plan balaie les adresses de blocs logiques (LBA) du volume de base, puis trouve les données de copie sur écriture dans l'image de snapshot de restauration à restaurer. Le volume de base étant accessible à l'hôte pour les lectures et écritures, et toutes les données écrites précédemment sont immédiatement disponibles, le volume de capacité réservée doit être suffisamment grand pour contenir toutes les modifications pendant le traitement de la restauration. Le transfert de données continue en arrière-plan jusqu'à ce que la restauration soit terminée.</block>
-  <block id="5daf01f3f17796b27d7771d6cb582f2c" category="image-alt">vue d'ensemble de la restauration des snapshots sam1130 dwg</block>
   <block id="743f86d79c37270dc505fe437c1f1c6c" category="paragraph">^1^ Volume de base ; ^2^ objets Snapshot d’un groupe ; ^3^ capacité réservée au groupe de snapshots</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="summary">Lors de la création du volume, vous êtes invité à fournir des informations sur l'utilisation d'une charge de travail. Le système utilise ces informations pour créer une configuration de volume optimale, qui peut être modifiée selon les besoins. Vous pouvez également ignorer cette étape dans la séquence de création du volume.</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">Comment les charges de travail sélectionnées affectent-elles la création du volume ?</block>
@@ -7163,7 +7126,6 @@
   <block id="cf1d844a7c0925859af01a6a7723042e" category="paragraph">Au fur et à mesure de la création des instantanés, la fonction snapshots stocke les données d'image comme suit :</block>
   <block id="4d597b8796cba4c28f3bbfe445110674" category="list-text">Toute image Snapshot reflète exactement le volume de base tel qu'il était au moment de la création de la copie. La fonctionnalité Snapshot utilise la technologie de copie sur écriture. Après la création de la copie Snapshot, la première écriture dans un bloc ou dans un ensemble de blocs du volume de base entraîne la copie des données initiales dans la capacité réservée avant d'enregistrer ces nouvelles données dans le volume de base.</block>
   <block id="9dacefe95d818773369a9797ff2a929a" category="list-text">Les snapshots suivants ne incluent que les blocs de données modifiés. Avant d'écraser les données sur le volume de base, la fonction snapshots utilise sa technologie de copie en écriture pour enregistrer les images requises des secteurs concernés dans la capacité réservée de snapshot.</block>
-  <block id="1886962b4901912e6cd5b15cf8ec8801" category="image-alt">sam1130 dwg snapshots vue d'ensemble de l'vache</block>
   <block id="939b092d6e7a8a3b4a205c55c9e2ae72" category="paragraph">^1^ volume de base (capacité du disque physique) ; ^2^ snapshots (capacité du disque logique) ; ^3^ capacité réservée (capacité du disque physique)</block>
   <block id="d47ce171ec06ec6f652ca0dd7e6f39ae" category="list-text">La capacité réservée stocke les blocs de données originaux pour les parties du volume de base qui ont été modifiées après la prise de l'instantané et inclut un index pour le suivi des modifications. En général, la taille de la capacité réservée correspond par défaut à 40 % du volume de base. (Si vous avez besoin de plus de capacité réservée, vous pouvez augmenter la capacité réservée.)</block>
   <block id="4049e112b53e70c18a06540b7b2c149e" category="list-text">Les images instantanées sont stockées dans un ordre spécifique, en fonction de leur horodatage. Seule l'image snapshot la plus ancienne d'un volume de base est disponible pour la suppression manuelle.</block>
@@ -7219,13 +7181,11 @@
   <block id="074580cc42d005c3307f7781e9bab650" category="summary">Vous pouvez créer un volume de snapshot et l'affecter à un hôte si vous souhaitez lire ou écrire des données de snapshot. Le volume Snapshot partage les mêmes caractéristiques que le volume de base (niveau RAID, caractéristiques d'E/S, etc.).</block>
   <block id="65ecf2a2337dcf0c18a07aebad2467c3" category="paragraph">Lorsque vous créez un volume de snapshot, vous pouvez le désigner comme __read-onl__y ou _read-write accessible_.</block>
   <block id="6fae9866cf5b41c3c43499004314830d" category="paragraph">Lorsque vous créez des volumes Snapshot en lecture seule, vous n'avez pas besoin d'ajouter de la capacité réservée. Lorsque vous créez des volumes de snapshot en lecture/écriture, vous devez ajouter de la capacité réservée pour permettre un accès en écriture.</block>
-  <block id="0826f71e74c63bde050daa130916d6c1" category="image-alt">vue d'ensemble des volumes de snapshots sam1130 dwg</block>
   <block id="9532d122b8f06dcd16ac244c1dc2cf91" category="paragraph">^1^ Volume de base ; ^2^ hôte ; ^3^ Volume de snapshot en lecture seule ; ^4^ Volume de snapshot en lecture/écriture ; ^5^ capacité réservée</block>
   <block id="b351750a3483384d9ab2a934dc160e1e" category="summary">Pour approvisionner le stockage, vous créez un pool ou un groupe de volumes contenant les disques durs (HDD) ou les disques SSD que vous souhaitez utiliser dans votre matrice de stockage.</block>
   <block id="b2a1cbc18a64861cce318c44b2aa52f9" category="paragraph">Le matériel physique est provisionné en composants logiques, de sorte que les données puissent être organisées et facilement récupérées. Deux types de regroupements sont pris en charge :</block>
   <block id="90b66a5ef079dd6fe113e4666b593730" category="list-text">Groupes de volumes RAID</block>
   <block id="6b4c11beddbb9d9050898c59e3a7253a" category="paragraph">Les pools et les groupes de volumes sont les unités de stockage de premier niveau d'une baie de stockage : ils divisent la capacité des disques en divisions gérables. Au sein de ces divisions logiques se trouvent les volumes ou les LUN individuels pour lesquels les données sont stockées. La figure suivante illustre ce concept.</block>
-  <block id="bde5bcac86e6435e52adb5ab2ea9b873" category="image-alt">les volumes sam1130 dwg entraînent des pools de structures et des groupes de volumes</block>
   <block id="102f77a09364193fdbcfe0eb0664ecdb" category="paragraph">^1^ LUN hôte ; ^2^ volumes ; ^3^ groupes ou pools de volumes ; ^4^ disques durs ou SSD</block>
   <block id="9bb34d4088b730e51b652e6baa391ce1" category="paragraph">Lors du déploiement d'un système de stockage, la première étape consiste à présenter la capacité de disque disponible aux différents hôtes en :</block>
   <block id="161f7520d335e2bd5a9c12746d44848c" category="list-text">Création de pools ou de groupes de volumes de capacité suffisante</block>
@@ -7265,7 +7225,6 @@
   <block id="0f5df647ca5dab4ee03a26732709068f" category="list-text">Le nombre maximum de volumes autorisé dans un pool dépend du modèle du système de stockage :</block>
   <block id="4c54c92d3510c01a7395053d83e94ed9" category="list-text">2,048 volumes (EF600 et E5700 Series)</block>
   <block id="aff83888aa4f8769518fc32e759fbbe3" category="list-text">1,024 volumes (EF300)</block>
-  <block id="bbacc09876e48d4a13adc409b0903156" category="list-text">512 volumes (E2800 Series)</block>
   <block id="05b93f6f166f69fe87a016a1bfa75578" category="list-text">Si le pool ou le groupe de volumes contient tous les lecteurs sécurisés, ajoutez uniquement des lecteurs capables de sécuriser pour continuer à utiliser les capacités de cryptage des lecteurs sécurisés.</block>
   <block id="3cebaa2c5445065ae59be02b02aebe90" category="paragraph">Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).</block>
   <block id="f62b6a7943693e0c4263ed7095ad9c21" category="paragraph">Pour les pools, vous pouvez ajouter jusqu'à 60 disques à la fois. Pour les groupes de volumes, vous pouvez ajouter deux lecteurs au maximum à la fois. Si vous devez ajouter plus de lecteurs que le nombre maximal, répétez la procédure. (Un pool ne peut pas contenir plus de disques que la limite maximale d'un système de stockage.)</block>
@@ -7582,10 +7541,8 @@
   <block id="0df2c1ef0ce0fbcc26d3b077b4376a4c" category="paragraph">Si vous souhaitez créer automatiquement des snapshots pour un volume de base, vous pouvez créer un planning. Par exemple, vous pouvez définir un planning qui prend des instantanés chaque samedi à minuit, le premier de chaque mois, ou à toutes les dates et heures que vous décidez. Une fois que le nombre maximum de 32 snapshots est atteint pour une seule planification, vous pouvez suspendre les snapshots programmés, créer davantage de capacité réservée ou supprimer des snapshots. Les snapshots peuvent être supprimés manuellement ou en automatisant le processus de suppression. Une fois une image Snapshot supprimée, la capacité réservée supplémentaire est disponible à réutiliser.</block>
   <block id="2698e3159f430fff009f6ab0419d150a" category="paragraph">Lorsque vous souhaitez vous assurer que les images de snapshot sont prises sur plusieurs volumes en même temps, vous créez un groupe de cohérence de snapshot. Les actions d'image Snapshot sont effectuées sur le groupe de cohérence de snapshot dans son ensemble. Par exemple, vous pouvez planifier des snapshots synchronisés de tous les volumes avec le même horodatage. Les groupes de cohérence Snapshot sont parfaits pour les applications réparties sur plusieurs volumes, comme les applications de base de données qui stockent les journaux sur un volume et les fichiers de base de données sur un autre volume.</block>
   <block id="17963740167151a850181d7e3b2adbf4" category="paragraph">Les volumes inclus dans un groupe de cohérence de snapshot sont appelés volumes membres. Lorsque vous ajoutez un volume à un groupe de cohérence, System Manager crée automatiquement une nouvelle capacité réservée correspondant au volume membre en question. Vous pouvez définir un planning pour créer automatiquement une image instantanée de chaque volume membre.</block>
-  <block id="6e72b0870329f5e5695688a38e389963" category="image-alt">vue d'ensemble des groupes de cohérence de snapshots sam1130 dwg</block>
   <block id="6e30b92634e631be134cb29b1703e5d9" category="paragraph">^1^ capacité réservée ; ^2^ volume membre ; ^3^ Images de snapshot de groupe de cohérence</block>
   <block id="46c0ce9f7787b7e7378014c3a3284d40" category="summary">La figure suivante montre comment configurer l'accès hôte.</block>
-  <block id="5b21f20110107659dd5875988b3409f2" category="image-alt">sam1130 les hôtes flw créent l'hôte</block>
   <block id="83c4f3e22c7aee86dd208fabed72e0c0" category="summary">Vous pouvez supprimer les groupes de cohérence Snapshot qui ne sont plus nécessaires.</block>
   <block id="6653a2ebae1de18ad56546cb742af372" category="doc">Supprimez le groupe de cohérence de snapshot</block>
   <block id="1aeca494f61005cd69e4c6a6c10ce98c" category="paragraph">Confirmez que les images de tous les volumes membres ne sont plus nécessaires à des fins de sauvegarde ou de test.</block>
@@ -7993,38 +7950,23 @@
   <block id="0472921e1ddce2239a2bd92ea276d1c2" category="section-title">SANtricity System Manager</block>
   <block id="12491fe4846acc1919e62f4155149b40" category="paragraph">System Manager est un logiciel de gestion web intégré à chaque contrôleur. Pour accéder à l'interface utilisateur, pointez un navigateur vers l'adresse IP du contrôleur. Un assistant d'installation vous aide à commencer la configuration du système.</block>
   <block id="e6f420d96363bcc9439b0954a152e61f" category="paragraph">System Manager offre de nombreuses fonctionnalités de gestion :</block>
-  <block id="37e0eabe0db7567f83a15c51cfc7f62b" category="paragraph"><block ref="61a24b2f3f51ec993b798d3c93abc9a9" category="inline-image-macro-rx" type="image"></block> *Performance*</block>
   <block id="49ef72f729cb2500435ef1d7e5672053" category="paragraph">Affiche jusqu'à 30 jours de données de performances, notamment la latence d'E/S, les IOPS, l'utilisation du CPU et le débit.</block>
-  <block id="d077770f6c426b33d25496bb584152ca" category="paragraph"><block ref="2b8e9400dd2a90490b7f2301bce6baac" category="inline-image-macro-rx" type="image"></block> *Stockage*</block>
   <block id="987074589fc47a7aa68d608c3464d41a" category="paragraph">Provisionnez le stockage à l'aide de pools ou de groupes de volumes et créez des charges de travail applicatives.</block>
-  <block id="ef25e758b013c77d331d54b5a937ca65" category="paragraph"><block ref="e82b0a1e1e2827556ee65463ed3047a4" category="inline-image-macro-rx" type="image"></block> *Protection des données*</block>
   <block id="ec407aec27145b4ff02c44781ce9e135" category="paragraph">Effectuez des sauvegardes et des reprises après incident à l'aide des snapshots, de la copie de volume et de la mise en miroir à distance.</block>
-  <block id="980c8bebfcdb099cc91097e43759f417" category="paragraph"><block ref="1cfcec4b7f25019c12aee363ce7c9444" category="inline-image-macro-rx" type="image"></block> *Matériel*</block>
   <block id="3a6878cac28e93bf631464503ea3e934" category="paragraph">Vérifiez l'état des composants et exécutez certaines fonctions associées à ces composants, telles que l'attribution de disques de secours.</block>
-  <block id="f5c518a85015755d3396b4026585e075" category="paragraph"><block ref="7ff49474879db117ddc1b65a56fce106" category="inline-image-macro-rx" type="image"></block> *Alertes*</block>
   <block id="ddd62c374f39f4ab4e5a47f8712f1c7f" category="paragraph">Informez les administrateurs des événements importants survenant sur la baie de stockage. Les alertes peuvent être envoyées par e-mail, des traps SNMP et des syslog.</block>
-  <block id="298faae53f1ac6f667f02b9eb9f5db62" category="paragraph"><block ref="8b3d1866c22370963ba5ee92059dde1f" category="inline-image-macro-rx" type="image"></block> *Gestion de l'accès*</block>
   <block id="1647e643a86377bf1183456ade80f147" category="paragraph">Configurez l'authentification utilisateur qui exige que les utilisateurs se connectent au système avec des informations d'identification attribuées.</block>
-  <block id="2181e90bce3fbba0064bba8979a73785" category="paragraph"><block ref="d7bb0967f8390bbd248bce2a64a154c4" category="inline-image-macro-rx" type="image"></block> *Paramètres système*</block>
   <block id="ad036b77d0c0303ed4cd8909da482696" category="paragraph">Configurez d'autres fonctionnalités de performances du système, telles que le cache SSD et l'équilibrage automatique des charges.</block>
-  <block id="977cf952b67f04593161910be13ac423" category="paragraph"><block ref="a6a7b63c3e542eaa546ff069c241f75d" category="inline-image-macro-rx" type="image"></block> *Support*</block>
   <block id="7c7aa1597492a4229481882a3be47b81" category="paragraph">Affichez les données de diagnostic, gérez les mises à niveau et configurez AutoSupport, qui surveille l'état de santé d'une baie de stockage et envoie des interventions automatiques au support technique.</block>
   <block id="93abfbfe31ac8cb67502c94e622ee8a8" category="section-title">SANtricity Unified Manager</block>
   <block id="290c862dcfeff5fefc8c9503485b46d9" category="paragraph">Unified Manager est installé sur un serveur de gestion avec le proxy de services Web. Pour accéder à Unified Manager, ouvrez un navigateur et entrez l'URL pointant vers le serveur sur lequel le proxy de services Web est installé.</block>
   <block id="95a409858014f8a46f2239633494b0b4" category="paragraph">Unified Manager offre de nombreuses fonctionnalités de gestion, notamment :</block>
-  <block id="ec15df373d2a99afa12ee47320a598ac" category="paragraph"><block ref="8d2259f5e99b0f05cb6565c4c3a18f32" category="inline-image-macro-rx" type="image"></block> *Découvrir les matrices de stockage*</block>
   <block id="7f20599d33f14ce1ff7f9b70fb7b73be" category="paragraph">Trouvez et ajoutez les baies de stockage que vous souhaitez gérer sur le réseau de votre entreprise. Vous pouvez alors afficher l'état de toutes les matrices de stockage à partir d'une seule page.</block>
-  <block id="b75af52589fb3d827f749ab189b58662" category="paragraph"><block ref="89f556efb7ed2a89297bc4c82965906f" category="inline-image-macro-rx" type="image"></block> *Lancement*</block>
   <block id="3fde700fe4a62ce78ac2289fa0a5e46e" category="paragraph">Ouvrez une instance de System Manager pour effectuer des opérations de gestion individuelles sur une baie de stockage particulière.</block>
-  <block id="b6be670ccf213da236af7b81b5bfb3d2" category="paragraph"><block ref="3dffbd5d736527ecd51b6202313920e7" category="inline-image-macro-rx" type="image"></block> *Paramètres d'importation*</block>
   <block id="6343245a56c402a6a6194f98f3011e1c" category="paragraph">Effectuez une importation par lots d'une matrice de stockage vers plusieurs baies, notamment des paramètres d'alertes, de AutoSupport et de services d'annuaire.</block>
-  <block id="6e9864cc30786ef1aa9a05b3bcbc1f77" category="paragraph"><block ref="e82b0a1e1e2827556ee65463ed3047a4" category="inline-image-macro-rx" type="image"></block> * Mise en miroir*</block>
   <block id="b3bcc5301536e767580cb521ea8a9168" category="paragraph">Configurez des paires en miroir synchrones ou asynchrones entre deux baies de stockage.</block>
-  <block id="1bd3e4c10268fad374e342773a76ebe0" category="paragraph"><block ref="264f7a0a6d9627b72e0ff1e75bd955e1" category="inline-image-macro-rx" type="image"></block> *Gérer les groupes*</block>
   <block id="909ebd15eb02815e3d2963dd3edfd9f6" category="paragraph">Organisez les baies de stockage en groupes pour une gestion simplifiée.</block>
-  <block id="5e703a60d5f347789f2f9c95020041b5" category="paragraph"><block ref="948395b1a333fdf5713da99763fb9a82" category="inline-image-macro-rx" type="image"></block> *Centre de mise à niveau*</block>
   <block id="cadb34e6a3f0b6fef8b65f6b4f83fbd0" category="paragraph">Mettez à niveau le logiciel du système d'exploitation SANtricity sur plusieurs baies de stockage.</block>
-  <block id="f2debbf0049c9d07a452e7b8f7f8512e" category="paragraph"><block ref="8e9d51ab38f1ad95d1018824362f594b" category="inline-image-macro-rx" type="image"></block> * Certificats*</block>
   <block id="d4d6f2044fbcdd351a413cab792d2d9c" category="paragraph">Créez des demandes de signature de certificat (RSC), importez des certificats et gérez des certificats existants pour plusieurs matrices de stockage.</block>
   <block id="121cd24338b48712373ab15539868779" category="paragraph">Configurez l'authentification utilisateur qui exige que les utilisateurs se connectent à Unified Manager avec les informations d'identification attribuées.</block>
   <block id="d424dbef08902607fe74ce66143ded85" category="summary">Accédez à Unified Manager et connectez-vous à ce portail.</block>
@@ -8311,28 +8253,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">Remarque : pour les systèmes d'exploitation SANtricity E-Series/EF-Series</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
-  <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interface de System Manager</block>
-  <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Interface Unified Manager</block>
-  <block id="e95315401141b931451e32ea694b6d92" category="sidebar">Fiche technique du logiciel SANtricity</block>
-  <block id="421eeeca306bdf1873654f04f6d8e61e" category="sidebar">Documentation E-Series</block>
-  <block id="b00771a05354ff5b2df1b388cfb6c874" category="sidebar">Documentation sur les systèmes E-Series</block>
-  <block id="06e7eb701ce804d46bd8c25ab5b395f0" category="sidebar">Référence de l'interface de ligne de commande (CLI)</block>
-  <block id="8a47162648ffc3ff0cf630036d36f2d6" category="sidebar">Les API SANtricity</block>
-  <block id="92850b78bdc20bc1df259e9c026d1744" category="sidebar">Services Web</block>
-  <block id="e925850eee1d36b9012f5887fe6721da" category="sidebar">Plug-in pour vCenter</block>
-  <block id="b7d21f40b4f600f6d264e065bfc2ef45" category="sidebar">Fournisseurs SMI-S</block>
-  <block id="4ad3ac8fcad31828ef9c8a0f6e3612d1" category="sidebar">Add-ons pour les applications de performance</block>
-  <block id="340bde3d9f9d57bac1774835ed1203cb" category="sidebar">Application SANtricity pour Splunk Enterprise</block>
-  <block id="a9a95fb3e7f3ac479078e21d446253a8" category="sidebar">Add-on pour la technologie Splunk pour SANtricity</block>
-  <block id="bb86e40f418d08cd8d7bbeec844246ad" category="sidebar">Analyseur de performances avec E-Series + Grafana</block>
-  <block id="78108480bada28e46fb2b45e1f33a4db" category="sidebar">Blog sur l'analyseur de performances E-Series</block>
-  <block id="958ff83dbf7d0240d610b02eded954cd" category="sidebar">Pour les ses</block>
-  <block id="181d79a3e511e53525d453c7bfd76b1e" category="sidebar">Formation technique E-Series/EF-Series (connexion requise)</block>
-  <block id="5274593635fc2a3195c85eefd393e7e6" category="sidebar">Présentation de EF300 et détails techniques (connexion requise)</block>
-  <block id="b7d6c20f0b34e1cb56ec4c6629bb1d94" category="sidebar">NetApp Fusion (connexion requise)</block>
-  <block id="974ad78dc53c253ebfe5b2b8b376f353" category="sidebar">Les outils prennent en charge</block>
-  <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ (connexion requise)</block>
-  <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">Téléchargements E-Series/SANtricity (connexion requise)</block>
   <block id="c8a33107c06551c9b2d94030edec5949" category="sidebar">Configurer la matrice</block>
   <block id="d0e1f6c94a3c246f0944869e917dd6b0" category="sidebar">Configuration initiale</block>
   <block id="33ccba682d8aacdfad3cf694806f090e" category="sidebar">Mot de passe administrateur</block>
@@ -8570,13 +8490,11 @@
   <block id="f033ab37c30201f73f142449d037028d" category="paragraph">80</block>
   <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
   <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
-  <block id="1cf9153cf0b1bfe4b703e41b4509763e" category="summary">SANtricity Unified Manager 6</block>
   <block id="d1b1ed9561d588b34b9b60028f6966b9" category="admonition">Si Access Management est configuré à l'aide des fonctionnalités SAML (Security assertion Markup Language) intégrées à la baie, une expiration de session peut se produire lorsque la session SSO de l'utilisateur atteint sa limite maximale. Cela peut survenir avant le délai d'expiration de la session System Manager.</block>
   <block id="cd038504338f9921b8afe6d5ed6c6232" category="paragraph">La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600 ou EF300.</block>
   <block id="b84bb83d3d8cd48ddc066fe0c6d41ead" category="paragraph">La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF600 ou EF300.</block>
   <block id="56bdcfc544aad0bd6521d9f11a6f56dd" category="admonition">Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire d'une paire en miroir asynchrone doivent correspondre au même protocole, au même niveau de tiroir, à la même taille de segment, au même type de sécurité et au même niveau RAID. Les paires en miroir asynchrones non éligibles n'apparaîtront pas dans la liste des volumes disponibles.</block>
   <block id="2df1194323f38bb1b30fdb6a9b3d4da3" category="paragraph">Cette fonctionnalité n'est pas disponible pour la mise en miroir synchrone sur les systèmes de stockage EF600 ou EF300.</block>
-  <block id="050910c569f1cb9044086ceee795e2f8" category="doc">Gestionnaire système SANtricity 11.8</block>
   <block id="ada2454c6d83cd46018f8d1e49aa4123" category="paragraph">La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF300 ou EF600.</block>
   <block id="ecd6161dde3044403e9aa37dc3bc6ee3" category="paragraph">Oui^3^</block>
   <block id="770594fef329f8bc4364a508f0a7d73a" category="paragraph">^1^ le volume cible doit avoir une capacité égale ou supérieure à la capacité indiquée pour le volume fin.</block>
@@ -8588,7 +8506,6 @@
   <block id="9e6fb4471f8afc13fc87e4a085a3babb" category="admonition">Certaines opérations peuvent ne pas être disponibles lorsque des modifications des paramètres de volume sont en cours</block>
   <block id="fd00f06afe550f6cfb8040bc3764c3f4" category="list-text">SSD cache n'est utilisé que s'il est avantageux de placer les données en cache pour améliorer les performances globales du système.</block>
   <block id="b2e269fa841df7525e9667d4a248ed9a" category="paragraph">Sélectionnez cette option pour activer la mise en cache en lecture seule sur les disques SSD.</block>
-  <block id="319de80f12a723289ba5d8bb3571caa8" category="doc">Gestion de baie unique avec System Manager 11.8</block>
   <block id="4da78d22f1b5a94a1c267b5b01354570" category="summary">Si nécessaire, vous pouvez exporter les métadonnées du fournisseur de services pour la baie de stockage et réimporter le fichier dans le système du fournisseur d'identités.</block>
   <block id="59fbf0c7e58119d248743b557a6f57e7" category="paragraph">Cette tâche permet d'exporter des métadonnées à partir du contrôleur. L'IDP a besoin de ces métadonnées pour établir une relation de confiance avec le contrôleur et pour traiter les demandes d'authentification. Le fichier inclut des informations telles que le nom de domaine du contrôleur ou l'adresse IP que le IDP peut utiliser pour envoyer des demandes.</block>
   <block id="7050266ad7bc7b4de9d49fa25a2e04d7" category="list-text">Cliquez sur *Exporter* pour enregistrer le fichier de métadonnées sur votre système local.</block>
@@ -8623,52 +8540,16 @@
   <block id="8fced73c31ae4d255ba5500bd98c8d76" category="paragraph">Le langage SAML (Security assertion Markup Language) est une norme XML pour l'authentification et l'autorisation entre deux entités. SAML permet l'authentification multifacteur, dans laquelle les utilisateurs doivent fournir au moins deux éléments pour prouver leur identité (par exemple, un mot de passe et une empreinte digitale). La fonction SAML intégrée à la baie de stockage est conforme à la norme SAML2.0 pour l'assertion, l'authentification et l'autorisation d'identité.</block>
   <block id="25e21eea77a06faadbc2ce2007dfd8fa" category="paragraph">Veillez à ne pas supprimer vos autorisations lorsque SAML est activé, faute de quoi vous perdrez l'accès à Unified Manager.</block>
   <block id="bdf60d91552728cd5d2f943df141631b" category="paragraph">Cliquez dans le champ et sélectionnez l'un des rôles de la matrice de stockage à mapper à l'attribut. Vous devez sélectionner individuellement chaque rôle que vous souhaitez inclure pour ce groupe. Le rôle Monitor est requis en combinaison avec d'autres rôles pour se connecter à Unified Manager. Un rôle d'administrateur de sécurité doit être attribué à au moins un groupe. Les rôles mappés incluent les autorisations suivantes :</block>
-  <block id="84f60aaee7374184081d849821cae03b" category="doc">Nouveautés de SANtricity OS 11.80</block>
-  <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">Nouvelles fonctionnalités de la version 11.80</block>
-  <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">Analyse améliorée de parité des volumes</block>
-  <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">L'analyse de parité des volumes peut désormais être lancée en arrière-plan via l'API REST ou l'interface de ligne de commande. L'acquisition de parité résultante s'exécute en arrière-plan tant que l'opération d'acquisition est nécessaire. Les opérations d'analyse survivent aux redémarrages du contrôleur et aux opérations de basculement.</block>
-  <block id="b9a173a4a6a7b368e4cd4fde15879372" category="paragraph">Prise en charge de SAML pour Unified Manager</block>
-  <block id="dc505118a542aefe283668ff60bf1633" category="paragraph">Unified Manager prend désormais en charge le langage SAML (Security assertion Markup Language). Une fois SAML activé pour Unified Manager, les utilisateurs doivent utiliser l'authentification multifacteur contre le fournisseur d'identités pour interagir avec l'interface utilisateur. Notez qu'une fois SAML activé sur Unified Manager, l'API REST ne peut pas être utilisée sans passer par le fournisseur d'accès intégré pour authentifier les requêtes.</block>
-  <block id="43a12a9165de329d02388e8e878f20ca" category="paragraph">Fonction de configuration automatique</block>
-  <block id="ef6a29a31f9fb810c02278975cd6cd39" category="paragraph">Prend désormais en charge la possibilité de définir le paramètre de taille de bloc de volume à utiliser avec la fonction de configuration automatique pour la configuration initiale de la baie. Cette fonction est disponible dans l'interface de ligne de commande uniquement en tant que paramètre « blockSize ».</block>
-  <block id="017965dda869643c4d632c18853208a2" category="paragraph">Signature cryptographique du micrologiciel du contrôleur</block>
-  <block id="f9b1cc083f0890b8fff17a83a0360f47" category="paragraph">Le firmware du contrôleur est signé cryptographiquement. Les signatures sont vérifiées lors du téléchargement initial et au démarrage de chaque contrôleur. Aucun impact attendu sur l'utilisateur final. Les signatures sont soutenues par un certificat de validation étendue émis par l'autorité de certification.</block>
-  <block id="637780f8b22fe474ce198ef516dd7d6f" category="paragraph">Signature cryptographique du micrologiciel du lecteur</block>
-  <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">Le firmware du disque est signé cryptographiquement. Les signatures sont vérifiées lors du téléchargement initial et sont soutenues par un certificat de validation étendue émis par l'autorité de certification. Le contenu du micrologiciel du lecteur est désormais livré sous forme de fichier ZIP, qui contient l'ancien micrologiciel non signé ainsi que le nouveau micrologiciel signé. L'utilisateur doit choisir le fichier approprié en fonction de la version de code exécutée sur le système cible.</block>
-  <block id="3c65e3636111523111e45a49a80face3" category="paragraph">Gestion du serveur de clés externe - taille de la clé de certificat</block>
-  <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">La nouvelle taille de clé de certificat par défaut est de 3072 bits (à partir de 2048). Les tailles de clé jusqu'à 4096 bits sont prises en charge. Un bit NVSRAM doit être modifié pour prendre en charge les tailles de clé autres que celles par défaut.</block>
-  <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">System Manager et Unified Manager ne se lancent que si la configuration minimale requise pour le navigateur est respectée</block>
-  <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">Une version minimale de l'explorateur est requise avant le lancement de System Manager ou d'Unified Manager. Les versions minimales prises en charge sont les suivantes :</block>
-  <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox version minimale 80</block>
-  <block id="773389fc57f11b52dbe4c622adc51a3b" category="list-text">Chrome version minimale 89</block>
-  <block id="2ac44b1b15c0ea01cbb812f5c6cf9b1e" category="list-text">Edge version minimale 90</block>
-  <block id="3534d42485ecd595e87248bbb2c6fb1b" category="list-text">Safari version minimale 14</block>
-  <block id="bb4e0c918ecc32e775e010bc9f6eff59" category="paragraph">Prise en charge des disques SSD NVMe FIPS 140-3</block>
-  <block id="eca8285b82a553e8fbe1803bfdeced3e" category="paragraph">Les disques SSD NVMe FIPS 140-3 certifiés NetApp sont désormais pris en charge. Ils seront correctement identifiés en tant que tels dans le profil de la baie de stockage et dans System Manager.</block>
-  <block id="fb8aaa0a635cb460bcf41d9303fca571" category="paragraph">Prise en charge du cache de lecture SSD sur les systèmes EF300 et EF600</block>
-  <block id="14d2cdc88c041d0313b6c691ee27338f" category="paragraph">Le cache de lecture SSD est désormais pris en charge sur les contrôleurs EF300 et EF600 utilisant des disques durs avec extension SAS.</block>
-  <block id="8a00db0b101a6946d9caffef7979d8c4" category="paragraph">Prise en charge de la mise en miroir à distance asynchrone Fibre Channel et iSCSI sur les systèmes EF300 et EF600</block>
-  <block id="8ea61c04007ddc1b703be50a63a1b3ee" category="paragraph">La mise en miroir à distance asynchrone (ARVM) est désormais prise en charge sur les contrôleurs EF300 et EF600 avec des volumes basés sur NVMe et SAS.</block>
-  <block id="d99731ca7d5c671cea9d584100385335" category="paragraph">Prise en charge des modèles EF300 et EF600 sans lecteur dans le bac de base</block>
-  <block id="65c8d39e2e73985a77ff0c8a61c30608" category="paragraph">Les configurations de contrôleurs EF300 et EF600 sans disques NVMe dans le bac de base sont désormais prises en charge.</block>
-  <block id="248bd33e5007bccdca76e9d0459df99c" category="paragraph">Ports USB désactivés pour toutes les plates-formes</block>
-  <block id="3ea3899fea5b85d0cc4b9b3bf6291d51" category="paragraph">Les ports USB sont maintenant désactivés sur toutes les plates-formes.</block>
   <block id="1c0cc3436484a2d69e30cbe7f637d3ed" category="paragraph">Identificateur de port</block>
   <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">Le moniteur d'événements envoie des alertes au serveur syslog lorsqu'un événement alertable se produit. Pour configurer davantage les paramètres syslog des journaux d'audit, reportez-vous à la section<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
   <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Après la configuration, tous les nouveaux journaux d'audit sont envoyés au serveur syslog. Les journaux précédents ne sont pas transférés. Pour configurer davantage les paramètres syslog des alertes, reportez-vous à la section<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
-  <block id="c76b2a182c36f1230239bad4c28112a3" category="doc">Documentation du logiciel SANtricity 11.80</block>
-  <block id="3260e793a72a8ad4c6f8b10665ca25ac" category="doc">Gestion de plusieurs baies avec Unified Manager 6</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager : interface web utilisée pour gérer une baie de stockage individuelle de votre réseau.</block>
   <block id="9cd5d105b8b19ef4ba01cc21ecc14cdc" category="admonition">Les baies de stockage EF600 et EF300 ne prennent pas en charge la mise en miroir synchrone ou les volumes fins.</block>
-  <block id="c717e9da08557631ce6af0db7935e837" category="paragraph">Unified Manager est un logiciel en ligne utilisé pour gérer l'ensemble de votre domaine. La vue centrale présente le statut de toutes les baies E-Series et EF-Series les plus récentes, telles que les baies E2800, EF280, EF300, E5700, EF570, Et EF600. Vous pouvez également effectuer des opérations par lots sur des matrices de stockage sélectionnées.</block>
   <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Vues des lecteurs, des contrôleurs et des composants</block>
   <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Pour basculer entre les vues des tiroirs avant et arrière, sélectionnez *lecteurs* ou *contrôleurs et composants* à l'extrême droite (le lien qui s'affiche dépend de la vue actuelle). La vue *lecteurs* affiche les lecteurs et les baies de lecteurs vides. La vue *contrôleurs et composants* affiche les contrôleurs, les modules IOM (ESM), les boîtiers d'alimentation/ventilateur ou les baies de contrôleur vides. Au bas de la page, vous pouvez également sélectionner *Afficher tous les lecteurs*.</block>
-  <block id="a26b62aaf12a1354ed2f5726f1a44f96" category="sidebar">Documents relatifs à SANtricity 11.8</block>
-  <block id="d10baea6d3a0d4c1b494ce57d94cdadb" category="paragraph">Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.8.</block>
   <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11.80 Notes de mise à jour</block>
   <block id="b1aa5c2649b826498df008931f57355f" category="list-text"><block ref="b1aa5c2649b826498df008931f57355f" category="inline-link-rx"></block></block>
   <block id="14061ba06990b3ff80809e75e9263c4d" category="admonition">Les systèmes doivent exécuter SANtricity OS 11.70.5 pour effectuer une mise à niveau vers la version 11.80.x ou ultérieure.</block>
-  <block id="df9168fd1981b1464f7c0d38b2207c30" category="paragraph"><block ref="df9168fd1981b1464f7c0d38b2207c30" category="inline-link-rx"></block></block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -8677,32 +8558,7 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="deab0ae4ee87e153ce15a1182bf91617" category="paragraph">Les valeurs de sélection de taille de clé sont les suivantes :</block>
-  <block id="92c9cd6ce879c70c929395d49566fca3" category="list-text">VALEUR PAR DÉFAUT = 0</block>
-  <block id="91d66be9b353d488558a2fc87f866263" category="list-text">LONGUEUR 2048 = 1</block>
-  <block id="60f95b27118522aa50716737cc578a39" category="list-text">LONGUEUR 3072 = 2</block>
-  <block id="46b1448aca55d48c198834955f8e6b6a" category="list-text">LONGUEUR 4096 = 3</block>
-  <block id="80b104f769b8bbef5d4b39ffe2efd816" category="paragraph">Pour modifier la taille de la clé à 4096 via SMcli :</block>
-  <block id="7f1a49e026d5afc827c5a0184af45fe0" category="paragraph"><block ref="53d52ccae7296ad3c52a5cc86881da22" prefix="" category="inline-code"></block><block ref="52baead6a42dd6532784cc33f69d8d94" prefix=" " category="inline-code"></block></block>
-  <block id="ad7ca0ac2dce92cb837bf072818ce860" category="paragraph">Interroger la taille de la clé :</block>
-  <block id="dc8f09004148c8853414b2fe2f19c503" category="paragraph"><block ref="5dfae352b2be729a121ea8024c5dc604" prefix="" category="inline-code"></block></block>
-  <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">Amélioration des pools de disques</block>
-  <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">Les pools de disques créés avec des contrôleurs exécutant la version 11.80 ou supérieure seront des pools _version 1_ et non des pools _version 0_. Une opération de mise à niveau vers une version antérieure est limitée lorsqu'un pool de disques _version 1_ existe.</block>
-  <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">La version d'un pool de disques peut être identifiée dans le profil de la matrice de stockage.</block>
-  <block id="e7ad6d421850c5694f6bdc4321ac3507" category="sidebar">Avec le logiciel SANtricity 11.80, vous exploitez tout le potentiel de vos baies Flash hybrides E-Series et 100 % Flash EF-Series pour les applications à forte charge de travail, notamment l'analytique, la vidéosurveillance, la sauvegarde et la restauration.</block>
   <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
-  <block id="07ed085acfb4f203e63427ca4494f863" category="section-title">Nouvelles fonctionnalités de la version 11.80.1</block>
-  <block id="65e6e49c7d0840983a93edfc482a4650" category="paragraph"><block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix="" category="inline-code"></block> paramètre</block>
-  <block id="2b21cb9530a6c7704a66108d45c196a1" category="inline-link">Paramètres de ligne de commande SMcli téléchargeables</block>
-  <block id="99e522a2649e8eb1047cda09b5e2bbd9" category="paragraph">Une nouvelle<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> Le paramètre est maintenant disponible dans le SMcli. Ce nouveau paramètre vous permet de rechercher tous les périphériques de bloc natifs SCSI associés à vos matrices de stockage. Pour plus d'informations, voir<block ref="7e8dc17a50219e17a3bfb2effae73889" category="inline-link-rx"></block>.</block>
-  <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">Statistiques du noyau Ethernet</block>
-  <block id="a5302be9e5d09f8d45fab47dcbe1907c" category="inline-link">Afficher les packages de statistiques iSCSI</block>
-  <block id="4f8a241c3cb470ed44d71b0d64d57b80" category="paragraph">Une nouvelle option Ethernet Kernel Statistics est désormais disponible dans la page View iSCSI Statistics Packages de System Manager. Cette nouvelle option vous permet d'afficher les statistiques des pilotes de noyau de plate-forme du périphérique iSCSI. Pour plus d'informations, voir<block ref="fa652b493edb0147d8d73c9bf12a908b" category="inline-link-rx"></block>.</block>
-  <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">Ajout de la possibilité de bloquer les adresses IP via un terminal d'API REST</block>
-  <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">Les utilisateurs peuvent désormais bloquer des adresses IP spécifiques via le noeud final Settings <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>). Une fois configuré via le noeud final Settings, seules les adresses IP spécifiées via une liste blanche peuvent communiquer avec le périphérique de stockage. Cette nouvelle fonctionnalité prend en charge les listes d'adresses IPv4 et IPv6.</block>
-  <block id="85873696abedac8fb70b86eef30b99fe" category="paragraph">Plug-in vCenter Storage</block>
-  <block id="c55dbb17c221990804802e322335dc65" category="paragraph">Le plug-in vCenter Storage a été mis à jour pour assurer la compatibilité avec la version E-Series 11.80.1.</block>
-  <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Le proxy de services Web a été mis à jour vers la version 6.1 pour assurer la compatibilité avec la version 11.80.1 du système E-Series.</block>
   <block id="e6d11ff06b4fbf2dfe6c6c9c235884bd" category="paragraph">Le volume d'accès est utilisé dans l'instance suivante :</block>
   <block id="ea37b1fb3ab53a251f6e5cadc36a4c25" category="summary">La création d'un hôte est l'une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d'autoriser l'accès E/S aux volumes. Vous ne pouvez créer un hôte que manuellement.</block>
   <block id="a3cd72e3a5590e7769cb2590ecd015eb" category="doc">Création manuelle d'hôtes</block>
@@ -8718,7 +8574,6 @@
   <block id="966b5cc0cd53cc056d0a168b8543c134" category="paragraph">Si vous souhaitez que les hôtes disposent d'un accès spécifique à certains volumes de la baie de stockage, vous devez _pas_ utiliser le cluster par défaut. À la place, vous devez associer les identificateurs de port hôte à leurs hôtes correspondants. Cette tâche peut être effectuée manuellement pendant l'opération Créer un hôte. Ensuite, vous affectez des volumes à un hôte individuel ou à un cluster hôte.</block>
   <block id="a543598a03d2f4a4c65c995fe07c12e1" category="summary">Le champ Type de système d'exploitation hôte contient le système d'exploitation de l'hôte. Vous pouvez sélectionner le type d'hôte recommandé dans la liste déroulante.</block>
   <block id="8cb031b774a78de2f6be4db3058da109" category="list-text">Exécutez l'utilitaire spécifique au système d'exploitation (disponible auprès d'un fournisseur tiers), puis exécutez la commande SMcli<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> pour mettre en corrélation les noms de volumes avec les noms de matrices de stockage hôte.</block>
-  <block id="0af3ac37d01c9873f79f927554ff17b2" category="paragraph">Le SMcli est disponible directement via le Gestionnaire système SANtricity. Cette version téléchargeable du SMcli est disponible sur les systèmes EF600, EF300, E5700, EF570, E2800, Et des contrôleurs EF280. Pour télécharger le SMcli dans le Gestionnaire système SANtricity, sélectionnez *Paramètres* &gt; *système* et *Add-ons* &gt; *interface de ligne de commande* .</block>
   <block id="0ea0a94f9ade478fd556172383edecad" category="admonition">Les types de statistiques affichés dans System Manager sont basés sur les statistiques disponibles pour la baie de stockage.</block>
   <block id="707d82b79d1a69b9d510d00c5aaf1d9e" category="list-text">*Statistiques du noyau Ethernet* -- fournit des statistiques pour les pilotes du noyau de plate-forme du périphérique iSCSI. Les statistiques du noyau affichent des données réseau similaires à celles de l'option de statistiques TCP/IP. Cependant, les données statistiques du noyau sont collectées à partir des pilotes du noyau de la plate-forme au lieu de directement à partir du matériel iSCSI.</block>
   <block id="32555c4aebeed331e68820e3e0ef23ce" category="list-text">Sélectionnez l'onglet *contrôleurs et composants*.</block>
@@ -8737,12 +8592,109 @@
   <block id="73e974e4615b6eb8c4db3e6a55137a8f" category="list-text">Le volume de capacité réservée doit partager le même type de disque que les volumes en miroir associés.</block>
   <block id="bf9f60c11f9080af705719592217436d" category="list-text">Si le volume de capacité réservée est créé sur des disques NVMe, ses volumes en miroir doivent également être créés sur des disques NVMe.</block>
   <block id="402b0811b7e491a20af6474c5296c733" category="list-text">Si le volume de capacité réservée est créé sur des disques SAS, ses volumes en miroir doivent également être créés sur des disques SAS.</block>
-  <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">Nouvelles fonctionnalités de la version 11.80.1R1</block>
-  <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Augmentation de la longueur des clés des nouveaux certificats de gestion auto-signés et signés par une autorité de certification.</block>
-  <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">La taille de la clé de certificat de gestion pour le certificat auto-signé des applications SANtricity System Manager et Unified Manager a été modifiée de 2048 à 3072 bits. Cette modification s'applique aux certificats nouvellement générés auto-signés et signés par une autorité de certification à partir des applications SANtricity. La longueur de clé est fixe et n'est pas affectée par les définitions de taille de clé par défaut dans NVSRAM.</block>
   <block id="56ef6aeb1657a77ed998f95bff3a67c0" category="paragraph">Désactive ARVM</block>
   <block id="bb81ad14bd710a498f194a6ac67fea61" category="paragraph">Les volumes source et cible de copie doivent avoir les mêmes tailles de bloc adressables par l'hôte/logiques (taille de secteur) rapportées.</block>
   <block id="56ce420df3a94d675f30cc6b382c3082" category="paragraph">Les tailles de bloc de volume signalées sont les suivantes :</block>
-  <block id="6451d4e0b30d3e2a2b45dc3de85ffe6d" category="list-text">*Taille de bloc native* – la taille de bloc du volume correspond à la taille de bloc du disque, 512 ou 4K.</block>
-  <block id="7de7e0688d2ed2bd02ab78f61c88a723" category="list-text">*Taille de bloc 512 émulée* - les lecteurs sont de 4 Ko, mais la taille de bloc indiquée est de 512.</block>
+  <block id="a5739ed07187fa97fb95b86ca98419fc" category="inline-link">Guide de mise à niveau des contrôleurs - modèles de contrôleurs existants</block>
+  <block id="819e472be532c198f4428448f644516b" category="list-text"><block ref="819e472be532c198f4428448f644516b" category="inline-link-rx"></block></block>
+  <block id="056179e9e794d5023a226430ee4efb8d" category="section-title">SANtricity version 11.8</block>
+  <block id="d16a613e55f21678f189a2fe147619f8" category="list-text"><block ref="d16a613e55f21678f189a2fe147619f8" category="inline-link-rx"></block></block>
+  <block id="e8b164999d03a57227fb0dc4e31b1f9a" category="list-text"><block ref="e8b164999d03a57227fb0dc4e31b1f9a" category="inline-link-rx"></block></block>
+  <block id="7a2b27b2d95b2db288029dec9f945c50" category="inline-link">11.90 Notes de mise à jour</block>
+  <block id="a780d55204be966b795f04cc4bf22137" category="list-text"><block ref="a780d55204be966b795f04cc4bf22137" category="inline-link-rx"></block></block>
+  <block id="5e40a8e83b3a3f822534bef7faa8799b" category="paragraph"><block ref="5e40a8e83b3a3f822534bef7faa8799b" category="inline-link-rx"></block></block>
+  <block id="01e0b2ba5ead95d64e3071a148f7dc95" category="paragraph"><block ref="9736d9f6dc9242e38869944fa056dfab" category="inline-image-macro-rx" type="image"></block> *Performances*</block>
+  <block id="730eaa798c5f8a877db1f1518847a4e4" category="paragraph"><block ref="7671c6425a04efd849fb29c1bc3d6f15" category="inline-image-macro-rx" type="image"></block> *Stockage*</block>
+  <block id="21a1e68164f738b8be1dae11d5a694b3" category="inline-image-macro">Protection des données</block>
+  <block id="48101fc47c99f4be00100bd0e24fa482" category="paragraph"><block ref="cf60c16dfd9a457f7706628c1f3e2cf5" category="inline-image-macro-rx" type="image"></block> *Protection des données*</block>
+  <block id="cc3a54aae413901b7935f06eb0747fb4" category="paragraph"><block ref="6b9b5b4553280096034f55188a5b3e0f" category="inline-image-macro-rx" type="image"></block> *Matériel*</block>
+  <block id="59cb2f7d30c6e815131b958e5caaa07f" category="paragraph"><block ref="4fb44adb8f67b036fd76de34524b3216" category="inline-image-macro-rx" type="image"></block> *Alertes*</block>
+  <block id="5dfe8f7b6636e4f45a5e95a77c0529da" category="paragraph"><block ref="bdb34cfbec72a80b17a14942fe759070" category="inline-image-macro-rx" type="image"></block> *Gestion des accès*</block>
+  <block id="e4709a73a287a5f033f5b1b5142cb74d" category="inline-image-macro">Paramètres système</block>
+  <block id="de8011abde4e4344c82af51912b3ce19" category="paragraph"><block ref="2bce2265bb1e82bb0d0858adf2dafedf" category="inline-image-macro-rx" type="image"></block> *Paramètres système*</block>
+  <block id="9dcfdd4141be874fb7eb13880a5fd525" category="paragraph"><block ref="1cb7eabea009b4b9cfe98093989eadbf" category="inline-image-macro-rx" type="image"></block> *Support*</block>
+  <block id="a06a26693ca66f654ff2c2dcecc3e13f" category="paragraph">Unified Manager est un logiciel en ligne utilisé pour gérer l'ensemble de votre domaine. La vue centrale présente le statut de toutes les baies E-Series et EF-Series les plus récentes, telles que les baies E4000, E2800, EF280, EF300, E5700, EF570 et EF600. Vous pouvez également effectuer des opérations par lots sur des matrices de stockage sélectionnées.</block>
+  <block id="bb426997d075117a34b0e82e716e9988" category="inline-image-macro">Découverte de la baie de stockage</block>
+  <block id="49e4791fdcd34bdf6b59ed172268d67f" category="paragraph"><block ref="9ff56b9b0514866913bcdc835ac16829" category="inline-image-macro-rx" type="image"></block> *Découvrir les matrices de stockage*</block>
+  <block id="9506f0fd0f7f1b07960b15b4c9e68d1a" category="inline-image-macro">Lancement</block>
+  <block id="dd5912f8cf835c33b2a3b61d5e141ff0" category="paragraph"><block ref="59d02cad0b7ca821298861a148459521" category="inline-image-macro-rx" type="image"></block> *Lancement*</block>
+  <block id="352a228c155779f9e34542d5c4e945ce" category="inline-image-macro">Importer les paramètres</block>
+  <block id="3a7809dfe80b7e55e290a69762b376b0" category="paragraph"><block ref="293657c6f46812024123d05cfacb8f5d" category="inline-image-macro-rx" type="image"></block> *Paramètres d'importation*</block>
+  <block id="e55d5139e241eec51cb53b8725b111ae" category="paragraph"><block ref="1d994cafa90bd8534dce98204298c26f" category="inline-image-macro-rx" type="image"></block> *Mise en miroir*</block>
+  <block id="aba9f7d7443652e858969bfc280690b1" category="inline-image-macro">Gérer les groupes</block>
+  <block id="8ab578a8eab9df734659a9bbad8fed32" category="paragraph"><block ref="ed1eedd0a4592b9eb8bd506e1ade1b98" category="inline-image-macro-rx" type="image"></block> *Gérer les groupes*</block>
+  <block id="54f78baeb56f558141400626a8f1d3e3" category="inline-image-macro">Centre de mise à niveau</block>
+  <block id="0d3ce623d8cdbb3fa0594ad836176dcd" category="paragraph"><block ref="35ec5ccd35af7c00f6a01e92abb155fc" category="inline-image-macro-rx" type="image"></block> *Centre de mise à niveau*</block>
+  <block id="74d5c3d79c00ee94f3d157db1001315d" category="paragraph"><block ref="8fe9c4eb7bbe7403b10e873dc7e654f9" category="inline-image-macro-rx" type="image"></block> *Certificats*</block>
+  <block id="db8b7299d08cc04191bf7a98173078ef" category="list-text">Pour définir des adresses IP statiques pour les contrôleurs E4000, E2800 et E5700, utilisez SANtricity System Manager. Pour définir des adresses IP statiques pour les contrôleurs E2700 et E5600, utilisez SANtricity Storage Manager. Une fois qu'une adresse IP statique est configurée, elle reste définie par tous les événements de liaison descendante/active.</block>
+  <block id="42004a862976ffc8afcece88d3ed14b7" category="paragraph">Une fois le lecteur défaillant, attendez au moins 60 secondes avant de le retirer.</block>
+  <block id="27ed3c2f0cc271f3ffd55cef1621928d" category="doc">Gestionnaire système SANtricity 11.9</block>
+  <block id="d85604754e30b3e09626f9f9fdbd8c6f" category="paragraph">Les protocoles suivants sont pris en charge : HTTPS et SMTP.</block>
+  <block id="ab468c035d308f2a8c552c4d5aac08f7" category="paragraph"><block ref="ab468c035d308f2a8c552c4d5aac08f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c792e44ea1f01accfca106a5f980c33" category="paragraph"><block ref="2c792e44ea1f01accfca106a5f980c33" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e3ef647d9c4d52f37e6e8692049489f5" category="paragraph"><block ref="e3ef647d9c4d52f37e6e8692049489f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ae04b8c08989c6922154b7c875f1ed28" category="paragraph"><block ref="ae04b8c08989c6922154b7c875f1ed28" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa089d11d37f87ad34ea6d956fa1fae8" category="paragraph">Vous pouvez gérer la mise en miroir asynchrone et la mise en miroir synchrone à l'aide de SANtricity System Manager.</block>
+  <block id="b3ff8e795b3d80ba68cbe1156469a2cb" category="list-text">*Sélectionner un fichier de clé privée* -- si nécessaire, cliquez sur le deuxième bouton *Parcourir* pour sélectionner un fichier de clé privée pour les contrôleurs de la matrice de stockage.</block>
+  <block id="ee01112415d197728f20c99202d37eb2" category="list-text">*Sélectionner le certificat de serveur du serveur de gestion des clés* -- cliquez sur le troisième bouton *Parcourir* pour sélectionner le fichier de certificat du serveur de gestion des clés. Vous pouvez choisir un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.</block>
+  <block id="54c0574306f4d58143114e2e0861640f" category="paragraph">Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).</block>
+  <block id="66093664d0d43a7f4fc3ddbad78f691c" category="paragraph">Pour obtenir un certificat client, utilisez System Manager pour effectuer une RSC pour la matrice de stockage. Vous pouvez également générer une RSC en externe à l'aide d'une paire de clés privée et publique.</block>
+  <block id="ff58caf5069b4eb4a200d0205926b16c" category="paragraph">Vous pouvez ensuite télécharger la RSC sur un serveur de gestion des clés et générer un certificat client à partir de ce serveur. Une fois que vous avez un certificat client, copiez ce fichier vers l'hôte sur lequel vous accédez à System Manager.</block>
+  <block id="5378e651b013c9c6feff8ff6044d166f" category="list-text">Vous pouvez également générer une demande de signature de certificat en externe à l'aide d'une paire de clés privée et publique.</block>
+  <block id="63a0114594ce428e6c9715084a3200f4" category="paragraph">Vous pouvez générer une demande de signature à partir de System Manager ou en externe à l'aide d'une paire de clés privée et publique. La demande de signature est envoyée à une autorité de certification pour générer les fichiers de certificat. Une fois que l'autorité de certification a renvoyé les fichiers de certificat, vous les importez à l'aide de System Manager.</block>
+  <block id="69d858803139fe61364ff86d43e771de" category="admonition">Les fichiers CSR générés en externe via des paires de clés privées et publiques peuvent être importés via la boîte de dialogue Créer une clé de sécurité externe. Pour plus d'informations sur l'importation d'un fichier CSR généré en externe, reportez-vous à la section<block ref="699b0ddfb388ee73fa0bfd41ac82336b" category="inline-link-rx"></block>.</block>
+  <block id="29d1ee766954d56ae8238b1059bfafc4" category="list-text">*Nom commun* -- Un nom qui identifie le client. Il est courant de faire correspondre ce qui se trouve dans le nom commun aux exigences du serveur KMS pour les conventions de dénomination des certificats client. Le nom commun permet généralement au KMS d’identifier le certificat du client lorsqu’il est présenté au cours d’une poignée de main.</block>
+  <block id="92808c67abdc13e7ad24a7cf2c99f924" category="list-text">Demandez à l'autorité de certification un certificat client signé approuvé par le serveur de gestion des clés.</block>
+  <block id="b40c23ca4af2991caf4a498caf524281" category="admonition">Il est courant que le serveur de gestion des clés dispose d'une fonction qui génère des certificats signés directement, car il fonctionne comme sa propre autorité de certification.</block>
+  <block id="5582a122966615aecf1a59ee9608f3ed" category="list-text">Si vous avez généré un fichier de certificat en externe à l'aide d'une paire de clés privée et publique, cliquez sur le bouton *Parcourir* en regard de *Sélectionner un fichier de clé privée* pour sélectionner le fichier de certificat pour les contrôleurs de la matrice de stockage.</block>
+  <block id="6f3c867468bb7d88038060f63957303e" category="inline-image-macro">Afficher/Masquer la colonne</block>
+  <block id="c8624a2d0591434eb4c7d02347e97100" category="paragraph">Cliquez sur l'icône de colonne *Afficher/Masquer* <block ref="258072d6c284064dc6fedf3bcab73fc0" category="inline-image-macro-rx" type="image"></block>pour sélectionner d'autres colonnes à afficher dans le tableau. Les colonnes supplémentaires incluent :</block>
+  <block id="a8875bbe4272c0bdd786cfaaedf77921" category="inline-image-macro">Basculer</block>
+  <block id="18a403c983fe9e6fd1b3f6e2ed1177f8" category="paragraph">Cliquez sur l'icône *Toggle* <block ref="90b70f76e2d4e07fe074ad83e4b0a4f3" category="inline-image-macro-rx" type="image"></block>pour ouvrir les champs de filtrage pour chaque colonne. Entrez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.</block>
+  <block id="1cdc076b28f70afac5fcedadf99fa119" category="inline-image-macro">Annuler</block>
+  <block id="942c04fb3e852a849078bbedc2c563ad" category="paragraph">Cliquez sur l'icône *Annuler* <block ref="12a3278132f7a92b9e1a0a36d87097d1" category="inline-image-macro-rx" type="image"></block>pour rétablir la configuration par défaut de la table.</block>
+  <block id="649c33cda48fb6cab9b779732e33f798" category="list-text">512 volumes (E4000 et E2800 Series)</block>
+  <block id="9bfa157f06e0cd4bf23f4d7c3522a973" category="image-alt">Objets Snapshot et volume de base</block>
+  <block id="f1683bd5111055cff52f3434b437bc43" category="admonition">La période d'analyse des supports par défaut est définie sur 120 jours.</block>
+  <block id="630fb851299f40643b158fbf236a2e8c" category="list-text">*Taille de bloc native* – la taille de bloc du volume correspond à la taille de bloc du disque, 512 ou 4K.</block>
+  <block id="f6c667584c393a129ba0a1a453306311" category="list-text">*Taille de bloc 512 émulée* - les lecteurs sont de 4 Ko, mais la taille de bloc indiquée est de 512.</block>
+  <block id="478ac1c2fc93cbde8a7f38011e1743e9" category="paragraph">Le SMcli est disponible directement via le Gestionnaire système SANtricity. Cette version téléchargeable de SMcli est disponible sur les contrôleurs E4000, EF600, EF300, E5700, EF570, E2800 et EF280. Pour télécharger le SMcli dans le Gestionnaire système SANtricity, sélectionnez *Paramètres* &gt; *système* et *Add-ons* &gt; *interface de ligne de commande* .</block>
+  <block id="8372cda02b92707718d83873eed70eff" category="image-alt">La structure des pools et des groupes de volumes</block>
+  <block id="861b7c78b853932749bb7fa53551562a" category="image-alt">Présentation des snapshots</block>
+  <block id="454b39575eef78952a66832d854eb9a8" category="paragraph">Vous pouvez gérer le stockage de votre système à l'aide du Gestionnaire système SANtricity.</block>
+  <block id="ae002d1d58a31e011d63e5c65fdaab56" category="admonition">Les volumes de stockage distant SANtricity ne sont actuellement pas pris en charge sur les systèmes E4000.</block>
+  <block id="9b14c33fdc0efe4872fc1eb7154525a9" category="image-alt">Présentation de la restauration des snapshots</block>
+  <block id="2f0854f7b2eefd5175e0f07fb053bd67" category="image-alt">Présentation des groupes de cohérence des snapshots</block>
+  <block id="499c45c544b6972f515b13489cac00c4" category="image-alt">Présentation des volumes Snapshot</block>
+  <block id="21bf9a718f1db52f3473f81edb06fb86" category="image-alt">Configurer le flux de travail de l'hôte</block>
+  <block id="6cb1f4545b0ac1779e5099bf499e2257" category="image-alt">Créer un flux de travail d'images instantanées</block>
+  <block id="d664803ea5bcb8c4b3e5252c810dd7ae" category="image-alt">Créer un flux de travail de volumes Snapshot</block>
+  <block id="00ae53caaeaab10fa6daf374082ce7c1" category="image-alt">Créer un flux de travail de volumes</block>
+  <block id="8f0db69b076bbcdb3c8760d4e3e98835" category="summary">La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la livraison des interventions au support technique.</block>
+  <block id="f519381eb9350988ee8b5119c9b920f9" category="paragraph">*Différences entre les méthodes HTTPS et Email*. La méthode de livraison par courrier électronique, qui utilise SMTP, présente des différences importantes par rapport à la méthode de livraison HTTPS. Tout d'abord, la taille des interventions pour la méthode E-mail est limitée à 5 Mo, ce qui signifie que certaines collections de données ASUP ne seront pas envoyées. Deuxièmement, la fonction AutoSupport OnDemand est disponible uniquement sur la méthode de distribution HTTPS.</block>
+  <block id="16ecd48fe399a494ac52761b115bd8e9" category="list-text">Si vous avez sélectionné HTTPS, sélectionnez l'un des paramètres de livraison suivants :</block>
+  <block id="0a71943276accb62215252f71d3e55e4" category="list-text">*Directement* -- ce paramètre de distribution est la sélection par défaut. Cette option vous permet de vous connecter directement au système de support technique de destination à l'aide du protocole HTTPS.</block>
+  <block id="22ec79b8668bcaf4a33eed694079e8b1" category="summary">La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la fourniture d'interventions AutoSupport au support technique.</block>
+  <block id="dd0ab6e042458857b9d76ede295a637e" category="image-alt">Mettre à niveau les emplacements du micrologiciel</block>
+  <block id="da31bdea5b9fdfa2bf077a70c49a1d66" category="image-alt">Workflow AutoSupport</block>
+  <block id="0ceabfdc68af97f8a0c7393faf135de8" category="image-alt">Workflow de mise à niveau du logiciel du contrôleur et du firmware</block>
+  <block id="ece14770330886bc2d41238acbfe48aa" category="summary">SANtricity Unified Manager 7</block>
+  <block id="3cd6f83d0a9a8330c077dfc98649ab8a" category="paragraph">Vous pouvez configurer les paramètres utilisés dans SANtricity Unified Manager.</block>
+  <block id="0be150145c60047c6667d2bfbc4085d9" category="image-alt">Connexion hors bande au client de gestion de réseau avec un navigateur Web.</block>
+  <block id="3ea0f7b73838fea25dfb4ff6da50f43a" category="doc">Nouveautés de SANtricity OS 11.90</block>
+  <block id="e6575254726c9c37843a559ef72300fd" category="paragraph">Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.9.</block>
+  <block id="a9ce161f80e5e22b8b95f7f9ca5f67ed" category="section-title">Nouvelles fonctionnalités de la version 11.90</block>
+  <block id="0d49c2d5fa6db45e427d9c6ca6839ac7" category="paragraph">Nouveau modèle de système de stockage E4000</block>
+  <block id="f79f2d98fb02cd051399681f3101fbb8" category="paragraph">Cette version présente le système de stockage économique E4000. Le E4000 prend en charge 12 et 60 lecteurs et une seule carte d'interface hôte (HIC) par contrôleur. Dans la version initiale, les cartes d'interface hôte prises en charge incluent iSCSI et Fibre Channel. Les systèmes de stockage E4000 et les autres systèmes de stockage E-Series peuvent être affichés et gérés dans Unified Manager.</block>
+  <block id="0d05e82ffcabd1bd655a97084285e90d" category="paragraph">Capacité accrue pour les pools de disques dynamiques</block>
+  <block id="372fa8b3c2d2e776e7b288a3b8bbd7da" category="paragraph">La capacité des pools de disques dynamiques (DDP) est passée à 12 po lorsque la capacité de chacun des disques du pool est supérieure à 23 To. Si la capacité d'un disque est inférieure à 23 To, la capacité du DDP est de 6 po.</block>
+  <block id="47366514f1926a1d18e6b7ee9660d7f5" category="paragraph">Augmentation des paramètres de numérisation des supports par défaut</block>
+  <block id="9b21ddbc5c4f3b0196cbd88ac900622e" category="paragraph">Le taux de numérisation des supports par défaut a été porté à 120 jours.</block>
+  <block id="545cf0306f91cc802f72bee950711b04" category="paragraph">Clé privée acceptée pour la gestion externe des clés</block>
+  <block id="45dc1f6fb3b875c733e188121fcc647a" category="paragraph">Le fichier de requête de signature de certificat (CSR) généré en externe via des paires de clés privées et publiques peut désormais être importé via System Manager.</block>
+  <block id="c0f4196deec20490ebf6989158642c34" category="paragraph">La fonction de verrouillage de connexion est maintenant disponible pour les services Web</block>
+  <block id="a30347233ec617731633ca56f8f1b923" category="paragraph">Configurable via l'API REST uniquement, un nouveau paramètre de verrouillage de connexion est désormais disponible pour les services Web intégrés et proxy.</block>
+  <block id="877f007e3f321618e24a9962b07e63fa" category="sidebar">Gestion de baie unique avec System Manager 11.9</block>
+  <block id="9c2cbf0c1a7244ea333628422695d560" category="sidebar">Gestion de plusieurs baies avec Unified Manager 7</block>
+  <block id="12256f91aad97dd547dda71e221d63ce" category="sidebar">Documents relatifs à SANtricity 11.9</block>
 </blocks>

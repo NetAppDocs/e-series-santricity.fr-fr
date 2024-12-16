@@ -13,4 +13,4 @@ summary: Dans SANtricity System Manager, vous pouvez créer des volumes en suiva
 [role="lead"]
 Dans System Manager, vous pouvez créer des volumes en suivant ces étapes.
 
-image::../media/sam1130-flw-volumes-create.gif[les volumes flw sam1130 sont créés]
+image::../media/sam1130-flw-volumes-create.gif[Créer un flux de travail de volumes]

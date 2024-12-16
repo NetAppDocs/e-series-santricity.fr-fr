@@ -1,37 +1,22 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.80 
+keywords: whats new, new features, SANtricity 11.90 
 summary: Nouvelles fonctionnalités de SANtricity OS. 
 ---
-= Nouveautés de SANtricity OS 11.80
+= Nouveautés de SANtricity OS 11.90
 :allow-uri-read: 
 :experimental: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
-Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.8.
+Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System Manager 11.9.
 
 
 
-== Nouvelles fonctionnalités de la version 11.80.1R1
-
-[cols="35h,~"]
-|===
-| Nouvelle fonction | Description 
-
-
- a| 
-Augmentation de la longueur des clés des nouveaux certificats de gestion auto-signés et signés par une autorité de certification.
- a| 
-La taille de la clé de certificat de gestion pour le certificat auto-signé des applications SANtricity System Manager et Unified Manager a été modifiée de 2048 à 3072 bits. Cette modification s'applique aux certificats nouvellement générés auto-signés et signés par une autorité de certification à partir des applications SANtricity. La longueur de clé est fixe et n'est pas affectée par les définitions de taille de clé par défaut dans NVSRAM.
-
-|===
-
-
-== Nouvelles fonctionnalités de la version 11.80.1
+== Nouvelles fonctionnalités de la version 11.90
 
 [cols="35h,~"]
 |===
@@ -39,160 +24,36 @@ La taille de la clé de certificat de gestion pour le certificat auto-signé des
 
 
  a| 
-`-identifyDevices` paramètre
+Nouveau modèle de système de stockage E4000
  a| 
-Une nouvelle `-identifyDevices` Le paramètre est maintenant disponible dans le SMcli. Ce nouveau paramètre vous permet de rechercher tous les périphériques de bloc natifs SCSI associés à vos matrices de stockage. Pour plus d'informations, voir https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices["Paramètres de ligne de commande SMcli téléchargeables"^].
-
-
-
- a| 
-Statistiques du noyau Ethernet
- a| 
-Une nouvelle option Ethernet Kernel Statistics est désormais disponible dans la page View iSCSI Statistics Packages de System Manager. Cette nouvelle option vous permet d'afficher les statistiques des pilotes de noyau de plate-forme du périphérique iSCSI. Pour plus d'informations, voir https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html["Afficher les packages de statistiques iSCSI"^].
+Cette version présente le système de stockage économique E4000. Le E4000 prend en charge 12 et 60 lecteurs et une seule carte d'interface hôte (HIC) par contrôleur. Dans la version initiale, les cartes d'interface hôte prises en charge incluent iSCSI et Fibre Channel. Les systèmes de stockage E4000 et les autres systèmes de stockage E-Series peuvent être affichés et gérés dans Unified Manager.
 
 
 
  a| 
-Ajout de la possibilité de bloquer les adresses IP via un terminal d'API REST
+Capacité accrue pour les pools de disques dynamiques
  a| 
-Les utilisateurs peuvent désormais bloquer des adresses IP spécifiques via le noeud final Settings (`/devmgr/v2/settings`). Une fois configuré via le noeud final Settings, seules les adresses IP spécifiées via une liste blanche peuvent communiquer avec le périphérique de stockage. Cette nouvelle fonctionnalité prend en charge les listes d'adresses IPv4 et IPv6.
-
-
-
- a| 
-Plug-in vCenter Storage
- a| 
-Le plug-in vCenter Storage a été mis à jour pour assurer la compatibilité avec la version E-Series 11.80.1.
+La capacité des pools de disques dynamiques (DDP) est passée à 12 po lorsque la capacité de chacun des disques du pool est supérieure à 23 To. Si la capacité d'un disque est inférieure à 23 To, la capacité du DDP est de 6 po.
 
 
 
  a| 
-Proxy de services Web
+Augmentation des paramètres de numérisation des supports par défaut
  a| 
-Le proxy de services Web a été mis à jour vers la version 6.1 pour assurer la compatibilité avec la version 11.80.1 du système E-Series.
-
-|===
-
-
-== Nouvelles fonctionnalités de la version 11.80
-
-[cols="35h,~"]
-|===
-| Nouvelle fonction | Description 
-
-
- a| 
-Analyse améliorée de parité des volumes
- a| 
-L'analyse de parité des volumes peut désormais être lancée en arrière-plan via l'API REST ou l'interface de ligne de commande. L'acquisition de parité résultante s'exécute en arrière-plan tant que l'opération d'acquisition est nécessaire. Les opérations d'analyse survivent aux redémarrages du contrôleur et aux opérations de basculement.
+Le taux de numérisation des supports par défaut a été porté à 120 jours.
 
 
 
  a| 
-Prise en charge de SAML pour Unified Manager
+Clé privée acceptée pour la gestion externe des clés
  a| 
-Unified Manager prend désormais en charge le langage SAML (Security assertion Markup Language). Une fois SAML activé pour Unified Manager, les utilisateurs doivent utiliser l'authentification multifacteur contre le fournisseur d'identités pour interagir avec l'interface utilisateur. Notez qu'une fois SAML activé sur Unified Manager, l'API REST ne peut pas être utilisée sans passer par le fournisseur d'accès intégré pour authentifier les requêtes.
-
-
-
- a| 
-Fonction de configuration automatique
- a| 
-Prend désormais en charge la possibilité de définir le paramètre de taille de bloc de volume à utiliser avec la fonction de configuration automatique pour la configuration initiale de la baie. Cette fonction est disponible dans l'interface de ligne de commande uniquement en tant que paramètre « blockSize ».
+Le fichier de requête de signature de certificat (CSR) généré en externe via des paires de clés privées et publiques peut désormais être importé via System Manager.
 
 
 
  a| 
-Signature cryptographique du micrologiciel du contrôleur
+La fonction de verrouillage de connexion est maintenant disponible pour les services Web
  a| 
-Le firmware du contrôleur est signé cryptographiquement. Les signatures sont vérifiées lors du téléchargement initial et au démarrage de chaque contrôleur. Aucun impact attendu sur l'utilisateur final. Les signatures sont soutenues par un certificat de validation étendue émis par l'autorité de certification.
-
-
-
- a| 
-Signature cryptographique du micrologiciel du lecteur
- a| 
-Le firmware du disque est signé cryptographiquement. Les signatures sont vérifiées lors du téléchargement initial et sont soutenues par un certificat de validation étendue émis par l'autorité de certification. Le contenu du micrologiciel du lecteur est désormais livré sous forme de fichier ZIP, qui contient l'ancien micrologiciel non signé ainsi que le nouveau micrologiciel signé. L'utilisateur doit choisir le fichier approprié en fonction de la version de code exécutée sur le système cible.
-
-
-
- a| 
-Gestion du serveur de clés externe - taille de la clé de certificat
- a| 
-La nouvelle taille de clé de certificat par défaut est de 3072 bits (à partir de 2048). Les tailles de clé jusqu'à 4096 bits sont prises en charge. Un bit NVSRAM doit être modifié pour prendre en charge les tailles de clé autres que celles par défaut.
-
-Les valeurs de sélection de taille de clé sont les suivantes :
-
-* VALEUR PAR DÉFAUT = 0
-* LONGUEUR 2048 = 1
-* LONGUEUR 3072 = 2
-* LONGUEUR 4096 = 3
-
-
-Pour modifier la taille de la clé à 4096 via SMcli :
-
-`set controller[b] globalnvsrambyte[0xc0]=3;`
-`set controller[a] globalnvsrambyte[0xc0]=3;`
-
-Interroger la taille de la clé :
-
-`show allcontrollers globalnvsrambyte[0xc0];`
-
-
-
- a| 
-Amélioration des pools de disques
- a| 
-Les pools de disques créés avec des contrôleurs exécutant la version 11.80 ou supérieure seront des pools _version 1_ et non des pools _version 0_. Une opération de mise à niveau vers une version antérieure est limitée lorsqu'un pool de disques _version 1_ existe.
-
-La version d'un pool de disques peut être identifiée dans le profil de la matrice de stockage.
-
-
-
- a| 
-System Manager et Unified Manager ne se lancent que si la configuration minimale requise pour le navigateur est respectée
- a| 
-Une version minimale de l'explorateur est requise avant le lancement de System Manager ou d'Unified Manager. Les versions minimales prises en charge sont les suivantes :
-
-* Firefox version minimale 80
-* Chrome version minimale 89
-* Edge version minimale 90
-* Safari version minimale 14
-
-
-
-
- a| 
-Prise en charge des disques SSD NVMe FIPS 140-3
- a| 
-Les disques SSD NVMe FIPS 140-3 certifiés NetApp sont désormais pris en charge. Ils seront correctement identifiés en tant que tels dans le profil de la baie de stockage et dans System Manager.
-
-
-
- a| 
-Prise en charge du cache de lecture SSD sur les systèmes EF300 et EF600
- a| 
-Le cache de lecture SSD est désormais pris en charge sur les contrôleurs EF300 et EF600 utilisant des disques durs avec extension SAS.
-
-
-
- a| 
-Prise en charge de la mise en miroir à distance asynchrone Fibre Channel et iSCSI sur les systèmes EF300 et EF600
- a| 
-La mise en miroir à distance asynchrone (ARVM) est désormais prise en charge sur les contrôleurs EF300 et EF600 avec des volumes basés sur NVMe et SAS.
-
-
-
- a| 
-Prise en charge des modèles EF300 et EF600 sans lecteur dans le bac de base
- a| 
-Les configurations de contrôleurs EF300 et EF600 sans disques NVMe dans le bac de base sont désormais prises en charge.
-
-
-
- a| 
-Ports USB désactivés pour toutes les plates-formes
- a| 
-Les ports USB sont maintenant désactivés sur toutes les plates-formes.
+Configurable via l'API REST uniquement, un nouveau paramètre de verrouillage de connexion est désormais disponible pour les services Web intégrés et proxy.
 
 |===

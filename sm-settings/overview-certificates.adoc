@@ -29,7 +29,7 @@ En savoir plus :
 
 == Comment configurer les certificats signés ?
 
-Vous générez d'abord une demande de signature à partir de System Manager, puis envoyez le fichier à une autorité de certification. Une fois que l'autorité de certification a renvoyé les fichiers de certificat, vous les importez à l'aide de System Manager.
+Vous pouvez générer une demande de signature à partir de System Manager ou en externe à l'aide d'une paire de clés privée et publique. La demande de signature est envoyée à une autorité de certification pour générer les fichiers de certificat. Une fois que l'autorité de certification a renvoyé les fichiers de certificat, vous les importez à l'aide de System Manager.
 
 En savoir plus :
 

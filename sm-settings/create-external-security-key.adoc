@@ -60,7 +60,8 @@ La boîte de dialogue Créer une clé de sécurité externe s'ouvre.
 NOTE: Seul un serveur à clé unique est utilisé à la fois. Si la matrice de stockage ne parvient pas à atteindre le serveur de clés principal, elle contacte le serveur de clés de sauvegarde. Notez que vous devez maintenir la parité entre les deux serveurs ; le non-respect de cette consigne peut entraîner des erreurs.
 
 ** *Sélectionner le certificat client* -- cliquez sur le premier bouton *Parcourir* pour sélectionner le fichier de certificat pour les contrôleurs de la matrice de stockage.
-** *Sélectionnez le certificat de serveur de gestion de clés* -- cliquez sur le deuxième bouton *Parcourir* pour sélectionner le fichier de certificat pour le serveur de gestion de clés. Vous pouvez choisir un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.
+** *Sélectionner un fichier de clé privée* -- si nécessaire, cliquez sur le deuxième bouton *Parcourir* pour sélectionner un fichier de clé privée pour les contrôleurs de la matrice de stockage.
+** *Sélectionner le certificat de serveur du serveur de gestion des clés* -- cliquez sur le troisième bouton *Parcourir* pour sélectionner le fichier de certificat du serveur de gestion des clés. Vous pouvez choisir un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.
 
 
 . Cliquez sur *Suivant*.

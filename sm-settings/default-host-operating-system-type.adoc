@@ -27,8 +27,3 @@ Par exemple, si vous connectez huit hôtes différents à la baie de stockage et
 Par exemple, si vous connectez huit hôtes différents à la baie de stockage et que deux de ces hôtes exécutent un système d'exploitation Windows, trois exécutent le système d'exploitation VMware, Trois autres systèmes exécutent un système d'exploitation Linux. Vous devez sélectionner Factory Default comme type de système d'exploitation hôte par défaut.
 
 
-
-[]
-====
-
-====

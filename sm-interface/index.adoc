@@ -2,11 +2,13 @@
 permalink: sm-interface/index.html 
 sidebar: sidebar 
 keywords: santricity, system, manager, 
-summary: SANtricity System Manager 11.7 
+summary: Gestionnaire système SANtricity 11.9 
 ---
-= Gestionnaire système SANtricity 11.8
+= Gestionnaire système SANtricity 11.9
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+System Manager est une interface web qui permet de gérer une baie de stockage à partir d'une seule vue.

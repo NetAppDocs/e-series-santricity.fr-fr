@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= SANtricity Unified Manager 6
+= SANtricity Unified Manager 7
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+La gestion des certificats vous permet de créer des demandes de signature de certificats (RSC), d'importer des certificats et de gérer des certificats existants.

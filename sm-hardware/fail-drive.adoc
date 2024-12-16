@@ -44,6 +44,6 @@ Cette option permet une restauration plus rapide que la reconstruction et rédui
 
 . Confirmez que vous souhaitez faire tomber le disque en panne.
 +
-Une fois le lecteur défaillant, attendez au moins 30 secondes avant de le retirer.
+Une fois le lecteur défaillant, attendez au moins 60 secondes avant de le retirer.
 
 

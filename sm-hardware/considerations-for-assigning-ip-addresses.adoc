@@ -41,7 +41,7 @@ Controller 2 (port 2): IP Address: 192.168.129.102
 Lors de l'attribution d'adresses IP :
 
 * Réserver le port 2 sur les contrôleurs pour l'utilisation du support client. Ne modifiez pas les paramètres réseau par défaut (DHCP activé).
-* Pour définir des adresses IP statiques pour les contrôleurs E2800 et E5700, utilisez SANtricity System Manager. Pour définir des adresses IP statiques pour les contrôleurs E2700 et E5600, utilisez SANtricity Storage Manager. Une fois qu'une adresse IP statique est configurée, elle reste définie par tous les événements de liaison descendante/active.
+* Pour définir des adresses IP statiques pour les contrôleurs E4000, E2800 et E5700, utilisez SANtricity System Manager. Pour définir des adresses IP statiques pour les contrôleurs E2700 et E5600, utilisez SANtricity Storage Manager. Une fois qu'une adresse IP statique est configurée, elle reste définie par tous les événements de liaison descendante/active.
 * Pour utiliser DHCP pour attribuer l'adresse IP du contrôleur, connectez le contrôleur à un réseau capable de traiter les requêtes DHCP. Utilisez un bail DHCP permanent.
 +
 [NOTE]

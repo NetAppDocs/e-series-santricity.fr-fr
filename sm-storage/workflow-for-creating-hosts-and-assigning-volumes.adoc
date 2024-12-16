@@ -13,4 +13,4 @@ summary: 'La figure suivante montre comment configurer l"accès hôte.'
 [role="lead"]
 La figure suivante montre comment configurer l'accès hôte.
 
-image::../media/sam1130-flw-hosts-create-host.gif[sam1130 les hôtes flw créent l'hôte]
+image::../media/sam1130-flw-hosts-create-host.gif[Configurer le flux de travail de l'hôte]

@@ -21,7 +21,7 @@ Le matériel physique est provisionné en composants logiques, de sorte que les 
 
 Les pools et les groupes de volumes sont les unités de stockage de premier niveau d'une baie de stockage : ils divisent la capacité des disques en divisions gérables. Au sein de ces divisions logiques se trouvent les volumes ou les LUN individuels pour lesquels les données sont stockées. La figure suivante illustre ce concept.
 
-image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[les volumes sam1130 dwg entraînent des pools de structures et des groupes de volumes]
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[La structure des pools et des groupes de volumes]
 
 ^1^ LUN hôte ; ^2^ volumes ; ^3^ groupes ou pools de volumes ; ^4^ disques durs ou SSD
 

@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Gestionnaire système SANtricity 11.8
+= Gestionnaire système SANtricity 11.9
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Vous pouvez vérifier l'état des composants sur la page matériel et exécuter certaines fonctions associées à ces composants.

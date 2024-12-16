@@ -81,7 +81,7 @@ Sélectionnez *Supprimer* pour ouvrir une boîte de dialogue qui vous permet de 
  a| 
 Afficher/masquer les colonnes
  a| 
-Cliquez sur l'icône de colonne *Afficher/Masquer* image:../media/sam-1140-ss-access-columns.gif[""] pour sélectionner des colonnes supplémentaires à afficher dans le tableau. Les colonnes supplémentaires incluent :
+Cliquez sur l'icône de colonne *Afficher/Masquer* image:../media/sam-1140-ss-access-columns.gif["Afficher/Masquer la colonne"]pour sélectionner d'autres colonnes à afficher dans le tableau. Les colonnes supplémentaires incluent :
 
 ** *Méthode* -- la méthode HTTP (PAR exemple, POST, GET, DELETE, etc.).
 ** *Commande CLI exécutée* -- la commande CLI (grammaire) exécutée pour les requêtes Secure CLI.
@@ -99,14 +99,14 @@ Cliquez sur l'icône de colonne *Afficher/Masquer* image:../media/sam-1140-ss-ac
  a| 
 Activer/désactiver les filtres de colonne
  a| 
-Cliquez sur l'icône *basculer* image:../media/sam-1140-ss-access-toggle.gif[""] pour ouvrir des champs de filtrage pour chaque colonne. Entrez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.
+Cliquez sur l'icône *Toggle* image:../media/sam-1140-ss-access-toggle.gif["Basculer"]pour ouvrir les champs de filtrage pour chaque colonne. Entrez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.
 
 
 
  a| 
 Annuler les modifications
  a| 
-Cliquez sur l'icône *Annuler* image:../media/sam-1140-ss-access-undo.gif[""] pour rétablir la configuration par défaut de la table.
+Cliquez sur l'icône *Annuler* image:../media/sam-1140-ss-access-undo.gif["Annuler"]pour rétablir la configuration par défaut de la table.
 
 
 

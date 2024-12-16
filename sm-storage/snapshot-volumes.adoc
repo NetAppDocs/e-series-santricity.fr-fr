@@ -17,6 +17,6 @@ Lorsque vous créez un volume de snapshot, vous pouvez le désigner comme __read
 
 Lorsque vous créez des volumes Snapshot en lecture seule, vous n'avez pas besoin d'ajouter de la capacité réservée. Lorsque vous créez des volumes de snapshot en lecture/écriture, vous devez ajouter de la capacité réservée pour permettre un accès en écriture.
 
-image::../media/sam1130-dwg-snapshots-volumes-overview.gif[vue d'ensemble des volumes de snapshots sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Présentation des volumes Snapshot]
 
 ^1^ Volume de base ; ^2^ hôte ; ^3^ Volume de snapshot en lecture seule ; ^4^ Volume de snapshot en lecture/écriture ; ^5^ capacité réservée

@@ -21,4 +21,4 @@ Pour accéder à System Manager, vous devez disposer :
 * Une connexion hors bande à un client de gestion de réseau avec un navigateur Web.
 
 
-image::../media/single2800.gif[single2800]
+image::../media/single2800.gif[Connexion hors bande au client de gestion de réseau avec un navigateur Web.]

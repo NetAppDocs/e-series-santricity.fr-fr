@@ -23,7 +23,7 @@ Pour prendre des instantanés du volume de base, vous pouvez créer une image in
 
 La figure suivante montre les relations entre les objets de snapshot et le volume de base.
 
-image::../media/sam1130-dwg-snapshots-images-overview.gif[sam1130 dwg vue d'ensemble des images instantanés]
+image::../media/sam1130-dwg-snapshots-images-overview.gif[Objets Snapshot et volume de base]
 
 ^1^ Volume de base ; ^2^ objets Snapshot du groupe (images et capacité réservée) ; ^3^ capacité réservée pour le groupe de snapshots.
 

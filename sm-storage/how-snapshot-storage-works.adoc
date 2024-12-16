@@ -30,7 +30,7 @@ Au fur et à mesure de la création des instantanés, la fonction snapshots stoc
 * Toute image Snapshot reflète exactement le volume de base tel qu'il était au moment de la création de la copie. La fonctionnalité Snapshot utilise la technologie de copie sur écriture. Après la création de la copie Snapshot, la première écriture dans un bloc ou dans un ensemble de blocs du volume de base entraîne la copie des données initiales dans la capacité réservée avant d'enregistrer ces nouvelles données dans le volume de base.
 * Les snapshots suivants ne incluent que les blocs de données modifiés. Avant d'écraser les données sur le volume de base, la fonction snapshots utilise sa technologie de copie en écriture pour enregistrer les images requises des secteurs concernés dans la capacité réservée de snapshot.
 +
-image::../media/sam1130-dwg-snapshots-cow-overview.gif[sam1130 dwg snapshots vue d'ensemble de l'vache]
+image::../media/sam1130-dwg-snapshots-cow-overview.gif[Présentation des snapshots]
 
 
 

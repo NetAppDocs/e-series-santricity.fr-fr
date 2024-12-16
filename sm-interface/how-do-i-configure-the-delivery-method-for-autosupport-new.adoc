@@ -14,4 +14,4 @@ summary: 'Pour accéder aux tâches de configuration des méthodes de livraison 
 [role="lead"]
 Pour accéder aux tâches de configuration des méthodes de distribution AutoSupport, allez dans le menu :support[Centre de support], puis cliquez sur l'onglet *AutoSupport*.
 
-Les protocoles suivants sont pris en charge : HTTPS, HTTP et SMTP.
+Les protocoles suivants sont pris en charge : HTTPS et SMTP.

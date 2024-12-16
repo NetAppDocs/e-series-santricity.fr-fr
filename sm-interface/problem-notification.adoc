@@ -25,28 +25,28 @@ System Manager utilise ces icônes pour indiquer l'état de la matrice de stocka
 
 
  a| 
-image:../media/sam1130-ss-icon-status-success.gif[""]
+image:../media/sam1130-ss-icon-status-success.gif["Optimale"]
  a| 
 Optimale
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-failure.gif[""]
+image:../media/sam1130-ss-icon-status-failure.gif["Non optimal ou en panne"]
  a| 
 Non optimal ou en panne
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-service.gif[""]
+image:../media/sam1130-ss-icon-status-service.gif["Nécessite une attention ou une réparation"]
  a| 
 Nécessite une attention ou une réparation
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-caution.gif[""]
+image:../media/sam1130-ss-icon-status-caution.gif["Avertissement"]
  a| 
 Avertissement
 

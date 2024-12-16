@@ -33,6 +33,6 @@ Lorsque vous souhaitez vous assurer que les images de snapshot sont prises sur p
 
 Les volumes inclus dans un groupe de cohérence de snapshot sont appelés volumes membres. Lorsque vous ajoutez un volume à un groupe de cohérence, System Manager crée automatiquement une nouvelle capacité réservée correspondant au volume membre en question. Vous pouvez définir un planning pour créer automatiquement une image instantanée de chaque volume membre.
 
-image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[vue d'ensemble des groupes de cohérence de snapshots sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[Présentation des groupes de cohérence des snapshots]
 
 ^1^ capacité réservée ; ^2^ volume membre ; ^3^ Images de snapshot de groupe de cohérence

@@ -48,6 +48,7 @@ Les clés externes sont conservées sur un serveur distinct de gestion des clés
 .. Tout d'abord, vous remplissez et téléchargez une requête client de signature de certificat (CSR). Accédez au menu:Paramètres[certificats > gestion des clés > CSR complète].
 .. Vous demandez ensuite un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés. (Vous pouvez également créer et télécharger un certificat client à partir du serveur de gestion des clés à l'aide du fichier CSR.)
 .. Une fois que vous avez un fichier de certificat client, copiez-le vers l'hôte sur lequel vous accédez à System Manager.
+.. Vous pouvez également générer une demande de signature de certificat en externe à l'aide d'une paire de clés privée et publique.
 
 
 . Récupérez un fichier de certificat à partir du serveur de gestion des clés, puis copiez-le vers l'hôte sur lequel vous accédez à System Manager. Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP. Vous pouvez utiliser un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.

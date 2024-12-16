@@ -26,12 +26,15 @@ L'authentification entre les contrôleurs et un serveur de gestion des clés est
 
 Vous devez d'abord générer un fichier de requête de signature de certificat (RSC), puis utiliser la RSC pour demander un certificat client signé à une autorité de certification (CA) approuvée par le serveur de gestion de clés. Vous pouvez également créer et télécharger un certificat client à partir du serveur de gestion des clés à l'aide du fichier CSR téléchargé. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).
 
+
+NOTE: Les fichiers CSR générés en externe via des paires de clés privées et publiques peuvent être importés via la boîte de dialogue Créer une clé de sécurité externe. Pour plus d'informations sur l'importation d'un fichier CSR généré en externe, reportez-vous à la section https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Étape 2 : importation de certificats pour le serveur de gestion des clés"].
+
 .Étapes
 . Sélectionnez menu:Paramètres[certificats].
 . Dans l'onglet Key Management, sélectionnez *Complete CSR*.
 . Saisissez les informations suivantes :
 +
-** *Nom commun* -- Un nom qui identifie cette RSC, comme le nom de la matrice de stockage, qui sera affiché dans les fichiers de certificat.
+** *Nom commun* -- Un nom qui identifie le client. Il est courant de faire correspondre ce qui se trouve dans le nom commun aux exigences du serveur KMS pour les conventions de dénomination des certificats client. Le nom commun permet généralement au KMS d’identifier le certificat du client lorsqu’il est présenté au cours d’une poignée de main.
 ** *Organisation* -- le nom légal complet de votre entreprise ou organisation. Inclure les suffixes, tels que Inc. Ou Corp
 ** *Unité organisationnelle (facultative)* -- la division de votre organisation qui gère le certificat.
 ** *Ville/localité* -- la ville ou la localité où se trouve votre organisation.
@@ -43,7 +46,11 @@ Vous devez d'abord générer un fichier de requête de signature de certificat (
 +
 Un fichier CSR est enregistré sur votre système local.
 
-. Demandez un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés.
+. Demandez à l'autorité de certification un certificat client signé approuvé par le serveur de gestion des clés.
++
+
+NOTE: Il est courant que le serveur de gestion des clés dispose d'une fonction qui génère des certificats signés directement, car il fonctionne comme sa propre autorité de certification.
+
 . Lorsque vous disposez d'un certificat client, accédez à <<Étape 2 : importation de certificats pour le serveur de gestion des clés>>.
 
 
@@ -71,6 +78,10 @@ Pour plus d'informations sur le certificat du serveur, consultez la documentatio
 Une boîte de dialogue s'ouvre pour importer les fichiers de certificat.
 
 . En regard de *Sélectionner le certificat client*, cliquez sur le bouton *Parcourir* pour sélectionner le fichier de certificat client pour les contrôleurs de la matrice de stockage.
++
+Le nom du fichier s'affiche dans la boîte de dialogue.
+
+. Si vous avez généré un fichier de certificat en externe à l'aide d'une paire de clés privée et publique, cliquez sur le bouton *Parcourir* en regard de *Sélectionner un fichier de clé privée* pour sélectionner le fichier de certificat pour les contrôleurs de la matrice de stockage.
 +
 Le nom du fichier s'affiche dans la boîte de dialogue.
 

@@ -25,13 +25,6 @@ Vous pouvez mettre à niveau le micrologiciel de vos lecteurs pour vous assurer 
 .Étapes
 . Sélectionnez menu:support [Upgrade Center].
 . Téléchargez les nouveaux fichiers du site de support sur votre client de gestion.
-+
-.. Sous mise à niveau du micrologiciel des disques, cliquez sur *NetApp support*.
-.. Sur le site Web de support NetApp, cliquez sur l'onglet *Downloads*.
-.. Sélectionnez *Disk Drive & Firmware Matrix*.
-.. Suivez les instructions restantes.
-
-
 . Sous mise à niveau du micrologiciel du lecteur, cliquez sur *commencer la mise à niveau*.
 +
 Une boîte de dialogue s'affiche, qui répertorie les fichiers du micrologiciel du lecteur actuellement utilisés.

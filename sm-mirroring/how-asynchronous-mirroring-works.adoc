@@ -30,7 +30,7 @@ La mise en miroir asynchrone capture l'état du volume primaire à un moment don
 
 Une session de mise en miroir asynchrone active comporte quatre étapes principales.
 
-image::../media/sam-1130-dwg-async-mirroring-session.gif[session de mise en miroir asynchrone sam 1130 dwg]
+image::../media/sam-1130-dwg-async-mirroring-session.gif[Session de mise en miroir asynchrone]
 
 . Une opération d'écriture a d'abord lieu sur la matrice de stockage du volume primaire.
 . L'état de l'opération est renvoyé à l'hôte.

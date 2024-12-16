@@ -34,7 +34,7 @@ Une relation de mise en miroir synchrone se compose d'un volume primaire et d'un
 
 Le processus de configuration de la mise en miroir synchrone implique de configurer des volumes en paires. Après avoir créé une paire mise en miroir, composée d'un volume primaire sur une baie de stockage et d'un volume secondaire sur une autre baie de stockage, vous pouvez démarrer la mise en miroir synchrone. Les étapes de la mise en miroir synchrone sont décrites ci-dessous.
 
-image::../media/sam-1130-dwg-sync-mirroring-session.gif[session de mise en miroir de synchronisation sam 1130 dwg]
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[Session de mise en miroir synchrone]
 
 . Une écriture provient de l'hôte.
 . L'écriture est appliquée au volume principal, propagée au système distant, puis appliquée au volume secondaire.

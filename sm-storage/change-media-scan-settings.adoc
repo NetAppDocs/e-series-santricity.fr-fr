@@ -28,6 +28,9 @@ Si le contrôle de redondance détecte une incohérence entre les données et le
 
 
 
+
+NOTE: La période d'analyse des supports par défaut est définie sur 120 jours.
+
 .Description de la tâche
 Les analyses des supports détectent et répare les erreurs de support sur les blocs de disque qui sont rarement lus par les applications. Cela peut éviter les pertes de données en cas de panne de disque, car les données des disques défaillants sont reconstruites à l'aide des informations de redondance et des données des autres disques du groupe ou du pool de volumes.
 

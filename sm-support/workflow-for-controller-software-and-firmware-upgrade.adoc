@@ -13,4 +13,4 @@ summary: Dans SANtricity System Manager, vous pouvez mettre à niveau le logicie
 [role="lead"]
 Dans SANtricity System Manager, vous pouvez mettre à niveau le logiciel et le firmware du contrôleur en procédant comme suit.
 
-image::../media/sam1130-flw-firmware-upgrade.gif[mise à niveau du micrologiciel flw sam1130]
+image::../media/sam1130-flw-firmware-upgrade.gif[Workflow de mise à niveau du logiciel du contrôleur et du firmware]

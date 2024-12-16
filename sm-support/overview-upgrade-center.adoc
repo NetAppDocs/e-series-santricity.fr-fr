@@ -33,7 +33,7 @@ Plusieurs composants de matrice de stockage contiennent des logiciels ou du mat�
 * *Supervisor Software* -- le logiciel Supervisor est la machine virtuelle sur un contrôleur dans lequel le logiciel s'exécute.
 
 
-image::../media/sam1130-dwg-upgrade-firmware-locations.gif[emplacements du micrologiciel de mise à niveau sam1130 dwg]
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Mettre à niveau les emplacements du micrologiciel]
 
 ^1^ tiroir contrôleur ; ^2^ tiroir disque ; ^3^ logiciel, micrologiciel de contrôleur, NVSRAM contrôleur, Logiciel de supervision ; ^4^ microprogramme de lecteur ; ^5^ microprogramme de module d'E/S ; ^6^ microprogramme de lecteur
 
