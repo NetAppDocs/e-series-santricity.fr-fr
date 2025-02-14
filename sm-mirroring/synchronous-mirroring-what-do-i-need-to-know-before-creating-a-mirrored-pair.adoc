@@ -11,7 +11,7 @@ summary: 'Vous configurez les paires en miroir dans l"interface Unified Manager,
 
 
 [role="lead"]
-Vous configurez les paires en miroir dans l'interface Unified Manager, puis gérez les paires dans System Manager.
+Vous configurez les paires en miroir dans l'interface SANtricity Unified Manager, puis vous gérez les paires dans SANtricity System Manager.
 
 Avant de créer une paire symétrique, suivez les consignes suivantes :
 

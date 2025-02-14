@@ -11,7 +11,7 @@ summary: System Manager prend en charge ces versions de navigateur.
 
 
 [role="lead"]
-System Manager prend en charge ces versions de navigateur.
+SANtricity System Manager prend en charge ces versions de navigateur.
 
 [cols="1a,1a"]
 |===

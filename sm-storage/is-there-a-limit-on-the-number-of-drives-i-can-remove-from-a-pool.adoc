@@ -11,7 +11,7 @@ summary: 'System Manager définit des limites pour le nombre de lecteurs que vou
 
 
 [role="lead"]
-System Manager définit des limites pour le nombre de lecteurs que vous pouvez supprimer d'un pool.
+SANtricity System Manager définit des limites pour le nombre de disques que vous pouvez supprimer d'un pool.
 
 * Vous ne pouvez pas réduire le nombre de disques dans un pool à moins de 11 disques.
 * Vous ne pouvez pas supprimer de disques s'il n'y a pas suffisamment de capacité libre dans le pool pour contenir les données des disques supprimés lorsque ces données sont redistribuées sur les disques restants du pool.

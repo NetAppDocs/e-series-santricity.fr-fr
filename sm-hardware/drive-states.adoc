@@ -11,7 +11,7 @@ summary: System Manager indique différents États pour les disques.
 
 
 [role="lead"]
-System Manager indique différents États pour les disques.
+SANtricity System Manager indique différents États des disques.
 
 
 

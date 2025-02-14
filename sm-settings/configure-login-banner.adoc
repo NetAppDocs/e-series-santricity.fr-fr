@@ -12,7 +12,7 @@ summary: 'Vous pouvez créer une bannière de connexion qui est présentée aux 
 
 
 [role="lead"]
-Vous pouvez créer une bannière de connexion présentée aux utilisateurs avant d'établir des sessions dans System Manager. La bannière peut inclure un avis consultatif et un message de consentement.
+Vous pouvez créer une bannière de connexion qui est présentée aux utilisateurs avant d'établir des sessions dans SANtricity System Manager. La bannière peut inclure un avis consultatif et un message de consentement.
 
 .Description de la tâche
 Lorsque vous créez une bannière, elle apparaît avant l'écran de connexion dans une boîte de dialogue.

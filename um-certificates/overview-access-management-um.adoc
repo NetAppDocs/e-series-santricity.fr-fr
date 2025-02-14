@@ -11,7 +11,7 @@ summary: 'Access Management est une méthode de configuration de l"authentificat
 
 
 [role="lead"]
-Access Management est une méthode de configuration de l'authentification des utilisateurs dans Unified Manager.
+Access Management est une méthode de configuration de l'authentification utilisateur dans SANtricity Unified Manager.
 
 
 

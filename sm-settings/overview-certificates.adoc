@@ -11,7 +11,7 @@ summary: 'Vous pouvez utiliser System Manager pour créer des demandes de signat
 
 
 [role="lead"]
-Vous pouvez utiliser System Manager pour créer des demandes de signature de certificat (RSC), importer des certificats et gérer des certificats existants.
+Vous pouvez utiliser le Gestionnaire système SANtricity pour créer des demandes de signature de certificat (RSC), importer des certificats et gérer des certificats existants.
 
 
 

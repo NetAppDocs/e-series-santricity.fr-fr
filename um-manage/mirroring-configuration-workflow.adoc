@@ -11,7 +11,7 @@ summary: Vous configurez la mise en miroir synchrone ou asynchrone dans Unified 
 
 
 [role="lead"]
-Vous configurez la mise en miroir synchrone ou asynchrone dans Unified Manager, puis utilisez System Manager pour gérer les synchronisations.
+Vous configurez la mise en miroir asynchrone ou synchrone dans SANtricity Unified Manager, puis vous utilisez SANtricity System Manager pour gérer les synchronisations.
 
 
 

@@ -11,7 +11,7 @@ summary: 'Avant d"utiliser Unified Manager pour mettre à niveau plusieurs baies
 
 
 [role="lead"]
-Avant d'utiliser Unified Manager pour mettre à niveau plusieurs baies de stockage, prenez en compte les considérations clés dans le cadre de votre planification.
+Avant d'utiliser SANtricity Unified Manager pour mettre à niveau plusieurs baies de stockage, passez en revue les principaux éléments de votre planification.
 
 
 

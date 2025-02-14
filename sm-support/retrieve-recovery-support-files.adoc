@@ -12,7 +12,7 @@ summary: Le support technique peut utiliser les fichiers de support de récupér
 
 
 [role="lead"]
-Le support technique peut utiliser les fichiers de support de récupération pour résoudre les problèmes. System Manager enregistre automatiquement ces fichiers.
+Le support technique peut utiliser les fichiers de support de récupération pour résoudre les problèmes. SANtricity System Manager enregistre automatiquement ces fichiers.
 
 .Avant de commencer
 Le support technique vous a demandé de leur envoyer des fichiers supplémentaires pour le dépannage.

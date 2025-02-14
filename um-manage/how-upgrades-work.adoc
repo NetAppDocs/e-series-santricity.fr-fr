@@ -12,7 +12,7 @@ summary: Unified Manager permet de mettre à niveau le logiciel SANtricity OS su
 
 
 [role="lead"]
-Unified Manager permet de mettre à niveau le logiciel SANtricity OS sur plusieurs baies de stockage du même type vers une version plus récente.
+SANtricity Unified Manager permet de mettre à niveau le logiciel SANtricity OS sur plusieurs baies de stockage du même type vers une version plus récente.
 
 
 

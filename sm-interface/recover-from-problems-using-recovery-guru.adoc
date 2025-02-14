@@ -11,7 +11,7 @@ summary: Le gourou de la restauration est un composant de System Manager qui dia
 
 
 [role="lead"]
-Le gourou de la restauration est un composant de System Manager qui diagnostique les problèmes de baie de stockage et recommande des procédures de restauration pour la résolution des problèmes.
+Le gourou de la restauration est un composant de SANtricity System Manager qui diagnostique les problèmes liés à la baie de stockage et recommande des procédures de restauration pour résoudre les problèmes.
 
 .Étapes
 . Sélectionnez *Accueil*.

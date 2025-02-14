@@ -11,7 +11,7 @@ summary: 'Vous devez synchroniser manuellement les horloges de contrôleur dans 
 
 
 [role="lead"]
-Vous devez synchroniser manuellement les horloges de contrôleur dans la matrice de stockage si vous remarquez que les horodateurs affichés dans System Manager ne sont pas alignés avec les horodatages affichés dans votre client de gestion (l'ordinateur qui accède à System Manager via le navigateur). Cette tâche n'est nécessaire que si le NTP (Network Time Protocol) n'est pas activé dans System Manager.
+Vous devez synchroniser manuellement les horloges du contrôleur dans la matrice de stockage si vous remarquez que les horodatages affichés dans le Gestionnaire système SANtricity ne sont pas alignés sur les horodatages affichés dans votre client de gestion (l'ordinateur qui accède au Gestionnaire système SANtricity via le navigateur). Cette tâche n'est nécessaire que si le protocole NTP (Network Time Protocol) n'est pas activé dans le Gestionnaire système SANtricity.
 
 [NOTE]
 ====

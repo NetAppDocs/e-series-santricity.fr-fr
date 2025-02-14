@@ -11,7 +11,7 @@ summary: 'Unified Manager permet d"importer des paramètres d"une matrice de sto
 
 
 [role="lead"]
-Unified Manager permet d'importer des paramètres d'une matrice de stockage vers plusieurs baies de stockage. La fonction Importer les paramètres est une opération par lots qui permet de gagner du temps lorsque vous devez configurer plusieurs matrices sur le réseau.
+SANtricity Unified Manager permet d'importer les paramètres d'une baie de stockage vers plusieurs baies de stockage. La fonction Importer les paramètres est une opération par lots qui permet de gagner du temps lorsque vous devez configurer plusieurs matrices sur le réseau.
 
 
 

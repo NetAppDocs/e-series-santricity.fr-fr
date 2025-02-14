@@ -12,7 +12,7 @@ summary: 'Vous pouvez configurer les délais d"expiration dans le Gestionnaire s
 
 
 [role="lead"]
-Vous pouvez configurer les délais d'expiration dans System Manager de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d'un délai spécifié.
+Vous pouvez configurer les délais d'expiration dans SANtricity System Manager de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d'un délai spécifié.
 
 .Description de la tâche
 Par défaut, le délai d'expiration de la session pour System Manager est de 30 minutes. Vous pouvez régler cette heure ou désactiver complètement les délais de session.

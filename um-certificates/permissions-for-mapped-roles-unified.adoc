@@ -11,7 +11,7 @@ summary: 'Les fonctionnalités RBAC (contrôle d"accès basé sur des rôles) co
 
 
 [role="lead"]
-Les fonctionnalités RBAC (contrôle d'accès basé sur des rôles) comprennent des utilisateurs prédéfinis avec un ou plusieurs rôles qui leur sont associés. Chaque rôle inclut des autorisations d'accès aux tâches dans Unified Manager.
+Les fonctionnalités RBAC (contrôle d'accès basé sur des rôles) comprennent des utilisateurs prédéfinis avec un ou plusieurs rôles qui leur sont associés. Chaque rôle inclut des autorisations d'accès aux tâches dans SANtricity Unified Manager.
 
 Les rôles permettent à l'utilisateur d'accéder aux tâches comme suit :
 

@@ -12,7 +12,7 @@ summary: Vous pouvez obtenir et importer des certificats signés par une autorit
 
 
 [role="lead"]
-Vous pouvez obtenir et importer des certificats signés par une autorité de certification pour un accès sécurisé au système de gestion hébergeant Unified Manager.
+Vous pouvez obtenir et importer des certificats signés par une autorité de certification pour un accès sécurisé au système de gestion hébergeant SANtricity Unified Manager.
 
 .Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.

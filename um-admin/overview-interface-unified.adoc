@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, interface, GUI 
 summary: 'Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d"une seule vue.' 
 ---
-= Présentation de l'interface de Unified Manager
+= Présentation de l'interface SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d'une seule vue.
+SANtricity Unified Manager est une interface web qui vous permet de gérer plusieurs baies de stockage dans une vue unique.
 
 
 

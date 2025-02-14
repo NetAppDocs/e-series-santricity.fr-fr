@@ -11,7 +11,7 @@ summary: Un système de stockage en mode non optimal est dû à un état de conf
 
 
 [role="lead"]
-Un système de stockage en mode non optimal est dû à un état de configuration du système non valide. Malgré cet état, les accès E/S standard aux volumes existants sont entièrement pris en charge. Cependant, System Manager interdit certaines opérations.
+Un système de stockage en mode non optimal est dû à un état de configuration du système non valide. Malgré cet état, l'accès E/S normal aux volumes existants est entièrement pris en charge. Cependant, SANtricity System Manager interdit certaines opérations.
 
 Un système de stockage peut passer à une configuration système non valide pour l'une des raisons suivantes :
 

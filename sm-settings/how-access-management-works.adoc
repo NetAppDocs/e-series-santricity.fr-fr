@@ -11,7 +11,7 @@ summary: 'Access Management est une méthode pour établir l"authentification de
 
 
 [role="lead"]
-Access Management est une méthode permettant d'établir l'authentification des utilisateurs dans System Manager.
+Access Management est une méthode pour établir l'authentification des utilisateurs dans SANtricity System Manager.
 
 La configuration et l'authentification utilisateur fonctionnent comme suit :
 

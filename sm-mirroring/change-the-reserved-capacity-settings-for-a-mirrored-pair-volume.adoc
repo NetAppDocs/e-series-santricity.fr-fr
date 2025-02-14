@@ -12,7 +12,7 @@ summary: 'Vous pouvez modifier les paramètres d"un volume de paire en miroir po
 
 
 [role="lead"]
-Vous pouvez modifier les paramètres d'un volume de paire en miroir pour ajuster le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'un volume de paire en miroir est presque pleine.
+Vous pouvez modifier les paramètres d'un volume de paire en miroir pour ajuster le point de pourcentage auquel SANtricity System Manager envoie une notification d'alerte lorsque la capacité réservée pour un volume de paire en miroir est presque pleine.
 
 .Étapes
 . Menu Sélectionner:Storage[pools & Volume Groups].

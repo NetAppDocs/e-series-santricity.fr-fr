@@ -11,7 +11,7 @@ summary: 'Unified Manager affiche l"état de chaque baie de stockage qui a été
 
 
 [role="lead"]
-Unified Manager affiche l'état de chaque baie de stockage qui a été découverte.
+SANtricity Unified Manager affiche l'état de chaque baie de stockage détectée.
 
 Accédez à la page *gérer - tout*. À partir de cette page, vous pouvez afficher l'état de la connexion entre le proxy de services Web et cette matrice de stockage.
 

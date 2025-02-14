@@ -11,7 +11,7 @@ summary: 'La page d"accueil offre un tableau de bord pour la gestion quotidienne
 
 
 [role="lead"]
-La page d'accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d'accueil est le premier écran affiché.
+La page d'accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez au Gestionnaire système SANtricity, la page d'accueil est le premier écran affiché.
 
 Le tableau de bord comprend quatre zones récapitulatives contenant des informations clés sur l'état et l'état de santé de votre baie de stockage. Vous trouverez plus d'informations dans la zone de résumé.
 

@@ -12,7 +12,7 @@ summary: Vous pouvez configurer System Manager pour des paramètres généraux d
 
 
 [role="lead"]
-Vous pouvez configurer System Manager pour des paramètres généraux de la baie et des fonctions complémentaires.
+Vous pouvez configurer SANtricity System Manager pour certains paramètres généraux de la baie et certaines fonctions complémentaires.
 
 
 

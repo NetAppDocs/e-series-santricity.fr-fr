@@ -11,7 +11,7 @@ summary: Si vous recevez une erreur lors de votre tentative de connexion à Syst
 
 
 [role="lead"]
-Si vous recevez une erreur lors de votre tentative de connexion à System Manager, consultez les causes possibles.
+Si vous recevez une erreur lorsque vous tentez de vous connecter au Gestionnaire système SANtricity, vérifiez les causes suivantes.
 
 Des erreurs de connexion à System Manager peuvent se produire pour l'une des raisons suivantes :
 

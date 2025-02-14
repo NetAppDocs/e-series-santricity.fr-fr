@@ -11,7 +11,7 @@ summary: 'Vous pouvez utiliser l"option lancer pour ouvrir SANtricity System Man
 
 
 [role="lead"]
-Vous pouvez utiliser l'option lancer pour ouvrir System Manager basé sur navigateur pour une ou plusieurs baies de stockage lorsque vous souhaitez effectuer des opérations de gestion.
+Vous pouvez utiliser l'option lancer pour ouvrir SANtricity System Manager basé sur navigateur pour une ou plusieurs baies de stockage lorsque vous souhaitez effectuer des opérations de gestion.
 
 .Étapes
 . Dans la page gérer, sélectionnez une ou plusieurs matrices de stockage à gérer.

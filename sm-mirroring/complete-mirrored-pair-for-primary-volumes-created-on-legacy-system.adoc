@@ -12,7 +12,7 @@ summary: 'Si vous avez créé un volume primaire sur une baie de stockage exista
 
 
 [role="lead"]
-Si vous avez créé un volume primaire sur une baie de stockage existante qui ne peut pas être gérée par System Manager, vous pouvez créer le volume secondaire sur cette baie à l'aide de System Manager.
+Si vous avez créé un volume primaire sur une baie de stockage existante qui ne peut pas être gérée par SANtricity System Manager, vous pouvez créer le volume secondaire sur cette baie avec SANtricity System Manager.
 
 .Description de la tâche
 Vous pouvez réaliser une mise en miroir asynchrone entre les baies existantes qui utilisent une interface différente et les baies plus récentes pouvant être gérées par System Manager.

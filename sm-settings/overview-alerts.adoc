@@ -12,7 +12,7 @@ summary: Vous pouvez configurer System Manager pour envoyer des alertes de baie 
 
 
 [role="lead"]
-Vous pouvez configurer System Manager pour envoyer des alertes de baie de stockage par e-mail, des interruptions SNMP et des messages syslog.
+Vous pouvez configurer SANtricity System Manager pour qu'il envoie des alertes de baie de stockage par e-mail, des traps SNMP et des messages syslog.
 
 
 

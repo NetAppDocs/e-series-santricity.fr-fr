@@ -11,7 +11,7 @@ summary: System Manager utilise des icônes et plusieurs autres méthodes pour v
 
 
 [role="lead"]
-System Manager utilise des icônes et plusieurs autres méthodes pour vous informer que des problèmes existent avec la baie de stockage.
+Le Gestionnaire système SANtricity utilise des icônes et plusieurs autres méthodes pour vous informer que des problèmes existent dans la matrice de stockage.
 
 
 

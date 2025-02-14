@@ -11,7 +11,7 @@ summary: Les disques de secours servent de disques de secours dans des groupes d
 
 
 [role="lead"]
-Les disques de secours servent de disques de secours dans des groupes de volumes RAID 1, RAID 5 ou RAID 6 pour System Manager.
+Les disques de secours agissent comme des disques de secours dans les groupes de volumes RAID 1, RAID 5 ou RAID 6 pour SANtricity System Manager.
 
 Il s'agit de lecteurs entièrement fonctionnels qui ne contiennent aucune donnée. Si un disque tombe en panne dans le groupe de volumes, le contrôleur reconstruit automatiquement les données du disque défaillant vers un disque affecté en tant que disque de secours.
 

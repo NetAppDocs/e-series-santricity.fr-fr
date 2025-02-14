@@ -11,7 +11,7 @@ summary: 'Utilisez la gestion des accès pour établir l"authentification des ut
 
 
 [role="lead"]
-Utilisez Access Management pour établir l'authentification des utilisateurs dans Unified Manager.
+Utilisez la gestion des accès pour établir l'authentification des utilisateurs dans SANtricity Unified Manager.
 
 
 

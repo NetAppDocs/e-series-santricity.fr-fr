@@ -11,7 +11,7 @@ summary: 'System Manager vous permet de rechercher des certificats révoqués à
 
 
 [role="lead"]
-System Manager vous permet de rechercher des certificats révoqués à l'aide d'un serveur OCSP (Online Certificate Status Protocol) au lieu de télécharger des listes de révocation de certificats.
+Le Gestionnaire système SANtricity vous permet de vérifier les certificats révoqués à l'aide d'un serveur OCSP (Online Certificate Status Protocol), au lieu de télécharger les listes CRL (Certificate Revocation Lists).
 
 Les certificats révoqués ne doivent plus être approuvés. Un certificat peut être révoqué pour plusieurs raisons : par exemple, si l'autorité de certification (AC) a émis incorrectement le certificat, si une clé privée a été compromise ou si l'entité identifiée n'a pas respecté les exigences de la politique.
 

@@ -11,7 +11,7 @@ summary: 'Les administrateurs peuvent utiliser des fonctionnalités RBAC (contr�
 
 
 [role="lead"]
-Les administrateurs peuvent utiliser des fonctionnalités RBAC (contrôle d'accès basé sur des rôles) appliquées dans Unified Manager. Ces fonctionnalités sont appelées « rôles utilisateur locaux ».
+Les administrateurs peuvent utiliser des fonctionnalités RBAC (contrôle d'accès basé sur des rôles) appliquées dans SANtricity Unified Manager. Ces fonctionnalités sont appelées « rôles utilisateur locaux ».
 
 
 

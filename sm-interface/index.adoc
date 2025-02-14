@@ -11,4 +11,4 @@ summary: Gestionnaire système SANtricity 11.9
 
 
 [role="lead"]
-System Manager est une interface web qui permet de gérer une baie de stockage à partir d'une seule vue.
+SANtricity System Manager est une interface web qui vous permet de gérer une baie de stockage dans une vue unique.

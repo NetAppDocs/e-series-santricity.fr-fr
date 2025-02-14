@@ -12,7 +12,7 @@ summary: 'La création du pool est lancée automatiquement lorsque System Manage
 
 
 [role="lead"]
-La création du pool est lancée automatiquement lorsque System Manager détecte des disques non assignés dans la baie de stockage. La création automatique de pool vous permet de configurer facilement tous les disques non assignés dans la baie de stockage dans un pool et d'ajouter des disques aux pools existants.
+La création de pool est lancée automatiquement lorsque SANtricity System Manager détecte des disques non attribués dans la baie de stockage. La création automatique de pool vous permet de configurer facilement tous les disques non assignés dans la baie de stockage dans un pool et d'ajouter des disques aux pools existants.
 
 .Avant de commencer
 Vous pouvez lancer la boîte de dialogue Configuration automatique du pool lorsque l'une des conditions suivantes est vraie :

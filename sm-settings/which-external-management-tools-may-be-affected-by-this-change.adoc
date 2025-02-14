@@ -11,7 +11,7 @@ summary: 'Lorsque vous apportez certaines modifications à System Manager, par e
 
 
 [role="lead"]
-Lorsque vous apportez certaines modifications à System Manager, par exemple le basculement de l'interface de gestion ou l'utilisation de SAML pour une méthode d'authentification, certains outils et fonctionnalités externes peuvent être limités d'utilisation.
+Lorsque vous apportez certaines modifications à SANtricity System Manager, telles que le basculement de l'interface de gestion ou l'utilisation de SAML pour une méthode d'authentification, l'utilisation de certains outils et fonctionnalités externes peut être limitée.
 
 
 

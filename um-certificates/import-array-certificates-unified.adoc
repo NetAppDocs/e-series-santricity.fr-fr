@@ -12,7 +12,7 @@ summary: 'Si nécessaire, vous pouvez importer des certificats pour les baies de
 
 
 [role="lead"]
-Si nécessaire, vous pouvez importer des certificats pour les baies de stockage afin qu'ils puissent s'authentifier auprès du système hébergeant Unified Manager. Les certificats peuvent être signés par une autorité de certification ou être auto-signés.
+Si nécessaire, vous pouvez importer des certificats pour les baies de stockage afin qu'ils puissent s'authentifier auprès du système qui héberge SANtricity Unified Manager. Les certificats peuvent être signés par une autorité de certification ou être auto-signés.
 
 .Avant de commencer
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.

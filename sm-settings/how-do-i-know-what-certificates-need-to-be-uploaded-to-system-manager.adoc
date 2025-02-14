@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
 summary: 'Pour la gestion externe des clés, vous importez deux types de certificats pour l"authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.' 
 ---
-= Comment puis-je savoir quels certificats doivent être téléchargés sur System Manager pour la gestion externe des clés ?
+= Comment savoir quels certificats doivent être chargés dans SANtricity System Manager pour la gestion externe des clés ?
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

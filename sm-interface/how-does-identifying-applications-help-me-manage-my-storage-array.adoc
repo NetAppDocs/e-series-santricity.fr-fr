@@ -11,6 +11,6 @@ summary: 'Lorsque vous identifiez des applications, System Manager recommande au
 
 
 [role="lead"]
-Lorsque vous identifiez des applications, System Manager recommande automatiquement une configuration de volume qui optimise le stockage en fonction du type d'application.
+Lorsque vous identifiez des applications, SANtricity System Manager recommande automatiquement une configuration de volume qui optimise le stockage en fonction du type d'application.
 
 Grâce à l'optimisation des volumes par application, les opérations de stockage des données peuvent être plus efficaces. Des caractéristiques telles que le type d'E/S, la taille du segment, la propriété du contrôleur et le cache de lecture et d'écriture sont incluses dans la configuration du volume. De plus, vous pouvez afficher les données de performances par application et par charge de travail afin d'évaluer la latence, les IOPS et la MIB/s des applications et de leurs charges de travail associées.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host detection 
 summary: 'Si vos hôtes connectés ne s"affichent pas, la détection automatique a échoué, les hôtes sont mal connectés ou aucun hôte n"est actuellement connecté.' 
 ---
-= System Manager n'a détecté aucun hôte. Que dois-je faire ?
+= SANtricity System Manager n'a détecté aucun hôte. Que dois-je faire ?
 :allow-uri-read: 
 :experimental: 
 :icons: font

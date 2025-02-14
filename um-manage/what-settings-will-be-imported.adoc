@@ -11,7 +11,7 @@ summary: 'La fonction Importer les paramètres est une opération par lots qui c
 
 
 [role="lead"]
-La fonction Importer les paramètres est une opération par lots qui charge les configurations d'une matrice de stockage à plusieurs matrices de stockage. Les paramètres importés lors de cette opération dépendent de la configuration de la baie de stockage source dans System Manager.
+La fonction Importer les paramètres est une opération par lots qui charge les configurations d'une matrice de stockage à plusieurs matrices de stockage. Les paramètres importés lors de cette opération dépendent de la configuration de la baie de stockage source dans SANtricity System Manager.
 
 Les paramètres suivants peuvent être importés dans plusieurs matrices de stockage :
 

@@ -11,7 +11,7 @@ summary: 'Vous pouvez configurer les délais d"attente pour SANtricity Unified M
 
 
 [role="lead"]
-Vous pouvez configurer les délais d'expiration pour Unified Manager de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d'un délai spécifié.
+Vous pouvez configurer les délais d'expiration pour SANtricity Unified Manager de sorte que les sessions inactives des utilisateurs soient déconnectées après une heure spécifiée.
 
 .Description de la tâche
 Par défaut, le délai d'expiration de la session pour Unified Manager est de 30 minutes. Vous pouvez régler cette heure ou désactiver complètement les délais de session.

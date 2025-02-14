@@ -12,7 +12,7 @@ summary: 'Des certificats non fiables se produisent lorsqu"une baie de stockage 
 
 
 [role="lead"]
-Des certificats non fiables se produisent lorsqu'une baie de stockage tente d'établir une connexion sécurisée à Unified Manager, mais que la connexion ne parvient pas à confirmer la sécurité.
+Des certificats non fiables se produisent lorsqu'une baie de stockage tente d'établir une connexion sécurisée à SANtricity Unified Manager, mais la connexion ne parvient pas à confirmer la sécurité.
 
 À partir de la page certificat, vous pouvez résoudre les certificats non approuvés en important un certificat auto-signé de la matrice de stockage ou en important un certificat d'autorité de certification (CA) émis par un tiers de confiance.
 

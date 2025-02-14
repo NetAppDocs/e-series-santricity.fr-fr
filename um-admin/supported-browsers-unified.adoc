@@ -11,7 +11,7 @@ summary: SANtricity Unified Manager est accessible depuis plusieurs types de nav
 
 
 [role="lead"]
-Unified Manager est accessible depuis plusieurs types de navigateurs.
+SANtricity Unified Manager est accessible depuis plusieurs types de navigateurs.
 
 Les navigateurs et versions suivants sont pris en charge.
 

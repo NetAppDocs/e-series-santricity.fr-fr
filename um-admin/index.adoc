@@ -11,4 +11,4 @@ summary: SANtricity Unified Manager 7
 
 
 [role="lead"]
-Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d'une seule vue.
+SANtricity Unified Manager est une interface web qui vous permet de gérer plusieurs baies de stockage dans une vue unique.

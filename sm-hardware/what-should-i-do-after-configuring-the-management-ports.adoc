@@ -12,7 +12,7 @@ summary: 'Si vous avez modifié l"adresse IP de la baie de stockage, vous pouvez
 
 
 [role="lead"]
-Si vous avez modifié l'adresse IP de la matrice de stockage, vous pouvez mettre à jour la vue de la baie globale dans Unified Manager.
+Si vous avez modifié l'adresse IP de la baie de stockage, vous pouvez mettre à jour la vue de la baie globale dans SANtricity Unified Manager.
 
 Pour mettre à jour la vue de la baie globale dans Unified Manager, ouvrez l'interface et accédez au menu :Manage[Discover].
 

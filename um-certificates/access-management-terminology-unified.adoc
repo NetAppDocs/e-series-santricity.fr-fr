@@ -11,7 +11,7 @@ summary: 'Découvrez comment les termes de gestion des accès s"appliquent à SA
 
 
 [role="lead"]
-Découvrez comment les termes de gestion des accès s'appliquent à Unified Manager.
+Découvrez comment les termes de gestion des accès s'appliquent à SANtricity Unified Manager.
 
 [cols="25h,~"]
 |===

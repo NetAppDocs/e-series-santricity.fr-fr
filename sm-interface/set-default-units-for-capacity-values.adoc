@@ -12,7 +12,7 @@ summary: 'System Manager peut afficher les valeurs de capacité soit en gibiocte
 
 
 [role="lead"]
-System Manager peut afficher les valeurs de capacité soit en gibioctets (Gio), soit en Tio.
+SANtricity System Manager peut afficher les valeurs de capacité en gibioctets (Gio) ou en tébioctets (Tio).
 
 Les préférences sont stockées dans le stockage local du navigateur pour que tous les utilisateurs puissent disposer de leurs propres paramètres.
 

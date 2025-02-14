@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: 'Vous naviguez dans l"interface principale pour accéder aux fonctionnalités et aux tâches de System Manager.' 
 ---
-= Présentation de l'interface de System Manager
+= Présentation de l'interface SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-System Manager est une interface web qui permet de gérer une baie de stockage à partir d'une seule vue.
+SANtricity System Manager est une interface web qui vous permet de gérer une baie de stockage dans une vue unique.
 
 
 

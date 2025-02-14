@@ -11,7 +11,7 @@ summary: Unified Manager inclut des options de configuration pour les fonctionna
 
 
 [role="lead"]
-Unified Manager inclut des options de configuration pour les fonctionnalités de mise en miroir SANtricity, ce qui permet aux administrateurs de répliquer des données entre deux baies de stockage pour la protection des données.
+SANtricity Unified Manager inclut des options de configuration pour les fonctionnalités de mise en miroir SANtricity, qui permettent aux administrateurs de répliquer des données entre deux baies de stockage à des fins de protection des données.
 
 [NOTE]
 ====

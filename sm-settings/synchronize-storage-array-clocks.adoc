@@ -12,7 +12,7 @@ summary: 'Si le protocole NTP (Network Time Protocol) n"est pas activé, vous po
 
 
 [role="lead"]
-Si le protocole NTP (Network Time Protocol) n'est pas activé, vous pouvez définir manuellement les horloges sur les contrôleurs afin qu'elles soient synchronisées avec le client de gestion (système utilisé pour exécuter le navigateur qui accède à System Manager).
+Si le protocole NTP (Network Time Protocol) n'est pas activé, vous pouvez définir manuellement les horloges sur les contrôleurs afin qu'elles soient synchronisées avec le client de gestion (système utilisé pour exécuter le navigateur qui accède à SANtricity System Manager).
 
 .Description de la tâche
 La synchronisation garantit que les horodatages des événements dans le journal des événements correspondent aux horodatages écrits dans les fichiers journaux de l'hôte. Pendant le processus de synchronisation, les contrôleurs restent disponibles et opérationnels.

@@ -11,7 +11,7 @@ summary: 'La mise en miroir est configurée dans l"interface Unified Manager.'
 
 
 [role="lead"]
-La mise en miroir est configurée dans l'interface Unified Manager.
+La mise en miroir est configurée dans l'interface SANtricity Unified Manager.
 
 [NOTE]
 ====

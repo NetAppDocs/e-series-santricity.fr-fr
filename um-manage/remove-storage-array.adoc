@@ -12,7 +12,7 @@ summary: Vous pouvez supprimer une ou plusieurs baies de stockage si vous ne sou
 
 
 [role="lead"]
-Vous pouvez supprimer une ou plusieurs baies de stockage si vous ne souhaitez plus la gérer depuis Unified Manager.
+Vous pouvez supprimer une ou plusieurs baies de stockage si vous ne souhaitez plus la gérer depuis SANtricity Unified Manager.
 
 .Description de la tâche
 Vous ne pouvez accéder à aucune des baies de stockage que vous supprimez. Vous pouvez cependant établir une connexion avec n'importe quelle baie de stockage supprimée en pointant directement un navigateur vers son adresse IP ou son nom d'hôte.

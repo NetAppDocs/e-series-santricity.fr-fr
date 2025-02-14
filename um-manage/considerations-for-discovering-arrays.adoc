@@ -11,7 +11,7 @@ summary: Avant que Unified Manager puisse afficher et gérer les ressources de s
 
 
 [role="lead"]
-Avant que Unified Manager puisse afficher et gérer les ressources de stockage, il doit détecter les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule.
+Avant de pouvoir afficher et gérer les ressources de stockage, SANtricity Unified Manager doit détecter les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule.
 
 
 

@@ -31,9 +31,9 @@ sidebar:
       url: "/san-getstarted/santricity-overview.html"
     - title: Navigateurs et systèmes d'exploitation pris en charge
       url: "/san-getstarted/supported-browsers-os.html"
-    - title: Configuration de System Manager
+    - title: Configuration de SANtricity System Manager
       entries:
-      - title: Accédez à System Manager
+      - title: Accédez à SANtricity System Manager
         url: "/san-getstarted/access-sam.html"
       - title: Présentation de l'assistant d'installation
         url: "/sm-interface/setup-wizard-overview.html"
@@ -53,20 +53,21 @@ sidebar:
         - title: Comment savoir si je dois accepter la configuration de pool recommandée
             ?
           url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
-        - title: System Manager n'a détecté aucun hôte. Que dois-je faire ?
+        - title: SANtricity System Manager n'a détecté aucun hôte. Que dois-je faire
+            ?
           url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
-    - title: Définition de Unified Manager
+    - title: Configuration de SANtricity Unified Manager
       entries:
-      - title: Installez Unified Manager
+      - title: Installez SANtricity Unified Manager
         url: "/san-getstarted/install-um.html"
-      - title: Accédez à Unified Manager
+      - title: Accédez à SANtricity Unified Manager
         url: "/san-getstarted/login-um.html"
-  - title: System Manager
+  - title: SANtricity System Manager
     url: "/system-manager/index.html"
     entries:
     - title: Interface principale
       entries:
-      - title: Présentation de l'interface de System Manager
+      - title: Présentation de l'interface SANtricity System Manager
         url: "/sm-interface/overview-interface-sam.html"
       - title: Afficher les données de performances
         entries:
@@ -1212,8 +1213,8 @@ sidebar:
         - title: Pourquoi la boîte de dialogue Impossible d'accéder à un autre contrôleur
             s'affiche-t-elle ?
           url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
-        - title: Comment puis-je savoir quels certificats doivent être téléchargés
-            sur System Manager pour la gestion externe des clés ?
+        - title: Comment savoir quels certificats doivent être chargés dans SANtricity
+            System Manager pour la gestion externe des clés ?
           url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
         - title: Que dois-je savoir au sujet de la vérification de révocation de certificats
             ?
@@ -1326,12 +1327,12 @@ sidebar:
           url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
         - title: Comment choisir le type de mise à niveau à effectuer ?
           url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"
-  - title: Unified Manager
+  - title: SANtricity Unified Manager
     url: "/unified-manager/index.html"
     entries:
     - title: Interface principale
       entries:
-      - title: Présentation de l'interface de Unified Manager
+      - title: Présentation de l'interface SANtricity Unified Manager
         url: "/um-admin/overview-interface-unified.html"
       - title: Navigateurs pris en charge
         url: "/um-admin/supported-browsers-unified.html"
@@ -1349,7 +1350,7 @@ sidebar:
         entries:
         - title: Considérations relatives à la détection des baies
           url: "/um-manage/considerations-for-discovering-arrays.html"
-        - title: Facteurs à prendre en compte pour accéder à System Manager
+        - title: Facteurs à prendre en compte pour accéder à SANtricity System Manager
           url: "/um-manage/launch-considerations.html"
       - title: Découvrir les baies
         entries:
@@ -1361,7 +1362,7 @@ sidebar:
         entries:
         - title: Afficher l'état de la matrice
           url: "/um-manage/storage-array-status.html"
-        - title: Lancez System Manager
+        - title: Gérer une baie de stockage individuelle
           url: "/um-manage/launch-system-manager.html"
         - title: Changer les mots de passe de la matrice
           url: "/um-admin/change-storage-array-passwords.html"

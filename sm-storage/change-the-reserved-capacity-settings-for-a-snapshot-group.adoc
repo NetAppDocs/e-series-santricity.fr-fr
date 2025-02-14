@@ -12,7 +12,7 @@ summary: 'Vous pouvez modifier les paramètres d"un groupe de snapshots pour mod
 
 
 [role="lead"]
-Vous pouvez modifier les paramètres d'un groupe de snapshots pour modifier son nom, ses paramètres de suppression automatique, le nombre maximal d'images de snapshot autorisées, le point de pourcentage auquel System Manager envoie une notification d'alerte de capacité réservée, ou la règle à utiliser lorsque la capacité réservée atteint son pourcentage maximal défini.
+Vous pouvez modifier les paramètres d'un groupe de snapshots pour modifier son nom, ses paramètres de suppression automatique, le nombre maximal d'images de snapshot autorisées, le point de pourcentage auquel SANtricity System Manager envoie une notification d'alerte de capacité réservée ou la stratégie à utiliser lorsque la capacité réservée atteint son pourcentage maximal défini.
 
 Lors de la création d'un groupe de snapshots, la capacité réservée est créée pour stocker les données de toutes les images de snapshot contenues dans le groupe.
 

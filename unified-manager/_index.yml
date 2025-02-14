@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Gestion de plusieurs baies avec Unified Manager 7
+  title: Gestion de plusieurs baies avec SANtricity Unified Manager 7
   summary: La documentation du logiciel SANtricity vous permet d'installer, de configurer
     et de gérer votre baie de stockage.
   keywords: santricity, install, setup, maintain, storage array
@@ -9,7 +9,7 @@ indexpage:
   tiles:
   - title: Configuration
     links:
-    - title: Présentation de l'interface de Unified Manager
+    - title: Présentation de l'interface SANtricity Unified Manager
       url: "../um-admin/overview-interface-unified.html"
     - title: Définissez le mot de passe administrateur
       url: "../um-admin/administrator-password-protection-unified.html"

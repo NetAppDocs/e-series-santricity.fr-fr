@@ -12,7 +12,7 @@ summary: Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de 
 
 
 [role="lead"]
-Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone. Les tableaux suivants répertorient les fonctions de System Manager que vous pouvez utiliser pour configurer et gérer ces sessions iSCSI.
+Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone. Les tableaux suivants répertorient les fonctions du Gestionnaire système SANtricity que vous pouvez utiliser pour configurer et gérer ces sessions iSCSI.
 
 [NOTE]
 ====

@@ -12,7 +12,7 @@ summary: 'Vous pouvez modifier les paramètres d"un volume membre d"un groupe de
 
 
 [role="lead"]
-Vous pouvez modifier les paramètres d'un volume membre d'un groupe de cohérence de manière à ajuster le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'un volume membre approche pleine et à modifier la règle à utiliser lorsque la capacité réservée atteint son maximum défini pourcentage.
+Vous pouvez modifier les paramètres d'un volume de membres d'un groupe de cohérence pour ajuster le point de pourcentage auquel le gestionnaire système SANtricity envoie une notification d'alerte lorsque la capacité réservée d'un volume membre est presque pleine et pour modifier la règle à utiliser lorsque la capacité réservée atteint son pourcentage maximal défini.
 
 .Description de la tâche
 La modification des paramètres de capacité réservée pour un volume membre individuel modifie également les paramètres de capacité réservée pour tous les volumes membres associés à un groupe de cohérence.

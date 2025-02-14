@@ -11,6 +11,6 @@ summary: Dans SANtricity System Manager, vous configurez la fonctionnalité Auto
 
 
 [role="lead"]
-Dans System Manager, vous configurez la fonctionnalité AutoSupport en suivant ces étapes.
+Dans SANtricity System Manager, vous configurez la fonctionnalité AutoSupport en suivant ces étapes.
 
 image::../media/sam1130-flw-support-asup-setup.gif[Workflow AutoSupport]

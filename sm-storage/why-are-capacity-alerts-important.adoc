@@ -12,7 +12,7 @@ summary: 'Les alertes de capacité indiquent quand ajouter des disques à un poo
 
 
 [role="lead"]
-Les alertes de capacité indiquent quand ajouter des disques à un pool. Un pool a besoin de capacité disponible suffisante pour mener à bien les opérations de la baie de stockage. Vous pouvez éviter les interruptions de ces opérations en configurant System Manager pour qu'il envoie des alertes lorsque la capacité libre d'un pool atteint ou dépasse un pourcentage spécifié.
+Les alertes de capacité indiquent quand ajouter des disques à un pool. Un pool a besoin de capacité disponible suffisante pour mener à bien les opérations de la baie de stockage. Vous pouvez éviter les interruptions de ces opérations en configurant SANtricity System Manager pour qu'il envoie des alertes lorsque la capacité disponible d'un pool atteint ou dépasse un pourcentage spécifié.
 
 Vous définissez ce pourcentage lorsque vous créez un pool à l'aide de l'option *Configuration automatique de pool* ou de l'option *Créer pool*. Si vous choisissez l'option automatique, les paramètres par défaut déterminent automatiquement quand vous recevez des notifications d'alerte. Si vous choisissez de créer manuellement le pool, vous pouvez déterminer les paramètres de notification d'alerte ou, si vous préférez, vous pouvez accepter les paramètres par défaut. Vous pouvez régler ces paramètres ultérieurement dans le menu:Paramètres[alertes].
 

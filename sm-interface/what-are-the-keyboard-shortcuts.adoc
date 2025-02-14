@@ -11,7 +11,7 @@ summary: 'Vous pouvez naviguer dans System Manager à l"aide du clavier seul.'
 
 
 [role="lead"]
-Vous pouvez naviguer dans System Manager à l'aide du clavier seul.
+Vous pouvez naviguer dans le Gestionnaire système SANtricity à l'aide du clavier seul.
 
 
 

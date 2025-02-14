@@ -11,7 +11,7 @@ summary: Dans System Manager, vous pouvez créer des images de snapshot et des v
 
 
 [role="lead"]
-Dans System Manager, vous pouvez créer des images de snapshot et des volumes de snapshot en suivant ces étapes.
+Dans le Gestionnaire système SANtricity, vous pouvez créer des images instantanées et des volumes instantanés en procédant comme suit.
 
 
 
