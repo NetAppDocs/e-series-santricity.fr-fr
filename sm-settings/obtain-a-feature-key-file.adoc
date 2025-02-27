@@ -27,9 +27,6 @@ Dans cette tâche, vous apprendrez à rassembler les informations requises pour 
 . Dans System Manager, localisez l'identifiant d'activation de la fonction. Accédez au menu:Paramètres[système], puis faites défiler jusqu'à *Compléments*. Recherchez l'identifiant *Feature Enable identifier*. Notez le numéro de l'identifiant d'activation de la fonction.
 . Localiser et enregistrer le code d'activation de la fonction. Pour les packs de fonctionnalités, ce code est fourni dans les instructions appropriées pour effectuer la conversion.
 +
-Des instructions NetApp sont disponibles à partir de https://www.netapp.com/support-and-training/documentation/eseries-santricity/["Centre de documentation des systèmes NetApp E-Series"^].
-
-+
 Pour les fonctionnalités Premium, vous pouvez accéder au code d'activation à partir du site de support, comme suit :
 
 +

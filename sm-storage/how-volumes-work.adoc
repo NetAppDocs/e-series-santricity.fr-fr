@@ -43,7 +43,7 @@ Le provisionnement fin permet d'éviter le gaspillage des capacités allouées e
 
 [NOTE]
 ====
-Les systèmes de stockage EF600 et EF300 ne prennent pas en charge le provisionnement fin.
+Les systèmes de stockage EF600/EF600C et EF300/EF300C ne prennent pas en charge le provisionnement fin.
 
 ====
 

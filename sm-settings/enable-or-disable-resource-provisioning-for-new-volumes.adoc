@@ -22,6 +22,10 @@ NOTE: Par défaut, le provisionnement de ressources est activé sur les système
 .Avant de commencer
 * Vous devez disposer d'une baie de stockage EF300 ou EF600.
 * Vous devez disposer de groupes ou de pools de volume SSD, où tous les disques prennent en charge la fonctionnalité de restauration d'erreur DULBE (Logical Block Error Enable) de NVMe avec une gestion simplifiée ou non écrite.
++
+
+NOTE: DULBE n'est pas encore pris en charge sur les baies de stockage EF300C ou EF600C.
+
 
 
 .Description de la tâche

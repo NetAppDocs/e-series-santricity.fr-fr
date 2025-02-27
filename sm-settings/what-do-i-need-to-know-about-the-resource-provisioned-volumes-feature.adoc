@@ -2,7 +2,7 @@
 permalink: sm-settings/what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, resource-provisioned, volumes, feature, 
-summary: 'La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d"initialisation en arrière-plan.' 
+summary: 'Le provisionnement des ressources est une fonctionnalité disponible dans les baies de stockage EF300, EF300C, EF600 et EF600C, qui permet aux volumes d"être immédiatement utilisés sans processus d"initialisation en arrière-plan.' 
 ---
 = Que dois-je savoir sur la fonctionnalité de volumes provisionnés par les ressources ?
 :allow-uri-read: 
@@ -19,3 +19,6 @@ Un volume provisionné en ressources est un volume non volumineux dans un groupe
 Les volumes provisionnés par ressource sont pris en charge uniquement sur les groupes et pools de volumes SSD, où tous les disques du groupe ou du pool prennent en charge la fonction de restauration d'erreur DULBE (Logical Block Error Enable) de NVMe désallocation ou non écrite. Lors de la création d'un volume provisionné de ressources, tous les blocs de disques attribués au volume sont désalloué (non mappés). De plus, les hôtes peuvent désallouer les blocs logiques du volume à l'aide de la commande NVMe Dataset Management ou de la commande SCSI Unmap. La gestion de la conservation des blocs peut améliorer la durée de vie du disque SSD et accroître des performances d'écriture maximales. L'amélioration varie selon le modèle de disque et la capacité.
 
 Le provisionnement des ressources est activé par défaut sur les systèmes où les disques prennent en charge DULBE. Vous pouvez désactiver ce paramètre par défaut à partir de *pools et groupes de volumes*.
+
+
+NOTE: DULBE n'est pas encore pris en charge sur les baies de stockage EF300C ou EF600C.

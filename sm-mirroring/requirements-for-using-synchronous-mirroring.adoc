@@ -31,7 +31,7 @@ Pour activer et configurer la mise en miroir entre deux baies, vous devez utilis
 
 [NOTE]
 ====
-La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF300 ou EF600.
+La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF300/EF300C ou EF600/EF600C.
 
 ====
 * Vous devez disposer de deux baies de stockage.

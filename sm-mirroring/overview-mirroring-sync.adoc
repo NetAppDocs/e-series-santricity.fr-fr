@@ -15,7 +15,7 @@ La fonctionnalité de mise en miroir synchrone permet la réplication des donné
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 
 ====
 

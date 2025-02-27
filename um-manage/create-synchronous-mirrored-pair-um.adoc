@@ -16,7 +16,7 @@ Pour configurer la mise en miroir synchrone, vous créez une paire en miroir qui
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 
 ====
 .Avant de commencer

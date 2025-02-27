@@ -31,6 +31,6 @@ System Manager ne propose pas d'option pour la création des volumes fins. Si vo
 ====
 [NOTE]
 ====
-Les volumes fins ne sont pas disponibles sur les systèmes de stockage EF600 ou EF300.
+Les volumes fins ne sont pas disponibles sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 
 ====

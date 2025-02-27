@@ -19,7 +19,7 @@ Le volume d'accès est utilisé dans l'instance suivante :
 +
 [NOTE]
 ====
-La gestion intrabande n'est pas disponible pour les systèmes de stockage EF600 ou EF300.
+La gestion intrabande via le volume d'accès n'est pas disponible pour les systèmes de stockage E4000, EF600/EF600C ou EF300/EF300C.
 
 ====
 

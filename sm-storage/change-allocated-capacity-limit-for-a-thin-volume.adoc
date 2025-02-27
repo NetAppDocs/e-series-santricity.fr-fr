@@ -18,7 +18,7 @@ Vous pouvez également modifier le point de pourcentage auquel une alerte (seuil
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 
 ====
 Le système étend automatiquement la capacité allouée en fonction de la limite de capacité allouée. La limite de capacité allouée vous permet de limiter la croissance automatique du volume fin en dessous de la capacité indiquée. Lorsque le volume de données écrites se rapproche de la capacité allouée, vous pouvez modifier la limite de capacité allouée.

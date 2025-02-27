@@ -40,7 +40,7 @@ Volumes fins
  a| 
 * Les volumes fins sont uniquement créés à partir d'un pool, pas à partir d'un groupe de volumes.
 * Les volumes fins doivent être RAID 6.
-* Les volumes fins ne sont pas disponibles sur les systèmes de stockage EF600 ou EF300.
+* Les volumes fins ne sont pas disponibles sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 * Vous devez utiliser l'interface de ligne de commandes pour créer des volumes fins.
 * Contrairement aux volumes lourds, l'espace requis pour le volume fin n'est pas alloué pendant la création, mais est fourni à la demande ultérieurement.
 * Un thin volume vous permet de sur-allouer sa taille. Vous pouvez donc attribuer une taille de LUN supérieure à la taille du volume. Vous pouvez ensuite augmenter le volume en fonction des besoins (si nécessaire, ajouter des lecteurs lors du processus) sans augmenter la taille du LUN, et donc sans déconnecter les utilisateurs.

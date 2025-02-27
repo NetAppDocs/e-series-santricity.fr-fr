@@ -15,7 +15,7 @@ SANtricity Unified Manager inclut des options de configuration pour les fonction
 
 [NOTE]
 ====
-La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 
 ====
 

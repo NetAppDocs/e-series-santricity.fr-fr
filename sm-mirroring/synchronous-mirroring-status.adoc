@@ -15,7 +15,7 @@ L'état d'une paire synchrone en miroir indique si les données du volume princi
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
+Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
 
 ====
 Les paires mises en miroir synchrones peuvent avoir l'un des États suivants :

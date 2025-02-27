@@ -102,8 +102,8 @@ System Manager peut suggérer une configuration de volume en fonction de l'appli
 * Le nombre maximal de volumes autorisés dans un groupe de volumes est de 256.
 * Le nombre maximum de volumes autorisé dans un pool dépend du modèle du système de stockage :
 +
-** 2,048 volumes (EF600 et E5700 Series)
-** 1,024 volumes (EF300)
+** 2,048 volumes (séries EF600, EF600C et E5700)
+** 1,024 volumes (EF300 et EF300C)
 ** 512 volumes (E4000 et E2800 Series)
 
 
@@ -346,6 +346,6 @@ System Manager crée les nouveaux volumes dans les pools et groupes de volumes s
 * Apportez les modifications nécessaires au système d'exploitation sur l'hôte de l'application afin que les applications puissent utiliser le volume.
 * Exécutez l'utilitaire spécifique au système d'exploitation (disponible auprès d'un fournisseur tiers), puis exécutez la commande SMcli `-identifyDevices` pour mettre en corrélation les noms de volumes avec les noms de matrices de stockage hôte.
 +
-Le SMcli est disponible directement via le Gestionnaire système SANtricity. Cette version téléchargeable de SMcli est disponible sur les contrôleurs E4000, EF600, EF300, E5700, EF570, E2800 et EF280. Pour télécharger le SMcli dans le Gestionnaire système SANtricity, sélectionnez *Paramètres* > *système* et *Add-ons* > *interface de ligne de commande* .
+Le SMcli est disponible directement via le Gestionnaire système SANtricity. Cette version téléchargeable de SMcli est disponible sur les contrôleurs E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 et EF280. Pour télécharger le SMcli dans le Gestionnaire système SANtricity, sélectionnez *Paramètres* > *système* et *Add-ons* > *interface de ligne de commande* .
 
 
