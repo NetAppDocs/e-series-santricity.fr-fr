@@ -1241,10 +1241,6 @@
   <block id="f20f6d487c692f545d0e34b3f99face7" category="list-text">*Certificats auto-signés*</block>
   <block id="f052a72434f6bc613c169fc96093903a" category="paragraph">Les certificats auto-signés peuvent également être utilisés. Si l'administrateur tente de détecter les matrices sans importer les certificats signés, Unified Manager affiche une boîte de dialogue d'erreur qui permet à l'administrateur d'accepter le certificat auto-signé. Le certificat auto-signé de la baie de stockage sera marqué comme approuvé et la baie de stockage sera ajoutée à Unified Manager.</block>
   <block id="5e83f689355fdec866c155c6fe9b323e" category="paragraph">Si vous ne faites pas confiance aux connexions à la baie de stockage, sélectionnez *Annuler* et validez la stratégie de certificat de sécurité de la baie de stockage avant d'ajouter la baie de stockage à Unified Manager.</block>
-  <block id="7d63fa7b66beb048adb4cb5412f78f29" category="summary">Unified Manager permet de mettre à niveau le logiciel SANtricity OS sur plusieurs baies de stockage du même type vers une version plus récente.</block>
-  <block id="35a02fabedaff63c9eea49354c0479c7" category="doc">Fonctionnement des mises à niveau</block>
-  <block id="37e1222cab25890a0cd0d01b19f4489d" category="paragraph">Les étapes suivantes fournissent un flux de travail général pour les mises à niveau logicielles :</block>
-  <block id="bc2ada3b24f486f7b98ff3159828f426" category="list-text">Vous téléchargez le dernier fichier logiciel SANtricity OS depuis le site de support (un lien est disponible depuis Unified Manager dans la page *support*). Enregistrez le fichier sur le système hôte de gestion (l'hôte sur lequel vous accédez à Unified Manager dans un navigateur), puis décompressez le fichier.</block>
   <block id="d18c8b00e80b505406982d1c60493e63" category="summary">Vous pouvez supprimer une ou plusieurs baies de stockage si vous ne souhaitez plus la gérer depuis SANtricity Unified Manager.</block>
   <block id="bc54c8923d2e900bc8b88d98dcd843d0" category="doc">Retirez les baies de stockage de SANtricity Unified Manager</block>
   <block id="46da89f7644863b59a53669234ecf705" category="paragraph">Vous ne pouvez accéder à aucune des baies de stockage que vous supprimez. Vous pouvez cependant établir une connexion avec n'importe quelle baie de stockage supprimée en pointant directement un navigateur vers son adresse IP ou son nom d'hôte.</block>
@@ -1593,8 +1589,6 @@
   <block id="9bff0a52d07123acc65d79466ad99166" category="summary">Vous pouvez prendre des mesures sur l'état de votre matrice de stockage actuelle en consultant le journal secteurs illisibles, en réactivant les ports de lecteur et en désactivant le mode de récupération.</block>
   <block id="7ca3e291db0767443f0a1deecc6e4357" category="doc">Action de récupération sur l'état de la baie de stockage</block>
   <block id="47c365409e53a20cd64997e83455ba87" category="paragraph">Vous pouvez prendre des mesures sur l'état de votre matrice de stockage actuelle en consultant le journal secteurs illisibles, en réactivant les ports de lecteur et en désactivant le mode de récupération.</block>
-  <block id="0053cb3da5cd9357da42c9285388e7c5" category="summary">Dans SANtricity System Manager, vous pouvez mettre à niveau le logiciel et le firmware du contrôleur en procédant comme suit.</block>
-  <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Flux de production pour la mise à niveau du logiciel du contrôleur et du firmware</block>
   <block id="96a401a06cef5a915fce2a865f398ff3" category="summary">Le support technique peut utiliser les fichiers de support de récupération pour résoudre les problèmes. System Manager enregistre automatiquement ces fichiers.</block>
   <block id="826797a3791c77da7755188cc4e4f541" category="doc">Récupérer les fichiers de support de récupération</block>
   <block id="b05b836d4b850a9b5974a8ca6dd2f03a" category="paragraph">Le support technique vous a demandé de leur envoyer des fichiers supplémentaires pour le dépannage.</block>
@@ -8620,7 +8614,6 @@
   <block id="22ec79b8668bcaf4a33eed694079e8b1" category="summary">La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la fourniture d'interventions AutoSupport au support technique.</block>
   <block id="dd0ab6e042458857b9d76ede295a637e" category="image-alt">Mettre à niveau les emplacements du micrologiciel</block>
   <block id="da31bdea5b9fdfa2bf077a70c49a1d66" category="image-alt">Workflow AutoSupport</block>
-  <block id="0ceabfdc68af97f8a0c7393faf135de8" category="image-alt">Workflow de mise à niveau du logiciel du contrôleur et du firmware</block>
   <block id="ece14770330886bc2d41238acbfe48aa" category="summary">SANtricity Unified Manager 7</block>
   <block id="3cd6f83d0a9a8330c077dfc98649ab8a" category="paragraph">Vous pouvez configurer les paramètres utilisés dans SANtricity Unified Manager.</block>
   <block id="0be150145c60047c6667d2bfbc4085d9" category="image-alt">Connexion hors bande au client de gestion de réseau avec un navigateur Web.</block>
@@ -8713,7 +8706,6 @@
   <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">Vous pouvez obtenir et importer des certificats signés par une autorité de certification pour un accès sécurisé au système de gestion hébergeant SANtricity Unified Manager.</block>
   <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Avant de pouvoir afficher et gérer les ressources de stockage, SANtricity Unified Manager doit détecter les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule.</block>
   <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">SANtricity Unified Manager permet d'importer les paramètres d'une baie de stockage vers plusieurs baies de stockage. La fonction Importer les paramètres est une opération par lots qui permet de gagner du temps lorsque vous devez configurer plusieurs matrices sur le réseau.</block>
-  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">SANtricity Unified Manager permet de mettre à niveau le logiciel SANtricity OS sur plusieurs baies de stockage du même type vers une version plus récente.</block>
   <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Facteurs à prendre en compte pour accéder à SANtricity System Manager</block>
   <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">Vous configurez la mise en miroir asynchrone ou synchrone dans SANtricity Unified Manager, puis vous utilisez SANtricity System Manager pour gérer les synchronisations.</block>
   <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">SANtricity Unified Manager inclut des options de configuration pour les fonctionnalités de mise en miroir SANtricity, qui permettent aux administrateurs de répliquer des données entre deux baies de stockage à des fins de protection des données.</block>
@@ -8749,4 +8741,7 @@
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">Cette version présente les systèmes de stockage NVMe 100 % Flash EF300C et EF600C. EF300C et EF600C sont des versions Flash haute capacité des systèmes de stockage EF300 et EF600 déjà en place. Les disques SSD NVMe haute capacité de 30 To ou 60 To sont pris en charge par les systèmes EF300C et EF600C. Les baies EF300C/EF600C sont compatibles avec les pools de disques dynamiques, mais elles ne prennent pas en charge les configurations RAID existantes.</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Prise en charge des interfaces SAS 12 Gb sur EF4000</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">Le contrôleur E4000 prend désormais en charge les cartes d'interface hôte SAS 12 Gb.</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">Nouvelles fonctionnalités de la version 11.90R2</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Notes de version d'E-Series 11.90</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">Cette version contient uniquement des modifications mineures et aucune nouvelle fonction. Pour plus d'informations sur les modifications apportées à cette version, reportez-vous au<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>.</block>
 </blocks>
