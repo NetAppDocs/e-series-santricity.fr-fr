@@ -66,9 +66,17 @@ Lorsque le langage SAML est activé, les utilisateurs ne peuvent pas détecter n
 En outre, les clients suivants ne peuvent pas accéder aux ressources et aux services de la baie de stockage :
 
 * Fenêtre de gestion Enterprise (EMW)
-* Interface de ligne de commandes
 * Clients SDK (Software Developer kits)
 * Clients intrabande
-* Clients API REST HTTP Basic Authentication
 * Connectez-vous à l'aide d'un terminal API REST standard
+
+
+
+
+=== Connectivité limitée avec SAML activé
+
+Les fonctionnalités de la baie de stockage suivantes ont une connectivité limitée avec l'authentification JSON Web Token lorsque SAML est activé.
+
+* Interface de ligne de commandes
+* Clients API REST HTTP Basic Authentication
 
