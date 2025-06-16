@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
 summary: 'À partir de la page certificats, vous pouvez afficher le type de certificat, l"autorité d"émission et la plage de dates valide des certificats de la matrice de stockage.' 
 ---
-= Afficher les informations de certificat importé
+= Afficher les informations du certificat importé dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

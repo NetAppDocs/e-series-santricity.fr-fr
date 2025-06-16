@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, asynchronously, 
 summary: 'Vous configurez la mise en miroir asynchrone à l"aide du workflow suivant.' 
 ---
-= Workflow de mise en miroir asynchrone d'un volume
+= Mettre en miroir un volume de manière asynchrone dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

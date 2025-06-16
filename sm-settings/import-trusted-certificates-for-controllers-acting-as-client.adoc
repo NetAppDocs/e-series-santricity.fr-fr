@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Si le contrôleur rejette une connexion parce qu"il ne peut pas valider la chaîne de confiance d"un serveur réseau, vous pouvez importer un certificat depuis l"onglet approuvé qui permet au contrôleur (agissant en tant que client) d"accepter les communications de ce serveur.' 
 ---
-= Importer des certificats pour les contrôleurs lorsqu'ils agissent en tant que clients
+= Importer des certificats pour les contrôleurs lorsqu'ils agissent en tant que clients dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

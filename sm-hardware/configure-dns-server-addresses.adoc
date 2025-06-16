@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, dns, server, addresses, 
 summary: 'Le système DNS (Domain Name System) est utilisé pour résoudre les noms de domaine complets pour les contrôleurs et un serveur NTP (Network Time Protocol). Les ports de gestion de la baie de stockage peuvent prendre en charge les protocoles IPv4 ou IPv6 simultanément.' 
 ---
-= Configurez les adresses des serveurs DNS
+= Configurer les adresses du serveur DNS dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

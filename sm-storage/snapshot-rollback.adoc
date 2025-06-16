@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
 summary: 'Une opération de restauration renvoie un volume de base à un état précédent déterminé par l"instantané sélectionné.' 
 ---
-= Restauration des snapshots
+= En savoir plus sur la restauration des snapshots dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

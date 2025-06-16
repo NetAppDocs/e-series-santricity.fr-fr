@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, thin, volume, monitoring 
 summary: 'Vous pouvez surveiller les volumes fins en termes d"espace, puis générer des alertes appropriées pour éviter les conditions de capacité insuffisante.' 
 ---
-= Surveillance du volume fin
+= En savoir plus sur la surveillance des volumes légers dans le logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, hardware, components, filtering, 
 summary: La page matériel fournit des fonctions de tri et de filtrage qui facilitent la recherche des composants. 
 ---
-= Afficher les composants matériels
+= Afficher les composants matériels dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, check, volume, redundancy 
 summary: 'Sous la supervision du support technique ou conformément aux instructions du gourou de la restauration, vous pouvez vérifier la redondance d"un volume dans un pool ou un groupe de volumes afin de déterminer si les données de ce volume sont cohérentes. Les données redondantes sont utilisées pour reconstruire rapidement les informations sur un disque de remplacement en cas de panne de l"un des disques du pool ou du groupe de volumes.' 
 ---
-= Vérifier la redondance des volumes
+= Vérifier la redondance des volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

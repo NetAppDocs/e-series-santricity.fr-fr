@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, terms 
 summary: 'Découvrez comment les conditions générales du stockage à distance s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie Remote Storage
+= Découvrez la terminologie du stockage à distance dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

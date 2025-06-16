@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: 'Vous sélectionnez une ou plusieurs baies de stockage et utilisez l"option de lancement pour ouvrir SANtricity System Manager lorsque vous souhaitez configurer et gérer les baies de stockage.' 
 ---
-= Facteurs à prendre en compte pour accéder à SANtricity System Manager
+= En savoir plus sur l'accès à SANtricity System Manager depuis Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

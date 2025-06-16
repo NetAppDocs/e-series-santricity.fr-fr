@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, base, volume 
 summary: 'Vous pouvez effectuer une restauration pour modifier le contenu d"un volume de base afin qu"il corresponde au contenu enregistré dans une image snapshot. L"opération de retour arrière ne modifie pas le contenu des images de snapshot qui sont associées au volume de base.' 
 ---
-= Démarrer la restauration d'image instantanée pour un volume de base
+= Démarrer la restauration de l'image instantanée pour un volume de base dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

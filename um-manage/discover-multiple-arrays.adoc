@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
 summary: Vous découvrez plusieurs baies pour détecter toutes les baies de stockage dans le sous-réseau où réside le serveur de gestion et ajouter automatiquement les baies découvertes à votre domaine de gestion. 
 ---
-= Découvrir plusieurs baies de stockage
+= Découvrez plusieurs baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

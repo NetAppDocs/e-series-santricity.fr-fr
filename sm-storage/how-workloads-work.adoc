@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, application, workloads, volume, 
 summary: 'Lors de la création d"un volume, vous sélectionnez une charge de travail pour personnaliser la configuration de la matrice de stockage d"une application spécifique.' 
 ---
-= Fonctionnement des workloads
+= Comment fonctionnent les charges de travail dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

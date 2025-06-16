@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
 summary: 'L"option réduire la capacité permet de réduire la capacité réservée aux objets de stockage suivants : groupe de snapshots, volume snapshot et volume membre du groupe de cohérence. Vous pouvez diminuer la capacité réservée uniquement en fonction de la ou des quantité(s) utilisée(s) pour l"augmenter.' 
 ---
-= Réduction de la capacité réservée
+= Réduire la capacité réservée dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

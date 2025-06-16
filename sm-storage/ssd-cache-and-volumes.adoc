@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd, cache, volumes 
 summary: 'Vous pouvez ajouter un volume à SSD cache pour améliorer les performances en lecture seule. La fonctionnalité SSD cache se compose d"un ensemble de disques SSD que vous regroupez logiquement au sein de votre baie de stockage.' 
 ---
-= SSD cache et les volumes
+= En savoir plus sur le cache et les volumes SSD dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

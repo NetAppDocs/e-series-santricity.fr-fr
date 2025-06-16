@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity values 
 summary: 'System Manager peut afficher les valeurs de capacité soit en gibioctets (Gio), soit en Tio.' 
 ---
-= Définissez les unités par défaut pour les valeurs de capacité
+= Définir les unités par défaut pour les valeurs de capacité dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

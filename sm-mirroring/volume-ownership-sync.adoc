@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, ownership, sync, change, preferred, controller, owner, mirrored, pair, 
 summary: Vous pouvez modifier le propriétaire du contrôleur préféré dans une paire en miroir. 
 ---
-= Propriété de volume
+= En savoir plus sur la propriété des volumes dans la mise en miroir synchrone dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

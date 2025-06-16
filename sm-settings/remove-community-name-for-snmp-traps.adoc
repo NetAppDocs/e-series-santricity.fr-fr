@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, communities, snmpv2c, traps, 
 summary: Vous pouvez supprimer un nom de communauté pour les déroutements SNMPv2c. 
 ---
-= Supprimer des communautés pour les déroutements SNMPv2c
+= Supprimer les communautés pour les interruptions SNMPv2c dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

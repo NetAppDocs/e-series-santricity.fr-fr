@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, increase, capacity, volume 
 summary: 'Vous pouvez augmenter la capacité indiquée (la capacité signalée aux hôtes) d"un volume en utilisant la capacité disponible dans le pool ou le groupe de volumes.' 
 ---
-= Augmentation de la capacité d'un volume
+= Augmenter la capacité d'un volume dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

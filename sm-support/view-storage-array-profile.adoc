@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
 summary: Le profil de la matrice de stockage fournit une description de tous les composants et propriétés de la matrice de stockage. 
 ---
-= Afficher le profil de la matrice de stockage
+= Afficher le profil d'une baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

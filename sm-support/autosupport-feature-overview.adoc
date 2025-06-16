@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
 summary: 'La fonction AutoSupport surveille l"état de santé d"une baie de stockage et envoie des interventions automatiques au support technique.' 
 ---
-= Présentation des fonctionnalités AutoSupport
+= En savoir plus sur AutoSupport pour la série E
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

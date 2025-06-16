@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: 'Les systèmes E-Series incluent le logiciel SANtricity pour le provisionnement du stockage et d"autres tâches.' 
 ---
-= Présentation du logiciel SANtricity
+= En savoir plus sur les logiciels SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

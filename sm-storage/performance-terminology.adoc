@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance, terms 
 summary: Découvrez les performances de votre baie de stockage. 
 ---
-= Terminologie des performances
+= Découvrez la terminologie des performances dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

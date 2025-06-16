@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access volumes 
 summary: 'Un volume d"accès est un volume configuré en usine sur la matrice de stockage utilisé pour la communication avec la matrice de stockage et l"hôte via la connexion E/S de l"hôte. Le volume d"accès requiert un numéro d"unité logique (LUN).' 
 ---
-= Accéder aux volumes
+= Accéder aux volumes dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Alerts, 
 summary: Vous pouvez configurer System Manager pour envoyer des alertes de baie de stockage par e-mail, des interruptions SNMP et des messages syslog. 
 ---
-= Présentation des alertes
+= En savoir plus sur les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

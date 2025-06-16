@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
 summary: 'Vous pouvez annuler une restauration active en cours (copie active des données), une restauration en attente (dans une file d"attente en attente de démarrage des ressources) ou une restauration interrompue en raison d"une erreur.' 
 ---
-= Annuler le retour arrière de l'image instantanée
+= Annuler la restauration de l'image instantanée dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

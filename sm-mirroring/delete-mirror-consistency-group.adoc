@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
 summary: Il est possible de supprimer les groupes de cohérence des miroirs qui ne sont plus nécessaires sur la baie de stockage locale et sur la baie de stockage distante. 
 ---
-= Supprimez le groupe de cohérence en miroir
+= Supprimer un groupe de cohérence miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

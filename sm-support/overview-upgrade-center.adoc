@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, center 
 summary: Utilisez le Centre de mise à niveau pour télécharger les derniers logiciels et micrologiciels et mettre à niveau votre matrice de stockage pour obtenir les dernières fonctionnalités et correctifs. 
 ---
-= Présentation du centre de mise à niveau
+= En savoir plus sur la mise à niveau du logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

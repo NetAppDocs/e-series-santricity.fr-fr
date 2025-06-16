@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, host, host cluster 
 summary: Vous pouvez supprimer un hôte ou un cluster hôte. 
 ---
-= Supprime l'hôte ou le cluster hôte
+= Supprimer un hôte ou un cluster d'hôtes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

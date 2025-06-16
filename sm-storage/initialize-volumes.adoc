@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, initialize, volumes 
 summary: 'Un volume est automatiquement initialisé lors de sa première création. Cependant, il est possible que le gourou de la restauration indique que vous initiez manuellement un volume afin d"effectuer une restauration suite à une certaine défaillance. Utilisez cette option uniquement sous les instructions du support technique. Vous pouvez sélectionner un ou plusieurs volumes à initialiser.' 
 ---
-= Initialiser les volumes
+= Initialiser les volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

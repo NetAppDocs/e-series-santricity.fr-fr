@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, users, snmpv3, traps, 
 summary: 'Vous pouvez ajouter jusqu"à 256 utilisateurs pour les interruptions SNMPv3.' 
 ---
-= Ajouter des utilisateurs pour les interruptions SNMPv3
+= Ajouter des utilisateurs pour les interruptions SNMPv3 dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

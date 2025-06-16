@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, notifications 
 summary: System Manager utilise des icônes et plusieurs autres méthodes pour vous informer que des problèmes existent avec la baie de stockage. 
 ---
-= Aperçu des notifications de problèmes
+= En savoir plus sur les notifications de problèmes du gestionnaire de système SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

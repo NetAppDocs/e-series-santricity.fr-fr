@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
 summary: 'En affichant les journaux d"audit, les utilisateurs disposant d"autorisations d"administrateur de sécurité peuvent surveiller les actions des utilisateurs, les échecs d"authentification, les tentatives de connexion non valides et la durée de vie des sessions utilisateur.' 
 ---
-= Afficher l'activité du journal d'audit
+= Afficher l'activité du journal d'audit dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

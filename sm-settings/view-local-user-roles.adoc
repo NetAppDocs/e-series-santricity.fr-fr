@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
 summary: 'Dans l"onglet rôles utilisateur local, vous pouvez afficher les mappages des profils utilisateur avec les rôles par défaut. Ces mappages font partie du RBAC (contrôle d"accès basé sur des rôles) appliqué dans la baie de stockage.' 
 ---
-= Afficher les rôles d'utilisateur local
+= Afficher les rôles des utilisateurs locaux dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

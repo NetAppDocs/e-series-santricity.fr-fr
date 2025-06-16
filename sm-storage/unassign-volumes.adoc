@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unassign, volumes 
 summary: 'Annulez l"affectation des volumes des hôtes ou des clusters hôtes si vous ne avez plus besoin d"accéder aux E/S à ce volume depuis l"hôte ou le cluster hôte.' 
 ---
-= Annuler l'attribution des volumes
+= Annuler l'attribution des volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

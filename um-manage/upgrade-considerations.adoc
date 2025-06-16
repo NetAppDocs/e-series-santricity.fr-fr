@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
 summary: 'Avant d"utiliser Unified Manager pour mettre à niveau plusieurs baies de stockage, prenez en compte les considérations clés dans le cadre de votre planification.' 
 ---
-= Mise à niveau
+= Découvrez comment mettre à niveau plusieurs baies de stockage avec SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

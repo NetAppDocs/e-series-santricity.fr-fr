@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
 summary: 'Vous pouvez modifier le rôle entre les volumes d"une paire en miroir. Pour ce faire, vous pouvez rétrograder le volume principal au rôle secondaire ou promouvoir le volume secondaire au rôle principal.' 
 ---
-= Changement de rôle entre les volumes d'une paire en miroir
+= En savoir plus sur les changements de rôle de volume dans une paire miroir dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

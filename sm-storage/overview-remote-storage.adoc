@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: 'Si vous disposez de la fonction stockage distant, vous pouvez importer des données à partir d"un système de stockage distant.' 
 ---
-= Présentation des fonctionnalités de stockage distant
+= En savoir plus sur la fonctionnalité de stockage à distance dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

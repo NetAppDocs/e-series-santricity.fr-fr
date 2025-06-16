@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, communities, smpv2c, traps, 
 summary: Vous pouvez modifier les noms de communauté pour les déroutements SNMPv2c. 
 ---
-= Modifier des communautés pour les déroutements SNMPv2c
+= Modifier les communautés pour les interruptions SNMPv2c dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

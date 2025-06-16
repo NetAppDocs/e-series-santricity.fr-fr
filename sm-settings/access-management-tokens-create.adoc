@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, create tokens 
 summary: 'Vous pouvez créer des jetons d"accès qui sont utilisés pour s"authentifier auprès de l"API REST ou de l"interface de ligne de commande à la place d"un nom d"utilisateur et d"un mot de passe.' 
 ---
-= Créez des jetons d'accès
+= Créer des jetons d'accès dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

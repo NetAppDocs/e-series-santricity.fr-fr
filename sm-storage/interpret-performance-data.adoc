@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, interpret, performance data 
 summary: Les données de performances peuvent vous aider à régler les performances de votre baie de stockage. 
 ---
-= Interpréter les données de performances
+= Interpréter les données de performance dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

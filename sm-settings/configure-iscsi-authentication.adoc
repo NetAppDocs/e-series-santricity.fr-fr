@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iscsi, authentication, 
 summary: 'Pour plus de sécurité sur un réseau iSCSI, vous pouvez définir l"authentification entre les contrôleurs (cibles) et les hôtes (initiateurs).' 
 ---
-= Configurez l'authentification iSCSI
+= Configurer l'authentification iSCSI dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

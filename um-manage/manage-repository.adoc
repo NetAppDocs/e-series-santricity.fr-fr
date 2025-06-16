@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, software, repository 
 summary: Le référentiel logiciel répertorie tous les fichiers logiciels associés au proxy de services Web. 
 ---
-= Gérez un référentiel logiciel
+= Gérer le référentiel de logiciels SANtricity dans Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, software, firmware, inventory 
 summary: 'L"inventaire des logiciels et des micrologiciels répertorie les versions de micrologiciel de chaque composant de la matrice de stockage.' 
 ---
-= Afficher l'inventaire des logiciels et des firmwares
+= Afficher l'inventaire des logiciels et des micrologiciels dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

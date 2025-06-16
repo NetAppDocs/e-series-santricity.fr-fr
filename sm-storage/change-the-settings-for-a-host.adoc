@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, host 
 summary: 'Vous pouvez modifier le nom, le type de système d"exploitation hôte et les clusters hôtes associés pour un hôte.' 
 ---
-= Modifiez les paramètres d'un hôte
+= Modifier les paramètres d'un hôte dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, alerts, 
 summary: 'Pour configurer les alertes syslog, vous devez entrer une adresse de serveur syslog et un port UDP. Jusqu"à cinq serveurs syslog sont autorisés.' 
 ---
-= Configurer le serveur syslog pour les alertes
+= Configurer le serveur Syslog pour les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

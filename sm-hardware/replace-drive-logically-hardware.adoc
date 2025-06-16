@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, replace, drive, logically, 
 summary: 'Si un disque tombe en panne ou si vous souhaitez le remplacer pour une autre raison et que vous disposez d"un disque non affecté dans votre baie de stockage, vous pouvez remplacer de manière logique le disque défectueux par le disque non affecté. Si vous n"avez pas de lecteur non affecté, vous pouvez remplacer physiquement le lecteur.' 
 ---
-= Remplacer l'entraînement logiquement
+= Remplacer un lecteur de manière logique dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

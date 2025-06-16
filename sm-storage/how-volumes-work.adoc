@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, copy, 
 summary: 'Les volumes sont des conteneurs de données qui gèrent et organisent l"espace de stockage sur votre baie de stockage.' 
 ---
-= Fonctionnement des volumes
+= Comment fonctionnent les volumes dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

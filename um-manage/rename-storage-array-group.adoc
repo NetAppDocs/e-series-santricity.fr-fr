@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, rename, storage, array, group 
 summary: 'Vous pouvez modifier le nom d"un groupe de matrices de stockage lorsque le nom actuel n"a plus de sens ou s"applique.' 
 ---
-= Renommer le groupe de matrices de stockage
+= Renommer un groupe de baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

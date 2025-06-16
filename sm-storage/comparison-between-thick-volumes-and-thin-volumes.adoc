@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
 summary: 'Un volume lourd est toujours entièrement provisionné, ce qui signifie que toute la capacité est allouée au moment de la création du volume. Un volume fin fait toujours l"objet d"un provisionnement fin, ce qui signifie que la capacité est allouée au fur et à mesure de l"écriture des données sur le volume.' 
 ---
-= Comparaison entre les volumes non fin et les volumes fins
+= En savoir plus sur les volumes épais et minces dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

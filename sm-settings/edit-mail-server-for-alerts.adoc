@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
 summary: 'Vous pouvez modifier l"adresse du serveur de messagerie et l"adresse de l"expéditeur utilisée pour les alertes par e-mail.' 
 ---
-= Modifiez le serveur de messagerie pour les alertes
+= Modifier le serveur de messagerie pour les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

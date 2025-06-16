@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
 summary: La capacité réservée est automatiquement créée lors des opérations de copie, telles que les snapshots ou la mise en miroir asynchrone de vos volumes. 
 ---
-= Fonctionnement de la capacité réservée
+= Comment fonctionne la capacité réservée dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

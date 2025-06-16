@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, service, mode, 
 summary: Si vous y êtes invité, vous pouvez placer un contrôleur en mode maintenance. 
 ---
-= Placer le contrôleur en mode maintenance
+= Placer un contrôleur en mode service dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

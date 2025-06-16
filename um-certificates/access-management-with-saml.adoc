@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, saml 
 summary: Pour Access Management, les administrateurs peuvent utiliser les fonctionnalités SAML 2.0 intégrées à la baie. 
 ---
-= Gestion des accès avec SAML
+= Gestion des accès avec SAML dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, edit tokens 
 summary: 'Vous pouvez modifier les paramètres des jetons d"accès, qui comprennent l"heure d"expiration et la possibilité de créer de nouveaux jetons.' 
 ---
-= Modifier les paramètres du jeton d'accès
+= Modifier les paramètres du jeton d'accès dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

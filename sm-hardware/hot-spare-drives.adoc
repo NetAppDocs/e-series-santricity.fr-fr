@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
 summary: Les disques de secours servent de disques de secours dans des groupes de volumes RAID 1, RAID 5 ou RAID 6 pour System Manager. 
 ---
-= Présentation du lecteur de disque de secours
+= En savoir plus sur les disques de secours dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

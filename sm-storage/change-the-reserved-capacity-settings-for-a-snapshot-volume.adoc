@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, volume 
 summary: 'Vous pouvez modifier les paramètres d"un volume d"instantané pour régler le point de pourcentage auquel le système envoie une notification d"alerte lorsque la capacité réservée d"un volume d"instantané est presque pleine.' 
 ---
-= Modifiez les paramètres de capacité réservée d'un volume snapshot
+= Modifier les paramètres de capacité réservée pour un volume de snapshot dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

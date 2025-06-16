@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
 summary: 'Modifiez les identificateurs de port hôte lorsque vous souhaitez modifier le libellé utilisateur d"un identificateur de port hôte, ajouter un nouvel identificateur de port hôte à l"hôte ou supprimer un identificateur de port hôte de l"hôte.' 
 ---
-= Modifiez les identifiants de port hôte d'un hôte
+= Modifier les identifiants de port d'hôte pour un hôte dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

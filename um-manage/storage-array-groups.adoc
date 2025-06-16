@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, groups 
 summary: 'Vous pouvez gérer votre infrastructure physique et virtualisée en regroupant un ensemble de baies de stockage. Vous pouvez regrouper les baies de stockage par groupe pour faciliter l"exécution des tâches de surveillance ou de reporting.' 
 ---
-= Groupes de baies de stockage
+= En savoir plus sur les groupes de baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

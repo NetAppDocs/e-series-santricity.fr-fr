@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
 summary: 'Vous pouvez enregistrer les informations de configuration d"une matrice de stockage dans un fichier script pour gagner du temps lors de la configuration de matrices de stockage supplémentaires avec la même configuration.' 
 ---
-= Enregistrer la configuration de la matrice de stockage
+= Enregistrer la configuration de la baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

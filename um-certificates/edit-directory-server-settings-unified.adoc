@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, edit, directory, server, settings, role, mappings 
 summary: 'Si vous avez déjà configuré un serveur d"annuaire dans Access Management, vous pouvez modifier ses paramètres à tout moment. Les paramètres incluent les informations de connexion du serveur et les mappages de groupe à rôle.' 
 ---
-= Modifier les paramètres du serveur d'annuaire et les mappages de rôles
+= Modifier les paramètres du serveur d'annuaire et les mappages de rôles dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

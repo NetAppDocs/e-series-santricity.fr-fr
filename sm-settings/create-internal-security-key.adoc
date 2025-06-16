@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
 summary: Pour utiliser la fonction sécurité des lecteurs, vous pouvez créer une clé de sécurité interne partagée par les contrôleurs et les lecteurs sécurisés de la matrice de stockage. Les clés internes sont conservées sur la mémoire persistante du contrôleur. 
 ---
-= Créer une clé de sécurité interne
+= Créer une clé de sécurité interne dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

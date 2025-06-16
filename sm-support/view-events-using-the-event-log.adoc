@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, events, 
 summary: Vous pouvez afficher le journal des événements, qui fournit un historique des événements survenus sur la matrice de stockage. 
 ---
-= Affichez les événements à l'aide du journal des événements
+= Afficher les événements à l'aide du journal des événements dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

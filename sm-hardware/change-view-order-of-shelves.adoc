@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
 summary: 'Vous pouvez modifier l"ordre des tiroirs affiché sur la page Hardware en fonction de l"ordre physique des tiroirs dans une armoire.' 
 ---
-= Modifier l'ordre d'affichage des étagères
+= Modifier l'ordre d'affichage des étagères dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

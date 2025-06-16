@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, locator, lights, 
 summary: 'Pour trouver l"emplacement physique d"une matrice de stockage dans une armoire, vous pouvez activer ses voyants de localisation (LED).' 
 ---
-= Activez les voyants de localisation de la matrice de stockage
+= Activer les voyants de localisation de la baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

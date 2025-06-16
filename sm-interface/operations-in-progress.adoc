@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, operations in progress 
 summary: 'La page opérations en cours vous permet d"afficher une liste des opérations en cours d"exécution ou en état suspendu, arrêté ou en échec. Vous pouvez prendre des mesures sur certains types d"opérations.' 
 ---
-= Opérations en cours
+= En savoir plus sur la page des opérations en cours du gestionnaire de système SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

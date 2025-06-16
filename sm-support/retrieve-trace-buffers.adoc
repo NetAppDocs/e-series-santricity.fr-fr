@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, trace, buffers 
 summary: Vous pouvez récupérer les tampons de trace depuis les contrôleurs et envoyer le fichier au support technique pour analyse. 
 ---
-= Récupérer les tampons de trace
+= Récupérer les tampons de trace dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

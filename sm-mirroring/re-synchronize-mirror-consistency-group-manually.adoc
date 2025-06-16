@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
 summary: Vous pouvez démarrer manuellement la resynchronisation pour toutes les paires mises en miroir dans un groupe de cohérence miroir. 
 ---
-= Synchronisez à nouveau le groupe de cohérence miroir manuellement
+= Resynchroniser manuellement les groupes de cohérence miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

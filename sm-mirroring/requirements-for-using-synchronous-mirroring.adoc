@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, synchronous, mirroring, 
 summary: 'Si vous prévoyez d"utiliser la mise en miroir synchrone, sachez qu"il faut respecter les exigences suivantes.' 
 ---
-= Requise pour l'utilisation de la mise en miroir synchrone
+= Conditions requises pour l'utilisation de la mise en miroir synchrone dans le logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

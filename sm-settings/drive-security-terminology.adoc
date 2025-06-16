@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, drive, security, terms, 
 summary: 'Découvrez comment les conditions de sécurité des lecteurs s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie de sécurité des lecteurs
+= Découvrez la terminologie de sécurité des disques dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

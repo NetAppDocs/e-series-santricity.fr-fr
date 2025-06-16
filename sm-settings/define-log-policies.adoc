@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
 summary: 'Vous pouvez modifier la stratégie d"écrasement et les types d"événements enregistrés dans le journal d"audit.' 
 ---
-= Définissez des règles de journal d'audit
+= Définir les politiques de journal d'audit dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

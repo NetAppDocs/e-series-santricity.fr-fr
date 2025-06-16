@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: 'Vous pouvez créer un volume comme conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Lors de la création d"un volume, vous sélectionnez également une charge de travail pour personnaliser la configuration de la matrice de stockage d"une application spécifique.' 
 ---
-= Présentation des volumes et des charges de travail
+= En savoir plus sur les volumes et les charges de travail dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

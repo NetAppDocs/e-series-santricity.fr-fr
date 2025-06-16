@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, storage, array, group 
 summary: Vous pouvez supprimer un ou plusieurs groupes de matrices de stockage qui ne sont plus nécessaires. 
 ---
-= Supprimer le groupe de matrices de stockage
+= Supprimer un groupe de baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

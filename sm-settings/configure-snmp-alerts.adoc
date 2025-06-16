@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
 summary: 'Pour configurer les alertes SNMP (simple Network Management Protocol), vous devez identifier au moins un serveur sur lequel le moniteur d"événements de la baie de stockage peut envoyer des interruptions SNMP. La configuration requiert un nom de communauté ou d"utilisateur et une adresse IP pour le serveur.' 
 ---
-= Configurez les alertes SNMP
+= Configurer les alertes SNMP dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

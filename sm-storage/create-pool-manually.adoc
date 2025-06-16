@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, pool, manually 
 summary: 'Vous pouvez créer un pool manuellement (à partir d"un ensemble de candidats) si la fonction de configuration automatique de pool ne fournit pas de pool qui répond à vos besoins.' 
 ---
-= Créer le pool manuellement
+= Créer un pool manuellement dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

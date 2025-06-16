@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
 summary: 'Vous pouvez effacer le journal d"audit des anciens événements, ce qui facilite la recherche à travers les événements. Vous avez la possibilité d"enregistrer les anciens événements dans un fichier CSV (valeurs séparées par des virgules) lors de la suppression.' 
 ---
-= Supprimer des événements du journal d'audit
+= Supprimer les événements du journal d'audit dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

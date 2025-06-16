@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
 summary: 'Vous pouvez mettre à jour l"adresse IP iSCSI de votre matrice de stockage distante afin de rétablir la connexion avec la matrice de stockage locale.' 
 ---
-= Mettre à jour l'adresse IP distante
+= Mettre à jour les adresses IP des baies de stockage distantes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

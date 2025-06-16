@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Drive Security, 
 summary: 'La sécurité des disques est une fonctionnalité de baie de stockage qui fournit une couche de sécurité supplémentaire avec des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).' 
 ---
-= Fonctionnement de la fonction de sécurité du lecteur
+= Fonctionnement de la fonctionnalité Drive Security dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

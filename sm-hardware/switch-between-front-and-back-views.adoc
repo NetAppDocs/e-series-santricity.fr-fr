@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, switch, front, back, views, shelves 
 summary: La page matériel peut afficher la vue avant ou la vue arrière des tiroirs. 
 ---
-= Permet de basculer entre les vues avant et arrière
+= Afficher les vues avant et arrière dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

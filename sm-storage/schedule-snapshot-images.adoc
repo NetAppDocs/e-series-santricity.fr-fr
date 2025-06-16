@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
 summary: 'Vous créez un planning Snapshot afin de permettre la restauration en cas de problème avec le volume de base et d"effectuer des sauvegardes planifiées. Des snapshots de volumes de base ou de groupes de cohérence Snapshot peuvent être créés selon un planning quotidien, hebdomadaire ou mensuel, à tout moment de la journée.' 
 ---
-= Planifier les images d'instantané
+= Planifier des images instantanées dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

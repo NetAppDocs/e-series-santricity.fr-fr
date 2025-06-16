@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
 summary: Vous supprimez une paire en miroir pour supprimer la relation de miroir du volume primaire sur la matrice de stockage locale et du volume secondaire sur la matrice de stockage distante. 
 ---
-= Supprimer la relation de miroir asynchrone
+= Supprimer les relations de miroir asynchrones dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

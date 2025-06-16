@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, controller, settings 
 summary: 'Vous pouvez afficher des informations sur un contrôleur, telles que l"état des interfaces hôtes, des interfaces de lecteur et des ports de gestion.' 
 ---
-= Afficher les paramètres du contrôleur
+= Afficher les paramètres du contrôleur dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

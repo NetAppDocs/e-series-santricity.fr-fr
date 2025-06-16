@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, revoke tokens 
 summary: 'Vous pouvez révoquer tous les jetons d"accès si vous déterminez qu"un token a été compromis.' 
 ---
-= Révoquer les jetons d'accès
+= Révoquer les jetons d'accès dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

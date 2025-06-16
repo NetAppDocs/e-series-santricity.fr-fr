@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, ssd, cache 
 summary: 'Pour accélérer dynamiquement les performances du système, vous pouvez utiliser la fonctionnalité SSD cache pour mettre en cache les données les plus fréquemment utilisées (données actives) sur des disques SSD à faible latence. SSD cache est exclusivement utilisé pour les lectures d"hôte.' 
 ---
-= Créer un cache SSD
+= Créer un cache SSD dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

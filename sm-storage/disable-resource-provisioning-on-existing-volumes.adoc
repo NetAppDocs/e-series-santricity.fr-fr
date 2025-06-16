@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, resource provisioning, 
 summary: Vous pouvez activer ou désactiver le provisionnement de ressources sur un pool ou un groupe de volumes existant. 
 ---
-= Activez ou désactivez le provisionnement de ressources sur les groupes de volumes et les pools existants
+= Activer ou désactiver le provisionnement des ressources sur les groupes de volumes et les pools existants dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

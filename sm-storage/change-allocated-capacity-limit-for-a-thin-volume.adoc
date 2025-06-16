@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
 summary: 'Pour les volumes fins capables d"allouer de l"espace à la demande, vous pouvez modifier la limite qui restreint la capacité allouée à laquelle un volume fin peut se développer automatiquement.' 
 ---
-= Modifier la limite de capacité allouée pour un volume fin
+= Modifier la limite de capacité allouée pour un volume léger dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

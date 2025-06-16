@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configuration settings, volume group 
 summary: 'Vous pouvez modifier les paramètres d"un groupe de volumes, y compris son nom et son niveau RAID.' 
 ---
-= Modifiez les paramètres de configuration d'un groupe de volumes
+= Modifier les paramètres de configuration d'un groupe de volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

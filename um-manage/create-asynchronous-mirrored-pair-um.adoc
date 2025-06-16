@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
 summary: Pour configurer la mise en miroir asynchrone, vous créez une paire en miroir qui comprend un volume primaire sur la baie locale et un volume secondaire sur la baie distante. 
 ---
-= Création d'une paire asynchrone en miroir
+= Créer une paire miroir asynchrone dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

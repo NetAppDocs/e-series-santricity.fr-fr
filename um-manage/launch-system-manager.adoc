@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, individual, storage, array 
 summary: 'Vous pouvez utiliser l"option lancer pour ouvrir SANtricity System Manager basé sur navigateur pour une ou plusieurs baies de stockage lorsque vous souhaitez effectuer des opérations de gestion.' 
 ---
-= Gérer une baie de stockage individuelle
+= Gérer une baie de stockage individuelle dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

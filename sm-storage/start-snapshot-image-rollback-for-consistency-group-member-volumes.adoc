@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
 summary: 'Vous pouvez effectuer une restauration pour modifier le contenu des volumes membres d"un groupe de cohérence de snapshot afin qu"il corresponde au contenu enregistré dans une image snapshot.' 
 ---
-= Démarrez la restauration d'image snapshot pour les volumes membres de groupe de cohérence de snapshot
+= Démarrer la restauration de l'image instantanée pour les volumes membres du groupe de cohérence des instantanés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

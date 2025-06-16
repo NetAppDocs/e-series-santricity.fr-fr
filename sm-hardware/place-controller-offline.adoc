@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, offline, 
 summary: Si vous y êtes invité, vous pouvez mettre un contrôleur hors ligne. 
 ---
-= Mettez le contrôleur hors ligne
+= Placer un contrôleur hors ligne dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

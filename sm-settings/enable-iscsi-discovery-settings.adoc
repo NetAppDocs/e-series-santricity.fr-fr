@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
 summary: Vous pouvez activer les paramètres liés à la découverte de périphériques de stockage dans un réseau iSCSI. 
 ---
-= Activer les paramètres de découverte iSCSI
+= Activer les paramètres de découverte iSCSI dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

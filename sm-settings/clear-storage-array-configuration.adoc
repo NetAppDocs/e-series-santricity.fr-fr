@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
 summary: 'Utilisez l"opération Effacer la configuration pour supprimer tous les pools, groupes de volumes, volumes, définitions d"hôte et affectations d"hôte de la baie de stockage.' 
 ---
-= Effacez la configuration de la matrice de stockage
+= Effacer la configuration de la baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -108,4 +108,8 @@ X
 .Résultats
 * La configuration actuelle est supprimée, détruisant toutes les données existantes sur la matrice de stockage.
 * Tous les disques sont non assignés.
++
+
+NOTE: La baie de stockage passera en mode de récupération. Vous devez désactiver ce mode avant de pouvoir utiliser la baie de stockage. Voir https://docs.netapp.com/us-en/e-series-santricity/sm-support/clear-recovery-mode.html["Désactivez le mode de récupération"^] pour plus d'informations.
+
 

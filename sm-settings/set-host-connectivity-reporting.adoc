@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
 summary: 'Vous pouvez activer le reporting sur la connectivité des hôtes afin que la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d"interruption de la connexion. Cette fonctionnalité est activée par défaut.' 
 ---
-= Définissez les rapports sur la connectivité hôte
+= Définir les rapports de connectivité de l'hôte dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
 summary: 'Si nécessaire, vous pouvez exporter les métadonnées du fournisseur de services pour la baie de stockage et réimporter le fichier dans le système du fournisseur d"identités.' 
 ---
-= Exporter les fichiers SAML Service Provider
+= Exporter les fichiers du fournisseur de services SAML dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

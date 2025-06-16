@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, center 
 summary: Le Centre de mise à niveau vous permet de gérer les mises à niveau du logiciel SANtricity OS et de la NVSRAM pour plusieurs baies de stockage. 
 ---
-= Présentation du centre de mise à niveau
+= En savoir plus sur le centre de mise à niveau de SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

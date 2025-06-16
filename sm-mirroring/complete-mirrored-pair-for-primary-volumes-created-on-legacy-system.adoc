@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
 summary: 'Si vous avez créé un volume primaire sur une baie de stockage existante qui ne peut pas être gérée par SANtricity System Manager, vous pouvez créer le volume secondaire sur cette baie à l"aide de System Manager.' 
 ---
-= Paire mise en miroir complète pour les volumes primaires créés sur le système existant
+= Compléter une paire en miroir pour les volumes principaux créés sur un système hérité dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

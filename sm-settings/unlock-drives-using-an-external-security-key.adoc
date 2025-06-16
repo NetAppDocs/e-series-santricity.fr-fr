@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, external, key, management, 
 summary: 'Si vous avez configuré la gestion externe des clés, puis que vous déplacez ultérieurement les disques sécurisés d"une matrice de stockage à une autre, vous devez réattribuer la clé de sécurité à la nouvelle matrice de stockage pour accéder aux données cryptées sur les lecteurs.' 
 ---
-= Déverrouillez les disques grâce à la gestion externe des clés
+= Déverrouiller les lecteurs lors de l'utilisation de la gestion des clés externes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

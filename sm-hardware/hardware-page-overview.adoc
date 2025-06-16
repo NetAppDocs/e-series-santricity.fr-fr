@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
 summary: 'La page matériel fournit une représentation graphique des composants physiques de la baie de stockage. À partir de là, vous pouvez vérifier l"état des composants et exécuter certaines fonctions associées à ces composants.' 
 ---
-= Page matérielle et composants
+= Page matérielle et composants de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

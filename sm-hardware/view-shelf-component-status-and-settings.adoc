@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
 summary: 'La page matériel fournit l"état et les paramètres des composants du tiroir, y compris les alimentations, les ventilateurs et les batteries.' 
 ---
-= Consultez l'état et les paramètres des composants du tiroir
+= Afficher l'état et les paramètres des composants de l'étagère dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificate, terms, 
 summary: 'Les termes suivants s"appliquent à la gestion des certificats.' 
 ---
-= Terminologie du certificat
+= En savoir plus sur la terminologie des certificats dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

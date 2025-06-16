@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, lights, LEDs 
 summary: 'Vous pouvez localiser les disques afin d"identifier physiquement tous les disques qui comprennent un pool, un groupe de volumes ou SSD cache sélectionné. Un voyant s"allume sur chaque lecteur du pool, du groupe de volumes ou du cache SSD sélectionné.' 
 ---
-= Activez les voyants de localisation dans un pool, un groupe de volumes ou un cache SSD
+= Activer les voyants de localisation dans un pool, un groupe de volumes ou un cache SSD dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

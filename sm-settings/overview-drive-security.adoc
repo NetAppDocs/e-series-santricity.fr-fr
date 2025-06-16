@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, system, security, key, management, 
 summary: La gestion des clés de sécurité est disponible à partir de la page système. 
 ---
-= Présentation de la sécurité des lecteurs
+= En savoir plus sur la sécurité des lecteurs dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

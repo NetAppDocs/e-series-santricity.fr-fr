@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, storage, configuration, settings 
 summary: 'Vous pouvez importer la configuration de stockage d"une matrice de stockage vers d"autres matrices de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.' 
 ---
-= Importer les paramètres de configuration du stockage
+= Importer les paramètres de configuration de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

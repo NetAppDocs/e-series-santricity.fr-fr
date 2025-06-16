@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
 summary: 'Vous pouvez désactiver la mise en miroir asynchrone sur les matrices de stockage locales et distantes pour rétablir l"utilisation normale des ports dédiés sur les matrices de stockage.' 
 ---
-= Désactiver la mise en miroir asynchrone
+= Désactiver la mise en miroir asynchrone dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

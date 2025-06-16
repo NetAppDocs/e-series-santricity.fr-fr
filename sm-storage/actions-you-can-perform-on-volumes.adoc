@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: 'Vous pouvez effectuer plusieurs actions différentes sur un volume : augmentation de la capacité, suppression, copie, initialisation, redistribution, modification de la propriété, modification des paramètres de cache et modification des paramètres de numérisation des supports.' 
 ---
-= Actions que vous pouvez effectuer sur des volumes
+= Actions que vous pouvez effectuer sur les volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
 summary: 'Vous pouvez modifier le nom de la baie de stockage qui s"affiche dans la barre de titre de SANtricity System Manager.' 
 ---
-= Modifier le nom de la matrice de stockage
+= Modifier le nom de la baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, directory, server, 
 summary: 'Pour configurer l"authentification pour Access Management, vous pouvez établir des communications entre la matrice de stockage et un serveur LDAP, puis mapper les groupes d"utilisateurs LDAP aux rôles prédéfinis de la baie.' 
 ---
-= Ajouter un serveur d'annuaire LDAP
+= Ajouter un serveur d'annuaire LDAP dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

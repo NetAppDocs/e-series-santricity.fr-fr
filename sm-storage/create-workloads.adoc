@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, workloads 
 summary: 'Vous pouvez créer des charges de travail pour tout type d"application.' 
 ---
-= Créer des workloads
+= Créer des charges de travail dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

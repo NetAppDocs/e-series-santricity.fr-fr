@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
 summary: 'Utilisez l"option Ajouter/découvrir une baie de stockage unique pour détecter et ajouter manuellement une baie de stockage unique au réseau de votre entreprise.' 
 ---
-= Découvrir une seule baie
+= Découvrez une baie unique dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

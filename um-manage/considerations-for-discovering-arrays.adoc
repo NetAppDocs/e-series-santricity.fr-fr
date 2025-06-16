@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
 summary: Avant que Unified Manager puisse afficher et gérer les ressources de stockage, il doit découvrir les baies de stockage que vous souhaitez gérer dans le réseau de votre entreprise. Vous pouvez détecter plusieurs baies ou une seule. 
 ---
-= Considérations relatives à la détection des baies
+= Découvrez comment découvrir les baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

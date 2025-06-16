@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, snapshot, image 
 summary: 'Vous pouvez créer manuellement une image Snapshot à partir d"un volume de base ou d"un groupe de cohérence Snapshot. Il s"agit également d"un instantané ou d"une image instantanée.' 
 ---
-= Créer une image snapshot
+= Créer une image instantanée dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller ownership, volume 
 summary: 'Vous pouvez modifier la propriété de contrôleur préférée d"un volume, de sorte que les E/S des applications hôtes soient dirigées par le nouveau chemin.' 
 ---
-= Modifier la propriété du contrôleur d'un volume
+= Modifier la propriété du contrôleur d'un volume dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
 summary: 'Pour qu"un hôte ou un cluster hôte puisse envoyer les E/S à un volume, vous devez affecter le volume à l"hôte ou au cluster hôte.' 
 ---
-= Mode d'affectation des volumes aux hôtes et aux clusters hôtes
+= Comment les volumes sont attribués aux hôtes et aux clusters d'hôtes dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

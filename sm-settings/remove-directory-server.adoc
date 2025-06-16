@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: 'Pour interrompre la connexion entre un serveur d"annuaire et la matrice de stockage, vous pouvez supprimer les informations sur le serveur de la page gestion des accès. Vous pouvez effectuer cette tâche si vous avez configuré un nouveau serveur, puis que vous souhaitez supprimer l"ancien serveur.' 
 ---
-= Supprimer le serveur de répertoire
+= Supprimer le serveur d'annuaire dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

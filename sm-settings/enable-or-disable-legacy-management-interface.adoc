@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
 summary: 'Vous pouvez activer ou désactiver l"interface de gestion héritée (symbole), qui est une méthode de communication entre la matrice de stockage et le client de gestion.' 
 ---
-= Activez ou désactivez l'interface de gestion héritée
+= Activer ou désactiver l'interface de gestion héritée dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, 
 summary: Vous pouvez afficher le profil de la matrice de stockage et les versions du micrologiciel pour chaque composant de la matrice de stockage. 
 ---
-= Afficher les informations relatives à la baie de stockage
+= Afficher les informations d'une baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

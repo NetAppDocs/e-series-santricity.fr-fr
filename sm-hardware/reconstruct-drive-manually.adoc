@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
 summary: 'La reconstruction du disque démarre normalement automatiquement après le remplacement d"un disque. Si la reconstruction de disque ne démarre pas automatiquement, vous pouvez démarrer la reconstruction manuellement.' 
 ---
-= Reconstruire le lecteur manuellement
+= Reconstruire un lecteur manuellement dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

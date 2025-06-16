@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, communities, snmpv2c, traps, 
 summary: 'Vous pouvez ajouter jusqu"à 256 noms de communauté pour les déroutements SNMPv2c.' 
 ---
-= Ajouter des communautés pour les déroutements SNMPv2c
+= Ajouter des communautés pour les interruptions SNMPv2c dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

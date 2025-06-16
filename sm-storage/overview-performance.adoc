@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance 
 summary: La page performances fournit des moyens simples de surveiller les performances de votre baie de stockage. 
 ---
-= Présentation des performances
+= En savoir plus sur l'aperçu des performances dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

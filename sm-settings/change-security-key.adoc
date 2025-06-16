@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, security, key, 
 summary: Vous pouvez à tout moment remplacer une clé de sécurité par une nouvelle clé. Vous devrez peut-être modifier une clé de sécurité dans les cas où vous pourriez avoir une violation de sécurité potentielle au sein de votre entreprise et vous assurer que le personnel non autorisé ne peut pas accéder aux données des lecteurs. 
 ---
-= Modifier la clé de sécurité
+= Modifier une clé de sécurité dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

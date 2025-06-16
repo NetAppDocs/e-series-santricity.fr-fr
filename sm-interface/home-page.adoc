@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, home page 
 summary: 'La page d"accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d"accueil est le premier écran affiché.' 
 ---
-= Page d'accueil
+= En savoir plus sur la page d'accueil de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

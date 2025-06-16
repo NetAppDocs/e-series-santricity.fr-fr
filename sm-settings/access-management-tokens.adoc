@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, tokens 
 summary: 'Les jetons d"accès assurent l"accès à la matrice sans exposer le nom d"utilisateur et le mot de passe.' 
 ---
-= Jetons d'accès
+= En savoir plus sur les jetons d'accès et le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

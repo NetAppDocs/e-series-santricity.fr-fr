@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, support, center 
 summary: Le centre de support vous permet de réaliser des opérations de diagnostic, de récupération et de collecte des informations, qui peuvent être demandées par le support technique. 
 ---
-= Présentation du support
+= Obtenez de l'aide dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

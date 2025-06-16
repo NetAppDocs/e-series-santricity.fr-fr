@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
 summary: Pour tous les volumes de la matrice de stockage, vous pouvez régler les paramètres de mémoire cache pour les vidage et la taille du bloc. 
 ---
-= Modifiez les paramètres de cache de la matrice de stockage
+= Modifier les paramètres de cache de la matrice de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

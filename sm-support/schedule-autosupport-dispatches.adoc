@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
 summary: System Manager crée automatiquement un calendrier par défaut pour les interventions AutoSupport. Si vous préférez, vous pouvez spécifier votre propre horaire. 
 ---
-= Planifiez des interventions AutoSupport
+= Planifier les envois AutoSupport dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume group, 
 summary: 'Pour approvisionner le stockage, vous créez un pool ou un groupe de volumes contenant les disques durs (HDD) ou les disques SSD que vous souhaitez utiliser dans votre matrice de stockage.' 
 ---
-= Fonctionnement des pools et des groupes de volumes
+= Fonctionnement des pools et des groupes de volumes dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

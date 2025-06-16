@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
 summary: 'Vous pouvez vérifier une image d"état de santé du contrôleur. Une image de santé est un vidage de données brutes de la mémoire processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.' 
 ---
-= Récupère l'image d'état de santé
+= Récupérer l'image de santé dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

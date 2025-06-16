@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance, 
 summary: 'La page performances fournit des graphiques et des tableaux de données qui vous permettent d"évaluer les performances de la baie de stockage dans plusieurs domaines clés.' 
 ---
-= Graphiques de performance et instructions
+= Découvrez les graphiques de performances et les directives dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

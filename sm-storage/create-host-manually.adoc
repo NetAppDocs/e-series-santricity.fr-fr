@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, host, manually 
 summary: 'Pour les hôtes qui ne peuvent pas être découverts automatiquement, vous pouvez créer manuellement un hôte. La création d"un hôte est l"une des étapes requises pour permettre à la baie de stockage de savoir quels hôtes lui sont connectés et d"autoriser l"accès E/S aux volumes.' 
 ---
-= Créer l'hôte manuellement
+= Créer un hôte manuellement dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

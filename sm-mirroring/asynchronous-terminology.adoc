@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, terms, 
 summary: 'Découvrez comment les conditions de la mise en miroir asynchrone s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie de la mise en miroir asynchrone
+= Découvrez la terminologie de la mise en miroir asynchrone dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

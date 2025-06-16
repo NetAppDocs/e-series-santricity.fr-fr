@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: 'La fonction Copier le volume vous permet de créer une copie ponctuelle d"un volume en créant deux volumes distincts, le volume source et le volume cible, sur la même matrice de stockage.' 
 ---
-= Présentation du volume de copie
+= En savoir plus sur Copy Volume dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

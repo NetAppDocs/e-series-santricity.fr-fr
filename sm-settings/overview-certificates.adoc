@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, 
 summary: 'Vous pouvez utiliser System Manager pour créer des demandes de signature de certificat (RSC), importer des certificats et gérer des certificats existants.' 
 ---
-= Présentation des certificats
+= En savoir plus sur les certificats dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

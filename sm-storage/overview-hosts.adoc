@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hosts 
 summary: Vous pouvez configurer les hôtes et les clusters hôtes, qui définissent les connexions entre la baie de stockage et les serveurs de données. 
 ---
-= Présentation des hôtes et des clusters hôtes
+= En savoir plus sur les hôtes et les clusters d'hôtes dans le logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

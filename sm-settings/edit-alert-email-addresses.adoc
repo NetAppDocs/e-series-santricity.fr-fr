@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
 summary: Vous pouvez modifier les adresses e-mail des destinataires qui reçoivent des alertes par e-mail. 
 ---
-= Modifiez les adresses e-mail des alertes
+= Modifier les adresses e-mail pour les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, configuration, workflow 
 summary: Vous configurez la mise en miroir synchrone ou asynchrone dans Unified Manager, puis utilisez System Manager pour gérer les synchronisations. 
 ---
-= Flux de travail de configuration de mise en miroir
+= Flux de travail de configuration de SANtricity en miroir
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
 summary: 'L"état d"une paire synchrone en miroir indique si les données du volume principal et du volume secondaire sont synchronisées. L"état d"un miroir est indépendant de l"état du composant des volumes de la paire en miroir.' 
 ---
-= État de la mise en miroir synchrone
+= En savoir plus sur l'état de la mise en miroir synchrone dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

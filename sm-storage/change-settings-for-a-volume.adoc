@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, volume 
 summary: 'Vous pouvez modifier les paramètres d"un volume, comme son nom, son affectation hôte, sa taille de segment, sa priorité de modification, sa mise en cache, et ainsi de suite.' 
 ---
-= Modifiez les paramètres d'un volume
+= Modifier les paramètres d'un volume dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

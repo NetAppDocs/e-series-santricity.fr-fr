@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, terms 
 summary: 'Découvrez les conditions matérielles qui s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie matérielle
+= Découvrez la terminologie matérielle utilisée dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

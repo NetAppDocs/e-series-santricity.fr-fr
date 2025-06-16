@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
 summary: 'Il est possible d"inverser le rôle entre les deux volumes d"une paire en miroir qui participent à la mise en miroir synchrone à des fins d"administration ou en cas d"incident sur la baie de stockage locale.' 
 ---
-= Changer le rôle entre les volumes d'une paire en miroir
+= Modifier le rôle entre les volumes d'une paire en miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

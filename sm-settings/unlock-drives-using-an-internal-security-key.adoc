@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, internal, key, management, 
 summary: 'Si vous avez configuré la gestion interne des clés et que vous déplacez ensuite les disques sécurisés d"une matrice de stockage à une autre, vous devez réattribuer la clé de sécurité à la nouvelle matrice de stockage pour accéder aux données cryptées sur les lecteurs.' 
 ---
-= Déverrouiller les disques lors de l'utilisation de la gestion interne des clés
+= Déverrouiller les lecteurs lors de l'utilisation de la gestion des clés internes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

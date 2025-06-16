@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, send, autosupport, dispatches 
 summary: 'System Manager vous permet d"envoyer des interventions AutoSupport au support technique sans attendre une intervention planifiée.' 
 ---
-= Envoyez des interventions AutoSupport
+= Envoyer des envois AutoSupport dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, storage 
 summary: 'La fonctionnalité snapshots utilise la technologie de copie en écriture pour stocker des images d"instantanés et utiliser la capacité réservée allouée.' 
 ---
-= Fonctionnement du stockage Snapshot
+= Fonctionnement du stockage instantané dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

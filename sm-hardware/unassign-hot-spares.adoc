@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
 summary: Vous pouvez remplacer un disque de secours par un lecteur non affecté. 
 ---
-= Annuler l'affectation des disques de secours
+= Annuler l'attribution des disques de secours dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

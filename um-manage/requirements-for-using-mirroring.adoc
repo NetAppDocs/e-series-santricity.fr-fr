@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, requirements, using, mirroring 
 summary: 'Si vous prévoyez de configurer la mise en miroir, gardez les exigences suivantes à l"esprit.' 
 ---
-= Conditions requises pour l'utilisation de la mise en miroir
+= Conditions requises pour l'utilisation de la mise en miroir dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

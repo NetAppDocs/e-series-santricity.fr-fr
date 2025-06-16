@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, default, host, type, 
 summary: 'Utilisez le paramètre Modifier le système d"exploitation hôte par défaut pour modifier le type d"hôte par défaut au niveau de la matrice de stockage. En général, vous modifiez le type d"hôte par défaut avant de connecter les hôtes à la baie de stockage ou lorsque vous connectez des hôtes supplémentaires.' 
 ---
-= Modifier le type d'hôte par défaut
+= Modifier le type d'hôte par défaut dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

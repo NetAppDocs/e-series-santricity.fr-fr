@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, redistribute, volumes 
 summary: 'Vous redistribuez les volumes pour retransférer les volumes vers leurs propriétaires de contrôleur préférés. En général, les pilotes de chemins d"accès multiples déplacent les volumes depuis leur propriétaire privilégié de contrôleur en cas de problème lors du chemin d"accès aux données entre l"hôte et la baie de stockage.' 
 ---
-= Redistribution des volumes
+= Redistribuer les volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

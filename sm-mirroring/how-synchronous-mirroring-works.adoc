@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
 summary: La mise en miroir synchrone réplique les volumes de données en temps réel pour assurer une disponibilité continue. 
 ---
-= Fonctionnement de la mise en miroir synchrone
+= Fonctionnement de la mise en miroir synchrone dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

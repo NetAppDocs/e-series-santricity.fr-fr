@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, alarm, alerts, 
 summary: Les alertes signalent aux administrateurs les événements importants survenant sur la baie de stockage. Les alertes peuvent être envoyées par e-mail, des traps SNMP et des syslog. 
 ---
-= Fonctionnement des alertes
+= Comment fonctionnent les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, certificates, arrays 
 summary: 'Si nécessaire, vous pouvez importer des certificats pour les baies de stockage afin qu"ils puissent s"authentifier auprès du système qui héberge SANtricity Unified Manager. Les certificats peuvent être signés par une autorité de certification ou être auto-signés.' 
 ---
-= Importer des certificats pour les tableaux
+= Importer des certificats pour les baies dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

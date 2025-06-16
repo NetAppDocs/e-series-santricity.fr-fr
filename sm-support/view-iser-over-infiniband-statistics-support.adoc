@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iser, over, infiniband, statistics 
 summary: Si le contrôleur de votre matrice de stockage comprend un port iser sur InfiniBand, vous pouvez afficher les données relatives aux connexions hôte. 
 ---
-= Afficher les statistiques iser sur InfiniBand
+= Afficher les statistiques iSER sur InfiniBand dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

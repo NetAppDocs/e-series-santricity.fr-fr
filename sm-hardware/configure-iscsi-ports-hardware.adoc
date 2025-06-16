@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iscsi, ports, 
 summary: Si votre contrôleur inclut une connexion hôte iSCSI, vous pouvez configurer les paramètres du port iSCSI à partir de la page matériel. 
 ---
-= Configurez les ports iSCSI
+= Configurer les ports iSCSI dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

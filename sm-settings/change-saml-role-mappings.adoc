@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, saml, role, mappings, 
 summary: Si vous avez déjà configuré SAML pour Access Management, vous pouvez modifier les mappages de rôles entre les groupes IDP et les rôles prédéfinis de la baie de stockage. 
 ---
-= Modifier les mappages de rôles SAML
+= Modifier les mappages de rôles SAML dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

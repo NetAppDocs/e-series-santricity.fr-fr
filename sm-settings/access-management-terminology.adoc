@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, terms 
 summary: 'Découvrez comment les termes de gestion des accès s"appliquent à votre matrice de stockage.' 
 ---
-= Terminologie de la gestion des accès
+= Découvrez la terminologie de la gestion des accès dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

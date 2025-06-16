@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, remote, storage 
 summary: 'Pour lancer une importation du stockage à partir d"un système distant vers un système de stockage E-Series local, utilisez l"assistant d"importation de stockage distant.' 
 ---
-= Importer le stockage distant
+= Importer un stockage distant dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

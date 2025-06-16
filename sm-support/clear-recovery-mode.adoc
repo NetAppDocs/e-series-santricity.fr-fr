@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
 summary: 'Après avoir restauré une configuration de matrice de stockage, utilisez l"opération Clear Recovery mode (mode de restauration) pour reprendre les E/S sur la matrice de stockage et la rétablir dans des conditions normales d"utilisation.' 
 ---
-= Désactivez le mode de récupération
+= Effacer le mode de récupération dans le logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

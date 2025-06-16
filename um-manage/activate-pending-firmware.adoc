@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, activate, staged, os, software 
 summary: 'Vous pouvez choisir d"activer le fichier logiciel immédiatement ou attendre jusqu"à ce qu"il soit plus pratique. Cette procédure suppose que vous avez choisi d"activer le fichier logiciel ultérieurement.' 
 ---
-= Activer le logiciel de se préparé
+= Activer le logiciel du système d'exploitation par étapes dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

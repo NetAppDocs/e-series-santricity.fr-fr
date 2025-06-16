@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency group 
 summary: Pour vous assurer que vous disposez de copies cohérentes, vous pouvez créer un ensemble de plusieurs volumes appelés groupes de cohérence de snapshots. 
 ---
-= Créer un groupe de cohérence de snapshot
+= Créer un groupe de cohérence d'instantanés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

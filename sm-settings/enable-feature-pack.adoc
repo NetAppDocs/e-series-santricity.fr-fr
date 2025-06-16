@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, feature, pack, 
 summary: 'Un Feature Pack est un pack qui modifie les attributs de la baie de stockage (par exemple, le passage du protocole de Fibre Channel à iSCSI). Les packs de fonctionnalités requièrent une clé spéciale d"accompagnement.' 
 ---
-= Activer le pack de fonctions
+= Activer le pack de fonctionnalités dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

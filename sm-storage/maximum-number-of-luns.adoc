@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, maximum, luns 
 summary: 'La baie de stockage dispose d"un nombre maximum de LUN (Logical Unit Numbers) pouvant être utilisées pour chaque hôte.' 
 ---
-= Nombre maximal de LUN
+= Découvrez le nombre maximal de LUN dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

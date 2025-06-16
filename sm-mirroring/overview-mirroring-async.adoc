@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ARVM, asynchronous, mirroring, firmware, 
 summary: La fonction de mise en miroir asynchrone fournit un mécanisme basé sur le firmware au niveau du contrôleur pour la réplication des données entre une baie de stockage locale et une baie de stockage distante. 
 ---
-= Présentation de la mise en miroir asynchrone
+= En savoir plus sur la mise en miroir asynchrone dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

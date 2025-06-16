@@ -84,13 +84,6 @@ Prend en charge les systèmes d'exploitation Windows via un pilote ATTO Technolo
 
 
  a| 
-FlexArray (ALUA)
- a| 
-Prend en charge un système NetApp FlexArray via ALUA pour les chemins d'accès multiples.
-
-
-
- a| 
 SERVICE IBM
  a| 
 Prend en charge une configuration contrôleur de volume SAN IBM.

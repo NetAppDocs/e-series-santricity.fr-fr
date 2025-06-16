@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, settings, 
 summary: 'Unified Manager permet d"importer des paramètres d"une matrice de stockage vers plusieurs baies de stockage. La fonction Importer les paramètres est une opération par lots qui permet de gagner du temps lorsque vous devez configurer plusieurs matrices sur le réseau.' 
 ---
-= Fonctionnement des paramètres d'importation
+= En savoir plus sur la configuration de plusieurs baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

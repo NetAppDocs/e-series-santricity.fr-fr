@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
 summary: 'L"équilibrage automatique de la charge améliore la gestion des ressources d"E/S en réagissant de manière dynamique aux changements de charge dans le temps et en ajustant automatiquement la propriété du contrôleur de volume pour corriger les problèmes de déséquilibre de la charge lorsque les charges de travail sont transférées sur les contrôleurs.' 
 ---
-= Vue d'ensemble de l'équilibrage automatique de la charge
+= En savoir plus sur l'équilibrage automatique de la charge dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

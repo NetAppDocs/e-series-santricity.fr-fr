@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, drive, firmware 
 summary: Vous pouvez mettre à niveau le micrologiciel de vos lecteurs pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs de bogues. 
 ---
-= Mettre à niveau le micrologiciel du lecteur
+= Mettre à niveau le micrologiciel du lecteur dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

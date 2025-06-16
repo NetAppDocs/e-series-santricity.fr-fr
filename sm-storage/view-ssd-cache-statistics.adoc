@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, ssd cache, statistics 
 summary: 'Vous pouvez afficher les statistiques du module SSD cache, telles que les lectures, les écritures, les accès au cache, le pourcentage d"allocation du cache, et le pourcentage d"utilisation du cache.' 
 ---
-= Afficher les statistiques de cache SSD
+= Afficher les statistiques du cache SSD dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

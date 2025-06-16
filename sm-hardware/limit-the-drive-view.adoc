@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
 summary: 'Si la matrice de stockage inclut des lecteurs avec différents types d"attributs physiques et logiques, la page matériel fournit des champs de filtre qui vous aident à limiter l"affichage du lecteur et à localiser des lecteurs spécifiques.' 
 ---
-= Limiter la vue de conduite
+= Filtrer la vue du lecteur dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, system, settings 
 summary: 'Vous pouvez importer la configuration système d"une matrice de stockage vers d"autres matrices de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.' 
 ---
-= Importer les paramètres système
+= Importer les paramètres système dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, take, recovery, action, storage, array, status 
 summary: 'Vous pouvez prendre des mesures sur l"état de votre matrice de stockage actuelle en consultant le journal secteurs illisibles, en réactivant les ports de lecteur et en désactivant le mode de récupération.' 
 ---
-= Action de récupération sur l'état de la baie de stockage
+= Exécuter une action de récupération sur l'état de la baie de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

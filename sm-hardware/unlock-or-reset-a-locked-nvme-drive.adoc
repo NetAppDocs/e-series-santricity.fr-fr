@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, reset, locked, fips, nvme, drives, 
 summary: 'Si vous insérez un ou plusieurs disques NVMe ou FIPS verrouillés dans une matrice de stockage, vous pouvez déverrouiller les données du disque en ajoutant le fichier de clé de sécurité associé aux disques. Si vous n"avez pas de clé de sécurité, vous pouvez réinitialiser chaque disque verrouillé en saisissant son ID de sécurité physique (PSID) pour réinitialiser ses attributs de sécurité et effacer les données du lecteur.' 
 ---
-= Déverrouillez ou réinitialisez les disques NVMe ou FIPS verrouillés
+= Déverrouiller ou réinitialiser les lecteurs NVMe ou FIPS verrouillés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

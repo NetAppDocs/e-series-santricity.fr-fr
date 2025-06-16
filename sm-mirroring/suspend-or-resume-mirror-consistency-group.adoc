@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
 summary: 'Vous pouvez interrompre ou reprendre la synchronisation des données sur toutes les paires mises en miroir d"un groupe de cohérence miroir, ce qui est plus efficace que la suspension ou la reprise de la synchronisation sur des paires mises en miroir individuelles.' 
 ---
-= Suspendre ou reprendre la synchronisation pour le groupe de cohérence miroir
+= Suspendre ou reprendre la synchronisation des groupes de cohérence miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

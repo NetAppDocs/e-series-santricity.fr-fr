@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, mirrored pair volume 
 summary: 'Vous pouvez modifier les paramètres d"un volume de paire en miroir pour ajuster le point de pourcentage auquel System Manager envoie une notification d"alerte lorsque la capacité réservée d"un volume de paire en miroir est presque pleine.' 
 ---
-= Modifiez les paramètres de capacité réservée pour un volume de paire en miroir
+= Modifier les paramètres de capacité réservée pour un volume de paire en miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

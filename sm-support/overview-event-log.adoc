@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, event, log 
 summary: Utilisez le journal des événements pour afficher un historique des changements et événements survenus sur la baie de stockage. 
 ---
-= Présentation du journal des événements
+= En savoir plus sur le journal des événements dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

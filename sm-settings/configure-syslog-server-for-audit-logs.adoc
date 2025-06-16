@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
 summary: 'Si vous souhaitez archiver les journaux d"audit sur un serveur syslog externe, vous pouvez configurer les communications entre ce serveur et la matrice de stockage. Une fois la connexion établie, les journaux d"audit sont automatiquement enregistrés sur le serveur syslog.' 
 ---
-= Configuration du serveur syslog pour les journaux d'audit
+= Configurer le serveur Syslog pour les journaux d'audit dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, page, 
 summary: 'Vous pouvez vérifier l"état des composants sur la page matériel et exécuter certaines fonctions associées à ces composants.' 
 ---
-= Présentation des composants matériels
+= Afficher et gérer les composants matériels dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

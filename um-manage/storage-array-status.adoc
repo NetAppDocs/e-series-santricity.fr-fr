@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, status, communication, 
 summary: 'Unified Manager affiche l"état de chaque baie de stockage qui a été découverte.' 
 ---
-= Afficher l'état de la matrice de stockage
+= Afficher l'état de la baie de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

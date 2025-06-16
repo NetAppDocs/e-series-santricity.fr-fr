@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, manual, pool 
 summary: 'Vous créez des pools automatiquement ou manuellement pour permettre de regrouper le stockage physique, puis de l"allouer de façon dynamique en fonction des besoins. Lorsqu"un pool est créé, vous pouvez ajouter des disques physiques.' 
 ---
-= Création automatique ou manuelle de pool
+= En savoir plus sur la création automatique et manuelle de pools dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

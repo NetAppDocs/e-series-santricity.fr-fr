@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
 summary: 'Découvrez les fonctionnalités d"extension qui s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie des fonctions complémentaires
+= Découvrez la terminologie des fonctionnalités complémentaires dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
 summary: 'Le type d"hôte par défaut est utilisé par la matrice de stockage lorsque les hôtes sont connectés initialement. Elle définit la façon dont les contrôleurs de la matrice de stockage fonctionnent avec le système d"exploitation de l"hôte lors de l"accès aux volumes.' 
 ---
-= Type de système d'exploitation hôte par défaut
+= En savoir plus sur le type de système d'exploitation hôte par défaut dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

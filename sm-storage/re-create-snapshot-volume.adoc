@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
 summary: 'Vous pouvez recréer un volume Snapshot ou un volume Snapshot de groupe de cohérence de snapshot précédemment désactivé. La recrércréation d"un volume de snapshot prend moins de temps que la création d"un nouveau volume.' 
 ---
-= Recréez le volume du snapshot
+= Recréer un volume instantané dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

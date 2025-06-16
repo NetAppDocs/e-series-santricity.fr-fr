@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, modify, connection, settings, remote, storage 
 summary: 'Vous pouvez modifier, ajouter ou supprimer des paramètres de connexion pour n"importe quelle configuration de stockage distant via l"option Afficher/Modifier les paramètres.' 
 ---
-= Modifier les paramètres de connexion pour le stockage à distance
+= Modifier les paramètres de connexion pour le stockage à distance dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

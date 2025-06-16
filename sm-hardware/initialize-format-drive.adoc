@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
 summary: 'Si vous déplacez les lecteurs affectés d"une matrice de stockage à une autre, vous devez initialiser (formater) les lecteurs avant de pouvoir les utiliser dans la nouvelle matrice de stockage.' 
 ---
-= Initialiser (formater) le lecteur
+= Initialiser (formater) les lecteurs dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

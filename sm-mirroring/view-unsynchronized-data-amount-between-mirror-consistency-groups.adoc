@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
 summary: 'Vous pouvez afficher la quantité de données non synchronisées entre les groupes de cohérence miroir sur la matrice de stockage locale et sur la matrice de stockage distante. Lorsque le groupe de cohérence miroir est à l"état non synchronisé, aucune activité de mise en miroir n"a lieu.' 
 ---
-= Afficher la quantité de données non synchronisées entre les groupes de cohérence miroir
+= Afficher la quantité de données non synchronisées entre les groupes de cohérence miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

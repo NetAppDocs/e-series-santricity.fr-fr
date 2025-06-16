@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, syslog, servers, alerts, 
 summary: 'Vous pouvez supprimer un serveur syslog afin qu"il ne reçoive plus d"alertes.' 
 ---
-= Supprimez les serveurs syslog pour les alertes
+= Supprimer les serveurs Syslog pour les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

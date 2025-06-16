@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
 summary: 'Vous pouvez enregistrer le fichier de statistiques du chemin d"E/S et l"envoyer au support technique pour analyse.' 
 ---
-= Collecte des statistiques sur les chemins d'E/S
+= Collecter les statistiques de chemin d'E/S dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

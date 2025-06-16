@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
 summary: 'Vous pouvez modifier les paramètres de synchronisation et les seuils d"avertissement utilisés par le groupe de cohérence miroir sur la matrice de stockage locale lorsque les données sont initialement synchronisées ou lorsque les données sont synchronisées à nouveau lors des opérations de mise en miroir asynchrone.' 
 ---
-= Modifiez les paramètres de synchronisation d'un groupe de cohérence miroir
+= Modifier les paramètres de synchronisation d'un groupe de cohérence miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

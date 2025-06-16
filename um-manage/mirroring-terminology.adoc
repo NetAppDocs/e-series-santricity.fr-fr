@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, terminology 
 summary: 'Découvrez comment les conditions de mise en miroir s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie de la mise en miroir
+= En savoir plus sur la terminologie de la mise en miroir dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

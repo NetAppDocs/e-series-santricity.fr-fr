@@ -16,6 +16,21 @@ Le tableau suivant décrit les nouvelles fonctionnalités de SANtricity System M
 
 
 
+== Nouvelles fonctionnalités de la version 11.90R3
+
+[cols="35h,~"]
+|===
+| Nouvelle fonction | Description 
+
+
+ a| 
+Prise en charge du système d'exploitation SANtricity pour IOM12C et DCM3
+ a| 
+La prise en charge des plateaux SAS-3 IOM12C et DCM3 est désormais disponible pour les versions 11.90R3 et ultérieures du micrologiciel du contrôleur. Les plateaux IOM12C et DCM3 remplacent les plateaux IOM12B et DCM2.
+
+|===
+
+
 == Nouvelles fonctionnalités de la version 11.90R2
 
 Cette version contient uniquement des modifications mineures et aucune nouvelle fonction. Pour plus d'informations sur les modifications apportées à cette version, reportez-vous au https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["Notes de version d'E-Series 11.90"^].

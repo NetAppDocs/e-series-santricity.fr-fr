@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
 summary: Utilisez les planifications pour rassembler des images Snapshot et des groupes de cohérence Snapshot pour gérer plusieurs volumes de base. 
 ---
-= Les planifications Snapshot et les groupes de cohérence Snapshot
+= En savoir plus sur les planifications d'instantanés et les groupes de cohérence d'instantanés dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

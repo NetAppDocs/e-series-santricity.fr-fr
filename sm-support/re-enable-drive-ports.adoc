@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
 summary: Vous pouvez indiquer au contrôleur que des mesures correctives ont été prises pour récupérer un problème de câblage. 
 ---
-= Réactivez les ports de lecteur
+= Réactiver les ports de lecteur dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

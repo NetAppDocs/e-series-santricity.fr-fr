@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
 summary: 'À partir de la page matériel, vous pouvez activer le voyant de localisation pour trouver l"emplacement physique d"un lecteur dans la matrice de stockage.' 
 ---
-= Allumer le feu de position de conduite
+= Activer un voyant de localisation de lecteur dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

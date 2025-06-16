@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
 summary: 'Vous pouvez supprimer le logiciel OS préparé pour vous assurer qu"une version en attente n"est pas activée par inadvertance ultérieurement. La suppression du logiciel du système d"exploitation intermédiaire n"affecte pas la version actuelle exécutée sur les matrices de stockage.' 
 ---
-= Effacez le logiciel du système d'exploitation par étape
+= Logiciel de système d'exploitation clair et mis en scène dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

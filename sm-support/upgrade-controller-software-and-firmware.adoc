@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, software, firmware 
 summary: 'Vous pouvez mettre à niveau le logiciel de votre matrice de stockage et, éventuellement, le micrologiciel du module d"E/S et la mémoire NVSRAM (Nonvolatile Static Random Access Memory) pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs de bogues.' 
 ---
-= Mise à niveau du logiciel et du micrologiciel du contrôleur
+= Mettre à niveau le logiciel et le micrologiciel du contrôleur dans SANtricity System Manager
 :allow-uri-read: 
 
 

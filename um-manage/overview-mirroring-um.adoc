@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring 
 summary: Utilisez les fonctions de mise en miroir pour répliquer des données entre une baie de stockage locale et une baie de stockage distante, de manière asynchrone ou synchrone. 
 ---
-= Vue d'ensemble de la symétrie
+= En savoir plus sur la mise en miroir dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

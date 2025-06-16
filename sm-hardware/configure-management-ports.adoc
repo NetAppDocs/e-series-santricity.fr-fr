@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, management, port, 
 summary: Le contrôleur inclut un port Ethernet utilisé pour la gestion du système. Si nécessaire, vous pouvez modifier ses paramètres de transmission et ses adresses IP. 
 ---
-= Configurez le port de gestion
+= Configurer le port de gestion dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

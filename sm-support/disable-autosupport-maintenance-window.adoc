@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, autosupport, ASUP, maintenance window 
 summary: 'Désactivez la fenêtre de maintenance AutoSupport pour permettre la création automatique de tickets lors d"événements d"erreur. Lorsque la fenêtre de maintenance AutoSupport est désactivée, la baie de stockage utilise AutoSupport pour ouvrir un dossier auprès du service de support en cas de problème.' 
 ---
-= Désactivez la fenêtre de maintenance AutoSupport
+= Désactiver la fenêtre de maintenance AutoSupport dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

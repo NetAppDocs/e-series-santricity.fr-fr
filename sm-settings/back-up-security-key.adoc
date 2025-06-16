@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, backup, security, key, 
 summary: 'Après avoir créé ou modifié une clé de sécurité, vous pouvez créer une copie de sauvegarde du fichier de clé en cas de corruption de l"original.' 
 ---
-= Sauvegarder la clé de sécurité
+= Sauvegarder les clés de sécurité dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

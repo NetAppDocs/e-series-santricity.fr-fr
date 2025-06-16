@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host, terms 
 summary: 'Découvrez comment les conditions générales d"hôtes s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie hôte
+= En savoir plus sur la terminologie de l'hôte dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

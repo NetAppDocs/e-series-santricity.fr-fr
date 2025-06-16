@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
 summary: 'Le journal AutoSupport fournit des informations sur le statut, l"historique d"intervention et les erreurs rencontrées lors de la livraison des interventions AutoSupport.' 
 ---
-= Afficher le journal AutoSupport
+= Afficher le journal AutoSupport dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

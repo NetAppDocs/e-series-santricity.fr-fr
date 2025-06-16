@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
 summary: 'Avant d"utiliser la fonction de stockage à distance, consultez les exigences et restrictions suivantes.' 
 ---
-= Configuration requise pour la fonction de stockage à distance
+= En savoir plus sur les exigences de la fonctionnalité de stockage à distance dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

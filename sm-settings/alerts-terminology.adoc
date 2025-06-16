@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, alerts, terms, 
 summary: 'Découvrez comment les conditions d"alerte s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie des alertes
+= En savoir plus sur la terminologie des alertes dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

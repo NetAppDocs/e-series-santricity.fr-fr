@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, authentication 
 summary: 'Access Management est une méthode de configuration de l"authentification utilisateur dans SANtricity Unified Manager.' 
 ---
-= Présentation de Access Management
+= En savoir plus sur la gestion des accès SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

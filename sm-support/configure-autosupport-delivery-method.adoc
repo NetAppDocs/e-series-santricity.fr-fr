@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, autosupport, ASUP, delivery, method 
 summary: La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la livraison des interventions au support technique. 
 ---
-= Configurer la méthode de livraison AutoSupport
+= Configurer la méthode de livraison AutoSupport dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

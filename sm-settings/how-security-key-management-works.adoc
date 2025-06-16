@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, security, key, management, 
 summary: 'Lorsque vous implémentez la fonction de sécurité des disques, les disques sécurisés (FIPS ou FDE) nécessitent une clé de sécurité pour l"accès aux données. Une clé de sécurité est une chaîne de caractères partagée entre ces types de disques et les contrôleurs d"une matrice de stockage.' 
 ---
-= Fonctionnement de la gestion des clés de sécurité
+= Fonctionnement de la gestion des clés de sécurité dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

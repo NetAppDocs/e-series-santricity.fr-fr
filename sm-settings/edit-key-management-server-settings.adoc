@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
 summary: Si vous avez configuré la gestion externe des clés, vous pouvez afficher et modifier les paramètres du serveur de gestion des clés à tout moment. 
 ---
-= Modifier les paramètres du serveur de gestion des clés
+= Modifier les paramètres du serveur de gestion des clés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

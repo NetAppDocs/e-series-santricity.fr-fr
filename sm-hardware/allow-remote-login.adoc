@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, login, 
 summary: 'La connexion à distance permet aux utilisateurs de l"extérieur du réseau local de démarrer une session SSH et de modifier les paramètres sur le contrôleur.' 
 ---
-= Configuration de la connexion distante (SSH)
+= Configurer la connexion à distance (SSH) dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
 summary: Pour configurer la mise en miroir synchrone, vous créez une paire en miroir qui comprend un volume primaire sur la baie locale et un volume secondaire sur la baie distante. 
 ---
-= Création d'une paire symétrique synchrone
+= Créer une paire miroir synchrone dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

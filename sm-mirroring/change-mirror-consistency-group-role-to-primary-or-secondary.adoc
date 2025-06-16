@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
 summary: 'Vous pouvez modifier le rôle entre les groupes de cohérence miroir à des fins d"administration ou en cas d"incident sur la baie de stockage locale.' 
 ---
-= Modifiez le rôle de groupe de cohérence du miroir sur principal ou secondaire
+= Modifier le rôle du groupe de cohérence miroir en principal ou secondaire dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

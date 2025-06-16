@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, pool, volume, group 
 summary: Vous pouvez supprimer un pool ou un groupe de volumes pour renforcer la capacité non allouée, ce qui vous permet de reconfigurer les applications en fonction des besoins de stockage. 
 ---
-= Supprime le pool ou le groupe de volumes
+= Supprimer un pool ou un groupe de volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

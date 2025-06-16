@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, requirements, replicating, storage, configurations 
 summary: 'Avant d"importer une configuration de stockage d"une matrice de stockage à une autre, passez en revue les exigences et les directives.' 
 ---
-= Conditions requises pour la réplication des configurations de stockage
+= Conditions requises pour la réplication des configurations de baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

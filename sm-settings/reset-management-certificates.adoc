@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reset, management, certificates, 
 summary: 'Vous pouvez rétablir les certificats sur les contrôleurs de l"utilisation de certificats signés par l"autorité de certification aux certificats configurés en usine et auto-signés.' 
 ---
-= Réinitialisez les certificats de gestion
+= Réinitialiser les certificats de gestion dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

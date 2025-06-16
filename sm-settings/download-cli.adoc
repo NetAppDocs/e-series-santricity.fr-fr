@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, download, command line interface, CLI, 
 summary: 'System Manager vous pouvez télécharger le pack de l"interface de ligne de commandes.' 
 ---
-= Télécharger l'interface de ligne de commande
+= Téléchargez l'interface de ligne de commande SANtricity (CLI)
 :allow-uri-read: 
 :experimental: 
 :icons: font

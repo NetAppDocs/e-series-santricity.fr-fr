@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
 summary: Par défaut, les contrôleurs intègrent le protocole DHCP sur les deux ports réseau. Vous pouvez attribuer des adresses IP statiques, utiliser les adresses IP statiques par défaut ou utiliser des adresses IP attribuées par DHCP. Vous pouvez également utiliser la configuration automatique sans état IPv6. 
 ---
-= Considérations relatives à l'attribution d'adresses IP
+= En savoir plus sur l'attribution d'adresses IP pour les contrôleurs de la série E
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

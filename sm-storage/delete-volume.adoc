@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, volume 
 summary: Généralement, vous supprimez des volumes si les volumes ont été créés avec des paramètres ou une capacité incorrects, que vous ne répondez plus aux besoins de configuration du stockage ou que des images Snapshot qui ne sont plus nécessaires pour les tests des applications ou des sauvegardes. 
 ---
-= Supprimer le volume
+= Supprimer un volume dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
 summary: 'Vous pouvez modifier la priorité de synchronisation et la règle de resynchronisation utilisée par la paire en miroir pour terminer l"opération de resynchronisation après une interruption de communication.' 
 ---
-= Modifier les paramètres de synchronisation d'une paire symétrique
+= Modifier les paramètres de synchronisation pour une paire en miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

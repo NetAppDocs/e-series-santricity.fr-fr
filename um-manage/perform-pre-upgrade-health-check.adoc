@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, perform, pre-upgrade, health, check 
 summary: 'Une vérification de l"état s"exécute dans le cadre du processus de mise à niveau, mais vous pouvez également effectuer une vérification de l"état séparément avant de commencer. Le contrôle de l"état des composants de la baie de stockage vérifie que la mise à niveau peut se poursuivre.' 
 ---
-= Vérification de l'état de pré-mise à niveau
+= Effectuer un contrôle de santé avant la mise à niveau dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

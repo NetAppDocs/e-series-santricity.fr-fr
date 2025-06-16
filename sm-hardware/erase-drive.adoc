@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
 summary: 'Vous pouvez utiliser l"option Effacer pour préparer un lecteur non affecté à retirer du système. Cette procédure supprime définitivement les données, en veillant à ce qu"elles ne puissent plus être lues.' 
 ---
-= Effacer les lecteurs
+= Effacer les lecteurs dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

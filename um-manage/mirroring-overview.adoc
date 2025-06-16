@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, 
 summary: Unified Manager inclut des options de configuration pour les fonctionnalités de mise en miroir SANtricity, ce qui permet aux administrateurs de répliquer des données entre deux baies de stockage pour la protection des données. 
 ---
-= Fonctionnement de la mise en miroir
+= En savoir plus sur la mise en miroir SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

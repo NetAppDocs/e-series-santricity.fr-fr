@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
 summary: 'Vous pouvez afficher l"état et les paramètres des lecteurs, tels que le type de support, le type d"interface et la capacité.' 
 ---
-= Afficher l'état et les paramètres du lecteur
+= Afficher l'état et les paramètres du lecteur dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

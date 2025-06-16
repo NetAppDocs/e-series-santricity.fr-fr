@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
 summary: 'Un cycle d"apprentissage est un cycle automatique d"étalonnage de la jauge de batterie intelligente. Les cycles sont programmés pour démarrer automatiquement, à la même journée et à la même heure, par intervalles de 8 semaines (par contrôleur). Si vous souhaitez définir un autre programme, vous pouvez régler les cycles d"apprentissage.' 
 ---
-= Mettre à jour les cycles d'apprentissage de la batterie
+= Mettre à jour les cycles d'apprentissage de la batterie dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

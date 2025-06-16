@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
 summary: 'Vous pouvez configurer les délais d"attente pour SANtricity Unified Manager, de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d"un délai spécifié.' 
 ---
-= Gérer les délais d'expiration des sessions
+= Gérer les délais d'expiration des sessions dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

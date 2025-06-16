@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workload, settings 
 summary: 'Vous pouvez modifier le nom d"une charge de travail et afficher son type d"application associé. Modifiez le nom d"une charge de travail lorsque le nom actuel n"a plus de signification ni d"objet.' 
 ---
-= Modifiez les paramètres des charges de travail
+= Modifier les paramètres de charge de travail dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

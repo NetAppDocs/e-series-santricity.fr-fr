@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
 summary: 'La mise en miroir asynchrone copie les volumes de données à la demande ou selon une planification. La mise en miroir permet de réduire ou d"éviter les temps d"indisponibilité dus à la corruption ou à la perte de données.' 
 ---
-= Fonctionnement de la mise en miroir asynchrone
+= Fonctionnement de la mise en miroir asynchrone dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

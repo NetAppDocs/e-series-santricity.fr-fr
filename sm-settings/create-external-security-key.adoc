@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, external, security, key, 
 summary: Pour utiliser la fonction sécurité des lecteurs avec un serveur de gestion des clés, vous devez créer une clé externe partagée par le serveur de gestion des clés et les lecteurs sécurisés dans la matrice de stockage. 
 ---
-= Créer une clé de sécurité externe
+= Créer une clé de sécurité externe dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

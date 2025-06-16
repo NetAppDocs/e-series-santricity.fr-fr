@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, storage, array, group 
 summary: Vous créez des groupes de stockage, puis ajoutez des matrices de stockage aux groupes. Le groupe de stockage définit les disques qui fournissent le stockage qui constitue le volume. 
 ---
-= Configurer le groupe de matrices de stockage
+= Configurer un groupe de baies de stockage dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

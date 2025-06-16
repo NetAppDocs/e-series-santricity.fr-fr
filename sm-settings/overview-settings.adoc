@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, system settings 
 summary: Vous pouvez configurer System Manager pour des paramètres généraux de la baie et des fonctions complémentaires. 
 ---
-= Présentation des paramètres
+= En savoir plus sur l'aperçu des paramètres dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

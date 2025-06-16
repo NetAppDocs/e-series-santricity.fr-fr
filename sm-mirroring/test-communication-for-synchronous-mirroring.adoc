@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
 summary: 'Vous pouvez tester la communication entre une matrice de stockage locale et une matrice de stockage distante afin de diagnostiquer d"éventuels problèmes de communication pour une paire en miroir qui participe à la mise en miroir synchrone.' 
 ---
-= Tester la communication pour la mise en miroir synchrone
+= Tester la communication pour la mise en miroir synchrone dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

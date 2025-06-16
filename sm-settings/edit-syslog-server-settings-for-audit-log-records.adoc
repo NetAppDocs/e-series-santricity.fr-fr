@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, syslog, server, settings, audit, log, records, 
 summary: 'Vous pouvez modifier les paramètres du serveur syslog utilisé pour l"archivage des journaux d"audit et télécharger également un nouveau certificat d"autorité de certification (CA) pour le serveur.' 
 ---
-= Modifier les paramètres du serveur syslog pour les enregistrements du journal d'audit
+= Modifier les paramètres du serveur Syslog pour les enregistrements du journal d'audit dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

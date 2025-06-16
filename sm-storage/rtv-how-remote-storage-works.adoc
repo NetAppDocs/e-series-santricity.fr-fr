@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: 'La fonction de stockage distant vous permet d"importer les données d"un système de stockage distant vers un système de stockage E-Series local. Cette fonction est utile pour rationaliser la migration des données avec des temps d"arrêt minimes, notamment lors des mises à niveau de l"équipement.' 
 ---
-= Fonctionnement du stockage à distance
+= Comment fonctionne le stockage à distance dans le logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

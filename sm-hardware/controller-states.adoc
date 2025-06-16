@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller, states, 
 summary: 'Vous pouvez placer un contrôleur dans trois États différents : en ligne, hors ligne et en mode de service.' 
 ---
-= États du contrôleur
+= En savoir plus sur les états du contrôleur dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

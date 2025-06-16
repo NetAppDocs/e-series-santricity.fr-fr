@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, setup wizard 
 summary: 'Utilisez l"assistant d"installation pour configurer votre baie de stockage, y compris le matériel, les hôtes, les applications, les charges de travail Pools, alertes et AutoSupport.' 
 ---
-= Présentation de l'assistant d'installation
+= En savoir plus sur l'assistant de configuration de SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

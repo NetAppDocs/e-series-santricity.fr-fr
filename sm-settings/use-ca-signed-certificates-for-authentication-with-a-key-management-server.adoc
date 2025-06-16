@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
 summary: Pour sécuriser les communications entre un serveur de gestion des clés et les contrôleurs de la matrice de stockage, vous devez configurer les ensembles appropriés de certificats. 
 ---
-= Utilisez des certificats signés par l'autorité de certification pour l'authentification avec un serveur de gestion des clés
+= Utiliser des certificats signés par une autorité de certification pour l'authentification avec un serveur de gestion de clés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

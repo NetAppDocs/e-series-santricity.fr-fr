@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, automatic, load, balancing, 
 summary: 'La fonction d"équilibrage de charge automatique assure la gestion et l"équilibrage dynamiques du trafic d"E/S entrant provenant des hôtes sur les deux contrôleurs. Cette fonctionnalité est activée par défaut, mais vous pouvez la désactiver dans System Manager.' 
 ---
-= Définir l'équilibrage automatique de la charge
+= Définir l'équilibrage automatique de la charge dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

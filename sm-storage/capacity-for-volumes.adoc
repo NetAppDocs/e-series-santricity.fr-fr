@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
 summary: Les lecteurs de votre matrice de stockage fournissent la capacité de stockage physique de vos données. Avant de commencer à stocker des données, vous devez configurer la capacité allouée dans des composants logiques appelés pools ou groupes de volumes. Ces objets de stockage vous permettent de configurer, de stocker, de maintenir et de préserver les données de votre matrice de stockage. 
 ---
-= Mode d'allocation de la capacité pour les volumes
+= Comment la capacité est allouée aux volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

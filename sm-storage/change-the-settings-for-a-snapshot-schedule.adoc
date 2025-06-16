@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
 summary: Pour un planning de snapshots, vous pouvez modifier les heures de collecte automatique ou la fréquence de collecte. 
 ---
-= Modifiez les paramètres d'un planning de snapshots
+= Modifier les paramètres d'une planification d'instantanés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

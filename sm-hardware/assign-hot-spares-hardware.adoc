@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign, hot, spares, raid, 
 summary: 'Vous pouvez attribuer un disque de secours en tant que disque de secours pour une protection supplémentaire des données au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Si un disque tombe en panne dans l"un de ces groupes de volumes, le contrôleur reconstruit les données du disque défectueux vers le disque de secours.' 
 ---
-= Affecter des disques de secours
+= Attribuer des disques de secours dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

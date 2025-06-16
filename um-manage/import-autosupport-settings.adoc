@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, autosupport, settings 
 summary: 'Vous pouvez importer une configuration AutoSupport d"une baie de stockage vers d"autres baies de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.' 
 ---
-= Importer les paramètres AutoSupport
+= Importer les paramètres AutoSupport dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, directory services, 
 summary: 'Les administrateurs peuvent utiliser un serveur LDAP (Lightweight Directory Access Protocol) et un service d"annuaire, tel que Active Directory de Microsoft.' 
 ---
-= Gestion des accès avec les services d'annuaire
+= Gestion des accès avec les services d'annuaire dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

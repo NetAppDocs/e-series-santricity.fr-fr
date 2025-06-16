@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
 summary: Si vous avez précédemment désactivé la fonction par défaut pour le provisionnement de ressources, vous pouvez accéder à Paramètres et la réactiver pour tous les nouveaux groupes de volumes SSD ou pools que vous créez. Vous pouvez également désactiver le paramètre à nouveau. 
 ---
-= Activez ou désactivez le provisionnement des ressources pour les nouveaux groupes de volumes ou pools
+= Activer ou désactiver le provisionnement des ressources pour les nouveaux groupes de volumes ou pools dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

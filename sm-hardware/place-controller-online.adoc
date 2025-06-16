@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, online 
 summary: Si un contrôleur est en mode hors ligne ou de service, vous pouvez le remettre en ligne. 
 ---
-= Mettez le contrôleur en ligne
+= Placer un contrôleur en ligne dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
 summary: 'Pour configurer les alertes par e-mail, vous devez spécifier une adresse de serveur de messagerie et les adresses e-mail des destinataires de l"alerte. Jusqu"à 20 adresses e-mail sont autorisées.' 
 ---
-= Configurer le serveur de messagerie et les destinataires pour les alertes
+= Configurer le serveur de messagerie et les destinataires des alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

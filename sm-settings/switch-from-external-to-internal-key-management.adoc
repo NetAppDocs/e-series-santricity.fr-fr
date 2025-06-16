@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
 summary: 'Vous pouvez changer la méthode de gestion de la sécurité des lecteurs d"un serveur de clés externe à la méthode interne utilisée par la matrice de stockage. La clé de sécurité précédemment définie pour la gestion externe des clés est ensuite utilisée pour la gestion interne des clés.' 
 ---
-= Passez de la gestion externe des clés à la gestion interne des clés
+= Passer de la gestion des clés externes à la gestion des clés internes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

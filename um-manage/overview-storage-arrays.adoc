@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
 summary: 'Pour gérer les ressources de stockage, vous devez d"abord découvrir les baies de stockage du réseau.' 
 ---
-= Présentation de la découverte
+= En savoir plus sur la découverte dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

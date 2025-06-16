@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, configure, saml, 
 summary: 'Pour configurer l"authentification pour Access Management, vous pouvez utiliser les fonctionnalités SAML (Security assertion Markup Language) intégrées à la matrice de stockage. Cette configuration établit une connexion entre un fournisseur d"identité et le fournisseur de stockage.' 
 ---
-= Configurez SAML
+= Configurer SAML dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

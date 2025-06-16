@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume groups 
 summary: 'Vous pouvez créer de la capacité de stockage logique depuis un sous-ensemble de disques non attribués de votre baie de stockage. Cette capacité logique peut prendre la forme d"un pool ou d"un groupe de volumes, selon les besoins de votre environnement.' 
 ---
-= Présentation des pools et des groupes de volumes
+= En savoir plus sur les pools et les groupes de volumes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

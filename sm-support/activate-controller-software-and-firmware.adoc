@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, activate, controller, software, firmware 
 summary: 'Vous pouvez choisir d"activer les fichiers de mise à niveau immédiatement ou d"attendre jusqu"à ce que le moment soit plus opportun.' 
 ---
-= Activer le logiciel et le micrologiciel du contrôleur
+= Activer le logiciel et le micrologiciel du contrôleur dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

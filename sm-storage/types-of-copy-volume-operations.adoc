@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: 'Vous pouvez effectuer une opération de copie de volume hors ligne ou une opération de copie de volume en ligne. Une opération hors ligne lit les données à partir d"un volume source et les copie vers un volume cible. Une opération en ligne utilise un volume Snapshot comme source et copie ses données sur un volume cible.' 
 ---
-= Types d'opérations de copie de volume
+= Découvrez les types d'opérations de copie de volume dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

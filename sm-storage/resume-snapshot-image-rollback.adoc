@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, resume, snapshot, image, rollback 
 summary: 'Si une erreur se produit lors d"une opération de restauration d"image instantanée, l"opération est automatiquement interrompue. Vous pouvez reprendre une opération de retour arrière en pause.' 
 ---
-= Reprendre la restauration de l'image instantanée
+= Reprendre la restauration d'une image instantanée dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, syslog, servers, alerts, 
 summary: 'Vous pouvez modifier l"adresse du serveur utilisée pour la réception d"alertes syslog.' 
 ---
-= Modifier les serveurs syslog pour les alertes
+= Modifier les serveurs Syslog pour les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

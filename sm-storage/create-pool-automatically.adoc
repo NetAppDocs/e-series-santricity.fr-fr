@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, pool, automatically 
 summary: 'La création du pool est lancée automatiquement lorsque System Manager détecte des disques non assignés dans la baie de stockage. La création automatique de pool vous permet de configurer facilement tous les disques non assignés dans la baie de stockage dans un pool et d"ajouter des disques aux pools existants.' 
 ---
-= Création automatique du pool
+= Créer un pool automatiquement dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

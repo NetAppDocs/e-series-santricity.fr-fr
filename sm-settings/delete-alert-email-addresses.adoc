@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mail, server, email, addresses, alerts, 
 summary: Vous pouvez supprimer le serveur de messagerie précédemment défini afin que les alertes ne soient plus envoyées aux adresses électroniques, ou vous pouvez supprimer des adresses électroniques individuelles. 
 ---
-= Supprimez le serveur de messagerie ou les adresses e-mail pour les alertes
+= Supprimer le serveur de messagerie ou les adresses e-mail pour les alertes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

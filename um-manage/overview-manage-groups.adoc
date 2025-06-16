@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, groups 
 summary: À partir de la page gérer les groupes, vous pouvez créer un ensemble de groupes de matrices de stockage pour faciliter la gestion. 
 ---
-= Vue d'ensemble des groupes
+= En savoir plus sur la présentation des groupes dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, host, creation, volume, assignment 
 summary: 'La figure suivante montre comment configurer l"accès hôte.' 
 ---
-= Workflow pour la création d'hôtes et l'affectation de volumes
+= Fonctionnement de la création d'hôtes et de l'attribution de volumes dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

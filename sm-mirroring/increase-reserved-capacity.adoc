@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, increase, reserved, capacity 
 summary: 'Vous pouvez augmenter la capacité réservée, c"est-à-dire la capacité physiquement allouée à toute opération de service de copie sur un objet de stockage.' 
 ---
-= Augmenter la capacité réservée
+= Augmenter la capacité réservée dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

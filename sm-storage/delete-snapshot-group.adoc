@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, group 
 summary: 'Vous supprimez un groupe de snapshots lorsque vous souhaitez supprimer définitivement ses données et le supprimer du système. La suppression d"un groupe de snapshots récupère la capacité réservée pour réutilisation dans le pool ou le groupe de volumes.' 
 ---
-= Supprimer le groupe d'instantanés
+= Supprimer un groupe d'instantanés dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

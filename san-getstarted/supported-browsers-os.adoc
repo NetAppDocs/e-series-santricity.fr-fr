@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: 'Vous pouvez accéder à SANtricity à partir de différents types de navigateurs et de systèmes d"exploitation.' 
 ---
-= Navigateurs et systèmes d'exploitation pris en charge
+= Prise en charge du navigateur logiciel et du système d'exploitation SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

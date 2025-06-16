@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, end, iscsi, session 
 summary: 'Vous pouvez mettre fin à une session iSCSI qui n"est plus nécessaire. Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone.' 
 ---
-= Mettez fin à la session iSCSI
+= Terminer une session iSCSI dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

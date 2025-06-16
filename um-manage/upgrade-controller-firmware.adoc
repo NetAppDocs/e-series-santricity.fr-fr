@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, os, operating system 
 summary: Mettez à niveau une ou plusieurs matrices de stockage avec le dernier logiciel et NVSRAM pour vous assurer que vous disposez des dernières fonctionnalités et correctifs. La NVSRAM du contrôleur est un fichier de contrôleur qui spécifie les paramètres par défaut des contrôleurs. 
 ---
-= Mettez à niveau SANtricity OS
+= Mettre à niveau le système d'exploitation SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

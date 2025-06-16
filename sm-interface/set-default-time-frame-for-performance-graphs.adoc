@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, time, graphs 
 summary: Vous pouvez modifier la plage horaire par défaut affichée par les graphiques de performance. 
 ---
-= Définissez la plage horaire par défaut des graphiques de performances
+= Définir la période par défaut pour les graphiques de performances dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

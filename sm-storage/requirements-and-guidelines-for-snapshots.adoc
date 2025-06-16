@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
 summary: 'Lors de la création et de l"utilisation d"instantanés, vérifiez les exigences et les directives suivantes.' 
 ---
-= Exigences et consignes relatives aux snapshots
+= Exigences et directives pour les instantanés dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

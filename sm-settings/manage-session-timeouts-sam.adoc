@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
 summary: 'Vous pouvez configurer les délais d"expiration dans le Gestionnaire système SANtricity, de sorte que les sessions inactives des utilisateurs soient déconnectées au bout d"un délai spécifié.' 
 ---
-= Gérer les délais d'expiration des sessions
+= Gérer les délais d'expiration des sessions dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

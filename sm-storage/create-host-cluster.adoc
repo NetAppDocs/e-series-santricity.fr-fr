@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, host, cluster 
 summary: 'Vous créez un cluster hôte alors que deux hôtes ou plus requièrent l"accès E/S aux mêmes volumes.' 
 ---
-= Création d'un cluster hôte
+= Créer un cluster d'hôtes dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

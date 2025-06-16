@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unreadable, sectors, log 
 summary: Vous pouvez enregistrer le journal secteurs illisibles et envoyer le fichier au support technique pour analyse. 
 ---
-= Afficher le journal secteurs illisibles
+= Afficher le journal des secteurs illisibles dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

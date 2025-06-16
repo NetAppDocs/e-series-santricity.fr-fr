@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, synchronous, mirroring, adapter, host, bus, 
 summary: 'Vous pouvez désactiver la fonction de mise en miroir synchrone sur une matrice de stockage pour rétablir l"utilisation normale du port hôte 4 de l"adaptateur de bus hôte (HBA), réservé à la transmission des données en miroir.' 
 ---
-= Désactiver la mise en miroir synchrone
+= Désactiver la mise en miroir synchrone dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

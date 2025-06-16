@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, host, cluster 
 summary: Vous pouvez modifier le nom du cluster hôte ou ajouter ou supprimer des hôtes dans un cluster hôte. 
 ---
-= Modifiez les paramètres d'un cluster hôte
+= Modifier les paramètres d'un cluster hôte dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

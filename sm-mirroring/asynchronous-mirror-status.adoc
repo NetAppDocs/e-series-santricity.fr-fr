@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirror, status, consistency, group, 
 summary: 'L"état du miroir définit l"état des groupes de cohérence en miroir et des paires de volumes en miroir.' 
 ---
-= État de la mise en miroir asynchrone
+= Afficher l'état du miroir asynchrone dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

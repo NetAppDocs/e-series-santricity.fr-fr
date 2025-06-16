@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
 summary: 'Vous pouvez tester la liaison de communication pour diagnostiquer d"éventuels problèmes de communication entre la matrice de stockage locale et la matrice de stockage distante associée à un groupe de cohérence miroir.' 
 ---
-= Testez la communication pour les groupes de cohérence miroir
+= Tester la communication pour les groupes de cohérence miroir dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

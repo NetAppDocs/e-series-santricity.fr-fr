@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
 summary: Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs. 
 ---
-= Disques SSD
+= En savoir plus sur les disques SSD (Solid State Disks) dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

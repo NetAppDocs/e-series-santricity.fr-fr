@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
 summary: 'Si le protocole NTP (Network Time Protocol) n"est pas activé, vous pouvez définir manuellement les horloges sur les contrôleurs afin qu"elles soient synchronisées avec le client de gestion (système utilisé pour exécuter le navigateur qui accède à SANtricity System Manager).' 
 ---
-= Synchroniser les horloges de la matrice de stockage
+= Synchroniser les horloges des baies de stockage dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
