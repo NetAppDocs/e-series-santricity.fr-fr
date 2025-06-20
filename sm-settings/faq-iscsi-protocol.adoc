@@ -1,0 +1,180 @@
+---
+permalink: sm-settings/faq-iscsi-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur le protocole iSCSI pour SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Que se passe-t-il lorsque j'utilise un serveur iSNS pour l'enregistrement ?
+
+Lorsque des informations sur le serveur iSNS (Internet Storage Name Service) sont utilisées, les hôtes (initiateurs) peuvent être configurés pour interroger le serveur iSNS afin de récupérer des informations à partir de la cible (contrôleurs).
+
+Cet enregistrement fournit au serveur iSNS le nom qualifié iSCSI (IQN) du contrôleur et les informations de port, et permet d'effectuer des requêtes entre les initiateurs (hôtes iSCSI) et les cibles (contrôleurs).
+
+
+
+== Quelles sont les méthodes d'enregistrement automatiquement prises en charge pour iSCSI ?
+
+L'implémentation iSCSI prend en charge la méthode de découverte iSNS (Internet Storage Name Service) ou l'utilisation de la commande Envoyer les cibles.
+
+La méthode iSNS permet la découverte iSNS entre les initiateurs (hôtes iSCSI) et les cibles (contrôleurs). Vous enregistrez le contrôleur cible pour fournir au serveur iSNS le nom qualifié iSCSI (IQN) et les informations de port du contrôleur.
+
+Si vous ne configurez pas iSNS, l'hôte iSCSI peut envoyer la commande Envoyer les cibles au cours d'une session de découverte iSCSI. En réponse, le contrôleur renvoie les informations relatives au port (par exemple, l'IQN cible, l'adresse IP du port, le port d'écoute et le groupe de ports cible). Cette méthode de découverte n'est pas requise si vous utilisez iSNS, car l'initiateur hôte peut récupérer les adresses IP cibles du serveur iSNS.
+
+
+
+== Comment interpréter les statistiques iser sur InfiniBand ?
+
+La boîte de dialogue Afficher les statistiques iser sur InfiniBand affiche les statistiques de cible locale (protocole) et d'interface iser sur InfiniBand (IB). Toutes les statistiques sont en lecture seule et ne peuvent pas être définies.
+
+* *Statistiques de la cible locale (Protocole)* -- fournit des statistiques pour l'iser sur la cible InfiniBand, qui montre un accès de niveau bloc à ses supports de stockage.
+* *ISER over InfiniBand interface statistics* -- fournit des statistiques pour tous les ports iser sur InfiniBand sur l'interface InfiniBand, qui inclut des statistiques de performance et des informations d'erreur de liaison associées à chaque port de commutateur.
+
+
+Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.
+
+
+
+== Que dois-je faire d'autre pour configurer ou diagnostiquer iser sur InfiniBand ?
+
+Le tableau suivant répertorie les fonctions de SANtricity System Manager que vous pouvez utiliser pour configurer et gérer les sessions iser over InfiniBand.
+
+[NOTE]
+====
+Les paramètres iser over InfiniBand sont disponibles uniquement si le contrôleur de votre baie de stockage comprend un port de gestion hôte iser sur InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Configurez iser sur les ports InfiniBand
+ a| 
+. Sélectionnez *matériel*.
+. Sélectionnez l'onglet *contrôleurs et composants*.
+. Sélectionnez un contrôleur.
+. Sélectionnez *configurer iser sur les ports InfiniBand*.
+
+
+ou
+
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *iser sur les paramètres InfiniBand*, puis sélectionnez *configurer iser sur les ports InfiniBand*.
+
+
+
+
+ a| 
+Afficher les statistiques iser sur InfiniBand
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler vers le bas jusqu'à *iser sur les paramètres InfiniBand*, puis sélectionnez *Afficher iser sur les statistiques InfiniBand*.
+
+
+|===
+
+
+== Que dois-je faire d'autre pour configurer ou diagnostiquer l'iSCSI ?
+
+Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone. Les tableaux suivants répertorient les fonctions du Gestionnaire système SANtricity que vous pouvez utiliser pour configurer et gérer ces sessions iSCSI.
+
+[NOTE]
+====
+Les paramètres iSCSI ne sont disponibles que si votre matrice de stockage prend en charge iSCSI.
+
+====
+
+
+=== Configurez iSCSI
+
+[cols="1a,1a"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Gérer les paramètres iSCSI
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler vers le bas jusqu'à *Paramètres iSCSI* pour afficher toutes les fonctions de gestion.
+
+
+
+
+ a| 
+Configurez les ports iSCSI
+ a| 
+. Sélectionnez *matériel*.
+. Sélectionnez l'onglet *contrôleurs et composants*.
+. Sélectionnez un contrôleur.
+. Sélectionnez *configurer les ports iSCSI*.
+
+
+
+
+ a| 
+Définissez le secret CHAP de l'hôte
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres iSCSI*, puis sélectionnez *configurer l'authentification*.
+
+
+ou
+
+. Sélectionnez menu:Storage[hosts].
+. Sélectionnez un membre hôte.
+. Cliquez sur l'onglet Menu:Afficher/Modifier les paramètres[ports hôte].
+
+
+|===
+
+
+=== Diagnostic iSCSI
+
+[cols="1a,1a"]
+|===
+| Action | Emplacement 
+
+
+ a| 
+Afficher ou mettre fin aux sessions iSCSI
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres iSCSI*, puis sélectionnez *Afficher/mettre fin aux sessions iSCSI*.
+
+
+ou
+
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Afficher/mettre fin aux sessions iSCSI*.
+
+
+
+
+ a| 
+Afficher les statistiques iSCSI
+ a| 
+. Sélectionnez menu:Paramètres[système].
+. Faites défiler jusqu'à *Paramètres iSCSI*, puis sélectionnez *Afficher les packages de statistiques iSCSI*.
+
+
+ou
+
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *Afficher les packages de statistiques iSCSI*.
+
+
+|===

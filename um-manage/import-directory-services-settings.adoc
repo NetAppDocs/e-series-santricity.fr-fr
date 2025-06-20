@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, directory, services, settings 
 summary: 'Vous pouvez importer une configuration de services d"annuaire d"une matrice de stockage vers d"autres matrices de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.' 
 ---
-= Importer les paramètres des services d'annuaire
+= Importer les paramètres des services d'annuaire dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -1,0 +1,231 @@
+---
+permalink: sm-mirroring/faq-sync-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur la mise en miroir synchronisée pour SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== En quoi la mise en miroir asynchrone est-elle différente de la mise en miroir synchrone ?
+
+La fonction de mise en miroir asynchrone diffère de la fonction de mise en miroir synchrone de façon essentielle : elle capture l'état du volume source à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image.
+
+Avec la mise en miroir synchrone, l'état du volume primaire n'est pas capturé à un certain moment, mais reflète plutôt toutes les modifications apportées au volume primaire au volume secondaire. Le volume secondaire est identique au volume primaire à chaque instant car, avec ce type de miroir, chaque écriture est effectuée sur le volume primaire, une écriture est effectuée sur le volume secondaire. L'hôte ne reçoit pas de confirmation de la réussite de l'écriture tant que le volume secondaire n'a pas été mis à jour avec les modifications apportées au volume principal.
+
+Avec la mise en miroir asynchrone, la baie de stockage distante n'est pas entièrement synchronisée avec la baie de stockage locale. Par conséquent, si l'application doit passer à la baie de stockage distante en raison d'une perte de la baie de stockage locale, certaines transactions peuvent être perdues.
+
+Comparaison entre les fonctions de mise en miroir :
+
+[cols="1a,1a"]
+|===
+| La mise en miroir asynchrone | La mise en miroir synchrone 
+
+
+ a| 
+*Méthode de réplication*
+
+
+
+ a| 
+* *Point dans le temps*
++
+La mise en miroir s'effectue à la demande ou automatiquement selon un planning défini par l'utilisateur. Les planifications peuvent être définies au niveau de la granularité de quelques minutes. La durée minimale entre les synchronisations est de 10 minutes.
+
+
+ a| 
+* *Continu*
++
+La mise en miroir s'exécute automatiquement en continu et copie les données à partir de chaque écriture hôte.
+
+
+
+
+
+ a| 
+*Capacité réservée*
+
+
+
+ a| 
+* *Multiple*
++
+Un volume de capacité réservée est requis pour chaque paire en miroir.
+
+
+ a| 
+* *Unique*
++
+Un seul volume de capacité réservée est requis pour tous les volumes en miroir.
+
+
+
+
+
+ a| 
+* Communication*
+
+
+
+ a| 
+* *ISCSI et Fibre Channel*
++
+Prend en charge les interfaces iSCSI et Fibre Channel entre différentes baies de stockage.
+
+
+ a| 
+* *Fibre Channel*
++
+Prend uniquement en charge les interfaces Fibre Channel entre différentes baies de stockage.
+
+
+
+
+
+ a| 
+*Distance*
+
+
+
+ a| 
+* *Illimité*
++
+Prise en charge de distances pratiquement illimitées entre la matrice de stockage locale et la matrice de stockage distante, avec une distance généralement limitée uniquement par les capacités du réseau et la technologie d'extension de canal.
+
+
+ a| 
+* *Restreint*
++
+La baie de stockage locale doit généralement se situer à environ 10 km (6.2 miles), afin de répondre aux exigences de latence et de performances applicatives.
+
+
+
+|===
+
+
+== Mise en miroir synchrone - Pourquoi ne vois-je pas tous mes volumes ?
+
+Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes peuvent ne pas être éligibles pour les raisons suivantes :
+
+* Le volume n'est pas un volume standard, tel qu'un volume instantané ou un volume fin.
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+
+
+
+
+== Mise en miroir synchrone - Pourquoi ne vois-je pas tous les volumes sur la baie de stockage distante ?
+
+Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes peuvent ne pas être éligibles pour les raisons suivantes :
+
+* Le volume n'est pas un volume standard, tel qu'un volume instantané ou un volume fin.
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Si vous utilisez Data assurance (DA), le volume primaire et le volume secondaire doivent avoir les mêmes paramètres DA.
++
+** Si le volume principal est DA activé, le volume secondaire doit être DA activé.
+** Si le volume principal n'est pas activé par DA, le volume secondaire ne doit pas être activé par DA.
+
+
+
+
+
+
+== Mise en miroir synchrone : que faut-il savoir avant de créer une paire en miroir ?
+
+Vous configurez les paires en miroir dans l'interface SANtricity Unified Manager, puis vous gérez les paires dans SANtricity System Manager.
+
+Avant de créer une paire symétrique, suivez les consignes suivantes :
+
+* Vous devez disposer de deux baies de stockage.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Vos baies de stockage locales et distantes sont connectées par une structure Fibre Channel.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* Vous avez installé Web Services Proxy et Unified Manager. Les paires en miroir sont configurées dans l'interface Unified Manager.
+* Les deux baies de stockage sont découvertes dans Unified Manager.
+
+
+
+
+== Quel est l'impact de la priorité de synchronisation sur les taux de synchronisation ?
+
+La priorité de synchronisation définit le temps de traitement alloué aux activités de synchronisation par rapport aux performances du système.
+
+Le propriétaire du contrôleur du volume primaire effectue cette opération en arrière-plan. Parallèlement, le propriétaire du contrôleur traite les écritures d'E/S locales sur le volume primaire et les écritures distantes associées sur le volume secondaire. Étant donné que la resynchronisation renvoie les ressources de traitement du contrôleur à partir de l'activité d'E/S, la resynchronisation peut avoir un impact sur les performances de l'application hôte.
+
+Gardez ces consignes à l'esprit pour vous aider à déterminer la durée d'une priorité de synchronisation et la manière dont les priorités de synchronisation peuvent affecter les performances du système.
+
+.A propos des taux de priorité de synchronisation
+[%collapsible]
+====
+Ces taux de priorité sont disponibles :
+
+* La plus faible
+* Faible
+* Moyen
+* Élevée
+* La plus haute
+
+
+Le taux de priorité le plus faible prend en charge les performances du système, mais la resynchronisation prend plus de temps. Le taux de priorité le plus élevé prend en charge la resynchronisation, mais la performance du système peut être compromise.
+
+====
+Ces lignes directrices approxent les différences entre les priorités.
+
+[cols="35h,~"]
+|===
+| Taux de priorité pour la synchronisation complète | Temps écoulé par rapport au taux de synchronisation le plus élevé 
+
+
+ a| 
+La plus faible
+ a| 
+Environ huit fois plus longtemps qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Faible
+ a| 
+Environ six fois plus longtemps qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Moyen
+ a| 
+Environ trois fois et demie tant qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Élevée
+ a| 
+Environ deux fois plus longtemps qu'au taux de priorité le plus élevé.
+
+|===
+La taille des volumes et les charges des E/S hôte ont un impact sur les comparaisons de temps de synchronisation.
+
+
+
+== Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation manuelle ?
+
+La resynchronisation manuelle est recommandée car elle vous permet de gérer le processus de resynchronisation de manière à fournir la meilleure possibilité de récupérer des données.
+
+Si vous utilisez une règle de resynchronisation automatique et que des problèmes de communication intermittents se produisent pendant la resynchronisation, les données du volume secondaire peuvent être temporairement corrompues. Une fois la resynchronisation terminée, les données sont corrigées.

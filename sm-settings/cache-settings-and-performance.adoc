@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
 summary: 'La mémoire cache est une zone de stockage volatile temporaire sur le contrôleur dont le temps d"accès est plus rapide que celui du lecteur.' 
 ---
-= Paramètres du cache et performances
+= En savoir plus sur les paramètres et les performances du cache dans le logiciel SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

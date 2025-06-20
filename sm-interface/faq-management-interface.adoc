@@ -1,0 +1,379 @@
+---
+permalink: sm-interface/faq-management-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur l'interface de gestion de SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Quels sont les navigateurs pris en charge ?
+
+SANtricity System Manager prend en charge ces versions de navigateur.
+
+[cols="1a,1a"]
+|===
+| Navigateur | Version minimale 
+
+
+ a| 
+Google Chrome
+ a| 
+89
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+80
+
+
+
+ a| 
+Safari
+ a| 
+14
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+90
+
+|===
+
+
+== Quels sont les raccourcis clavier ?
+
+Vous pouvez naviguer dans le Gestionnaire système SANtricity à l'aide du clavier seul.
+
+
+
+=== Navigation générale
+
+[cols="1a,1a"]
+|===
+| Action | Raccourci clavier 
+
+
+ a| 
+Passer à l'élément suivant.
+ a| 
+Onglet
+
+
+
+ a| 
+Permet de passer à l'élément précédent.
+ a| 
+Maj + Tab
+
+
+
+ a| 
+Sélectionnez un élément.
+ a| 
+Entrez
+
+
+
+ a| 
+Liste déroulante--permet de passer à l'élément suivant ou précédent.
+ a| 
+Flèche vers le bas ou flèche vers le haut
+
+
+
+ a| 
+Case à cocher--sélectionnez un élément.
+ a| 
+Barre d'espace
+
+
+
+ a| 
+Boutons radio--basculer entre les éléments.
+ a| 
+Flèche vers le bas ou flèche vers le haut
+
+
+
+ a| 
+Texte extensible--développer ou élément de contrat.
+ a| 
+Entrez
+
+|===
+
+
+=== Navigation dans le tableau
+
+[cols="1a,1a"]
+|===
+| Action | Raccourci clavier 
+
+
+ a| 
+Sélectionnez une ligne.
+ a| 
+Pour sélectionner une ligne, puis appuyez sur entrée
+
+
+
+ a| 
+Faites défiler vers le haut ou vers le bas.
+ a| 
+Flèche vers le bas/flèche vers le haut ou page vers le bas/page vers le haut
+
+
+
+ a| 
+Modifier l'ordre de tri d'une colonne.
+ a| 
+Pour sélectionner un en-tête de colonne, puis appuyez sur entrée
+
+|===
+
+
+=== Navigation dans le calendrier
+
+[cols="1a,1a"]
+|===
+| Action | Raccourci clavier 
+
+
+ a| 
+Passer au mois précédent.
+ a| 
+Page précédente
+
+
+
+ a| 
+Passer au mois suivant.
+ a| 
+Page suivante
+
+
+
+ a| 
+Passer à l'année précédente.
+ a| 
+Contrôle + page précédente
+
+
+
+ a| 
+Passez à l'année suivante.
+ a| 
+Contrôle + page vers le bas
+
+
+
+ a| 
+Ouvrez le sélecteur de date s'il est fermé.
+ a| 
+Ctrl + Accueil
+
+
+
+ a| 
+Passer au mois en cours.
+ a| 
+Control / Command + Home
+
+
+
+ a| 
+Passer au jour précédent.
+ a| 
+Commande / commande + gauche
+
+
+
+ a| 
+Passer au jour suivant.
+ a| 
+Commande / commande + droite
+
+
+
+ a| 
+Passer à la semaine précédente.
+ a| 
+Commande / commande + haut
+
+
+
+ a| 
+Passez à la semaine suivante.
+ a| 
+Commande / commande + descente
+
+
+
+ a| 
+Sélectionnez la date de mise au point.
+ a| 
+Entrez
+
+
+
+ a| 
+Fermez le sélecteur de date et effacez la date.
+ a| 
+Commande / commande + fin
+
+
+
+ a| 
+Fermez le sélecteur de date sans sélection.
+ a| 
+Echappement
+
+|===
+
+
+== Comment les statistiques de performances de chaque volume sont-elles liées au total ?
+
+Les statistiques des pools et des groupes de volumes sont calculées par agréger tous les volumes, y compris les volumes à capacité réservée.
+
+La capacité réservée est utilisée en interne par le système de stockage pour prendre en charge les volumes fins, les snapshots et la mise en miroir asynchrone, et n'est pas visible pour les hôtes d'E/S. Par conséquent, les statistiques de pool, de contrôleur et de matrice de stockage peuvent ne pas correspondre à la somme des volumes visibles.
+
+Toutefois, pour les statistiques relatives aux applications et aux charges de travail, seuls les volumes visibles sont agrégés.
+
+
+
+== Pourquoi les données s'affichent-elles comme zéro dans les graphiques et le tableau ?
+
+Lorsqu'un zéro est affiché pour un point de données dans les graphiques et le tableau, il n'y a aucune activité d'E/S pour l'objet pour ce point dans le temps. Cette situation peut se produire car l'hôte n'initie pas les E/S à cet objet ou il peut s'agir d'un problème avec l'objet lui-même.
+
+Les données historiques de l'objet sont toujours disponibles pour l'affichage. Les graphiques et le tableau affichent des données non nulles une fois l'activité d'E/S lancée pour l'objet.
+
+Le tableau suivant répertorie les raisons les plus courantes pour lesquelles une valeur de point de données peut être égale à zéro pour un objet donné.
+
+[cols="25h,~"]
+|===
+| Type d'objet au niveau de la baie | Les données de motif s'affichent comme zéro 
+
+
+ a| 
+Volumétrie
+ a| 
+* Aucun hôte n'a été attribué au volume.
+
+
+
+
+ a| 
+Groupe de volumes
+ a| 
+* Le groupe de volumes est en cours d'importation.
+* Le groupe de volumes ne contient pas de volume affecté à un hôte, le groupe de volumes *_et_* ne contient aucune capacité réservée.
+
+
+
+
+ a| 
+Lecteur
+ a| 
+* Le disque est en panne.
+* Le lecteur a été retiré.
+* Le lecteur est dans un état inconnu.
+
+
+
+
+ a| 
+Contrôleur
+ a| 
+* Le contrôleur est hors ligne.
+* Le contrôleur est en panne.
+* Le contrôleur a été retiré.
+* L'état du contrôleur est inconnu.
+
+
+
+
+ a| 
+Baie de stockage
+ a| 
+* La matrice de stockage ne contient pas de volumes.
+
+
+|===
+
+
+== Que montre le graphique latence ?
+
+Le graphique latence fournit les statistiques de latence, en millisecondes (ms), pour les volumes, les groupes de volumes, les pools des applications et des workloads. Ce graphique apparaît dans les onglets vue logique, vue physique et applications et charges de travail.
+
+La latence désigne tout retard qui se produit lorsque les données sont lues ou écrites. Placez le curseur sur un point du graphique pour afficher les valeurs suivantes, en millisecondes (ms), pour ce point dans le temps :
+
+* Heure de lecture.
+* Durée d'écriture.
+* Taille moyenne des E/S.
+
+
+
+
+== Que montre le graphique IOPS ?
+
+Le graphique Op E/S par sec affiche les statistiques des opérations d'entrée/sortie par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.
+
+IOPS est une abréviation de _Input/Output (E/S) Operations per second_. Positionnez le curseur de votre souris sur un point du graphique pour afficher les valeurs suivantes à cet endroit dans le temps :
+
+* Nombre d'opérations de lecture.
+* Nombre d'opérations d'écriture.
+* Total des opérations de lecture et d'écriture combinées.
+
+
+
+
+== Que montre le graphique MIB/s ?
+
+Le graphique MIB/s affiche les statistiques de vitesse de transfert en mébioctets par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.
+
+MIB/s est une abréviation de _mébioctets par seconde_, ou 1,048,576 octets par seconde. Positionnez le curseur de votre souris sur un point du graphique pour afficher les valeurs suivantes à cet endroit dans le temps :
+
+* Quantité de données lues.
+* Quantité de données écrites.
+* Quantité totale combinée de données lues et écrites.
+
+
+
+
+== Que montre le graphique de l'UC ?
+
+Le graphique CPU affiche les statistiques de capacité de traitement pour chaque contrôleur (contrôleur A et contrôleur B). CPU est une abréviation de _unité centrale de traitement_. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans l'onglet vue physique de la mosaïque performances, ce graphique affiche les statistiques de la matrice de stockage et des lecteurs.
+
+Le graphique de l'UC indique le pourcentage de capacité de traitement de l'UC utilisé par rapport aux opérations sur la baie. Même lorsqu'aucune E/S externe n'est en cours, le pourcentage d'utilisation du CPU peut être égal à zéro, car le système d'exploitation de stockage peut effectuer des opérations en arrière-plan et une surveillance. Placez le curseur sur un point du graphique pour afficher un pourcentage de capacité de traitement utilisée à ce moment précis.
+
+
+
+== Que montre le graphique marge ?
+
+Le graphique marge est lié aux performances restantes pour les contrôleurs de baie de stockage. Ce graphique est visible sur la page d'accueil et sur l'onglet vue physique de la mosaïque Performance.
+
+Le graphique marge affiche la capacité de performances restante des objets physiques du système de stockage. Placez le curseur de la souris sur un point du graphique pour afficher les pourcentages d'IOPS et la capacité MIB/s restants pour le contrôleur A et pour le contrôleur B.
+
+
+
+== Où puis-je trouver plus d'informations sur les préférences d'affichage ?
+
+Pour trouver des informations sur les options d'affichage disponibles :
+
+* Pour en savoir plus sur les unités par défaut pour l'affichage des valeurs de capacité, reportez-vous à la section link:set-default-units-for-capacity-values.html["Définissez les unités par défaut pour les valeurs de capacité"].
+* Pour en savoir plus sur la plage horaire par défaut pour l'affichage des graphiques de performances, reportez-vous à la section link:set-default-time-frame-for-performance-graphs.html["Définissez la plage horaire par défaut des graphiques de performances"].
+

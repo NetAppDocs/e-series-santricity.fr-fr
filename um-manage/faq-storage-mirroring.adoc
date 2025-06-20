@@ -1,0 +1,193 @@
+---
+permalink: um-manage/faq-storage-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur la mise en miroir du stockage pour SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Que dois-je savoir avant de créer un groupe de cohérence miroir ?
+
+Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir.
+
+Voici les conditions requises pour Unified Manager :
+
+* Le service Web Services Proxy doit être en cours d'exécution.
+* Unified Manager doit s'exécuter sur votre hôte local via une connexion HTTPS.
+* Unified Manager doit afficher des certificats SSL valides pour la matrice de stockage. Vous pouvez accepter un certificat auto-signé ou installer votre propre certificat de sécurité à l'aide d'Unified Manager et accéder au menu :Certificate[Certificate Management].
+
+
+Assurez-vous également de répondre aux exigences suivantes pour les baies de stockage :
+
+* Les deux baies de stockage doivent être découvertes dans Unified Manager.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vos baies de stockage locales et distantes sont connectées via une structure Fibre Channel ou une interface iSCSI.
+
+
+[NOTE]
+====
+La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
+
+====
+
+
+== Que dois-je savoir avant de créer une paire en miroir ?
+
+Avant de créer une paire symétrique, suivez ces instructions.
+
+* Vous devez disposer de deux baies de stockage.
+* Chaque baie de stockage doit disposer de deux contrôleurs.
+* Les deux baies de stockage doivent être découvertes dans Unified Manager.
+* Chaque contrôleur de la baie primaire et de la baie secondaire doit disposer d'un port de gestion Ethernet configuré et être connecté à votre réseau.
+* Les matrices de stockage ont une version minimale du micrologiciel de 7.84. (Chacun peut exécuter différentes versions d'OS.)
+* Vous devez connaître le mot de passe des matrices de stockage locales et distantes.
+* Vous devez disposer d'une capacité disponible suffisante sur la matrice de stockage distante pour créer un volume secondaire égal ou supérieur au volume principal que vous souhaitez mettre en miroir.
+* La mise en miroir asynchrone est prise en charge sur les contrôleurs avec des ports hôte Fibre Channel (FC) ou iSCSI, tandis que la mise en miroir synchrone est uniquement prise en charge sur les contrôleurs avec des ports hôtes FC.
+
+
+[NOTE]
+====
+La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
+
+====
+
+
+== Pourquoi changer ce pourcentage ?
+
+La capacité réservée est généralement de 20 % du volume de base pour les opérations de mise en miroir asynchrone. En général, cette capacité est suffisante.
+
+La capacité nécessaire varie, selon la fréquence et la taille des écritures d'E/S sur le volume de base et le temps d'utilisation du service de copie de l'objet de stockage. En général, choisissez un pourcentage plus élevé pour la capacité réservée si l'une ou les deux conditions suivantes existent :
+
+* Si la durée de vie d'une opération de service de copie d'un objet de stockage spécifique sera très longue.
+* Si un pourcentage élevé de blocs de données change sur le volume de base en raison d'une forte activité d'E/S. Utilisez l'historique des performances ou d'autres utilitaires du système d'exploitation pour déterminer les activités d'E/S types sur le volume de base.
+
+
+
+
+== Pourquoi vois-je plusieurs candidats à la capacité réservée ?
+
+Si plusieurs volumes sont présents dans un pool ou un groupe de volumes qui correspond au pourcentage de capacité sélectionné pour l'objet de stockage, plusieurs candidats s'affichent.
+
+Vous pouvez actualiser la liste des candidats recommandés en modifiant le pourcentage d'espace disque physique que vous souhaitez réserver sur le volume de base pour les opérations de service de copie. Les meilleurs candidats s'affichent en fonction de votre sélection.
+
+
+
+== Pourquoi je ne vois pas tous mes volumes ?
+
+Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes peuvent ne pas être éligibles pour les raisons suivantes :
+
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Pour la mise en miroir synchrone, les volumes primaires et secondaires d'une paire mise en miroir doivent être des volumes standard. Elles ne peuvent pas être de volumes fins ou de snapshot.
+* Pour la mise en miroir asynchrone, l'extension automatique des volumes thin doit être activée.
+
+
+
+NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire d'une paire en miroir asynchrone doivent correspondre au même protocole, au même niveau de tiroir, à la même taille de segment, au même type de sécurité et au même niveau RAID. Les paires en miroir asynchrones non éligibles n'apparaîtront pas dans la liste des volumes disponibles.
+
+
+
+== Pourquoi ne vois-je pas tous les volumes sur la baie de stockage distante ?
+
+Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
+
+Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Les volumes ne peuvent être admissibles pour aucune des raisons suivantes :
+
+* Le volume n'est pas un volume standard, tel qu'un volume snapshot.
+* Le volume n'est pas optimal.
+* Le volume participe déjà à une relation de mise en miroir.
+* Pour la mise en miroir asynchrone, les attributs de volume fin entre le volume primaire et le volume secondaire ne correspondent pas.
+* Si vous utilisez Data assurance (DA), le volume primaire et le volume secondaire doivent avoir les mêmes paramètres DA.
++
+** Si le volume principal est DA activé, le volume secondaire doit être DA activé.
+** Si le volume principal n'est pas activé par DA, le volume secondaire ne doit pas être activé par DA.
+
+
+* Pour la mise en miroir asynchrone, le volume principal et le volume secondaire doivent disposer des mêmes fonctions de sécurité de lecteur.
++
+** Si le volume principal prend en charge la norme FIPS, le volume secondaire doit être compatible FIPS.
+** Si le volume primaire est compatible FDE, le volume secondaire doit être compatible FDE.
+** Si le volume principal n'utilise pas la sécurité du lecteur, le volume secondaire ne doit pas utiliser la sécurité du lecteur.
+
+
+
+
+
+
+== Quel est l'impact de la priorité de synchronisation sur les taux de synchronisation ?
+
+La priorité de synchronisation définit le temps de traitement alloué aux activités de synchronisation par rapport aux performances du système.
+
+Le propriétaire du contrôleur du volume primaire effectue cette opération en arrière-plan. Parallèlement, le propriétaire du contrôleur traite les écritures d'E/S locales sur le volume primaire et les écritures distantes associées sur le volume secondaire. Étant donné que la resynchronisation renvoie les ressources de traitement du contrôleur à partir de l'activité d'E/S, la resynchronisation peut avoir un impact sur les performances de l'application hôte.
+
+Gardez ces consignes à l'esprit pour vous aider à déterminer la durée d'une priorité de synchronisation et la manière dont les priorités de synchronisation peuvent affecter les performances du système.
+
+Ces taux de priorité sont disponibles :
+
+* La plus faible
+* Faible
+* Moyen
+* Élevée
+* La plus haute
+
+
+Le taux de priorité le plus faible prend en charge les performances du système, mais la resynchronisation prend plus de temps. Le taux de priorité le plus élevé prend en charge la resynchronisation, mais la performance du système peut être compromise.
+
+Ces lignes directrices approxent les différences entre les priorités.
+
+[cols="45h,~"]
+|===
+| Taux de priorité pour la synchronisation complète | Temps écoulé par rapport au taux de synchronisation le plus élevé 
+
+
+ a| 
+La plus faible
+ a| 
+Environ huit fois plus longtemps qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Faible
+ a| 
+Environ six fois plus longtemps qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Moyen
+ a| 
+Environ trois fois et demie tant qu'au taux de priorité le plus élevé.
+
+
+
+ a| 
+Élevée
+ a| 
+Environ deux fois plus longtemps qu'au taux de priorité le plus élevé.
+
+|===
+La taille des volumes et les charges des E/S hôte ont un impact sur les comparaisons de temps de synchronisation.
+
+
+
+== Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation manuelle ?
+
+La resynchronisation manuelle est recommandée car elle vous permet de gérer le processus de resynchronisation de manière à fournir la meilleure possibilité de récupérer des données.
+
+Si vous utilisez une règle de resynchronisation automatique et que des problèmes de communication intermittents se produisent pendant la resynchronisation, les données du volume secondaire peuvent être temporairement corrompues. Une fois la resynchronisation terminée, les données sont corrigées.

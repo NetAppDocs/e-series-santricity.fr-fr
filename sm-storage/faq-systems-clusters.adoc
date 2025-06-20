@@ -1,0 +1,200 @@
+---
+permalink: sm-storage/faq-systems-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur les systèmes hôtes et les clusters d'hôtes pour SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Qu'est-ce que les hôtes et les clusters hôtes ?
+
+Un hôte est un serveur qui envoie des E/S à un volume d'une baie de stockage. Un cluster hôte est un groupe d'hôtes. Vous créez un cluster hôte pour vous permettre d'attribuer facilement les mêmes volumes à plusieurs hôtes.
+
+Vous définissez un hôte séparément. Il peut s'agir d'une entité indépendante ou être ajouté à un cluster hôte. Vous pouvez affecter des volumes à un hôte individuel ou faire partie d'un cluster hôte qui partage l'accès à un ou plusieurs volumes avec d'autres hôtes du cluster hôte.
+
+Le cluster hôte est une entité logique que vous créez dans SANtricity System Manager. Vous devez ajouter des hôtes au cluster hôte avant de pouvoir affecter des volumes.
+
+
+
+== Pourquoi aurais-je besoin de créer un cluster hôte ?
+
+Si vous souhaitez que deux hôtes ou plus partagent l'accès au même ensemble de volumes, vous devez créer un cluster hôte. Normalement, chaque hôte est équipé d'un logiciel de mise en cluster installé sur lui afin de coordonner l'accès au volume.
+
+
+
+== Comment savoir quel type de système d'exploitation hôte est correct ?
+
+Le champ Type de système d'exploitation hôte contient le système d'exploitation de l'hôte. Vous pouvez sélectionner le type d'hôte recommandé dans la liste déroulante.
+
+Les types d'hôte qui apparaissent dans la liste déroulante dépendent du modèle de la matrice de stockage et de la version du micrologiciel. Les versions les plus récentes affichent d'abord les options les plus courantes, qui sont les plus susceptibles d'être appropriées. L'apparence sur cette liste n'implique pas que l'option est entièrement prise en charge.
+
+[NOTE]
+====
+Pour plus d'informations sur la prise en charge des hôtes, reportez-vous au https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp"^].
+
+====
+Certains des types d'hôtes suivants peuvent apparaître dans la liste :
+
+[cols="35h,~"]
+|===
+| Type de système d'exploitation hôte | Système d'exploitation et pilote multivoie 
+
+
+ a| 
+Linux DM-MP (Kernel 3.10 ou version ultérieure)
+ a| 
+Prend en charge les systèmes d'exploitation Linux à l'aide d'une solution de basculement multivoie Device Mapper avec un noyau 3.10 ou ultérieur.
+
+
+
+ a| 
+VMware ESXi
+ a| 
+Prend en charge les systèmes d'exploitation VMware ESXi exécutant l'architecture NMP (Native Multipathing Plug-in) en utilisant le module SATP_ALUA (Storage Array Policy module) intégré à VMware.
+
+
+
+ a| 
+Windows (en cluster ou non mis en cluster)
+ a| 
+Prend en charge les configurations Windows en cluster ou non en cluster qui n'exécutent pas le pilote de chemins d'accès multiples ATTO.
+
+
+
+ a| 
+Cluster ATTO (tous les systèmes d'exploitation)
+ a| 
+Prise en charge de toutes les configurations de cluster via le pilote ATTO Technology, Inc., multivoie.
+
+
+
+ a| 
+Linux (Veritas DMP)
+ a| 
+Prend en charge les systèmes d'exploitation Linux à l'aide d'une solution de chemins d'accès multiples DMP Veritas.
+
+
+
+ a| 
+Linux (ATTO)
+ a| 
+Prend en charge les systèmes d'exploitation Linux via un pilote ATTO Technology, Inc., des chemins d'accès multiples.
+
+
+
+ a| 
+Mac OS (ATTO)
+ a| 
+Prend en charge les versions Mac OS via un pilote ATTO Technology, Inc., des chemins d'accès multiples.
+
+
+
+ a| 
+Windows (ATTO)
+ a| 
+Prend en charge les systèmes d'exploitation Windows via un pilote ATTO Technology, Inc., des chemins d'accès multiples.
+
+
+
+ a| 
+SERVICE IBM
+ a| 
+Prend en charge une configuration contrôleur de volume SAN IBM.
+
+
+
+ a| 
+Valeur par défaut
+ a| 
+Réservé au démarrage initial de la matrice de stockage. Si le type de système d'exploitation hôte est défini sur usine par défaut, modifiez-le pour qu'il corresponde au système d'exploitation hôte et au pilote multichemin exécuté sur l'hôte connecté.
+
+
+
+ a| 
+Linux DM-MP (Kernel 3.9 ou version antérieure)
+ a| 
+Prend en charge les systèmes d'exploitation Linux à l'aide d'une solution de basculement multivoie Device Mapper avec un noyau 3.9 ou antérieur.
+
+
+
+ a| 
+Fenêtre clustered (obsolète)
+ a| 
+Si votre type de système d'exploitation hôte est défini sur cette valeur, utilisez à la place le paramètre Windows (cluster ou non-cluster).
+
+|===
+
+
+== Qu'est-ce qu'un HBA et un port d'adaptateur ?
+
+Une carte HBA (Host bus adapter) est une carte qui réside dans un hôte et qui contient un ou plusieurs ports hôtes. Un port hôte est un port sur un adaptateur de bus hôte (HBA, host bus adapter) qui fournit la connexion physique à un contrôleur et est utilisé pour les opérations d'E/S.
+
+Les ports d'adaptateur du HBA sont appelés ports hôtes. La plupart des HBA ont un ou deux ports hôtes. L'adaptateur HBA possède un identifiant WWID (World Wide identifier) unique et chaque port hôte HBA possède un WWID unique. Les identifiants de port d'hôte sont utilisés pour associer l'adaptateur de bus hôte approprié à l'hôte physique lorsque vous créez l'hôte manuellement via SANtricity System Manager.
+
+
+
+== Comment faire correspondre les ports hôte à un hôte ?
+
+Si vous créez manuellement un hôte, vous devez d'abord utiliser l'utilitaire HBA (Host bus adapter) approprié disponible sur l'hôte pour déterminer les identificateurs de port hôte associés à chaque HBA installé dans l'hôte.
+
+Lorsque vous disposez de ces informations, sélectionnez les identificateurs de port hôte qui se sont connectés à la matrice de stockage dans la liste fournie dans la boîte de dialogue Créer un hôte.
+
+[NOTE]
+====
+Assurez-vous de sélectionner les identificateurs de port hôte appropriés pour l'hôte que vous créez. Si vous associez des identificateurs de port hôte incorrects, vous risquez de provoquer un accès involontaire d'un autre hôte à ces données.
+
+====
+
+
+== Comment créer des secrets CHAP ?
+
+Si vous configurez l'authentification CHAP (Challenge Handshake Authentication Protocol) sur tout hôte iSCSI connecté à la baie de stockage, vous devez saisir à nouveau le secret CHAP de l'initiateur pour chaque hôte iSCSI.
+
+Pour ce faire, vous pouvez utiliser System Manager dans le cadre de l'opération Créer un hôte ou via l'option Afficher/Modifier les paramètres.
+
+Si vous utilisez l'authentification mutuelle CHAP, vous devez également définir un secret CHAP cible pour la matrice de stockage dans la page Paramètres et saisir à nouveau ce secret CHAP cible sur chaque hôte iSCSI.
+
+
+
+== À quoi correspond le cluster par défaut ?
+
+Le cluster par défaut est une entité définie par le système qui permet à tout identificateur de port hôte non associé connecté à la matrice de stockage d'accéder aux volumes affectés au cluster par défaut. Un identificateur de port hôte non associé est un port hôte qui n'est pas logiquement associé à un hôte donné, mais qui est physiquement installé dans un hôte et connecté à la matrice de stockage.
+
+[NOTE]
+====
+Si vous souhaitez que les hôtes disposent d'un accès spécifique à certains volumes de la baie de stockage, vous devez _pas_ utiliser le cluster par défaut. À la place, vous devez associer les identificateurs de port hôte à leurs hôtes correspondants. Cette tâche peut être effectuée manuellement pendant l'opération Créer un hôte. Ensuite, vous affectez des volumes à un hôte individuel ou à un cluster hôte.
+
+====
+Vous devez _uniquement_ utiliser le cluster par défaut dans des situations spéciales où votre environnement de stockage externe est recommandé pour permettre à tous les hôtes et tous les identificateurs de port hôte connectés à la matrice de stockage ont accès à tous les volumes (mode accès total) sans spécifiquement faire connaître les hôtes à la matrice de stockage ou à l'interface utilisateur.
+
+Initialement, vous pouvez affecter des volumes uniquement au cluster par défaut via l'interface de ligne de commande. Cependant, après avoir affecté au moins un volume au cluster par défaut, cette entité (appelée cluster par défaut) s'affiche dans l'interface utilisateur dans laquelle vous pouvez alors gérer cette entité.
+
+
+
+== Qu'est-ce que le reporting sur la connectivité hôte ?
+
+Lorsque le reporting sur la connectivité hôte est activé, la baie de stockage surveille en permanence la connexion entre les contrôleurs et les hôtes configurés, puis vous alerte en cas d'interruption de la connexion.
+
+La connexion peut être interrompue en cas de câble desserré, endommagé ou manquant, ou d'un autre problème avec l'hôte. Dans ces cas, le système peut ouvrir un message Recovery Guru :
+
+* *Redondance de l'hôte perdue* -- s'ouvre si l'un des contrôleurs ne peut pas communiquer avec l'hôte.
+* *Type d'hôte incorrect* -- s'ouvre si le type d'hôte n'est pas spécifié correctement sur la matrice de stockage, ce qui peut entraîner des problèmes de basculement.
+
+
+Vous pouvez désactiver le reporting de la connectivité hôte dans les situations où le redémarrage d'un contrôleur peut prendre plus de temps que le délai de connexion. La désactivation de cette fonction supprime les messages de récupération Gurus.
+
+[NOTE]
+====
+La désactivation de la fonction de génération de rapports sur la connectivité hôte désactive également l'équilibrage automatique de la charge, qui surveille et équilibre l'utilisation des ressources du contrôleur. Cependant, si vous réactivez le rapport de connectivité hôte, la fonction d'équilibrage automatique de la charge n'est pas réactivée automatiquement.
+
+====

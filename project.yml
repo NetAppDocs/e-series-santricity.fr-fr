@@ -37,25 +37,8 @@ sidebar:
         url: "/san-getstarted/access-sam.html"
       - title: Présentation de l'assistant d'installation
         url: "/sm-interface/setup-wizard-overview.html"
-      - title: FAQ
-        entries:
-        - title: Que faire si je ne vois pas tous mes composants matériels ?
-          url: "/sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html"
-        - title: Et si je ne vois pas tous mes hôtes ?
-          url: "/sm-interface/what-if-i-dont-see-all-of-my-hosts.html"
-        - title: En quoi l'identification des applications m'aide-t-elle dans la gestion
-            de ma baie de stockage ?
-          url: "/sm-interface/how-does-identifying-applications-help-me-manage-my-storage-array.html"
-        - title: Qu'est-ce qu'une charge de travail ?
-          url: "/sm-interface/what-is-a-workload.html"
-        - title: Comment configurer la méthode de livraison pour AutoSupport ?
-          url: "/sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html"
-        - title: Comment savoir si je dois accepter la configuration de pool recommandée
-            ?
-          url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
-        - title: SANtricity System Manager n'a détecté aucun hôte. Que dois-je faire
-            ?
-          url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
+      - title: FAQ sur la configuration du système de stockage
+        url: "/sm-interface/faq-storage-system-setup.html"
     - title: Configuration de SANtricity Unified Manager
       entries:
       - title: Installez SANtricity Unified Manager
@@ -105,31 +88,8 @@ sidebar:
           url: "/sm-interface/view-and-act-on-operations-in-progress.html"
         - title: Restaurez vos données à partir du gourou de la restauration
           url: "/sm-interface/recover-from-problems-using-recovery-guru.html"
-      - title: FAQ
-        entries:
-        - title: Quels sont les navigateurs pris en charge ?
-          url: "/sm-interface/what-are-the-supported-browsers.html"
-        - title: Quels sont les raccourcis clavier ?
-          url: "/sm-interface/what-are-the-keyboard-shortcuts.html"
-        - title: Comment les statistiques de performances de chaque volume sont-elles
-            liées au total ?
-          url: "/sm-storage/how-do-performance-statistics-for-individual-volumes-relate-to-the-total.html"
-        - title: Pourquoi les données s'affichent-elles comme zéro dans les graphiques
-            et le tableau ?
-          url: "/sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html"
-        - title: Que montre le graphique latence ?
-          url: "/sm-storage/what-does-the-latency-graph-show.html"
-        - title: Que montre le graphique IOPS ?
-          url: "/sm-storage/what-does-the-iops-graph-show.html"
-        - title: Que montre le graphique MIB/s ?
-          url: "/sm-storage/what-does-the-mib-s-graph-show.html"
-        - title: Que montre le graphique de l'UC ?
-          url: "/sm-storage/what-does-the-cpu-graph-show.html"
-        - title: Que montre le graphique marge ?
-          url: "/sm-storage/what-does-the-headroom-graph-show.html"
-        - title: Où puis-je trouver plus d'informations sur les préférences d'affichage
-            ?
-          url: "/sm-interface/where-can-i-find-more-information-about-display-preferences.html"
+      - title: FAQ sur l'interface de gestion
+        url: "/sm-interface/faq-management-interface.html"
     - title: Pools et groupes de volumes
       entries:
       - title: Présentation
@@ -214,65 +174,8 @@ sidebar:
           url: "/sm-storage/cancel-pending-snapshot-image.html"
         - title: Supprimer le groupe d'instantanés
           url: "/sm-storage/delete-snapshot-group.html"
-      - title: FAQ
-        entries:
-        - title: Qu'est-ce qu'un groupe de volumes ?
-          url: "/sm-storage/what-is-a-volume-group.html"
-        - title: Qu'est-ce qu'un pool ?
-          url: "/sm-storage/what-is-a-pool.html"
-        - title: Qu'est-ce que la capacité réservée ?
-          url: "/sm-storage/what-is-reserved-capacity.html"
-        - title: Qu'est-ce que la sécurité FDE/FIPS ?
-          url: "/sm-storage/what-is-fde-fips-security.html"
-        - title: Qu'est-ce que le contrôle de redondance ?
-          url: "/sm-storage/what-is-redundancy-check.html"
-        - title: Quelles sont les différences entre les pools et les groupes de volumes
-            ?
-          url: "/sm-storage/what-are-the-differences-between-pools-and-volume-groups.html"
-        - title: Pourquoi dois-je configurer manuellement un pool ?
-          url: "/sm-storage/why-would-i-want-to-manually-configure-a-pool.html"
-        - title: Pourquoi les alertes de capacité sont-elles importantes ?
-          url: "/sm-storage/why-are-capacity-alerts-important.html"
-        - title: Pourquoi ne puis-je pas augmenter ma capacité de préservation ?
-          url: "/sm-storage/why-cant-i-increase-my-preservation-capacity.html"
-        - title: Y a-t-il une limite au nombre de disques que je peux supprimer d'un
-            pool ?
-          url: "/sm-storage/is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool.html"
-        - title: Quels types de supports sont pris en charge pour un lecteur ?
-          url: "/sm-storage/what-media-types-are-supported-for-a-drive.html"
-        - title: Pourquoi certains lecteurs ne s'affichent-ils pas ?
-          url: "/sm-storage/why-are-some-drives-not-showing-up.html"
-        - title: Comment maintenir la protection contre les pertes des tablettes et
-            des tiroirs ?
-          url: "/sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html"
-        - title: Quel est le positionnement de disque optimal pour les pools et les
-            groupes de volumes ?
-          url: "/sm-storage/what-is-the-optimal-drive-positioning-for-pools-and-volume-groups.html"
-        - title: Quel est le niveau RAID le mieux adapté à mon application ?
-          url: "/sm-storage/what-raid-level-is-best-for-my-application.html"
-        - title: Qu'est-ce que Data assurance ?
-          url: "/sm-storage/what-is-data-assurance.html"
-        - title: Qu'est-ce que la fonction de sécurité (Drive Security) ?
-          url: "/sm-storage/what-is-security-capable-drive-security.html"
-        - title: Que dois-je savoir pour augmenter la capacité réservée ?
-          url: "/sm-storage/what-do-i-need-to-know-about-increasing-reserved-capacity.html"
-        - title: Pourquoi ne puis-je pas choisir un autre montant à diminuer de ?
-          url: "/sm-storage/why-cant-i-choose-another-amount-to-decrease-by.html"
-        - title: Pourquoi ai-je besoin de capacité réservée pour chaque volume de
-            membre ?
-          url: "/sm-storage/why-do-i-need-reserved-capacity-for-every-member-volume.html"
-        - title: Comment afficher et interpréter toutes les statistiques SSD cache
-            ?
-          url: "/sm-storage/how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
-        - title: Qu'est-ce que la capacité d'optimisation pour les pools ?
-          url: "/sm-storage/what-is-optimization-capacity-pools.html"
-        - title: Quelle est la capacité d'optimisation des groupes de volumes ?
-          url: "/sm-storage/what-is-optimization-capacity-volume-groups.html"
-        - title: Qu'est-ce qui prend en charge le provisionnement de ressources ?
-          url: "/sm-storage/what-is-resource-provisioning-capable.html"
-        - title: Que dois-je savoir sur la fonctionnalité de volumes provisionnés
-            par les ressources ?
-          url: "/sm-settings/what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html"
+      - title: FAQ sur les pools et les groupes de volumes
+        url: "/sm-storage/faq-pools-volume-groups.html"
     - title: Volumes et workloads
       entries:
       - title: Présentation
@@ -341,42 +244,8 @@ sidebar:
           url: "/sm-storage/copy-volume.html"
         - title: Gérez les opérations
           url: "/sm-storage/take-action-on-a-copy-volume-operation.html"
-      - title: FAQ
-        entries:
-        - title: Qu'est-ce qu'un volume ?
-          url: "/sm-storage/what-is-a-volume.html"
-        - title: Pourquoi une erreur de sur-allocation de capacité se produit-elle
-            lorsque la capacité disponible d'un groupe de volumes est suffisante pour
-            créer des volumes ?
-          url: "/sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html"
-        - title: Comment les charges de travail sélectionnées affectent-elles la création
-            du volume ?
-          url: "/sm-storage/how-does-my-selected-workload-impact-volume-creation.html"
-        - title: Pourquoi ces volumes ne sont-ils pas associés à une charge de travail
-            ?
-          url: "/sm-storage/why-arent-these-volumes-associated-with-a-workload.html"
-        - title: Pourquoi ne puis-je pas supprimer la charge de travail sélectionnée
-            ?
-          url: "/sm-storage/why-cant-i-delete-the-selected-workload.html"
-        - title: En quoi les charges de travail spécifiques aux applications contribuent-elles
-            à la gestion de ma baie de stockage ?
-          url: "/sm-storage/how-do-application-specific-workloads-help-me-manage-my-storage-array.html"
-        - title: Comment fournir ces informations aide-t-il à créer du stockage ?
-          url: "/sm-storage/how-does-providing-this-information-help-create-storage.html"
-        - title: Que dois-je faire pour reconnaître la capacité étendue ?
-          url: "/sm-storage/what-do-i-need-to-do-to-recognize-the-expanded-capacity.html"
-        - title: Pourquoi ne vois-je pas tous mes pools et/ou groupes de volumes ?
-          url: "/sm-storage/why-dont-i-see-all-my-pools-and-or-volume-groups.html"
-        - title: Quelle est la taille du segment ?
-          url: "/sm-storage/what-is-segment-sizing.html"
-        - title: En quoi consiste la propriété privilégiée d'un contrôleur ?
-          url: "/sm-storage/what-is-preferred-controller-ownership.html"
-        - title: Quand dois-je utiliser la sélection attribuer l'hôte ultérieurement
-            ?
-          url: "/sm-storage/when-would-i-want-to-use-the-assign-host-later-selection.html"
-        - title: De quoi ai-je besoin pour connaître les exigences en termes de taille
-            de bloc de l'hôte ?
-          url: "/sm-storage/what-do-i-need-to-know-about-host-block-size-requirements.html"
+      - title: FAQ sur les volumes et les charges de travail
+        url: "/sm-storage/faq-volumes-workloads.html"
     - title: Hôtes et clusters hôtes
       entries:
       - title: Présentation
@@ -423,25 +292,8 @@ sidebar:
           url: "/sm-storage/change-the-settings-for-a-host-cluster.html"
         - title: Modifiez les identificateurs de port hôte pour l'hôte
           url: "/sm-storage/change-host-port-identifiers-for-a-host.html"
-      - title: FAQ
-        entries:
-        - title: Qu'est-ce que les hôtes et les clusters hôtes ?
-          url: "/sm-storage/what-are-hosts-and-host-clusters.html"
-        - title: Pourquoi aurais-je besoin de créer un cluster hôte ?
-          url: "/sm-storage/why-would-i-need-to-create-a-host-cluster.html"
-        - title: Comment savoir quel type de système d'exploitation hôte est correct
-            ?
-          url: "/sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html"
-        - title: Qu'est-ce qu'un HBA et un port d'adaptateur ?
-          url: "/sm-storage/what-are-hbas-and-adapter-ports.html"
-        - title: Comment faire correspondre les ports hôte à un hôte ?
-          url: "/sm-storage/how-do-i-match-the-host-ports-to-a-host.html"
-        - title: Comment créer des secrets CHAP ?
-          url: "/sm-storage/how-do-i-create-chap-secrets.html"
-        - title: À quoi correspond le cluster par défaut ?
-          url: "/sm-storage/what-is-the-default-cluster.html"
-        - title: Qu'est-ce que le reporting sur la connectivité hôte ?
-          url: "/sm-settings/what-is-host-connectivity-reporting.html"
+      - title: FAQ sur les systèmes hôtes et les clusters d'hôtes
+        url: "/sm-storage/faq-systems-clusters.html"
     - title: Snapshots
       entries:
       - title: Présentation
@@ -521,30 +373,8 @@ sidebar:
           url: "/sm-storage/disable-snapshot-volume.html"
         - title: Supprimez le volume snapshot
           url: "/sm-storage/delete-snapshot-volume.html"
-      - title: FAQ
-        entries:
-        - title: Pourquoi ne vois-je pas tous mes volumes, hôtes ou clusters hôtes
-            ?
-          url: "/sm-storage/why-dont-i-see-all-my-volumes-hosts-or-host-clusters.html"
-        - title: Qu'est-ce qu'une image instantanée ?
-          url: "/sm-storage/what-is-a-snapshot-image.html"
-        - title: Pourquoi utiliser des images instantanées ?
-          url: "/sm-storage/why-use-snapshot-images.html"
-        - title: Quels types de volumes peuvent être utilisés pour les snapshots ?
-          url: "/sm-storage/what-kind-of-volumes-can-be-used-for-snapshots.html"
-        - title: Pourquoi créer un groupe de cohérence de snapshot ?
-          url: "/sm-storage/why-would-i-create-a-snapshot-consistency-group.html"
-        - title: Qu'est-ce qu'un volume Snapshot et quand a-t-il besoin de capacité
-            réservée ?
-          url: "/sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html"
-        - title: Qu'est-ce qu'un groupe de snapshots ?
-          url: "/sm-storage/what-is-a-snapshot-group.html"
-        - title: Pourquoi désactiver un volume snapshot ?
-          url: "/sm-storage/why-would-i-disable-a-snapshot-volume.html"
-        - title: Quel est l'état désactivé ?
-          url: "/sm-storage/what-is-the-disabled-state.html"
-        - title: Pourquoi suspendre un planning de snapshots ?
-          url: "/sm-storage/why-would-i-suspend-a-snapshot-schedule.html"
+      - title: FAQ sur les instantanés
+        url: "/sm-storage/faq-snapshots.html"
     - title: Mise en miroir
       entries:
       - title: Présentation
@@ -632,63 +462,10 @@ sidebar:
           url: "/sm-mirroring/deactivate-asynchronous-mirroring.html"
         - title: Désactivez la mise en miroir synchrone
           url: "/sm-mirroring/deactivate-synchronous-mirroring.html"
-      - title: FAQ asynchrone
-        entries:
-        - title: En quoi la mise en miroir asynchrone est-elle différente de la mise
-            en miroir synchrone ?
-          url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html"
-        - title: Pourquoi ne puis-je pas accéder à la fonction de mise en miroir choisie
-            ?
-          url: "/sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html"
-        - title: Que dois-je savoir avant de créer un groupe de cohérence miroir ?
-          url: "/sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html"
-        - title: 'Mise en miroir asynchrone : que faut-il savoir avant de créer une
-            paire en miroir ?'
-          url: "/sm-mirroring/asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
-        - title: Que dois-je savoir avant d'augmenter la capacité réservée sur un
-            volume en miroir ?
-          url: "/sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html"
-        - title: Pourquoi ne puis-je pas augmenter la capacité réservée avec le montant
-            demandé ?
-          url: "/sm-mirroring/why-cant-i-increase-reserved-capacity-with-my-requested-amount.html"
-        - title: Pourquoi changer ce pourcentage ?
-          url: "/sm-mirroring/why-would-i-change-this-percentage.html"
-        - title: Pourquoi vois-je plusieurs candidats à la capacité réservée ?
-          url: "/sm-mirroring/why-do-i-see-more-than-one-reserved-capacity-candidate.html"
-        - title: Pourquoi les valeurs non disponibles sont-elles affichées dans le
-            tableau ?
-          url: "/sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html"
-        - title: Pourquoi ne vois-je pas tous mes pools et groupes de volumes ?
-          url: "/sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html"
-        - title: Mise en miroir asynchrone - Pourquoi ne pas voir tous mes volumes
-            ?
-          url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html"
-        - title: Mise en miroir asynchrone - Pourquoi ne vois-je pas tous les volumes
-            de la baie de stockage distante ?
-          url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
-        - title: Pourquoi mettre à jour l'adresse IP de ma matrice de stockage distante
-            ?
-          url: "/sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html"
-      - title: FAQ sur la synchronisation
-        entries:
-        - title: En quoi la mise en miroir synchrone est-elle différente de la mise
-            en miroir asynchrone ?
-          url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-sync.html"
-        - title: Mise en miroir synchrone - Pourquoi ne pas voir tous mes volumes
-            ?
-          url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-my-volumes.html"
-        - title: Mise en miroir synchrone - Pourquoi ne vois-je pas tous les volumes
-            de la baie de stockage distante ?
-          url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
-        - title: 'Mise en miroir synchrone : que faut-il savoir avant de créer une
-            paire en miroir ?'
-          url: "/sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
-        - title: Quel est l'impact de la priorité de synchronisation sur les taux
-            de synchronisation ?
-          url: "/sm-mirroring/what-impact-does-synchronization-priority-have-on-synchronization-rates.html"
-        - title: Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation
-            manuelle ?
-          url: "/sm-mirroring/why-is-it-recommended-to-use-a-manual-synchronization-policy.html"
+      - title: FAQ sur la mise en miroir asynchrone
+        url: "/sm-mirroring/faq-async-mirroring.html"
+      - title: FAQ sur la synchronisation en miroir
+        url: "/sm-mirroring/faq-sync-mirroring.html"
     - title: Stockage distant
       entries:
       - title: Présentation
@@ -713,21 +490,8 @@ sidebar:
           url: "/sm-storage/rtv-modify-connection-settings-for-remote-storage.html"
         - title: Supprime un objet de stockage distant
           url: "/sm-storage/rtv-remove-remote-storage.html"
-      - title: FAQ
-        entries:
-        - title: Que dois-je savoir avant de créer une connexion de stockage à distance
-            ?
-          url: "/sm-storage/rtv-what-do-i-need-to-know-before-creating-a-remote-storage.html"
-        - title: Pourquoi suis-je invité à supprimer mes volumes distants ?
-          url: "/sm-storage/rtv-why-am-i-being-prompted-to-clean-up-my-remote-volumes.html"
-        - title: Pourquoi ne vois-je pas tous mes volumes sur ma baie de destination
-            ?
-          url: "/sm-storage/rtv-why-dont-i-see-all-my-volumes.html"
-        - title: Que dois-je savoir sur le volume distant lors d'une importation ?
-          url: "/sm-storage/rtv-what-do-i-need-to-know-about-the-remote-device-in-an-import.html"
-        - title: Que dois-je savoir avant de démarrer une importation du stockage
-            à distance ?
-          url: "/sm-storage/rtv-what-do-i-need-to-know-before-starting-a-remote-storage-import.html"
+      - title: FAQ sur le stockage à distance
+        url: "/sm-storage/faq-remote-storage.html"
     - title: Composants matériels
       entries:
       - title: Présentation
@@ -840,81 +604,16 @@ sidebar:
           url: "/sm-hardware/assign-hot-spares-hardware.html"
         - title: Annuler l'affectation des disques de secours
           url: "/sm-hardware/unassign-hot-spares.html"
-      - title: FAQ sur les tiroirs
-        entries:
-        - title: Qu'est-ce que la protection contre les pertes de tablette et la protection
-            contre les pertes de tiroir ?
-          url: "/sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html"
-        - title: Quels sont les cycles d'apprentissage de la batterie ?
-          url: "/sm-hardware/what-are-battery-learn-cycles.html"
-      - title: FAQ sur les contrôleurs
-        entries:
-        - title: Qu'est-ce que la négociation automatique ?
-          url: "/sm-hardware/what-is-auto-negotiation.html"
-        - title: Qu'est-ce que IPv6 sans état prend en charge la configuration automatique
-            ?
-          url: "/sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html"
-        - title: 'Quel type de configuration : DHCP ou manuel ?'
-          url: "/sm-hardware/which-do-i-choose-dhcp-or-manual-configuration.html"
-        - title: Qu'est-ce qu'un serveur DHCP ?
-          url: "/sm-hardware/what-is-a-dhcp-server.html"
-        - title: Comment configurer mon serveur DHCP ?
-          url: "/sm-hardware/how-do-i-configure-my-dhcp-server.html"
-        - title: Pourquoi dois-je modifier la configuration du réseau du contrôleur
-            ?
-          url: "/sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html"
-        - title: Où puis-je obtenir la configuration réseau ?
-          url: "/sm-hardware/where-do-i-get-the-network-configuration.html"
-        - title: Que sont les réponses PING ICMP ?
-          url: "/sm-hardware/what-are-icmp-ping-responses.html"
-        - title: Quand dois-je actualiser la configuration des ports ?
-          url: "/sm-hardware/when-should-i-refresh-the-port-configuration-or-the-isns-server-from-the-dhcp-server.html"
-        - title: Que dois-je faire après avoir configuré les ports de gestion ?
-          url: "/sm-hardware/what-should-i-do-after-configuring-the-management-ports.html"
-        - title: Pourquoi le système de stockage est-il en mode non optimal ?
-          url: "/sm-hardware/why-is-the-storage-system-in-non-optimal-mode.html"
-      - title: FAQ iSCSI
-        entries:
-        - title: Que se passe-t-il lorsque j'utilise un serveur iSNS pour l'enregistrement
-            ?
-          url: "/sm-settings/what-happens-when-i-use-an-isns-server.html"
-        - title: Quelles sont les méthodes d'enregistrement automatiquement prises
-            en charge pour iSCSI ?
-          url: "/sm-settings/which-registration-methods-are-automatically-supported-for-iscsi.html"
-        - title: Comment interpréter les statistiques iser sur InfiniBand ?
-          url: "/sm-settings/how-do-i-interpret-iser-over-infiniband-statistics.html"
-        - title: Que dois-je faire d'autre pour configurer ou diagnostiquer iser sur
-            InfiniBand ?
-          url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband.html"
-        - title: Que dois-je faire d'autre pour configurer ou diagnostiquer l'iSCSI
-            ?
-          url: "/sm-support/what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi.html"
-      - title: FAQ relative à NVMe
-        entries:
-        - title: Comment interpréter les statistiques NVMe over Fabrics ?
-          url: "/sm-settings/how-do-i-interpret-nvme-over-fabrics-statistics.html"
-        - title: Que dois-je faire d'autre pour configurer ou diagnostiquer NVMe over
-            InfiniBand ?
-          url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-infiniband.html"
-        - title: Que dois-je faire pour configurer ou diagnostiquer NVMe over RoCE
-            ?
-          url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-roce.html"
-        - title: Pourquoi y a-t-il deux adresses IP pour un port physique ?
-          url: "/sm-settings/why-are-there-two-ip-addresses-for-one-physical-port.html"
-        - title: Pourquoi y a-t-il deux ensembles de paramètres pour un port physique
-            ?
-          url: "/sm-settings/why-are-there-two-sets-of-parameters-for-one-physical-port.html"
-      - title: FAQ sur les lecteurs
-        entries:
-        - title: Qu'est-ce qu'un disque de secours ?
-          url: "/sm-storage/what-is-a-hot-spare-drive.html"
-        - title: Qu'est-ce que la capacité de préservation ?
-          url: "/sm-hardware/what-is-preservation-capacity.html"
-        - title: Pourquoi remplacer logiquement un disque ?
-          url: "/sm-hardware/why-would-i-logically-replace-a-drive.html"
-        - title: Où puis-je afficher l'état d'un disque en cours de reconstruction
-            ?
-          url: "/sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html"
+      - title: FAQ sur les étagères de rangement
+        url: "/sm-hardware/faq-storage-shelf.html"
+      - title: FAQ du contrôleur de stockage
+        url: "/sm-hardware/faq-storage-controller.html"
+      - title: FAQ sur le protocole iSCSI
+        url: "/sm-settings/faq-iscsi-protocol.html"
+      - title: FAQ sur le protocole NVMe
+        url: "/sm-settings/faq-nvme-protocol.html"
+      - title: FAQ sur les disques de stockage
+        url: "/sm-storage/faq-storage-drives.html"
     - title: Alertes
       entries:
       - title: Présentation
@@ -969,15 +668,8 @@ sidebar:
           url: "/sm-settings/add-syslog-servers-for-alerts.html"
         - title: Supprimer les serveurs syslog
           url: "/sm-settings/delete-syslog-servers-for-alerts.html"
-      - title: FAQ
-        entries:
-        - title: Que se passe-t-il si les alertes sont désactivées ?
-          url: "/sm-settings/what-if-alerts-are-disabled.html"
-        - title: Comment configurer les alertes SNMP ou syslog ?
-          url: "/sm-settings/how-do-i-configure-snmp-or-syslog-alerts.html"
-        - title: Pourquoi les horodatages sont-ils incohérents entre la baie et les
-            alertes ?
-          url: "/sm-settings/why-are-timestamps-inconsistent-between-the-array-and-alerts.html"
+      - title: FAQ sur les alertes du système de stockage
+        url: "/sm-settings/faq-storage-system-alerts.html"
     - title: Paramètres de la matrice
       entries:
       - title: Présentation des paramètres
@@ -1020,19 +712,8 @@ sidebar:
           url: "/sm-settings/enable-feature-pack.html"
       - title: Télécharger l'interface de ligne de commandes
         url: "/sm-settings/download-cli.html"
-      - title: FAQ
-        entries:
-        - title: Qu'est-ce que l'équilibrage automatique de la charge ?
-          url: "/sm-storage/what-is-automatic-load-balancing.html"
-        - title: Qu'est-ce que le cache du contrôleur ?
-          url: "/sm-settings/what-is-controller-cache.html"
-        - title: Qu'est-ce que le vidage du cache ?
-          url: "/sm-settings/what-is-cache-flushing.html"
-        - title: Quelle est la taille de bloc du cache ?
-          url: "/sm-settings/what-is-cache-block-size.html"
-        - title: Quand dois-je synchroniser les horloges de la matrice de stockage
-            ?
-          url: "/sm-settings/when-should-i-synchronize-storage-array-clocks.html"
+      - title: FAQ sur les paramètres de la baie de stockage
+        url: "/sm-storage/faq-storage-array-settings.html"
     - title: Sécurité du lecteur
       entries:
       - title: Présentation
@@ -1068,27 +749,8 @@ sidebar:
           url: "/sm-settings/unlock-drives-using-an-internal-security-key.html"
         - title: Déverrouillez les disques grâce à la gestion externe des clés
           url: "/sm-settings/unlock-drives-using-an-external-security-key.html"
-      - title: FAQ
-        entries:
-        - title: Que dois-je savoir avant de créer une clé de sécurité ?
-          url: "/sm-settings/what-do-i-need-to-know-before-creating-a-security-key.html"
-        - title: Pourquoi dois-je définir une phrase de passe ?
-          url: "/sm-settings/why-do-i-need-to-define-a-pass-phrase.html"
-        - title: Pourquoi est-il important d'enregistrer les informations relatives
-            aux clés de sécurité ?
-          url: "/sm-settings/why-is-it-important-to-record-security-key-information.html"
-        - title: Que dois-je savoir avant de sauvegarder une clé de sécurité ?
-          url: "/sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html"
-        - title: Que dois-je savoir avant de déverrouiller les lecteurs sécurisés
-            ?
-          url: "/sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html"
-        - title: Qu'est-ce que l'accessibilité en lecture/écriture ?
-          url: "/sm-settings/what-is-read-write-accessibility.html"
-        - title: Que dois-je savoir sur la validation de la clé de sécurité ?
-          url: "/sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html"
-        - title: Quelle est la différence entre une clé de sécurité interne et une
-            gestion externe des clés de sécurité ?
-          url: "/sm-settings/what-is-the-difference-between-internal-security-key-and-external-security-key-management.html"
+      - title: FAQ sur la sécurité des lecteurs de stockage
+        url: "/sm-settings/faq-storage-drive-security.html"
     - title: Gestion des accès
       entries:
       - title: Présentation
@@ -1155,29 +817,8 @@ sidebar:
         - title: Modifier les paramètres du serveur syslog pour les enregistrements
             du journal d'audit
           url: "/sm-settings/edit-syslog-server-settings-for-audit-log-records.html"
-      - title: FAQ
-        entries:
-        - title: Pourquoi ne puis-je pas me connecter ?
-          url: "/sm-settings/why-cant-i-log-in.html"
-        - title: Que dois-je savoir avant d'ajouter un serveur d'annuaire ?
-          url: "/sm-settings/what-do-i-need-to-know-before-adding-a-directory-server.html"
-        - title: De quoi ai-je besoin savoir concernant le mappage aux rôles de la
-            baie de stockage ?
-          url: "/sm-settings/what-do-i-need-to-know-about-mapping-storage-array-roles.html"
-        - title: Quels outils de gestion externe peuvent être affectés par ce changement
-            ?
-          url: "/sm-settings/which-external-management-tools-may-be-affected-by-this-change.html"
-        - title: Que dois-je savoir avant de configurer et d'activer le langage SAML
-            ?
-          url: "/sm-settings/what-do-i-need-to-know-before-configuring-and-enabling-saml.html"
-        - title: Quels types d'événements sont enregistrés dans le journal d'audit
-            ?
-          url: "/sm-settings/what-types-of-events-are-recorded-in-the-audit-log.html"
-        - title: Que dois-je savoir avant de configurer un serveur syslog ?
-          url: "/sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html"
-        - title: Le serveur syslog ne reçoit plus les journaux d'audit. Que dois-je
-            faire ?
-          url: "/sm-settings/the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do.html"
+      - title: FAQ sur la gestion des accès utilisateurs
+        url: "/sm-settings/faq-user-access-mgmt-sm.html"
     - title: Certificats
       entries:
       - title: Présentation
@@ -1208,20 +849,8 @@ sidebar:
           url: "/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html"
         - title: Exporter les certificats du serveur de gestion des clés
           url: "/sm-settings/export-key-management-certificates.html"
-      - title: FAQ
-        entries:
-        - title: Pourquoi la boîte de dialogue Impossible d'accéder à un autre contrôleur
-            s'affiche-t-elle ?
-          url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
-        - title: Comment savoir quels certificats doivent être chargés dans SANtricity
-            System Manager pour la gestion externe des clés ?
-          url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
-        - title: Que dois-je savoir au sujet de la vérification de révocation de certificats
-            ?
-          url: "/sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html"
-        - title: Pour quels types de serveurs la vérification de révocation sera-t-elle
-            activée ?
-          url: "/sm-settings/what-types-of-servers-will-revocation-checking-be-enabled-for.html"
+      - title: FAQ sur les certificats
+        url: "/sm-settings/faq-certificates.html"
     - title: Assistance
       entries:
       - title: Présentation
@@ -1295,38 +924,8 @@ sidebar:
         - title: Examinez les éventuelles erreurs de mise à niveau du logiciel et
             du micrologiciel
           url: "/sm-support/review-the-possible-software-and-firmware-upgrade-errors.html"
-      - title: FAQ
-        entries:
-        - title: Quelles données puis-je collecter ?
-          url: "/sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html"
-        - title: Que me montrent les données des secteurs illisibles ?
-          url: "/sm-support/what-does-unreadable-sectors-data-show-me.html"
-        - title: Qu'est-ce qu'une image de santé ?
-          url: "/sm-support/what-is-a-health-image.html"
-        - title: Quels sont les avantages des fonctionnalités AutoSupport ?
-          url: "/sm-support/what-do-the-autosupport-features-do.html"
-        - title: Quel type de données est collecté grâce à la fonctionnalité AutoSupport
-            ?
-          url: "/sm-support/what-type-of-data-is-collected-through-autosupport.html"
-        - title: Comment configurer la méthode de livraison pour la fonctionnalité
-            AutoSupport ?
-          url: "/sm-support/how-do-i-configure-the-delivery-method-for-autosupport.html"
-        - title: Qu'est-ce que les données de configuration ?
-          url: "/sm-support/what-is-configuration-data.html"
-        - title: Que dois-je savoir avant de mettre à niveau le logiciel SANtricity
-            OS ?
-          url: "/sm-support/what-do-i-need-to-know-before-upgrading-the-santricity-os-software.html"
-        - title: Que dois-je savoir avant de suspendre la synchronisation automatique
-            de l'IOM ?
-          url: "/sm-support/what-do-i-need-to-know-before-suspending-iom-auto-synchronization.html"
-        - title: Pourquoi ma mise à niveau du micrologiciel avance-t-elle si lentement
-            ?
-          url: "/sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html"
-        - title: Que dois-je savoir avant de mettre à niveau le micrologiciel du lecteur
-            ?
-          url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
-        - title: Comment choisir le type de mise à niveau à effectuer ?
-          url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"
+      - title: FAQ sur AutoSupport
+        url: "/sm-support/faq-autosupport.html"
   - title: SANtricity Unified Manager
     url: "/unified-manager/index.html"
     entries:
@@ -1390,12 +989,8 @@ sidebar:
           url: "/um-manage/import-system-settings.html"
         - title: Importer les paramètres de configuration du stockage
           url: "/um-manage/import-storage-configuration-settings.html"
-      - title: FAQ
-        entries:
-        - title: Quels paramètres seront importés ?
-          url: "/um-manage/what-settings-will-be-imported.html"
-        - title: Pourquoi ne vois-je pas toutes mes baies de stockage ?
-          url: "/um-manage/why-dont-i-see-all-of-my-storage-arrays.html"
+      - title: FAQ sur les paramètres d'importation
+        url: "/um-manage/faq-import-settings.html"
     - title: Groupes de baies
       entries:
       - title: Présentation
@@ -1444,27 +1039,8 @@ sidebar:
           url: "/um-manage/create-asynchronous-mirrored-pair-um.html"
         - title: Création d'une paire symétrique synchrone
           url: "/um-manage/create-synchronous-mirrored-pair-um.html"
-      - title: FAQ
-        entries:
-        - title: Que dois-je savoir avant de créer un groupe de cohérence miroir ?
-          url: "/um-manage/what-do-i-need-to-know-before-creating-a-mirror-consistency-group-um.html"
-        - title: Que dois-je savoir avant de créer une paire en miroir ?
-          url: "/um-manage/what-do-i-need-to-know-before-creating-a-mirrored-pair-um.html"
-        - title: Pourquoi changer ce pourcentage ?
-          url: "/um-manage/why-would-i-change-this-percentage-um.html"
-        - title: Pourquoi vois-je plusieurs candidats à la capacité réservée ?
-          url: "/um-manage/why-do-i-see-more-than-one-reserved-capacity-candidate-um.html"
-        - title: Pourquoi ne vois pas tous mes volumes ?
-          url: "/um-manage/why-dont-i-see-all-my-volumes-um.html"
-        - title: Pourquoi ne vois-je pas tous les volumes de la baie de stockage distante
-            ?
-          url: "/um-manage/why-dont-i-see-all-the-volumes-on-the-remote-storage-array-um.html"
-        - title: Quel est l'impact de la priorité de synchronisation sur les taux
-            de synchronisation ?
-          url: "/um-manage/what-impact-does-synchronization-priority-have-on-synchronization-rates-um.html"
-        - title: Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation
-            manuelle ?
-          url: "/um-manage/why-is-it-recommended-to-use-a-manual-synchronization-policy-um.html"
+      - title: FAQ sur la mise en miroir du stockage
+        url: "/um-manage/faq-storage-mirroring.html"
     - title: Certificats
       entries:
       - title: Présentation
@@ -1536,20 +1112,8 @@ sidebar:
           url: "/um-certificates/change-saml-role-mappings.html"
         - title: Exporter les fichiers SAML Service Provider
           url: "/um-certificates/export-saml-service-provider-files.html"
-      - title: FAQ
-        entries:
-        - title: Pourquoi ne puis-je pas me connecter ?
-          url: "/um-certificates/why-cant-i-log-in-unified.html"
-        - title: Que dois-je savoir avant d'ajouter un serveur d'annuaire ?
-          url: "/um-certificates/what-do-i-need-to-know-before-adding-a-directory-server-unified.html"
-        - title: De quoi ai-je besoin savoir concernant le mappage aux rôles de la
-            baie de stockage ?
-          url: "/um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html"
-        - title: Que dois-je savoir avant de configurer et d'activer le langage SAML
-            ?
-          url: "/um-certificates/what-do-i-need-to-know-before-configuring-and-enabling-saml.html"
-        - title: Qu'est-ce que les utilisateurs locaux ?
-          url: "/um-certificates/what-are-the-local-users.html"
+      - title: FAQ sur la gestion des accès utilisateurs
+        url: "/um-certificates/faq-user-access-mgmt-um.html"
   - title: Versions antérieures
     url: "/early-versions.html"
   - title: Mentions légales

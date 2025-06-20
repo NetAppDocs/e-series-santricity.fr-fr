@@ -1,0 +1,313 @@
+---
+permalink: sm-support/faq-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ AutoSupport pour SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Quelles données puis-je collecter ?
+
+La fonction AutoSupport et la fonction Manual support Data Collection permettent de collecter des données dans un pack de support client afin de résoudre les problèmes à distance par le support technique.
+
+Le pack support client rassemble tous les types d'informations sur la matrice de stockage dans un seul fichier compressé. Les informations collectées englobent la configuration physique, la configuration logique, les informations de version, les événements, les fichiers journaux, et les données de performances. Ces informations sont utilisées uniquement par le support technique pour résoudre des problèmes avec la matrice de stockage.
+
+
+
+== Que me montrent les données des secteurs illisibles ?
+
+Vous pouvez afficher des données détaillées sur les secteurs illisibles détectés sur les disques de votre matrice de stockage.
+
+Le journal secteurs illisibles montre d'abord le secteur illisible le plus récent. Le journal contient les informations suivantes sur les volumes qui contiennent les secteurs illisibles. Les champs sont sortables.
+
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Volume affecté
+ a| 
+Affiche le libellé du volume. Si un volume manquant contient des secteurs illisibles, le World Wide identifier apparaît pour le volume manquant.
+
+
+
+ a| 
+Numéro d'unité logique (LUN)
+ a| 
+Indique la LUN du volume. Si le volume ne dispose pas d'une LUN, la boîte de dialogue affiche NA.
+
+
+
+ a| 
+Affecté à
+ a| 
+Affiche les hôtes ou clusters hôtes qui ont accès au volume. Si le volume n'est pas accessible par un hôte, un cluster hôte ou même un cluster par défaut, la boîte de dialogue affiche NA.
+
+|===
+Pour afficher des informations supplémentaires sur les secteurs illisibles, cliquez sur le signe plus (+) en regard d'un volume.
+
+[cols="25h,~"]
+|===
+| Champ | Description 
+
+
+ a| 
+Date/heure
+ a| 
+Indique la date et l'heure de détection du secteur illisible.
+
+
+
+ a| 
+Adresse de bloc logique du volume
+ a| 
+Affiche l'adresse de bloc logique (LBA) du volume.
+
+
+
+ a| 
+Emplacement du lecteur
+ a| 
+Le indique le tiroir disque, le tiroir (si votre tiroir disque est doté de tiroirs) et l'emplacement de la baie.
+
+
+
+ a| 
+Adresse du bloc logique du lecteur
+ a| 
+Indique la LBA du lecteur.
+
+
+
+ a| 
+Type de panne
+ a| 
+Affiche l'un des types de panne suivants :
+
+* *Physique* -- une erreur de support physique.
+* *Logique* -- une erreur de lecture ailleurs dans la bande causant des données illisibles. Par exemple, secteur illisible en raison d'erreurs de support ailleurs dans le volume.
+* *Incohérent* -- données de redondance incohérentes.
+* *Data assurance* -- une erreur Data assurance.
+
+
+|===
+
+
+== Qu'est-ce qu'une image de santé ?
+
+Une image de santé est un « dump » de données brutes de la mémoire du processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.
+
+Le firmware génère automatiquement une image de l'état de santé lorsqu'il détecte certaines erreurs. Dans certains scénarios de dépannage, le support technique peut vous demander de récupérer le fichier d'image d'intégrité et de l'envoyer.
+
+
+
+== Quels sont les avantages des fonctionnalités AutoSupport ?
+
+La fonctionnalité AutoSupport comprend trois fonctions individuelles que vous pouvez activer séparément.
+
+* *AutoSupport de base* -- permet à votre matrice de stockage de collecter et d'envoyer automatiquement des données au support technique.
+* *AutoSupport OnDemand* -- permet au support technique de demander la retransmission d'une intervention AutoSupport précédente si nécessaire pour le dépannage d'un problème. Toutes les transmissions sont lancées à partir de la baie de stockage, et non à partir du serveur AutoSupport. La baie de stockage vérifie régulièrement avec le serveur AutoSupport pour déterminer s'il existe des demandes de retransmission en attente et répond en conséquence.
+* *Diagnostics à distance* -- permet au support technique de demander une nouvelle intervention AutoSupport à jour si nécessaire pour le dépannage d'un problème. Toutes les transmissions sont lancées à partir de la baie de stockage, et non à partir du serveur AutoSupport. La baie de stockage s'effectue régulièrement avec le serveur AutoSupport afin de déterminer s'il existe de nouvelles demandes en attente et répond en conséquence.
+
+
+
+
+== Quel type de données est collecté grâce à la fonctionnalité AutoSupport ?
+
+La fonction AutoSupport contient trois types d'intervention standard : l'envoi d'événements, les interventions planifiées et les interventions de diagnostic à la demande et à distance.
+
+Les données AutoSupport ne contiennent aucune donnée utilisateur.
+
+* *Interventions d'événements*
++
+Lorsque des événements se produisent sur le système qui garantit une notification proactive au support technique, la fonctionnalité AutoSupport envoie automatiquement une intervention déclenchée par un événement.
+
++
+** Envoyé lorsqu'un événement de support sur la baie de stockage gérée se produit.
+** Comprend un aperçu complet de ce qui se passait avec la baie de stockage au moment de l'événement.
+
+
+* *Interventions programmées*
++
+La fonction AutoSupport envoie automatiquement plusieurs interventions selon un calendrier régulier.
+
++
+** *Interventions quotidiennes* -- envoyées une fois par jour pendant un intervalle de temps configurable par l'utilisateur. Inclut les journaux d'événements du système et les données de performances.
+** *Interventions hebdomadaires* -- envoyées une fois par semaine pendant un intervalle de temps et un jour configurables par l'utilisateur. Inclut des informations sur la configuration et l'état du système.
+
+
+* *Interventions de diagnostic à distance et AutoSupport OnDemand*
++
+** *AutoSupport OnDemand* -- permet au support technique de demander la retransmission d'une intervention AutoSupport précédente si nécessaire pour le dépannage d'un problème. Toutes les transmissions sont lancées à partir de la baie de stockage, et non à partir du serveur AutoSupport. La baie de stockage vérifie régulièrement avec le serveur AutoSupport pour déterminer s'il existe des demandes de retransmission en attente et répond en conséquence.
+** *Diagnostics à distance* -- permet au support technique de demander une nouvelle intervention AutoSupport à jour si nécessaire pour le dépannage d'un problème. Toutes les transmissions sont lancées à partir de la baie de stockage, et non à partir du serveur AutoSupport. La baie de stockage s'effectue régulièrement avec le serveur AutoSupport afin de déterminer s'il existe de nouvelles demandes en attente et répond en conséquence.
+
+
+
+
+
+
+== Comment configurer la méthode de livraison pour la fonctionnalité AutoSupport ?
+
+La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la fourniture d'interventions AutoSupport au support technique.
+
+.Avant de commencer
+* La fonctionnalité AutoSupport doit être activée. Vous pouvez vérifier si elle est activée ou non sur la page AutoSupport.
+* Un serveur DNS doit être installé et configuré sur votre réseau. L'adresse du serveur DNS doit être configurée dans System Manager (cette tâche est disponible à partir de la page Hardware).
+
+
+.Description de la tâche
+Étudiez les différents protocoles :
+
+* *HTTPS* -- vous permet de vous connecter directement au serveur d'assistance technique de destination via HTTPS. Si vous souhaitez activer AutoSupport OnDemand ou diagnostic à distance, la méthode de livraison AutoSupport doit être définie sur HTTPS.
+* *Email* -- vous permet d'utiliser un serveur de messagerie comme méthode de livraison pour envoyer des interventions AutoSupport.
+
+
+[NOTE]
+====
+*Différences entre les méthodes HTTPS et Email*. La méthode de livraison par courrier électronique, qui utilise SMTP, présente des différences importantes par rapport à la méthode de livraison HTTPS. Tout d'abord, la taille des interventions pour la méthode E-mail est limitée à 5 Mo, ce qui signifie que certaines collections de données ASUP ne seront pas envoyées. Deuxièmement, la fonction AutoSupport OnDemand est disponible uniquement sur la méthode de distribution HTTPS.
+
+====
+.Étapes
+. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Sélectionnez *configurer la méthode de livraison AutoSupport*.
++
+Une boîte de dialogue s'affiche, qui répertorie les méthodes de livraison d'expédition.
+
+. Sélectionnez la méthode de livraison souhaitée, puis sélectionnez les paramètres pour cette méthode de livraison. Effectuez l'une des opérations suivantes :
++
+** Si vous avez sélectionné HTTPS, sélectionnez l'un des paramètres de livraison suivants :
++
+*** *Directement* -- ce paramètre de distribution est la sélection par défaut. Cette option vous permet de vous connecter directement au système de support technique de destination à l'aide du protocole HTTPS.
+*** *Via serveur proxy* -- la sélection de cette option vous permet de spécifier les détails du serveur proxy HTTP requis pour établir la connexion avec le système de support technique de destination. Vous devez spécifier l'adresse hôte et le numéro de port. Toutefois, vous devez uniquement saisir les détails d'authentification de l'hôte (nom d'utilisateur et mot de passe) si nécessaire.
+*** *Via le script de configuration automatique du proxy (PAC)* -- spécifiez l'emplacement d'un fichier de script PAC (Proxy Auto-Configuration). Un fichier PAC permet au système de choisir automatiquement le serveur proxy approprié pour établir une connexion avec le système d'assistance technique de destination.
+
+
+** Si vous avez sélectionné E-mail, saisissez les informations suivantes :
++
+*** L'adresse du serveur de messagerie en tant que nom de domaine complet, adresse IPv4 ou adresse IPv6.
+*** Adresse e-mail affichée dans le champ de du courrier électronique d'intervention AutoSupport.
+*** *Facultatif; si vous voulez effectuer un test de configuration.* adresse e-mail où une confirmation est envoyée lorsque le système AutoSupport reçoit l'intervention de test.
+*** Si vous souhaitez crypter les messages, sélectionnez *SMTPS* ou *STARTTLS* pour le type de cryptage, puis sélectionnez le numéro de port pour les messages cryptés. Sinon, sélectionnez *aucun*.
+*** Si nécessaire, entrez un nom d'utilisateur et un mot de passe pour l'authentification avec l'expéditeur sortant et le serveur de messagerie.
+
+
+
+
+. Cliquez sur *Tester la configuration* pour tester la connexion au serveur de support technique à l'aide des paramètres de livraison spécifiés. Si vous avez activé la fonctionnalité AutoSupport On-Demand, le système teste également la connexion pour la livraison de l'intervention AutoSupport OnDemand.
++
+Si le test de configuration échoue, vérifiez vos paramètres de configuration et relancez le test. Si le test continue à échouer, contactez le support technique.
+
+. Cliquez sur *Enregistrer*.
+
+
+
+
+== Qu'est-ce que les données de configuration ?
+
+Lorsque vous sélectionnez collecter les données de configuration, le système enregistre l'état actuel de la base de données de configuration RAID.
+
+La base de données de configuration RAID inclut toutes les données des groupes de volumes et des pools de disques du contrôleur. La fonction de collecte de données de configuration enregistre les mêmes informations que la commande CLI pour `save storageArray dbmDatabase`.
+
+
+
+== Que dois-je savoir avant de mettre à niveau le logiciel SANtricity OS ?
+
+Avant de mettre à niveau le logiciel et le micrologiciel de votre contrôleur, tenez compte de ces éléments.
+
+* Vous avez lu le document et le `readme.txt` et vous avez déterminé que vous souhaitez effectuer la mise à niveau.
+* Vous savez si vous souhaitez mettre à niveau le firmware du module d'E/S.
++
+Normalement, vous devez mettre à niveau tous les composants en même temps. Toutefois, vous pouvez décider de ne pas mettre à niveau le firmware du module d'E/S si vous ne souhaitez pas le mettre à niveau dans le cadre de la mise à niveau du logiciel du contrôleur SANtricity OS ou si le support technique vous a demandé de rétrograder le micrologiciel de votre module d'E/S (vous ne pouvez que le rétrograder en utilisant l'interface de ligne de commande).
+
+* Vous savez si vous voulez mettre à niveau le fichier NVSRAM du contrôleur.
++
+Normalement, vous devez mettre à niveau tous les composants en même temps. Toutefois, vous pouvez décider de ne pas mettre à niveau le fichier NVSRAM du contrôleur si votre fichier a été corrigé ou est une version personnalisée et que vous ne souhaitez pas le remplacer.
+
+* Vous savez si vous souhaitez activer maintenant ou ultérieurement.
++
+Voici quelques raisons d'activer ultérieurement :
+
++
+** *Temps de jour* -- l'activation du logiciel et du micrologiciel peut prendre un certain temps, vous pouvez donc attendre que les charges d'E/S soient plus légères. Les contrôleurs basculent pendant l'activation, pour que les performances soient inférieures à la normale jusqu'à la fin de la mise à niveau.
+** *Type de paquet* -- vous pouvez tester le nouveau logiciel et le nouveau micrologiciel sur une matrice de stockage avant de mettre à niveau les fichiers sur d'autres matrices de stockage.
+
+
+
+
+Ces composants font partie de la mise à niveau logicielle du contrôleur SANtricity OS :
+
+* *Logiciel de gestion* -- System Manager est le logiciel qui gère la matrice de stockage.
+* *Micrologiciel de contrôleur* -- le micrologiciel de contrôleur gère les E/S entre les hôtes et les volumes.
+* *NVSRAM de contrôleur* -- NVSRAM de contrôleur est un fichier de contrôleur qui spécifie les paramètres par défaut des contrôleurs.
+* *Micrologiciel IOM* -- le firmware du module d'E/S (IOM) gère la connexion entre un contrôleur et un tiroir de disque. Il surveille également l'état des composants.
+* *Supervisor Software* -- le logiciel Supervisor est la machine virtuelle sur un contrôleur dans lequel le logiciel s'exécute.
+
+
+Dans le cadre du processus de mise à niveau, le pilote multivoie/relais et/ou le pilote HBA de l'hôte peuvent également être mis à niveau afin que l'hôte puisse interagir correctement avec les contrôleurs.
+
+[NOTE]
+====
+Pour déterminer si c'est le cas, reportez-vous à la https://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^].
+
+====
+Si votre matrice de stockage ne contient qu'un seul contrôleur ou si aucun pilote multivoie n'est installé, arrêtez l'activité d'E/S vers la matrice de stockage pour éviter les erreurs d'application. Si votre baie de stockage est équipée de deux contrôleurs et qu'un pilote multivoie est installé, il n'est pas nécessaire d'arrêter l'activité d'E/S.
+
+
+CAUTION: Ne modifiez pas la matrice de stockage pendant la mise à niveau.
+
+
+
+== Que dois-je savoir avant de suspendre la synchronisation automatique de l'IOM ?
+
+L'interruption de la synchronisation automatique du module d'E/S empêche la mise à niveau du firmware du module lors de la prochaine mise à niveau du logiciel du contrôleur SANtricity OS.
+
+En principe, le logiciel du contrôleur et le firmware du module sont mis à niveau en tant que pack. Vous pouvez suspendre la synchronisation automatique du module d'E/S si vous disposez d'une version spéciale du firmware IOM que vous souhaitez conserver sur votre armoire. Si vous ne faites pas partie du firmware du module d'E/S, celui-ci est inclus avec le logiciel du contrôleur lors de la prochaine mise à niveau du logiciel du contrôleur.
+
+
+
+== Pourquoi ma mise à niveau du micrologiciel avance-t-elle si lentement ?
+
+La progression de la mise à niveau du micrologiciel dépend de la charge globale du système.
+
+Lors d'une mise à niveau en ligne du firmware d'un disque, si un transfert de volume a lieu pendant le processus de reconstruction rapide, le système lance une reconstruction complète sur le volume transféré. Cette opération peut prendre beaucoup de temps. Le temps de reconstruction complet réel dépend de plusieurs facteurs, notamment la quantité d'activité d'E/S survenant pendant l'opération de reconstruction, le nombre de disques du groupe de volumes, le paramètre de priorité de reconstruction et la performance du disque.
+
+
+
+== Que dois-je savoir avant de mettre à niveau le micrologiciel du lecteur ?
+
+Avant de mettre à niveau le micrologiciel de votre lecteur, tenez compte de ces éléments.
+
+* Par mesure de précaution, sauvegardez vos données à l'aide de la sauvegarde disque à disque, de la copie de volume (vers un groupe de volumes non affecté par la mise à niveau du micrologiciel planifiée) ou d'un miroir distant.
+* Il est possible que vous ne souhaitiez mettre à niveau que quelques lecteurs pour tester le comportement du nouveau micrologiciel afin de vous assurer qu'il fonctionne correctement. Si le nouveau micrologiciel fonctionne correctement, mettez à niveau les lecteurs restants.
+* Si des disques défectueux sont défectueux, corrigez-les avant de lancer la mise à niveau du micrologiciel.
+* Si les disques peuvent effectuer une mise à niveau hors ligne, arrêtez l'activité d'E/S sur tous les volumes associés aux disques. Lorsque les E/S sont arrêtées, aucune opération de configuration associée à ces volumes ne peut avoir lieu.
+* Ne retirez aucun lecteur lors de la mise à niveau du micrologiciel du lecteur.
+* Ne modifiez pas la configuration de la matrice de stockage lors de la mise à niveau du micrologiciel du lecteur.
+
+
+
+
+== Comment choisir le type de mise à niveau à effectuer ?
+
+Vous choisissez le type de mise à niveau à effectuer sur le lecteur en fonction de l'état du pool ou du groupe de volumes.
+
+* *En ligne*
++
+Si le pool ou le groupe de volumes prend en charge la redondance et est optimal, vous pouvez utiliser la méthode en ligne pour mettre à niveau le micrologiciel du lecteur. La méthode en ligne télécharge le micrologiciel _pendant que la matrice de stockage traite les E/S_ aux volumes associés utilisant ces lecteurs. Il n'est pas nécessaire d'arrêter les E/S vers les volumes associés à l'aide de ces lecteurs. Ces lecteurs sont mis à niveau un par un vers les volumes associés aux lecteurs. Si le lecteur n'est pas affecté à un pool ou à un groupe de volumes, son micrologiciel peut être mis à jour par la méthode en ligne ou hors ligne. Les performances du système peuvent être affectées lorsque vous utilisez la méthode en ligne pour mettre à niveau le micrologiciel du lecteur.
+
+* *Hors ligne*
++
+Si le pool ou le groupe de volumes ne prend pas en charge la redondance (RAID 0) ou s'il est dégradé, vous devez utiliser la méthode hors ligne pour mettre à niveau le micrologiciel du lecteur. La méthode Offline met à niveau le micrologiciel _uniquement lorsque toutes les activités d'E/S sont arrêtées_ vers les volumes associés utilisant ces lecteurs. Vous devez arrêter toutes les E/S de tous les volumes associés utilisant ces lecteurs. Si le lecteur n'est pas affecté à un pool ou à un groupe de volumes, son micrologiciel peut être mis à jour par la méthode en ligne ou hors ligne.
+
+

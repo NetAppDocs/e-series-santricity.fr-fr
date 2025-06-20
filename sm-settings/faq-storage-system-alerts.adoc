@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/faq-storage-system-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur les alertes du système de stockage pour SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Que se passe-t-il si les alertes sont désactivées ?
+
+Si vous souhaitez que les administrateurs reçoivent des notifications concernant les événements importants qui se produisent dans la matrice de stockage, vous devez configurer une méthode d'alerte.
+
+Pour les baies de stockage gérées avec SANtricity System Manager, vous configurez les alertes à partir de la page alertes. Des notifications d'alerte peuvent être envoyées par e-mail, des traps SNMP ou des messages syslog. En outre, les alertes par e-mail peuvent être configurées à partir de l'assistant d'installation initiale.
+
+
+
+== Comment configurer les alertes SNMP ou syslog ?
+
+En plus des alertes par e-mail, vous pouvez configurer les alertes pour qu'elles soient envoyées par des traps SNMP (simple Network Management Protocol) ou par des messages syslog.
+
+Pour configurer des alertes SNMP ou syslog, accédez au menu:Paramètres[alertes].
+
+
+
+== Pourquoi les horodatages sont-ils incohérents entre la baie et les alertes ?
+
+Lorsque la matrice de stockage envoie des alertes, elle ne corrige pas le fuseau horaire du serveur ou de l'hôte cible qui reçoit les alertes. À la place, la matrice de stockage utilise l'heure locale (GMT) pour créer l'horodatage utilisé pour l'enregistrement d'alerte. Par conséquent, vous pouvez constater des incohérences entre les horodatages de la baie de stockage et le serveur ou l'hôte recevant une alerte.
+
+Comme la matrice de stockage ne corrige pas le fuseau horaire lors de l'envoi d'alertes, l'horodatage des alertes est fonction du GMT-relatif, avec un décalage de fuseau horaire de zéro. Pour calculer un horodatage approprié à votre fuseau horaire local, vous devez déterminer votre décalage horaire par rapport à GMT, puis ajouter ou soustraire cette valeur de l'horodatage.

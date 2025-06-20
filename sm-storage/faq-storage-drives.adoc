@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/faq-storage-drives.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur les disques de stockage pour SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Qu'est-ce qu'un disque de secours ?
+
+Les disques de secours servent de disques de secours au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Il s'agit de lecteurs entièrement fonctionnels qui ne contiennent aucune donnée. Si un disque tombe en panne dans le groupe de volumes, le contrôleur reconstruit automatiquement les données du disque défectueux vers un disque de secours.
+
+Si un lecteur tombe en panne dans la matrice de stockage, le disque de secours est automatiquement remplacé par le disque défectueux sans nécessiter de remplacement physique. Si le disque de secours est disponible lorsqu'un disque tombe en panne, le contrôleur utilise les données de redondance pour reconstruire les données du disque défaillant vers le disque de secours.
+
+Un disque de secours n'est pas dédié à un groupe de volumes spécifique. À la place, vous pouvez utiliser un disque de secours pour tout disque défectueux de la baie de stockage de la même capacité ou de la même capacité. Un disque de secours doit être du même type de support (HDD ou SSD) que les lecteurs qu'il protège.
+
+[NOTE]
+====
+Les disques de secours ne sont pas pris en charge par les pools. Au lieu de disques de secours, les pools utilisent la capacité de conservation de chaque disque qui comprend le pool.
+
+====
+
+
+== Qu'est-ce que la capacité de préservation ?
+
+La capacité de conservation correspond à la capacité (nombre de disques) réservée dans un pool afin de prendre en charge les défaillances potentielles de disque.
+
+Lorsqu'un pool est créé, le système réserve automatiquement une quantité par défaut de capacité de conservation en fonction du nombre de disques du pool.
+
+Les pools utilisent une capacité de conservation lors de la reconstruction, tandis que les groupes de volumes utilisent des disques de secours pour la même utilisation. La méthode de préservation de la capacité est une amélioration par rapport aux disques de secours, car elle permet d'accélérer la reconstruction. La capacité de conservation est répartie sur plusieurs disques du pool au lieu d'un disque dans le cas d'un disque de secours. Vous n'êtes donc pas limité par la vitesse ou la disponibilité d'un disque.
+
+
+
+== Pourquoi remplacer logiquement un disque ?
+
+Si un disque tombe en panne ou si vous souhaitez le remplacer pour une autre raison et que vous disposez d'un disque non affecté dans votre baie de stockage, vous pouvez remplacer de manière logique le disque défectueux par le disque non affecté. Si vous n'avez pas de lecteur non affecté, vous pouvez remplacer physiquement le lecteur.
+
+Les données du disque d'origine sont copiées ou reconstruites dans le disque de remplacement.
+
+
+
+== Où puis-je afficher l'état d'un disque en cours de reconstruction ?
+
+Vous pouvez afficher l'état de reconstruction du disque depuis le tableau de bord Operations en cours.
+
+Dans la page d'accueil, cliquez sur le lien *opérations en cours* dans le coin supérieur droit.
+
+Selon le disque, la reconstruction complète peut prendre beaucoup de temps. Si un volume est modifié, une reconstruction complète peut avoir lieu au lieu de la reconstruction rapide.

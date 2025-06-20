@@ -1,0 +1,45 @@
+---
+permalink: um-manage/faq-import-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
+---
+= FAQ sur les paramètres d'importation pour SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.
+
+
+
+== Quels paramètres seront importés ?
+
+La fonction Importer les paramètres est une opération par lots qui charge les configurations d'une matrice de stockage à plusieurs matrices de stockage. Les paramètres importés lors de cette opération dépendent de la configuration de la baie de stockage source dans SANtricity System Manager.
+
+Les paramètres suivants peuvent être importés dans plusieurs matrices de stockage :
+
+* *Alertes par e-mail* -- les paramètres incluent une adresse de serveur de messagerie et les adresses e-mail des destinataires de l'alerte.
+* *Syslog Alerts* -- les paramètres incluent une adresse de serveur syslog et un port UDP.
+* *Alertes SNMP* -- les paramètres incluent un nom de communauté et une adresse IP pour le serveur SNMP.
+* *AutoSupport* -- les paramètres incluent les fonctionnalités séparées (AutoSupport de base, AutoSupport OnDemand et diagnostic à distance), la fenêtre de maintenance, la méthode de livraison, et les plannings d'intervention.
+* *Services d'annuaire* -- la configuration inclut le nom de domaine et l'URL d'un serveur LDAP (Lightweight Directory Access Protocol), ainsi que les mappages entre les groupes d'utilisateurs du serveur LDAP et les rôles prédéfinis de la baie de stockage.
+* *Configuration du stockage* -- les configurations comprennent les volumes (uniquement les volumes non-référentiels et épais), les groupes de volumes, les pools et les affectations de disques de secours.
+* *Paramètres système* -- les configurations incluent les paramètres de lecture des supports pour un volume, la mémoire cache SSD pour les contrôleurs et l'équilibrage automatique de la charge (n'inclut pas les rapports de connectivité hôte).
+
+
+
+
+== Pourquoi ne vois-je pas toutes mes baies de stockage ?
+
+Lors de l'opération Importer les paramètres, il se peut que certaines de vos matrices de stockage ne soient pas disponibles dans la boîte de dialogue de sélection de la cible.
+
+Les baies de stockage peuvent ne pas s'afficher pour les raisons suivantes :
+
+* La version du micrologiciel est inférieure à 8.50.
+* La matrice de stockage est hors ligne.
+* Le système ne peut pas communiquer avec cette matrice (par exemple, la matrice présente des problèmes de certificat, de mot de passe ou de mise en réseau).
+
