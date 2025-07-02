@@ -85,6 +85,11 @@ La mise en miroir asynchrone utilise les ports d'E/S côté hôte de la baie de 
 
 
 
+[NOTE]
+====
+E4000 ne prend pas en charge la mise en miroir asynchrone lors de l'utilisation du protocole iSCSI.
+
+====
 
 
 == Candidats aux volumes en miroir

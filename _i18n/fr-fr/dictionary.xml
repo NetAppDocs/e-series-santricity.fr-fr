@@ -9034,4 +9034,5 @@
   <block id="f9e9bc191db345171d0de707013016a3" category="sidebar">FAQ sur AutoSupport</block>
   <block id="3af089d2853adca01b3ba738ac9987ff" category="sidebar">FAQ sur les paramètres d'importation</block>
   <block id="e35e805c872d89cfd87942f59e41eb2d" category="sidebar">FAQ sur la mise en miroir du stockage</block>
+  <block id="ded92516be8a7fa425e1814e7ca1ea4e" category="paragraph">E4000 ne prend pas en charge la mise en miroir asynchrone lors de l'utilisation du protocole iSCSI.</block>
 </blocks>
