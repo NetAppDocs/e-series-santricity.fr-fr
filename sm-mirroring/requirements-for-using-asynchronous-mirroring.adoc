@@ -109,6 +109,7 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 
 
 * Les volumes principal et secondaire doivent partager le même type de disque. La combinaison de disques NVMe et SAS entre les volumes principal et secondaire n'est pas prise en charge.
+* Le partitionnement des ressources ne doit pas être activé pour les volumes primaires et secondaires.
 
 
 

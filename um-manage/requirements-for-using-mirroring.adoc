@@ -57,6 +57,10 @@ La mise en miroir via une interface iSCSI (asynchrone uniquement) nécessite les
 
 * Contrairement à FC, l'iSCSI ne nécessite pas de port dédié. Lorsqu'une mise en miroir asynchrone est utilisée dans les environnements iSCSI, il n'est pas nécessaire de dédier les ports iSCSI frontaux de la baie de stockage à une utilisation avec la mise en miroir asynchrone. Ces ports sont partagés à la fois pour le trafic en miroir asynchrone et les connexions d'E/S hôte à baie.
 * Le contrôleur maintient une liste de systèmes de stockage distants avec lesquels l'initiateur iSCSI tente d'établir une session. Le premier port qui établit avec succès une connexion iSCSI est utilisé pour toutes les communications ultérieures avec cette matrice de stockage distante. Si la communication échoue, une nouvelle session est tentée en utilisant tous les ports disponibles.
++
+
+NOTE: Les contrôleurs E4000 ne prennent pas en charge la mise en miroir iSCSI.
+
 * Les ports iSCSI sont configurés au niveau de la baie, port par port. La communication InterController pour la messagerie de configuration et le transfert de données utilise les paramètres globaux, notamment les paramètres suivants :
 +
 ** VLAN : les systèmes locaux et distants doivent avoir le même paramètre VLAN pour communiquer
@@ -92,6 +96,7 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 ** Si le volume principal n'utilise pas la sécurité du lecteur, le volume secondaire ne doit pas utiliser la sécurité du lecteur.
 
 
+* Le partitionnement des ressources ne doit pas être activé pour les volumes primaires et secondaires.
 
 
 
