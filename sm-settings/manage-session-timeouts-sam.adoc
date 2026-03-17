@@ -23,7 +23,7 @@ Si Access Management est configuré à l'aide des fonctionnalités SAML (Securit
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous la section général, sélectionnez *Activer/Désactiver le délai de session*.
 +
 La boîte de dialogue Activer/Désactiver le délai d'expiration de session s'ouvre.

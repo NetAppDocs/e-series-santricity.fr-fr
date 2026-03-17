@@ -20,7 +20,7 @@ Si votre contrôleur inclut une connexion pour NVMe over RoCE (RDMA over Converg
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *NVMe over ROCE settings*, sélectionnez *Configure NVMe over ROCE ports*.
 . Sélectionnez le contrôleur avec le port NVMe over RoCE que vous souhaitez configurer. Cliquez sur *Suivant*.
 . Sélectionnez le port HIC que vous souhaitez configurer dans la liste déroulante. Cliquez sur *Suivant*.

@@ -17,7 +17,7 @@ Une fois le processus d'importation démarré, vous pouvez afficher et prendre d
 .Description de la tâche
 Pour chaque opération d'importation, la boîte de dialogue opérations en cours affiche un pourcentage d'achèvement et une estimation du temps restant. Les actions sont notamment la modification de la priorité d'importation, l'arrêt et la reprise des opérations et la déconnexion de l'opération.
 
-Vous pouvez également afficher les opérations en cours à partir de la page d'accueil (menu:Accueil [Afficher les opérations en cours]).
+Vous pouvez également consulter les opérations en cours via menu :Storage[Operations in Progress].
 
 .Étapes
 . Sur la page stockage distant, sélectionnez *Afficher opérations*.

@@ -2,7 +2,7 @@
 permalink: sm-storage/change-ssd-cache-settings.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, ssd, cache, settings 
-summary: 'Vous pouvez modifier le nom de la mémoire SSD cache et afficher son état, ses capacités maximales et actuelles, la sécurité des disques et l"état Data assurance, ainsi que ses volumes et disques associés.' 
+summary: Vous pouvez modifier les paramètres du cache SSD. Les paramètres actuels du cache SSD sont accessibles via l’option Afficher les paramètres. 
 ---
 = Modifier les paramètres du cache SSD dans SANtricity System Manager
 :allow-uri-read: 
@@ -12,13 +12,13 @@ summary: 'Vous pouvez modifier le nom de la mémoire SSD cache et afficher son �
 
 
 [role="lead"]
-Vous pouvez modifier le nom de la mémoire SSD cache et afficher son état, ses capacités maximales et actuelles, la sécurité des disques et l'état Data assurance, ainsi que ses volumes et disques associés.
+Vous pouvez modifier les paramètres du cache SSD. Les paramètres actuels du cache SSD sont accessibles via l’option Afficher les paramètres.
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
-. Sélectionnez le cache SSD que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
+. Sélectionnez le SSD Cache que vous souhaitez modifier, puis cliquez sur l’icône menu:ellipsis icon[Edit Settings].
 +
-La boîte de dialogue SSD cache Settings s'affiche.
+La fenêtre « Modifier les paramètres du cache SSD » s'affiche.
 
 . Vérifiez ou modifiez les paramètres de cache SSD, le cas échéant.
 +

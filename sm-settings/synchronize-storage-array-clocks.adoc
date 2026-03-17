@@ -28,7 +28,7 @@ Après la synchronisation, vous remarquerez peut-être que des statistiques de p
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *général*, cliquez sur *Synchroniser les horloges de la matrice de stockage*.
 +
 La boîte de dialogue Synchroniser les horloges de la matrice de stockage s'ouvre. Il affiche la date et l'heure actuelles du ou des contrôleurs et de l'ordinateur utilisé comme client de gestion.

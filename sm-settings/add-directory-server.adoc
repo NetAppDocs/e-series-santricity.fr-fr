@@ -30,7 +30,7 @@ Lors de la procédure d'ajout d'un serveur LDAP, l'interface de gestion hérité
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Dans l'onglet Services d'annuaire, sélectionnez *Ajouter un serveur d'annuaire*.
 +
 La boîte de dialogue Ajouter un serveur de répertoire s'ouvre.

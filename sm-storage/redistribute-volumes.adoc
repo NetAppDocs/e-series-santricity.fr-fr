@@ -26,8 +26,8 @@ Si vous souhaitez redistribuer des volumes sans pilote multivoie sur les hôtes,
 La plupart des pilotes de chemins d'accès multiples de l'hôte tentent d'accéder à chaque volume sur un chemin vers son propriétaire de contrôleur privilégié. Toutefois, si ce chemin préféré n'est plus disponible, le pilote multichemin de l'hôte bascule vers un autre chemin. Ce basculement peut entraîner le changement de propriété du volume vers le contrôleur secondaire. Une fois que vous avez résolu le problème à l'origine du basculement, certains hôtes peuvent retransférer automatiquement la propriété des volumes vers le propriétaire du contrôleur privilégié, mais dans certains cas, vous devrez peut-être redistribuer manuellement les volumes.
 
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Sélectionner menu:plus[rerépartir les volumes].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Cliquez sur l'icône de menu : ellipsis [Redistribute volumes].
 +
 La boîte de dialogue redistribuer les volumes s'affiche. Tous les volumes de la matrice de stockage dont le propriétaire du contrôleur préféré ne correspond pas à son propriétaire actuel apparaissent dans cette boîte de dialogue.
 

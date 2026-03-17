@@ -21,7 +21,7 @@ Vous devez être connecté avec un profil utilisateur qui inclut les autorisatio
 Cette tâche décrit comment modifier les paramètres du journal d'audit, qui incluent la stratégie de remplacement des anciens événements et la stratégie d'enregistrement des types d'événements.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Journal d'audit*.
 . Sélectionnez *Afficher/Modifier les paramètres*.
 +

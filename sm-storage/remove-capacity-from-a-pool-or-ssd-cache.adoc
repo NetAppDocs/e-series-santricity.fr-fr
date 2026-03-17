@@ -45,8 +45,8 @@ NOTE: Tous les nouveaux volumes que vous créez sur le pool seront compatibles D
 
 ====
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
-. Sélectionnez le pool ou SSD cache, puis cliquez sur menu:More[Remove Capacity].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
+. Sélectionnez le pool ou le cache SSD, puis cliquez sur le menu : ellipsis icon[Remove capacity].
 +
 La boîte de dialogue Supprimer la capacité s'affiche.
 

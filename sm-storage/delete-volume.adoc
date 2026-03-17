@@ -46,8 +46,8 @@ Lorsqu'un volume dépasse une taille donnée (actuellement 128 To), la suppressi
 
 ====
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Cliquez sur *Supprimer*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Sélectionnez le volume que vous souhaitez supprimer, puis cliquez sur le menu : icône d’ellipse [Delete].
 +
 La boîte de dialogue Supprimer les volumes s'affiche.
 

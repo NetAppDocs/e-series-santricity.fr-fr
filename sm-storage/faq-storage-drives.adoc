@@ -53,6 +53,6 @@ Les données du disque d'origine sont copiées ou reconstruites dans le disque d
 
 Vous pouvez afficher l'état de reconstruction du disque depuis le tableau de bord Operations en cours.
 
-Dans la page d'accueil, cliquez sur le lien *opérations en cours* dans le coin supérieur droit.
+Dans le menu Storage du panneau de gauche, cliquez sur le lien *Operations in Progress* en haut à droite.
 
 Selon le disque, la reconstruction complète peut prendre beaucoup de temps. Si un volume est modifié, une reconstruction complète peut avoir lieu au lieu de la reconstruction rapide.

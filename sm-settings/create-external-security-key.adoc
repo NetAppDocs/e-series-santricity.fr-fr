@@ -37,7 +37,7 @@ Pour plus d'informations sur le certificat du serveur, consultez la documentatio
 Dans cette tâche, vous définissez l'adresse IP du serveur de gestion des clés et le numéro de port qu'il utilise, puis chargez les certificats pour la gestion des clés externes.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *gestion des clés de sécurité*, sélectionnez *Créer une clé externe*.
 +
 [NOTE]
@@ -60,7 +60,7 @@ La boîte de dialogue Créer une clé de sécurité externe s'ouvre.
 NOTE: Seul un serveur à clé unique est utilisé à la fois. Si la matrice de stockage ne parvient pas à atteindre le serveur de clés principal, elle contacte le serveur de clés de sauvegarde. Notez que vous devez maintenir la parité entre les deux serveurs ; le non-respect de cette consigne peut entraîner des erreurs.
 
 ** *Sélectionner le certificat client* -- cliquez sur le premier bouton *Parcourir* pour sélectionner le fichier de certificat pour les contrôleurs de la matrice de stockage.
-** *Sélectionner un fichier de clé privée* -- si nécessaire, cliquez sur le deuxième bouton *Parcourir* pour sélectionner un fichier de clé privée pour les contrôleurs de la matrice de stockage.
+** *Sélectionnez le fichier de clé privée* -- Si nécessaire, cliquez sur le deuxième bouton *Parcourir* pour sélectionner un fichier de clé privée pour les contrôleurs de la storage array.
 ** *Sélectionner le certificat de serveur du serveur de gestion des clés* -- cliquez sur le troisième bouton *Parcourir* pour sélectionner le fichier de certificat du serveur de gestion des clés. Vous pouvez choisir un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.
 
 

@@ -28,7 +28,7 @@ Si vous souhaitez désactiver une fonction Premium, vous devez utiliser la comma
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *Compléments*, sélectionnez *Activer la fonction Premium*.
 +
 La boîte de dialogue Activer une fonction Premium s'ouvre.

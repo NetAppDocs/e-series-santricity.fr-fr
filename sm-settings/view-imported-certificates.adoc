@@ -18,7 +18,7 @@ summary: 'À partir de la page certificats, vous pouvez afficher le type de cert
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'un des onglets pour afficher des informations sur les certificats.
 +
 [cols="25h,~"]

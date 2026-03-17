@@ -31,7 +31,7 @@ Sélectionnez les membres pour spécifier une collection de volumes comprenant l
 Les volumes membres doivent être optimaux.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Cliquez sur l'onglet *groupes de cohérence Snapshot*.
 . Sélectionnez menu :Créer [groupe de cohérence Snapshot].
 +

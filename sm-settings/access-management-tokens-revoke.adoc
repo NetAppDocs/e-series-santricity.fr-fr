@@ -17,7 +17,7 @@ Vous pouvez révoquer tous les jetons d'accès si vous déterminez qu'un jeton a
 Cette opération régénère les touches utilisées pour signer les jetons. Une fois les clés réinitialisées, les jetons _All_ émis sont immédiatement invalidés. Comme la baie de stockage ne effectue pas le suivi des jetons, les jetons individuels ne peuvent pas être révoqués.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Access Tokens*.
 . Sélectionnez *révoquer tous les tokens d'accès*.
 . Dans la boîte de dialogue, cliquez sur *Oui*.

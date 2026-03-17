@@ -33,7 +33,7 @@ Vous devez planifier une fenêtre de maintenance des temps d'indisponibilité et
 Cette tâche explique comment utiliser System Manager pour activer un pack de fonctionnalités. Lorsque vous avez terminé, vous devez redémarrer la matrice de stockage.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *Compléments*, sélectionnez *Modifier le pack de fonctionnalités*.
 . Cliquez sur *Parcourir*, puis sélectionnez le fichier de clé.
 +

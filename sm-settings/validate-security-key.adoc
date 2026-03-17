@@ -18,7 +18,7 @@ Vous pouvez valider la clé de sécurité pour vous assurer qu'elle n'a pas ét�
 Cette tâche explique comment valider la clé de sécurité que vous avez créée précédemment. Il s'agit d'une étape importante pour vous assurer que le fichier de clé n'est pas corrompu et que la phrase de passe est correcte, ce qui vous permet d'accéder ultérieurement aux données du lecteur si vous déplacez un lecteur sécurisé d'une matrice de stockage à une autre.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *gestion des clés de sécurité*, sélectionnez *Valider la clé*.
 +
 La boîte de dialogue Valider la clé de sécurité s'ouvre.

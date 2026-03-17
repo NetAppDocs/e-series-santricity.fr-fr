@@ -18,7 +18,7 @@ Vous pouvez modifier les noms de communauté pour les déroutements SNMPv2c.
 Un nom de communauté doit être créé.
 
 .Étapes
-. Sélectionnez menu:Réglage[alertes].
+. Dans le panneau de gauche, sélectionnez menu : Setting[Alerts].
 . Sélectionnez l'onglet *SNMP*.
 +
 Les destinations d'interruption et les noms de communauté apparaissent dans le tableau.

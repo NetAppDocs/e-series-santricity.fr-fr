@@ -22,7 +22,7 @@ Deux tests différents sont exécutés :
 
 
 .Étapes
-. Menu sélection:stockage[mise en miroir synchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Synchronous Mirroring].
 . Sélectionnez la paire symétrique que vous souhaitez tester, puis sélectionnez *Test communication*.
 . Vérifiez les informations affichées dans la fenêtre Résultats et, si nécessaire, suivez les mesures correctives indiquées.
 +

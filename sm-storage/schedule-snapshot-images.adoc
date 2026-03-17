@@ -28,13 +28,13 @@ Vous pouvez également créer un planning de snapshots simultanément pour crée
 .Étapes
 . Effectuez l'une des actions suivantes pour créer un planning de snapshots :
 +
-** Sélectionnez menu:Storage[volumes].
+** Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
 +
 Sélectionnez l'objet (volume ou groupe de cohérence snapshot) pour ce planning de snapshots, puis sélectionnez menu:Services de copie [Créer planning de snapshots].
 
-** Sélectionnez menu:stockage[snapshots].
+** Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 +
-Sélectionnez l'onglet *plannings*, puis cliquez sur *Créer*.
+Sélectionnez l'onglet *Snapsshot schedules*, puis cliquez sur *Créer*.
 
 
 

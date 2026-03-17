@@ -15,10 +15,10 @@ summary: Vous pouvez modifier le nom du cluster hôte ou ajouter ou supprimer de
 Vous pouvez modifier le nom du cluster hôte ou ajouter ou supprimer des hôtes dans un cluster hôte.
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
-. Sélectionnez le cluster hôte à modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
+. Sélectionnez le cluster hôte que vous souhaitez modifier, puis cliquez sur l’icône menu:ellipse [Edit Settings].
 +
-Une boîte de dialogue qui affiche les paramètres actuels du cluster hôte s'affiche.
+Une fenêtre s'affiche, affichant les paramètres actuels du cluster hôte.
 
 . Modifiez les paramètres du cluster hôte selon les besoins.
 +

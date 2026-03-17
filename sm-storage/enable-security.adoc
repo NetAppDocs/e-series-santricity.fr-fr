@@ -27,8 +27,8 @@ Si vous souhaitez utiliser la sécurité des lecteurs, sélectionnez un pool ou 
 Une fois la sécurité terminée, vous pouvez la supprimer uniquement en supprimant le pool ou le groupe de volumes, puis en effaçant les lecteurs.
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
-. Sélectionnez le pool ou le groupe de volumes sur lequel vous souhaitez activer la sécurité, puis cliquez sur menu:More[Enable Security] (Activer la sécurité).
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
+. Sélectionnez le pool ou le groupe de volumes sur lequel vous souhaitez activer la sécurité, puis cliquez sur menu:ellipsis icon[Activer la sécurité].
 +
 La boîte de dialogue confirmer l'activation de la sécurité s'affiche.
 

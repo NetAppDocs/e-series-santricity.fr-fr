@@ -332,7 +332,7 @@ Oui.
 
 
  a| 
-Extension de la capacité (ajoutez de la capacité)
+Extension de capacité (Add capacity)
  a| 
 Oui.
  a| 

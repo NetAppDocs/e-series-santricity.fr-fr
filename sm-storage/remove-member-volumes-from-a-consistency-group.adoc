@@ -18,7 +18,7 @@ Vous pouvez supprimer un volume membre d'un groupe de cohérence Snapshot exista
 Lorsque vous supprimez un volume membre d'un groupe de cohérence de snapshot, System Manager supprime automatiquement les objets de snapshot associés à ce volume membre.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Cliquez sur l'onglet *groupes de cohérence Snapshot*.
 . Développez le groupe de cohérence de snapshot à modifier en sélectionnant le signe plus (+) en regard de celui-ci.
 . Sélectionnez le volume membre que vous souhaitez supprimer, puis cliquez sur *Supprimer*.

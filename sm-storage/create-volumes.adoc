@@ -26,7 +26,7 @@ Le processus de création d'un volume est une procédure à plusieurs étapes.
 Vous créez des volumes pour ajouter de la capacité de stockage à une charge de travail spécifique aux applications et rendre les volumes créés visibles pour un hôte ou un cluster hôte spécifique. En outre, la séquence de création de volumes offre des options permettant d'allouer des quantités spécifiques de capacité à chaque volume que vous souhaitez créer.
 
 .Avant de commencer
-* Les hôtes ou clusters hôtes valides existent sous la mosaïque hôtes.
+* Des hôtes ou des clusters hôtes valides existent sous la page hôtes.
 * Des identifiants de port hôte ont été définis pour l'hôte.
 * Avant de créer un volume DA, la connexion hôte que vous prévoyez d'utiliser doit prendre en charge DA. Si l'une des connexions hôte sur les contrôleurs de votre matrice de stockage ne prend pas en charge DA, les hôtes associés ne peuvent pas accéder aux données sur les volumes DA.
 
@@ -47,10 +47,10 @@ L'affectation d'un volume à un hôte échoue si vous tentez d'attribuer un volu
 
 ====
 .Étapes
-. Sélectionnez menu:Storage[volumes].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
 . Sélectionnez menu:Créer [Volume].
 +
-La boîte de dialogue Créer des volumes s'affiche.
+La page Create Volumes s'affiche.
 
 . Dans la liste déroulante, sélectionnez un hôte ou un cluster hôte spécifique auquel vous souhaitez attribuer des volumes ou choisissez d'affecter ultérieurement l'hôte ou le cluster hôte.
 . Pour continuer la séquence de création du volume pour l'hôte ou le cluster hôte sélectionné, cliquez sur *Suivant* et allez à <<Étape 2 : sélectionnez une charge de travail pour un volume>>.
@@ -88,12 +88,12 @@ Sélectionnez l'une des « autres » entrées si l'application que vous souhaite
 
 
 . Cliquez sur *Suivant*.
-. Si votre charge de travail est associée à un type d'application pris en charge, entrez les informations requises. Sinon, rendez-vous à <<Étape 3 : ajout ou modification de volumes>>.
+. Si votre charge de travail est associée à un type d'application pris en charge, saisissez les informations demandées ; sinon, passez à <<Étape 3 : Ajouter des volumes>>.
 
 
 
 
-== Étape 3 : ajout ou modification de volumes
+== Étape 3 : Ajouter des volumes
 
 System Manager peut suggérer une configuration de volume en fonction de l'application ou du workload sélectionné. Cette configuration de volume est optimisée en fonction du type d'application pris en charge par la charge de travail. Vous pouvez accepter la configuration de volume recommandée ou la modifier si nécessaire. Si vous avez sélectionné l'une des autres applications, vous devez spécifier manuellement les volumes et les caractéristiques que vous souhaitez créer.
 
@@ -102,8 +102,8 @@ System Manager peut suggérer une configuration de volume en fonction de l'appli
 * Le nombre maximal de volumes autorisés dans un groupe de volumes est de 256.
 * Le nombre maximum de volumes autorisé dans un pool dépend du modèle du système de stockage :
 +
-** 2,048 volumes (séries EF600, EF600C et E5700)
-** 1,024 volumes (EF300 et EF300C)
+** 2 048 volumes (EF80, EF600, EF600C et E5700 series)
+** 1 024 volumes (EF50, EF300 et EF300C)
 ** 512 volumes (E4000 et E2800 Series)
 
 
@@ -224,13 +224,13 @@ DA augmente l'intégrité des données dans l'ensemble du système de stockage. 
 
 
  a| 
-Ressource provisionnée (EF300 et EF600 uniquement)
+Ressource provisionnée (EF80, EF50, EF300 et EF600 uniquement)
  a| 
-*Oui* apparaît en regard de "Resource Provisioné" uniquement si les lecteurs prennent en charge cette option. La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d'initialisation en arrière-plan.
+*Oui* apparaît à côté de « Ressource provisionnée » uniquement si les disques prennent en charge cette option. Le provisionnement des ressources est une fonctionnalité disponible dans les baies de stockage EF80, EF50, EF300 et EF600, qui permet aux volumes d'être mis en service immédiatement sans processus d'initialisation en arrière-plan.
 
 |===
 ====
-** *Charge de travail spécifique à une application* -- cliquez sur *Suivant* pour accepter les volumes et les caractéristiques recommandés par le système pour la charge de travail sélectionnée, ou cliquez sur *Modifier les volumes* pour modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système pour la charge de travail sélectionnée.
+** *Charge de travail spécifique à l'application* -- Cliquez sur *Modifier les volumes* pour modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système pour le workload sélectionné.
 +
 .Détails du champ
 [%collapsible]
@@ -266,7 +266,7 @@ Type de volume indique le type de volume créé pour une charge de travail spéc
 
 
  a| 
-Taille de bloc du volume (EF300 et EF600 uniquement)
+Taille des blocs de volume (EF80, EF50, EF300 et EF600 uniquement)
  a| 
 Affiche les tailles de blocs pouvant être créées pour le volume :
 
@@ -317,9 +317,9 @@ DA augmente l'intégrité des données dans l'ensemble du système de stockage. 
 
 
  a| 
-Ressource provisionnée (EF300 et EF600 uniquement)
+Ressource provisionnée (EF80, EF50, EF300 et EF600 uniquement)
  a| 
-*Oui* apparaît en regard de "Resource Provisioné" uniquement si les lecteurs prennent en charge cette option. La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d'initialisation en arrière-plan.
+*Oui* apparaît à côté de « Resource Provisioned » uniquement si les disques prennent en charge cette option. Resource Provisioning est une fonctionnalité disponible sur les baies de stockage EF80, EF50, EF300 et EF600, qui permet une mise en service immédiate des volumes, sans processus d'initialisation en arrière-plan.
 
 |===
 ====
@@ -346,6 +346,6 @@ System Manager crée les nouveaux volumes dans les pools et groupes de volumes s
 * Apportez les modifications nécessaires au système d'exploitation sur l'hôte de l'application afin que les applications puissent utiliser le volume.
 * Exécutez l'utilitaire spécifique au système d'exploitation (disponible auprès d'un fournisseur tiers), puis exécutez la commande SMcli `-identifyDevices` pour mettre en corrélation les noms de volumes avec les noms de matrices de stockage hôte.
 +
-Le SMcli est disponible directement via le Gestionnaire système SANtricity. Cette version téléchargeable de SMcli est disponible sur les contrôleurs E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 et EF280. Pour télécharger le SMcli dans le Gestionnaire système SANtricity, sélectionnez *Paramètres* > *système* et *Add-ons* > *interface de ligne de commande* .
+Le SMcli est disponible directement via le SANtricity System Manager. Cette version téléchargeable du SMcli est disponible sur les contrôleurs EF80, EF50, E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 et EF280. Pour télécharger le SMcli dans le SANtricity System Manager, sélectionnez *Paramètres* > *Système* et *Modules complémentaires* > *Interface de ligne de commande*.
 
 

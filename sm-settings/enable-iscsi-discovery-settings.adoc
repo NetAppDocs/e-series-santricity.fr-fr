@@ -32,7 +32,7 @@ Les paramètres et fonctions iSCSI s'affichent uniquement sur la page Paramètre
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *Paramètres iSCSI*, cliquez sur *Afficher/Modifier les paramètres de découverte de la cible*.
 +
 La boîte de dialogue Paramètres de découverte cible s'affiche. Sous le champ *Activer le serveur iSNS*... , la boîte de dialogue indique si le contrôleur est déjà enregistré.

@@ -18,7 +18,7 @@ Vous pouvez effectuer une inversion de rôle entre les deux volumes d'une paire 
 Vous pouvez rétrograder le volume principal au rôle secondaire ou promouvoir le volume secondaire au rôle principal. Tous les hôtes qui accèdent au volume primaire ont un accès en lecture/écriture au volume. Lorsque le volume primaire devient un volume secondaire, seules les écritures distantes initiées par le contrôleur principal sont écrites sur le volume.
 
 .Étapes
-. Menu sélection:stockage[mise en miroir synchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Synchronous Mirroring].
 . Sélectionnez la paire symétrique contenant les volumes pour lesquels vous souhaitez modifier le rôle, puis sélectionnez menu:More[change Role].
 +
 Le système affiche une confirmation.

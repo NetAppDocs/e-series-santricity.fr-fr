@@ -31,13 +31,13 @@ Gardez à l'esprit les éléments suivants :
 
 Vous pouvez lancer la boîte de dialogue Configuration automatique du pool en utilisant l'une des méthodes suivantes :
 
-* Lorsque la capacité non affectée est détectée, la recommandation de configuration automatique du pool s'affiche sur la page d'accueil de la zone notification. Cliquez sur *Afficher la configuration automatique du pool* pour lancer la boîte de dialogue.
+* Lorsqu'une capacité non attribuée est détectée, la recommandation de configuration automatique du pool s'affiche dans la zone de notifications (icône de cloche en haut de la fenêtre). Cliquez sur *Afficher la configuration automatique du pool* pour ouvrir la boîte de dialogue.
 * Vous pouvez également lancer la boîte de dialogue Configuration automatique du pool à partir de la page pools et groupes de volumes, comme décrit dans la tâche suivante.
 
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
-. Sélectionnez menu:More [lancer la configuration automatique du pool].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
+. Cliquez sur l'icône de menu: ellipsis [Launch pool auto-configuration].
 +
 Le tableau des résultats répertorie les nouveaux pools, les pools existants avec disques ajoutés, ou les deux. Par défaut, un nouveau pool est nommé avec un numéro séquentiel.
 
@@ -51,8 +51,7 @@ System Manager effectue les tâches suivantes :
 ** Ajoute les disques du même type au pool existant, et utilisez les autres types de disques pour créer différents pools si les nouveaux disques sont de types différents.
 
 
-. Pour modifier le nom d'un nouveau pool, cliquez sur l'icône *Modifier* (le crayon).
-. Pour afficher d'autres caractéristiques du pool, placez le curseur sur ou appuyez sur l'icône *Détails* (la page).
+. Pour afficher les caractéristiques supplémentaires du pool, cliquez sur le nom du pool affiché.
 +
 Des informations sur le type de disque, la fonctionnalité de sécurité, l'assurance de données (DA), la protection contre la perte de tiroir et la protection contre la perte de tiroir s'affichent.
 

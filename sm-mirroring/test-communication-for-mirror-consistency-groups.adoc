@@ -27,7 +27,7 @@ Vous pouvez exécuter quatre tests différents :
 
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *groupes de cohérence miroir*, puis sélectionnez le groupe de cohérence miroir que vous souhaitez tester.
 . Sélectionnez *Test communication*.
 +

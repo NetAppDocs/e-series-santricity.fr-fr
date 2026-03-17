@@ -24,7 +24,7 @@ Tenez compte des consignes suivantes lorsque vous créez un hôte :
 
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
 . Cliquez sur menu:Créer [hôte].
 +
 La boîte de dialogue Créer un hôte s'affiche.
@@ -61,7 +61,7 @@ Type d'interface hôte
 
 
  a| 
-Ports hôtes
+Identifiant
  a| 
 Effectuez l'une des opérations suivantes :
 

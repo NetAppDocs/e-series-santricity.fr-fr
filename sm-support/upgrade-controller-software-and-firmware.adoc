@@ -45,7 +45,7 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 ====
 .Étapes
 . Si votre matrice de stockage ne contient qu'un seul contrôleur ou si aucun pilote multivoie n'est installé, arrêtez l'activité d'E/S vers la matrice de stockage pour éviter les erreurs d'application. Si votre baie de stockage est équipée de deux contrôleurs et qu'un pilote multivoie est installé, il n'est pas nécessaire d'arrêter l'activité d'E/S.
-. Sélectionnez menu:support [Upgrade Center].
+. Dans le panneau de gauche, sélectionnez menu : Support [Upgrade Center].
 . Téléchargez le nouveau fichier depuis le site de support vers votre client de gestion.
 +
 .. Cliquez sur *NetApp support* pour lancer le site Web de support.

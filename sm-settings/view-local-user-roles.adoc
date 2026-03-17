@@ -21,7 +21,7 @@ Vous devez être connecté avec un profil utilisateur qui inclut les autorisatio
 Les profils utilisateur et les mappages ne peuvent pas être modifiés. Seuls les mots de passe peuvent être modifiés.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *rôles d'utilisateur local*.
 +
 Les profils utilisateur sont affichés dans le tableau :

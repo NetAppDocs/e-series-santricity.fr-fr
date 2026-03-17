@@ -39,7 +39,7 @@ Le processus permettant de démarrer la restauration d'une image snapshot d'un g
 Vous devez sélectionner les volumes membres à retourner.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *Images snapshot*.
 . Sélectionnez l'image snapshot du groupe de cohérence de snapshot, puis sélectionnez menu:Restauration[Démarrer].
 +
@@ -67,7 +67,7 @@ La boîte de dialogue augmenter la capacité réservée s'affiche.
 
 . Utilisez la case à cocher pour régler le pourcentage de capacité, puis cliquez sur *augmenter*.
 +
-Si la capacité disponible n'existe pas dans le pool ou le groupe de volumes qui contient l'objet de stockage sélectionné et que la baie de stockage dispose de la capacité non affectée, vous pouvez ajouter de la capacité. Vous pouvez créer un nouveau pool ou groupe de volumes et réessayer cette opération en utilisant la nouvelle capacité disponible sur ce pool ou ce groupe de volumes.
+Si la capacité disponible n'existe pas sur le pool ou le groupe de volumes contenant l'objet de stockage que vous avez sélectionné et que la baie de stockage dispose d'une capacité non attribuée, vous pouvez ajouter de la capacité. Vous pouvez créer un nouveau pool ou groupe de volumes et réessayer cette opération en utilisant la nouvelle capacité disponible sur ce pool ou groupe de volumes.
 
 . Cliquez sur *Suivant* et allez à <<Étape 3 : modifier la priorité>>.
 +
@@ -97,6 +97,6 @@ System Manager effectue les actions suivantes :
 
 
 .Une fois que vous avez terminé
-Sélectionnez menu:Accueil[opérations de visualisation en cours] pour afficher la progression de l'opération de retour arrière.
+Sélectionnez le menu : Storage [Operations in Progress] pour afficher la progression de l’opération de rollback.
 
 Si l'opération de restauration n'a pas réussi, l'opération s'interrompt. Vous pouvez reprendre l'opération interrompue et, si l'opération n'a toujours pas abouti, suivre la procédure Recovery Guru pour corriger le problème ou contacter le support technique.

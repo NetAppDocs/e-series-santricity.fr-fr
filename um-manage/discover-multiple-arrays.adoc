@@ -17,7 +17,7 @@ Vous découvrez plusieurs baies pour détecter toutes les baies de stockage dans
 .Avant de commencer
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité.
 * La matrice de stockage doit être correctement installée et configurée.
-* Les mots de passe de la baie de stockage doivent être configurés à l'aide de la mosaïque Access Management de System Manager.
+* Les mots de passe des baies de stockage doivent être configurés à l'aide de la page Access Management de System Manager.
 * Pour résoudre les certificats non approuvés, vous devez disposer de fichiers de certificats approuvés d'une autorité de certification (CA), et les fichiers de certificats sont disponibles sur votre système local.
 
 

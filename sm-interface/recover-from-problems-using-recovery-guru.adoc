@@ -14,8 +14,8 @@ summary: Le gourou de la restauration est un composant de System Manager qui dia
 Le gourou de la restauration est un composant de SANtricity System Manager qui diagnostique les problèmes liés à la baie de stockage et recommande des procédures de restauration pour résoudre les problèmes.
 
 .Étapes
-. Sélectionnez *Accueil*.
-. Cliquez sur le lien *recover from _n_ problemes* dans le centre-haut de la fenêtre.
+. Dans le panneau de gauche, sélectionnez *Home*.
+. Cliquez sur l'icône *Cloche* puis sur le lien intitulé *Récupérer de _n_ problèmes* au centre en haut de la fenêtre.
 +
 La boîte de dialogue Recovery Guru s'affiche.
 
@@ -35,7 +35,6 @@ Si tous les problèmes ont été corrigés, l'icône de la matrice de stockage p
 
 . *Facultatif:* pour enregistrer les informations Recovery Guru dans un fichier, cliquez sur l'icône *Enregistrer*.
 +
-Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur sous le nom `recoveryGuru-failureName-arrayName-yyyy-mm-dd-hh-mm-ss.html`.
 
-. Pour imprimer les informations Recovery Guru, cliquez sur l'icône *Print*.
 

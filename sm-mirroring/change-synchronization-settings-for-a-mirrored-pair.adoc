@@ -18,7 +18,7 @@ Vous pouvez modifier la priorité de synchronisation et la règle de resynchroni
 Vous pouvez modifier les paramètres de synchronisation d'une paire en miroir uniquement sur la matrice de stockage qui contient le volume principal.
 
 .Étapes
-. Menu sélection:stockage[mise en miroir synchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Synchronous Mirroring].
 . Sélectionnez la paire symétrique que vous souhaitez modifier, puis sélectionnez menu:More[Edit settings].
 +
 Le système affiche la boîte de dialogue Afficher/Modifier les paramètres.

@@ -18,7 +18,7 @@ Il est possible de supprimer les groupes de cohérence des miroirs qui ne sont p
 Toutes les paires mises en miroir doivent être supprimées du groupe de cohérence miroir.
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *groupes de cohérence miroir*.
 +
 Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.

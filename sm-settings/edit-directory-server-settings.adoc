@@ -20,7 +20,7 @@ Si vous avez déjà configuré un serveur d'annuaire dans Access Management, vou
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Services Annuaire*.
 . Si plusieurs serveurs sont définis, sélectionnez le serveur que vous souhaitez modifier dans la table.
 . Sélectionnez *Afficher/Modifier les paramètres*.

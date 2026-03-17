@@ -118,7 +118,7 @@ La mise en miroir est configurée dans l'interface SANtricity Unified Manager.
 
 [NOTE]
 ====
-La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF600/EF600C ou EF300/EF300C.
+La mise en miroir synchrone n'est pas disponible sur la baie de stockage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 Pour activer et configurer la mise en miroir entre deux baies, vérifiez les points suivants :
@@ -143,7 +143,7 @@ Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir
 
 [NOTE]
 ====
-La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
+La mise en miroir synchrone n'est pas disponible sur le système de stockage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 Vous créez un groupe de cohérence dans Unified Manager dans l'assistant de création de paires en miroir.

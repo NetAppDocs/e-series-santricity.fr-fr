@@ -18,7 +18,7 @@ Vous pouvez modifier les adresses e-mail des destinataires qui reçoivent des al
 L'adresse e-mail que vous souhaitez modifier doit être définie dans l'onglet E-mail de la page alertes.
 
 .Étapes
-. Sélectionnez menu:Paramètres[alertes].
+. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
 . Sélectionnez l'onglet *E-mail*.
 . Dans le tableau *Email Address*, sélectionnez l'adresse à modifier, puis cliquez sur l'icône *Edit* (crayon) à l'extrême droite.
 +

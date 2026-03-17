@@ -18,7 +18,7 @@ Vous pouvez créer un jeton d'accès pour vous authentifier auprès de l'API RES
 NOTE: Les jetons ne possèdent pas de mots de passe, vous devez donc les gérer avec soin.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Access Tokens*.
 . Sélectionnez *Afficher/Modifier les paramètres de token d'accès*. Dans la boîte de dialogue, assurez-vous que la case à cocher *Activer les jetons d'accès* est sélectionnée. Cliquez sur *Enregistrer* pour fermer la boîte de dialogue.
 . Sélectionnez *Créer un jeton d'accès*.

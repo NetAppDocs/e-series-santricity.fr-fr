@@ -20,7 +20,7 @@ Si nécessaire, vous pouvez importer des certificats pour les baies de stockage 
 
 
 .Étapes
-. Sélectionnez *gestion des certificats*.
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'onglet *approuvé*.
 +
 Cette page affiche tous les certificats signalés pour les matrices de stockage.

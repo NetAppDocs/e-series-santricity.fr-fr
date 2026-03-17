@@ -33,7 +33,7 @@ La phrase de passe pour la sécurité des disques est indépendante du mot de pa
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *gestion des clés de sécurité*, sélectionnez *Créer une clé interne*.
 +
 Si vous n'avez pas encore généré de clé de sécurité, la boîte de dialogue Créer une clé de sécurité s'ouvre.

@@ -30,7 +30,7 @@ Le processus de création d'un volume de snapshot est une procédure en plusieur
 Sélectionnez une image Snapshot d'un volume de base ou d'un groupe de cohérence Snapshot. Si vous sélectionnez une image snapshot de groupe de cohérence, les volumes membres du groupe de cohérence de snapshot s'affichent pour révision.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *Snapshot volumes*.
 . Sélectionnez *Créer*.
 +

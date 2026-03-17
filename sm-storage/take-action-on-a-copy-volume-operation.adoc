@@ -15,7 +15,7 @@ summary: 'Vous pouvez afficher une opération de copie de volume en cours et en 
 Vous pouvez afficher une opération de copie de volume en cours et en cours d'arrêt, modifier la priorité, re-copier ou effacer une opération de copie de volume.
 
 .Étapes
-. Sélectionner menu:Accueil [opérations de visualisation en cours].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Operations in Progress].
 +
 La boîte de dialogue opérations en cours s'affiche.
 

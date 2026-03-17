@@ -29,7 +29,7 @@ Si l'une des connexions hôte sur les contrôleurs de votre matrice de stockage 
 
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
 . Sélectionnez menu:Create[Host Cluster].
 +
 La boîte de dialogue Créer un cluster hôte s'affiche.

@@ -25,12 +25,12 @@ Vous pouvez supprimer un pool ou un groupe de volumes pour renforcer la capacit�
 
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Sélectionnez un pool ou un groupe de volumes dans la liste.
 +
 Vous ne pouvez sélectionner qu'un seul pool ou groupe de volumes à la fois. Faites défiler la liste pour afficher d'autres pools ou groupes de volumes.
 
-. Sélectionnez menu:tâches rares[Supprimer] et confirmez.
+. Sélectionnez menu : icône ellipsis [Supprimer] et confirmez.
 
 
 .Résultats

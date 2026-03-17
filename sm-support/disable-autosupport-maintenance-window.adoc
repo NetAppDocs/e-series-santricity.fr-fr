@@ -15,7 +15,7 @@ summary: 'Désactivez la fenêtre de maintenance AutoSupport pour permettre la c
 Désactivez la fenêtre de maintenance AutoSupport pour permettre la création automatique de tickets lors d'événements d'erreur. Lorsque la fenêtre de maintenance AutoSupport est désactivée, la baie de stockage utilise AutoSupport pour ouvrir un dossier auprès du service de support en cas de problème.
 
 .Étapes
-. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
 . Sélectionnez *Désactiver la fenêtre de maintenance AutoSupport*.
 . Saisissez l'adresse e-mail pour recevoir une confirmation du traitement de la demande de désactivation de la fenêtre de maintenance.
 +

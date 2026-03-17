@@ -29,7 +29,7 @@ Vous ne pouvez pas arrêter le processus d'activation après son démarrage.
 
 ====
 .Étapes
-. Sélectionnez menu:support [Upgrade Center].
+. Dans le panneau de gauche, sélectionnez menu : Support [Upgrade Center].
 . Dans la zone mise à niveau du logiciel du contrôleur SANtricity OS, cliquez sur *Activer* et confirmez que vous souhaitez effectuer l'opération.
 +
 Vous pouvez annuler l'opération pendant le contrôle d'état de pré-mise à niveau, mais pas pendant l'activation.

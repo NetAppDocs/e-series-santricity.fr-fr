@@ -14,7 +14,7 @@ summary: La page matériel fournit des fonctions de tri et de filtrage qui facil
 La page matériel fournit des fonctions de tri et de filtrage qui facilitent la recherche des composants.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Utilisez les fonctions décrites dans le tableau suivant pour afficher les composants matériels.
 
 

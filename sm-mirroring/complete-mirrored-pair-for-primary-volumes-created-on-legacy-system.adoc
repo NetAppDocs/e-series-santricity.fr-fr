@@ -22,7 +22,7 @@ Vous pouvez réaliser une mise en miroir asynchrone entre les baies existantes q
 
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *paire symétrique*.
 +
 Le tableau paires mises en miroir apparaît et affiche toutes les paires mises en miroir associées à la matrice de stockage.

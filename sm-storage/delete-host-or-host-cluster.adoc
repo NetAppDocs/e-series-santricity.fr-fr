@@ -23,8 +23,8 @@ Suivez les consignes ci-dessous lorsque vous supprimez un hôte ou un cluster h�
 
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
-. Sélectionnez l'hôte ou le cluster hôte que vous souhaitez supprimer, puis cliquez sur *Supprimer*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
+. Sélectionnez l'hôte ou le cluster d'hôtes que vous souhaitez supprimer, puis cliquez sur menu:ellipse icon[Supprimer].
 +
 La boîte de dialogue de confirmation s'affiche.
 

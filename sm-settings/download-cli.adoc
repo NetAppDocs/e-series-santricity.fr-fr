@@ -20,7 +20,7 @@ La CLI fournit une méthode de configuration et de contrôle des matrices de sto
 Un environnement d'exécution Java (JRE), version 8 et supérieure, doit être disponible sur le système de gestion dans lequel vous prévoyez d'exécuter les commandes CLI.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *Add-ons*, sélectionnez *Command Line interface*.
 +
 Le package ZIP est téléchargé dans le navigateur.

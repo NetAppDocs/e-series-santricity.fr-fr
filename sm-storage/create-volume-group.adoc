@@ -33,7 +33,7 @@ Avant de créer un groupe de volumes, consultez les instructions suivantes :
 
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Cliquez sur menu:Créer [Groupe de volumes].
 +
 La boîte de dialogue Créer un groupe de volumes s'affiche.
@@ -132,9 +132,9 @@ Un groupe de volumes peut contenir des disques compatibles DA ou non DA, mais to
 
 
  a| 
-Fonctionnalité de provisionnement des ressources (EF300 et EF600 uniquement)
+Resource Provisioning Capable (EF80, EF50, EF300 et EF600 uniquement)
  a| 
-Indique si l'approvisionnement des ressources est disponible pour ce groupe. La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d'initialisation en arrière-plan.
+Indique si l'allocation de ressources est disponible pour ce groupe. L'allocation de ressources est une fonctionnalité disponible sur les baies de stockage EF80, EF50, EF300 et EF600, qui permet une mise en service immédiate des volumes, sans processus d'initialisation en arrière-plan.
 
 
 
@@ -273,9 +273,9 @@ Affiche les tailles de blocs pouvant être créées pour les volumes du groupe :
 
 
  a| 
-Fonctionnalité de provisionnement des ressources (EF300 et EF600 uniquement)
+Resource Provisioning Capable (EF80, EF50, EF300 et EF600 uniquement)
  a| 
-Indique si l'approvisionnement des ressources est disponible pour ce groupe. La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d'initialisation en arrière-plan.
+Indique si l'allocation de ressources est disponible pour ce groupe. L'allocation de ressources est une fonctionnalité disponible sur les baies de stockage EF80, EF50, EF300 et EF600, qui permet une mise en service immédiate des volumes, sans processus d'initialisation en arrière-plan.
 
 |===
 ====

@@ -15,7 +15,7 @@ summary: 'Si une erreur se produit lors d"une opération de restauration d"image
 Si une erreur se produit lors d'une opération de restauration d'image instantanée, l'opération est automatiquement interrompue. Vous pouvez reprendre une opération de retour arrière en pause.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Cliquez sur l'onglet *Images snapshot*.
 . Mettez en surbrillance le retour arrière suspendu, puis sélectionnez menu:Retour arrière[reprise].
 +

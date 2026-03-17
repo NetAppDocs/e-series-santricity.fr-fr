@@ -43,12 +43,12 @@ Vous pouvez effectuer les opérations suivantes :
 
 
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Sélectionnez un volume, puis sélectionnez menu:autres [Modifier les paramètres de numérisation multimédia].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Cliquez sur l’icône de menu: ellipsis [Change volume media scan settings].
 +
-La boîte de dialogue Modifier les paramètres de numérisation de supports de lecteur s'affiche. Tous les volumes de la matrice de stockage s'affichent dans cette boîte de dialogue.
+La fenêtre « Modifier les paramètres d'analyse du support de stockage » s'affiche. Tous les volumes de la baie de stockage apparaissent dans cette boîte de dialogue.
 
-. Pour activer la numérisation de supports, cochez la case *Numériser le support au cours de...*.
+. Pour activer l'analyse du support, cochez la case à cocher *Media scan*.
 +
 La désactivation de la case à cocher analyse du support suspend tous les paramètres de numérisation du support.
 

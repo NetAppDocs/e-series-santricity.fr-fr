@@ -41,8 +41,11 @@ L'exécution immédiate d'une vérification de redondance sur le même pool ou g
 
 ====
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
-. Sélectionner le menu:tâches rares[vérifier la redondance du volume].
+
+NOTE: La fonction Check Volume Redundancy n'est actuellement disponible que pour les opérations dans l'interface Legacy System Manager.
+
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
+. Cliquez sur l’icône de menu : ellipsis [Check volume redundancy] pour le pool ou le groupe de volumes que vous souhaitez vérifier.
 +
 La boîte de dialogue vérifier la redondance s'affiche.
 

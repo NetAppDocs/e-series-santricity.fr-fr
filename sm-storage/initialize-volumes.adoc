@@ -41,8 +41,8 @@ Les types de volumes suivants _ne peuvent pas_ être initialisés :
 Cette rubrique s'applique uniquement aux volumes standard créés à partir de pools ou de groupes de volumes.
 
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Sélectionnez un volume, puis sélectionnez menu:More[Initialize volumes].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Cliquez sur l’icône de menu : ellipsis [Initialize volumes].
 +
 La boîte de dialogue initialiser les volumes s'affiche. Tous les volumes de la matrice de stockage s'affichent dans cette boîte de dialogue.
 
@@ -56,4 +56,4 @@ System Manager effectue les actions suivantes :
 * Efface les index de blocs, ce qui entraîne la lecture de blocs non écrits comme s'ils sont remplis à zéro (le volume semble complètement vide).
 
 
-Sélectionnez menu:Accueil[Afficher les opérations en cours] pour afficher la progression de l'opération d'initialisation en cours pour le volume sélectionné. Cette opération peut être longue et peut affecter les performances du système.
+Sélectionnez le menu : Storage[Operations in Progress] pour afficher la progression de l’opération d’initialisation en cours sur le volume sélectionné. Cette opération peut être longue et pourrait affecter les performances du système.

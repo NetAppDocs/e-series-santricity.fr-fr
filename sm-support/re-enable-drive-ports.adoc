@@ -15,7 +15,7 @@ summary: Vous pouvez indiquer au contrôleur que des mesures correctives ont ét
 Vous pouvez indiquer au contrôleur que des mesures correctives ont été prises pour récupérer un problème de câblage.
 
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
 . Sélectionnez *réactiver les ports de lecteur* et confirmez que vous souhaitez effectuer l'opération.
 +
 Cette option s'affiche uniquement lorsque la matrice de stockage a désactivé les ports de lecteur.

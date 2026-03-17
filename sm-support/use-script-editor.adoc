@@ -1,0 +1,213 @@
+---
+permalink: sm-support/use-script-editor.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
+summary: Utilisez le Script editor pour créer ou modifier un fichier de script, enregistrer un fichier de script sur le disque local de la station de gestion du stockage ou charger un fichier de script depuis le disque. 
+---
+= Utilisation de l'éditeur de script
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez le Script editor pour créer ou modifier un fichier de script, enregistrer un fichier de script sur le disque local de la station de gestion du stockage ou charger un fichier de script depuis le disque.
+
+.Avant de commencer
+L'éditeur de scripts communique avec la baie de stockage pour permettre la vérification de la syntaxe des scripts et l'exécution des commandes. Les commandes de script saisies dans l'éditeur de scripts sont généralement exécutées sur la baie de stockage.
+
+L'éditeur de script propose deux affichages dans la fenêtre :
+
+* Volet Editor – Fournit une zone pour la saisie ou la modification des commandes de script.
+* Volet de sortie – Affiche les résultats de vérification ou d'exécution. Une barre de séparation divise la fenêtre entre le volet d'édition et le volet de sortie.
+* L'éditeur de scripts ne prend pas en charge les commandes nécessitant des fichiers d'entrée, tels que les mises à jour du firmware du contrôleur, de la NVSRAM ou du firmware du disque.
+* L'éditeur de scripts prend en charge les commandes qui génèrent des fichiers de sortie.
+* Il existe quelques commandes qui nécessitent une exécution côté client (commandes côté client).
++
+** Les seules commandes côté client prises en charge pour cette version sont  `on error stop` et  `on error continue`.
+** L'éditeur de script génère une erreur si vous tentez d'exécuter toute autre commande côté client.
+
+
+
+
+
+
+== Ouvrez l'éditeur de script
+
+.Étapes
+. Dans le panneau de gauche, sélectionnez menu:Support[Script editor].
++
+Le tableau suivant répertorie les options de fichier disponibles dans le Script editor :
+
++
+.Détails du champ
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Tâche | Action 
+
+
+ a| 
+Ouvrez un nouveau script
+ a| 
+.. Cliquez sur *Charger un fichier de script* pour importer un fichier de script existant dans l'éditeur de script.
++
+L'éditeur de script ouvre le fichier de script sélectionné dans le volet de l'éditeur.
+
+
+
+
+
+ a| 
+Vérifiez la syntaxe de la commande du script
+ a| 
+.. Cliquez sur *Vérification de la syntaxe* pour vérifier la syntaxe du script actuel dans le volet de l'éditeur.
++
+L'éditeur de script analyse les instructions du fichier de script, une ligne à la fois, et vérifie qu'elles ont la syntaxe correcte. Toute erreur de syntaxe apparaît dans le volet de sortie, qui indique le numéro de la ligne de l'erreur et une description de l'erreur.
+
++
+Si le Script editor rencontre une erreur de syntaxe, aucune autre vérification de syntaxe n'est effectuée sur le script.
+
++
+Corrigez les erreurs de syntaxe et relancez *Vérification de la syntaxe* pour valider la correction des erreurs et vérifier le reste des instructions dans le script.
+
+
+
+
+
+ a| 
+Exécuter le script
+ a| 
+.. Cliquez sur *Exécuter le script* pour exécuter le script actuel dans le volet de l'éditeur.
++
+L'éditeur de script lance une opération de vérification de la syntaxe, puis pour chaque commande de script du fichier d'entrée, une exécution de commande est effectuée sur le contrôleur de la baie de stockage.
+
++
+Si le Script editor rencontre une erreur de syntaxe, il interrompt l'exécution et affiche un message d'erreur.
+
++
+Corrigez l'erreur et relancez *Syntax check* pour valider la correction de l'erreur.
+
++
+
+NOTE: Si une erreur d'exécution se produit, le script peut ne pas continuer à s'exécuter selon l'instruction de script  `On Error` incluse. L'instruction  `On Error Stop` arrête le script si une erreur d'exécution est rencontrée. L'instruction  `On Error
+Continue` permet au script de continuer même après qu'une erreur d'exécution a été rencontrée. Cette instruction est le paramètre par défaut.
+
+
+
+
+
+ a| 
+Modifier un script existant
+ a| 
+.. Cliquez sur *Charger un fichier de script* pour importer un fichier de script existant dans l'éditeur de script.
+.. Dans le panneau de l'éditeur, apportez les modifications nécessaires au script.
+
+
+
+
+ a| 
+Enregistrez le script dans un fichier local
+ a| 
+.. Cliquez sur *Enregistrer le fichier de script* pour télécharger les modifications dans le volet de script en tant que nouveau fichier de script.
+
+
+
+
+ a| 
+Effacez le texte dans le volet de l'éditeur de script
+ a| 
+.. Cliquez sur *Effacer l'éditeur* pour effacer le texte dans le volet de l'éditeur.
+
+
+
+
+ a| 
+Enregistrez les résultats de sortie dans un fichier local
+ a| 
+.. Cliquez sur *Enregistrer les résultats* pour télécharger le contenu du volet de sortie en tant que nouveau fichier.
+
+
+|===
+====
+
+
+
+
+=== Rédigez des scripts dans l'éditeur de scripts
+
+.Avant de commencer
+Lorsque vous utilisez l'éditeur de script pour écrire des commandes de script, veillez à respecter les consignes suivantes : * Terminez toutes les instructions par un point-virgule (;). * Séparez chaque commande de base et ses paramètres principaux et secondaires par un espace. * Les paramètres ne sont pas sensibles à la casse lorsqu'ils sont saisis dans l'éditeur de script. * Placez chaque instruction sur une ligne distincte. * Ajoutez des commentaires à vos scripts pour faciliter la compréhension de l'objectif des instructions de commande, pour vous comme pour les utilisateurs ultérieurs.
+
+.Étapes
+. Entourez les commentaires multilignes avec les caractères  `/*` et  `*/`.
++
+Si le moteur de script ne trouve pas à la fois une notation de commentaire de début et une notation de commentaire de fin, un message d'erreur apparaît et l'exécution du script est terminée.
+
+. Commencez les commentaires sur une seule ligne par deux barres obliques (`//`) et terminez-les par un caractère de fin de ligne, que vous pouvez insérer en appuyant sur *Enter*.
++
+Si le moteur de script ne trouve pas de caractère de fin de ligne dans le script après le traitement d'un commentaire, un message d'erreur apparaît et l'exécution du script est interrompue.
+
++
+Cette erreur se produit généralement lorsqu'un commentaire est placé à la fin d'un script et que vous avez oublié d'appuyer sur *Entrée*.
+
+. Utilisez l' `show`instruction pour intégrer des commentaires dans un script qui apparaîtront dans le volet de l’éditeur lors de l’exécution du script.
++
+L' `show`instruction est utile pour le débogage de scripts.
+
++
+L'inclusion d'une  `show setting controller mode` statement dans votre script entraîne l'affichage de la ligne suivante dans le volet de sortie lorsque cette ligne est traitée lors de l'exécution du script :
+
++
+[listing]
+----
+setting controller mode
+----
+
+
+
+
+=== Interpréter les résultats d'exécution du script
+
+Lors de l'exécution du script, des messages apparaissent dans le volet de sortie commençant par :
+
+[listing]
+----
+Executing script...
+----
+Si une erreur survient lors de la phase d'analyse, l'erreur apparaît dans le volet de sortie, qui fournit le numéro de ligne, le numéro de colonne et une description de l'erreur de syntaxe. L'exemple suivant est un message d'erreur de syntaxe.
+
+Si vous saisissez l'instruction suivante dans un script :
+
+`set controller[a] mod = passive;`
+
+Le volet de sortie affiche l'erreur de syntaxe résultante comme suit :
+
+[listing]
+----
+Encountered "mod" at line 2, column 19
+Was expecting one of...
+"mode"...
+"availability"...
+"NVSRAMbyte"...
+----
+Si une erreur survient lors de l'exécution d'un script, un message apparaît dans le volet de sortie, indique que la commande a échoué et signale une description de l'erreur.
+
+Par exemple, si vous saisissez l'instruction suivante dans un script :
+
+`set volume [three] userLabel="OneOne";`
+
+L'erreur résultante s'affiche dans le volet de sortie suivant. La commande n'a pas pu être envoyée à la baie de stockage car elle était dans un état non réactif.
+
+[listing]
+----
+Unable to change the volume user label using the Set Volume command at line 1
+Error - 1 - Could not communicate with the storage array to complete this request.
+----
+
+NOTE: Certaines erreurs d'exécution, notamment l'impossibilité de communiquer avec la baie de stockage, entraînent systématiquement l'arrêt de l'exécution du script. Dans ces cas, l'exécution s'interrompt même si vous utilisez la déclaration  `On Error Continue`.
+
+.Résultats
+Après avoir exécuté un script, examinez le volet de sortie pour vérifier la réussite ou les erreurs.

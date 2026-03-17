@@ -15,7 +15,7 @@ summary: Vous pouvez supprimer le serveur de messagerie précédemment défini a
 Vous pouvez supprimer le serveur de messagerie précédemment défini afin que les alertes ne soient plus envoyées aux adresses électroniques, ou vous pouvez supprimer des adresses électroniques individuelles.
 
 .Étapes
-. Sélectionnez menu:Paramètres[alertes].
+. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
 . Sélectionnez l'onglet *E-mail*.
 . Dans le tableau, effectuez l'une des opérations suivantes :
 +

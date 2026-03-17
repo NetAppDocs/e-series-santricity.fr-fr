@@ -40,7 +40,7 @@ Cette opération _n'enregistre pas_ ces paramètres :
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sélectionnez *Enregistrer la configuration de la matrice de stockage*.
 . Sélectionnez les éléments de la configuration à enregistrer :
 +

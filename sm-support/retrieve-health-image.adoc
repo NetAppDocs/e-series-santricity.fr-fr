@@ -25,7 +25,7 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 
 ====
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
 . Sélectionnez *Retrieve Health image*.
 +
 Pour consulter la taille de l'image d'état de santé avant de télécharger le fichier, reportez-vous à la section Détails.

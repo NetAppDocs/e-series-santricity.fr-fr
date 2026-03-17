@@ -20,8 +20,8 @@ Si votre contrôleur inclut un port iser sur InfiniBand, vous pouvez configurer 
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
-. Sous *iser sur les paramètres InfiniBand*, sélectionnez *configurer iser sur les ports InfiniBand*.
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
+. Sous *paramètres iSER*, sélectionnez *Configurer iSER sur les ports InfiniBand*.
 . Cliquez sur le contrôleur avec le port iser sur InfiniBand que vous souhaitez configurer. Cliquez sur *Suivant*.
 . Dans la liste déroulante, sélectionnez le port HIC que vous souhaitez configurer, puis entrez l'adresse IP de l'hôte.
 . Cliquez sur *Terminer*.

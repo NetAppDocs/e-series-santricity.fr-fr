@@ -20,7 +20,7 @@ Vous pouvez enregistrer un certificat pour un serveur de gestion des clés sur v
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'onglet *gestion des clés*.
 . Dans le tableau, sélectionnez le certificat à exporter, puis cliquez sur *Exporter*.
 +

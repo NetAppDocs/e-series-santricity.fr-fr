@@ -23,12 +23,12 @@ Vous ne pouvez pas modifier le niveau RAID d'un pool via l'interface System Mana
 
 ====
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
-. Sélectionnez le pool à modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
+. Sélectionnez le pool que vous souhaitez modifier, puis cliquez sur l’icône de menu : ellipsis icon[Edit Settings].
 +
-La boîte de dialogue Pool Setting s'affiche.
+La fenêtre Modifier les paramètres du pool apparaît.
 
-. Sélectionnez l'onglet *Paramètres*, puis modifiez les paramètres de pool selon vos besoins.
+. Modifiez les paramètres du pool selon vos besoins.
 +
 .Détails du champ
 [%collapsible]

@@ -47,7 +47,7 @@ Une fois que vous avez réinstallé des disques sécurisés dans une autre baie,
 Si d'autres lecteurs sécurisés sont installés dans la nouvelle matrice de stockage, ils peuvent utiliser une clé de sécurité différente de celle que vous importez. Pendant le processus d'importation, l'ancienne clé de sécurité est utilisée uniquement pour déverrouiller les données des lecteurs que vous installez. Lorsque le processus de déverrouillage réussit, les disques nouvellement installés sont de nouveau inscrits sur la clé de sécurité de la baie de stockage cible.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *gestion des clés de sécurité*, sélectionnez *Créer une clé externe*.
 . Complétez l'assistant avec les informations de connexion et les certificats préalables.
 . Cliquez sur *Tester la communication* pour vous assurer de l'accès au serveur de gestion des clés externe.

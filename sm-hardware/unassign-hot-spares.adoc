@@ -20,7 +20,7 @@ Le disque de secours doit être en état optimal, Veille.
 Vous ne pouvez pas annuler l'affectation d'un disque de secours qui prend actuellement le relais pour un disque défectueux. Si le disque de secours n'est pas à l'état optimal, suivez les procédures Recovery Guru pour corriger les problèmes avant de tenter d'annuler l'affectation du disque.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
 +
 Le graphique change pour afficher les disques au lieu des contrôleurs.

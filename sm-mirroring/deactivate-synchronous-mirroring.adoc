@@ -18,7 +18,7 @@ Vous pouvez désactiver la fonction de mise en miroir synchrone sur une matrice 
 Vous devez avoir supprimé toutes les relations de miroir synchrone. Vérifiez que toutes les paires mises en miroir ont été supprimées de la matrice de stockage.
 
 .Étapes
-. Menu sélection:stockage[mise en miroir synchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Synchronous Mirroring].
 . Sélectionner menu:tâches rares[Désactiver].
 +
 Le système affiche une confirmation.

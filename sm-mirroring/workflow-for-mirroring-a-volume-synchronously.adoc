@@ -15,7 +15,7 @@ Vous configurez la mise en miroir synchrone à l'aide du workflow suivant.
 
 [NOTE]
 ====
-Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
+Cette fonctionnalité n'est pas disponible sur le système de stockage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 . Effectuer la configuration initiale dans Unified Manager :

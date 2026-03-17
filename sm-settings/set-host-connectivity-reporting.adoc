@@ -23,7 +23,7 @@ La désactivation du reporting sur la connectivité hôte désactive également 
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Faites défiler jusqu'à *Additional Settings*, puis cliquez sur *Enable/Disable Host Connectivity Reporting*.
 +
 Le texte en dessous de cette option indique si elle est actuellement activée ou désactivée.

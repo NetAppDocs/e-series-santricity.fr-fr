@@ -43,8 +43,8 @@ Tous les volumes non affectés sont affichés pendant cette tâche, mais les fon
 
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
-. Sélectionnez l'hôte ou le cluster hôte auquel vous souhaitez affecter des volumes, puis cliquez sur *attribuer des volumes*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
+. Sélectionnez l'hôte ou le cluster d'hôtes auquel vous souhaitez attribuer des volumes, puis cliquez sur le menu : icône ellipse [Assign Volumes].
 +
 Une boîte de dialogue s'affiche et répertorie tous les volumes pouvant être affectés. Vous pouvez trier n'importe quelle colonne ou saisir quelque chose dans la case *Filter* pour faciliter la recherche de volumes particuliers.
 

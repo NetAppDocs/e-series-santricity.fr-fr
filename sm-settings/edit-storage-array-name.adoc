@@ -15,7 +15,7 @@ summary: 'Vous pouvez modifier le nom de la baie de stockage qui s"affiche dans 
 Vous pouvez modifier le nom de la baie de stockage qui s'affiche dans la barre de titre de SANtricity System Manager.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *général*, recherchez le champ *Nom:*.
 +
 Si aucun nom de matrice de stockage n'a été défini, ce champ affiche « Inconnu ».

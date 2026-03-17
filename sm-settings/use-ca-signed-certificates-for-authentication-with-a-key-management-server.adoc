@@ -30,7 +30,7 @@ Vous devez d'abord générer un fichier de requête de signature de certificat (
 NOTE: Les fichiers CSR générés en externe via des paires de clés privées et publiques peuvent être importés via la boîte de dialogue Créer une clé de sécurité externe. Pour plus d'informations sur l'importation d'un fichier CSR généré en externe, reportez-vous à la section https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Étape 2 : importation de certificats pour le serveur de gestion des clés"].
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Dans l'onglet Key Management, sélectionnez *Complete CSR*.
 . Saisissez les informations suivantes :
 +
@@ -72,7 +72,7 @@ Pour plus d'informations sur le certificat du serveur, consultez la documentatio
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Dans l'onglet gestion des clés, sélectionnez *Importer*.
 +
 Une boîte de dialogue s'ouvre pour importer les fichiers de certificat.

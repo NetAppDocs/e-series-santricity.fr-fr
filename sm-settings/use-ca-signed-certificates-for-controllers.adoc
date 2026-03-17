@@ -37,7 +37,7 @@ Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que Ope
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Dans l'onglet Array Management, sélectionnez *Complete CSR*.
 +
 [NOTE]
@@ -114,7 +114,7 @@ Une fois que vous avez reçu des certificats signés de l'autorité de certifica
 
 
 .Étapes
-. Menu sélection:Paramètres[certificats]
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates]
 . Dans l'onglet gestion des baies, sélectionnez *Importer*.
 +
 Une boîte de dialogue s'ouvre pour importer le(s) fichier(s) de certificat.

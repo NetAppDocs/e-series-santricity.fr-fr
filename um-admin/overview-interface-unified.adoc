@@ -33,7 +33,7 @@ Vous pouvez accéder aux fonctionnalités et fonctions de Unified Manager à par
  a| 
 Gérez
  a| 
-Découvrez les baies de stockage de votre réseau, lancez SANtricity System Manager pour une baie, importez les paramètres d'une baie à plusieurs baies et gérez les groupes de baies. Cochez les cases en regard des noms de tableau pour effectuer des opérations sur ces derniers, telles que l'importation de paramètres et la création de groupes de matrices. Les points de suspension à la fin de chaque ligne fournissent un menu en ligne pour les opérations sur un tableau unique, comme le renommer.
+Découvrez les baies de stockage de votre réseau, lancez SANtricity System Manager pour une baie, importez les paramètres d'une baie vers plusieurs baies et gérez les groupes de baies. Cochez les cases à côté des noms des baies pour effectuer des opérations sur celles-ci, telles que l'importation de paramètres et la création de groupes de baies. Les points de suspension à la fin de chaque ligne fournissent un menu en ligne pour les opérations sur une seule baie, comme son renommage.
 
 
 
@@ -79,7 +79,7 @@ En haut à droite de l'interface, vous pouvez accéder à l'aide et à d'autres 
 
 == Identifiants de connexion et mots de passe des utilisateurs
 
-L'utilisateur actuel connecté au système s'affiche en haut à droite de l'interface.
+L'utilisateur actuellement connecté au système est affiché dans les paramètres utilisateur.
 
 Pour plus d'informations sur les utilisateurs et les mots de passe, voir :
 

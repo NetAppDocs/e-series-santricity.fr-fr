@@ -35,32 +35,10 @@ Si un groupe de volumes possède des zones de capacité libre, le graphique de g
 En consolidant la capacité disponible, vous pouvez créer des volumes supplémentaires à partir de la capacité maximale disponible dans un groupe de volumes. Vous pouvez consolider la capacité disponible existante sur un groupe de volumes sélectionné à l'aide de l'une des méthodes suivantes :
 
 * Lorsqu'au moins une zone de capacité libre est détectée pour un groupe de volumes, la recommandation « consolider la capacité libre » s'affiche sur la page d'accueil de la zone notification. Cliquez sur le lien *consolider la capacité libre* pour lancer la boîte de dialogue.
-* Vous pouvez également sélectionner menu:pools et groupes de volumes[tâches rares > consolider la capacité libre du groupe de volumes] pour lancer la boîte de dialogue.
+* Vous pouvez également accéder au menu : Storage [Pools and volume groups] depuis le panneau de gauche, puis sélectionner l’icône menu : ellipsis icon [Consolidate volume group free capacity] pour ouvrir la boîte de dialogue.
 
 
 Si vous souhaitez utiliser une zone de capacité libre spécifique plutôt que la plus grande zone de capacité libre, utilisez l'interface de ligne de commande (CLI).
-
-
-
-== Comment les charges de travail sélectionnées affectent-elles la création du volume ?
-
-Lors de la création de volume, vous êtes invité à fournir des informations sur l'utilisation d'un workload. Le système utilise ces informations pour créer une configuration de volume optimale, qui peut être modifiée selon les besoins. Vous pouvez également ignorer cette étape dans la séquence de création du volume.
-
-Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
-
-* *Spécifique à l'application* -- lorsque vous créez des volumes à l'aide d'une charge de travail spécifique à l'application, le système peut recommander une configuration de volume optimisée pour minimiser les conflits entre les E/S de la charge de travail de l'application et tout autre trafic à partir de votre instance d'application. Les caractéristiques de volume comme le type d'E/S, la taille de segment, la propriété des contrôleurs et le cache de lecture et d'écriture sont automatiquement recommandées et optimisées pour les charges de travail créées pour les types d'applications suivants.
-+
-** Microsoft® SQL Server™
-** Microsoft® Exchange Server™
-** Applications de vidéosurveillance
-** VMware ESXi™ (pour les volumes à utiliser avec le système de fichiers de machine virtuelle)
-+
-Vous pouvez revoir la configuration de volume recommandée et modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.
-
-
-
-* *Autre* (ou applications sans support de création de volume spécifique) -- D'autres charges de travail utilisent une configuration de volume que vous devez spécifier manuellement lorsque vous souhaitez créer un workload non associé à une application spécifique ou si aucune optimisation n'est intégrée à l'application que vous prévoyez d'utiliser sur la baie de stockage. Vous devez spécifier manuellement la configuration du volume à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.
-
 
 
 
@@ -81,18 +59,6 @@ Cette charge de travail se compose d'un groupe de volumes créés à l'aide de l
 Les caractéristiques de volume de votre charge de travail spécifique à l'application déterminent la façon dont la charge de travail interagit avec les composants de votre baie de stockage et vous aident à déterminer les performances de votre environnement dans une configuration donnée.
 
 Une application peut être utilisée comme un logiciel tel que SQL Server ou Exchange. Vous définissez une ou plusieurs charges de travail pour prendre en charge chaque application.
-
-
-
-== Comment fournir ces informations aide-t-il à créer du stockage ?
-
-Les informations relatives à la charge de travail permettent d'optimiser les caractéristiques des volumes, comme le type d'E/S, la taille de segment et le cache de lecture/écriture pour la charge de travail sélectionnée. Ces caractéristiques optimisées déterminent la façon dont votre charge de travail interagit avec les composants d'une baie de stockage.
-
-En fonction des informations que vous fournissez sur les charges de travail, System Manager crée les volumes appropriés et les place sur les pools ou groupes de volumes disponibles sur le système. Le système crée les volumes et optimise leurs caractéristiques en fonction des meilleures pratiques actuelles pour la charge de travail que vous avez sélectionnée.
-
-Avant de terminer la création de volumes pour une charge de travail donnée, vous pouvez vérifier la configuration de volume recommandée et modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système à l'aide de la boîte de dialogue Ajouter/Modifier des volumes.
-
-Consultez la documentation spécifique à votre application pour obtenir des informations sur les bonnes pratiques.
 
 
 

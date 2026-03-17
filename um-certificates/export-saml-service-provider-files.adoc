@@ -23,7 +23,7 @@ Si nécessaire, vous pouvez exporter les métadonnées du fournisseur de service
 Cette tâche permet d'exporter des métadonnées à partir du contrôleur. L'IDP a besoin de ces métadonnées pour établir une relation de confiance avec le contrôleur et pour traiter les demandes d'authentification. Le fichier inclut des informations telles que le nom de domaine du contrôleur ou l'adresse IP que le IDP peut utiliser pour envoyer des demandes.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *SAML*.
 . Sélectionnez *Exporter*.
 +

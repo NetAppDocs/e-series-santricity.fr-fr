@@ -29,7 +29,7 @@ Les fichiers de prise en charge de la récupération incluent les types de fichi
 
 
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
 . Sélectionnez *récupérer les fichiers de support de récupération*.
 +
 Une boîte de dialogue répertorie tous les fichiers de support de récupération que votre matrice de stockage a collectés. Pour rechercher des fichiers particuliers, vous pouvez trier n'importe quelle colonne ou saisir des caractères dans la zone *Filter*.

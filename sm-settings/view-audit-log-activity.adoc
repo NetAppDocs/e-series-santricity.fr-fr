@@ -18,7 +18,7 @@ En affichant les journaux d'audit, les utilisateurs disposant d'autorisations d'
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet **Journal d'audit**.
 +
 L'activité du journal d'audit s'affiche sous forme de tableau, qui contient les colonnes d'informations suivantes :

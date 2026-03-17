@@ -35,7 +35,7 @@ Vous ne pouvez pas annuler l'opération Effacer le mode de récupération après
 
 ====
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
 . Sélectionnez *Effacer le mode de récupération* et confirmez que vous souhaitez effectuer cette opération.
 +
 Cette option apparaît uniquement si la matrice de stockage est en mode de récupération.

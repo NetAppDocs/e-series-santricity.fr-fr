@@ -18,11 +18,11 @@ Vous pouvez modifier les paramètres d'un volume de membres d'un groupe de cohé
 La modification des paramètres de capacité réservée pour un volume membre individuel modifie également les paramètres de capacité réservée pour tous les volumes membres associés à un groupe de cohérence.
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Cliquez sur l'onglet *capacité réservée*.
-. Sélectionnez le volume membre du groupe de cohérence que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Sélectionnez le volume membre du groupe de cohérence que vous souhaitez modifier, puis cliquez sur l’icône de menu : ellipse [Modifier les paramètres].
 +
-La boîte de dialogue Paramètres de capacité réservée du volume membre s'affiche.
+La fenêtre « Modifier le volume des membres du groupe de cohérence » s'affiche.
 
 . Modifiez les paramètres de capacité réservée pour le volume membre selon les besoins.
 +
@@ -35,9 +35,9 @@ La boîte de dialogue Paramètres de capacité réservée du volume membre s'aff
 
 
  a| 
-M'avertir lorsque...
+Seuil d'alerte de capacité réservée atteinte
  a| 
-Utilisez la case à cocher pour régler le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'un volume membre est presque pleine.
+Utilisez la barre pour ajuster le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée pour un volume membre est presque pleine.
 
 Lorsque la capacité réservée du volume membre dépasse le seuil spécifié, System Manager envoie une alerte pour augmenter la capacité réservée ou supprimer des objets inutiles.
 

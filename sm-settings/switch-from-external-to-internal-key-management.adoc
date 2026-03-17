@@ -18,7 +18,7 @@ Vous pouvez changer la méthode de gestion de la sécurité des lecteurs d'un se
 Dans cette tâche, vous désactivez la gestion externe des clés et téléchargez une nouvelle copie de sauvegarde sur votre hôte local. La clé existante est toujours utilisée pour la sécurité des disques, mais elle sera gérée en interne dans la baie de stockage.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous *gestion des clés de sécurité*, sélectionnez *Désactiver la gestion externe des clés*.
 +
 La boîte de dialogue Désactiver la gestion des clés externes s'ouvre.

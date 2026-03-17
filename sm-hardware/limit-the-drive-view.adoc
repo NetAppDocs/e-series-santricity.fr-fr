@@ -22,7 +22,7 @@ Si tous les lecteurs partagent les mêmes attributs physiques, le champ de filtr
 
 ====
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Dans le premier champ de filtre (sous *Afficher les lecteurs qui sont...*), cliquez sur la flèche déroulante pour afficher les types de lecteurs disponibles et les attributs de sécurité.
 +
 Les types de disques peuvent inclure :

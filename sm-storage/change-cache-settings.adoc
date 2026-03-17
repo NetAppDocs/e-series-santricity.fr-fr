@@ -25,16 +25,13 @@ Cette action peut se produire lorsqu'une nouvelle batterie est en cours de charg
 
 
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Sélectionnez un volume, puis sélectionnez menu:autres [Modifier les paramètres du cache].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Cliquez sur l’icône de menu : ellipsis [Change volume cache settings].
 +
-La boîte de dialogue Modifier les paramètres de cache s'affiche. Tous les volumes de la matrice de stockage s'affichent dans cette boîte de dialogue.
+La fenêtre « Modifier les paramètres du cache de volume » s’affiche. Tous les volumes de la baie de stockage apparaissent dans cette boîte de dialogue.
 
-. Sélectionnez l'onglet *Basic* pour modifier les paramètres de mise en cache de lecture et d'écriture.
+. Cochez la case à côté de chaque volume pour lequel vous souhaitez modifier les paramètres du cache ou cochez la case dans l'en-tête du tableau pour sélectionner tous les volumes.
 +
-.Détails du champ
-[%collapsible]
-====
 [cols="25h,~"]
 |===
 | Paramètre de cache | Description 
@@ -55,16 +52,6 @@ Le cache d'écriture est un tampon qui stocke les données de l'hôte qui n'ont 
 
 NOTE: Le cache est automatiquement vidé après la désactivation de la mise en cache *Write* pour un volume.
 
-|===
-====
-. Sélectionnez l'onglet *Avancé* pour modifier les paramètres avancés pour les volumes épais. Les paramètres de cache avancés sont disponibles uniquement pour les volumes épais.
-+
-.Détails du champ
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Paramètre de cache | Description 
 
 
  a| 
@@ -77,7 +64,7 @@ Pour un volume fin, la préextraction de lecture dynamique du cache est toujours
 
 
  a| 
-Mise en cache d'écriture sans batterie
+Mise en cache d’écriture sans batteries
  a| 
 Le paramètre de mise en cache d'écriture sans batterie permet de poursuivre la mise en cache d'écriture même si les batteries sont manquantes, défectueuses, complètement déchargées ou non complètement chargées. Il n'est généralement pas recommandé de choisir la mise en cache d'écriture sans piles car les données risquent d'être perdues en cas de coupure d'alimentation. En règle générale, la mise en cache des écritures est désactivée temporairement par le contrôleur jusqu'à ce que les batteries soient chargées ou qu'une batterie défectueuse soit remplacée.
 
@@ -96,6 +83,5 @@ La mise en cache d'écriture avec la mise en miroir se produit lorsque les donn�
 Ce paramètre n'est disponible que si vous avez activé la mise en cache des écritures. Ce paramètre n'est pas disponible pour les volumes fins.
 
 |===
-====
-. Cliquez sur *Enregistrer* pour modifier les paramètres de cache.
+. Cliquez sur *Enregistrer* pour modifier les paramètres du cache
 

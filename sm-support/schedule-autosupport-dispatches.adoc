@@ -24,7 +24,7 @@ La fonctionnalité AutoSupport doit être activée. Vous pouvez vérifier si ell
 
 
 .Étapes
-. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
 . Sélectionnez *Programmer les dispatch AutoSupport*.
 +
 L'assistant programmation des correctifs AutoSupport s'affiche.

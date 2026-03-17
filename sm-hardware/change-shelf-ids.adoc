@@ -17,7 +17,11 @@ L'ID du tiroir est un numéro qui identifie de manière unique un tiroir dans la
 Le firmware du contrôleur attribue automatiquement l'ID de tiroir, mais vous pouvez modifier ce numéro si vous souhaitez créer un autre schéma de commande.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
 . Sélectionnez la liste déroulante du tiroir contrôleur ou du tiroir disque, puis sélectionnez *Modifier l'ID*.
 . Dans la boîte de dialogue Modifier l'ID de tiroir, sélectionnez la liste déroulante pour afficher les numéros disponibles.
 +

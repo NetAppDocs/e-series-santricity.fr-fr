@@ -14,7 +14,7 @@ summary: 'Vous pouvez afficher les descriptions d"état des disques, des contrô
 Vous pouvez afficher les descriptions d'état des disques, des contrôleurs, des ventilateurs et des alimentations.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Pour voir les composants avant ou arrière :
 +
 ** Si vous souhaitez voir les composants du contrôleur et du boîtier d'alimentation/ventilateur, mais que les lecteurs sont affichés, cliquez sur l'onglet *contrôleurs et composants*.

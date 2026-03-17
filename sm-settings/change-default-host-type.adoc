@@ -29,7 +29,7 @@ Par exemple, si vous connectez huit hôtes différents à la baie de stockage et
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Faites défiler jusqu'à *Paramètres supplémentaires*, puis cliquez sur *Modifier le type de système d'exploitation hôte par défaut*.
 . Sélectionnez le type de système d'exploitation hôte que vous souhaitez utiliser par défaut.
 . Cliquez sur *Modifier*.

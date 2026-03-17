@@ -26,7 +26,7 @@ La vérification automatique de révocation est utile dans les cas où l'AC a é
 Au cours de cette tâche, vous pouvez configurer un serveur OCSP ou utiliser le serveur spécifié dans le fichier de certificat. Le serveur OCSP détermine si l'autorité de certification a révoqué des certificats avant leur date d'expiration prévue, puis bloque l'accès de l'utilisateur à un site si le certificat est révoqué.
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'onglet *approuvé*.
 +
 [NOTE]

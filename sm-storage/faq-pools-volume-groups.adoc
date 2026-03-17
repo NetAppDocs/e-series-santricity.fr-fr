@@ -93,11 +93,11 @@ Les exemples suivants décrivent les raisons pour lesquelles vous souhaiteriez c
 Vous pouvez attribuer seulement un ou deux volumes au lieu d'attribuer une charge de travail à un grand pool comportant de nombreux volumes sur lesquels répartir les données. La création manuelle d'un pool distinct dédié à la charge de travail d'une application spécifique permet aux opérations des baies de stockage d'être plus rapides, avec moins de conflits.
 
 +
-Pour créer manuellement un pool : sélectionnez *Storage*, puis *pools et groupes de volumes*. Dans l'onglet toutes les capacités, cliquez sur menu:Créer [Pool].
+Pour créer manuellement un pool : sélectionnez *Stockage*, puis *Pools et volume groups*. Dans l’onglet All Capacity, cliquez sur menu :Create[Pool].
 
 * S'il existe plusieurs pools de même type de lecteur, un message s'affiche indiquant que System Manager ne peut pas recommander automatiquement les disques d'un pool. Cependant, vous pouvez ajouter manuellement les lecteurs à un pool existant.
 +
-Pour ajouter manuellement des disques à un pool existant : à partir de la page pools et groupes de volumes, sélectionnez le pool, puis cliquez sur *Ajouter capacité*.
+Pour ajouter manuellement des disques à un pool existant : depuis la page Pools and volume groups, sélectionnez le pool, puis cliquez sur *Add capacity*.
 
 
 
@@ -122,7 +122,7 @@ Si vous avez créé des volumes sur toute la capacité utilisable disponible, il
 
 La capacité de conservation correspond à la capacité (nombre de disques) réservée dans un pool afin de prendre en charge les défaillances potentielles de disque. Lorsqu'un pool est créé, le système réserve automatiquement une quantité par défaut de capacité de conservation en fonction du nombre de disques du pool. Si vous avez créé des volumes sur toute la capacité utilisable disponible, vous ne pouvez pas augmenter la capacité de préservation sans ajouter de la capacité au pool en ajoutant des disques ou en supprimant des volumes.
 
-Vous pouvez modifier la capacité de conservation de *pools et groupes de volumes*. Sélectionnez le pool que vous souhaitez modifier. Cliquez sur *Afficher/Modifier les paramètres*, puis sélectionnez l'onglet *Paramètres*.
+Vous pouvez modifier la capacité de conservation depuis *Pools and volume groups*. Sélectionnez le pool que vous souhaitez modifier. Cliquez sur l’icône menu:ellipsis icon[Edit Settings], puis sélectionnez l’onglet *Settings*.
 
 [NOTE]
 ====
@@ -150,7 +150,7 @@ Les types de supports suivants sont pris en charge : disque dur et disque SSD.
 
 == Pourquoi certains lecteurs ne s'affichent-ils pas ?
 
-Dans la boîte de dialogue Add Capacity, tous les disques ne sont pas disponibles pour ajouter de la capacité à un pool ou à un groupe de volumes existant.
+Dans la boîte de dialogue Ajouter de la capacité, tous les disques ne sont pas disponibles pour ajouter de la capacité à un pool ou un groupe de volumes existant.
 
 Les disques ne sont pas éligibles pour les raisons suivantes :
 
@@ -315,7 +315,7 @@ Sélectionnez un niveau RAID en fonction des informations suivantes.
 +
 ** Un minimum de deux lecteurs est requis pour RAID 1 : un lecteur pour les données utilisateur et un lecteur pour les données en miroir.
 ** Si vous sélectionnez quatre lecteurs ou plus, RAID 10 est automatiquement configuré sur le groupe de volumes : deux lecteurs pour les données utilisateur et deux lecteurs pour les données en miroir.
-** Vous devez avoir un nombre pair de lecteurs dans le groupe de volumes. Si vous ne disposez pas d'un nombre pair de disques et que vous disposez de disques non affectés restants, accédez à *pools et groupes de volumes* pour ajouter des disques supplémentaires au groupe de volumes, puis réessayez l'opération.
+** Le groupe de volumes doit comporter un nombre pair de disques. Si vous n'avez pas un nombre pair de disques et qu'il vous reste des disques non attribués, accédez à *Pools et groupes de volumes* pour ajouter des disques supplémentaires au groupe de volumes, puis réessayez l'opération.
 ** Les groupes de volumes RAID 1 et RAID 10 peuvent avoir plus de 30 disques. Il est possible de créer un groupe de volumes qui inclut tous les disques de la matrice de stockage.
 
 
@@ -463,7 +463,7 @@ Les statistiques détaillées ne peuvent être affichées que lorsque vous expor
 
 === Statistiques nominales
 
-Pour afficher les statistiques de cache des disques SSD, sélectionnez menu:Storage[pools & Volume Groups]. Sélectionnez le cache SSD pour lequel vous souhaitez afficher les statistiques, puis sélectionnez menu:More[Afficher les statistiques]. Les statistiques nominales sont affichées dans la boîte de dialogue Afficher les statistiques du cache SSD.
+Pour consulter les statistiques du cache SSD, sélectionnez le menu:Storage[Pools et volume groups] dans le panneau de gauche. Sélectionnez le SSD Cache pour lequel vous souhaitez consulter les statistiques, puis cliquez sur le menu:ellipsis icon[View statistics]. Les statistiques nominales sont affichées sur la page View Statistics.
 
 La liste suivante contient des statistiques nominales, qui sont un sous-ensemble des statistiques détaillées.
 
@@ -669,26 +669,20 @@ Le curseur capacité d'optimisation supplémentaire n'est disponible que pour le
 
 == Qu'est-ce qui prend en charge le provisionnement de ressources ?
 
-La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d'initialisation en arrière-plan.
+L'approvisionnement en ressources est une fonctionnalité disponible dans les baies de stockage EF80, EF50, EF300 et EF600, qui permet de mettre les volumes en service immédiatement sans processus d'initialisation en arrière-plan.
 
 Un volume provisionné en ressources est un volume non volumineux dans un groupe ou un pool de volumes SSD : la capacité de disque est allouée (affectée au volume) lors de la création du volume, mais la désallocation des blocs de disques est effectuée (non mappée). À titre de comparaison, dans un volume épais traditionnel, tous les blocs de disque sont mappés ou alloués lors d'une opération d'initialisation du volume en arrière-plan afin d'initialiser les champs d'informations de protection Data assurance et de rendre la parité des données et RAID cohérente dans chaque bande RAID. Lorsqu'un volume de ressource est provisionné, il n'y a pas d'initialisation en arrière-plan limitée dans le temps. À la place, chaque bande RAID est initialisée lors de la première écriture sur un bloc de volume dans la bande.
 
 Les volumes provisionnés par ressource sont pris en charge uniquement sur les groupes et pools de volumes SSD, où tous les disques du groupe ou du pool prennent en charge la fonction de restauration d'erreur DULBE (Logical Block Error Enable) de NVMe désallocation ou non écrite. Lors de la création d'un volume provisionné de ressources, tous les blocs de disques attribués au volume sont désalloué (non mappés). De plus, les hôtes peuvent désallouer les blocs logiques du volume à l'aide de la commande NVMe Dataset Management ou de la commande SCSI Unmap. La gestion de la conservation des blocs peut améliorer la durée de vie du disque SSD et accroître des performances d'écriture maximales. L'amélioration varie selon le modèle de disque et la capacité.
-
-
-NOTE: DULBE n'est pas encore pris en charge sur les baies de stockage EF300C ou EF600C.
 
 
 
 == Que dois-je savoir sur la fonctionnalité de volumes provisionnés par les ressources ?
 
-La fonctionnalité de provisionnement des ressources est disponible dans les baies de stockage EF300 et EF600, ce qui permet de mettre immédiatement les volumes en service sans processus d'initialisation en arrière-plan.
+L'approvisionnement en ressources est une fonctionnalité disponible dans les baies de stockage EF80, EF50, EF300 et EF600, qui permet de mettre les volumes en service immédiatement sans processus d'initialisation en arrière-plan.
 
 Un volume provisionné en ressources est un volume non volumineux dans un groupe ou un pool de volumes SSD : la capacité de disque est allouée (affectée au volume) lors de la création du volume, mais la désallocation des blocs de disques est effectuée (non mappée). À titre de comparaison, dans un volume épais traditionnel, tous les blocs de disque sont mappés ou alloués lors d'une opération d'initialisation du volume en arrière-plan afin d'initialiser les champs d'informations de protection Data assurance et de rendre la parité des données et RAID cohérente dans chaque bande RAID. Lorsqu'un volume de ressource est provisionné, il n'y a pas d'initialisation en arrière-plan limitée dans le temps. À la place, chaque bande RAID est initialisée lors de la première écriture sur un bloc de volume dans la bande.
 
 Les volumes provisionnés par ressource sont pris en charge uniquement sur les groupes et pools de volumes SSD, où tous les disques du groupe ou du pool prennent en charge la fonction de restauration d'erreur DULBE (Logical Block Error Enable) de NVMe désallocation ou non écrite. Lors de la création d'un volume provisionné de ressources, tous les blocs de disques attribués au volume sont désalloué (non mappés). De plus, les hôtes peuvent désallouer les blocs logiques du volume à l'aide de la commande NVMe Dataset Management ou de la commande SCSI Unmap. La gestion de la conservation des blocs peut améliorer la durée de vie du disque SSD et accroître des performances d'écriture maximales. L'amélioration varie selon le modèle de disque et la capacité.
 
-Le provisionnement des ressources est activé par défaut sur les systèmes où les disques prennent en charge DULBE. Vous pouvez désactiver ce paramètre par défaut à partir de *pools et groupes de volumes*.
-
-
-NOTE: DULBE n'est pas encore pris en charge sur les baies de stockage EF300C ou EF600C.
+L'allocation des ressources est activée par défaut sur les systèmes dont les disques prennent en charge DULBE. Vous pouvez désactiver ce paramètre par défaut depuis *Pools and volume groups*.

@@ -14,7 +14,7 @@ summary: 'Vous pouvez afficher l"état et les paramètres des lecteurs, tels que
 Vous pouvez afficher l'état et les paramètres des lecteurs, tels que le type de support, le type d'interface et la capacité.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
 +
 Le graphique change pour afficher les disques au lieu des contrôleurs.
@@ -215,7 +215,7 @@ Indique si la fonction Data assurance (DA) est activée (Oui) ou non (non). Data
  a| 
 Compatible DULBE
  a| 
-Indique si l'option d'erreur de bloc logique (DULBE) désalloué ou non est activée (Oui) ou non (non). DULBE est une option sur disques NVMe qui permet aux baies de stockage EF300 ou EF600 de prendre en charge des volumes provisionnés par ressources.
+Indique si l’option pour Deallocated or Unwritten Logical Block Error (DULBE) est activée (Oui) ou non (Non). DULBE est une option sur les disques NVMe qui permet à la baie de stockage EF80, EF50, EF300 ou EF600 de prendre en charge les volumes à provisionnement de ressources.
 
 |===
 ====

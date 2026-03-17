@@ -18,7 +18,7 @@ Vous pouvez utiliser l'option suspendre et reprendre pour contrôler quand synch
 Si une paire en miroir est suspendue manuellement, la paire en miroir ne se synchronise pas tant qu'elle n'est pas rétablie manuellement.
 
 .Étapes
-. Menu sélection:stockage[mise en miroir synchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Synchronous Mirroring].
 . Sélectionnez la paire en miroir que vous souhaitez suspendre ou reprendre, puis sélectionnez menu:plus[suspendre] ou menu:plus[reprendre].
 +
 Le système affiche une confirmation.

@@ -28,28 +28,28 @@ SANtricity System Manager prend en charge ces versions de navigateur.
  a| 
 Google Chrome
  a| 
-89
+120
 
 
 
  a| 
 Mozilla Firefox
  a| 
-80
+120
 
 
 
  a| 
 Safari
  a| 
-14
+16
 
 
 
  a| 
 Microsoft Edge
  a| 
-90
+120
 
 |===
 
@@ -317,7 +317,7 @@ Baie de stockage
 
 == Que montre le graphique latence ?
 
-Le graphique latence fournit les statistiques de latence, en millisecondes (ms), pour les volumes, les groupes de volumes, les pools des applications et des workloads. Ce graphique apparaît dans les onglets vue logique, vue physique et applications et charges de travail.
+Le graphique de latence fournit des statistiques de latence, en millisecondes (ms), pour les volumes, les groupes de volumes, les pools, les applications et les charges de travail. Ce graphique apparaît dans les onglets Vue logique, Vue physique et Vue Applications et charges de travail.
 
 La latence désigne tout retard qui se produit lorsque les données sont lues ou écrites. Placez le curseur sur un point du graphique pour afficher les valeurs suivantes, en millisecondes (ms), pour ce point dans le temps :
 
@@ -330,7 +330,7 @@ La latence désigne tout retard qui se produit lorsque les données sont lues ou
 
 == Que montre le graphique IOPS ?
 
-Le graphique Op E/S par sec affiche les statistiques des opérations d'entrée/sortie par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.
+Le graphique IOPS affiche les statistiques des opérations d'entrée/sortie par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la baie de stockage. Dans les onglets Vue logique, Vue physique et Vue Applications et charges de travail de la page Performances, ce graphique affiche les statistiques de la baie de stockage, des volumes, des groupes de volumes, des pools, des applications et des charges de travail.
 
 IOPS est une abréviation de _Input/Output (E/S) Operations per second_. Positionnez le curseur de votre souris sur un point du graphique pour afficher les valeurs suivantes à cet endroit dans le temps :
 
@@ -343,7 +343,7 @@ IOPS est une abréviation de _Input/Output (E/S) Operations per second_. Positio
 
 == Que montre le graphique MIB/s ?
 
-Le graphique MIB/s affiche les statistiques de vitesse de transfert en mébioctets par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans les onglets vue logique, vue physique et applications et charges de travail de la mosaïque Performance, ce graphique affiche des statistiques sur la baie de stockage, les volumes, les groupes de volumes, les pools, les applications, et aux charges de travail.
+Le graphique Mio/s affiche les statistiques de vitesse de transfert en mébioctets par seconde. Sur la page d'accueil, ce graphique affiche les statistiques de la baie de stockage. Dans les onglets Vue logique, Vue physique et Vue Applications et charges de travail de la page Performances, ce graphique affiche les statistiques de la baie de stockage, des volumes, des groupes de volumes, des pools, des applications et des charges de travail.
 
 MIB/s est une abréviation de _mébioctets par seconde_, ou 1,048,576 octets par seconde. Positionnez le curseur de votre souris sur un point du graphique pour afficher les valeurs suivantes à cet endroit dans le temps :
 
@@ -356,7 +356,7 @@ MIB/s est une abréviation de _mébioctets par seconde_, ou 1,048,576 octets par
 
 == Que montre le graphique de l'UC ?
 
-Le graphique CPU affiche les statistiques de capacité de traitement pour chaque contrôleur (contrôleur A et contrôleur B). CPU est une abréviation de _unité centrale de traitement_. Sur la page d'accueil, ce graphique affiche les statistiques de la matrice de stockage. Dans l'onglet vue physique de la mosaïque performances, ce graphique affiche les statistiques de la matrice de stockage et des lecteurs.
+Le graphique CPU affiche les statistiques de capacité de traitement de chaque contrôleur (contrôleur A et contrôleur B). CPU est l’abréviation de _central processing unit_. Sur la page d’accueil, ce graphique affiche les statistiques de la baie de stockage. Dans l’onglet Vue physique de la page Performances, ce graphique affiche les statistiques de la baie de stockage et des disques.
 
 Le graphique de l'UC indique le pourcentage de capacité de traitement de l'UC utilisé par rapport aux opérations sur la baie. Même lorsqu'aucune E/S externe n'est en cours, le pourcentage d'utilisation du CPU peut être égal à zéro, car le système d'exploitation de stockage peut effectuer des opérations en arrière-plan et une surveillance. Placez le curseur sur un point du graphique pour afficher un pourcentage de capacité de traitement utilisée à ce moment précis.
 
@@ -364,7 +364,7 @@ Le graphique de l'UC indique le pourcentage de capacité de traitement de l'UC u
 
 == Que montre le graphique marge ?
 
-Le graphique marge est lié aux performances restantes pour les contrôleurs de baie de stockage. Ce graphique est visible sur la page d'accueil et sur l'onglet vue physique de la mosaïque Performance.
+Le graphique de marge de manœuvre est lié à la capacité de performance restante des contrôleurs de la baie de stockage. Ce graphique est visible sur la page d'accueil et dans l'onglet Vue physique de la page Performances.
 
 Le graphique marge affiche la capacité de performances restante des objets physiques du système de stockage. Placez le curseur de la souris sur un point du graphique pour afficher les pourcentages d'IOPS et la capacité MIB/s restants pour le contrôleur A et pour le contrôleur B.
 

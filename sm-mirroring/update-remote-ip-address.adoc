@@ -18,7 +18,7 @@ Vous pouvez mettre à jour l'adresse IP iSCSI de votre matrice de stockage dista
 La matrice de stockage locale et la matrice de stockage distante doivent être configurées pour la mise en miroir asynchrone à l'aide d'une connexion iSCSI.
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *groupes de cohérence miroir*.
 +
 Le tableau Groupe de cohérence miroir affiche tous les groupes de cohérence miroir associés à la matrice de stockage.

@@ -15,7 +15,7 @@ summary: 'Modifiez les paramètres d"un groupe de cohérence de snapshot si vous
 Modifiez les paramètres d'un groupe de cohérence de snapshot si vous souhaitez modifier son nom, ses paramètres de suppression automatique ou le nombre maximal d'images de snapshot autorisées.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Cliquez sur l'onglet *groupes de cohérence Snapshot*.
 . Sélectionnez le groupe de cohérence de snapshot que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
 +

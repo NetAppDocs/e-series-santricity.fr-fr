@@ -14,6 +14,10 @@ summary: 'Vous pouvez modifier l"ordre des tiroirs affiché sur la page Hardware
 Vous pouvez modifier l'ordre des tiroirs affiché sur la page Hardware en fonction de l'ordre physique des tiroirs dans une armoire.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
 . Dans le coin supérieur droit d'une vue de tablette, sélectionnez les flèches vers le haut ou vers le bas pour réorganiser l'ordre des étagères affiché sur la page matériel.
 

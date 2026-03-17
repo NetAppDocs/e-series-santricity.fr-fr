@@ -38,9 +38,7 @@ Vous pourrez configurer les hôtes ultérieurement, une fois l'installation term
 
 == En quoi l'identification des applications m'aide-t-elle dans la gestion de ma baie de stockage ?
 
-Lorsque vous identifiez des applications, SANtricity System Manager recommande automatiquement une configuration de volume qui optimise le stockage en fonction du type d'application.
-
-Grâce à l'optimisation des volumes par application, les opérations de stockage des données peuvent être plus efficaces. Des caractéristiques telles que le type d'E/S, la taille du segment, la propriété du contrôleur et le cache de lecture et d'écriture sont incluses dans la configuration du volume. De plus, vous pouvez afficher les données de performances par application et par charge de travail afin d'évaluer la latence, les IOPS et la MIB/s des applications et de leurs charges de travail associées.
+Vous pouvez consulter les données de performance par application et par charge de travail afin d'évaluer la latence, les IOPS et le MiB/s des applications et de leurs charges de travail associées pour optimiser les performances. La configuration du volume inclut des caractéristiques telles que le type d'E/S, la taille des segments, la propriété du contrôleur, ainsi que les caches de lecture et d'écriture.
 
 
 
@@ -48,7 +46,7 @@ Grâce à l'optimisation des volumes par application, les opérations de stockag
 
 Pour certaines applications de votre réseau, telles que SQL Server ou Exchange, vous pouvez définir une charge de travail qui optimise le stockage de cette application.
 
-Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. Pour certaines applications, le système configure la charge de travail de manière à contenir des volumes dont les caractéristiques de volume sous-jacent sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
+Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application.
 
 Lors de la création de volumes, le système vous invite à répondre aux questions relatives à l'utilisation d'un workload. Par exemple, si vous créez des volumes pour Microsoft Exchange, vous devez connaître le nombre de boîtes aux lettres dont vous avez besoin, les besoins moyens de vos boîtes aux lettres et le nombre de copies de la base de données que vous souhaitez. Le système utilise ces informations pour créer une configuration de volume optimale, qui peut être modifiée selon les besoins.
 

@@ -23,7 +23,7 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 
 ====
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
 . Sélectionnez *Retrieve Trace Buffers*.
 . Cochez la case en regard de chaque contrôleur pour lequel vous souhaitez récupérer les tampons de trace.
 +

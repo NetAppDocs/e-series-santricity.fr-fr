@@ -17,7 +17,11 @@ Un cycle d'apprentissage est un cycle automatique d'étalonnage de la jauge de b
 La mise à jour des cycles d'apprentissage affecte les deux batteries du contrôleur.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
+. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
 . Sélectionnez la liste déroulante du tiroir contrôleur, puis *Afficher les paramètres*.
 . Sélectionnez l'onglet *batteries*.
 . Sélectionnez *mettre à jour les cycles d'apprentissage de la batterie*.

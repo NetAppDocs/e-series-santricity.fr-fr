@@ -15,7 +15,7 @@ summary: La page AutoSupport vous indique si la fonctionnalité AutoSupport et l
 La page AutoSupport vous indique si la fonctionnalité AutoSupport et les fonctionnalités AutoSupport individuelles sont actuellement activées.
 
 .Étapes
-. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
 . Regardez la partie droite de la page juste en dessous des onglets pour voir si la fonction AutoSupport de base est activée.
 . Passez le curseur sur le point d'interrogation pour vérifier si les fonctions AutoSupport individuelles sont activées.
 

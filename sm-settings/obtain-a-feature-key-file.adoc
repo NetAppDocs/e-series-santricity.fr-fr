@@ -23,8 +23,8 @@ Dans cette tâche, vous apprendrez à rassembler les informations requises pour 
 
 
 .Étapes
-. Dans System Manager, recherchez et enregistrez le numéro de série du châssis. Vous pouvez afficher ce numéro de série en plaçant votre souris sur la mosaïque du Centre de support.
-. Dans System Manager, localisez l'identifiant d'activation de la fonction. Accédez au menu:Paramètres[système], puis faites défiler jusqu'à *Compléments*. Recherchez l'identifiant *Feature Enable identifier*. Notez le numéro de l'identifiant d'activation de la fonction.
+. Dans le System Manager, repérez et notez le numéro de série du châssis. Dans le panneau de gauche, accédez au menu : Support[Support Center] et faites défiler vers le bas jusqu’à *View top storage array properties* pour afficher le numéro de série du châssis.
+. Dans System Manager, repérez le Feature Enable Identifier. Dans le panneau de gauche, accédez au menu : Settings[System], puis faites défiler jusqu'à *Add-ons*. Recherchez le *Feature Enable Identifier*. Notez le numéro du Feature Enable Identifier.
 . Localiser et enregistrer le code d'activation de la fonction. Pour les packs de fonctionnalités, ce code est fourni dans les instructions appropriées pour effectuer la conversion.
 +
 Pour les fonctionnalités Premium, vous pouvez accéder au code d'activation à partir du site de support, comme suit :

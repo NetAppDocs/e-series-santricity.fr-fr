@@ -15,10 +15,10 @@ summary: 'Vous pouvez modifier le nom, le type de système d"exploitation hôte 
 Vous pouvez modifier le nom, le type de système d'exploitation hôte et les clusters hôtes associés pour un hôte.
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
-. Sélectionnez l'hôte à modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
+. Sélectionnez l'hôte que vous souhaitez modifier, puis cliquez sur le menu : ellipsis icon[Edit Settings].
 +
-Une boîte de dialogue qui affiche les paramètres actuels de l'hôte s'affiche.
+Une fenêtre s'affiche, montrant les paramètres d'hôte actuels.
 
 . S'il n'est pas déjà sélectionné, cliquez sur l'onglet *Propriétés*.
 . Modifiez les paramètres selon les besoins.

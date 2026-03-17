@@ -37,7 +37,7 @@ Vous devrez peut-être installer d'autres certificats de confiance si l'un des �
 
 
 .Étapes
-. Sélectionnez *gestion des certificats*.
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'onglet *approuvé*.
 +
 Cette page affiche tous les certificats signalés pour les matrices de stockage.

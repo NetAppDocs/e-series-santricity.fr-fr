@@ -21,7 +21,7 @@ Si vous souhaitez archiver les journaux d'audit sur un serveur syslog externe, v
 
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Dans l'onglet Journal d'audit, sélectionnez *configurer les serveurs Syslog*.
 +
 La boîte de dialogue configurer les serveurs Syslog s'ouvre.

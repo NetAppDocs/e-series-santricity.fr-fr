@@ -21,7 +21,7 @@ La fonctionnalité AutoSupport doit être activée. Vous pouvez vérifier si ell
 Cette opération collecte les données d'assistance et les envoie automatiquement au support technique, de sorte qu'ils puissent résoudre les problèmes.
 
 .Étapes
-. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
 . Sélectionnez *Envoyer l'intervention AutoSupport*.
 +
 La boîte de dialogue Envoyer l'intervention AutoSupport s'affiche.

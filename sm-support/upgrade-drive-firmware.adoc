@@ -23,7 +23,7 @@ Vous pouvez mettre à niveau le micrologiciel de vos lecteurs pour vous assurer 
 
 
 .Étapes
-. Sélectionnez menu:support [Upgrade Center].
+. Dans le panneau de gauche, sélectionnez menu : Support [Upgrade Center].
 . Téléchargez les nouveaux fichiers du site de support sur votre client de gestion.
 . Sous mise à niveau du micrologiciel du lecteur, cliquez sur *commencer la mise à niveau*.
 +

@@ -24,7 +24,7 @@ Pour configurer l'authentification pour Access Management, vous établissez des 
 L'ajout d'un serveur de répertoires est un processus en deux étapes. Vous devez d'abord entrer le nom de domaine et l'URL. Si votre serveur utilise un protocole sécurisé, vous devez également télécharger un certificat d'autorité de certification pour l'authentification s'il est signé par une autorité de signature non standard. Si vous disposez d'informations d'identification pour un compte BIND, vous pouvez également saisir votre nom de compte d'utilisateur et votre mot de passe. Ensuite, vous associez les groupes d'utilisateurs du serveur LDAP aux rôles d'utilisateur locaux.
 
 .Étapes
-. Sélectionnez *Access Management*.
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Dans l'onglet *Directory Services*, sélectionnez *Add Directory Server*.
 +
 La boîte de dialogue Ajouter un serveur de répertoire s'ouvre.

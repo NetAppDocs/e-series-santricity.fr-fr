@@ -18,7 +18,7 @@ Vous pouvez modifier le rôle entre les groupes de cohérence miroir à des fins
 Les groupes de cohérence en miroir créés sur la matrice de stockage locale détiennent le rôle principal. Les groupes de cohérence en miroir créés sur la matrice de stockage distante détiennent le rôle secondaire. Vous pouvez rétrograder le groupe de cohérence du miroir local à un rôle secondaire ou promouvoir le groupe de cohérence du miroir distant en rôle principal.
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *groupes de cohérence miroir*.
 +
 Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.

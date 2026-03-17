@@ -26,14 +26,14 @@ Les graphiques disponibles dans la vue détaillée des performances sont répart
 
 * *Logical View* -- affiche les données de performances des objets logiques regroupés par groupes de volumes et pools. Les objets logiques incluent les groupes de volumes, les pools et les volumes.
 * *Vue physique* -- affiche les données de performances du contrôleur, des canaux hôtes, des canaux de lecteur et des lecteurs.
-* *Applications et charges de travail Voir* -- affiche une liste d'objets logiques (volumes) regroupés en fonction des types d'applications et des charges de travail que vous avez définis.
+* *Vue Applications et charges de travail* -- Affiche une liste d'objets logiques (volumes) regroupés par types d'applications et charges de travail que vous avez définis.
 
 
 .Étapes
 . Sélectionnez *Accueil*.
 . Pour sélectionner une vue de niveau baie, cliquez sur le bouton IOPS, MIB/s ou CPU.
 . Pour plus de détails, cliquez sur *Afficher les détails de performance*.
-. Sélectionnez l'onglet *vue logique*, *vue physique* ou l'onglet *applications et charges de travail vue*.
+. Sélectionnez l'onglet *Logical View*, l'onglet *Physical View* ou l'onglet *Applications and workloads View*.
 +
 Selon le type d'objet, différents graphiques apparaissent dans chaque onglet.
 
@@ -66,7 +66,7 @@ Vue physique
 
 
  a| 
-Vue des applications et des charges de travail
+Applications et charges de travail Affichage
  a| 
 ** *Storage array*: IOPS, MIB/s
 ** *Applications* : latence, IOPS, MIB/s

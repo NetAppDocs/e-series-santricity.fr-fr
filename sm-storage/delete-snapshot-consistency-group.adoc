@@ -21,7 +21,7 @@ Confirmez que les images de tous les volumes membres ne sont plus nécessaires �
 Cette opération supprime toutes les images ou tous les planifications de snapshot associées au groupe de cohérence de snapshot.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *groupes de cohérence Snapshot*.
 . Sélectionnez le groupe de cohérence de snapshot que vous souhaitez supprimer, puis sélectionnez menu:tâches rares[Supprimer].
 +

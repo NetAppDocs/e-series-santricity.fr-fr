@@ -31,7 +31,7 @@ En savoir plus :
 
 == Comment créer des pools ?
 
-System Manager peut ainsi créer automatiquement des pools lorsqu'il détecte une capacité non affectée dans une baie de stockage. Lorsque la création automatique ne peut pas déterminer la meilleure configuration, vous pouvez également créer manuellement des pools à partir du menu :Storage[pools & Volume Groups].
+Vous pouvez autoriser System Manager à créer automatiquement des pools lorsqu'il détecte de la capacité non allouée dans une baie de stockage. Sinon, si la création automatique ne permet pas de déterminer la meilleure configuration, vous pouvez créer des pools manuellement à partir du menu:Storage[Pools and volume groups].
 
 En savoir plus :
 
@@ -45,7 +45,7 @@ En savoir plus :
 
 == Comment créez-vous des groupes de volumes ?
 
-Vous pouvez créer des groupes de volumes à partir du menu : Storage[pools & Volume Groups].
+Vous pouvez créer des groupes de volumes à partir du menu : Storage[Pools and volume groups].
 
 En savoir plus :
 

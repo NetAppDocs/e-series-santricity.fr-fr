@@ -22,7 +22,7 @@ Vous pouvez également supprimer une paire en miroir pour corriger un état de p
 
 
 .Étapes
-. Menu sélection:stockage[mise en miroir synchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Synchronous Mirroring].
 . Sélectionnez la paire symétrique que vous souhaitez supprimer, puis sélectionnez le menu:tâches rares[Supprimer].
 +
 La boîte de dialogue Supprimer la relation de symétrie s'affiche.

@@ -15,7 +15,7 @@ summary: Vous pouvez afficher des informations détaillées sur les connexions i
 Vous pouvez afficher des informations détaillées sur les connexions iSCSI à votre matrice de stockage. Les sessions iSCSI peuvent se produire avec des hôtes ou des baies de stockage distantes dans une relation de mise en miroir asynchrone.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sélectionnez *Afficher/mettre fin aux sessions iSCSI*.
 +
 La liste des sessions iSCSI en cours s'affiche.

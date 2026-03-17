@@ -28,7 +28,7 @@ Vous risquez de perdre l'accès à un système si vous supprimez un certificat u
 Cette tâche décrit comment supprimer des certificats installés par l'utilisateur. Les certificats pré-installés et auto-signés ne peuvent pas être supprimés.
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'onglet *approuvé*.
 +
 Le tableau indique les certificats de confiance de la matrice de stockage.

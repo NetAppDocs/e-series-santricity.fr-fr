@@ -32,7 +32,7 @@ Les paramètres et fonctions iSCSI s'affichent uniquement sur la page Paramètre
 
 ====
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous Paramètres iSCSI, cliquez sur *configurer l'authentification*.
 +
 La boîte de dialogue configurer l'authentification s'affiche, indiquant la méthode actuellement définie. Elle indique également si des secrets CHAP sont configurés pour tous les hôtes.

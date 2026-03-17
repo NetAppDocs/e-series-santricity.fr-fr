@@ -18,7 +18,7 @@ Vous pouvez effacer le journal d'audit des anciens événements, ce qui facilite
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Journal d'audit*.
 . Sélectionnez *Supprimer*.
 +

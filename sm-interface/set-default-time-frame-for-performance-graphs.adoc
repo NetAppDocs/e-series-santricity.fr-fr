@@ -18,6 +18,6 @@ Vous pouvez modifier la plage horaire par défaut affichée par les graphiques d
 Les graphiques de performance affichés sur la page d'accueil et sur la page performances affichent initialement une période d'une heure. Les préférences sont stockées dans le stockage local du navigateur pour que tous les utilisateurs puissent disposer de leurs propres paramètres.
 
 .Étapes
-. Sélectionnez menu:Préférences[définir les préférences].
-. Dans la liste déroulante, sélectionnez *5 minutes*, *1 heure*, *8 heures*, *1 jour* ou *7 jours*, et confirmez que vous souhaitez effectuer l'opération.
+. Cliquez sur l'icône *Paramètres utilisateur* dans le coin supérieur droit de la fenêtre.
+. Dans la liste déroulante « Default performance graphs time range to show », sélectionnez soit *5 minutes*, *1 heure*, *8 heures*, *1 jour* ou *7 jours*, et confirmez que vous souhaitez effectuer l'opération.
 

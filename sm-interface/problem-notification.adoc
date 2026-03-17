@@ -53,8 +53,7 @@ Avertissement
 |===
 System Manager affiche ces icônes à différents emplacements.
 
-* La zone Notifications de la page d'accueil affiche l'icône en échec et un message.
-* L'icône de la page d'accueil dans la zone de navigation affiche l'icône échec.
+* Zone de notifications (icône de cloche en haut de la fenêtre)
 * Sur la page composants, les graphiques des lecteurs et des contrôleurs affichent l'icône en panne.
 
 

@@ -24,7 +24,7 @@ Les paramètres et fonctions iSCSI apparaissent uniquement si votre matrice de s
 
 ====
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.

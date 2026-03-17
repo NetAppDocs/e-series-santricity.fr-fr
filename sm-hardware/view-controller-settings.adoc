@@ -14,7 +14,7 @@ summary: 'Vous pouvez afficher des informations sur un contrôleur, telles que l
 Vous pouvez afficher des informations sur un contrôleur, telles que l'état des interfaces hôtes, des interfaces de lecteur et des ports de gestion.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.

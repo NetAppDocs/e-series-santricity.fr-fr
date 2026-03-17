@@ -25,7 +25,7 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 
 ====
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
 . Sélectionnez *collecter les statistiques de chemin d'E/S*.
 . Confirmez que vous souhaitez exécuter l'opération en tapant `collect`, Puis cliquez sur *collect*.
 +

@@ -24,7 +24,7 @@ Vous pouvez ajouter un nouveau volume membre à un groupe de cohérence de snaps
 Vous pouvez ajouter des volumes standard ou des volumes fins au groupe de cohérence Snapshot. Le volume de base peut résider dans un pool ou un groupe de volumes.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *groupes de cohérence Snapshot*.
 +
 Le tableau apparaît et affiche tous les groupes de cohérence de snapshots associés à la matrice de stockage.

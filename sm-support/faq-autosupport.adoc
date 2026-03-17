@@ -179,7 +179,7 @@ La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la fou
 
 ====
 .Étapes
-. Sélectionnez l'onglet [Centre de support > AutoSupport].
+. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
 . Sélectionnez *configurer la méthode de livraison AutoSupport*.
 +
 Une boîte de dialogue s'affiche, qui répertorie les méthodes de livraison d'expédition.

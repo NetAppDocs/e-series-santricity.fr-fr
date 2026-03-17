@@ -32,7 +32,7 @@ Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que Ope
 
 ====
 .Étapes
-. Sélectionnez *gestion des certificats*.
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Dans l'onglet gestion, sélectionnez *Complete CSR*.
 . Entrez les informations suivantes, puis cliquez sur *Suivant* :
 +
@@ -92,7 +92,7 @@ Une fois que vous avez reçu des certificats signés de l'autorité de certifica
 
 
 .Étapes
-. Sélectionnez *gestion des certificats*.
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Dans l'onglet gestion, sélectionnez *Importer*.
 +
 Une boîte de dialogue s'ouvre pour importer les fichiers de certificat.

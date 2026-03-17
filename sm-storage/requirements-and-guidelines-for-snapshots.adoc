@@ -20,7 +20,7 @@ Lors de la création et de l'utilisation d'instantanés, vérifiez les exigences
 * Chaque image snapshot est associée à un seul groupe de snapshots.
 * Un groupe de snapshots est créé la première fois que vous créez une image instantanée ou planifiée pour un objet associé. Cela crée une capacité réservée.
 +
-Vous pouvez afficher les groupes de snapshots à partir de la page pools et groupes de volumes.
+Vous pouvez consulter les groupes d'instantanés depuis la page Pools et groupes de volumes.
 
 * Les images d'instantanés programmées ne se produisent pas lorsque la matrice de stockage est hors ligne ou hors tension.
 * Si vous supprimez un groupe de snapshots doté d'une planification de snapshots, la planification de snapshots est également supprimée.

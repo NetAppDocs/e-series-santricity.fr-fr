@@ -18,7 +18,7 @@ Vous pouvez créer une bannière de connexion qui est présentée aux utilisateu
 Lorsque vous créez une bannière, elle apparaît avant l'écran de connexion dans une boîte de dialogue.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Sous la section général, sélectionnez *configurer la bannière de connexion*.
 +
 La boîte de dialogue configurer la bannière de connexion s'ouvre.

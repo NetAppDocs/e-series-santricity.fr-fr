@@ -41,11 +41,11 @@ Vous ne pouvez pas augmenter la capacité réservée pour un volume Snapshot en 
 
 ====
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Sélectionnez l'onglet *capacité réservée*.
-. Sélectionnez l'objet de stockage pour lequel vous souhaitez augmenter la capacité réservée, puis cliquez sur *augmenter la capacité*.
+. Sélectionnez l'objet de stockage pour lequel vous souhaitez augmenter la capacité réservée, puis cliquez sur le menu : ellipsis icon[Increase reserved capacity].
 +
-La boîte de dialogue augmenter la capacité réservée s'affiche.
+La page « Increase Reserved Capacity » s'affiche.
 
 . Utilisez la boîte de disque pour régler le pourcentage de capacité.
 +

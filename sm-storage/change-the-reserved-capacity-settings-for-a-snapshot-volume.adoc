@@ -15,11 +15,11 @@ summary: 'Vous pouvez modifier les paramètres d"un volume d"instantané pour r�
 Vous pouvez modifier les paramètres d'un volume d'instantané pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée d'un volume d'instantané est presque pleine.
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Cliquez sur l'onglet *capacité réservée*.
-. Sélectionnez le volume de snapshot que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Sélectionnez le volume d'instantané que vous souhaitez modifier, puis cliquez sur menu : icône de points de suspension [Modifier les paramètres].
 +
-La boîte de dialogue Paramètres de capacité réservée du volume Snapshot s'affiche.
+La fenêtre « Modifier les paramètres de capacité réservée du volume instantané » s’affiche.
 
 . Modifiez les paramètres de capacité réservée pour le volume de snapshot, le cas échéant.
 +

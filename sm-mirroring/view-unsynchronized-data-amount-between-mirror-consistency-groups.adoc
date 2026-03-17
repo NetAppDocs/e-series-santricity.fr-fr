@@ -18,7 +18,7 @@ Vous pouvez afficher la quantité de données non synchronisées entre les group
 Vous pouvez effectuer cette tâche lorsque le groupe de cohérence miroir sélectionné contient des paires en miroir et lorsque la synchronisation n'est pas en cours.
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *groupes de cohérence miroir*.
 +
 Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.

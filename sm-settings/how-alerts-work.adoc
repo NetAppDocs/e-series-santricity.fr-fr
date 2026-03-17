@@ -31,13 +31,7 @@ La procédure d'alertes fonctionne comme suit :
 
 == Configuration des alertes
 
-Vous pouvez configurer les alertes à partir de l'assistant de configuration initiale (pour les alertes par e-mail uniquement) ou de la page alertes. Pour vérifier la configuration actuelle, accédez au menu:Paramètres[alertes].
-
-La mosaïque alertes affiche la configuration des alertes, qui peut être l'une des suivantes :
-
-* Non configuré.
-* Configuré ; au moins une méthode d'alerte est configurée. Pour déterminer quelles méthodes d'alerte sont configurées, pointez le curseur sur la mosaïque.
-
+Vous pouvez configurer les alertes depuis l'assistant de configuration initiale (pour les alertes par e-mail uniquement) ou depuis la page Alerts. Pour accéder à la page Alerts, allez dans menu:Settings[Alerts] depuis le panneau de gauche.
 
 
 

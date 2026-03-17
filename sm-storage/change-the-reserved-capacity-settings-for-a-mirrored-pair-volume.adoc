@@ -15,11 +15,11 @@ summary: 'Vous pouvez modifier les paramètres d"un volume de paire en miroir po
 Vous pouvez modifier les paramètres d'un volume de paire en miroir pour ajuster le point de pourcentage auquel SANtricity System Manager envoie une notification d'alerte lorsque la capacité réservée pour un volume de paire en miroir est presque pleine.
 
 .Étapes
-. Menu Sélectionner:Storage[pools & Volume Groups].
+. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Sélectionnez l'onglet *capacité réservée*.
-. Sélectionnez le volume de paires symétriques que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
+. Sélectionnez le volume de paire en miroir que vous souhaitez modifier, puis cliquez sur le menu : ellipsis icon[Edit Settings].
 +
-La boîte de dialogue Paramètres de capacité réservée du volume de la paire en miroir s'affiche.
+La fenêtre Edit Mirrored Pair Volume Reserved Capacity Settings s’affiche.
 
 . Modifiez les paramètres de capacité réservée pour le volume de paire en miroir selon les besoins.
 +
@@ -32,9 +32,9 @@ La boîte de dialogue Paramètres de capacité réservée du volume de la paire 
 
 
  a| 
-M'avertir lorsque...
+Seuil d'alerte de capacité réservée atteinte
  a| 
-Utilisez la boîte à plateau pour régler le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée d'une paire en miroir est presque pleine.
+Utilisez la barre pour ajuster le point de pourcentage auquel System Manager envoie une notification d'alerte lorsque la capacité réservée pour une paire en miroir est presque pleine.
 
 Lorsque la capacité réservée de la paire en miroir dépasse le seuil spécifié, System Manager envoie une alerte et vous permet d'augmenter la capacité réservée.
 

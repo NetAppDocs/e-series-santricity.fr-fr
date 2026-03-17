@@ -18,7 +18,7 @@ Le profil de la matrice de stockage fournit une description de tous les composan
 Vous pouvez utiliser le profil de la matrice de stockage comme aide lors de la récupération ou comme vue d'ensemble de la configuration actuelle de la matrice de stockage. Vous pouvez enregistrer une copie du profil de la baie de stockage sur le client de gestion et conserver une copie papier du profil de la baie de stockage avec la baie de stockage. Créez une nouvelle copie du profil de la matrice de stockage si votre configuration change.
 
 .Étapes
-. Sélectionnez l'onglet support[Centre de support > Ressources de support].
+. Dans le panneau de gauche, sélectionnez le menu : Support [Support Center > Support Resources] onglet.
 . Faites défiler vers le bas jusqu'à *lancer les informations détaillées de la matrice de stockage*, puis sélectionnez *profil de la matrice de stockage*.
 +
 Le rapport s'affiche à l'écran.

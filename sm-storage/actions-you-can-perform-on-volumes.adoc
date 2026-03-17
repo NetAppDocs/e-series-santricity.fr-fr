@@ -22,11 +22,11 @@ Vous pouvez étendre la capacité d'un volume de deux manières :
 
 * Utilisez la capacité disponible dans le pool ou le groupe de volumes.
 +
-Pour ajouter de la capacité à un volume, sélectionnez menu:Storage[pools and Volume Groups > Add Capacity].
+Vous ajoutez de la capacité à un volume en sélectionnant menu:Storage[Volumes] dans le panneau de gauche, puis en sélectionnant le menu:ellipsis icon[Increase capacity] pour le volume.
 
 * Ajoutez de la capacité non affectée (sous la forme de disques inutilisés) au pool ou au groupe de volumes du volume. Utilisez cette option lorsqu'aucune capacité disponible n'existe dans le pool ou le groupe de volumes.
 +
-Pour ajouter de la capacité non affectée au pool ou au groupe de volumes, sélectionnez menu :Storage[pools and Volume Groups > Add Capacity].
+Vous ajoutez de la capacité non attribuée au pool ou au groupe de volumes en sélectionnant menu :Storage[Pools and Volume Groups > Add capacity].
 
 +
 Si la capacité disponible n'est pas disponible dans le pool ou le groupe de volumes, vous ne pouvez pas augmenter la capacité du volume. Vous devez d'abord augmenter la taille du pool ou du groupe de volumes ou supprimer les volumes inutilisés.
@@ -47,7 +47,7 @@ La suppression de volumes entraîne la perte de toutes les données de ces volum
 
 == Copier
 
-Lorsque vous copiez des volumes, vous créez une copie ponctuelle de deux volumes distincts, le volume source et le volume cible, sur la même matrice de stockage. Vous pouvez copier des volumes en sélectionnant menu:Storage[volumes > Copy Services > Copy volume].
+Lorsque vous copiez des volumes, vous créez une copie à un instant précis de deux volumes distincts, le volume source et le volume cible, sur la même baie de stockage. Vous pouvez copier des volumes en sélectionnant menu:Storage[Volumes] puis en sélectionnant menu:ellipsis icon[Copy volume].
 
 
 
@@ -55,7 +55,7 @@ Lorsque vous copiez des volumes, vous créez une copie ponctuelle de deux volume
 
 L'initialisation d'un volume efface toutes les données du volume. Un volume est automatiquement initialisé lors de sa première création. Cependant, il est possible que le gourou de la restauration indique que vous initiez manuellement un volume afin d'effectuer une restauration suite à une certaine défaillance. Lorsque vous initialisez un volume, celui-ci conserve son WWN, ses affectations d'hôtes, sa capacité allouée et ses paramètres de capacité réservée. Il conserve également les mêmes paramètres d'assurance de données et de sécurité.
 
-Vous pouvez initialiser les volumes en sélectionnant menu:Storage[volumes > More > Initialize volumes].
+Vous pouvez initialiser les volumes en sélectionnant le menu : Storage [Volumes > ellipsis icon > Initialize volumes].
 
 
 
@@ -65,15 +65,15 @@ Vous redistribuez les volumes pour retransférer les volumes vers leurs proprié
 
 La plupart des pilotes de chemins d'accès multiples de l'hôte tentent d'accéder à chaque volume sur un chemin vers son propriétaire de contrôleur privilégié. Toutefois, si ce chemin préféré n'est plus disponible, le pilote multichemin de l'hôte bascule vers un autre chemin. Ce basculement peut entraîner le changement de propriété du volume vers le contrôleur secondaire. Une fois que vous avez résolu le problème à l'origine du basculement, certains hôtes peuvent retransférer automatiquement la propriété des volumes vers le propriétaire du contrôleur privilégié, mais dans certains cas, vous devrez peut-être redistribuer manuellement les volumes.
 
-Vous pouvez redistribuer les volumes en sélectionnant menu:Storage[volumes > plus > redistribuer les volumes].
+Vous pouvez redistribuer les volumes en sélectionnant le menu : Storage [Volumes > ellipsis icon > Redistribute volumes].
 
 
 
 == Changer la propriété du volume
 
-La modification de la propriété d'un volume modifie la propriété de contrôleur préférée du volume. Le propriétaire préféré d'un volume est répertorié sous menu : Storage[volumes > Affichage/Modifier les paramètres > onglet Avancé].
+Modifier le propriétaire d'un volume modifie la propriété du contrôleur préféré de ce volume. Le propriétaire du contrôleur préféré d'un volume est indiqué dans le menu : Storage [Volumes > ellipsis icon > Edit settings].
 
-Vous pouvez modifier la propriété d'un volume en sélectionnant menu:Storage[volumes > plus > changer la propriété].
+Vous pouvez modifier le propriétaire d'un volume en sélectionnant menu:Storage[Volumes > icône ellipse > Modifier le propriétaire du volume].
 
 
 
@@ -101,7 +101,7 @@ La mémoire cache est une zone de stockage volatile temporaire (RAM) du contrôl
 * Les données d'écriture sont initialement écrites dans le cache, ce qui libère l'application pour qu'elle puisse continuer à attendre que les données soient écrites sur le disque.
 
 
-Sélectionner menu:Storage[volumes > plus > Modifier les paramètres de cache] pour modifier les paramètres de cache suivants :
+Sélectionnez le menu : Storage [Volumes > ellipsis icon > Change cache settings] pour modifier les paramètres de cache suivants :
 
 * *Cache de lecture et d'écriture* -- le cache de lecture est un tampon qui stocke les données lues à partir des lecteurs. Les données d'une opération de lecture peuvent déjà se trouver dans le cache à partir d'une opération précédente, ce qui évite d'avoir à accéder aux disques. Les données restent dans le cache de lecture jusqu'à ce qu'elles soient supprimées.
 +

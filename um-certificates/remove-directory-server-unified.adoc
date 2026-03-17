@@ -20,7 +20,7 @@ Vous devez être connecté avec un profil utilisateur qui inclut les autorisatio
 Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.
 
 .Étapes
-. Sélectionnez *Access Management*.
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Services Annuaire*.
 . Dans la liste, sélectionnez le serveur de répertoire à supprimer.
 . Cliquez sur *Supprimer*.

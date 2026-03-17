@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: Documentation du logiciel SANtricity 11.9
+  title: Documentation du logiciel SANtricity 12.0
   summary: SANtricity System Manager et Unified Manager
   keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
     data analytics
-  lead: Avec le logiciel SANtricity 11.9, vous exploitez tout le potentiel de vos
-    baies Flash hybrides E-Series et 100 % Flash EF-Series pour les applications à
-    forte charge de travail, notamment l'analytique, la vidéosurveillance, la sauvegarde
-    et la restauration.
+  lead: Le logiciel SANtricity 12.0 vous permet d'obtenir des performances et une
+    utilisation maximales de vos baies hybrides-flash E-Series et de vos baies 100
+    % Flash EF-Series pour les applications à charge de travail élevée, notamment
+    l'analytique, la vidéosurveillance, ainsi que la sauvegarde et la restauration.
   tiles:
   - title: Commencez
     links:
@@ -44,9 +44,9 @@ indexpage:
   - title: Pour les ses
     links:
     - title: Formation technique E-Series/EF-Series (connexion requise)
-      url: https://fieldportal.netapp.com/content/199944
+      url: https://fieldportal.netapp.com/s/article/E-Series-and-EF-Series-SE-Technical-Training
     - title: Présentation de EF300 et détails techniques (connexion requise)
-      url: https://fieldportal.netapp.com/content/1417672
+      url: https://fieldportal.netapp.com/s/article/eseries-ef300-se-presentation-1704449366156
     - title: NetApp Fusion (connexion requise)
       url: https://fusion.netapp.com/
   - title: Outils et assistance

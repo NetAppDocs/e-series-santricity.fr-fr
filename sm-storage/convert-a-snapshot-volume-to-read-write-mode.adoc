@@ -17,7 +17,7 @@ Si besoin, vous pouvez convertir un volume Snapshot en lecture seule ou un volum
 Un volume Snapshot converti en volume accessible en lecture/écriture contient sa propre capacité réservée. Cette capacité permet d'enregistrer les modifications ultérieures apportées par l'application hôte au volume de base sans affecter l'image snapshot référencée.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *Snapshot volumes*.
 +
 Le tableau Snapshot volumes apparaît et affiche tous les volumes de snapshot associés à la baie de stockage.

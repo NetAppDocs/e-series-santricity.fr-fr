@@ -229,7 +229,7 @@ Un tiroir disque, également appelé tiroir d'extension, contient un ensemble de
  a| 
 DULBE
  a| 
-La gestion des erreurs de bloc logique (DULBE) est une option sur les disques NVMe, qui permet à la baie de stockage EF300 ou EF600 de prendre en charge les volumes provisionnés par ressource.
+L'erreur de bloc logique non alloué ou non écrit (DULBE) est une option sur les disques NVMe qui permet à la baie de stockage EF80, EF50, EF300/EF300C ou EF600/EF600C de prendre en charge les volumes provisionnés en ressources.
 
 
 

@@ -33,25 +33,25 @@ L'augmentation de la capacité d'un volume n'est prise en charge que sur certain
 
 ====
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Sélectionnez le volume pour lequel vous souhaitez augmenter la capacité, puis sélectionnez *augmenter la capacité*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Sélectionnez le volume pour lequel vous souhaitez augmenter la capacité, puis cliquez sur le menu : ellipsis icon[Increase Capacity].
 +
-La boîte de dialogue confirmer l'augmentation de la capacité s'affiche.
+La page Confirmer l'augmentation de capacité s'affiche.
 
 . Sélectionnez *Oui* pour continuer.
 +
-La boîte de dialogue augmenter la capacité déclarée s'affiche.
+La page « Increase Reported Capacity » s'affiche.
 
 +
-Cette boîte de dialogue affiche la capacité actuelle signalée du volume et la capacité disponible dans le pool ou le groupe de volumes associé du volume.
+Cette page affiche la capacité actuelle signalée du volume et la capacité libre disponible dans le pool ou le groupe de volumes associé au volume.
 
-. Utilisez la case *augmenter la capacité signalée en ajoutant...* pour ajouter de la capacité à la capacité actuellement disponible. Vous pouvez modifier la valeur de capacité pour l'afficher en mébioctets (Mio), gibioctets (Tio) ou tébioctets (Tio).
+. Utilisez la case *Augmenter la capacité signalée en ajoutant...* pour ajouter de la capacité à la capacité signalée disponible. Vous pouvez modifier la valeur de capacité à afficher en mébioctets (MiB), gibioctets (GiB) ou tébioctets (TiB).
 . Cliquez sur *augmenter*.
 
 
 .Résultats
 * System Manager augmente la capacité du volume en fonction de votre sélection.
-* Sélectionnez menu:Accueil[Afficher les opérations en cours] pour afficher la progression de l'opération augmenter la capacité en cours d'exécution pour le volume sélectionné. Cette opération peut être longue et peut affecter les performances du système.
+* Sélectionnez le menu : Storage[Operations in Progress] pour afficher la progression de l’augmentation de capacité en cours pour le volume sélectionné. Cette opération peut être longue et pourrait affecter les performances du système.
 
 
 .Une fois que vous avez terminé

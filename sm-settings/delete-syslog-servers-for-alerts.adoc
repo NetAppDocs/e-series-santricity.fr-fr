@@ -15,7 +15,7 @@ summary: 'Vous pouvez supprimer un serveur syslog afin qu"il ne reçoive plus d"
 Vous pouvez supprimer un serveur syslog afin qu'il ne reçoive plus d'alertes.
 
 .Étapes
-. Sélectionnez menu:Paramètres[alertes].
+. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
 . Sélectionnez l'onglet *Syslog*.
 . Sélectionnez une adresse de serveur syslog, puis cliquez sur *Supprimer* dans le coin supérieur droit.
 +

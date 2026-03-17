@@ -30,7 +30,7 @@ Si le lecteur a été verrouillé à l'aide d'un serveur de gestion externe des 
 Vous pouvez accéder à la fonction déverrouiller à partir de la page matériel ou du menu:Paramètres[système > gestion des clés de sécurité]. La tâche ci-dessous fournit des instructions à partir de la page matériel.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
 +
 Le graphique change pour afficher les disques au lieu des contrôleurs.

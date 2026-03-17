@@ -18,9 +18,9 @@ Si vous ne souhaitez plus collecter d'images de snapshot, vous pouvez supprimer 
 Lorsque vous supprimez un planning de snapshots, les images de snapshot associées ne sont pas supprimées avec lui. Si vous pensez que la collection d'images d'instantanés peut être reprise à un moment donné, vous devez interrompre la planification d'instantanés au lieu de la supprimer.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
-. Cliquez sur l'onglet *plannings*.
-. Sélectionnez la planification de snapshots que vous souhaitez supprimer et confirmez l'opération.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
+. Cliquez sur l'onglet *Snapshots Schedules*.
+. Sélectionnez la planification d'instantané que vous souhaitez supprimer, cliquez sur *Delete*, et confirmez l'opération.
 
 
 .Résultats

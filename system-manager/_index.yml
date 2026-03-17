@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Gestion de baie unique avec SANtricity System Manager 11.9
+  title: Gestion d'une seule baie de stockage avec SANtricity System Manager 12.0
   summary: La documentation du logiciel SANtricity vous permet d'installer, de configurer
     et de gérer votre baie de stockage.
   keywords: santricity, install, setup, maintain, storage array

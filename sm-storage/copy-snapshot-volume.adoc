@@ -18,7 +18,7 @@ Vous pouvez effectuer un processus de copie de volume sur un volume Snapshot ou 
 Vous pouvez copier un volume de snapshot sur le volume cible, comme cela a été effectué lors d'une opération de copie de volume normale. Toutefois, les snapshots ne peuvent pas rester en ligne pendant le processus de copie du volume.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *Snapshot volumes*.
 +
 Le tableau Snapshot volumes apparaît et affiche tous les volumes de snapshot associés à la baie de stockage.

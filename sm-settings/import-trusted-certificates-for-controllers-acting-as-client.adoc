@@ -23,7 +23,7 @@ Si le contrôleur rejette une connexion parce qu'il ne peut pas valider la chaî
 L'importation de certificats à partir de l'onglet approuvé peut être nécessaire si vous souhaitez autoriser un autre serveur à contacter les contrôleurs (par exemple, un serveur LDAP ou un serveur syslog utilisant TLS).
 
 .Étapes
-. Sélectionnez menu:Paramètres[certificats].
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Dans l'onglet approuvé, sélectionnez *Importer*.
 +
 Une boîte de dialogue s'ouvre pour importer les fichiers de certificats approuvés.

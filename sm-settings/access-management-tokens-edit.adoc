@@ -15,7 +15,7 @@ summary: 'Vous pouvez modifier les paramètres des jetons d"accès, qui comprenn
 Vous pouvez modifier les paramètres des jetons d'accès, qui comprennent l'heure d'expiration et la possibilité de créer de nouveaux jetons.
 
 .Étapes
-. Sélectionnez menu:Paramètres[gestion des accès].
+. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
 . Sélectionnez l'onglet *Access Tokens*.
 . Sélectionnez *Afficher/Modifier les paramètres de token d'accès*.
 . Dans la boîte de dialogue, vous pouvez effectuer une ou les deux tâches suivantes :

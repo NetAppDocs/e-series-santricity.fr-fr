@@ -16,7 +16,7 @@ Utilisez l'option Add/Discover Single Storage Array pour détecter et ajouter ma
 
 .Avant de commencer
 * La matrice de stockage doit être correctement installée et configurée.
-* Les mots de passe de la baie de stockage doivent être configurés à l'aide de la mosaïque Access Management de System Manager.
+* Les mots de passe des baies de stockage doivent être configurés à l'aide de la page Access Management de System Manager.
 
 
 .Étapes

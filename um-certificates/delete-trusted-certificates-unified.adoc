@@ -22,7 +22,7 @@ Sachez que la suppression d'un certificat racine ou intermédiaire peut avoir un
 
 ====
 .Étapes
-. Sélectionnez *gestion des certificats*.
+. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
 . Sélectionnez l'onglet *approuvé*.
 . Sélectionnez un ou plusieurs certificats dans le tableau, puis cliquez sur *Supprimer*.
 +

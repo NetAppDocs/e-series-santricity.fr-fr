@@ -15,7 +15,7 @@ summary: Vous pouvez démarrer manuellement la resynchronisation pour toutes les
 Vous pouvez démarrer manuellement la resynchronisation pour toutes les paires mises en miroir dans un groupe de cohérence miroir.
 
 .Étapes
-. Sélectionnez menu:stockage[mise en miroir asynchrone].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Asynchronous Mirroring].
 . Sélectionnez l'onglet *groupes de cohérence miroir*.
 +
 Le tableau Groupe de cohérence miroir s'affiche et affiche tous les groupes de cohérence miroir associés à la matrice de stockage.

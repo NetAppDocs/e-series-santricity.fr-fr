@@ -17,7 +17,7 @@ La page matériel peut afficher la vue avant ou la vue arrière des tiroirs.
 La vue arrière montre les contrôleurs/modules d'E/S et les blocs d'alimentation. La vue avant montre les lecteurs.
 
 .Étapes
-. Sélectionnez *matériel*.
+. Dans le panneau de gauche, sélectionnez *Hardware*.
 . Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.

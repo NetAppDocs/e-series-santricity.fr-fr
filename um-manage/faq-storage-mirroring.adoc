@@ -39,7 +39,7 @@ Assurez-vous également de répondre aux exigences suivantes pour les baies de s
 
 [NOTE]
 ====
-La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
+La mise en miroir synchrone n'est pas disponible sur le système de stockage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 
@@ -60,7 +60,7 @@ Avant de créer une paire symétrique, suivez ces instructions.
 
 [NOTE]
 ====
-La mise en miroir synchrone n'est pas disponible sur les systèmes de stockage EF600/EF600C ou EF300/EF300C.
+La mise en miroir synchrone n'est pas disponible sur le système de stockage EF80, EF50, EF600/EF600C ou EF300/EF300C.
 
 ====
 

@@ -20,7 +20,7 @@ Vous pouvez également indiquer si vous souhaitez supprimer le volume de capacit
 La suppression d'un volume de base supprime automatiquement tout volume snapshot associé ou tout volume snapshot de groupe de cohérence. Vous ne pouvez pas supprimer un volume de snapshot qui se trouve dans une copie de volume avec l'état *en cours*.
 
 .Étapes
-. Sélectionnez menu:stockage[snapshots].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
 . Sélectionnez l'onglet *Snapshot volumes*.
 +
 System Manager affiche tous les volumes de snapshot associés à la matrice de stockage.

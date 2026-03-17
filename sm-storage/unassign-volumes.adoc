@@ -22,8 +22,8 @@ Gardez ces directives à l'esprit lorsque vous déassigner un volume :
 
 
 .Étapes
-. Sélectionnez menu:Storage[hosts].
-. Sélectionnez l'hôte ou le cluster hôte que vous souhaitez modifier, puis cliquez sur *Annuler l'attribution de volumes*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Hosts].
+. Sélectionnez l'hôte ou le cluster d'hôtes que vous souhaitez modifier, puis cliquez sur l'icône menu:ellipsis icon[Unassign Volumes].
 +
 Une boîte de dialogue s'affiche et affiche tous les volumes actuellement affectés.
 

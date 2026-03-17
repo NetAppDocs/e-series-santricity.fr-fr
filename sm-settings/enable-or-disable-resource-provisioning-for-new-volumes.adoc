@@ -14,25 +14,21 @@ summary: Si vous avez précédemment désactivé la fonction par défaut pour le
 [role="lead"]
 Si vous avez précédemment désactivé la fonction par défaut pour le provisionnement de ressources, vous pouvez la réactiver pour tous les groupes de volumes SSD ou pools que vous créez. Vous pouvez également désactiver le paramètre à nouveau.
 
-Le provisionnement des ressources est une fonctionnalité disponible dans les baies de stockage EF300 et EF600, qui permet de mettre les volumes en service immédiatement sans processus d'initialisation en arrière-plan. La libération de tous les blocs de disque attribués au volume est effectuée (non mappés), ce qui permet d'améliorer la durée de vie du disque SSD et d'augmenter les performances d'écriture maximales.
+L'allocation de ressources est une fonctionnalité disponible sur les baies de stockage EF80, EF50, EF300/EF300C et EF600/EF600C, qui permet une mise en service immédiate des volumes sans processus d'initialisation en arrière-plan. Tous les blocs de disque affectés au volume sont désalloués (non mappés), ce qui peut améliorer la durée de vie des SSD et augmenter les performances d'écriture maximales.
 
 
 NOTE: Par défaut, le provisionnement de ressources est activé sur les systèmes sur lesquels les disques prennent en charge DULBE.
 
 .Avant de commencer
-* Vous devez disposer d'une baie de stockage EF300 ou EF600.
+* Vous devez disposer d'une baie de stockage EF80, EF50, EF300 ou EF600.
 * Vous devez disposer de groupes ou de pools de volume SSD, où tous les disques prennent en charge la fonctionnalité de restauration d'erreur DULBE (Logical Block Error Enable) de NVMe avec une gestion simplifiée ou non écrite.
-+
-
-NOTE: DULBE n'est pas encore pris en charge sur les baies de stockage EF300C ou EF600C.
-
 
 
 .Description de la tâche
 Lorsque vous réactivez le provisionnement de ressources pour les nouveaux groupes ou pools de volumes, seuls les nouveaux groupes et pools de volumes sont affectés. Tous les groupes et pools de volumes existants sur lesquels le provisionnement de ressources est activé restent inchangés.
 
 .Étapes
-. Sélectionnez menu:Paramètres[système].
+. Dans le panneau de gauche, sélectionnez menu:Settings[System].
 . Faites défiler jusqu'à *Paramètres supplémentaires*, puis cliquez sur *Activer/Désactiver les volumes provisionnés par ressource*.
 +
 La description du paramètre indique si le provisionnement de ressources est actuellement activé ou désactivé.

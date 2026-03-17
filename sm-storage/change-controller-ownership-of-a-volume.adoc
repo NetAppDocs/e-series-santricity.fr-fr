@@ -21,10 +21,10 @@ Si vous n'utilisez pas de pilote multivoie, toutes les applications hôtes qui u
 Vous pouvez modifier la propriété du contrôleur pour un ou plusieurs volumes d'un pool ou d'un groupe de volumes.
 
 .Étapes
-. Sélectionnez menu:Storage[volumes].
-. Sélectionnez un volume, puis sélectionnez menu:More[change Ownership].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
+. Cliquez sur l'icône menu:ellipsis [Change volume ownership].
 +
-La boîte de dialogue Modifier la propriété du volume s'affiche. Tous les volumes de la matrice de stockage s'affichent dans cette boîte de dialogue.
+La fenêtre « Modifier le propriétaire du volume » s’affiche. Tous les volumes de la baie de stockage apparaissent dans cette boîte de dialogue.
 
 . Utilisez la liste déroulante *propriétaire préféré* pour changer le contrôleur préféré pour chaque volume que vous souhaitez modifier et confirmez que vous souhaitez effectuer l'opération.
 
