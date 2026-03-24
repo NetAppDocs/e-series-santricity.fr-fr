@@ -647,7 +647,7 @@ Lors de la création d'un pool, la capacité d'optimisation recommandée permet 
 
 [NOTE]
 ====
-Le curseur capacité d'optimisation supplémentaire n'est disponible que pour les systèmes de stockage EF600 et EF300.
+Le curseur de capacité d'optimisation supplémentaire est uniquement disponible pour les systèmes de stockage EF80, EF50, EF600 et EF300.
 
 ====
 
@@ -662,7 +662,7 @@ Lors de la création d'un groupe de volumes, une capacité d'optimisation recomm
 
 [NOTE]
 ====
-Le curseur capacité d'optimisation supplémentaire n'est disponible que pour les systèmes de stockage EF600 et EF300.
+Le curseur de capacité d'optimisation supplémentaire est uniquement disponible pour les systèmes de stockage EF80, EF50, EF600 et EF300.
 
 ====
 
