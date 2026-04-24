@@ -21,7 +21,7 @@ Vous pouvez configurer SANtricity System Manager pour certains paramètres gén�
 Les paramètres de la matrice sont les suivants :
 
 * link:cache-settings-and-performance.html["Paramètres du cache et performances"]
-* link:automatic-load-balancing-overview.html"["Équilibrage automatique de la charge"]
+* link:automatic-load-balancing-overview.html["Équilibrage automatique de la charge"]
 * link:how-add-on-features-work.html["Fonctionnalités complémentaires"]
 * link:overview-drive-security.html["Sécurité du lecteur"]
 
