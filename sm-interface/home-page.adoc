@@ -2,22 +2,18 @@
 permalink: sm-interface/home-page.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, home page 
-summary: 'La page d"accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d"accueil est le premier écran affiché.' 
+summary: 'Le tableau de bord offre une vue d"ensemble de la gestion quotidienne de votre baie de stockage. Lorsque vous vous connectez à System Manager, le tableau de bord est le premier écran affiché.' 
 ---
-= En savoir plus sur la page d'accueil de SANtricity System Manager
+= Découvrez le tableau de bord de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-La page d'accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez au Gestionnaire système SANtricity, la page d'accueil est le premier écran affiché.
+Le tableau de bord offre une vue d'ensemble de la gestion quotidienne de votre baie de stockage. Lorsque vous vous connectez à SANtricity System Manager, le tableau de bord est le premier écran affiché.
 
-Le tableau de bord comprend quatre zones récapitulatives contenant des informations clés sur l'état et l'état de santé de votre baie de stockage. Vous trouverez plus d'informations dans la zone de résumé.
-
-* *Notifications*
-+
-La zone Notifications affiche les notifications de problèmes indiquant l'état de la matrice de stockage et de ses composants. De plus, ce portlet affiche des alertes automatisées qui peuvent vous aider à résoudre les problèmes avant qu'ils n'affectent d'autres domaines de votre environnement de stockage.
+La vue du tableau de bord comprend trois zones récapitulatives qui contiennent des informations clés sur l'état et la santé de votre baie de stockage. Vous pouvez trouver plus d'informations dans la zone récapitulative.
 
 * *Performance*
 +

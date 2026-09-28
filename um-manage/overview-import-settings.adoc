@@ -15,6 +15,7 @@ La fonction Importer les paramètres vous permet d'effectuer une opération par 
 
 
 
+[[what-settings-can-be-imported]]
 == Quels paramètres peuvent être importés ?
 
 Vous pouvez importer des méthodes d'alerte, des configurations AutoSupport, des services d'annuaire, des configurations de stockage (groupes de volumes et pools, par exemple) et des paramètres système (équilibrage automatique de la charge).
@@ -27,6 +28,7 @@ En savoir plus :
 
 
 
+[[how-do-i-perform-a-batch-import]]
 == Comment effectuer une importation par lots ?
 
 Sur une baie de stockage à utiliser comme source, ouvrez System Manager et configurez les paramètres souhaités. Ensuite, depuis Unified Manager, accédez à la page gérer et importez les paramètres vers une ou plusieurs baies.

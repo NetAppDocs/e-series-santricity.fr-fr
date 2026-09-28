@@ -23,11 +23,11 @@ Vous pouvez mettre à niveau le micrologiciel de vos lecteurs pour vous assurer 
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Support [Upgrade Center].
+. Dans le panneau de gauche, sélectionnez menu : Support[Upgrade center].
 . Téléchargez les nouveaux fichiers du site de support sur votre client de gestion.
-. Sous mise à niveau du micrologiciel du lecteur, cliquez sur *commencer la mise à niveau*.
+. Sous mise à niveau du firmware des disques, cliquez sur *Démarrer la mise à niveau du firmware des disques*.
 +
-Une boîte de dialogue s'affiche, qui répertorie les fichiers du micrologiciel du lecteur actuellement utilisés.
+La page de mise à niveau du firmware des disques s'affiche, qui répertorie les fichiers de firmware actuellement utilisés.
 
 . Extrayez (décompresser) les fichiers téléchargés depuis le site de support.
 . Cliquez sur *Parcourir*, puis sélectionnez les nouveaux fichiers de micrologiciel de lecteur que vous avez téléchargés à partir du site de support.
@@ -39,7 +39,7 @@ Vous pouvez sélectionner jusqu'à quatre fichiers de micrologiciel de lecteur, 
 
 . Cliquez sur *Suivant*.
 +
-La boîte de dialogue *Sélectionner les lecteurs* apparaît, qui répertorie les lecteurs que vous pouvez mettre à niveau avec les fichiers sélectionnés.
+L'étape *Sélectionner les lecteurs* s'affiche, qui répertorie les lecteurs que vous pouvez mettre à niveau avec les fichiers sélectionnés.
 
 +
 Seuls les lecteurs compatibles apparaissent.
@@ -49,8 +49,8 @@ Le micrologiciel sélectionné pour le lecteur s'affiche dans la zone d'informat
 
 . Sélectionnez le type de mise à niveau que vous souhaitez effectuer :
 +
-** *Online (par défaut)* -- affiche les lecteurs qui peuvent prendre en charge un téléchargement de micrologiciel _pendant que la matrice de stockage traite I/O_. Il n'est pas nécessaire d'arrêter les E/S vers les volumes associés à l'aide de ces lecteurs lorsque vous sélectionnez cette méthode de mise à niveau. Ces disques sont mis à niveau un par un, alors que la baie de stockage traite des E/S vers ces disques.
-** *Hors ligne (parallèle)* -- affiche les lecteurs qui peuvent prendre en charge un téléchargement de micrologiciel _uniquement pendant que toutes les activités d'E/S sont arrêtées_ sur tous les volumes qui utilisent les lecteurs. Vous devez arrêter toutes les activités d'E/S sur les volumes qui utilisent les lecteurs que vous mettez à niveau lorsque vous sélectionnez cette méthode de mise à niveau. Les lecteurs qui ne sont pas redondants doivent être traités comme une opération hors ligne. Cette configuration inclut tous les disques associés à un cache SSD, un groupe de volumes RAID 0 ou tout pool ou groupe de volumes dégradé. La mise à niveau hors ligne (parallèle) est généralement plus rapide que la méthode en ligne (par défaut).
+** *Mise à niveau de tous les disques en ligne* -- Affiche les disques qui peuvent prendre en charge un téléchargement de firmware _pendant que la baie de stockage traite des E/S_. Vous n'avez pas besoin d'arrêter les E/S vers les volumes associés utilisant ces disques lorsque vous sélectionnez cette méthode de mise à niveau. Ces disques sont mis à niveau un par un pendant que la baie de stockage traite des E/S vers ces disques.
+** *Mise à niveau de tous les disques hors ligne (parallèle)* -- Affiche les disques qui peuvent prendre en charge un téléchargement de firmware _uniquement lorsque toute activité d'E/S est arrêtée_ sur les volumes utilisant ces disques. Vous devez arrêter toute activité d'E/S sur les volumes utilisant les disques que vous mettez à niveau lorsque vous sélectionnez cette méthode de mise à niveau. Les disques qui ne disposent pas de redondance doivent être traités comme une opération hors ligne. Cette exigence inclut tout disque associé à un cache SSD, à un groupe de volumes RAID 0, ou à tout pool ou groupe de volumes dégradé. La mise à niveau hors ligne (parallèle) est généralement plus rapide que la méthode en ligne.
 
 
 . Dans la première colonne du tableau, sélectionnez le ou les lecteurs que vous souhaitez mettre à niveau.
@@ -64,7 +64,7 @@ Si vous devez arrêter la mise à niveau, cliquez sur *Stop*. Tous les télécha
 L'arrêt de la mise à niveau du micrologiciel du lecteur peut entraîner une perte de données ou l'indisponibilité des disques.
 
 ====
-. *Facultatif:* pour afficher la liste des mises à niveau, cliquez sur *Enregistrer le journal*.
+. *Facultatif :* Pour afficher la liste des éléments mis à niveau, cliquez sur *Enregistrer le journal*.
 +
 Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `drive_upgrade_log-timestamp.txt`.
 

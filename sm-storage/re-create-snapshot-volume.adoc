@@ -28,8 +28,7 @@ Si le volume Snapshot du volume de snapshot ou du groupe de cohérence de snapsh
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Sélectionnez l'onglet *Snapshot volumes*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot volumes].
 +
 Le tableau Snapshot volumes apparaît et affiche tous les volumes de snapshot associés à la baie de stockage.
 

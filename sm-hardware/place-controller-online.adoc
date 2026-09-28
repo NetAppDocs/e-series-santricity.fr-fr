@@ -14,11 +14,7 @@ summary: Si un contrôleur est en mode hors ligne ou de service, vous pouvez le 
 Si un contrôleur est en mode hors ligne ou de service, vous pouvez le remettre en ligne.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
-+
-Le graphique change pour afficher les contrôleurs au lieu des disques.
-
+. Dans le panneau de gauche, sélectionnez menu:Hardware[Controllers and components].
 . Cliquez sur un contrôleur en mode hors ligne ou de service.
 +
 Le menu contextuel du contrôleur s'affiche.

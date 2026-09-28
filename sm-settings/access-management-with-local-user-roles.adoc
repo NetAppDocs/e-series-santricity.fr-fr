@@ -15,6 +15,7 @@ Pour la gestion des accès, les administrateurs peuvent utiliser les fonctionnal
 
 
 
+[[configuration-workflow]]
 == Flux de travail de configuration
 
 Les rôles utilisateur locaux sont préconfigurés pour la matrice de stockage. Pour utiliser les rôles d'utilisateur local pour l'authentification, les administrateurs peuvent effectuer les opérations suivantes :
@@ -33,6 +34,7 @@ Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du 
 
 
 
+[[management]]
 == Gestion
 
 Lors de l'utilisation de rôles d'utilisateur local uniquement pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :

@@ -17,6 +17,7 @@ L'objectif de la capacité réservée est de stocker les modifications des donn�
 
 
 
+[[copy-service-objects-that-use-reserved-capacity]]
 == Copie des objets de service utilisant la capacité réservée
 
 La capacité réservée est le mécanisme de stockage sous-jacent utilisé par ces objets de service de copie :
@@ -31,6 +32,7 @@ Lors de la création ou de l'extension de ces objets de service de copie, vous d
 
 
 
+[[thin-volumes-and-reserved-capacity]]
 == Des volumes fins et une capacité réservée
 
 Pour un volume fin, si la capacité maximale rapportée de 256 Tio a été atteinte, vous ne pouvez pas augmenter sa capacité. Assurez-vous que la capacité réservée du volume fin est définie sur une taille supérieure à la capacité maximale indiquée. (Un volume fin fait toujours l'objet d'un provisionnement fin, ce qui signifie que la capacité est allouée au fur et à mesure de l'écriture des données sur le volume.)
@@ -43,6 +45,7 @@ Si vous créez de la capacité réservée à l'aide d'un volume fin dans un pool
 
 
 
+[[capacity-alerts]]
 == Alertes de capacité
 
 L'objet de service de copie dispose d'un seuil d'alerte et d'avertissement de capacité configurable, ainsi que d'une réponse configurable lorsque la capacité réservée est pleine.
@@ -51,16 +54,18 @@ Lorsque la capacité réservée d'un volume d'objet de service de copie approche
 
 
 
+[[orphaned-reserved-capacity-volumes]]
 == Volumes de capacité réservée orphelins
 
 Un volume de capacité réservée orphelin est un volume qui ne stocke plus les données pour les opérations de copie du service, car son objet de service de copie associé a été supprimé. Lorsque l'objet de service de copie a été supprimé, son volume de capacité réservé doit également avoir été supprimé. Cependant, la suppression du volume de capacité réservée n'a pas pu être faite.
 
 Comme les volumes de capacité réservée orphelins ne sont pas accessibles par aucun hôte, ils sont des candidats à la restauration. Supprimez manuellement le volume de capacité réservée orpheline, ce qui vous permet d'utiliser sa capacité pour d'autres opérations.
 
-System Manager vous signale les volumes de capacité réservée orphelins par un message du type « récupérer la capacité inutilisée » dans la zone Notifications de la page d'accueil. Vous pouvez cliquer sur *récupérer la capacité inutilisée* pour afficher la boîte de dialogue récupérer la capacité inutilisée, où vous pouvez supprimer le volume de capacité réservé orphelin.
+System Manager vous avertit des volumes de capacité réservée orphelins par un message « Récupérer la capacité inutilisée » dans la zone de notifications, accessible via l'icône de cloche située dans le coin supérieur de la fenêtre. Vous pouvez cliquer sur *Récupérer la capacité inutilisée* pour afficher la boîte de dialogue Reclaim Unused Capacity, où vous pouvez supprimer le volume de capacité réservée orphelin.
 
 
 
+[[characteristics-of-reserved-capacity]]
 == Caractéristiques de la capacité réservée
 
 * La capacité allouée à des capacités réservées doit être prise en compte lors de la création du volume afin de conserver une capacité disponible suffisante.

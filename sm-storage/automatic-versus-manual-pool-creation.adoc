@@ -15,6 +15,7 @@ Vous créez des pools automatiquement ou manuellement pour permettre de regroupe
 
 
 
+[[automatic-creation]]
 == Création automatique
 
 La création automatique de pools est lancée lorsque System Manager détecte une capacité non attribuée dans une baie de stockage. Lorsqu'une capacité non affectée est détectée, System Manager vous invite automatiquement à créer un ou plusieurs pools, ou à ajouter la capacité non attribuée à un pool existant, ou aux deux.
@@ -25,7 +26,7 @@ La création automatique de pools se produit lorsque l'une de ces conditions est
 * De nouveaux disques sont ajoutés à une matrice de stockage qui possède au moins un pool.
 
 
-Chaque disque d'un pool doit être du même type de disque (HDD ou SSD) et avoir une capacité similaire. System Manager vous invite à effectuer les tâches suivantes :
+Chaque disque d'un pool doit être du même type (HDD ou SSD) et avoir une capacité similaire. Sur les systèmes EF80 et EF50, les disques NVMe SSD Performance et Capacity sont considérés comme des types de disques distincts ; System Manager crée des pools séparés pour chaque type lorsqu'ils sont tous deux présents. System Manager vous invitera à effectuer les tâches suivantes :
 
 * Créez un pool unique s'il y a un nombre suffisant de disques de ces types.
 * Créez plusieurs pools si la capacité non affectée se compose de différents types de disques.
@@ -35,6 +36,7 @@ Chaque disque d'un pool doit être du même type de disque (HDD ou SSD) et avoir
 
 
 
+[[manual-creation]]
 == Création manuelle
 
 Vous pouvez créer un pool manuellement lorsque la création automatique ne peut pas déterminer la meilleure configuration. Cette situation peut se produire pour l'une des raisons suivantes :

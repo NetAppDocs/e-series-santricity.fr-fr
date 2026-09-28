@@ -25,13 +25,13 @@ Le processus de création d'un volume de snapshot est une procédure en plusieur
 
 
 
+[[step-1-review-members-for-a-snapshot-volume]]
 == Étape 1 : consultez les membres d'un volume de snapshot
 
 Sélectionnez une image Snapshot d'un volume de base ou d'un groupe de cohérence Snapshot. Si vous sélectionnez une image snapshot de groupe de cohérence, les volumes membres du groupe de cohérence de snapshot s'affichent pour révision.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Sélectionnez l'onglet *Snapshot volumes*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot volumes].
 . Sélectionnez *Créer*.
 +
 La boîte de dialogue Créer un volume Snapshot s'affiche.
@@ -48,6 +48,7 @@ Dans la boîte de dialogue vérifier les membres, vérifiez la liste des volumes
 
 
 
+[[step-2-assign-snapshot-volume-to-host]]
 == Étape 2 : affecter un volume de snapshot à l'hôte
 
 Sélectionnez un hôte ou un cluster hôte spécifique pour l'attribuer au volume snapshot. Cette affectation permet à un hôte ou un cluster hôte d'accéder au volume Snapshot. Vous pouvez choisir d'attribuer un hôte ultérieurement, si nécessaire.
@@ -90,6 +91,7 @@ L'affectation d'un volume à un hôte échoue si vous essayez d'attribuer un vol
 
 
 
+[[step-3-reserve-capacity-for-a-snapshot-volume]]
 == Étape 3 : réserver de la capacité pour un volume Snapshot
 
 Associer la capacité réservée à un volume snapshot de lecture/écriture. System Manager suggère les volumes et la capacité en fonction des propriétés du volume de base ou du groupe de cohérence Snapshot. Vous pouvez accepter la configuration de capacité réservée recommandée ou personnaliser le stockage alloué.
@@ -130,6 +132,7 @@ Allouez la capacité réservée en suivant les instructions suivantes.
 
 
 
+[[step-4-edit-settings-for-a-snapshot-volume]]
 == Étape 4 : modifiez les paramètres d'un volume de snapshot
 
 Modifiez les paramètres d'un volume Snapshot, comme son nom, la mise en cache, les seuils d'alerte de capacité réservée, etc.
@@ -156,7 +159,7 @@ Pour améliorer les performances en lecture seule, vous pouvez ajouter le volume
  a| 
 Nom
  a| 
-Spécifiez le nom du volume de snapshot.
+Spécifiez le nom du volume d'instantané. Les noms de volume peuvent comporter jusqu'à 30 caractères. Le nom doit être unique.
 
 
 

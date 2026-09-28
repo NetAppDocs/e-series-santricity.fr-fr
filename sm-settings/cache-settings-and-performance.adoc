@@ -24,16 +24,18 @@ Les paramètres de cache par défaut répondent aux exigences de la plupart des 
 
 
 
+[[storage-array-cache-settings]]
 == Paramètres de cache de la baie de stockage
 
 Pour tous les volumes de la matrice de stockage, vous pouvez spécifier les valeurs suivantes à partir de la page système :
 
-* *Valeur de début pour le vidage* -- pourcentage de données non écrites dans le cache qui déclenche un vidage du cache (écrire sur le disque). Lorsque le cache contient le pourcentage de démarrage spécifié de données non écrites, un vidage est déclenché. Par défaut, le contrôleur commence à vider le cache lorsque celui-ci atteint 80 % de saturation.
+* *Démarrage du vidage du cache à la demande* : pourcentage de données non écrites dans le cache déclenchant un vidage (écriture sur disque). Lorsque le cache contient le pourcentage spécifié de données non écrites, un vidage est déclenché. Par défaut, le contrôleur commence à vider le cache lorsque celui-ci atteint 80 % de sa capacité.
 * *Taille de bloc de cache* -- la taille maximale de chaque bloc de cache, qui est une unité organisationnelle pour la gestion du cache. La taille du bloc cache est par défaut de 8 Kio, mais peut être définie sur 4, 8, 16 ou 32 Kio. La taille de bloc du cache doit idéalement être définie sur la taille d'E/S prédominante de vos applications. Les systèmes de fichiers ou les applications de bases de données utilisent généralement des tailles plus petites, tandis que la taille supérieure est adaptée aux applications qui nécessitent des transferts de données volumineux ou des E/S séquentielles
 
 
 
 
+[[volume-cache-settings]]
 == Paramètres de cache de volume
 
 Pour les volumes individuels d'une matrice de stockage, vous pouvez spécifier les valeurs suivantes à partir de la page volumes (menu:Storage[volumes]) :

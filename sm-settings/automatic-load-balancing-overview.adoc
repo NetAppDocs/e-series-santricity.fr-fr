@@ -23,6 +23,7 @@ Lorsque l'équilibrage automatique de la charge est activé, il exécute les fon
 
 
 
+[[enabling-and-disabling-automatic-load-balancing]]
 == Activation et désactivation de l'équilibrage automatique de la charge
 
 L'équilibrage automatique de la charge est activé par défaut sur toutes les matrices de stockage.
@@ -35,6 +36,7 @@ Vous pouvez désactiver l'équilibrage automatique de la charge sur votre matric
 
 
 
+[[host-types-that-support-the-automatic-load-balancing-feature]]
 == Types d'hôte prenant en charge la fonction d'équilibrage automatique de la charge
 
 Même si l'équilibrage automatique de la charge est activé au niveau de la baie de stockage, le type d'hôte que vous sélectionnez pour un hôte ou un cluster hôte a une influence directe sur le fonctionnement de la fonction.
@@ -82,6 +84,7 @@ Voir la https://mysupport.netapp.com/matrix["Matrice d'interopérabilité"^] Pou
 
 
 
+[[verifying-os-compatibility-with-the-automatic-load-balancing-feature]]
 == Vérification de la compatibilité du système d'exploitation avec la fonction d'équilibrage automatique de la charge
 
 Vérifiez la compatibilité du système d'exploitation avec la fonction d'équilibrage automatique de la charge avant de configurer un nouveau système (ou de migrer un système existant).

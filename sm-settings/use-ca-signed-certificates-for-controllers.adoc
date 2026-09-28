@@ -24,6 +24,7 @@ L'utilisation de certificats signés par l'autorité de certification est une pr
 
 
 
+[[step-1-complete-csrs-for-the-controllers]]
 == Étape 1 : compléter les RSC pour les contrôleurs
 
 Vous devez d'abord générer un fichier de requête de signature de certificat (CSR) pour chaque contrôleur de la matrice de stockage.
@@ -37,8 +38,7 @@ Vous pouvez également générer un fichier CSR à l'aide d'un outil tel que Ope
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
-. Dans l'onglet Array Management, sélectionnez *Complete CSR*.
+. Dans le panneau de gauche, sélectionnez menu : Certificates [Array management certificates], puis sélectionnez *Complete CSR*.
 +
 [NOTE]
 ====
@@ -85,6 +85,7 @@ Pour un seul contrôleur, un fichier CSR est téléchargé sur votre système lo
 
 
 
+[[step-2-submit-the-csr-files]]
 == Étape 2 : soumettez les fichiers CSR
 
 Après avoir créé les fichiers de demande de signature de certificat (CSR), envoyez les fichiers à une autorité de certification (AC). Les systèmes E-Series nécessitent le format PEM (Base64 ASCII codage) pour les certificats signés, qui inclut les types de fichiers suivants : pem, .crt, .cer ou .key.
@@ -103,6 +104,7 @@ Après avoir créé les fichiers de demande de signature de certificat (CSR), en
 
 
 
+[[step-3-import-signed-certificates-for-controllers]]
 == Étape 3 : importation de certificats signés pour les contrôleurs
 
 Une fois que vous avez reçu des certificats signés de l'autorité de certification (CA), importez les fichiers des contrôleurs.
@@ -114,8 +116,7 @@ Une fois que vous avez reçu des certificats signés de l'autorité de certifica
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates]
-. Dans l'onglet gestion des baies, sélectionnez *Importer*.
+. Dans le panneau de gauche, sélectionnez menu : Certificates [Array management certificates], puis sélectionnez *Import*.
 +
 Une boîte de dialogue s'ouvre pour importer le(s) fichier(s) de certificat.
 

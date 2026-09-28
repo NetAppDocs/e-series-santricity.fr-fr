@@ -15,15 +15,14 @@ summary: 'Vous pouvez supprimer une adresse de destination d"interruption afin q
 Vous pouvez supprimer une adresse de destination d'interruption afin que le moniteur d'événements de la matrice de stockage n'envoie plus d'interruptions SNMP à cette adresse.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
 Les adresses de destination des interruptions apparaissent dans le tableau.
 
 . Sélectionnez une destination d'interruption, puis cliquez sur *Supprimer* dans le coin supérieur droit de la page.
 . Confirmez l'opération, puis cliquez sur *Supprimer*.
 +
-L'adresse de destination n'apparaît plus sur la page alertes.
+L'adresse de destination n'apparaît plus sur la page des alertes SNMP.
 
 
 

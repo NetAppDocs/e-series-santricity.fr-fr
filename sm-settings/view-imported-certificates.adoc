@@ -2,7 +2,7 @@
 permalink: sm-settings/view-imported-certificates.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
-summary: 'À partir de la page certificats, vous pouvez afficher le type de certificat, l"autorité d"émission et la plage de dates valide des certificats de la matrice de stockage.' 
+summary: 'Dans la catégorie Certificats, vous pouvez consulter le type de certificat, l"autorité émettrice et la plage de dates de validité des certificats pour la baie de stockage.' 
 ---
 = Afficher les informations du certificat importé dans SANtricity System Manager
 :allow-uri-read: 
@@ -12,29 +12,29 @@ summary: 'À partir de la page certificats, vous pouvez afficher le type de cert
 
 
 [role="lead"]
-À partir de la page certificats, vous pouvez afficher le type de certificat, l'autorité d'émission et la plage de dates valide des certificats de la matrice de stockage.
+Dans la catégorie Certificats, vous pouvez consulter le type de certificat, l'autorité émettrice et la plage de dates de validité des certificats pour la baie de stockage.
 
 .Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
-. Sélectionnez l'un des onglets pour afficher des informations sur les certificats.
+. Dans le panneau de gauche, sélectionnez *Certificates*.
+. Sélectionnez l'une des pages suivantes pour consulter les informations relatives aux certificats.
 +
 [cols="25h,~"]
 |===
-| Onglet | Description 
+| Page | Description 
 
 
  a| 
-Gestion de la baie
+menu:Certificats[Certificats de gestion de baies]
  a| 
 Afficher des informations sur les certificats signés par l'autorité de certification importés pour chaque contrôleur, y compris le fichier racine, le(s) fichier(s) intermédiaire(s) et le(s) fichier(s) du serveur.
 
 
 
  a| 
-Fiabilité
+menu:Certificats[Certificats de confiance]
  a| 
 Afficher des informations sur tous les autres types de certificats importés pour les contrôleurs. Utilisez le champ filtre sous *Afficher les certificats qui sont...* pour afficher les certificats installés par l'utilisateur ou pré-installés.
 
@@ -45,7 +45,7 @@ Afficher des informations sur tous les autres types de certificats importés pou
 
 
  a| 
-Gestion des clés
+menu:Certificats[Certificats de gestion des clés]
  a| 
 Afficher des informations sur les certificats signés par l'autorité de certification importés pour un serveur de gestion de clés externe.
 

@@ -14,7 +14,7 @@ summary: 'Les fonctionnalités RBAC (contrôle d"accès basé sur des rôles) ap
 [role="lead"]
 Les fonctionnalités RBAC (contrôle d'accès basé sur des rôles) appliquées sur la baie de stockage incluent des profils utilisateur prédéfinis avec un ou plusieurs rôles qui leur sont mappés. Chaque rôle inclut des autorisations d'accès aux tâches dans SANtricity System Manager.
 
-Les profils utilisateur et les rôles mappés sont accessibles à partir du menu:Paramètres[Access Management > local User Roles] dans l'interface utilisateur de System Manager.
+Les profils utilisateur et les rôles associés sont accessibles depuis le menu : Authentication[Local user roles] dans l’interface utilisateur de l’un ou l’autre System Manager.
 
 Les rôles permettent à l'utilisateur d'accéder aux tâches comme suit :
 

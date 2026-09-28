@@ -40,14 +40,14 @@ Cette opération _n'enregistre pas_ ces paramètres :
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
-. Sélectionnez *Enregistrer la configuration de la matrice de stockage*.
+. Dans le panneau de gauche, sélectionnez *Système*.
+. Sélectionnez *Enregistrer la configuration de la baie de stockage*.
 . Sélectionnez les éléments de la configuration à enregistrer :
 +
 ** Paramètres de la matrice de stockage
 ** Configuration de volume
 ** Configuration de l'hôte
-** Affectations hôte-volume
+** Affectations hôte-vers-volume (nécessite une configuration du volume et de l'hôte)
 
 
 +

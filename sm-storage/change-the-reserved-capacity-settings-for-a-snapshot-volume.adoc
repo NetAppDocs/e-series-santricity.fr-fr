@@ -15,9 +15,8 @@ summary: 'Vous pouvez modifier les paramètres d"un volume d"instantané pour r�
 Vous pouvez modifier les paramètres d'un volume d'instantané pour régler le point de pourcentage auquel le système envoie une notification d'alerte lorsque la capacité réservée d'un volume d'instantané est presque pleine.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Cliquez sur l'onglet *capacité réservée*.
-. Sélectionnez le volume d'instantané que vous souhaitez modifier, puis cliquez sur menu : icône de points de suspension [Modifier les paramètres].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Reserved capacity].
+. Sélectionnez le volume d'instantané que vous souhaitez modifier, puis cliquez sur l'icône menu : ellipsis [Edit settings].
 +
 La fenêtre « Modifier les paramètres de capacité réservée du volume instantané » s’affiche.
 

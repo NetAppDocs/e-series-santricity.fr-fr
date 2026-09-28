@@ -15,8 +15,8 @@ summary: 'Vous pouvez importer des configurations d"alertes d"une matrice de sto
 Vous pouvez importer des configurations d'alertes d'une matrice de stockage vers d'autres matrices de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.
 
 .Avant de commencer
-* Les alertes sont configurées dans System Manager pour la baie de stockage que vous souhaitez utiliser comme source (menu : Paramètres[alertes]).
-* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
+* Les alertes sont configurées dans System Manager pour la baie de stockage que vous souhaitez utiliser comme source.
+* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:System[Enregistrer la configuration de la baie de stockage]).
 
 
 .Description de la tâche

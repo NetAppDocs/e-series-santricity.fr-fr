@@ -22,7 +22,7 @@ La configuration et l'authentification utilisateur fonctionnent comme suit :
 Pour la première connexion, le nom d'utilisateur `admin` s'affiche automatiquement et ne peut pas être modifié. Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du système.
 
 ====
-. L'administrateur accède à Access Management dans l'interface utilisateur. La baie de stockage est préconfigurée pour utiliser des rôles utilisateur locaux, une mise en œuvre des fonctionnalités RBAC (contrôle d'accès basé sur des rôles).
+. L'administrateur accède à la section Authentification dans l'interface utilisateur. La baie de stockage est préconfigurée pour utiliser des rôles d'utilisateur locaux, qui constituent une implémentation des fonctionnalités de contrôle d'accès basé sur les rôles (RBAC).
 . L'administrateur configure une ou plusieurs des méthodes d'authentification suivantes :
 +
 ** *Rôles d'utilisateur local* -- l'authentification est gérée via les fonctionnalités RBAC appliquées dans la matrice de stockage. Les rôles des utilisateurs locaux comprennent des profils utilisateur prédéfinis et des rôles avec des autorisations d'accès spécifiques. Les administrateurs peuvent utiliser ces rôles d'utilisateur local comme méthode unique d'authentification, ou les utiliser en combinaison avec un service d'annuaire. Aucune configuration n'est nécessaire, autre que la définition de mots de passe pour les utilisateurs.
@@ -52,6 +52,7 @@ Pendant la connexion, le système effectue les tâches d'arrière-plan suivantes
 
 
 
+[[tasks-available-in-system-manager]]
 == Tâches disponibles dans System Manager
 
 L'accès aux tâches dépend des rôles attribués à un utilisateur, qui comprennent les éléments suivants :
@@ -66,6 +67,7 @@ Une tâche non disponible est grisée ou ne s'affiche pas dans l'interface utili
 
 
 
+[[limitations-in-unified-manager-and-storage-manager]]
 == Restrictions liées à Unified Manager et Storage Manager
 
 Si le langage SAML est configuré pour une baie de stockage, les utilisateurs ne peuvent pas détecter ni gérer le stockage correspondant à cette baie à partir d'Unified Manager ou des interfaces Storage Manager héritées.

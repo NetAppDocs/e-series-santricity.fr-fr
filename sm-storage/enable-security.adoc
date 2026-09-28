@@ -28,7 +28,7 @@ Une fois la sécurité terminée, vous pouvez la supprimer uniquement en supprim
 
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Sélectionnez le pool ou le groupe de volumes sur lequel vous souhaitez activer la sécurité, puis cliquez sur menu:ellipsis icon[Activer la sécurité].
+. Localisez le pool ou le groupe de volumes sur lequel vous souhaitez activer la sécurité, puis cliquez sur menu : ellipsis icon [Activer la sécurité].
 +
 La boîte de dialogue confirmer l'activation de la sécurité s'affiche.
 

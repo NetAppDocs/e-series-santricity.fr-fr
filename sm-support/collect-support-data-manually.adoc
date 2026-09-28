@@ -19,7 +19,7 @@ Vous pouvez rassembler plusieurs types de données d'inventaire, d'état et de p
 
 [NOTE]
 ====
-Si la fonction AutoSupport est activée, vous pouvez également collecter ces données en accédant à l'onglet *AutoSupport* et en sélectionnant *Envoyer l'intervention AutoSupport*.
+Si la fonctionnalité AutoSupport est activée, vous pouvez également collecter ces données en allant dans le menu : Support[AutoSupport] et en sélectionnant *Envoyer un envoi AutoSupport*.
 
 ====
 Vous ne pouvez exécuter qu'une seule opération de collecte à la fois. Si vous tentez de démarrer une autre opération, un message d'erreur s'affiche.
@@ -30,7 +30,7 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
+. Dans le panneau de gauche, sélectionnez menu:Support[Diagnostics].
 . Sélectionnez *collecter les données de support*.
 . Cliquez sur *collect*.
 +

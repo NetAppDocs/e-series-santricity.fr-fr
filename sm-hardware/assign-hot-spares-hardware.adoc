@@ -34,18 +34,14 @@ Des disques de secours peuvent également être affectés à partir de l'assista
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
-+
-Le graphique change pour afficher les disques au lieu des contrôleurs.
-
+. Dans le panneau de gauche, sélectionnez menu : Hardware[Drives].
 . Sélectionnez un lecteur non affecté (en gris) que vous souhaitez utiliser comme disque de secours.
 +
 Le menu contextuel du lecteur s'ouvre.
 
 . Sélectionnez *affecter disque de secours*.
 +
-Si le lecteur est sécurisé, le disque d'effacement sécurisé ? la boîte de dialogue s'ouvre. Pour utiliser un disque sécurisé comme disque de secours, vous devez d'abord effectuer une opération d'effacement sécurisé pour supprimer toutes ses données et réinitialiser ses attributs de sécurité.
+Si le disque est sécurisé, la boîte de dialogue Secure erase drive s'ouvre. Pour utiliser un disque sécurisé comme disque de secours à chaud, vous devez d'abord effectuer une opération Secure Erase afin de supprimer toutes ses données et de réinitialiser ses attributs de sécurité.
 
 +
 [CAUTION]
@@ -54,7 +50,7 @@ Si le lecteur est sécurisé, le disque d'effacement sécurisé ? la boîte de d
 
 ====
 +
-Si le lecteur est *non* sécurisé activé, la boîte de dialogue confirmer l'attribution d'un disque de secours s'ouvre.
+Si le lecteur n'est *pas* activé pour la sécurité, la boîte de dialogue « Attribuer un lecteur de secours à chaud » s'ouvre.
 
 . Vérifiez le texte dans la boîte de dialogue, puis confirmez l'opération.
 +

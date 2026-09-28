@@ -16,6 +16,7 @@ Si vous prévoyez de configurer la mise en miroir, gardez les exigences suivante
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 * Le service Web Services Proxy doit être en cours d'exécution.
@@ -25,6 +26,7 @@ Si vous prévoyez de configurer la mise en miroir, gardez les exigences suivante
 
 
 
+[[storage-arrays]]
 == Les baies de stockage
 
 [NOTE]
@@ -44,6 +46,7 @@ La mise en miroir synchrone n'est pas disponible sur la baie de stockage EF80, E
 
 
 
+[[connectivity-requirements]]
 == Les besoins en connectivité
 
 La mise en miroir via une interface FC (asynchrone ou synchrone) nécessite les éléments suivants :
@@ -66,9 +69,16 @@ NOTE: Les contrôleurs E4000 ne prennent pas en charge la mise en miroir iSCSI.
 ** VLAN : les systèmes locaux et distants doivent avoir le même paramètre VLAN pour communiquer
 ** Port d'écoute iSCSI
 ** Trames Jumbo
-** Priorité Ethernet
 
 
+
+
+[NOTE]
+====
+L'utilisation de trames Jumbo est recommandée pour améliorer le taux d'utilisation du processeur et le débit.
+
+====
+* Priorité Ethernet
 
 
 [NOTE]
@@ -78,6 +88,7 @@ La communication iSCSI entre contrôleurs doit utiliser un port de connexion hô
 ====
 
 
+[[mirrored-volume-candidates]]
 == Candidats aux volumes en miroir
 
 * Le niveau RAID, les paramètres de mise en cache et la taille des segments peuvent être différents sur les volumes primaire et secondaire d'une paire en miroir.
@@ -96,11 +107,12 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 ** Si le volume principal n'utilise pas la sécurité du lecteur, le volume secondaire ne doit pas utiliser la sécurité du lecteur.
 
 
-* Le partitionnement des ressources ne doit pas être activé pour les volumes primaires et secondaires.
+* Les volumes primaires et secondaires ne doivent pas avoir l'approvisionnement en ressources activé.
 
 
 
 
+[[reserved-capacity]]
 == Capacité réservée
 
 Mise en miroir asynchrone :
@@ -117,6 +129,7 @@ Mise en miroir synchrone :
 
 
 
+[[drive-security-feature]]
 == Fonction de sécurité du lecteur
 
 * Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent disposer de paramètres de sécurité compatibles. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.

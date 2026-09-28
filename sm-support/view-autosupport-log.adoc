@@ -22,7 +22,7 @@ Plusieurs fichiers journaux peuvent exister. Lorsque le fichier journal actuel a
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
+. Dans le panneau de gauche, sélectionnez menu : Support[AutoSupport].
 . Sélectionnez *Afficher le journal AutoSupport*.
 +
 Une boîte de dialogue apparaît, qui répertorie le journal AutoSupport actuel.

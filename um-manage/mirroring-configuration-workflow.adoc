@@ -15,6 +15,7 @@ Vous configurez la mise en miroir asynchrone ou synchrone dans SANtricity Unifie
 
 
 
+[[asynchronous-mirroring-workflow]]
 == Flux de travail de mise en miroir asynchrone
 
 La mise en miroir asynchrone implique le workflow suivant :
@@ -45,6 +46,7 @@ La mise en miroir asynchrone implique le workflow suivant :
 
 
 
+[[synchronous-mirroring-workflow]]
 == Workflow de mise en miroir synchrone
 
 La mise en miroir synchrone implique le workflow suivant :

@@ -34,7 +34,7 @@ L'augmentation de la capacité d'un volume n'est prise en charge que sur certain
 ====
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
-. Sélectionnez le volume pour lequel vous souhaitez augmenter la capacité, puis cliquez sur le menu : ellipsis icon[Increase Capacity].
+. Repérez le volume pour lequel vous souhaitez augmenter la capacité, puis cliquez sur l’icône de menu : ellipsis [Increase Capacity].
 +
 La page Confirmer l'augmentation de capacité s'affiche.
 
@@ -51,7 +51,7 @@ Cette page affiche la capacité actuelle signalée du volume et la capacité lib
 
 .Résultats
 * System Manager augmente la capacité du volume en fonction de votre sélection.
-* Sélectionnez le menu : Storage[Operations in Progress] pour afficher la progression de l’augmentation de capacité en cours pour le volume sélectionné. Cette opération peut être longue et pourrait affecter les performances du système.
+* Sélectionnez le menu : Monitoring [Operations in progress] pour consulter la progression de l’opération d’augmentation de capacité en cours sur le volume sélectionné. Cette opération peut être longue et pourrait affecter les performances du système.
 
 
 .Une fois que vous avez terminé

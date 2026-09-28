@@ -24,19 +24,21 @@ Vous pouvez créer et gérer des clés de sécurité en utilisant l'une des mét
 
 
 
+[[internal-key-management]]
 == Gestion interne des clés
 
 Les clés internes sont conservées et « masquées » dans un emplacement non accessible sur la mémoire persistante du contrôleur. Pour implémenter la gestion interne des clés, procédez comme suit :
 
 . Installez des disques sécurisés dans la baie de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).
 . Assurez-vous que la fonction sécurité du lecteur est activée. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
-. Créez une clé de sécurité interne, qui implique la définition d'un identifiant et d'une phrase de passe. L'identifiant est une chaîne associée à la clé de sécurité, qui est stockée sur le contrôleur et sur tous les disques associés à la clé. La phrase de passe est utilisée pour crypter la clé de sécurité à des fins de sauvegarde. Pour créer une clé interne, accédez au menu:Paramètres[système > gestion des clés de sécurité > Créer une clé interne].
+. Créez une clé de sécurité interne, ce qui implique de définir un identifiant et une phrase secrète. L'identifiant est une chaîne associée à la clé de sécurité, et il est stocké sur le contrôleur ainsi que sur tous les disques associés à la clé. La phrase secrète est utilisée pour chiffrer la clé de sécurité à des fins de sauvegarde. Pour créer une clé de sécurité interne, allez dans menu:System[Create internal security key].
 
 
 La clé de sécurité est stockée sur le contrôleur dans un emplacement caché et non accessible. Vous pouvez ensuite créer des pools ou des groupes de volumes sécurisés, ou activer la sécurité sur des groupes de volumes et des pools existants.
 
 
 
+[[external-key-management]]
 == Gestion externe des clés
 
 Les clés externes sont conservées sur un serveur distinct de gestion des clés à l'aide d'un protocole KMIP (Key Management Interoperability Protocol). Pour implémenter la gestion externe des clés, procédez comme suit :
@@ -45,14 +47,14 @@ Les clés externes sont conservées sur un serveur distinct de gestion des clés
 . Assurez-vous que la fonction sécurité du lecteur est activée. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
 . Obtenir un fichier de certificat client signé. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs requêtes KMIP.
 +
-.. Tout d'abord, vous remplissez et téléchargez une requête client de signature de certificat (CSR). Accédez au menu:Paramètres[certificats > gestion des clés > CSR complète].
+.. Tout d'abord, vous complétez et téléchargez une demande de signature de certificat (CSR) client. Accédez au menu : Certificates [Key management certificates], puis sélectionnez *Complete CSR*.
 .. Vous demandez ensuite un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés. (Vous pouvez également créer et télécharger un certificat client à partir du serveur de gestion des clés à l'aide du fichier CSR.)
 .. Une fois que vous avez un fichier de certificat client, copiez-le vers l'hôte sur lequel vous accédez à System Manager.
 .. Vous pouvez également générer une demande de signature de certificat en externe à l'aide d'une paire de clés privée et publique.
 
 
 . Récupérez un fichier de certificat à partir du serveur de gestion des clés, puis copiez-le vers l'hôte sur lequel vous accédez à System Manager. Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP. Vous pouvez utiliser un certificat racine, intermédiaire ou serveur pour le serveur de gestion des clés.
-. Créez une clé externe qui implique la définition de l'adresse IP du serveur de gestion des clés et du numéro de port utilisé pour les communications KMIP. Au cours de ce processus, vous chargez également des fichiers de certificat. Pour créer une clé externe, accédez au menu:Paramètres[système > gestion des clés de sécurité > Créer une clé externe].
+. Créez une clé externe, ce qui implique de définir l'adresse IP du serveur de gestion des clés et le numéro de port utilisé pour les communications KMIP. Au cours de ce processus, vous chargez également les fichiers de certificat. Pour créer une clé externe, allez dans menu:System[Create external security key].
 
 
 Le système se connecte au serveur de gestion des clés avec les informations d'identification que vous avez saisies. Vous pouvez ensuite créer des pools ou des groupes de volumes sécurisés, ou activer la sécurité sur des groupes de volumes et des pools existants.

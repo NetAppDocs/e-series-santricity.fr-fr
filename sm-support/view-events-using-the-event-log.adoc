@@ -15,7 +15,7 @@ summary: Vous pouvez afficher le journal des événements, qui fournit un histor
 Vous pouvez afficher le journal des événements, qui fournit un historique des événements survenus sur la matrice de stockage.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Support[Journal des événements].
+. Dans le panneau de gauche, sélectionnez menu : Monitoring [Event log].
 +
 La page Journal des événements s'affiche.
 

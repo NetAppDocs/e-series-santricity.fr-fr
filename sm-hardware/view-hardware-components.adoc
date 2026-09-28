@@ -26,7 +26,7 @@ La page matériel fournit des fonctions de tri et de filtrage qui facilitent la 
  a| 
 Vues des lecteurs, des contrôleurs et des composants
  a| 
-Pour basculer entre les vues des tiroirs avant et arrière, sélectionnez *lecteurs* ou *contrôleurs et composants* à l'extrême droite (le lien qui s'affiche dépend de la vue actuelle). La vue *lecteurs* affiche les lecteurs et les baies de lecteurs vides. La vue *contrôleurs et composants* affiche les contrôleurs, les modules IOM (ESM), les boîtiers d'alimentation/ventilateur ou les baies de contrôleur vides. Au bas de la page, vous pouvez également sélectionner *Afficher tous les lecteurs*.
+Pour basculer entre l'affichage des disques et celui des baies de contrôleurs, sélectionnez menu : Matériel [Disques] ou menu : Matériel [Contrôleurs et composants] dans le panneau de gauche. L'affichage *Disques* présente les disques et les baies de disques vides. L'affichage *Contrôleurs et composants* présente les contrôleurs, ainsi que les modules IOM (ESM), les modules d'alimentation/ventilateurs ou les baies de contrôleurs vides. Dans l'affichage *Disques*, vous pouvez également sélectionner *Afficher tous les disques*.
 
 
 

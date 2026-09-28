@@ -15,6 +15,7 @@ Pour Access Management, les administrateurs peuvent utiliser les fonctionnalité
 
 
 
+[[configuration-workflow]]
 == Flux de travail de configuration
 
 La configuration SAML fonctionne comme suit :
@@ -26,7 +27,7 @@ La configuration SAML fonctionne comme suit :
 Le `admin` L'utilisateur dispose d'un accès complet à toutes les fonctions de System Manager.
 
 ====
-. L'administrateur accède à l'onglet *SAML* sous Access Management.
+. L'administrateur accède à la page *SAML* sous Authentification.
 . Un administrateur configure les communications avec le fournisseur d'identité (IDP). Un IDP est un système externe utilisé pour demander des informations d'identification à un utilisateur et déterminer si l'utilisateur est authentifié avec succès. Pour configurer les communications avec la baie de stockage, l'administrateur télécharge le fichier de métadonnées IDP depuis le système IDP, puis utilise System Manager pour télécharger le fichier vers la baie de stockage.
 . Un administrateur établit une relation de confiance entre le fournisseur de services et le PDI. Un fournisseur de services contrôle les autorisations utilisateur. Dans ce cas, le contrôleur de la baie de stockage fait office de fournisseur de services. Pour configurer les communications, l'administrateur utilise System Manager pour exporter un fichier de métadonnées Service Provider pour chaque contrôleur. À partir du système IDP, l'administrateur importe ensuite ces fichiers de métadonnées vers le IDP.
 +
@@ -49,6 +50,7 @@ Une fois le langage SAML activé, vous ne pouvez pas le désactiver via l'interf
 
 
 
+[[management]]
 == Gestion
 
 Lorsque vous utilisez SAML pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :
@@ -59,6 +61,7 @@ Lorsque vous utilisez SAML pour l'authentification, les administrateurs peuvent 
 
 
 
+[[access-restrictions]]
 == Restrictions d'accès
 
 Lorsque le langage SAML est activé, les utilisateurs ne peuvent pas détecter ni gérer le stockage de cette baie à partir d'Unified Manager ou de l'interface Storage Manager héritée.
@@ -73,6 +76,7 @@ En outre, les clients suivants ne peuvent pas accéder aux ressources et aux ser
 
 
 
+[[limited-connectivity-with-saml-enabled]]
 === Connectivité limitée avec SAML activé
 
 Les fonctionnalités de la baie de stockage suivantes ont une connectivité limitée avec l'authentification JSON Web Token lorsque SAML est activé.

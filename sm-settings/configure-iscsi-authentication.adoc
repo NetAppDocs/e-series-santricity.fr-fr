@@ -20,51 +20,28 @@ System Manager utilise la méthode CHAP (Challenge Handshake Authentication Prot
 Vous pouvez définir le secret CHAP pour les initiateurs (hôtes iSCSI) avant ou après avoir défini le secret CHAP pour les cibles (contrôleurs). Avant de suivre les instructions de cette tâche, vous devez attendre que les hôtes aient d'abord établi une connexion iSCSI, puis définir le secret CHAP sur les hôtes individuels. Une fois les connexions effectuées, les noms IQN des hôtes et leurs secrets CHAP sont répertoriés dans la boîte de dialogue pour l'authentification iSCSI (décrite dans cette tâche) et vous n'avez pas besoin de les saisir manuellement.
 
 .Description de la tâche
-Vous pouvez sélectionner l'une des méthodes d'authentification suivantes :
+Vous pouvez activer l'authentification CHAP, puis spécifier le secret CHAP cible pour une authentification unidirectionnelle, ou vous pouvez spécifier à la fois le secret CHAP de l'initiateur pour une authentification bidirectionnelle entre le contrôleur et les hôtes iSCSI.
 
-* *Authentification unidirectionnelle* -- utilisez ce paramètre pour permettre au contrôleur d'authentifier l'identité des hôtes iSCSI (authentification unidirectionnelle).
-* *Authentification bidirectionnelle* -- utilisez ce paramètre pour permettre au contrôleur et aux hôtes iSCSI d'effectuer l'authentification (authentification bidirectionnelle). Ce paramètre fournit un second niveau de sécurité en permettant au contrôleur d'authentifier l'identité des hôtes iSCSI et, à son tour, les hôtes iSCSI d'authentifier l'identité du contrôleur.
+L'authentification unidirectionnelle permet au contrôleur d'authentifier l'identité des hôtes iSCSI (authentification unidirectionnelle).
 
+L'authentification bidirectionnelle permet à la fois au contrôleur et aux hôtes iSCSI de procéder à une authentification (authentification bidirectionnelle). Cette option offre un second niveau de sécurité en permettant au contrôleur d'authentifier l'identité des hôtes iSCSI et, en retour, aux hôtes iSCSI d'authentifier l'identité du contrôleur.
 
-[NOTE]
-====
-Les paramètres et fonctions iSCSI s'affichent uniquement sur la page Paramètres si votre matrice de stockage prend en charge iSCSI.
-
-====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
-. Sous Paramètres iSCSI, cliquez sur *configurer l'authentification*.
+. Dans le panneau de gauche, sélectionnez *Système*.
+. Sous *paramètres iSCSI*, cliquez sur *Configurer l'authentification iSCSI*.
 +
-La boîte de dialogue configurer l'authentification s'affiche, indiquant la méthode actuellement définie. Elle indique également si des secrets CHAP sont configurés pour tous les hôtes.
+La fenêtre Configurer l'authentification apparaît.
 
-. Sélectionnez l'une des options suivantes :
+. Cochez la case *Activer l'authentification CHAP* pour activer l'authentification.
 +
-** *Pas d'authentification* -- si vous ne souhaitez pas que le contrôleur authentifie l'identité des hôtes iSCSI, sélectionnez cette option et cliquez sur *Terminer*. La boîte de dialogue se ferme et vous avez terminé avec la configuration.
-** *Authentification unidirectionnelle* -- pour permettre au contrôleur d'authentifier l'identité des hôtes iSCSI, sélectionnez cette option et cliquez sur *Suivant* pour afficher la boîte de dialogue configurer CHAP cible.
-** *Authentification bidirectionnelle* -- pour permettre à la fois au contrôleur et aux hôtes iSCSI d'effectuer l'authentification, sélectionnez cette option et cliquez sur *Suivant* pour afficher la boîte de dialogue configurer CHAP cible.
+Si vous ne souhaitez pas activer l'authentification CHAP, laissez la case décochée.
 
-
-. Pour l'authentification unidirectionnelle ou bidirectionnelle, entrez ou confirmez le secret CHAP du contrôleur (la cible). Le secret CHAP doit comporter entre 12 et 57 caractères ASCII imprimables.
+. Si vous avez activé l'authentification unidirectionnelle, saisissez le *Target CHAP secret* pour l'authentification des initiateurs qui se connectent à la cible. Le secret CHAP doit comporter entre 12 et 57 caractères ASCII imprimables.
 +
-[NOTE]
-====
-Si le secret CHAP du contrôleur a été configuré précédemment, les caractères du champ sont masqués. Si nécessaire, vous pouvez remplacer les caractères existants (les nouveaux caractères ne sont pas masqués).
+Dans le champ « Confirmer le secret CHAP cible », saisissez à nouveau le même secret CHAP pour le confirmer.
 
-====
-. Effectuez l'une des opérations suivantes :
-+
-** Si vous configurez l'authentification _unidirectionnel_, cliquez sur *Finish*. La boîte de dialogue se ferme et vous avez terminé avec la configuration.
-** Si vous configurez _Two-Way_ Authentication, cliquez sur *Next* pour afficher la boîte de dialogue Configure Initiator CHAP.
-
-
-. Pour l'authentification bidirectionnelle, entrez ou confirmez un secret CHAP pour l'un des hôtes iSCSI (les initiateurs), qui peut comporter entre 12 et 57 caractères ASCII imprimables. Si vous ne souhaitez pas configurer l'authentification bidirectionnelle pour un hôte particulier, laissez le champ secret CHAP de l'initiateur vide.
-+
-[NOTE]
-====
-Si le secret CHAP d'un hôte a été configuré précédemment, les caractères du champ sont masqués. Si nécessaire, vous pouvez remplacer les caractères existants (les nouveaux caractères ne sont pas masqués).
-
-====
-. Cliquez sur *Terminer*.
+. Pour activer l'authentification bidirectionnelle entre le contrôleur et les hôtes iSCSI, saisissez le *secret CHAP de l'initiateur* pour l'authentification du contrôleur par les initiateurs. Le secret CHAP doit comporter entre 12 et 57 caractères ASCII imprimables.
+. Cliquez sur *Enregistrer*.
 
 
 .Résultats

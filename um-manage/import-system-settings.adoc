@@ -16,7 +16,7 @@ Vous pouvez importer la configuration système d'une matrice de stockage vers d'
 
 .Avant de commencer
 * Les paramètres système sont configurés dans System Manager pour la matrice de stockage que vous souhaitez utiliser comme source.
-* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
+* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:System[Enregistrer la configuration de la baie de stockage]).
 
 
 .Description de la tâche

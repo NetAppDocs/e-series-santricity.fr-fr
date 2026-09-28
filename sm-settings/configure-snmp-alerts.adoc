@@ -36,10 +36,9 @@ Si vous ne possédez pas le fichier MIB, vous pouvez l'obtenir sur le site de su
 Cette tâche décrit comment identifier le serveur SNMP pour les destinations de déroutement, puis tester votre configuration.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
-Lors de la configuration initiale, l'onglet SNMP affiche « configurer les communautés/utilisateurs ».
+Lors de la première configuration, la page affiche « Configure Communities/Users. »
 
 . Sélectionnez *configurer les communautés/utilisateurs*.
 +
@@ -62,7 +61,7 @@ Selon votre sélection, la boîte de dialogue configurer les communautés ou con
 
 
 
-. Dans la page alertes avec l'onglet SNMP sélectionné, cliquez sur *Ajouter des destinations de déroutement*.
+. Cliquez sur *Add Trap Destinations*.
 +
 La boîte de dialogue Ajouter des destinations de recouvrement s'ouvre.
 
@@ -70,7 +69,7 @@ La boîte de dialogue Ajouter des destinations de recouvrement s'ouvre.
 +
 ** *Trap destination* -- Entrez une adresse IPv4 ou IPv6 du serveur exécutant un service SNMP.
 ** *Nom de communauté ou Nom d'utilisateur* -- dans le menu déroulant, sélectionnez le nom de communauté (SNMPv2c) ou le nom d'utilisateur (SNMPv3) pour cette destination de déroutement. (Si vous en avez défini un seul, le nom apparaît déjà dans ce champ.)
-** *Send Authentication Failure Trap* -- sélectionnez cette option (la case à cocher) si vous souhaitez alerter la destination de l'interruption lorsqu'une requête SNMP est rejetée en raison d'un nom de communauté ou d'utilisateur non reconnu. Après avoir cliqué sur *Ajouter*, les destinations de déroutement et les noms associés apparaissent dans l'onglet *SNMP* de la page *alertes*.
+** *Envoyer une alerte d'échec d'authentification* : cochez cette option si vous souhaitez alerter la destination du piège lorsqu'une requête SNMP est rejetée en raison d'un nom de communauté ou d'un nom d'utilisateur non reconnu. Après avoir cliqué sur *Ajouter*, les destinations de pièges et leurs noms associés apparaissent sur la page *Alertes SNMP*.
 
 
 . Pour vous assurer qu'une interruption est valide, sélectionnez une destination d'interruption dans le tableau, puis cliquez sur *Test Trap destination* pour envoyer une interruption de test à l'adresse configurée.

@@ -20,6 +20,7 @@ La mise en miroir synchrone n'est pas disponible sur le système de stockage EF8
 ====
 
 
+[[what-is-mirroring]]
 == Qu'est-ce que la mise en miroir ?
 
 Les applications SANtricity incluent deux types de mise en miroir : asynchrone et synchrone. La mise en miroir asynchrone copie les volumes de données à la demande ou selon une planification. La mise en miroir permet de réduire ou d'éviter les temps d'indisponibilité dus à la corruption ou à la perte de données. La mise en miroir synchrone réplique les volumes de données en temps réel pour assurer une disponibilité continue.
@@ -32,6 +33,7 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-mirroring]]
 == Comment configurer la mise en miroir ?
 
 Vous configurez la mise en miroir synchrone ou asynchrone dans Unified Manager, puis utilisez System Manager pour gérer les synchronisations.

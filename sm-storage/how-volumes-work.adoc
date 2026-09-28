@@ -19,6 +19,7 @@ Les volumes sont la seule couche de données visible par les hôtes. Dans un env
 
 
 
+[[volume-types-you-can-create-from-pools-and-volume-groups]]
 == Types de volumes que vous pouvez créer à partir de pools et de groupes de volumes
 
 Les volumes puisent leur capacité dans les pools ou les groupes de volumes. Vous pouvez créer les types de volumes suivants à partir des pools ou des groupes de volumes qui existent sur votre matrice de stockage.
@@ -48,6 +49,7 @@ Les systèmes de stockage EF80, EF50, EF600/EF600C et EF300/EF300C ne prennent p
 ====
 
 
+[[characteristics-of-volumes]]
 == Caractéristiques des volumes
 
 Chaque volume d'un pool ou d'un groupe de volumes peut présenter ses propres caractéristiques, en fonction du type de données qui seront stockées. Parmi ces caractéristiques, on compte :

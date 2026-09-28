@@ -15,6 +15,7 @@ Access Management est une méthode de configuration de l'authentification utilis
 
 
 
+[[what-authentication-methods-are-available]]
 == Quelles sont les méthodes d'authentification disponibles ?
 
 Les méthodes d'authentification suivantes sont disponibles :
@@ -34,6 +35,7 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-access-management]]
 == Comment configurer Access Management ?
 
 Le logiciel SANtricity est préconfiguré pour utiliser les rôles des utilisateurs locaux. Si vous souhaitez utiliser LDAP, vous pouvez le configurer sous la page gestion des accès.

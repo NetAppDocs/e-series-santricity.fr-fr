@@ -15,10 +15,9 @@ summary: Vous pouvez supprimer un utilisateur pour les interruptions SNMPv3.
 Vous pouvez supprimer un utilisateur pour les interruptions SNMPv3.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
-Les destinations des interruptions et les noms d'utilisateur apparaissent sur la page alertes.
+Les destinations des traps et les noms d'utilisateur apparaissent sur la page des alertes SNMP.
 
 . Sélectionnez *configurer les utilisateurs*.
 +
@@ -29,4 +28,4 @@ La boîte de dialogue configurer les utilisateurs SNMPv3 s'ouvre.
 
 
 .Résultats
-Le nom d'utilisateur et sa destination de déroutement associée sont supprimés de la page alertes.
+Le nom d'utilisateur et la destination de trap associée sont supprimés de la page des alertes SNMP.

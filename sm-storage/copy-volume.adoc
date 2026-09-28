@@ -44,7 +44,7 @@ Une opération de copie de volume écrase les données sur le volume cible et é
 ====
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
-. Sélectionnez le volume que vous souhaitez utiliser comme source pour l'opération Copy Volume, puis cliquez sur l'icône menu:ellipsis icon[Copy volume].
+. Localisez le volume que vous souhaitez utiliser comme source pour l'opération Copy Volume, puis cliquez sur l'icône de menu : ellipsis [Copy volume].
 +
 La fenêtre Copier le volume apparaît.
 
@@ -94,7 +94,7 @@ Allouez la capacité réservée en suivant les instructions suivantes :
 
 
 .Résultats
-System Manager copie toutes les données du volume source vers le volume cible. Une fois l'opération Copier le volume terminée, le volume cible devient automatiquement en lecture seule pour les hôtes.
+System Manager copie toutes les données du volume source vers le volume cible.
 
 .Une fois que vous avez terminé
-Sélectionnez le menu : Storage[Operations in Progress] pour afficher la progression de l’opération Copy Volume. Cette opération peut être longue et pourrait affecter les performances du système.
+Sélectionnez le menu : Surveillance [Opérations en cours] pour afficher la progression de l’opération Copy Volume. Cette opération peut être longue et pourrait affecter les performances du système.

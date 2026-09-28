@@ -51,6 +51,13 @@ System Manager effectue les tâches suivantes :
 ** Ajoute les disques du même type au pool existant, et utilisez les autres types de disques pour créer différents pools si les nouveaux disques sont de types différents.
 
 
+
+
+[NOTE]
+====
+Sur les systèmes EF80 et EF50, les disques SSD NVMe Performance et Capacité sont traités comme des types de disques distincts. System Manager crée des pools distincts pour les disques Performance et Capacité et ne les mélange pas dans le même pool. La taille minimale d'un pool est de 6 disques pour Performance et de 12 disques pour Capacité.
+
+====
 . Pour afficher les caractéristiques supplémentaires du pool, cliquez sur le nom du pool affiché.
 +
 Des informations sur le type de disque, la fonctionnalité de sécurité, l'assurance de données (DA), la protection contre la perte de tiroir et la protection contre la perte de tiroir s'affichent.

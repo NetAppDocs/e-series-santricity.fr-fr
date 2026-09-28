@@ -15,6 +15,7 @@ Vous pouvez gérer votre infrastructure physique et virtualisée en regroupant u
 
 
 
+[[types-of-storage-array-groups]]
 == Types de matrices de stockage
 
 * *Tous les groupes*

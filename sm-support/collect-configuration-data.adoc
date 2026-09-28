@@ -25,7 +25,7 @@ La fonction de collecte de données de configuration enregistre les mêmes infor
 Cette tâche doit être effectuée uniquement lors des instructions d'une opération Recovery Guru ou du support technique.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
+. Dans le panneau de gauche, sélectionnez menu:Support[Diagnostics].
 . Sélectionnez *collecter les données de configuration*.
 . Dans la boîte de dialogue, cliquez sur *collect*.
 +

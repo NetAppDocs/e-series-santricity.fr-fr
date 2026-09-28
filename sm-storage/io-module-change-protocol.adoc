@@ -22,6 +22,7 @@ Vous pouvez modifier le protocole sur les modules d'E/S hôtes de vos contrôleu
 
 
 
+[[step-1-prepare-for-the-protocol-change]]
 == Étape 1 : Préparez-vous au changement de protocole
 
 Préparez-vous à modifier le protocole sur les modules d'E/S de l'hôte en vérifiant le protocole actuellement utilisé, en déterminant si vous devez changer le protocole, et, si oui, en planifiant une fenêtre de maintenance pour une interruption.
@@ -29,7 +30,7 @@ Préparez-vous à modifier le protocole sur les modules d'E/S de l'hôte en vér
 .Étapes
 . Si vous ne connaissez pas le protocole actuel sur les modules d'E/S hôtes de votre système de stockage, vérifiez-le à l'aide de SANtricity System Manager.
 +
-.. Sélectionnez *Settings* > *System*.
+.. Sélectionnez *Système*.
 .. Dans la section *Paramètres supplémentaires*, cliquez sur *Modifier le protocole d'E/S hôte* pour ouvrir cette page.
 .. Consultez le protocole par défaut affiché dans le champ *Host I/O Protocol*.
 +
@@ -63,6 +64,7 @@ Poursuivez cette procédure pour changer le protocole.
 
 
 
+[[step-2-stop-host-io-operations]]
 == Étape 2 : Arrêtez les opérations d’E/S de l’hôte
 
 Vous devez interrompre toutes les opérations d'E/S de l'hôte, puis supprimer tous les hôtes définis du système de stockage avant de modifier le protocole.
@@ -113,7 +115,7 @@ Icône NV et voyant NV Caching Active sur le contrôleur
 |===
 . Vérifiez que les opérations sur les contrôleurs sont terminées dans SANtricity System Manager :
 +
-.. Sélectionnez *Storage* > *Operations in progress* pour afficher l'écran Overview.
+.. Sélectionnez *Surveillance* > *Opérations en cours* pour afficher l’écran Vue d’ensemble.
 .. Attendez que toutes les opérations soient terminées et que l'écran Overview affiche *No operations currently in progress* avant de passer à l'étape suivante.
 
 
@@ -125,12 +127,13 @@ Pour plus d'informations sur la suppression des hôtes, consultez le https://doc
 
 
 
+[[step-3-change-the-protocol]]
 == Étape 3 : Modifier le protocole
 
 À l'aide de SANtricity System Manager, modifiez le protocole sur les modules d'E/S de l'hôte, attendez que les contrôleurs terminent leur cycle de redémarrage, confirmez que leur statut est Optimal, puis recréez les définitions de l'hôte.
 
 .Étapes
-. Sélectionnez *Settings* > *System*.
+. Sélectionnez *Système*.
 . Dans la section *Paramètres supplémentaires*, cliquez sur *Modifier le protocole d'E/S hôte* pour ouvrir cette page.
 . Dans le champ *Host I/O Protocol*, cliquez sur le menu déroulant et choisissez le protocole que vous souhaitez utiliser.
 +
@@ -151,6 +154,7 @@ Pour plus d'informations sur la création d'hôtes, consultez la  https://docs.n
 
 
 
+[[step-4-configure-the-host-to-use-the-new-protocol]]
 == Étape 4 : Configurer l’hôte pour utiliser le nouveau protocole
 
 Après avoir modifié le protocole des ports hôtes, vous devez configurer l’hôte pour qu’il utilise le nouveau protocole.

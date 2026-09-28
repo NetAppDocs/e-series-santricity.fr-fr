@@ -15,8 +15,7 @@ summary: 'Vous pouvez modifier les paramètres d"un volume snapshot ou d"un volu
 Vous pouvez modifier les paramètres d'un volume snapshot ou d'un volume snapshot de groupe de cohérence pour le renommer, activer ou désactiver la mise en cache SSD, ou modifier l'affectation de l'hôte, du cluster hôte ou de l'unité logique (LUN).
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Cliquez sur l'onglet *Snapshot volumes*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot volumes].
 . Sélectionnez le volume de snapshot que vous souhaitez modifier, puis cliquez sur *Afficher/Modifier les paramètres*.
 +
 La boîte de dialogue Paramètres du volume de snapshot s'affiche.
@@ -39,7 +38,7 @@ La boîte de dialogue Paramètres du volume de snapshot s'affiche.
  a| 
 Nom
  a| 
-Vous pouvez modifier le nom du volume de snapshot.
+Vous pouvez modifier le nom du volume d'instantané. Les noms de volume peuvent comporter jusqu'à 30 caractères. Le nom doit être unique.
 
 
 

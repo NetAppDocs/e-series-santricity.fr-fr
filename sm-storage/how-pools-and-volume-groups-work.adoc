@@ -36,6 +36,7 @@ Vous pouvez avoir des pools ou des groupes de volumes sur le même système de s
 
 
 
+[[pools]]
 == Pools
 
 Les pools sont conçus pour agréger les disques durs physiques en un espace de stockage important et pour assurer une protection RAID améliorée. Un pool crée de nombreux jeux RAID virtuels à partir du nombre total de disques affectés au pool, et il répartit les données uniformément entre tous les disques participants. En cas de perte ou d'ajout d'un disque, System Manager rééquilibre de façon dynamique les données sur tous les disques actifs.
@@ -44,15 +45,17 @@ Les pools fonctionnent comme un autre niveau RAID, virtualisant l'architecture R
 
 
 
+[[drive-matching]]
 === Correspondance des disques
 
-Vous pouvez choisir entre des disques HDD ou SSD pour une utilisation en pools. Cependant, comme pour les groupes de volumes, tous les disques du pool doivent utiliser la même technologie. Les contrôleurs sélectionnent automatiquement les lecteurs à inclure. Vous devez donc vous assurer que vous disposez d'un nombre suffisant de lecteurs pour la technologie que vous choisissez.
+Vous pouvez choisir entre des disques durs (HDD) ou des SSD pour les pools ; cependant, comme pour les groupes de volumes, tous les disques du pool doivent utiliser la même technologie. Les contrôleurs sélectionnent automatiquement les disques à inclure, vous devez donc vous assurer de disposer d'un nombre suffisant de disques pour la technologie que vous choisissez. Sur les systèmes EF80 et EF50, les disques SSD NVMe Performance et Capacity sont traités comme des types de disques distincts ; ils peuvent coexister dans la même baie de stockage, mais doivent être dans des pools séparés.
 
 
 
+[[managing-failed-drives]]
 === Gestion des disques défectueux
 
-Les pools ont une capacité minimale de 11 disques, mais la valeur d'un disque est réservée à la capacité libre en cas de panne. Cette capacité libre est appelée « capacité de préservation ».
+Les pools ont une capacité minimale de 11 disques ; cependant, la capacité d'un disque est réservée pour une capacité de secours en cas de panne disque. Cette capacité de secours est appelée « capacité de préservation ». Sur les systèmes EF80 et EF50, les pools de performance nécessitent un minimum de 6 disques et les pools de capacité nécessitent un minimum de 12 disques. Pour les pools Capacity-DDP, la protection RAID1-DDP est utilisée jusqu'à 10 disques, puis passe à RAID6-DDP à partir de 11 disques ou plus, avec une taille minimale de pool Capacity-DDP de 8 disques.
 
 Lorsque des pools sont créés, une certaine capacité est conservée pour une utilisation en urgence. Cette capacité est exprimée en nombre de disques dans System Manager, mais l'implémentation réelle est répartie sur l'ensemble du pool de disques. La capacité par défaut préservée est basée sur le nombre de disques du pool.
 
@@ -60,6 +63,70 @@ Une fois le pool créé, vous pouvez modifier la valeur de la capacité de conse
 
 
 
+[[maximum-capacity]]
+=== Capacité maximale
+
+La capacité maximale du pool de disques dynamiques (DDP) prise en charge par baie de stockage dépend du modèle de contrôleur et de la version du système d'exploitation SANtricity installée.
+
+[cols="18,13,13,10,13,13,10,10"]
+|===
+| version OS | EF50 | EF80 | E4000 | EF300 | EF600 | E280x | E5700 
+
+
+| 11.90 R6 et versions antérieures | _Non applicable_ | _Non applicable_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+| 6 | 6 
+
+
+| 11.90 R7 | _Non applicable_ | _Non applicable_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6 | 8 
+
+
+| 12.00 GA | 12 | 12 | _Non applicable_ | _Non applicable_ | _Non applicable_ | _Non applicable_ | _Non applicable_ 
+
+
+| 12.10 et versions ultérieures  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| _Non applicable_ | _Non applicable_ 
+
+
+ a| 
+[NOTE]
+====
+Pour les cellules comportant deux chiffres, le premier concerne le châssis NVMe et le second les châssis d'extension SAS. Les capacités DDP maximales SAS et NVMe ne sont pas cumulables. La capacité DDP du tiroir de base est soustraite de la capacité maximale des châssis d'extension SAS, et inversement.
+
+====
+|===
+
+
+[[volume-groups]]
 == Groupes de volumes
 
 Les groupes de volumes définissent la manière dont la capacité est allouée dans le système de stockage aux volumes. Les disques sont organisés en groupes RAID, et les volumes résident sur les disques d'un groupe RAID. Par conséquent, les paramètres de configuration des groupes de volumes identifient les disques faisant partie du groupe et le niveau RAID utilisé.
@@ -68,14 +135,16 @@ Lorsque vous créez un groupe de volumes, les contrôleurs sélectionnent automa
 
 
 
+[[drive-matching]]
 === Correspondance des disques
 
 Vous devez correspondre aux disques du groupe de volumes pour la taille et les performances. Si le groupe de volumes contient des disques de plus petite taille et de plus grande taille, tous les disques sont reconnus comme étant la plus petite taille de capacité. S'il y a des lecteurs plus lents et plus rapides dans le groupe de volumes, tous les lecteurs sont reconnus à la vitesse la plus lente. Ces facteurs affectent les performances et la capacité globale du système de stockage.
 
-Vous ne pouvez pas combiner plusieurs technologies de disques (disques HDD et SSD). Les configurations RAID 3, 5 et 6 sont limitées à un maximum de 30 disques. Les niveaux RAID 1 et RAID 10 utilisent la mise en miroir, ce qui permet à ces groupes de volumes de disposer d'un nombre pair de disques.
+Il est impossible de combiner des technologies de disques différentes (HDD et SSD). Sur les systèmes EF80 et EF50, les disques SSD NVMe Performance et Capacity sont de types différents et ne peuvent pas être utilisés simultanément au sein d'un même groupe de volumes ; le nombre minimum de disques est de 6 pour Performance et de 12 pour Capacity. RAID 3, 5 et 6 sont limités à un maximum de 30 disques. RAID 1 et RAID 10 utilisent la mise en miroir, ces groupes de volumes doivent donc comporter un nombre pair de disques.
 
 
 
+[[managing-failed-drives]]
 === Gestion des disques défectueux
 
 Les groupes de volumes utilisent des disques de secours en attente en cas de panne d'un disque dans les volumes RAID 1/10, RAID 3, RAID 5 ou RAID 6 contenus dans un groupe de volumes. Un disque de secours ne contient aucune donnée et ajoute un niveau supplémentaire de redondance à votre matrice de stockage.

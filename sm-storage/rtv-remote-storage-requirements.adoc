@@ -15,6 +15,7 @@ Avant d'utiliser la fonction de stockage à distance, consultez les exigences et
 
 
 
+[[supported-protocols]]
 == Protocoles pris en charge
 
 Les protocoles suivants sont pris en charge :
@@ -27,6 +28,7 @@ Pour obtenir des informations à jour sur la prise en charge et la configuration
 
 
 
+[[hardware-requirements]]
 == Configuration matérielle requise
 
 La baie de stockage E-Series doit inclure les éléments suivants :
@@ -44,6 +46,7 @@ Le système distant peut être un système de stockage E-Series ou un système d
 
 
 
+[[restrictions]]
 == Restrictions
 
 La fonction de stockage à distance comporte les restrictions suivantes :

@@ -15,6 +15,7 @@ Le logiciel SANtricity prend en charge plusieurs types de navigateurs et de syst
 
 
 
+[[browsers]]
 == Navigateurs
 
 Les navigateurs et versions suivants sont pris en charge.
@@ -58,6 +59,7 @@ Pour Unified Manager, le proxy de services Web doit être installé et accessibl
 ====
 
 
+[[operating-systems]]
 == Systèmes d'exploitation
 
 Les systèmes d'exploitation et versions suivants sont pris en charge.

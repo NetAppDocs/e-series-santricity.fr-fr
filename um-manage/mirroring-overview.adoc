@@ -20,6 +20,7 @@ La mise en miroir synchrone n'est pas disponible sur le système de stockage EF8
 ====
 
 
+[[types-of-mirroring]]
 == Types de symétrie
 
 Les applications SANtricity incluent deux types de mise en miroir : asynchrone et synchrone.
@@ -30,6 +31,7 @@ La mise en miroir synchrone réplique les volumes de données en temps réel pou
 
 
 
+[[differences-between-mirroring-types]]
 == Différences entre les types de symétrie
 
 Le tableau suivant décrit les principales différences entre les deux types de symétrie.

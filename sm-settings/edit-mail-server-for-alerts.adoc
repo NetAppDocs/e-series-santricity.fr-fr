@@ -23,8 +23,7 @@ Pour utiliser un nom de domaine complet, vous devez configurer un serveur DNS su
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *E-mail*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts [Email alerts].
 . Sélectionnez *configurer le serveur de messagerie*.
 +
 La boîte de dialogue configurer le serveur de messagerie s'ouvre.

@@ -50,6 +50,7 @@ Volumes fins
 |===
 
 
+[[thin-volume-restrictions]]
 == Restrictions relatives au volume fin
 
 Les volumes fins prennent en charge toutes les opérations sous forme de volumes lourds, à l'exception des exceptions suivantes :

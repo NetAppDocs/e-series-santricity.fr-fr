@@ -22,8 +22,7 @@ Une image instantanée est en attente en raison des conditions simultanées suiv
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Cliquez sur l'onglet *capacité réservée*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Reserved capacity].
 . Sélectionnez le groupe d'instantanés pour lequel vous souhaitez annuler une image d'instantané en attente, puis cliquez sur menu:ellipse icon[Annuler l'image d'instantané en attente].
 . Cliquez sur *Oui* pour confirmer que vous souhaitez annuler l'image d'instantané en attente.
 

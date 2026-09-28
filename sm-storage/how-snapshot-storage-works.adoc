@@ -15,6 +15,7 @@ La fonctionnalité snapshots utilise la technologie de copie en écriture pour s
 
 
 
+[[how-snapshot-images-are-used]]
 == Mode d'utilisation des images instantanées
 
 Une image Snapshot est une copie logique, en lecture seule, du contenu de volume, capturée à un moment donné. Vous pouvez utiliser des snapshots pour vous protéger contre toute perte de données.
@@ -23,6 +24,7 @@ Les images Snapshot sont également utiles pour les environnements de test. Grâ
 
 
 
+[[snapshot-creation]]
 == La création de copies Snapshot
 
 Au fur et à mesure de la création des instantanés, la fonction snapshots stocke les données d'image comme suit :
@@ -42,6 +44,7 @@ image::../media/sam1130-dwg-snapshots-cow-overview.gif[Présentation des snapsho
 
 
 
+[[snapshot-restoration]]
 == Restauration Snapshot
 
 Pour restaurer les données vers un volume de base, vous pouvez utiliser soit un volume Snapshot, soit une image Snapshot :

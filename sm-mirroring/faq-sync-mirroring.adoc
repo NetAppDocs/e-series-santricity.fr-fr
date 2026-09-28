@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[how-does-asynchronous-mirroring-differ-from-synchronous-mirroring]]
 == En quoi la mise en miroir asynchrone est-elle différente de la mise en miroir synchrone ?
 
 La fonction de mise en miroir asynchrone diffère de la fonction de mise en miroir synchrone de façon essentielle : elle capture l'état du volume source à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image.
@@ -112,6 +113,7 @@ La baie de stockage locale doit généralement se situer à environ 10 km (6.2 m
 |===
 
 
+[[synchronous-mirroring-why-dont-i-see-all-my-volumes]]
 == Mise en miroir synchrone - Pourquoi ne vois-je pas tous mes volumes ?
 
 Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
@@ -125,6 +127,7 @@ Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette lis
 
 
 
+[[synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Mise en miroir synchrone - Pourquoi ne vois-je pas tous les volumes sur la baie de stockage distante ?
 
 Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
@@ -144,6 +147,7 @@ Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette lis
 
 
 
+[[synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Mise en miroir synchrone : que faut-il savoir avant de créer une paire en miroir ?
 
 Vous configurez les paires en miroir dans l'interface SANtricity Unified Manager, puis vous gérez les paires dans SANtricity System Manager.
@@ -163,6 +167,7 @@ Avant de créer une paire symétrique, suivez les consignes suivantes :
 
 
 
+[[what-impact-does-synchronization-priority-have-on-synchronization-rates]]
 == Quel est l'impact de la priorité de synchronisation sur les taux de synchronisation ?
 
 La priorité de synchronisation définit le temps de traitement alloué aux activités de synchronisation par rapport aux performances du système.
@@ -224,6 +229,7 @@ La taille des volumes et les charges des E/S hôte ont un impact sur les compara
 
 
 
+[[why-is-it-recommended-to-use-a-manual-synchronization-policy]]
 == Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation manuelle ?
 
 La resynchronisation manuelle est recommandée car elle vous permet de gérer le processus de resynchronisation de manière à fournir la meilleure possibilité de récupérer des données.

@@ -30,8 +30,7 @@ Si le volume snapshot de volume ou de groupe de cohérence d'instantané fait pa
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Sélectionnez l'onglet *Snapshot volumes*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot volumes].
 +
 System Manager affiche tous les volumes de snapshot associés à la matrice de stockage.
 

@@ -15,8 +15,8 @@ summary: 'Vous pouvez importer une configuration de services d"annuaire d"une ma
 Vous pouvez importer une configuration de services d'annuaire d'une matrice de stockage vers d'autres matrices de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.
 
 .Avant de commencer
-* Les services d'annuaire sont configurés dans System Manager pour la matrice de stockage que vous souhaitez utiliser comme source (menu:Paramètres[Access Management]).
-* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
+* Les services d'annuaire sont configurés dans System Manager pour la baie de stockage que vous souhaitez utiliser comme source (menu : Authentication [Directory services]).
+* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:System[Enregistrer la configuration de la baie de stockage]).
 
 
 .Description de la tâche
@@ -47,6 +47,7 @@ La page opérations affiche les résultats de l'opération d'importation. Si l'o
 
 
 
+[[results]]
 == Résultats
 
 Les matrices de stockage cibles sont maintenant configurées avec les mêmes services de répertoire que la matrice source.

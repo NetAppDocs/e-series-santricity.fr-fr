@@ -27,7 +27,7 @@ Pour utiliser un nom de domaine complet, vous devez configurer un serveur DNS su
 
 
 .Description de la tâche
-Cette tâche décrit comment configurer le serveur de messagerie, saisir les adresses e-mail de l'expéditeur et des destinataires, et tester toutes les adresses e-mail saisies à partir de la page alertes.
+Cette tâche décrit comment configurer le serveur de messagerie, saisir les adresses électroniques de l'expéditeur et des destinataires, et tester toutes les adresses électroniques saisies depuis la page d'alertes par e-mail.
 
 [NOTE]
 ====
@@ -35,10 +35,9 @@ Les alertes par e-mail peuvent également être configurées à partir de l'assi
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *E-mail*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts [Email alerts].
 +
-Si un serveur de messagerie n'est pas encore configuré, l'onglet E-mail affiche « configurer le serveur de messagerie ».
+Si aucun serveur de messagerie n'est encore configuré, la page affiche « Configure Mail Server ».
 
 . Sélectionnez *configurer le serveur de messagerie*.
 +
@@ -58,7 +57,7 @@ Pour utiliser un nom de domaine complet, vous devez configurer un serveur DNS su
 ** *Nom d'utilisateur et mot de passe* -- si nécessaire, entrez un nom d'utilisateur et un mot de passe pour l'authentification avec l'expéditeur sortant et le serveur de messagerie.
 ** *Inclure les informations de contact dans l'e-mail* -- pour inclure les coordonnées de l'expéditeur avec le message d'alerte, sélectionnez cette option, puis entrez un nom et un numéro de téléphone.
 +
-Après avoir cliqué sur *Enregistrer*, les adresses e-mail apparaissent dans l'onglet E-mail de la page alertes.
+Après avoir cliqué sur *Enregistrer*, les adresses e-mail apparaissent sur la page des alertes par e-mail.
 
 
 
@@ -68,7 +67,7 @@ La boîte de dialogue Ajouter des e-mails s'ouvre.
 
 . Entrez une ou plusieurs adresses e-mail pour les destinataires de l'alerte, puis cliquez sur *Ajouter*.
 +
-Les adresses e-mail s'affichent sur la page alertes.
+Les adresses électroniques apparaissent sur la page des alertes par e-mail.
 
 . Si vous voulez vous assurer que les adresses électroniques sont valides, cliquez sur *Tester tous les e-mails* pour envoyer des messages de test aux destinataires.
 

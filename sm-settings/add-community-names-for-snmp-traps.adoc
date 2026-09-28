@@ -15,8 +15,7 @@ summary: 'Vous pouvez ajouter jusqu"à 256 noms de communauté pour les déroute
 Vous pouvez ajouter jusqu'à 256 noms de communauté pour les déroutements SNMPv2c.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
 Les destinations d'interruption et les noms de communauté apparaissent dans le tableau.
 
@@ -29,4 +28,4 @@ La boîte de dialogue configurer les communautés s'ouvre.
 
 
 .Résultats
-Le nouveau nom de communauté apparaît dans l'onglet SNMP de la page alertes.
+Le nouveau nom de la communauté apparaît sur la page des alertes SNMP.

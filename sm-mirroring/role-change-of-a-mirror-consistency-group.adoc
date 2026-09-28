@@ -24,6 +24,7 @@ Passez en revue les informations suivantes concernant l'opération de changement
 
 
 
+[[force-role-change]]
 == Forcer le changement de rôle
 
 Vous pouvez forcer un changement de rôle entre les groupes de cohérence miroir lorsqu'un problème de communication entre la matrice de stockage locale et la matrice de stockage distante empêche la promotion des volumes membres au sein du groupe de cohérence miroir secondaire ou la rétrogradation des volumes membres au sein du miroir primaire groupe.
@@ -32,6 +33,7 @@ Vous pouvez forcer le groupe de cohérence miroir sur le côté secondaire à pa
 
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Quand une promotion forcée est-elle autorisée et non autorisée ?
 
 La promotion forcée d'un groupe de cohérence miroir n'est autorisée que si tous les volumes membres du groupe de cohérence miroir ont été synchronisés et ont des points de restauration cohérents.
@@ -46,6 +48,7 @@ La promotion forcée d'un groupe de cohérence miroir n'est pas autorisée dans 
 
 
 
+[[mirror-group-role-conflict]]
 == Conflit de rôle de groupe miroir
 
 Lorsqu'un problème de communication entre les matrices de stockage locales et distantes a été résolu, une condition de conflit de rôle de groupe miroir se produit. Utilisez le gourou de la restauration pour effectuer une restauration suite à cette erreur. Une promotion forcée n'est pas autorisée lors de la résolution d'un conflit de deux rôles.
@@ -54,6 +57,7 @@ Pour éviter un conflit de rôle de groupe miroir et les étapes de restauration
 
 
 
+[[role-change-in-progress-state]]
 == Changement de rôle en cours
 
 Si deux baies de stockage dans une configuration de mise en miroir sont déconnectées, et que le côté principal d'un groupe de cohérence miroir est réduit à un rôle secondaire, et que la partie secondaire d'un groupe de cohérence miroir est promue à son rôle principal, Une fois la communication restaurée, les groupes de cohérence miroir sur les deux baies de stockage sont placés dans l'état « role-change-in-Progress ».

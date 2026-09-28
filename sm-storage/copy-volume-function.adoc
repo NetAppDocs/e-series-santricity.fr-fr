@@ -17,6 +17,7 @@ Cette fonction effectue une copie octet par octet du volume source vers le volum
 
 
 
+[[data-copying-for-greater-access]]
 == Copie des données pour un meilleur accès
 
 En cas de modification d'un volume, la fonction Copy Volume vous permet de copier des données à partir de pools ou de groupes de volumes utilisant des disques de capacité inférieure vers des pools ou des groupes de volumes utilisant des disques de capacité supérieure. Par exemple, vous pouvez utiliser la fonction Copier le volume pour effectuer les opérations suivantes :
@@ -37,6 +38,7 @@ Les tailles de bloc de volume signalées sont les suivantes :
 
 
 
+[[change-a-thin-volume-to-a-thick-volume]]
 == Remplacez un volume fin par un volume non fin
 
 Si vous souhaitez modifier un volume fin en volume épais, utilisez l'opération Copier le volume pour créer une copie du volume fin. La cible d'une opération de copie de volume est toujours un volume lourd.
@@ -48,18 +50,21 @@ System Manager ne propose pas d'option pour la création des volumes fins. Si vo
 ====
 
 
+[[backup-data]]
 == Données de sauvegarde
 
 La fonction Copier le volume vous permet de sauvegarder un volume en copiant les données d'un volume vers un autre volume de la même matrice de stockage. Vous pouvez utiliser le volume cible comme sauvegarde du volume source, pour le test du système ou pour effectuer une sauvegarde sur un autre périphérique, tel qu'un lecteur de bande.
 
 
 
+[[restore-snapshot-volume-data-to-the-base-volume]]
 == Restaurez les données de volume Snapshot sur le volume de base
 
 Si vous devez restaurer les données vers le volume de base à partir du volume Snapshot associé, vous pouvez utiliser la fonction Copier le volume pour copier les données du volume Snapshot vers le volume de base. Vous pouvez créer une copie de volume des données présentes sur le volume Snapshot, puis copier ces données dans le volume de base.
 
 
 
+[[source-and-target-volumes]]
 == Volumes source et cible
 
 Le tableau suivant indique les types de volumes pouvant être utilisés pour les volumes source et cible avec la fonction Copier le volume.

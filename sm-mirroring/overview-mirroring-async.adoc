@@ -15,6 +15,7 @@ La fonction de mise en miroir asynchrone fournit un mécanisme basé sur le firm
 
 
 
+[[what-is-asynchronous-mirroring]]
 == Qu'est-ce que la mise en miroir asynchrone ?
 
 _Asynchronous Mirroring_ capture l'état du volume primaire à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image. Le site primaire peut être mis à jour immédiatement et le site secondaire peut être mis à jour à mesure que la bande passante le permet. Les informations sont mises en cache et envoyées ultérieurement, au fur et à mesure que les ressources réseau deviennent disponibles.
@@ -32,6 +33,7 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-asynchronous-mirroring]]
 == Comment configurer la mise en miroir asynchrone ?
 
 Vous devez utiliser l'interface Unified Manager pour effectuer la configuration initiale de mise en miroir entre les baies. Une fois configuré, vous pouvez gérer les paires et les groupes de cohérence en miroir dans System Manager.
@@ -45,6 +47,7 @@ En savoir plus :
 
 
 
+[[related-information]]
 == Informations associées
 
 En savoir plus sur les concepts liés à la mise en miroir asynchrone :

@@ -15,12 +15,14 @@ SANtricity Unified Manager est une interface web qui vous permet de gérer plusi
 
 
 
+[[main-page]]
 == Page principale
 
 Lorsque vous vous connectez à Unified Manager, la page principale s'ouvre sur *Manage - All*. À partir de cette page, vous pouvez faire défiler la liste des matrices de stockage détectées sur votre réseau, afficher leur état et effectuer des opérations sur une seule matrice ou sur un groupe de matrices.
 
 
 
+[[navigation-sidebar]]
 == Barre latérale de navigation
 
 Vous pouvez accéder aux fonctionnalités et fonctions de Unified Manager à partir de la barre latérale de navigation.
@@ -71,12 +73,14 @@ Accédez aux options d'assistance technique, aux ressources et aux contacts.
 |===
 
 
+[[interface-settings-and-help]]
 == Paramètres d'interface et aide
 
 En haut à droite de l'interface, vous pouvez accéder à l'aide et à d'autres documents. Vous pouvez également accéder aux options d'administration disponibles dans la liste déroulante située à côté de votre nom de connexion.
 
 
 
+[[user-logins-and-passwords]]
 == Identifiants de connexion et mots de passe des utilisateurs
 
 L'utilisateur actuellement connecté au système est affiché dans les paramètres utilisateur.

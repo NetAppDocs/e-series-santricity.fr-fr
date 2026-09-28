@@ -15,6 +15,7 @@ L'état du miroir définit l'état des groupes de cohérence en miroir et des pa
 
 
 
+[[status-for-mirror-consistency-groups]]
 == Statut des groupes de cohérence en miroir
 
 [cols="25h,~"]
@@ -97,6 +98,7 @@ Une promotion forcée n'est pas autorisée lors de la résolution d'un conflit d
 |===
 
 
+[[status-for-mirrored-pairs]]
 == État des paires en miroir
 
 L'état d'une paire en miroir indique si les données du volume principal et du volume secondaire sont synchronisées.

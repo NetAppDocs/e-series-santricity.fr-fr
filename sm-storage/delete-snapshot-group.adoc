@@ -18,8 +18,7 @@ Vous supprimez un groupe de snapshots lorsque vous souhaitez supprimer définiti
 Lorsqu'un groupe de snapshots est supprimé, toutes les images de snapshot du groupe sont également supprimées.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Cliquez sur l'onglet *capacité réservée*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Reserved capacity].
 . Sélectionnez le groupe d'instantanés que vous souhaitez supprimer, puis cliquez sur menu:ellipse icon[Supprimer].
 +
 La boîte de dialogue confirmer la suppression du groupe d'instantanés s'affiche.

@@ -28,15 +28,16 @@ Vous pouvez désactiver l'équilibrage automatique de la charge sur votre matric
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
-. Faites défiler jusqu'à *Paramètres supplémentaires*, puis cliquez sur *Activer/Désactiver l'équilibrage automatique de la charge*.
+. Dans le panneau de gauche, sélectionnez *Système*.
+. Faites défiler vers le bas jusqu'à *Paramètres supplémentaires*, puis cliquez sur *Configurer l'équilibrage de charge automatique*.
 +
 Le texte en dessous de cette option indique si la fonction est actuellement activée ou désactivée.
 
 +
-Une boîte de dialogue de confirmation s'ouvre.
+La boîte de dialogue « Configurer l'équilibrage de charge automatique » s'ouvre.
 
-. Confirmez en cliquant sur *Oui* pour continuer.
+. Sélectionnez ou décochez *Activer l'équilibrage de charge automatique*.
+. Cliquez sur *Enregistrer*.
 +
 En sélectionnant cette option, vous basculez la fonction entre activé/désactivé.
 

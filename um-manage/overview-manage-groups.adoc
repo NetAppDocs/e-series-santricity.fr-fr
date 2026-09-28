@@ -15,6 +15,7 @@ summary: À partir de la page gérer les groupes, vous pouvez créer un ensemble
 
 
 
+[[what-are-array-groups]]
 == Qu'est-ce qu'un groupe de baies ?
 
 Vous pouvez gérer votre infrastructure physique et virtualisée en regroupant un ensemble de baies de stockage. Vous pouvez regrouper les baies de stockage par groupe pour faciliter l'exécution des tâches de surveillance ou de reporting.
@@ -27,6 +28,7 @@ Il existe deux types de groupes :
 
 
 
+[[how-do-i-configure-groups]]
 == Comment configurer des groupes ?
 
 À partir de la page gérer les groupes, vous pouvez créer un groupe, puis ajouter des matrices à ce groupe.

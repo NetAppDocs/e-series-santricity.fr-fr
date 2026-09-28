@@ -32,22 +32,18 @@ Il n'est pas nécessaire de configurer le protocole NTP sur les deux contrôleur
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
-+
-Le graphique change pour afficher les contrôleurs au lieu des disques.
-
+. Dans le panneau de gauche, sélectionnez menu:Hardware[Controllers and components].
 . Cliquez sur le contrôleur que vous souhaitez configurer.
 +
 Le menu contextuel du contrôleur s'affiche.
 
 . Sélectionnez *configurer le serveur NTP*.
 +
-La boîte de dialogue configurer le serveur NTP (Network Time Protocol) s'ouvre.
+La page Configure network time protocol (NTP) server s'ouvre.
 
-. Sélectionnez *Je souhaite activer le protocole NTP sur le contrôleur* (*A* ou *B*).
+. Sélectionnez la case à cocher *Activer NTP*.
 +
-Des sélections supplémentaires apparaissent dans la boîte de dialogue.
+D'autres options apparaissent sur la page.
 
 . Sélectionnez l'une des options suivantes :
 +
@@ -66,4 +62,4 @@ Si la matrice de stockage est définie pour utiliser une adresse NTP statique, a
 
 
 .Résultats
-La configuration du serveur NTP s'affiche dans les paramètres du contrôleur, onglet *DNS / NTP*.
+La configuration du serveur NTP est affichée dans les paramètres du contrôleur, section *Paramètres du serveur Network Time Protocol (NTP)*.

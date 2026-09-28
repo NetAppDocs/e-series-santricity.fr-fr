@@ -18,20 +18,22 @@ L'extension entraîne l'ajout de capacité disponible dans le pool ou le groupe 
 
 .Avant de commencer
 * Les disques doivent être en état optimal.
-* Les disques doivent avoir le même type de disque (HDD ou SSD).
+* Les disques doivent être du même type (HDD ou SSD). Pour les systèmes EF80 et EF50, les disques SSD NVMe Performance et Capacity peuvent coexister dans la même baie de stockage, mais ne peuvent pas être mélangés au sein d'un même pool ou groupe de volumes.
 * Le pool ou le groupe de volumes doit être à l'état optimal.
 * Le nombre maximal de volumes autorisés dans un groupe de volumes est de 256.
 * Le nombre maximum de volumes autorisé dans un pool dépend du modèle du système de stockage :
 +
-** 2 048 volumes (EF80, EF600, and E5700 series)
+** 2 048 volumes (EF80, EF600 et EF600C)
 ** 1 024 volumes (EF50 et EF300)
-** 512 volumes (E4000 et E2800 Series)
+** 512 volumes (E4000)
 
 
 * Si le pool ou le groupe de volumes contient tous les lecteurs sécurisés, ajoutez uniquement des lecteurs capables de sécuriser pour continuer à utiliser les capacités de cryptage des lecteurs sécurisés.
 +
 Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).
 
+* La capacité des disques que vous ajoutez doit être égale ou supérieure à la capacité du plus petit disque du pool ou du groupe de volumes.
+* La vitesse PCIe et le type de disque (Performance ou Capacité) des disques que vous ajoutez doivent correspondre à ceux déjà présents dans le pool ou le groupe de volumes. Les disques Performance et Capacité ne peuvent pas être mélangés au sein d’un même pool ou groupe de volumes.
 
 
 .Description de la tâche
@@ -49,9 +51,9 @@ Avec l'ajout de lecteurs, il peut être nécessaire d'augmenter votre capacité 
 ====
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Sélectionnez le pool ou le groupe de volumes auquel vous souhaitez ajouter des disques, puis cliquez sur menu:icône d’ellipse[Ajouter de la capacité].
+. Localisez le pool ou le groupe de volumes auquel vous souhaitez ajouter des disques, puis cliquez sur l’icône menu:ellipsis icon[Add capacity].
 +
-La boîte de dialogue Ajouter de la capacité s'affiche. Seuls les disques non attribués compatibles avec le pool ou le groupe de volumes apparaissent.
+La page « Ajouter de la capacité » s'affiche. Seuls les disques non attribués compatibles avec le pool ou le groupe de volumes apparaissent.
 
 . Sous *Select drives to Add capacity...*, sélectionnez un ou plusieurs disques que vous souhaitez ajouter au pool ou au groupe de volumes existant.
 +

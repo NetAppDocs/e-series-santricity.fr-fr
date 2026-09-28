@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[why-cant-i-log-in]]
 == Pourquoi ne puis-je pas me connecter ?
 
 Si vous recevez une erreur lorsque vous tentez de vous connecter au Gestionnaire système SANtricity, vérifiez les causes suivantes.
@@ -26,7 +27,7 @@ Des erreurs de connexion à System Manager peuvent se produire pour l'une des ra
 * Vous disposez de privilèges insuffisants.
 * Le serveur d'annuaire (si configuré) est peut-être indisponible. Si c'est le cas, essayez de vous connecter avec un rôle d'utilisateur local.
 * Vous avez tenté de vous connecter plusieurs fois sans succès, ce qui a déclenché le mode de verrouillage. Attendez 10 minutes pour vous reconnecter.
-* Une condition de verrouillage a été déclenchée et votre journal d'audit est peut-être plein. Accédez à Access Management et supprimez les anciens événements du journal d'audit.
+* Une condition de verrouillage a été déclenchée et votre journal des audits est peut-être plein. Accédez à Surveillance > journal des audits et supprimez les anciens événements du journal des audits.
 * L'authentification SAML est activée. Actualisez votre navigateur pour vous connecter.
 
 
@@ -39,6 +40,7 @@ Les erreurs de connexion à une baie de stockage distante pour les tâches de mi
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == Que dois-je savoir avant d'ajouter un serveur d'annuaire ?
 
 Avant d'ajouter un serveur d'annuaire dans Access Management, assurez-vous de respecter les exigences suivantes.
@@ -50,6 +52,7 @@ Avant d'ajouter un serveur d'annuaire dans Access Management, assurez-vous de re
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == De quoi ai-je besoin savoir concernant le mappage aux rôles de la baie de stockage ?
 
 Avant de mapper des groupes à des rôles, consultez les directives suivantes.
@@ -64,6 +67,7 @@ Les fonctionnalités RBAC intégrées de la baie de stockage (contrôle d'accès
 
 
 
+[[directory-services]]
 === Services d'annuaire
 
 Si vous utilisez un serveur LDAP (Lightweight Directory Access Protocol) et des services d'annuaire, assurez-vous que :
@@ -80,6 +84,7 @@ Si vous utilisez un serveur LDAP (Lightweight Directory Access Protocol) et des 
 
 
 
+[[saml]]
 === SAML
 
 Si vous utilisez les fonctionnalités SAML intégrées à la baie de stockage, vérifiez que :
@@ -97,12 +102,14 @@ Si vous utilisez les fonctionnalités SAML intégrées à la baie de stockage, v
 
 
 
+[[which-external-management-tools-may-be-affected-by-this-change]]
 == Quels outils de gestion externe peuvent être affectés par ce changement ?
 
 Lorsque vous apportez certaines modifications à SANtricity System Manager, telles que le basculement de l'interface de gestion ou l'utilisation de SAML pour une méthode d'authentification, l'utilisation de certains outils et fonctionnalités externes peut être limitée.
 
 
 
+[[management-interface]]
 === Interface de gestion
 
 Les outils qui communiquent directement avec l'interface de gestion héritée (symbole), tels que le fournisseur SMI-S SANtricity ou OnCommand Insight (OCI), ne fonctionnent pas si le paramètre d'interface de gestion héritée est activé. En outre, vous ne pouvez pas utiliser de commandes CLI héritées ou effectuer des opérations de mise en miroir si ce paramètre est désactivé.
@@ -111,6 +118,7 @@ Contactez le support technique pour plus d'informations.
 
 
 
+[[saml-authentication]]
 === Authentification SAML
 
 Lorsque le langage SAML est activé, les clients suivants ne peuvent pas accéder aux services et ressources de la baie de stockage :
@@ -127,12 +135,14 @@ Contactez le support technique pour plus d'informations.
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == Que dois-je savoir avant de configurer et d'activer le langage SAML ?
 
 Avant de configurer et d'activer les fonctionnalités SAML pour l'authentification, assurez-vous de respecter les exigences suivantes et de comprendre les restrictions SAML.
 
 
 
+[[requirements]]
 === De formation
 
 Avant de commencer, assurez-vous que :
@@ -147,6 +157,7 @@ Avant de commencer, assurez-vous que :
 
 
 
+[[restrictions]]
 === Restrictions
 
 Outre les exigences ci-dessus, assurez-vous de bien comprendre les restrictions suivantes :
@@ -168,6 +179,7 @@ Outre les exigences ci-dessus, assurez-vous de bien comprendre les restrictions 
 
 
 
+[[what-types-of-events-are-recorded-in-the-audit-log]]
 == Quels types d'événements sont enregistrés dans le journal d'audit ?
 
 Le journal d'audit peut enregistrer les événements de modification ou les événements de modification et de lecture seule.
@@ -180,6 +192,7 @@ Selon les paramètres de la stratégie, les types d'événements suivants sont a
 
 
 
+[[what-do-i-need-to-know-before-configuring-a-syslog-server]]
 == Que dois-je savoir avant de configurer un serveur syslog ?
 
 Vous pouvez archiver les journaux d'audit sur un serveur syslog externe.
@@ -195,8 +208,9 @@ Avant de configurer un serveur syslog, gardez les consignes suivantes à l'espri
 
 
 
+[[the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do]]
 == Le serveur syslog ne reçoit plus les journaux d'audit. Que dois-je faire ?
 
 Si vous avez configuré un serveur syslog avec un protocole TLS, le serveur ne peut pas recevoir de messages si le certificat devient non valide pour une raison quelconque. Un message d'erreur concernant le certificat non valide est affiché dans le journal d'audit.
 
-Pour résoudre ce problème, vous devez d'abord corriger le certificat du serveur syslog. Une fois qu'une chaîne de certificats valide est en place, accédez au menu:Paramètres[Journal d'audit > configurer les serveurs Syslog > tout tester].
+Pour résoudre ce problème, vous devez d'abord corriger le certificat du serveur syslog. Une fois la chaîne de certificats valide en place, accédez au menu : Monitoring [Journal des audits > Configurer les serveurs syslog > Tout tester].

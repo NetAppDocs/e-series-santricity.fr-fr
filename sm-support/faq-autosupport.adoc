@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-data-am-i-collecting]]
 == Quelles données puis-je collecter ?
 
 La fonction AutoSupport et la fonction Manual support Data Collection permettent de collecter des données dans un pack de support client afin de résoudre les problèmes à distance par le support technique.
@@ -24,6 +25,7 @@ Le pack support client rassemble tous les types d'informations sur la matrice de
 
 
 
+[[what-does-unreadable-sectors-data-show-me]]
 == Que me montrent les données des secteurs illisibles ?
 
 Vous pouvez afficher des données détaillées sur les secteurs illisibles détectés sur les disques de votre matrice de stockage.
@@ -104,6 +106,7 @@ Affiche l'un des types de panne suivants :
 |===
 
 
+[[what-is-a-health-image]]
 == Qu'est-ce qu'une image de santé ?
 
 Une image de santé est un « dump » de données brutes de la mémoire du processeur du contrôleur que le support technique peut utiliser pour diagnostiquer un problème sur un contrôleur.
@@ -112,6 +115,7 @@ Le firmware génère automatiquement une image de l'état de santé lorsqu'il d�
 
 
 
+[[what-do-the-autosupport-features-do]]
 == Quels sont les avantages des fonctionnalités AutoSupport ?
 
 La fonctionnalité AutoSupport comprend trois fonctions individuelles que vous pouvez activer séparément.
@@ -123,6 +127,7 @@ La fonctionnalité AutoSupport comprend trois fonctions individuelles que vous p
 
 
 
+[[what-type-of-data-is-collected-through-the-autosupport-feature]]
 == Quel type de données est collecté grâce à la fonctionnalité AutoSupport ?
 
 La fonction AutoSupport contient trois types d'intervention standard : l'envoi d'événements, les interventions planifiées et les interventions de diagnostic à la demande et à distance.
@@ -157,6 +162,7 @@ La fonction AutoSupport envoie automatiquement plusieurs interventions selon un 
 
 
 
+[[how-do-i-configure-the-delivery-method-for-the-autosupport-feature]]
 == Comment configurer la méthode de livraison pour la fonctionnalité AutoSupport ?
 
 La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la fourniture d'interventions AutoSupport au support technique.
@@ -179,7 +185,7 @@ La fonction AutoSupport prend en charge les protocoles HTTPS et SMTP pour la fou
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Support[Support Center > AutoSupport] onglet.
+. Dans le panneau de gauche, sélectionnez menu : Support[AutoSupport].
 . Sélectionnez *configurer la méthode de livraison AutoSupport*.
 +
 Une boîte de dialogue s'affiche, qui répertorie les méthodes de livraison d'expédition.
@@ -213,6 +219,7 @@ Si le test de configuration échoue, vérifiez vos paramètres de configuration 
 
 
 
+[[what-is-configuration-data]]
 == Qu'est-ce que les données de configuration ?
 
 Lorsque vous sélectionnez collecter les données de configuration, le système enregistre l'état actuel de la base de données de configuration RAID.
@@ -221,6 +228,7 @@ La base de données de configuration RAID inclut toutes les données des groupes
 
 
 
+[[what-do-i-need-to-know-before-upgrading-the-santricity-os-software]]
 == Que dois-je savoir avant de mettre à niveau le logiciel SANtricity OS ?
 
 Avant de mettre à niveau le logiciel et le micrologiciel de votre contrôleur, tenez compte de ces éléments.
@@ -268,6 +276,7 @@ CAUTION: Ne modifiez pas la matrice de stockage pendant la mise à niveau.
 
 
 
+[[what-do-i-need-to-know-before-suspending-iom-auto-synchronization]]
 == Que dois-je savoir avant de suspendre la synchronisation automatique de l'IOM ?
 
 L'interruption de la synchronisation automatique du module d'E/S empêche la mise à niveau du firmware du module lors de la prochaine mise à niveau du logiciel du contrôleur SANtricity OS.
@@ -276,6 +285,7 @@ En principe, le logiciel du contrôleur et le firmware du module sont mis à niv
 
 
 
+[[why-is-my-firmware-upgrade-progressing-so-slowly]]
 == Pourquoi ma mise à niveau du micrologiciel avance-t-elle si lentement ?
 
 La progression de la mise à niveau du micrologiciel dépend de la charge globale du système.
@@ -284,6 +294,7 @@ Lors d'une mise à niveau en ligne du firmware d'un disque, si un transfert de v
 
 
 
+[[what-do-i-need-to-know-before-upgrading-drive-firmware]]
 == Que dois-je savoir avant de mettre à niveau le micrologiciel du lecteur ?
 
 Avant de mettre à niveau le micrologiciel de votre lecteur, tenez compte de ces éléments.
@@ -298,6 +309,7 @@ Avant de mettre à niveau le micrologiciel de votre lecteur, tenez compte de ces
 
 
 
+[[how-do-i-choose-which-type-of-upgrade-to-perform]]
 == Comment choisir le type de mise à niveau à effectuer ?
 
 Vous choisissez le type de mise à niveau à effectuer sur le lecteur en fonction de l'état du pool ou du groupe de volumes.

@@ -17,6 +17,7 @@ Lorsque ces disques sont utilisés avec la fonction sécurité des lecteurs, ils
 
 
 
+[[how-to-implement-drive-security]]
 == Comment mettre en œuvre la sécurité du lecteur
 
 Pour mettre en œuvre la sécurité des lecteurs, procédez comme suit.
@@ -33,6 +34,7 @@ Pour mettre en œuvre la sécurité des lecteurs, procédez comme suit.
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 == Fonctionnement de la sécurité du lecteur au niveau du lecteur
 
 Un disque sécurisé, FDE ou FIPS, chiffre les données lors des écritures et déchiffre les données pendant les lectures. Ce cryptage et ce décryptage n'ont aucune incidence sur les performances ou le flux de travail de l'utilisateur. Chaque disque dispose de sa propre clé de chiffrement unique, qui ne peut jamais être transférée depuis le disque.
@@ -41,6 +43,7 @@ La fonction de sécurité du lecteur offre une couche de protection supplémenta
 
 
 
+[[how-drive-security-works-at-the-storage-array-level]]
 == Fonctionnement de la sécurité des disques au niveau de la baie de stockage
 
 Avec la fonction sécurité des lecteurs, vous créez une clé de sécurité partagée entre les lecteurs et les contrôleurs sécurisés d'une matrice de stockage. Lorsque l'alimentation des lecteurs est coupée et allumée, les lecteurs sécurisés se déverrouillent en mode sécurité jusqu'à ce que le contrôleur applique la clé de sécurité.
@@ -54,6 +57,7 @@ Pour la gestion interne des clés, la clé de sécurité réelle est stockée su
 ====
 
 
+[[how-drive-security-works-at-the-volume-level]]
 == Fonctionnement de la sécurité du lecteur au niveau du volume
 
 Lorsque vous créez un pool ou un groupe de volumes à partir de disques sécurisés, vous pouvez également activer la sécurité des disques pour ces pools ou groupes de volumes. L'option Drive Security (sécurité du lecteur) assure la sécurité des lecteurs et des groupes de volumes et pools associés.

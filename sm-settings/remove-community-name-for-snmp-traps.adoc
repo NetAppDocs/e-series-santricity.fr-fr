@@ -15,10 +15,9 @@ summary: Vous pouvez supprimer un nom de communauté pour les déroutements SNMP
 Vous pouvez supprimer un nom de communauté pour les déroutements SNMPv2c.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
-Les destinations de déroutement et les noms de communauté apparaissent sur la page *alertes*.
+Les destinations des traps et les noms des communautés apparaissent sur la page *SNMP alerts*.
 
 . Sélectionnez *configurer les communautés*.
 +
@@ -32,4 +31,4 @@ Si les destinations d'interruption sont associées à ce nom de communauté, la 
 
 
 .Résultats
-Le nom de communauté et sa destination de déroutement associée sont supprimés de la page alertes.
+Le nom de la communauté et sa destination de trap associée sont supprimés de la page d'alertes SNMP.

@@ -21,8 +21,7 @@ Pour la version SANtricity 11.74 et ultérieure, vous pouvez également configur
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
+. Dans le panneau de gauche, sélectionnez menu:Hardware[Controllers and components].
 +
 Le graphique change pour afficher les contrôleurs au lieu des disques.
 
@@ -32,7 +31,7 @@ Le menu contextuel du contrôleur s'affiche.
 
 . Sélectionnez *configurer la connexion distante (SSH)*. (Pour SANtricity versions 11.73 et antérieures, cette option de menu est *changer la connexion distante*.)
 +
-La boîte de dialogue s'ouvre pour activer la connexion à distance.
+La page Configurer la connexion à distance (SSH) s'ouvre.
 
 . Cochez la case *Activer la connexion distante*.
 +
@@ -44,12 +43,12 @@ Ce paramètre offre une connexion à distance avec trois options d'autorisation 
 ** *Mot de passe et clé SSH*. Pour cette option, cochez la case *exiger une clé publique autorisée et un mot de passe pour la connexion à distance* et passez à l'étape suivante.
 
 
-. Remplissez le champ *clé publique autorisée*. Ce champ contient la liste des clés publiques autorisées, au format du fichier OpenSSH *Authorized_keys*.
+. Renseignez le champ *Clés publiques autorisées*. Ce champ contient une liste de clés publiques autorisées, au format du fichier *authorized_keys* d'OpenSSH.
 +
-Lorsque vous remplissez le champ *clé publique autorisée*, tenez compte des directives suivantes :
+Lors du remplissage du champ *Clés publiques autorisées*, veuillez tenir compte des consignes suivantes :
 
 +
-** Le champ *clé publique autorisée* s'applique aux deux contrôleurs et ne doit être configuré que sur le premier contrôleur.
+** Le champ *Clés publiques autorisées* s'applique aux deux contrôleurs et ne doit être configuré que sur le premier contrôleur.
 ** Le fichier *Authorized_keys* ne doit contenir qu'une seule clé par ligne. Les lignes commençant par # et vides sont ignorées. Pour plus d'informations sur le format de fichier, reportez-vous à la section link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Configuration des clés autorisées pour OpenSSH"^].
 ** Un fichier *Authorized_keys* doit ressembler à l'exemple suivant :
 +
@@ -62,7 +61,7 @@ AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg
 
 . Lorsque vous avez terminé, cliquez sur *Enregistrer*.
 . Pour les systèmes recto verso, vous pouvez activer la connexion à distance sur le second contrôleur en suivant les étapes ci-dessus. Si vous configurez l'option pour un mot de passe et une clé SSH, assurez-vous de cocher à nouveau la case *exiger une clé publique autorisée et un mot de passe pour la connexion à distance*.
-. Une fois le dépannage terminé, vous pouvez désactiver la connexion à distance en retournant à la boîte de dialogue configurer la connexion à distance et en décosélectionnant la case *Activer la connexion à distance*. Si la connexion à distance est activée sur un second contrôleur, une boîte de dialogue de confirmation s'ouvre et vous permet également de désactiver la connexion à distance sur le second contrôleur.
+. Une fois le dépannage terminé par l'assistance technique, vous pouvez désactiver la connexion à distance en retournant sur la page « Configurer la connexion à distance (SSH) » et en décochant la case « Activer la connexion à distance ». Si la connexion à distance est activée sur un second contrôleur, une boîte de dialogue de confirmation s'affiche et vous permet de désactiver la connexion à distance également sur ce dernier.
 +
 La désactivation de la connexion distante met fin à toutes les sessions SSH en cours et rejette toute nouvelle demande de connexion.
 

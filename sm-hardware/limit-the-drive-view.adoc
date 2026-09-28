@@ -18,11 +18,11 @@ Les filtres de lecteur peuvent limiter la vue à certains types de lecteurs phys
 
 [NOTE]
 ====
-Si tous les lecteurs partagent les mêmes attributs physiques, le champ de filtre *Afficher les lecteurs qui sont...* n'apparaît pas. Si tous les lecteurs partagent les mêmes attributs logiques, *Anywhere dans le champ filtre de la matrice de stockage* n'apparaît pas.
+Si tous les disques partagent les mêmes attributs physiques, le champ de filtre *Afficher les disques qui sont...* n'apparaît pas. Si tous les disques partagent les mêmes attributs logiques, les options d'emplacement logique n'apparaissent pas dans le champ de filtre.
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
+. Dans le panneau de gauche, sélectionnez menu : Hardware[Drives].
 . Dans le premier champ de filtre (sous *Afficher les lecteurs qui sont...*), cliquez sur la flèche déroulante pour afficher les types de lecteurs disponibles et les attributs de sécurité.
 +
 Les types de disques peuvent inclure :
@@ -46,7 +46,7 @@ Lorsque vous sélectionnez une option dans le champ, les lecteurs qui ne corresp
 
 
 
-. Dans la deuxième zone de filtre, cliquez sur la flèche de la liste déroulante pour afficher les emplacements logiques disponibles pour les lecteurs.
+. Dans le même champ de filtre, cliquez sur la flèche déroulante pour afficher les emplacements logiques disponibles pour les lecteurs.
 +
 [NOTE]
 ====
@@ -67,7 +67,7 @@ Lorsque vous sélectionnez une option dans le champ, les lecteurs qui ne corresp
 
 
 
-. Vous pouvez également sélectionner *Activer les voyants de localisation* à l'extrémité droite des champs de filtre pour activer les voyants de localisation des lecteurs affichés.
+. Vous pouvez également sélectionner *activer les voyants de localisation* à l'extrême droite du champ de filtre pour activer les voyants de localisation des lecteurs affichés.
 +
 Cette action vous aide à localiser physiquement les lecteurs de la matrice de stockage.
 

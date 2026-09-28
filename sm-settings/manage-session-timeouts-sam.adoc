@@ -23,14 +23,14 @@ Si Access Management est configuré à l'aide des fonctionnalités SAML (Securit
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
+. Dans le panneau de gauche, sélectionnez *Système*.
 . Sous la section général, sélectionnez *Activer/Désactiver le délai de session*.
 +
 La boîte de dialogue Activer/Désactiver le délai d'expiration de session s'ouvre.
 
 . Utilisez les commandes de disque pour augmenter ou diminuer le temps en minutes.
 +
-Le délai minimal que vous pouvez définir pour System Manager est de 15 minutes.
+Le délai d'expiration minimal que vous pouvez définir pour System Manager est de 10 minutes.
 
 +
 [NOTE]

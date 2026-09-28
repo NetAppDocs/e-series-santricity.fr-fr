@@ -33,13 +33,13 @@ Vous devez planifier une fenêtre de maintenance des temps d'indisponibilité et
 Cette tâche explique comment utiliser System Manager pour activer un pack de fonctionnalités. Lorsque vous avez terminé, vous devez redémarrer la matrice de stockage.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
-. Sous *Compléments*, sélectionnez *Modifier le pack de fonctionnalités*.
+. Dans le panneau de gauche, sélectionnez *Système*.
+. Sous *Modules complémentaires*, sélectionnez *Changer de pack de fonctionnalités*.
 . Cliquez sur *Parcourir*, puis sélectionnez le fichier de clé.
 +
 Le nom du fichier s'affiche dans la boîte de dialogue.
 
-. Type `change` sur le terrain.
+. Saisissez  `CHANGE`dans le champ.
 . Cliquez sur *Modifier*.
 +
 La migration du Feature Pack commence et les contrôleurs se redémarrent. Les données de cache non écrites sont supprimées, ce qui garantit l'absence d'activité d'E/S. Les deux contrôleurs redémarrent automatiquement pour que le nouveau pack de fonctionnalités prenne effet. La matrice de stockage revient à un état réactif une fois le redémarrage terminé.

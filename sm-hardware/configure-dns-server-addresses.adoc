@@ -27,18 +27,13 @@ Si vous avez déjà configuré les ports de gestion de la baie de stockage avec 
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
-+
-Le graphique change pour afficher les contrôleurs au lieu des disques.
-
-. Sélectionnez le contrôleur à configurer.
+. Dans le panneau de gauche, sélectionnez menu:Hardware[Controllers and components].
 +
 Le menu contextuel du contrôleur s'affiche.
 
 . Sélectionnez *configurer le serveur DNS*.
 +
-La boîte de dialogue configurer le serveur DNS (Domain Name System) s'ouvre.
+La page Configurer le serveur du système de noms de domaine (DNS) s'ouvre.
 
 . Sélectionnez l'une des options suivantes :
 +
@@ -57,4 +52,4 @@ Si la matrice de stockage est définie pour utiliser une adresse DNS statique, a
 
 
 .Résultats
-La configuration DNS s'affiche dans les paramètres du contrôleur, onglet *DNS / NTP*.
+La configuration DNS est affichée dans les paramètres du contrôleur, section *Paramètres du serveur de système de noms de domaine (DNS)*.

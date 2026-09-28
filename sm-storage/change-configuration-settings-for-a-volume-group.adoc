@@ -23,7 +23,7 @@ Si vous modifiez le niveau RAID pour répondre aux besoins de performances des a
 
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Sélectionnez le groupe de volume que vous souhaitez modifier, puis cliquez sur l’icône menu:ellipsis icon[Edit Settings].
+. Localisez le groupe de volumes que vous souhaitez modifier, puis cliquez sur l’icône de menu : ellipsis [Edit Settings].
 +
 La fenêtre « Modifier les paramètres du groupe de volumes » s'affiche.
 

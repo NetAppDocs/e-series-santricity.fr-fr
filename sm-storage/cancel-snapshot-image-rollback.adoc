@@ -23,8 +23,7 @@ Si le groupe d'instantanés sur lequel réside l'image instantanée comporte une
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Cliquez sur l'onglet *Images snapshot*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot images].
 . Sélectionnez le retour arrière actif ou suspendu, puis sélectionnez menu:Retour arrière[Annuler].
 +
 La boîte de dialogue confirmer l'annulation de la restauration s'affiche.

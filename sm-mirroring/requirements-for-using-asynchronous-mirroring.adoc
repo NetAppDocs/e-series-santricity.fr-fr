@@ -16,6 +16,7 @@ Si vous prévoyez d'utiliser la mise en miroir asynchrone, veillez à respecter 
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Pour activer et configurer la mise en miroir entre deux baies, vous devez utiliser l'interface Unified Manager. Unified Manager est installé sur un système hôte avec le proxy de services Web.
@@ -27,6 +28,7 @@ Pour activer et configurer la mise en miroir entre deux baies, vous devez utilis
 
 
 
+[[storage-arrays]]
 == Les baies de stockage
 
 * Vous devez disposer de deux baies de stockage.
@@ -41,6 +43,7 @@ Pour activer et configurer la mise en miroir entre deux baies, vous devez utilis
 
 
 
+[[supported-connections]]
 == Connexions prises en charge
 
 La mise en miroir asynchrone peut utiliser des connexions FC ou iSCSI, ou les deux, pour la communication entre les systèmes de stockage locaux et distants. Au moment de la création d'un groupe de cohérence miroir, l'administrateur peut sélectionner FC ou iSCSI pour ce groupe si les deux sont connectés à la matrice de stockage distante. Il n'y a pas de basculement d'un type de canal à l'autre.
@@ -71,6 +74,12 @@ Les ports iSCSI sont configurés au niveau de la baie, port par port. La communi
 ** VLAN : les systèmes locaux et distants doivent avoir le même paramètre VLAN pour communiquer
 ** Port d'écoute iSCSI
 ** Trames Jumbo
++
+[NOTE]
+====
+L'utilisation de trames Jumbo est recommandée pour améliorer les performances du processeur, le débit et la stabilité fonctionnelle.
+
+====
 ** Priorité Ethernet
 +
 [NOTE]
@@ -92,6 +101,7 @@ E4000 ne prend pas en charge la mise en miroir asynchrone lors de l'utilisation 
 ====
 
 
+[[mirrored-volume-candidates]]
 == Candidats aux volumes en miroir
 
 * Le niveau RAID, les paramètres de mise en cache et la taille des segments peuvent être différents sur les volumes primaire et secondaire d'une paire en miroir asynchrone.
@@ -109,11 +119,12 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 
 
 * Les volumes principal et secondaire doivent partager le même type de disque. La combinaison de disques NVMe et SAS entre les volumes principal et secondaire n'est pas prise en charge.
-* Le partitionnement des ressources ne doit pas être activé pour les volumes primaires et secondaires.
+* Les volumes primaires et secondaires ne doivent pas avoir l'approvisionnement en ressources activé.
 
 
 
 
+[[reserved-capacity]]
 == Capacité réservée
 
 * Un volume de capacité réservée est nécessaire pour un volume primaire et pour un volume secondaire d'une paire en miroir afin d'obtenir les informations d'écriture de journalisation pour une restauration après la réinitialisation du contrôleur et toute autre interruption temporaire.
@@ -128,6 +139,7 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 
 
 
+[[drive-security-feature]]
 == Fonction de sécurité du lecteur
 
 * Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent disposer de paramètres de sécurité compatibles. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.

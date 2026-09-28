@@ -40,6 +40,7 @@ La configuration de l'authentification SAML est une procédure en plusieurs éta
 
 
 
+[[step-1-upload-the-idp-metadata-file]]
 == Étape 1 : téléchargez le fichier de métadonnées IDP
 
 Pour fournir à la baie de stockage des informations de connexion IDP, vous importez les métadonnées IDP dans Unified Manager. Le système IDP a besoin de ces métadonnées pour rediriger les demandes d'authentification vers l'URL correcte et valider les réponses reçues.
@@ -63,6 +64,7 @@ Une fois le fichier sélectionné, l'ID entité IDP s'affiche.
 
 
 
+[[step-2-export-service-provider-files]]
 == Étape 2 : exporter les fichiers du fournisseur de services
 
 Pour établir une relation de confiance entre le fournisseur de services intégré et la baie de stockage, vous importez les métadonnées du fournisseur de services dans le fournisseur de services intégré. Le PDI a besoin de ces métadonnées pour établir une relation de confiance avec le contrôleur et pour traiter les demandes d'autorisation. Le fichier contient des informations telles que le nom de domaine du contrôleur ou l'adresse IP, afin que le IDP puisse communiquer avec les fournisseurs de services.
@@ -82,6 +84,7 @@ Après avoir cliqué sur *Exporter*, les métadonnées du fournisseur de service
 
 
 
+[[step-3-map-roles]]
 == Étape 3 : rôles de carte
 
 Pour fournir aux utilisateurs l'autorisation et l'accès à Unified Manager, vous devez mapper les attributs d'utilisateur et les appartenances aux groupes d'un fournisseur d'identités aux rôles prédéfinis de la baie de stockage.
@@ -159,6 +162,7 @@ Les mappages de rôles peuvent être modifiés après l'activation de SAML.
 
 
 
+[[step-4-test-sso-login]]
 == Étape 4 : testez la connexion SSO
 
 Pour vous assurer que le système IDP et la matrice de stockage peuvent communiquer, vous pouvez éventuellement tester une connexion SSO. Ce test est également effectué au cours de la dernière étape de l'activation de SAML.
@@ -191,6 +195,7 @@ Si le test ne s'effectue pas correctement, un message d'erreur s'affiche avec de
 
 
 
+[[step-5-enable-saml]]
 == Étape 5 : activer SAML
 
 La dernière étape consiste à terminer la configuration SAML pour l'authentification des utilisateurs. Au cours de ce processus, le système vous demande également de tester une connexion SSO. Le processus de test de connexion SSO est décrit à l'étape précédente.

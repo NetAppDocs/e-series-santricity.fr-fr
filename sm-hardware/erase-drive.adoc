@@ -26,11 +26,7 @@ La fonction Effacer ne prend pas en charge certains modèles de disques plus anc
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
-+
-Le graphique change pour afficher les disques au lieu des contrôleurs.
-
+. Dans le panneau de gauche, sélectionnez menu : Hardware[Drives].
 . Vous pouvez également utiliser les champs de filtre pour afficher tous les disques non assignés dans le tiroir. Dans la liste déroulante *Afficher les lecteurs qui sont...*, sélectionnez *non affectés*.
 +
 La vue du tiroir affiche uniquement les disques non assignés. Tous les autres sont grisés.
@@ -42,23 +38,23 @@ La vue du tiroir affiche uniquement les disques non assignés. Tous les autres s
 *Perte de données possible* -- l'opération Effacer ne peut pas être annulée. Assurez-vous de sélectionner les lecteurs appropriés au cours de la procédure.
 
 ====
-. Dans le menu contextuel, sélectionnez *Effacer les lecteurs*.
+. Dans le menu contextuel, sélectionnez *Erase*.
 +
-La boîte de dialogue Effacer les lecteurs s'ouvre et affiche tous les lecteurs éligibles pour une opération d'effacement.
+La page « Effacer les disques » s'ouvre, affichant tous les disques éligibles pour une opération d'effacement.
 
 . Si vous le souhaitez, sélectionnez des lecteurs supplémentaires dans le tableau. Vous ne pouvez pas sélectionner _tous_ lecteurs ; assurez-vous qu'un lecteur reste désélectionné.
-. Confirmez l'opération en saisissant `erase`, puis cliquez sur *Effacer les lecteurs*.
+. Confirmez l'opération en saisissant `erase`, puis cliquez sur *Effacer*.
 +
 [CAUTION]
 ====
 Assurez-vous de poursuivre cette opération. Lorsque vous cliquez sur Oui dans la boîte de dialogue suivante, l'opération ne peut pas être abandonnée.
 
 ====
-. Dans la boîte de dialogue temps d'achèvement estimé, cliquez sur *Oui* pour continuer l'opération d'effacement.
+. Dans la boîte de dialogue « Durée estimée de l’effacement des lecteurs », cliquez sur *Effacer* pour poursuivre l’opération d’effacement.
 
 
 .Résultats
-L'opération d'effacement peut prendre de quelques minutes à plusieurs heures. Vous pouvez consulter l'état dans menu:Storage[Operations in Progress]. Lorsque l'opération d'effacement est terminée, les disques sont disponibles pour une utilisation dans un autre groupe de volumes, un autre pool de disques ou une autre baie de stockage.
+L'opération d'effacement peut prendre de quelques minutes à plusieurs heures. Vous pouvez consulter l'état dans menu : Surveillance [Opérations en cours]. Une fois l'opération d'effacement terminée, les disques sont disponibles pour une utilisation dans un autre groupe de volumes, un autre pool de disques ou une autre baie de stockage.
 
 .Une fois que vous avez terminé
 Si vous souhaitez réutiliser le lecteur, vous devez d'abord l'initialiser. Pour ce faire, sélectionnez *initialiser* dans le menu contextuel du lecteur.

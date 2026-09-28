@@ -40,6 +40,7 @@ Le processus de création d'une paire miroir asynchrone est une procédure à pl
 
 
 
+[[step-1-create-or-select-a-mirror-consistency-group]]
 == Étape 1 : créer ou sélectionner un groupe de cohérence en miroir
 
 Dans cette étape, vous créez un nouveau groupe de cohérence en miroir ou sélectionnez un groupe existant. Un groupe de cohérence en miroir est un conteneur pour les volumes primaires et secondaires (paire en miroir), et spécifie la méthode de resynchronisation souhaitée (manuelle ou automatique) pour toutes les paires du groupe.
@@ -59,7 +60,7 @@ Pour créer un nouveau groupe, procédez comme suit :
 
 +
 .. Sélectionnez *Un nouveau groupe de cohérence miroir*, puis cliquez sur *Suivant*.
-.. Entrez un nom unique qui décrit le mieux les données sur les volumes qui seront mis en miroir entre les deux baies de stockage. Un nom ne peut se composer que de lettres, de chiffres et de caractères spéciaux (trait de soulignement) (_), tiret (-) et signe dièse (#). Un nom ne doit pas comporter plus de 30 caractères et ne doit pas contenir d'espaces.
+.. Saisissez un nom unique qui décrit au mieux les données sur les volumes qui seront mis en miroir entre les deux baies de stockage. Un nom ne peut contenir que des lettres, des chiffres et les caractères spéciaux trait de soulignement (_), tiret (-) et dièse (#). Un nom ne peut pas dépasser 60 caractères et ne peut pas contenir d'espaces.
 .. Sélectionnez la matrice de stockage distante sur laquelle vous souhaitez établir une relation de mise en miroir avec la matrice de stockage locale.
 +
 [NOTE]
@@ -69,7 +70,7 @@ Si votre matrice de stockage distante est protégée par un mot de passe, le sys
 ====
 .. Choisissez si vous souhaitez synchroniser manuellement ou automatiquement les paires mises en miroir :
 +
-*** *Manuel* -- sélectionnez cette option pour démarrer manuellement la synchronisation pour toutes les paires en miroir de ce groupe. Lorsque vous souhaitez effectuer une resynchronisation plus tard, vous devez lancer System Manager pour la baie de stockage primaire, puis aller au menu :stockage[mise en miroir asynchrone], sélectionner le groupe dans l'onglet *groupes de cohérence miroir*, puis sélectionner menu :plus[resynchronisation manuelle].
+*** *Manuel* -- Sélectionnez cette option pour lancer manuellement la synchronisation de toutes les paires en miroir de ce groupe. Notez que lorsque vous souhaitez effectuer une resynchronisation ultérieure, vous devez lancer System Manager pour la baie de stockage principale, puis accéder au menu : Mirroring [Asynchronous mirror consistency groups], sélectionner le groupe, puis sélectionner menu : More [Manually resynchronize].
 *** *Automatique* -- sélectionnez l'intervalle souhaité en *minutes*, *heures* ou *jours*, du début de la mise à jour précédente au début de la prochaine mise à jour. Par exemple, si l'intervalle de synchronisation est défini sur 30 minutes et que le processus de synchronisation commence à 4 h 00, le processus suivant commence à 4 h 30
 
 
@@ -95,6 +96,7 @@ Si Unified Manager crée avec succès le groupe de cohérence miroir sur la baie
 
 
 
+[[step-2-select-the-primary-volume]]
 == Étape 2 : sélectionnez le volume principal
 
 Dans cette étape, vous sélectionnez le volume principal à utiliser dans la relation de miroir et allouez sa capacité réservée. Lorsque vous sélectionnez un volume primaire sur la matrice de stockage locale, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste.
@@ -123,6 +125,7 @@ Gardez à l'esprit les consignes suivantes :
 
 
 
+[[step-3-select-the-secondary-volume]]
 == Étape 3 : sélectionnez le volume secondaire
 
 À cette étape, vous sélectionnez le volume secondaire à utiliser dans la relation en miroir et allouez sa capacité réservée. Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste.

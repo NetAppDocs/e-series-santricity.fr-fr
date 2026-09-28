@@ -104,7 +104,10 @@ Un volume est créé en fonction de la capacité disponible dans un pool ou un g
  a| 
 Nom du volume
  a| 
-Un nom de volume est une chaîne de caractères affectée au volume lors de sa création. Vous pouvez accepter le nom par défaut ou fournir un nom plus descriptif indiquant le type de données stockées dans le volume.
+Le nom d'un volume est une chaîne de caractères qui lui est attribuée lors de sa création. Vous pouvez accepter le nom par défaut ou fournir un nom plus descriptif indiquant le type de données stockées dans le volume. Les noms de volumes standard et thin peuvent avoir une longueur maximale de 60 caractères. Le nom doit être unique. Seuls les volumes standard et thin peuvent avoir des noms de plus de 30 caractères.
+
+
+NOTE: La rétrogradation vers la version 11.90 ou antérieure du logiciel SANtricity OS n'est pas prise en charge si des volumes standard ou fins existent avec des noms de plus de 30 caractères. Si vous prévoyez de rétrograder vers le logiciel SANtricity OS version 11.90 ou antérieure, modifiez les noms de tous les volumes standard ou fins dont le nom dépasse 30 caractères avant la rétrogradation.
 
 
 

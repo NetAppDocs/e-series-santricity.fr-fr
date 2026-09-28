@@ -17,7 +17,7 @@ Vous pouvez créer un pool manuellement (à partir d'un ensemble de candidats) s
 Un pool fournit la capacité de stockage logique nécessaire à partir de laquelle vous pouvez créer des volumes individuels qui peuvent ensuite être utilisés pour héberger vos applications.
 
 .Avant de commencer
-* Vous devez disposer d'un minimum de 11 disques avec le même type de disque (HDD ou SSD).
+* Vous devez disposer d'un nombre minimum de disques du même type. Pour les systèmes EF80 et EF50, le minimum est de 6 disques pour les pools Performance ou de 12 disques pour les pools Capacity ; dans les baies mixtes Performance et Capacity, Capacity requiert un minimum de 12 disques et Performance requiert un minimum de 2 disques. Pour tous les autres systèmes, le minimum est de 11 disques.
 * La protection contre les pertes pour les tiroirs exige que les disques du pool se trouvent dans au moins six tiroirs disques différents et qu'un tiroir disque unique ne compte pas plus de deux disques.
 * Pour protéger les pertes de tiroirs, les disques qui composent le pool doivent se trouver dans au moins cinq tiroirs différents et le pool comprend un nombre égal de tiroirs disques à partir de chaque tiroir.
 * Lors de la configuration d'une baie de stockage EF600 ou EF300, assurez-vous que chaque contrôleur a accès à un nombre égal de disques dans les 12 premiers emplacements et à un nombre égal de disques dans les 12 derniers slots. Cette configuration permet aux contrôleurs d'utiliser plus efficacement les deux bus PCIe côté disque. Actuellement, System Manager permet de sélectionner des lecteurs sous la fonction Avancé lors de la création d'un groupe de volumes. Pour créer un pool, il est recommandé d'utiliser tous les disques de la matrice de stockage.
@@ -34,7 +34,7 @@ La boîte de dialogue Créer un pool s'affiche.
 +
 Le tableau des résultats répertorie tous les pools possibles que vous pouvez créer.
 
-. Sélectionnez le candidat du pool que vous souhaitez utiliser en fonction des caractéristiques suivantes, puis cliquez sur *Créer*.
+. Repérez le candidat pool que vous souhaitez utiliser en fonction des caractéristiques suivantes, puis cliquez sur *Créer*.
 +
 [cols="25h,~"]
 |===
@@ -81,6 +81,9 @@ Indique si ce pool candidat est composé uniquement de disques sécurisés, qui 
 ** Si vous souhaitez créer un pool uniquement FDE, recherchez *Oui - FDE* dans la colonne sécurité. Si vous souhaitez créer un pool FIPS uniquement, recherchez *Oui - FIPS* ou *Oui - FIPS (mixte)*. « Mixte » indique une combinaison de 140-2 et 140-3 disques de niveau. Si vous utilisez un mélange de ces niveaux, sachez que le pool fonctionnera alors au niveau de sécurité inférieur (140-2).
 ** Vous pouvez créer un pool composé de lecteurs qui peuvent ou non être sécurisés ou qui sont une combinaison de niveaux de sécurité. Si les lecteurs du pool comprennent des lecteurs qui ne sont pas sécurisés, vous ne pouvez pas sécuriser le pool.
 
+
+
+NOTE: Il n'est pas possible de mélanger des disques FDE et FIPS au sein d'une même baie de stockage. Tous les disques sécurisés du système doivent être du même type.
 
 
 

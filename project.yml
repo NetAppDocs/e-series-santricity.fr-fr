@@ -8,7 +8,7 @@ settings:
     harmony_enabled: false
   rss_page: whats-new.html
   versions:
-  - version-number: 12.0x
+  - version-number: 12.1x
     url: "/e-series-santricity"
   - version-number: 11.9x
     url: "/e-series-santricity-119"
@@ -17,7 +17,7 @@ settings:
   langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Documentation du logiciel SANtricity 12.00
+  - title: Documentation du logiciel SANtricity 12.10
     url: "/index.html"
   - title: Notes de mise à jour
     entries:
@@ -510,8 +510,6 @@ sidebar:
           url: "/sm-hardware/view-hardware-components.html"
         - title: Afficher ou masquer l'état des composants
           url: "/sm-hardware/show-or-hide-component-status.html"
-        - title: Permet de basculer entre les vues avant et arrière
-          url: "/sm-hardware/switch-between-front-and-back-views.html"
         - title: Modifier l'ordre d'affichage des étagères
           url: "/sm-hardware/change-view-order-of-shelves.html"
         - title: Allumer le feu de localisation de tablette

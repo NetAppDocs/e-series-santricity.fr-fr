@@ -29,7 +29,7 @@ Lorsque vous activez le provisionnement des ressources pour les groupes de volum
 Lorsque vous désactivez le provisionnement des ressources pour les groupes de volumes ou les pools existants, une opération en arrière-plan réécrit tous les blocs logiques de chaque volume. Les données existantes restent intactes. Les écritures regroupent ou provisionne les blocs sur les disques associés au groupe ou au pool de volumes.
 
 
-NOTE: Pour les nouveaux groupes et pools de volumes, vous pouvez activer ou désactiver le provisionnement de ressources à partir du menu:Paramètres[système > Paramètres supplémentaires > Activer/Désactiver les volumes provisionnés par ressource].
+NOTE: Pour les nouveaux groupes de volumes et pools, vous pouvez activer ou désactiver l'approvisionnement en ressources à partir du menu :System [Paramètres supplémentaires > Configurer les volumes approvisionnés en ressources].
 
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].

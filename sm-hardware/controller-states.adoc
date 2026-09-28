@@ -2,7 +2,7 @@
 permalink: sm-hardware/controller-states.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, controller, states, 
-summary: 'Vous pouvez placer un contrôleur dans trois États différents : en ligne, hors ligne et en mode de service.' 
+summary: Vous pouvez placer un contrôleur dans trois états différents. En ligne, hors ligne et en mode service. 
 ---
 = En savoir plus sur les états du contrôleur dans SANtricity System Manager
 :allow-uri-read: 
@@ -15,6 +15,7 @@ Vous pouvez placer un contrôleur dans trois États différents : en ligne, hors
 
 
 
+[[online-state]]
 == État en ligne
 
 L'état en ligne est l'état de fonctionnement normal du contrôleur. Il signifie que le contrôleur fonctionne normalement et est disponible pour les opérations d'E/S.
@@ -23,6 +24,7 @@ Lorsque vous mettez un contrôleur en ligne, son état est défini sur optimal.
 
 
 
+[[offline-state]]
 == État hors ligne
 
 L'état hors ligne est généralement utilisé pour préparer un contrôleur en vue d'un remplacement lorsqu'il y a deux contrôleurs dans la baie de stockage. Il est possible de mettre un contrôleur hors ligne de deux manières : vous pouvez lancer une commande explicite ou le contrôleur peut tomber en panne. Un contrôleur ne peut quitter l'état hors ligne qu'en émettant une autre commande explicite ou en remplaçant le contrôleur défectueux. Vous pouvez mettre un contrôleur hors ligne uniquement s'il existe deux contrôleurs dans la baie de stockage.
@@ -37,6 +39,7 @@ Lorsqu'un contrôleur est hors ligne, les conditions suivantes sont réunies :
 
 
 
+[[service-mode]]
 == Mode entretien
 
 Le mode service est généralement utilisé uniquement par le support technique pour déplacer tous les volumes de la baie de stockage vers un contrôleur, de sorte que l'autre contrôleur puisse être diagnostiqué. Un contrôleur doit être placé manuellement en mode maintenance et doit être remis en ligne manuellement une fois l'opération d'entretien terminée.

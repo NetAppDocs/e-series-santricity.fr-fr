@@ -28,25 +28,25 @@ Vous pouvez activer les paramètres suivants relatifs à la découverte iSCSI :
 
 [NOTE]
 ====
-Les paramètres et fonctions iSCSI s'affichent uniquement sur la page Paramètres si votre matrice de stockage prend en charge iSCSI.
+Les paramètres et fonctions iSCSI ne s'affichent sur la page Système que si votre baie de stockage prend en charge iSCSI.
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
-. Sous *Paramètres iSCSI*, cliquez sur *Afficher/Modifier les paramètres de découverte de la cible*.
+. Dans le panneau de gauche, sélectionnez *Système*.
+. Sous *Paramètres iSCSI*, cliquez sur *Configurer les paramètres de découverte de la cible*.
 +
-La boîte de dialogue Paramètres de découverte cible s'affiche. Sous le champ *Activer le serveur iSNS*... , la boîte de dialogue indique si le contrôleur est déjà enregistré.
+La page de configuration des paramètres de découverte de la cible iSCSI s'affiche. Sous le champ *Activer le serveur iSNS*, la page indique si le contrôleur est déjà enregistré.
 
 . Pour enregistrer le contrôleur, sélectionnez *Activer le serveur iSNS pour enregistrer ma cible*, puis sélectionnez l'une des options suivantes :
 +
-** *Obtenir automatiquement la configuration du serveur DHCP* -- sélectionnez cette option si vous souhaitez configurer le serveur iSNS à l'aide d'un serveur DHCP (Dynamic Host Configuration Protocol). Notez que si vous utilisez cette option, tous les ports iSCSI du contrôleur doivent être configurés pour utiliser également DHCP. Si nécessaire, mettez à jour les paramètres du port iSCSI de votre contrôleur pour activer cette option.
+** *Obtenir automatiquement l'adresse IPv4 du serveur auprès du serveur DHCP* -- Sélectionnez cette option si vous souhaitez configurer le serveur iSNS à l'aide d'un serveur DHCP (Dynamic Host Configuration Protocol). Notez que si vous utilisez cette option, tous les ports iSCSI du contrôleur doivent également être configurés pour utiliser DHCP. Si nécessaire, mettez à jour les paramètres des ports iSCSI de votre contrôleur pour activer cette option.
 +
 [NOTE]
 ====
 Pour que le serveur DHCP fournit l'adresse du serveur iSNS, vous devez configurer le serveur DHCP pour qu'il utilise l'option 43 -- « informations spécifiques au fournisseur ». Cette option doit contenir l'adresse IPv4 du serveur iSNS en octets de données 0xa-0xd (10-13).
 
 ====
-** *Spécifiez manuellement la configuration statique* -- sélectionnez cette option si vous souhaitez entrer une adresse IP statique pour le serveur iSNS. (Si vous le souhaitez, vous pouvez couper et coller des adresses dans les champs.) Dans le champ, saisissez une adresse IPv4 ou IPv6. Si vous avez configuré les deux, IPv4 est la valeur par défaut. Saisissez également un port d'écoute TCP (utilisez la valeur par défaut 3205 ou entrez une valeur comprise entre 49152 et 65535).
+** *Spécifiez manuellement l'adresse du serveur IPv4* -- Sélectionnez cette option si vous souhaitez saisir une adresse IP statique pour le serveur iSNS. (Si vous le souhaitez, vous pouvez couper et coller des adresses dans les champs.) Dans le champ, saisissez soit une adresse IPv4, soit une adresse IPv6. Si vous avez configuré les deux, IPv4 est la valeur par défaut. Indiquez également un port d'écoute TCP (utilisez la valeur par défaut 3205 ou saisissez une valeur comprise entre 49152 et 65535).
 
 
 . Pour permettre à la matrice de stockage de participer à des sessions de découverte sans nom, sélectionnez *Activer des sessions de découverte sans nom*.

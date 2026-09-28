@@ -15,7 +15,7 @@ summary: Si vous avez configuré la gestion externe des clés, vous pouvez affic
 Si vous avez configuré la gestion externe des clés, vous pouvez afficher et modifier les paramètres du serveur de gestion des clés à tout moment.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
+. Dans le panneau de gauche, sélectionnez *Système*.
 . Sous *gestion des clés de sécurité*, sélectionnez *Afficher/Modifier les paramètres du serveur de gestion des clés*.
 . Modifiez les informations dans les champs suivants :
 +

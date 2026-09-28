@@ -16,6 +16,7 @@ Si vous prévoyez d'utiliser la mise en miroir synchrone, sachez qu'il faut resp
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Pour activer et configurer la mise en miroir entre deux baies, vous devez utiliser l'interface Unified Manager. Unified Manager est installé sur un système hôte avec le proxy de services Web.
@@ -27,6 +28,7 @@ Pour activer et configurer la mise en miroir entre deux baies, vous devez utilis
 
 
 
+[[storage-arrays]]
 == Les baies de stockage
 
 [NOTE]
@@ -46,6 +48,7 @@ La mise en miroir synchrone n'est pas disponible sur les baies de stockage EF80,
 
 
 
+[[supported-connections]]
 == Connexions prises en charge
 
 Les communications destinées à la mise en miroir synchrone sont uniquement prises en charge sur les contrôleurs avec des ports hôte Fibre Channel (FC).
@@ -54,6 +57,7 @@ La mise en miroir synchrone utilise le port hôte numéro le plus élevé sur ch
 
 
 
+[[mirrored-volume-candidates]]
 == Candidats aux volumes en miroir
 
 * Le niveau RAID, les paramètres de mise en cache et la taille des segments peuvent être différents sur les volumes primaire et secondaire d'une paire synchrone en miroir.
@@ -66,6 +70,7 @@ La mise en miroir synchrone utilise le port hôte numéro le plus élevé sur ch
 
 
 
+[[reserved-capacity]]
 == Capacité réservée
 
 * Une capacité réservée est requise pour un volume primaire et un volume secondaire pour les informations de journalisation en écriture afin de restaurer les données à partir de la réinitialisation du contrôleur et d'autres interruptions temporaires.
@@ -74,6 +79,7 @@ La mise en miroir synchrone utilise le port hôte numéro le plus élevé sur ch
 
 
 
+[[drive-security-feature]]
 == Fonction de sécurité du lecteur
 
 * Si vous utilisez des lecteurs sécurisés, le volume principal et le volume secondaire doivent disposer de paramètres de sécurité compatibles. Cette restriction n'est pas appliquée ; vous devez donc la vérifier vous-même.

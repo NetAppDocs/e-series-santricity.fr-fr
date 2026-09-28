@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-settings-will-be-imported]]
 == Quels paramètres seront importés ?
 
 La fonction Importer les paramètres est une opération par lots qui charge les configurations d'une matrice de stockage à plusieurs matrices de stockage. Les paramètres importés lors de cette opération dépendent de la configuration de la baie de stockage source dans SANtricity System Manager.
@@ -33,6 +34,7 @@ Les paramètres suivants peuvent être importés dans plusieurs matrices de stoc
 
 
 
+[[why-dont-i-see-all-of-my-storage-arrays]]
 == Pourquoi ne vois-je pas toutes mes baies de stockage ?
 
 Lors de l'opération Importer les paramètres, il se peut que certaines de vos matrices de stockage ne soient pas disponibles dans la boîte de dialogue de sélection de la cible.

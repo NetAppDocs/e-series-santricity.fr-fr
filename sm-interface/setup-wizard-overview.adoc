@@ -16,12 +16,13 @@ Utilisez l'assistant d'installation pour configurer votre baie de stockage, y co
 
 
 
+[[first-time-setup]]
 == Configuration initiale
 
 Lorsque vous ouvrez System Manager pour la première fois, l'assistant d'installation démarre. L'assistant d'installation vous invite à effectuer des tâches de configuration de base, telles que l'attribution d'un nom à votre baie de stockage, la configuration de vos hôtes, la sélection d'applications et la création de pools de stockage.
 
 
-NOTE: Avant de poursuivre la configuration initiale, accédez au Centre de mise à niveau (menu:support[Upgrade Center]) et vérifiez que votre logiciel SANtricity OS est à jour. Si nécessaire, effectuez une mise à niveau vers la dernière version et actualisez votre navigateur pour poursuivre l'installation. Pour plus d'informations, voir link:../sm-support/overview-upgrade-center.html["Présentation du centre de mise à niveau"].
+NOTE: Avant de poursuivre la configuration initiale, accédez au centre de mise à niveau (menu : Support [Upgrade center]) et assurez-vous que votre logiciel SANtricity OS est à jour. Si nécessaire, effectuez la mise à niveau vers la dernière version et actualisez votre navigateur pour continuer la configuration. Pour plus d'informations, consultez link:../sm-support/overview-upgrade-center.html["Présentation du centre de mise à niveau"].
 
 Si vous annulez l'assistant, vous ne pouvez pas le relancer manuellement. L'assistant redémarre automatiquement lorsque vous ouvrez System Manager ou actualisez votre navigateur et _au moins une_ des conditions suivantes est remplie :
 
@@ -32,6 +33,7 @@ Si vous annulez l'assistant, vous ne pouvez pas le relancer manuellement. L'assi
 
 
 
+[[terminology]]
 == Terminologie
 
 L'assistant d'installation utilise les termes suivants.

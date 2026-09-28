@@ -24,6 +24,7 @@ Ce type de mise en miroir est idéal pour répondre à la demande en cas de non-
 
 
 
+[[asynchronous-mirroring-session]]
 == Session de mise en miroir asynchrone
 
 La mise en miroir asynchrone capture l'état du volume primaire à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image. La mise en miroir asynchrone permet la mise à jour immédiate du site principal et la mise à jour du site secondaire en fonction de la bande passante. Les informations sont mises en cache et envoyées ultérieurement, au fur et à mesure que les ressources réseau deviennent disponibles.
@@ -46,6 +47,7 @@ Les matrices de stockage doivent disposer d'une version minimale du micrologicie
 
 
 
+[[mirror-consistency-groups-and-mirrored-pairs]]
 == Mettez en miroir les groupes de cohérence et les paires en miroir
 
 Vous créez un groupe de cohérence miroir pour établir la relation de mise en miroir entre la matrice de stockage locale et la matrice de stockage distante. La relation de mise en miroir asynchrone se compose d'une paire en miroir : un volume primaire sur une baie de stockage et un volume secondaire sur une autre baie de stockage.
@@ -54,6 +56,7 @@ La matrice de stockage contenant le volume primaire est généralement située s
 
 
 
+[[synchronization-settings]]
 == Paramètres de synchronisation
 
 Lorsque vous créez une paire en miroir, vous définissez également la priorité de synchronisation et la stratégie de resynchronisation que la paire en miroir utilise pour terminer l'opération de resynchronisation après une interruption de communication.
@@ -72,6 +75,7 @@ Vous pouvez synchroniser les données de la matrice de stockage distante manuell
 
 
 
+[[reserved-capacity-and-asynchronous-mirroring]]
 == Capacité réservée et mise en miroir asynchrone
 
 La capacité réservée permet de suivre les différences entre le volume principal et le volume secondaire lorsque la synchronisation n'est pas en cours. Il conserve également le suivi des statistiques de synchronisation pour chaque paire en miroir.
@@ -80,6 +84,7 @@ Chaque volume d'une paire en miroir nécessite sa propre capacité réservée.
 
 
 
+[[configuration-and-management]]
 == Configuration et gestion
 
 Pour activer et configurer la mise en miroir entre deux baies, vous devez utiliser l'interface Unified Manager. Une fois la mise en miroir activée, vous pouvez gérer les paires en miroir et les paramètres de synchronisation dans System Manager.

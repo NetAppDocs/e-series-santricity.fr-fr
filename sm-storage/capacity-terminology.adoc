@@ -15,6 +15,7 @@ Découvrez les conditions générales de capacité qui s'appliquent à votre bai
 
 
 
+[[storage-objects]]
 == Objets de stockage
 
 La terminologie suivante décrit les différents types d'objets de stockage pouvant interagir avec votre matrice de stockage.
@@ -97,6 +98,7 @@ Un groupe de volumes est un conteneur pour les volumes aux caractéristiques par
 |===
 
 
+[[storage-capacity]]
 == Capacité de stockage
 
 La terminologie suivante décrit les différents types de capacité utilisés sur votre baie de stockage.

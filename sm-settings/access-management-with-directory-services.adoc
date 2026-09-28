@@ -15,6 +15,7 @@ Pour la gestion des accès, les administrateurs peuvent utiliser un serveur LDAP
 
 
 
+[[configuration-workflow]]
 == Flux de travail de configuration
 
 Si un serveur LDAP et un service d'annuaire sont utilisés sur le réseau, la configuration fonctionne comme suit :
@@ -35,6 +36,7 @@ Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du 
 
 
 
+[[management]]
 == Gestion
 
 Lors de l'utilisation des services d'annuaire pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :

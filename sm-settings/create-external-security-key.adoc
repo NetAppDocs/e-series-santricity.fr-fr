@@ -37,7 +37,7 @@ Pour plus d'informations sur le certificat du serveur, consultez la documentatio
 Dans cette tâche, vous définissez l'adresse IP du serveur de gestion des clés et le numéro de port qu'il utilise, puis chargez les certificats pour la gestion des clés externes.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
+. Dans le panneau de gauche, sélectionnez *Système*.
 . Sous *gestion des clés de sécurité*, sélectionnez *Créer une clé externe*.
 +
 [NOTE]

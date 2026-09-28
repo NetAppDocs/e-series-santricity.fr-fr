@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-do-i-need-to-know-before-creating-a-mirror-consistency-group]]
 == Que dois-je savoir avant de créer un groupe de cohérence miroir ?
 
 Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir.
@@ -44,6 +45,7 @@ La mise en miroir synchrone n'est pas disponible sur le système de stockage EF8
 ====
 
 
+[[what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Que dois-je savoir avant de créer une paire en miroir ?
 
 Avant de créer une paire symétrique, suivez ces instructions.
@@ -65,6 +67,7 @@ La mise en miroir synchrone n'est pas disponible sur le système de stockage EF8
 ====
 
 
+[[why-would-i-change-this-percentage]]
 == Pourquoi changer ce pourcentage ?
 
 La capacité réservée est généralement de 20 % du volume de base pour les opérations de mise en miroir asynchrone. En général, cette capacité est suffisante.
@@ -77,6 +80,7 @@ La capacité nécessaire varie, selon la fréquence et la taille des écritures 
 
 
 
+[[why-do-i-see-more-than-one-reserved-capacity-candidate]]
 == Pourquoi vois-je plusieurs candidats à la capacité réservée ?
 
 Si plusieurs volumes sont présents dans un pool ou un groupe de volumes qui correspond au pourcentage de capacité sélectionné pour l'objet de stockage, plusieurs candidats s'affichent.
@@ -85,6 +89,7 @@ Vous pouvez actualiser la liste des candidats recommandés en modifiant le pourc
 
 
 
+[[why-dont-i-see-all-my-volumes]]
 == Pourquoi je ne vois pas tous mes volumes ?
 
 Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
@@ -102,6 +107,7 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 
 
 
+[[why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Pourquoi ne vois-je pas tous les volumes sur la baie de stockage distante ?
 
 Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
@@ -129,6 +135,7 @@ Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette lis
 
 
 
+[[what-impact-does-synchronization-priority-have-on-synchronization-rates]]
 == Quel est l'impact de la priorité de synchronisation sur les taux de synchronisation ?
 
 La priorité de synchronisation définit le temps de traitement alloué aux activités de synchronisation par rapport aux performances du système.
@@ -186,6 +193,7 @@ La taille des volumes et les charges des E/S hôte ont un impact sur les compara
 
 
 
+[[why-is-it-recommended-to-use-a-manual-synchronization-policy]]
 == Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation manuelle ?
 
 La resynchronisation manuelle est recommandée car elle vous permet de gérer le processus de resynchronisation de manière à fournir la meilleure possibilité de récupérer des données.

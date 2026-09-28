@@ -45,7 +45,7 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 ====
 .Étapes
 . Si votre matrice de stockage ne contient qu'un seul contrôleur ou si aucun pilote multivoie n'est installé, arrêtez l'activité d'E/S vers la matrice de stockage pour éviter les erreurs d'application. Si votre baie de stockage est équipée de deux contrôleurs et qu'un pilote multivoie est installé, il n'est pas nécessaire d'arrêter l'activité d'E/S.
-. Dans le panneau de gauche, sélectionnez menu : Support [Upgrade Center].
+. Dans le panneau de gauche, sélectionnez menu : Support[Upgrade center].
 . Téléchargez le nouveau fichier depuis le site de support vers votre client de gestion.
 +
 .. Cliquez sur *NetApp support* pour lancer le site Web de support.
@@ -60,17 +60,17 @@ Effectuez cette opération uniquement lorsque le support technique vous y invite
 Un firmware avec signature numérique est requis dans la version 8.42 et supérieure. Si vous tentez de télécharger un firmware non signé, une erreur s'affiche et le téléchargement est interrompu.
 
 ====
-. Si vous NE souhaitez PAS mettre à niveau le micrologiciel du module d'E/S à ce stade, cliquez sur *suspendre la synchronisation automatique du module d'E/S.
+. Si vous devez modifier le comportement du firmware IOM à ce moment-ci, cliquez sur *Configurer la synchronisation automatique IOM*.
 +
 Si vous possédez une baie de stockage avec un seul contrôleur, le firmware du module d'E/S n'est pas mis à niveau.
 
-. Sous mise à niveau du logiciel SANtricity OS, cliquez sur *commencer la mise à niveau*.
+. Sous la mise à niveau du logiciel SANtricity OS, cliquez sur *Démarrer la mise à niveau du logiciel SANtricity OS*.
 +
-La boîte de dialogue mise à niveau du logiciel SANtricity OS s'affiche.
+La page mise à niveau du logiciel SANtricity OS s'affiche.
 
 . Sélectionnez un ou plusieurs fichiers pour lancer le processus de mise à niveau :
 +
-.. Sélectionnez le fichier du logiciel SANtricity OS en cliquant sur *Parcourir* et accédez au fichier du logiciel OS que vous avez téléchargé à partir du site Web de support.
+.. Sélectionnez le fichier logiciel SANtricity OS en cliquant sur *Parcourir* et en naviguant jusqu'au fichier logiciel OS que vous avez téléchargé depuis le site Web de support.
 .. Sélectionnez le fichier NVSRAM du contrôleur en cliquant sur *Parcourir* et accédez au fichier NVSRAM que vous avez téléchargé à partir du site de support. Les fichiers NVSRAM du contrôleur ont un nom de fichier similaire à `N2800-830000-000.dlp`.
 
 
@@ -82,12 +82,12 @@ Ces actions se produisent :
 ** Lorsque vous sélectionnez un fichier à mettre à niveau, le nom et la taille du fichier s'affichent.
 
 
-. *Facultatif:* si vous avez sélectionné un fichier logiciel SANtricity OS à mettre à niveau, vous pouvez transférer les fichiers vers le contrôleur sans les activer en cochant la case *transférer les fichiers maintenant, mais ne pas mettre à niveau (Activer la mise à niveau plus tard)*.
+. *Facultatif :* Si vous avez sélectionné un fichier logiciel SANtricity OS à mettre à niveau, vous pouvez transférer les fichiers vers le contrôleur sans les activer en sélectionnant la case à cocher *Transférer les fichiers maintenant, mais ne pas démarrer la mise à niveau (activer plus tard)*.
 . Cliquez sur *Démarrer* et confirmez que vous souhaitez effectuer l'opération.
 +
 Vous pouvez annuler l'opération pendant le contrôle d'intégrité de pré-mise à niveau, mais pas pendant le transfert ou l'activation.
 
-. *Facultatif:* pour afficher la liste des mises à niveau, cliquez sur *Enregistrer le journal*.
+. *Facultatif :* Pour afficher la liste des éléments mis à niveau, cliquez sur *Enregistrer le journal*.
 +
 Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `drive_upgrade_log-timestamp.txt`.
 
@@ -95,6 +95,6 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 .Une fois que vous avez terminé
 * Vérifiez que tous les composants apparaissent sur la page matériel.
-* Vérifiez les nouvelles versions du logiciel et du micrologiciel en cochant la boîte de dialogue Inventaire du logiciel et du micrologiciel (allez au menu:support[Upgrade Center], puis cliquez sur le lien *Software and Firmware Inventory*).
+* Vérifiez les nouvelles versions des logiciels et des firmwares en consultant la page d'inventaire des logiciels et des firmwares (allez dans le menu : Support [Upgrade center], puis cliquez sur le lien *software and firmware inventory*).
 * Si vous avez mis à niveau la NVSRAM du contrôleur, tous les paramètres personnalisés que vous avez appliqués à la NVSRAM existante sont perdus pendant le processus d'activation. Vous devez à nouveau appliquer les paramètres personnalisés à la NVSRAM une fois le processus d'activation terminé.
 

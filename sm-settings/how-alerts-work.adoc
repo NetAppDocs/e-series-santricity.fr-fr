@@ -23,18 +23,20 @@ La procédure d'alertes fonctionne comme suit :
 ** *Syslog* -- les messages sont envoyés à un serveur syslog.
 
 
-. Lorsque le moniteur d'événements de la matrice de stockage détecte un problème, il écrit les informations relatives à ce problème dans le journal des événements (disponible à partir du menu:support[Journal des événements]). Par exemple, des problèmes peuvent inclure des événements, tels qu'une panne de batterie, le déplacement d'un composant d'optimal vers hors ligne ou les erreurs de redondance dans le contrôleur.
+. Lorsque le système de surveillance des événements de la baie de stockage détecte un problème, il consigne les informations relatives à ce problème dans le journal des événements (accessible via le menu: Monitoring[Event log]). Par exemple, les problèmes peuvent inclure des événements tels qu'une panne de batterie, le passage d'un composant de l'état Optimal à Offline, ou des erreurs de redondance dans le contrôleur.
 . Si le moniteur d'événements détermine que l'événement est « alertable », il envoie ensuite une notification en utilisant les méthodes d'alerte configurées (messagerie électronique, SNMP et/ou syslog). Tous les événements critiques sont considérés comme « alertables », ainsi que quelques événements Avertissement et informationnel.
 
 
 
 
+[[alerts-configuration]]
 == Configuration des alertes
 
-Vous pouvez configurer les alertes depuis l'assistant de configuration initiale (pour les alertes par e-mail uniquement) ou depuis la page Alerts. Pour accéder à la page Alerts, allez dans menu:Settings[Alerts] depuis le panneau de gauche.
+Vous pouvez configurer les alertes depuis l'assistant de configuration initiale (pour les alertes par e-mail uniquement) ou depuis la page Alerts. Pour accéder à la page Alerts, allez dans menu:Alerts[] depuis le panneau de gauche.
 
 
 
+[[alerts-information]]
 == Informations sur les alertes
 
 Les alertes peuvent inclure les types d'informations suivants :

@@ -2,7 +2,7 @@
 permalink: sm-settings/view-local-user-roles.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
-summary: 'Dans l"onglet rôles utilisateur local, vous pouvez afficher les mappages des profils utilisateur avec les rôles par défaut. Ces mappages font partie du RBAC (contrôle d"accès basé sur des rôles) appliqué dans la baie de stockage.' 
+summary: 'La page « Rôles des utilisateurs locaux » permet de consulter la correspondance entre les profils utilisateur et les rôles par défaut. Ces correspondances font partie du RBAC (contrôles d"accès basés sur les rôles) appliqué dans la baie de stockage.' 
 ---
 = Afficher les rôles des utilisateurs locaux dans SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Dans l"onglet rôles utilisateur local, vous pouvez afficher les mappa
 
 
 [role="lead"]
-Dans l'onglet rôles utilisateur local, vous pouvez afficher les mappages des profils utilisateur avec les rôles par défaut. Ces mappages font partie du RBAC (contrôle d'accès basé sur des rôles) appliqué dans la baie de stockage.
+La page « Rôles des utilisateurs locaux » permet de consulter la correspondance entre les profils utilisateur et les rôles par défaut. Ces correspondances font partie du RBAC (contrôles d'accès basés sur les rôles) appliqué dans la baie de stockage.
 
 .Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
@@ -21,8 +21,7 @@ Vous devez être connecté avec un profil utilisateur qui inclut les autorisatio
 Les profils utilisateur et les mappages ne peuvent pas être modifiés. Seuls les mots de passe peuvent être modifiés.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
-. Sélectionnez l'onglet *rôles d'utilisateur local*.
+. Dans le panneau de gauche, sélectionnez menu : Authentication[Local user roles].
 +
 Les profils utilisateur sont affichés dans le tableau :
 

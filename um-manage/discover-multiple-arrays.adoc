@@ -17,7 +17,7 @@ Vous découvrez plusieurs baies pour détecter toutes les baies de stockage dans
 .Avant de commencer
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité.
 * La matrice de stockage doit être correctement installée et configurée.
-* Les mots de passe des baies de stockage doivent être configurés à l'aide de la page Access Management de System Manager.
+* Les mots de passe des baies de stockage doivent être configurés à l'aide de la catégorie Authentication du System Manager.
 * Pour résoudre les certificats non approuvés, vous devez disposer de fichiers de certificats approuvés d'une autorité de certification (CA), et les fichiers de certificats sont disponibles sur votre système local.
 
 
@@ -25,6 +25,7 @@ La détection des matrices est une procédure à plusieurs étapes.
 
 
 
+[[step-1-enter-network-address]]
 == Étape 1 : saisissez l'adresse réseau
 
 Vous entrez une plage d'adresses réseau pour effectuer une recherche sur le sous-réseau local. Toute matrice de stockage atteinte s'affiche sur la page Discover et peut-être ajoutée à votre domaine de gestion.
@@ -57,6 +58,7 @@ Unified Manager effectue une vérification des informations d'identification sur
 
 
 
+[[step-2-resolve-self-signed-certificates-during-discovery]]
 == Étape 2 : résolution des certificats auto-signés pendant la découverte
 
 Dans le cadre du processus de détection, le système vérifie que les matrices de stockage utilisent des certificats par une source de confiance.
@@ -73,6 +75,7 @@ Dans le cadre du processus de détection, le système vérifie que les matrices 
 
 
 
+[[step-3-resolve-untrusted-certificates-during-discovery]]
 == Étape 3 : résolution de certificats non approuvés lors de la découverte
 
 Des certificats non fiables se produisent lorsqu'une baie de stockage tente d'établir une connexion sécurisée à Unified Manager, mais que la connexion ne parvient pas à confirmer la sécurité. Au cours du processus de détection de la baie, vous pouvez résoudre les certificats non approuvés en important un certificat (ou certificat signé par l'autorité de certification) émis par un tiers de confiance.
@@ -109,6 +112,7 @@ Toute matrice de stockage présentant des problèmes de certificat non approuvé
 
 
 
+[[step-4-provide-passwords]]
 == Étape 4 : fournir des mots de passe
 
 Vous devez entrer les mots de passe des matrices de stockage que vous souhaitez ajouter à votre domaine de gestion.

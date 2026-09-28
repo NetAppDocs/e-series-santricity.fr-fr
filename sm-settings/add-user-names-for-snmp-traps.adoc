@@ -15,8 +15,7 @@ summary: 'Vous pouvez ajouter jusqu"à 256 utilisateurs pour les interruptions S
 Vous pouvez ajouter jusqu'à 256 utilisateurs pour les interruptions SNMPv3.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
 Les destinations d'interruption et les noms d'utilisateur apparaissent dans le tableau.
 

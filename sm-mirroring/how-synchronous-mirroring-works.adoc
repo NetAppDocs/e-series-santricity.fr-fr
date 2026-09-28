@@ -24,12 +24,14 @@ Ce type de mise en miroir est idéal pour la continuité de l'activité telles q
 
 
 
+[[synchronous-mirroring-relationship]]
 == Relation de mise en miroir synchrone
 
 Une relation de mise en miroir synchrone se compose d'un volume primaire et d'un volume secondaire sur des baies de stockage distinctes. La matrice de stockage contenant le volume primaire est généralement située sur le site primaire et sert les hôtes actifs. La matrice de stockage contenant le volume secondaire se trouve généralement sur un site secondaire et contient une réplique des données. Le volume secondaire est utilisé si la matrice de stockage du volume primaire n'est pas disponible en raison, par exemple, d'une panne totale de courant, d'un incendie ou d'une défaillance matérielle du site principal.
 
 
 
+[[synchronous-mirroring-session]]
 == Session de mise en miroir synchrone
 
 Le processus de configuration de la mise en miroir synchrone implique de configurer des volumes en paires. Après avoir créé une paire mise en miroir, composée d'un volume primaire sur une baie de stockage et d'un volume secondaire sur une autre baie de stockage, vous pouvez démarrer la mise en miroir synchrone. Les étapes de la mise en miroir synchrone sont décrites ci-dessous.
@@ -49,6 +51,7 @@ L'application hôte doit attendre l'écriture sur la baie de stockage locale et 
 
 
 
+[[disaster-recovery]]
 == Reprise après incident
 
 La mise en miroir synchrone conserve une copie des données physiquement distantes du site où elles résident. En cas d'incident sur le site primaire, lors d'une panne de courant ou d'une inondation, ces données sont accessibles rapidement depuis le site secondaire.
@@ -57,6 +60,7 @@ Le volume secondaire n'est pas disponible pour héberger les applications pendan
 
 
 
+[[synchronization-settings]]
 == Paramètres de synchronisation
 
 Lorsque vous créez une paire en miroir, vous définissez également la priorité de synchronisation et la stratégie de resynchronisation que la paire en miroir utilise pour terminer l'opération de resynchronisation après une interruption de communication.
@@ -69,6 +73,7 @@ Vous pouvez modifier les paramètres de synchronisation d'une paire en miroir un
 
 
 
+[[unsynchronized-data]]
 == Données non synchronisées
 
 Les volumes primaire et secondaire ne sont plus synchronisés lorsque la baie de stockage du volume primaire ne parvient pas à écrire les données sur le volume secondaire. Cela peut être causé par les problèmes suivants :
@@ -80,6 +85,7 @@ Les volumes primaire et secondaire ne sont plus synchronisés lorsque la baie de
 
 
 
+[[orphaned-mirrored-pair]]
 == Paire mise en miroir orpheline
 
 Un volume de paires mises en miroir orphelin existe lorsqu'un volume membre a été supprimé d'un côté (côté principal ou côté secondaire) mais pas de l'autre côté.
@@ -90,6 +96,7 @@ Vous pouvez supprimer une paire en miroir pour corriger un état de paire en mir
 
 
 
+[[configuration-and-management]]
 == Configuration et gestion
 
 Pour activer et configurer la mise en miroir entre deux baies, vous devez utiliser l'interface Unified Manager. Une fois la mise en miroir activée, vous pouvez gérer les paires en miroir et les paramètres de synchronisation dans System Manager.

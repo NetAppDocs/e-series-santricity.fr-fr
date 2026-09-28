@@ -17,12 +17,14 @@ Un workload est un objet de stockage qui prend en charge une application. Vous p
 
 
 
+[[creating-a-workload]]
 == Création d'une charge de travail
 
 Vous devez spécifier manuellement quand vous souhaitez créer une charge de travail qui n'est pas associée à une application spécifique. Vous devez également spécifier manuellement la configuration du volume à l'aide de la page Ajouter des volumes.
 
 
 
+[[application-and-workload-views]]
 == Vues d'applications et de workloads
 
 Pour afficher les applications et les charges de travail, lancez SANtricity System Manager. Dans cette interface, vous pouvez afficher les informations associées à une charge de travail spécifique aux applications de deux manières différentes :

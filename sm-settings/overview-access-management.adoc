@@ -16,6 +16,7 @@ Access Management est une méthode pour établir l'authentification des utilisat
 
 
 
+[[what-authentication-methods-are-available]]
 == Quelles sont les méthodes d'authentification disponibles ?
 
 Les méthodes d'authentification incluent le contrôle d'accès basé sur des rôles (RBAC), les services d'annuaire et le langage SAML (Security assertion Markup Language) :
@@ -37,9 +38,10 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-authentication]]
 == Comment configurer l'authentification ?
 
-La baie de stockage est préconfigurée pour utiliser les rôles d'utilisateur local, qui sont une implémentation des fonctionnalités RBAC. Si vous souhaitez configurer une autre méthode, accédez au menu:Paramètres[Access Management].
+La baie de stockage est préconfigurée pour utiliser les rôles d'utilisateur locaux, qui sont une implémentation des fonctionnalités RBAC. Si vous souhaitez configurer une autre méthode, accédez au menu : Authentication[].
 
 En savoir plus :
 
@@ -49,6 +51,7 @@ En savoir plus :
 
 
 
+[[related-information]]
 == Informations associées
 
 En savoir plus sur les tâches liées à la gestion des accès :

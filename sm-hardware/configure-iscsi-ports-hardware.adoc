@@ -24,11 +24,7 @@ Les paramètres et fonctions iSCSI apparaissent uniquement si votre matrice de s
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
-+
-Le graphique change pour afficher les contrôleurs au lieu des disques.
-
+. Dans le panneau de gauche, sélectionnez menu:Hardware[Controllers and components].
 . Cliquez sur le contrôleur avec les ports iSCSI que vous souhaitez configurer.
 +
 Le menu contextuel du contrôleur s'affiche.
@@ -58,7 +54,7 @@ Pour afficher tous les paramètres de port, cliquez sur le lien *Afficher plus d
 
 
  a| 
-Vitesse du port ethernet configuré (apparaît uniquement pour certains types de cartes d'interface hôte)
+Vitesse du port Ethernet configurée (apparaît uniquement pour certains types de cartes d'interface d'hôte)
  a| 
 Sélectionnez la vitesse correspondant à la capacité de vitesse du SFP sur le port.
 
@@ -144,7 +140,7 @@ Sélectionnez cette option pour activer un VLAN et entrer son ID. Un VLAN est un
 
 
  a| 
-Activez la priorité ethernet (disponible en cliquant sur *Afficher plus de paramètres*).
+Activer la priorité Ethernet (Disponible en cliquant sur *Afficher plus de paramètres*.)
  a| 
 Sélectionnez cette option pour activer le paramètre qui détermine la priorité d'accès au réseau. Utilisez le curseur pour sélectionner une priorité entre 1 (le plus faible) et 7 (le plus élevé).
 

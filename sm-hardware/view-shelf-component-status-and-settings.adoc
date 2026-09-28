@@ -23,9 +23,9 @@ Les composants disponibles dépendent du type de tiroir :
 
 .Étapes
 . Dans le panneau de gauche, sélectionnez *Hardware*.
-. Sélectionnez la liste déroulante pour le tiroir contrôleur ou le tiroir disque, puis sélectionnez *View Settings*.
+. Sélectionnez la liste déroulante pour l'étagère du contrôleur ou l'étagère du disque, puis sélectionnez *Afficher les paramètres*.
 +
-La boîte de dialogue Shelf Components Settings s'ouvre, avec des onglets affichant l'état et les paramètres associés aux composants du tiroir. Selon le type d'étagère sélectionné, certains onglets décrits dans le tableau peuvent ne pas s'afficher.
+Le panneau des paramètres de l'étagère s'ouvre et affiche des sections indiquant l'état et les paramètres des composants de l'étagère. Selon le type d'étagère sélectionné, certaines sections décrites dans le tableau peuvent ne pas apparaître.
 
 +
 [cols="25h,~"]

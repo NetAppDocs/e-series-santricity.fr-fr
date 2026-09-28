@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[why-cant-i-log-in]]
 == Pourquoi ne puis-je pas me connecter ?
 
 Si vous recevez une erreur lors de la tentative de connexion, consultez ces causes possibles.
@@ -30,6 +31,7 @@ Des erreurs de connexion peuvent se produire pour l'une des raisons suivantes :
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == Que dois-je savoir avant d'ajouter un serveur d'annuaire ?
 
 Avant d'ajouter un serveur d'annuaire dans Access Management, vous devez répondre à certaines exigences.
@@ -41,6 +43,7 @@ Avant d'ajouter un serveur d'annuaire dans Access Management, vous devez répond
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == De quoi ai-je besoin savoir concernant le mappage aux rôles de la baie de stockage ?
 
 Avant de mapper des groupes à des rôles, consultez les directives.
@@ -66,6 +69,7 @@ Si vous utilisez un serveur LDAP (Lightweight Directory Access Protocol) et des 
 
 
 
+[[saml]]
 === SAML
 
 Si vous utilisez les fonctionnalités SAML intégrées à la baie de stockage, vérifiez que :
@@ -83,12 +87,14 @@ Si vous utilisez les fonctionnalités SAML intégrées à la baie de stockage, v
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == Que dois-je savoir avant de configurer et d'activer le langage SAML ?
 
 Avant de configurer et d'activer les fonctionnalités SAML pour l'authentification, assurez-vous de respecter les exigences suivantes et de comprendre les restrictions SAML.
 
 
 
+[[requirements]]
 === De formation
 
 Avant de commencer, assurez-vous que :
@@ -103,6 +109,7 @@ Avant de commencer, assurez-vous que :
 
 
 
+[[restrictions]]
 === Restrictions
 
 Outre les exigences ci-dessus, assurez-vous de bien comprendre les restrictions suivantes :
@@ -124,6 +131,7 @@ Outre les exigences ci-dessus, assurez-vous de bien comprendre les restrictions 
 
 
 
+[[what-are-the-local-users]]
 == Qu'est-ce que les utilisateurs locaux ?
 
 Les utilisateurs locaux sont prédéfinis dans le système et incluent des autorisations spécifiques.

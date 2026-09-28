@@ -23,6 +23,7 @@ La procédure à suivre pour créer un groupe de cohérence de snapshots est en 
 
 
 
+[[step-1-add-members-to-snapshot-consistency-group]]
 == Étape 1 : ajouter des membres au groupe de cohérence de snapshot
 
 Sélectionnez les membres pour spécifier une collection de volumes comprenant le groupe de cohérence de snapshot. Toutes les actions que vous effectuez sur le groupe de cohérence de snapshot s'étendent de manière uniforme sur les volumes membres sélectionnés.
@@ -31,18 +32,18 @@ Sélectionnez les membres pour spécifier une collection de volumes comprenant l
 Les volumes membres doivent être optimaux.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Cliquez sur l'onglet *groupes de cohérence Snapshot*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot consistency groups].
 . Sélectionnez menu :Créer [groupe de cohérence Snapshot].
 +
 La boîte de dialogue Créer un groupe de cohérence Snapshot s'affiche.
 
-. Sélectionnez le ou les volumes à ajouter en tant que volumes membres au groupe de cohérence snapshot.
+. Localisez le ou les volumes à ajouter en tant que volumes membres au groupe de cohérence de l'instantané.
 . Cliquez sur *Suivant* et allez à <<Étape 2 : réserver de la capacité du groupe de cohérence Snapshot>>.
 
 
 
 
+[[step-2-reserve-capacity-for-snapshot-consistency-group]]
 == Étape 2 : réserver de la capacité du groupe de cohérence Snapshot
 
 Associez la capacité réservée au groupe de cohérence des snapshots. System Manager suggère les volumes et la capacité en fonction des propriétés du groupe de cohérence Snapshot. Vous pouvez accepter la configuration de capacité réservée recommandée ou personnaliser le stockage alloué.
@@ -74,6 +75,7 @@ Allouez la capacité réservée en suivant les instructions suivantes.
 
 
 
+[[step-3-edit-settings-for-snapshot-consistency-group]]
 == Étape 3 : modifiez les paramètres du groupe de cohérence des snapshots
 
 Acceptez les paramètres de suppression automatique et les seuils d'alerte de capacité réservée pour le groupe de cohérence Snapshot ou sélectionnez-les.

@@ -18,8 +18,7 @@ Vous pouvez modifier les paramètres d'un volume de membres d'un groupe de cohé
 La modification des paramètres de capacité réservée pour un volume membre individuel modifie également les paramètres de capacité réservée pour tous les volumes membres associés à un groupe de cohérence.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Cliquez sur l'onglet *capacité réservée*.
+. Dans le panneau de gauche, sélectionnez menu : Storage[Reserved capacity].
 . Sélectionnez le volume membre du groupe de cohérence que vous souhaitez modifier, puis cliquez sur l’icône de menu : ellipse [Modifier les paramètres].
 +
 La fenêtre « Modifier le volume des membres du groupe de cohérence » s'affiche.

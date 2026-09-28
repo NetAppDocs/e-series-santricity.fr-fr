@@ -15,6 +15,7 @@ La page matériel fournit une représentation graphique des composants physiques
 
 
 
+[[shelves]]
 == Tiroirs
 
 Un tiroir est un composant qui contient le matériel de la baie de stockage (contrôleurs, blocs d'alimentation/ventilateurs et lecteurs). Il existe deux types d'étagères :
@@ -25,7 +26,7 @@ Un tiroir est un composant qui contient le matériel de la baie de stockage (con
 
 Les tiroirs sont disponibles en trois tailles pour accueillir jusqu'à 12, 24 ou 60 disques. Chaque tiroir inclut un numéro d'ID, qui est attribué par le firmware du contrôleur. L'ID s'affiche en haut à gauche de la vue du tiroir.
 
-La vue des tiroirs de la page Hardware indique les composants avant ou arrière. Vous pouvez basculer entre les deux vues en sélectionnant l'onglet *lecteurs* ou *contrôleur* en haut à droite de la vue du tiroir. Vous pouvez également sélectionner *Afficher tout le recto* ou *Afficher tout le verso* en bas de la page. Les vues avant et arrière montrent les éléments suivants :
+L'affichage en étagère de la page Matériel présente les composants avant ou arrière. Vous pouvez basculer entre les deux affichages en sélectionnant les onglets *Lecteurs* ou *Contrôleurs et composants* en haut à droite de l'affichage en étagère. Vous pouvez également sélectionner *Afficher tout l'avant* ou *Afficher tout l'arrière* en bas de la page. Les affichages avant et arrière présentent les éléments suivants :
 
 * *Composants avant* -- lecteurs et baies de lecteur vides.
 * *Composants Back* -- contrôleurs et blocs d'alimentation/ventilateurs (pour les tiroirs de contrôleurs) ou blocs d'alimentation/ventilateurs (pour les tiroirs disques).
@@ -41,6 +42,7 @@ Vous pouvez effectuer les fonctions suivantes associées aux tiroirs :
 
 
 
+[[controllers]]
 == Contrôleurs
 
 Un contrôleur est une combinaison de matériel et de firmware qui implémente la matrice de stockage et les fonctions de gestion. Elle inclut la mémoire cache, la prise en charge des lecteurs et l'interface hôte.
@@ -57,6 +59,7 @@ Vous pouvez effectuer les fonctions suivantes associées aux contrôleurs :
 
 
 
+[[drives]]
 == Disques
 
 La baie de stockage peut inclure des disques durs ou des SSD. Selon la taille du tiroir, il est possible d'installer jusqu'à 12, 24 ou 60 disques sur le shelf.

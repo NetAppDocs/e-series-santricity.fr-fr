@@ -13,10 +13,11 @@ summary: 'La hiérarchie de stockage de l"interface principale fournit une vue o
 [role="lead"]
 La hiérarchie de stockage de l'interface principale fournit une vue organisée des divers composants matériels et objets de stockage gérés par votre matrice de stockage.
 
-Pour afficher la hiérarchie de stockage, accédez à la page d'accueil et cliquez sur la flèche déroulante d'un composant de matrice de stockage ou d'un objet de stockage. Une matrice de stockage se compose d'un ensemble de composants physiques et logiques.
+Pour afficher la hiérarchie de stockage, accédez au tableau de bord et cliquez sur la flèche déroulante d'un composant de baie de stockage ou d'un objet de stockage. Une baie de stockage est composée d'un ensemble de composants physiques et logiques.
 
 
 
+[[physical-components]]
 == Composants physiques
 
 Les composants physiques d'une matrice de stockage sont décrits dans ce tableau.
@@ -81,6 +82,7 @@ Un client de gestion est l'ordinateur sur lequel un navigateur est installé pou
 |===
 
 
+[[logical-components]]
 == Composants logiques
 
 Les disques de la matrice de stockage fournissent la capacité de stockage physique des données. Utilisez System Manager pour configurer la capacité physique en composants logiques, comme les pools, les groupes de volumes et les volumes. Ces composants sont les outils que vous utilisez pour configurer, stocker, maintenir et conserver les données sur la baie de stockage. Les composants logiques d'une matrice de stockage sont décrits dans ce tableau.

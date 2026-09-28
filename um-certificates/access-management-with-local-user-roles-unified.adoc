@@ -15,6 +15,7 @@ Les administrateurs peuvent utiliser des fonctionnalités RBAC (contrôle d'acc�
 
 
 
+[[configuration-workflow]]
 == Flux de travail de configuration
 
 Les rôles d'utilisateur local sont préconfigurés dans le système. Pour utiliser les rôles d'utilisateur local pour l'authentification, les administrateurs peuvent effectuer les opérations suivantes :
@@ -33,6 +34,7 @@ Le `admin` l'utilisateur dispose d'un accès complet à toutes les fonctions du 
 
 
 
+[[management]]
 == Gestion
 
 Lors de l'utilisation de rôles d'utilisateur local uniquement pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :

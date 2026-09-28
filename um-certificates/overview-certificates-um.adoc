@@ -15,6 +15,7 @@ La gestion des certificats vous permet de créer des demandes de signature de ce
 
 
 
+[[what-are-certificates]]
 == Que sont les certificats ?
 
 _Certificates_ sont des fichiers numériques qui identifient des entités en ligne, telles que des sites Web et des serveurs, pour des communications sécurisées sur Internet. Il existe deux types de certificats : un certificat _signé_ est validé par une autorité de certification (CA) et un certificat _auto-signé_ est validé par le propriétaire de l'entité au lieu d'un tiers.
@@ -27,6 +28,7 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-certificates]]
 == Comment configurer les certificats ?
 
 Dans la gestion des certificats, vous pouvez configurer les certificats pour la station de gestion hébergeant Unified Manager et importer également des certificats pour les contrôleurs des matrices.

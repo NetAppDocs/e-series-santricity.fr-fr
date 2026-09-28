@@ -33,8 +33,7 @@ Si vous ne possédez pas le fichier MIB, vous pouvez l'obtenir sur le site de su
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
 Les destinations d'interruption actuellement définies apparaissent dans le tableau.
 

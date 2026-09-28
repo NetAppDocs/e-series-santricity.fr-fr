@@ -17,6 +17,7 @@ Vous pouvez utiliser le journal des événements comme outil de diagnostic suppl
 
 
 
+[[event-categories]]
 == Catégories d'événements
 
 Les événements du journal des événements sont classés selon la catégorie des États. Les événements sur lesquels vous devez prendre des mesures ont les États suivants :
@@ -32,6 +33,7 @@ Les événements à titre informatif et ne nécessitant aucune action immédiate
 
 
 
+[[critical-events]]
 == Événements critiques
 
 Les événements critiques indiquent un problème au niveau de la baie de stockage. Si vous résolvez immédiatement l'événement critique, vous risquez d'éviter toute perte d'accès aux données.

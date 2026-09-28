@@ -15,6 +15,7 @@ Vous pouvez vérifier l'état des composants sur la page matériel et exécuter 
 
 
 
+[[which-components-can-i-manage]]
 == Quels composants puis-je gérer ?
 
 Vous pouvez vérifier l'état des composants et exécuter certaines fonctions associées à ces composants :
@@ -32,9 +33,10 @@ En savoir plus :
 
 
 
+[[how-do-i-view-hardware-components]]
 == Comment voir les composants matériels ?
 
-Accédez à la page matériel, qui fournit une représentation graphique des composants physiques de la baie de stockage. Vous pouvez basculer entre les vues avant et arrière des tiroirs en sélectionnant l'onglet *lecteurs* ou *contrôleurs* en haut à droite de la vue des tiroirs.
+Accédez à la page Matériel, qui présente une représentation graphique des composants physiques de la baie de stockage. Vous pouvez basculer entre les vues avant et arrière des baies en sélectionnant l’onglet *Disques* ou *Contrôleurs et composants* en haut à droite de la vue de la baie.
 
 En savoir plus :
 

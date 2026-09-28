@@ -18,8 +18,7 @@ Vous pouvez modifier les définitions d'utilisateur pour les recouvrements SNMPv
 Un utilisateur doit être créé pour le trap SNMPv3.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 +
 Les destinations d'interruption et les noms d'utilisateur apparaissent dans le tableau.
 
@@ -36,4 +35,4 @@ Les destinations d'interruption et les noms d'utilisateur apparaissent dans le t
 
 
 .Résultats
-L'onglet SNMP de la page alertes affiche les paramètres mis à jour.
+La page d'alertes SNMP affiche les paramètres mis à jour.

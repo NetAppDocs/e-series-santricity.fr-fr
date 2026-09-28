@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-if-i-dont-see-all-of-my-hardware-components]]
 == Que faire si je ne vois pas tous mes composants matériels ?
 
 Si vous ne voyez pas tous les composants matériels dans la boîte de dialogue vérifier le matériel, un tiroir disque peut ne pas être connecté correctement, ou qu'un tiroir incompatible est installé dans la baie de stockage.
@@ -24,6 +25,7 @@ Vérifiez que tous les tiroirs disques sont correctement connectés. En cas de d
 
 
 
+[[what-if-i-dont-see-all-of-my-hosts]]
 == Que faire si je ne vois pas tous mes hôtes ?
 
 Si vos hôtes connectés ne s'affichent pas, la détection automatique a échoué, les hôtes sont mal connectés ou aucun hôte n'est actuellement connecté.
@@ -36,12 +38,14 @@ Vous pourrez configurer les hôtes ultérieurement, une fois l'installation term
 
 
 
+[[how-does-identifying-applications-help-me-manage-my-storage-array]]
 == En quoi l'identification des applications m'aide-t-elle dans la gestion de ma baie de stockage ?
 
 Vous pouvez consulter les données de performance par application et par charge de travail afin d'évaluer la latence, les IOPS et le MiB/s des applications et de leurs charges de travail associées pour optimiser les performances. La configuration du volume inclut des caractéristiques telles que le type d'E/S, la taille des segments, la propriété du contrôleur, ainsi que les caches de lecture et d'écriture.
 
 
 
+[[what-is-a-workload]]
 == Qu'est-ce qu'une charge de travail ?
 
 Pour certaines applications de votre réseau, telles que SQL Server ou Exchange, vous pouvez définir une charge de travail qui optimise le stockage de cette application.
@@ -52,14 +56,16 @@ Lors de la création de volumes, le système vous invite à répondre aux questi
 
 
 
+[[how-do-i-configure-the-delivery-method-for-autosupport]]
 == Comment configurer la méthode de livraison pour AutoSupport ?
 
-Pour accéder aux tâches de configuration des méthodes de distribution AutoSupport, allez dans le menu :support[Centre de support], puis cliquez sur l'onglet *AutoSupport*.
+Pour accéder aux tâches de configuration des méthodes de livraison AutoSupport, allez dans le menu : Support[AutoSupport].
 
 Les protocoles suivants sont pris en charge : HTTPS et SMTP.
 
 
 
+[[how-do-i-know-if-i-should-accept-the-recommended-pool-configuration]]
 == Comment savoir si je dois accepter la configuration de pool recommandée ?
 
 L'acceptation ou non de la configuration de pool recommandée dépend de quelques facteurs.
@@ -75,6 +81,7 @@ Si vous avez répondu Oui à l'une de ces questions, envisagez de rejeter la con
 
 
 
+[[santricity-system-manager-has-not-detected-any-hosts-what-do-i-do]]
 == SANtricity System Manager n'a détecté aucun hôte. Que dois-je faire ?
 
 Si vos hôtes connectés ne s'affichent pas, la détection automatique a échoué, les hôtes sont mal connectés ou aucun hôte n'est actuellement connecté.

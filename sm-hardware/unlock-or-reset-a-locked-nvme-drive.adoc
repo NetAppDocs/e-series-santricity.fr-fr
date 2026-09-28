@@ -15,7 +15,7 @@ summary: 'Si vous insérez un ou plusieurs disques NVMe ou FIPS verrouillés dan
 Si vous insérez un ou plusieurs disques NVMe ou FIPS verrouillés dans une matrice de stockage, vous pouvez déverrouiller les données du disque en ajoutant le fichier de clé de sécurité associé aux disques. Si vous n'avez pas de clé de sécurité, vous pouvez réinitialiser chaque disque verrouillé en saisissant son ID de sécurité physique (PSID) pour réinitialiser ses attributs de sécurité et effacer les données du lecteur.
 
 .Avant de commencer
-* Pour l'option déverrouiller, assurez-vous que le fichier de clé de sécurité (avec une extension de `.slk`) Est disponible sur le client de gestion (le système avec un navigateur utilisé pour accéder à System Manager). Vous devez également connaître la phrase de passe associée à la clé.
+* Pour l'option de déverrouillage, assurez-vous que le fichier de clé de sécurité (avec une extension de `.slk`) est disponible sur le client de gestion (le système avec un navigateur utilisé pour accéder à System Manager). Vous devez également connaître la phrase secrète associée à la clé.
 * Pour l'option Réinitialiser, vous devez trouver le PSID sur chaque lecteur que vous souhaitez réinitialiser. Pour localiser le PSID, retirez physiquement le lecteur et localisez la chaîne PSID (32 caractères maximum) sur l'étiquette du lecteur, puis réinstallez le lecteur.
 
 
@@ -24,17 +24,13 @@ Cette tâche explique comment déverrouiller les données des disques NVMe ou FI
 
 [NOTE]
 ====
-Si le lecteur a été verrouillé à l'aide d'un serveur de gestion externe des clés, sélectionnez menu:Paramètres[système > gestion des clés de sécurité] dans System Manager pour configurer la gestion externe des clés et déverrouiller le lecteur.
+Si le lecteur a été verrouillé à l'aide d'un serveur de gestion de clés externe, sélectionnez le menu :System[Security key management] dans System Manager pour configurer la gestion des clés externes et déverrouiller le lecteur.
 
 ====
-Vous pouvez accéder à la fonction déverrouiller à partir de la page matériel ou du menu:Paramètres[système > gestion des clés de sécurité]. La tâche ci-dessous fournit des instructions à partir de la page matériel.
+Vous pouvez accéder à la fonction de déverrouillage depuis la page Matériel ou depuis le menu :System[Gestion des clés de sécurité]. La tâche ci-dessous fournit des instructions à partir de la page Matériel.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
-+
-Le graphique change pour afficher les disques au lieu des contrôleurs.
-
+. Dans le panneau de gauche, sélectionnez menu : Hardware[Drives].
 . Sélectionnez le lecteur NVMe ou FIPS que vous souhaitez déverrouiller ou réinitialiser.
 +
 Le menu contextuel du lecteur s'ouvre.
@@ -51,8 +47,8 @@ Pendant une opération de réinitialisation, toutes les données sont effacées.
 ====
 . Effectuez l'une des opérations suivantes :
 +
-.. *Unlock* : dans la boîte de dialogue *Unlock Secure Drive*, cliquez sur *Browse*, puis sélectionnez le fichier de clé de sécurité correspondant au lecteur que vous souhaitez déverrouiller. Ensuite, entrez la phrase de passe, puis cliquez sur *déverrouiller*.
-.. *Réinitialiser* : dans la boîte de dialogue *Réinitialiser le lecteur verrouillé*, entrez la chaîne PSID dans le champ, puis tapez `RESET` pour confirmer. Cliquez sur *Réinitialiser*.
+.. *Déverrouiller* : Sur la page *Déverrouiller les lecteurs sécurisés*, sélectionnez le fichier de clé de sécurité correspondant au lecteur que vous souhaitez déverrouiller. Saisissez ensuite la phrase secrète, puis cliquez sur *Déverrouiller*.
+.. *Réinitialiser* : Dans la boîte de dialogue *Réinitialiser le lecteur verrouillé*, saisissez la chaîne PSID dans le champ, puis tapez `RESET` pour confirmer. Cliquez sur *Réinitialiser*.
 +
 Pour déverrouiller toutes les unités NVMe ou FIPS, il vous suffit d'effectuer cette opération une seule fois. Pour une opération de réinitialisation, vous devez sélectionner individuellement chaque lecteur que vous souhaitez réinitialiser.
 

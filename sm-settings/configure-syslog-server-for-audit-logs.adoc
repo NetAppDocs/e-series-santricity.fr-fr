@@ -21,8 +21,7 @@ Si vous souhaitez archiver les journaux d'audit sur un serveur syslog externe, v
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
-. Dans l'onglet Journal d'audit, sélectionnez *configurer les serveurs Syslog*.
+. Dans le panneau de gauche, sélectionnez menu : Surveillance [Journal des audits], puis sélectionnez *Configurer les serveurs Syslog*.
 +
 La boîte de dialogue configurer les serveurs Syslog s'ouvre.
 
@@ -38,7 +37,7 @@ La boîte de dialogue Ajouter un serveur Syslog s'ouvre.
 +
 [NOTE]
 ====
-Si le certificat devient non valide ultérieurement, l'établissement de liaison TLS échouera. Par conséquent, un message d'erreur est affiché dans le journal d'audit et les messages ne sont plus envoyés au serveur syslog. Pour résoudre ce problème, vous devez corriger le certificat sur le serveur syslog, puis aller dans le menu Paramètres[Journal d'audit > configurer les serveurs Syslog > tout tester].
+Si le certificat devient invalide ultérieurement, la négociation TLS échouera. Par conséquent, un message d'erreur est consigné dans le journal des audits et les messages ne sont plus envoyés au serveur syslog. Pour résoudre ce problème, vous devez corriger le certificat sur le serveur syslog, puis aller dans menu : Monitoring[Audit log > Configure Syslog Servers > Test All].
 
 ====
 ** *Port* -- Entrez le numéro de port du récepteur syslog. Après avoir cliqué sur *Ajouter*, la boîte de dialogue configurer les serveurs Syslog s'ouvre et affiche votre serveur syslog configuré sur la page.

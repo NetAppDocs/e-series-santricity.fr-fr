@@ -21,8 +21,7 @@ Vous pouvez modifier les paramètres du serveur syslog utilisé pour l'archivage
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
-. Dans l'onglet Journal d'audit, sélectionnez *configurer les serveurs Syslog*.
+. Dans le panneau de gauche, sélectionnez menu : Surveillance [Journal des audits], puis sélectionnez *Configurer les serveurs Syslog*.
 +
 Les serveurs syslog configurés sont affichés sur la page.
 

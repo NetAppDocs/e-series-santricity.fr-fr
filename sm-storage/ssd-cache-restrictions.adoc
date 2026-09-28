@@ -15,6 +15,7 @@ Découvrez les restrictions liées à l'utilisation de SSD cache sur votre baie 
 
 
 
+[[restrictions]]
 == Restrictions
 
 * Tout volume attribué à l'utilisation de la fonctionnalité SSD cache d'un contrôleur n'est pas éligible pour un transfert automatique d'équilibrage de charge.
@@ -27,6 +28,7 @@ Découvrez les restrictions liées à l'utilisation de SSD cache sur votre baie 
 
 
 
+[[restrictions-with-drive-security]]
 == Restrictions liées à la sécurité des disques
 
 * Vous pouvez activer la sécurité sur SSD cache uniquement lorsque vous créez SSD cache. Vous ne pouvez pas activer la sécurité ultérieurement, car vous le pouvez sur un volume.

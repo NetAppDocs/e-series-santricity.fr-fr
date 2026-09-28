@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[how-does-asynchronous-mirroring-differ-from-synchronous-mirroring]]
 == En quoi la mise en miroir asynchrone est-elle différente de la mise en miroir synchrone ?
 
 La fonction de mise en miroir asynchrone diffère de la fonction de mise en miroir synchrone de façon essentielle : elle capture l'état du volume source à un moment donné et copie uniquement les données qui ont changé depuis la dernière capture d'image.
@@ -112,6 +113,7 @@ La baie de stockage locale doit généralement se situer à environ 10 km (6.2 m
 |===
 
 
+[[why-cant-i-access-my-chosen-mirroring-feature]]
 == Pourquoi ne puis-je pas accéder à la fonctionnalité de mise en miroir que j'ai choisie ?
 
 La mise en miroir est configurée dans l'interface SANtricity Unified Manager.
@@ -137,6 +139,7 @@ Pour obtenir des instructions de configuration, reportez-vous aux sections suiva
 
 
 
+[[what-do-i-need-to-know-before-creating-a-mirror-consistency-group]]
 == Que dois-je savoir avant de créer un groupe de cohérence miroir ?
 
 Suivez les consignes suivantes avant de créer un groupe de cohérence en miroir.
@@ -167,6 +170,7 @@ Assurez-vous également de répondre aux exigences suivantes pour les baies de s
 
 
 
+[[asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Mise en miroir asynchrone : que faut-il savoir avant de créer une paire en miroir ?
 
 Vous configurez les paires en miroir dans l'interface SANtricity Unified Manager, puis vous gérez les paires dans SANtricity System Manager.
@@ -187,6 +191,7 @@ Avant de créer une paire symétrique, suivez ces instructions.
 
 
 
+[[what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume]]
 == Que dois-je savoir avant d'augmenter la capacité réservée sur un volume en miroir ?
 
 En règle générale, vous devez augmenter la capacité réservée lorsque vous recevez un avertissement indiquant que la capacité réservée d'une paire en miroir est saturée. Vous pouvez augmenter la capacité réservée par incréments de 8 Gio.
@@ -208,6 +213,7 @@ Si aucune capacité disponible n'existe sur un pool ou un groupe de volumes, vou
 
 
 
+[[why-cant-i-increase-reserved-capacity-with-my-requested-amount]]
 == Pourquoi ne puis-je pas augmenter la capacité réservée avec le montant demandé ?
 
 Vous pouvez augmenter la capacité réservée par incréments de 4 Gio.
@@ -226,6 +232,7 @@ Pour les opérations de mise en miroir asynchrone, la capacité réservée est g
 
 
 
+[[why-would-i-change-this-percentage]]
 == Pourquoi changer ce pourcentage ?
 
 La capacité réservée est généralement de 40 % du volume de base pour les opérations Snapshot et de 20 % du volume de base pour les opérations de mise en miroir asynchrone.
@@ -240,6 +247,7 @@ En général, choisissez un pourcentage plus élevé pour la capacité réservé
 
 
 
+[[why-do-i-see-more-than-one-reserved-capacity-candidate]]
 == Pourquoi vois-je plusieurs candidats à la capacité réservée ?
 
 Si plusieurs volumes sont présents dans un pool ou un groupe de volumes qui correspond au pourcentage de capacité sélectionné pour l'objet de stockage, plusieurs candidats s'affichent.
@@ -248,6 +256,7 @@ Vous pouvez actualiser la liste des candidats recommandés en modifiant le pourc
 
 
 
+[[why-do-i-see-not-available-values-displayed-in-the-table]]
 == Pourquoi les valeurs non disponibles sont-elles affichées dans le tableau ?
 
 Le tableau répertorie les valeurs non disponibles lorsque les données situées sur la matrice de stockage distante ne sont pas disponibles pour être affichées.
@@ -256,6 +265,7 @@ Pour afficher les données de la baie de stockage distante, lancez System Manage
 
 
 
+[[why-dont-i-see-all-of-my-pools-and-volume-groups]]
 == Pourquoi ne vois-je pas tous mes pools et groupes de volumes ?
 
 Lorsque vous créez un volume secondaire pour la paire asynchrone en miroir, le système affiche la liste de tous les pools et groupes de volumes éligibles pour cette paire asynchrone en miroir. Tout pool ou groupe de volumes non éligible à l'utilisation ne s'affiche pas dans cette liste.
@@ -269,6 +279,7 @@ Les pools ou groupes de volumes ne peuvent être admissibles pour aucune des rai
 
 
 
+[[asynchronous-mirroring-why-dont-i-see-all-my-volumes]]
 == Mise en miroir asynchrone - Pourquoi ne vois-je pas tous mes volumes ?
 
 Lorsque vous sélectionnez un volume primaire pour une paire en miroir, une liste affiche tous les volumes éligibles.
@@ -285,6 +296,7 @@ NOTE: Pour les contrôleurs EF600 et EF300, les volumes principal et secondaire 
 
 
 
+[[asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Mise en miroir asynchrone - Pourquoi ne vois-je pas tous les volumes sur la baie de stockage distante ?
 
 Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, une liste affiche tous les volumes éligibles pour cette paire en miroir.
@@ -304,6 +316,7 @@ Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette lis
 
 
 
+[[why-would-i-update-my-remote-storage-arrays-ip-address]]
 == Pourquoi devrais-je mettre à jour l’adresse IP de ma baie de stockage distante ?
 
 Vous mettez à jour l'adresse IP de votre matrice de stockage distante lorsque l'adresse IP d'un port iSCSI change et que la matrice de stockage locale ne parvient pas à communiquer avec la matrice de stockage distante.

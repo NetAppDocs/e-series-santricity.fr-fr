@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-is-a-volume]]
 == Qu'est-ce qu'un volume ?
 
 Un volume est un conteneur dans lequel les applications, les bases de données et les systèmes de fichiers stockent les données. Il s'agit du composant logique créé pour que l'hôte puisse accéder au stockage de la matrice de stockage.
@@ -24,6 +25,7 @@ Un volume est créé en fonction de la capacité disponible dans un pool ou un g
 
 
 
+[[why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes]]
 == Pourquoi une erreur de sur-allocation de capacité se produit-elle lorsque la capacité disponible d'un groupe de volumes est suffisante pour créer des volumes ?
 
 Le groupe de volumes sélectionné peut avoir une ou plusieurs zones de capacité libre. Une zone de capacité libre est la capacité disponible pouvant résulter de la suppression d'un volume ou de l'absence de toute capacité disponible lors de la création du volume.
@@ -34,7 +36,7 @@ Si un groupe de volumes possède des zones de capacité libre, le graphique de g
 
 En consolidant la capacité disponible, vous pouvez créer des volumes supplémentaires à partir de la capacité maximale disponible dans un groupe de volumes. Vous pouvez consolider la capacité disponible existante sur un groupe de volumes sélectionné à l'aide de l'une des méthodes suivantes :
 
-* Lorsqu'au moins une zone de capacité libre est détectée pour un groupe de volumes, la recommandation « consolider la capacité libre » s'affiche sur la page d'accueil de la zone notification. Cliquez sur le lien *consolider la capacité libre* pour lancer la boîte de dialogue.
+* Lorsqu'au moins une zone de capacité libre est détectée pour un groupe de volumes, la recommandation « Consolidate free capacity » s'affiche dans la zone de notifications, accessible via l'icône de cloche située dans le coin supérieur de la fenêtre. Cliquez sur le lien *Consolidate free capacity* pour ouvrir la boîte de dialogue.
 * Vous pouvez également accéder au menu : Storage [Pools and volume groups] depuis le panneau de gauche, puis sélectionner l’icône menu : ellipsis icon [Consolidate volume group free capacity] pour ouvrir la boîte de dialogue.
 
 
@@ -42,18 +44,21 @@ Si vous souhaitez utiliser une zone de capacité libre spécifique plutôt que l
 
 
 
+[[why-arent-these-volumes-associated-with-a-workload]]
 == Pourquoi ces volumes ne sont-ils pas associés à une charge de travail ?
 
 Les volumes ne sont pas associés à une charge de travail s'ils ont été créés à l'aide de l'interface de ligne de commande ou s'ils ont été migrés (importés/exportés) à partir d'une autre baie de stockage.
 
 
 
+[[why-cant-i-delete-the-selected-workload]]
 == Pourquoi ne puis-je pas supprimer la charge de travail sélectionnée ?
 
 Cette charge de travail se compose d'un groupe de volumes créés à l'aide de l'interface de ligne de commande ou migrés (importé/exporté) à partir d'une autre baie de stockage. Par conséquent, les volumes de cette charge de travail ne sont pas associés à une charge de travail spécifique à une application. La charge de travail ne peut donc pas être supprimée.
 
 
 
+[[how-do-application-specific-workloads-help-me-manage-my-storage-array]]
 == En quoi les charges de travail spécifiques aux applications contribuent-elles à la gestion de ma baie de stockage ?
 
 Les caractéristiques de volume de votre charge de travail spécifique à l'application déterminent la façon dont la charge de travail interagit avec les composants de votre baie de stockage et vous aident à déterminer les performances de votre environnement dans une configuration donnée.
@@ -62,6 +67,7 @@ Une application peut être utilisée comme un logiciel tel que SQL Server ou Exc
 
 
 
+[[what-do-i-need-to-do-to-recognize-the-expanded-capacity]]
 == Que dois-je faire pour reconnaître la capacité étendue ?
 
 Si vous augmentez la capacité d'un volume, il est possible que l'hôte ne reconnaisse pas immédiatement l'augmentation de la capacité du volume.
@@ -74,6 +80,7 @@ Pour plus de détails, reportez-vous à la documentation du système d'exploitat
 
 
 
+[[why-dont-i-see-all-my-pools-andor-volume-groups]]
 == Pourquoi ne vois-je pas tous mes pools et/ou groupes de volumes ?
 
 Tout pool ou groupe de volumes dans lequel vous ne pouvez pas déplacer le volume ne s'affiche pas dans la liste.
@@ -87,6 +94,7 @@ Les pools ou groupes de volumes ne sont pas admissibles pour l'une des raisons s
 
 
 
+[[what-is-segment-size]]
 == Quelle est la taille du segment ?
 
 Un segment correspond à la quantité de données en kilo-octets (Kio) stockée sur un lecteur avant que la matrice de stockage ne passe au lecteur suivant de la bande (groupe RAID). La taille de segment s'applique uniquement aux groupes de volumes, pas aux pools.
@@ -97,18 +105,21 @@ Qu'une application utilise des lectures et écritures aléatoires peu volumineus
 
 
 
+[[environments-where-iops-performance-is-important]]
 === Environnements dans lesquels les performances d'IOPS sont importantes
 
 Dans un environnement d'opérations d'E/S par seconde (IOPS), la baie de stockage est plus performante si la taille de segment est supérieure à la taille de bloc de données standard (« bloc ») qui est lue/écrite sur un disque. Cela garantit que chaque bloc est écrit sur un seul disque.
 
 
 
+[[environments-where-throughput-is-important]]
 === Dans les environnements où le débit est important
 
 Dans un environnement de débit, la taille de segment doit représenter une fraction régulière du nombre total de disques pour les données et la taille type du bloc de données (taille d'E/S). Les données sont ainsi réparties sur une seule bande des disques du groupe de volumes, ce qui permet d'accélérer les opérations de lecture et d'écriture.
 
 
 
+[[what-is-preferred-controller-ownership]]
 == En quoi consiste la propriété privilégiée d'un contrôleur ?
 
 La propriété privilégiée des contrôleurs définit le contrôleur désigné comme étant le contrôleur propriétaire ou principal du volume.
@@ -119,6 +130,7 @@ Par exemple, si un contrôleur lit principalement des blocs de données séquent
 
 
 
+[[when-would-i-want-to-use-the-assign-host-later-selection]]
 == Quand dois-je utiliser la sélection attribuer l'hôte ultérieurement ?
 
 Pour accélérer le processus de création de volumes, vous pouvez ignorer l'étape d'affectation des hôtes afin que les nouveaux volumes soient initialisés hors ligne.
@@ -131,6 +143,7 @@ Lorsqu'aucun volume d'un groupe de volumes n'est mappé, l'initialisation hors l
 
 
 
+[[what-do-i-need-to-know-about-host-block-size-requirements]]
 == De quoi ai-je besoin pour connaître les exigences en termes de taille de bloc de l'hôte ?
 
 Pour les systèmes EF300 et EF600, un volume peut être défini pour prendre en charge une taille de bloc de 512 octets ou de 4 Kio (également appelé « taille de secteur »). Vous devez définir la valeur correcte lors de la création du volume. Si possible, le système suggère la valeur par défaut appropriée.

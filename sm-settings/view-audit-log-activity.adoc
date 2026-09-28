@@ -18,8 +18,7 @@ En affichant les journaux d'audit, les utilisateurs disposant d'autorisations d'
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
-. Sélectionnez l'onglet **Journal d'audit**.
+. Dans le panneau de gauche, sélectionnez menu : Surveillance [journal des audits].
 +
 L'activité du journal d'audit s'affiche sous forme de tableau, qui contient les colonnes d'informations suivantes :
 
@@ -33,7 +32,7 @@ L'activité du journal d'audit s'affiche sous forme de tableau, qui contient les
 ** *Description* -- informations supplémentaires sur l'événement, le cas échéant.
 
 
-. Utilisez les sélections de la page Journal d'audit pour afficher et gérer les événements.
+. Utilisez les options de la page Journal d'audit pour consulter et gérer les événements.
 +
 .Détails de la sélection
 [%collapsible]
@@ -99,7 +98,7 @@ Cliquez sur l'icône de colonne *Afficher/Masquer* image:../media/sam-1140-ss-ac
  a| 
 Activer/désactiver les filtres de colonne
  a| 
-Cliquez sur l'icône *Toggle* image:../media/sam-1140-ss-access-toggle.gif["Basculer"]pour ouvrir les champs de filtrage pour chaque colonne. Entrez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.
+Cliquez sur l'icône *Basculer* image:../media/sam-1140-ss-access-toggle.gif["Basculer"] pour ouvrir les champs de filtrage pour chaque colonne. Saisissez des caractères dans un champ de colonne pour limiter les événements affichés par ces caractères. Cliquez à nouveau sur l'icône pour fermer les champs de filtrage.
 
 
 

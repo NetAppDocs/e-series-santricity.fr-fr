@@ -15,8 +15,8 @@ summary: 'Vous pouvez importer une configuration AutoSupport d"une baie de stock
 Vous pouvez importer une configuration AutoSupport d'une baie de stockage vers d'autres baies de stockage. Cette opération de traitement par lot permet de gagner du temps lorsque vous devez configurer plusieurs baies sur le réseau.
 
 .Avant de commencer
-* AutoSupport est configuré dans System Manager pour la baie de stockage que vous souhaitez utiliser comme source (menu : support[Centre de support]).
-* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
+* AutoSupport est configuré dans le Gestionnaire système pour la baie de stockage que vous souhaitez utiliser comme source (menu : Support[AutoSupport]).
+* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:System[Enregistrer la configuration de la baie de stockage]).
 
 
 .Description de la tâche

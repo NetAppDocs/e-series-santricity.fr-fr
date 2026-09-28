@@ -34,13 +34,13 @@ Le processus permettant de démarrer la restauration d'une image snapshot d'un g
 
 
 
+[[step-1-select-members]]
 == Étape 1 : sélectionnez les membres
 
 Vous devez sélectionner les volumes membres à retourner.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Sélectionnez l'onglet *Images snapshot*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot images].
 . Sélectionnez l'image snapshot du groupe de cohérence de snapshot, puis sélectionnez menu:Restauration[Démarrer].
 +
 La boîte de dialogue Démarrer la restauration s'affiche.
@@ -56,6 +56,7 @@ La boîte de dialogue Démarrer la restauration s'affiche.
 
 
 
+[[step-2-review-capacity]]
 == Étape 2 : examiner la capacité
 
 Si vous avez sélectionné des volumes membres associés à plusieurs objets de capacité réservée, tels qu'un groupe de snapshots et un volume de capacité réservée, vous pouvez revoir et augmenter la capacité réservée pour le ou les volumes de retour arrière.
@@ -77,6 +78,7 @@ La boîte de dialogue Modifier la priorité s'affiche.
 
 
 
+[[step-3-edit-priority]]
 == Étape 3 : modifier la priorité
 
 Vous pouvez modifier la priorité de l'opération de restauration si nécessaire.
@@ -97,6 +99,6 @@ System Manager effectue les actions suivantes :
 
 
 .Une fois que vous avez terminé
-Sélectionnez le menu : Storage [Operations in Progress] pour afficher la progression de l’opération de rollback.
+Sélectionnez le menu : Monitoring [Operations in progress] pour afficher la progression de l’opération de rollback.
 
 Si l'opération de restauration n'a pas réussi, l'opération s'interrompt. Vous pouvez reprendre l'opération interrompue et, si l'opération n'a toujours pas abouti, suivre la procédure Recovery Guru pour corriger le problème ou contacter le support technique.

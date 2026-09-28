@@ -16,6 +16,7 @@ Vous pouvez créer un volume comme conteneur dans lequel les applications, les b
 
 
 
+[[what-are-volumes-and-workloads]]
 == Qu'est-ce qu'un volume et une charge de travail ?
 
 Un _volume_ est le composant logique créé avec une capacité spécifique pour l'hôte à accéder. Bien qu'un volume soit composé de plusieurs lecteurs, un volume apparaît comme un composant logique pour l'hôte. Une fois un volume défini, vous pouvez l'ajouter à une charge de travail. Une _charge de travail_ est un objet de stockage qui prend en charge une application, telle que SQL Server ou Exchange, que vous pouvez utiliser pour optimiser le stockage de cette application.
@@ -31,6 +32,7 @@ En savoir plus :
 
 
 
+[[how-do-you-create-volumes-and-workloads]]
 == Comment créez-vous les volumes et les charges de travail ?
 
 Tout d'abord, vous créez un workload. Accédez au menu:Storage[volumes] et ouvrez un assistant qui vous guide tout au long des étapes. Vous créez ensuite un volume à partir de la capacité disponible dans un pool ou un groupe de volumes, puis vous affectez le workload que vous avez créé.
@@ -45,6 +47,7 @@ En savoir plus :
 
 
 
+[[related-information]]
 == Informations associées
 
 En savoir plus sur les concepts liés aux volumes :

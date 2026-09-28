@@ -16,6 +16,7 @@ Vous pouvez créer de la capacité de stockage logique depuis un sous-ensemble d
 
 
 
+[[what-are-pools-and-volume-groups]]
 == Qu'est-ce qu'un pool et un groupe de volumes ?
 
 Un _pool_ est un ensemble de lecteurs regroupés logiquement. Un _volume group_ est un conteneur pour les volumes ayant des caractéristiques partagées. Vous pouvez utiliser un pool ou un groupe de volumes pour créer des volumes accessibles à un hôte.
@@ -29,6 +30,7 @@ En savoir plus :
 
 
 
+[[how-do-you-create-pools]]
 == Comment créer des pools ?
 
 Vous pouvez autoriser System Manager à créer automatiquement des pools lorsqu'il détecte de la capacité non allouée dans une baie de stockage. Sinon, si la création automatique ne permet pas de déterminer la meilleure configuration, vous pouvez créer des pools manuellement à partir du menu:Storage[Pools and volume groups].
@@ -43,6 +45,7 @@ En savoir plus :
 
 
 
+[[how-do-you-create-volume-groups]]
 == Comment créez-vous des groupes de volumes ?
 
 Vous pouvez créer des groupes de volumes à partir du menu : Storage[Pools and volume groups].
@@ -55,6 +58,7 @@ En savoir plus :
 
 
 
+[[related-information]]
 == Informations associées
 
 En savoir plus sur les concepts liés aux pools et aux groupes de volumes :

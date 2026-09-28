@@ -17,9 +17,8 @@ Vous pouvez modifier les paramètres d'un groupe de snapshots pour modifier son 
 Lors de la création d'un groupe de snapshots, la capacité réservée est créée pour stocker les données de toutes les images de snapshot contenues dans le groupe.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Cliquez sur l'onglet *capacité réservée*.
-. Sélectionnez le groupe d'instantanés que vous souhaitez modifier, puis cliquez sur menu : icône de points de suspension [Edit Settings].
+. Dans le panneau de gauche, sélectionnez menu : Storage[Reserved capacity].
+. Sélectionnez le groupe d'instantanés que vous souhaitez modifier, puis cliquez sur l'icône menu : points de suspension [Modifier les paramètres].
 +
 La fenêtre « Modifier les paramètres du groupe d'instantanés » s'affiche.
 

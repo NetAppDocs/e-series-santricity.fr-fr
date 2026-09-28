@@ -15,12 +15,12 @@ summary: 'Pour trouver l"emplacement physique d"une matrice de stockage dans une
 Pour trouver l'emplacement physique d'une matrice de stockage dans une armoire, vous pouvez activer ses voyants de localisation (LED).
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
-. Sous *général*, cliquez sur *Activer les voyants du localisateur de matrice de stockage*.
+. Dans le panneau de gauche, sélectionnez *Système*.
+. Sous *Général*, cliquez sur *Activer les voyants de localisation de la baie de stockage*.
 +
-La boîte de dialogue Activer les voyants de localisation de la matrice de stockage s'ouvre et les voyants de localisation de la matrice de stockage correspondante s'allument.
+La boîte de dialogue « Activer les voyants de localisation » s'ouvre et les voyants de localisation de la baie de stockage correspondante s'allument.
 
-. Une fois la matrice de stockage physiquement installée, revenez à la boîte de dialogue et sélectionnez *Désactiver*.
+. Une fois que vous avez localisé physiquement la baie de stockage, retournez à la boîte de dialogue et sélectionnez *Turn off*.
 
 
 .Résultats

@@ -15,8 +15,7 @@ summary: 'Vous pouvez modifier l"adresse du serveur utilisée pour la réception
 Vous pouvez modifier l'adresse du serveur utilisée pour la réception d'alertes syslog.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *Syslog*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[Syslog alerts].
 . Dans le tableau, sélectionnez une adresse de serveur syslog, puis cliquez sur l'icône *Edit* (crayon) à l'extrême droite.
 +
 La ligne devient un champ modifiable.

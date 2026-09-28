@@ -2,7 +2,7 @@
 permalink: sm-storage/actions-you-can-perform-on-volumes.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, volumes 
-summary: 'Vous pouvez effectuer plusieurs actions différentes sur un volume : augmentation de la capacité, suppression, copie, initialisation, redistribution, modification de la propriété, modification des paramètres de cache et modification des paramètres de numérisation des supports.' 
+summary: Vous pouvez effectuer différentes actions sur un volume. Augmenter la capacité, supprimer, copier, initialiser, redistribuer, changer le propriétaire, modifier les paramètres du cache et modifier les paramètres d’analyse des supports. 
 ---
 = Actions que vous pouvez effectuer sur les volumes dans SANtricity System Manager
 :allow-uri-read: 
@@ -16,6 +16,7 @@ Vous pouvez effectuer plusieurs actions différentes sur un volume : augmentatio
 
 
 
+[[increase-capacity]]
 == Augmentation de la capacité
 
 Vous pouvez étendre la capacité d'un volume de deux manières :
@@ -26,7 +27,7 @@ Vous ajoutez de la capacité à un volume en sélectionnant menu:Storage[Volumes
 
 * Ajoutez de la capacité non affectée (sous la forme de disques inutilisés) au pool ou au groupe de volumes du volume. Utilisez cette option lorsqu'aucune capacité disponible n'existe dans le pool ou le groupe de volumes.
 +
-Vous ajoutez de la capacité non attribuée au pool ou au groupe de volumes en sélectionnant menu :Storage[Pools and Volume Groups > Add capacity].
+Vous ajoutez de la capacité non attribuée au pool ou au groupe de volumes en sélectionnant le menu : Storage [Pools and volume groups > Add capacity].
 
 +
 Si la capacité disponible n'est pas disponible dans le pool ou le groupe de volumes, vous ne pouvez pas augmenter la capacité du volume. Vous devez d'abord augmenter la taille du pool ou du groupe de volumes ou supprimer les volumes inutilisés.
@@ -37,6 +38,7 @@ Après avoir augmenté la capacité du volume, vous devez augmenter manuellement
 
 
 
+[[delete]]
 == Supprimer
 
 Généralement, vous supprimez des volumes si les volumes ont été créés avec des paramètres ou une capacité incorrects, que vous ne répondez plus aux besoins de configuration du stockage ou que des images Snapshot qui ne sont plus nécessaires pour les tests des applications ou des sauvegardes. La suppression d'un volume augmente la capacité disponible dans le pool ou le groupe de volumes.
@@ -45,12 +47,14 @@ La suppression de volumes entraîne la perte de toutes les données de ces volum
 
 
 
+[[copy]]
 == Copier
 
 Lorsque vous copiez des volumes, vous créez une copie à un instant précis de deux volumes distincts, le volume source et le volume cible, sur la même baie de stockage. Vous pouvez copier des volumes en sélectionnant menu:Storage[Volumes] puis en sélectionnant menu:ellipsis icon[Copy volume].
 
 
 
+[[initialize]]
 == Initialiser
 
 L'initialisation d'un volume efface toutes les données du volume. Un volume est automatiquement initialisé lors de sa première création. Cependant, il est possible que le gourou de la restauration indique que vous initiez manuellement un volume afin d'effectuer une restauration suite à une certaine défaillance. Lorsque vous initialisez un volume, celui-ci conserve son WWN, ses affectations d'hôtes, sa capacité allouée et ses paramètres de capacité réservée. Il conserve également les mêmes paramètres d'assurance de données et de sécurité.
@@ -59,6 +63,7 @@ Vous pouvez initialiser les volumes en sélectionnant le menu : Storage [Volume
 
 
 
+[[redistribute]]
 == Redistribuer
 
 Vous redistribuez les volumes pour retransférer les volumes vers leurs propriétaires de contrôleur préférés. En général, les pilotes de chemins d'accès multiples déplacent les volumes depuis leur propriétaire privilégié de contrôleur en cas de problème lors du chemin d'accès aux données entre l'hôte et la baie de stockage.
@@ -69,14 +74,16 @@ Vous pouvez redistribuer les volumes en sélectionnant le menu : Storage [Volum
 
 
 
+[[change-volume-ownership]]
 == Changer la propriété du volume
 
-Modifier le propriétaire d'un volume modifie la propriété du contrôleur préféré de ce volume. Le propriétaire du contrôleur préféré d'un volume est indiqué dans le menu : Storage [Volumes > ellipsis icon > Edit settings].
+Modifier le propriétaire d'un volume modifie le contrôleur propriétaire préféré de ce volume. Le contrôleur propriétaire préféré d'un volume est indiqué dans le menu : Stockage [Volumes > icône à trois points > Afficher les paramètres].
 
 Vous pouvez modifier le propriétaire d'un volume en sélectionnant menu:Storage[Volumes > icône ellipse > Modifier le propriétaire du volume].
 
 
 
+[[mirroring-and-volume-ownership]]
 === Mise en miroir et propriété de volumes
 
 Si le volume primaire de la paire en miroir est détenu par le contrôleur A, le volume secondaire sera également détenu par le contrôleur A de la baie de stockage distante. La modification du propriétaire du volume primaire entraîne automatiquement la modification du propriétaire du volume secondaire pour s'assurer que les deux volumes appartiennent au même contrôleur. Les modifications de propriété actuelles du côté principal se propagent automatiquement aux modifications de propriété actuelles correspondantes du côté secondaire.
@@ -85,6 +92,7 @@ Si un groupe de cohérence du miroir contient un volume secondaire local dont la
 
 
 
+[[copy-volume-and-volume-ownership]]
 === Propriété du volume et du volume de la copie
 
 Au cours d'une opération de copie de volume, le même contrôleur doit posséder à la fois le volume source et le volume cible. Parfois, les deux volumes ne disposent pas du même contrôleur préféré au démarrage de l'opération de copie de volume. Par conséquent, la propriété du volume cible est automatiquement transférée vers le contrôleur préféré du volume source. Lorsque la copie de volume est terminée ou arrêtée, la propriété du volume cible est restaurée sur son contrôleur préféré.
@@ -93,6 +101,7 @@ Si la propriété du volume source est modifiée pendant l'opération de copie, 
 
 
 
+[[change-cache-settings]]
 == Modifier les paramètres de cache
 
 La mémoire cache est une zone de stockage volatile temporaire (RAM) du contrôleur dont le temps d'accès est plus rapide que le support du lecteur. Si vous utilisez la mémoire cache, la performance d'E/S globale est augmentée pour les raisons suivantes :
@@ -120,13 +129,14 @@ Pour un volume fin, la préextraction de lecture dynamique du cache est toujours
 
 
 
+[[change-media-scan-settings]]
 == Modifier les paramètres de numérisation du support
 
 Les analyses des supports détectent et répare les erreurs de support sur les blocs de disque qui sont rarement lus par les applications. Cette analyse permet d'éviter la perte de données si d'autres disques du pool ou du groupe de volumes tombent en panne, car les données des disques défaillants sont reconstruites à l'aide des informations de redondance et des données provenant d'autres disques du pool ou du groupe de volumes.
 
 Les analyses de supports s'exécutent en continu à un taux constant en fonction de la capacité à scanner et de la durée d'acquisition. Les acquisitions en arrière-plan peuvent être temporairement suspendues par une tâche en arrière-plan de priorité supérieure (par exemple, reconstruction), mais elles reprendront à la même vitesse constante.
 
-Vous pouvez activer et définir la durée d'exécution de l'analyse des supports en sélectionnant menu:Storage[volumes > plus > Modifier les paramètres d'analyse des supports].
+Vous pouvez activer et définir la durée d'exécution de l'analyse du support en sélectionnant menu:Storage[Volumes > ellipsis icon > Change media scan settings].
 
 Un volume est analysé uniquement lorsque l'option de numérisation des supports est activée pour la matrice de stockage et pour ce volume. Si le contrôle de redondance est également activé pour ce volume, les informations de redondance du volume sont vérifiées pour vérifier la cohérence avec les données, à condition que le volume dispose de la redondance. L'analyse des supports avec contrôle de redondance est activée par défaut pour chaque volume lors de sa création.
 

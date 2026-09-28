@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[why-does-the-cannot-access-other-controller-dialog-box-appear]]
 == Pourquoi la boîte de dialogue Impossible d'accéder à un autre contrôleur s'affiche-t-elle ?
 
 Lorsque vous effectuez certaines opérations liées aux certificats d'autorité de certification (par exemple, importation d'un certificat), une boîte de dialogue vous invitant à accepter un certificat auto-signé pour le second contrôleur s'affiche.
@@ -32,6 +33,7 @@ Si cette boîte de dialogue s'affiche de nouveau et que vous ne pouvez pas termi
 
 
 
+[[how-do-i-know-what-certificates-need-to-be-uploaded-to-santricity-system-manager-for-external-key-management]]
 == Comment savoir quels certificats doivent être chargés dans SANtricity System Manager pour la gestion externe des clés ?
 
 Pour la gestion externe des clés, vous importez deux types de certificats pour l'authentification entre la matrice de stockage et le serveur de gestion des clés afin que les deux entités puissent se faire confiance.
@@ -46,6 +48,7 @@ Un certificat de serveur de gestion des clés valide le serveur de gestion des c
 
 
 
+[[what-do-i-need-to-know-about-certificate-revocation-checking]]
 == Que dois-je savoir au sujet de la vérification de révocation de certificats ?
 
 Le Gestionnaire système SANtricity vous permet de vérifier les certificats révoqués à l'aide d'un serveur OCSP (Online Certificate Status Protocol), au lieu de télécharger les listes CRL (Certificate Revocation Lists).
@@ -61,6 +64,7 @@ La spécification d'une adresse de réponse OCSP dans System Manager ou dans l'i
 ====
 
 
+[[what-types-of-servers-will-revocation-checking-be-enabled-for]]
 == Pour quels types de serveurs la vérification de révocation sera-t-elle activée ?
 
 La baie de stockage effectue une vérification de révocation chaque fois qu'elle se connecte à un serveur AutoSupport, à un serveur EKMS (External Key Management Server), à un serveur LDAPS (Lightweight Directory Access Protocol over SSL) ou à un serveur Syslog.

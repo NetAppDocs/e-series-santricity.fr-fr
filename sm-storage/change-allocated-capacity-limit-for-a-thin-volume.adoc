@@ -14,7 +14,7 @@ summary: 'Pour les volumes fins capables d"allouer de l"espace à la demande, vo
 [role="lead"]
 Pour les volumes fins capables d'allouer de l'espace à la demande, vous pouvez modifier la limite qui restreint la capacité allouée à laquelle un volume fin peut se développer automatiquement.
 
-Vous pouvez également modifier le point de pourcentage auquel une alerte (seuil d'avertissement dépassé) est envoyée dans la zone Notifications de la page d'accueil lorsqu'un volume fin est proche de la limite de capacité allouée. Vous pouvez choisir d'activer ou de désactiver cette notification d'alerte.
+Vous pouvez également modifier le seuil de déclenchement de l'alerte (dépassement du seuil d'avertissement) envoyée dans la zone de notifications, accessible via l'icône de cloche située dans le coin supérieur de la fenêtre, lorsqu'un volume fin approche de la limite de capacité allouée. Vous pouvez choisir d'activer ou de désactiver cette notification d'alerte.
 
 [NOTE]
 ====
@@ -26,10 +26,9 @@ Le système étend automatiquement la capacité allouée en fonction de la limit
 Lors de la modification du seuil d'avertissement et de la limite de capacité allouée d'un volume fin, vous devez prendre en compte l'espace qui doit être utilisé par les données utilisateur du volume et copier les données de services.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
-. Sélectionnez l'onglet *Thin Volume Monitoring*.
+. Dans le panneau de gauche, sélectionnez le menu : Storage [Thin volume monitoring].
 +
-La vue surveillance du volume fin s'affiche.
+La vue de surveillance du volume mince apparaît.
 
 . Sélectionnez le volume fin que vous souhaitez modifier, puis sélectionnez *Modifier la limite*.
 +
@@ -55,7 +54,7 @@ Seuil d'écriture défaillant, ce qui empêche le volume fin de consommer des re
  a| 
 M'avertir lorsque... (seuil d'avertissement)
  a| 
-Cochez la case si vous souhaitez que le système génère une alerte lorsqu'un volume fin se trouve à proximité de la limite de capacité allouée. L'alerte est envoyée à la zone Notifications de la page d'accueil. Ce seuil est un pourcentage de la taille de capacité indiquée du volume.
+Cochez la case à cocher si vous souhaitez que le système génère une alerte lorsqu'un volume fin approche de la limite de capacité allouée. L'alerte est envoyée dans la zone Notifications, accessible via l'icône de cloche située dans le coin supérieur de la fenêtre. Ce seuil correspond à un pourcentage de la taille de capacité déclarée du volume.
 
 Décochez la case pour désactiver la notification d'alerte de seuil d'avertissement.
 

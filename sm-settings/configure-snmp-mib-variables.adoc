@@ -37,8 +37,7 @@ Cette tâche décrit comment définir des variables MIB pour les interruptions S
 
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *SNMP*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[SNMP alerts].
 . Sélectionnez *configurer les variables MIB SNMP*.
 +
 La boîte de dialogue configurer les variables MIB SNMP s'ouvre.

@@ -15,6 +15,7 @@ Le Gestionnaire système SANtricity utilise des icônes et plusieurs autres mét
 
 
 
+[[icons]]
 == Icônes
 
 System Manager utilise ces icônes pour indiquer l'état de la matrice de stockage et de ses composants.
@@ -59,6 +60,7 @@ System Manager affiche ces icônes à différents emplacements.
 
 
 
+[[alerts-and-leds]]
 == Alertes et LED
 
 En outre, System Manager vous informe des problèmes de différentes manières.

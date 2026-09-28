@@ -19,6 +19,7 @@ Par exemple, un volume primaire appartient au contrôleur A, puis vous remplacez
 
 
 
+[[controller-resets]]
 == Réinitialisations du contrôleur
 
 La réinitialisation d'un contrôleur entraîne un changement de propriété du volume sur le côté principal, depuis le propriétaire du contrôleur préféré vers le contrôleur secondaire de la baie de stockage.

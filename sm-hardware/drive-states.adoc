@@ -15,6 +15,7 @@ SANtricity System Manager indique différents États des disques.
 
 
 
+[[accessibility-states]]
 == États d'accessibilité
 
 [cols="25h,~"]
@@ -63,6 +64,7 @@ Le lecteur ne répond pas aux commandes.
 |===
 
 
+[[role-states]]
 == États de rôle
 
 [cols="25h,~"]
@@ -78,14 +80,14 @@ Le lecteur est membre d'un pool ou d'un groupe de volumes.
 
 
  a| 
-Disque de secours utilisé
+Hot spare en cours d'utilisation
  a| 
 Le disque est actuellement utilisé comme remplacement d'un disque défectueux. Les disques de secours ne sont utilisés que dans des groupes de volumes, pas dans des pools.
 
 
 
  a| 
-Disque de secours
+Disque de secours à chaud en attente
  a| 
 Le disque est prêt à être utilisé comme remplacement d'un disque défectueux. Les disques de secours ne sont utilisés que dans des groupes de volumes, pas dans des pools.
 
@@ -99,6 +101,7 @@ Le lecteur n'est pas membre d'un pool ou d'un groupe de volumes.
 |===
 
 
+[[availability-states]]
 == États de disponibilité
 
 [cols="25h,~"]
@@ -114,7 +117,7 @@ Le lecteur ne fonctionne pas. Les données du lecteur ne sont pas disponibles.
 
 
  a| 
-Défaillance imminente
+Échec imminent
  a| 
 Il a été détecté que le disque pourrait tomber en panne bientôt. Les données du lecteur sont toujours disponibles.
 

@@ -15,6 +15,7 @@ La fonctionnalité SSD cache est une solution basée sur le contrôleur qui met 
 
 
 
+[[ssd-cache-versus-primary-cache]]
 == Comparaison entre SSD cache et le cache principal
 
 SSD cache est un cache secondaire utilisable avec le cache principal dans la mémoire DRAM dynamique du contrôleur.
@@ -35,6 +36,7 @@ Les volumes RAID internes sont utilisés à des fins de traitement du cache inte
 
 
 
+[[how-ssd-cache-is-used]]
 == Mode d'utilisation de SSD cache
 
 Grâce à la mise en cache intelligente, les données sont placées sur un disque à faible latence afin de permettre de répondre aux futures demandes concernant ces données beaucoup plus rapidement. Si un programme demande des données qui se trouvent dans le cache (appelé « accès au cache »), alors le lecteur à faible latence peut traiter cette transaction. Dans le cas contraire, un « cache manqué » se produit et les données doivent être accessibles à partir du disque d'origine plus lent. Avec l'augmentation du nombre d'accès au cache, les performances globales s'en trouvent améliorées.
@@ -52,6 +54,7 @@ Lorsque le processeur doit traiter les données lues, il suit les étapes ci-des
 
 
 
+[[improved-performance]]
 == Meilleures performances
 
 En copiant les données les plus utilisées vers SSD cache, vous réalisez des opérations sur disque plus efficaces, réduisez la latence et accélérez les vitesses de lecture et d'écriture. L'utilisation de disques SSD haute performance pour mettre en cache les données des volumes HDD améliore les performances d'E/S et les temps de réponse.
@@ -60,12 +63,14 @@ Des mécanismes d'E/S de volume simples permettent de déplacer les données ver
 
 
 
+[[ssd-cache-and-the-drive-security-feature]]
 == SSD cache et la fonction de sécurité des disques
 
 Pour utiliser SSD cache sur un volume qui utilise également la sécurité des disques (elle est sécurisée), les capacités de sécurité des disques du volume et du cache SSD doivent correspondre. Si elles ne correspondent pas, le volume n'est pas activé de manière sécurisée.
 
 
 
+[[implement-ssd-cache]]
 == Implémentez SSD cache
 
 Pour implémenter la fonctionnalité SSD cache, procédez comme suit :

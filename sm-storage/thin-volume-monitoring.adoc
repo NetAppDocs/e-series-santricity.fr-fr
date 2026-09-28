@@ -14,12 +14,12 @@ summary: 'Vous pouvez surveiller les volumes fins en termes d"espace, puis gén�
 [role="lead"]
 Vous pouvez surveiller les volumes fins en termes d'espace, puis générer des alertes appropriées pour éviter les conditions de capacité insuffisante.
 
-Les environnements à provisionnement fin peuvent allouer davantage d'espace logique qu'avec le stockage physique sous-jacent. Sélectionnez l'onglet menu:Storage[volumes > Thin Volume Monitoring] pour surveiller la croissance de vos volumes fins avant d'atteindre la limite de capacité maximale allouée.
+Les environnements à provisionnement fin peuvent allouer plus d'espace logique que leur espace de stockage physique sous-jacent. Vous pouvez sélectionner le menu : Stockage [Surveillance des volumes fins] pour surveiller la croissance de vos volumes fins avant qu'ils n'atteignent la limite maximale de capacité allouée.
 
 Vous pouvez utiliser la vue surveillance fine pour effectuer les opérations suivantes :
 
 * Définissez la limite de capacité allouée à laquelle un volume fin peut se développer automatiquement.
-* Définissez le point de pourcentage auquel une alerte (seuil d'avertissement dépassé) est envoyée dans la zone Notifications de la page d'accueil lorsqu'un volume fin est proche de la limite de capacité allouée maximale.
+* Définissez le pourcentage auquel une alerte (seuil d'avertissement dépassé) est envoyée dans la zone de notifications, accessible via l'icône de cloche dans le coin supérieur de la fenêtre, lorsqu'un volume mince est proche de la limite de capacité maximale allouée.
 
 
 Pour augmenter la capacité d'un volume fin, augmentez sa capacité indiquée.

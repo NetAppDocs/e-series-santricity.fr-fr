@@ -16,6 +16,7 @@ Si vous disposez de la fonction stockage distant, vous pouvez importer des donn�
 
 
 
+[[what-is-the-remote-storage-feature]]
 == Qu'est-ce que la fonctionnalité de stockage distant ?
 
 La fonction _stockage distant_ vous permet d'importer des données d'un système de stockage distant vers un système de stockage E-Series local. Le système distant peut être un autre système E-Series ou un système d'un autre fournisseur. Cette fonction est utile pour rationaliser la migration des données avec des temps d'arrêt minimes, notamment lors des mises à niveau de l'équipement.
@@ -33,6 +34,7 @@ En savoir plus :
 
 
 
+[[how-do-i-import-data-with-this-feature]]
 == Comment importer des données avec cette fonction ?
 
 L'assistant de stockage distant vous permet de mapper un périphérique de stockage distant (la source de l'importation de données) sur un volume cible du système E-Series. Cet assistant est disponible à partir du menu : stockage[stockage distant].

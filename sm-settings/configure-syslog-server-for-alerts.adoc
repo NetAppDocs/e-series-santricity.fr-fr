@@ -23,10 +23,9 @@ Pour configurer les alertes syslog, vous devez entrer une adresse de serveur sys
 Cette tâche décrit comment saisir l'adresse et le port du serveur syslog, puis tester l'adresse que vous avez saisie.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings[Alerts].
-. Sélectionnez l'onglet *Syslog*.
+. Dans le panneau de gauche, sélectionnez menu : Alerts[Syslog alerts].
 +
-Si un serveur syslog n'est pas encore défini, la page alertes affiche « Ajouter des serveurs Syslog ».
+Si aucun serveur syslog n'est encore défini, la page affiche « Add Syslog Servers. »
 
 . Cliquez sur *Ajouter des serveurs Syslog*.
 +

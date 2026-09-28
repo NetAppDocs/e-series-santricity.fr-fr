@@ -32,10 +32,7 @@ Vous pouvez également créer un planning de snapshots simultanément pour crée
 +
 Sélectionnez l'objet (volume ou groupe de cohérence snapshot) pour ce planning de snapshots, puis sélectionnez menu:Services de copie [Créer planning de snapshots].
 
-** Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-+
-Sélectionnez l'onglet *Snapsshot schedules*, puis cliquez sur *Créer*.
-
+** Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot schedules], puis cliquez sur *Create*.
 
 
 . Sélectionnez l'objet (volume ou groupe de cohérence de snapshot) pour ce planning de snapshot, puis cliquez sur *Suivant*.

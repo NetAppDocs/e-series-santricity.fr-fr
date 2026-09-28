@@ -28,7 +28,7 @@ System Manager affiche ces types de statistiques iSCSI. Toutes les statistiques 
 Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base. Les statistiques brutes sont toutes les statistiques collectées depuis le démarrage des contrôleurs. Les statistiques de référence sont des statistiques ponctuelles qui ont été recueillies depuis que vous avez défini l'heure de référence.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
+. Dans le panneau de gauche, sélectionnez *Système*.
 . Sélectionnez *Vue des statistiques iSCSI*.
 . Cliquez sur un onglet pour afficher les différents ensembles de statistiques.
 . *Facultatif:* pour définir la ligne de base, cliquez sur *définir une nouvelle ligne de base*.
@@ -41,6 +41,7 @@ Pour plus d'informations sur les différents types de statistiques, reportez-vou
 
 
 
+[[mac-transmit-and-mac-receive-statistics]]
 == Statistiques de transmission ET de réception MAC
 
 Lorsque vous sélectionnez les statistiques MAC Ethernet, les statistiques de réception et de transmission s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
@@ -273,6 +274,7 @@ Nombre d'erreurs de détection de porteuse
 ====
 
 
+[[ethernet-tcpip-statistics]]
 == Statistiques TCP/IP Ethernet
 
 Lorsque vous sélectionnez Ethernet TCP/IP, les statistiques TCP et IP s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
@@ -463,6 +465,7 @@ Erreur de réassemblage du datagramme, décompte du délai d'exécution
 ====
 
 
+[[iscsi-target-statistics-and-local-initiator-statistics]]
 == Statistiques des cibles iSCSI et statistiques des initiateurs locaux
 
 Lorsque vous sélectionnez les statistiques cible (protocole) ou initiateur local (protocole), les statistiques iSCSI apparaissent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
@@ -547,6 +550,7 @@ Nombre de connexions iSCSI inattendues
 ====
 
 
+[[dcbx-operational-state-statistics]]
 == Statistiques de l'état de fonctionnement DCBX
 
 Lorsque vous sélectionnez Statistiques sur l'état opérationnel de l'échange de pontage de centre de données (DCBX), les statistiques DCBX s'affichent.
@@ -606,6 +610,7 @@ NOTE: Vous trouverez des statistiques supplémentaires sur l'état opérationnel
 
 
 
+[[lldp-tlv-statistics]]
 == Statistiques TLV LLDP
 
 Lorsque vous sélectionnez Link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics (Statistiques de longueur de type (TLV)), deux ensembles de statistiques apparaissent : un pour le périphérique local et un pour le périphérique distant. Le périphérique local fait référence au contrôleur. Le périphérique distant fait référence au périphérique homologue auquel le contrôleur est connecté, généralement un commutateur.
@@ -665,6 +670,7 @@ NOTE: Vous trouverez des statistiques LLDP TLV supplémentaires dans le fichier 
 
 
 
+[[dcbx-tlv-statistics]]
 == Statistiques DCBX TLV
 
 Lorsque vous sélectionnez Statistiques de type valeur de longueur (TLV) d'échange de pontage de centre de données (DCBX), ces statistiques apparaissent :

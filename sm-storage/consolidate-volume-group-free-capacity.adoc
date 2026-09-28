@@ -25,7 +25,7 @@ Vous ne pouvez pas annuler l'opération après son démarrage. Vos données rest
 
 Vous pouvez lancer la boîte de dialogue consolider la capacité libre en utilisant l'une des méthodes suivantes :
 
-* Lorsqu'au moins une zone de capacité libre est détectée pour un groupe de volumes, la recommandation « consolider la capacité libre » s'affiche sur la page d'accueil de la zone notification. Cliquez sur le lien *consolider la capacité libre* pour lancer la boîte de dialogue.
+* Lorsqu'au moins une zone de capacité libre est détectée pour un groupe de volumes, la recommandation « Consolidate free capacity » s'affiche dans la zone de notifications, accessible via l'icône de cloche située dans le coin supérieur de la fenêtre. Cliquez sur le lien *Consolidate free capacity* pour ouvrir la boîte de dialogue.
 * Vous pouvez également lancer la boîte de dialogue Consolider la capacité libre à partir de la page Pools et volume groups, comme décrit dans la tâche suivante.
 
 
@@ -53,4 +53,4 @@ System Manager commence la consolidation (défragmentation) des zones de capacit
 
 
 .Une fois que vous avez terminé
-Sélectionnez le menu : Storage[Operations in Progress] pour consulter la progression de l’opération Consolidate Free Capacity. Cette opération peut être longue et pourrait affecter les performances du système.
+Sélectionnez le menu : Surveillance [Opérations en cours] pour consulter la progression de l’opération Consolidate Free Capacity. Cette opération peut être longue et pourrait affecter les performances du système.

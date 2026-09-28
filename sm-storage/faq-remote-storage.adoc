@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-do-i-need-to-know-before-creating-a-remote-storage-connection]]
 == Que dois-je savoir avant de créer une connexion de stockage à distance ?
 
 Pour configurer la fonction de stockage distant, vous devez connecter directement le périphérique distant et les systèmes de stockage cible via iSCSI.
@@ -28,6 +29,7 @@ Pour configurer la connexion au système iSCSI, reportez-vous à :
 
 
 
+[[why-am-i-being-prompted-to-remove-my-remote-volumes]]
 == Pourquoi suis-je invité à supprimer mes volumes distants ?
 
 Lorsqu'il atteint son nombre maximal de volumes distants, le système de stockage détecte automatiquement les volumes distants inutilisés et vous invite à les supprimer.
@@ -36,6 +38,7 @@ Dans certains cas, les volumes distants inutilisés ne sont pas nettoyés au cou
 
 
 
+[[why-dont-i-see-all-my-volumes-on-my-destination-array]]
 == Pourquoi ne vois-je pas tous mes volumes sur ma baie de destination ?
 
 Lors de la configuration d'une importation pour la fonction de stockage distant, il se peut que certains volumes n'apparaissent pas dans la liste des candidats cibles en raison de la taille du bloc, de la capacité ou de la disponibilité du volume.
@@ -57,6 +60,7 @@ Volumes les candidats sont exclus de la liste s'ils ont :
 
 
 
+[[what-do-i-need-to-know-about-the-remote-volume-in-an-import]]
 == Que dois-je savoir sur le volume distant lors d'une importation ?
 
 Lors de l'utilisation de la fonction de stockage à distance, notez que le volume distant est la source d'où proviennent les données.
@@ -65,19 +69,21 @@ Lorsque l'importation est en cours, les données sont transférées du volume di
 
 
 
+[[what-do-i-need-to-know-before-starting-a-remote-storage-import]]
 == Que dois-je savoir avant de démarrer une importation du stockage à distance ?
 
 La fonctionnalité stockage distant vous permet de copier des données d'un système de stockage distant vers un volume sur un système de stockage E-Series local. Avant d'utiliser cette fonction, consultez les directives suivantes.
 
 
 
+[[configuration]]
 === Configuration
 
 Avant de créer l'importation de stockage à distance, vous devez effectuer les opérations suivantes et vérifier les conditions suivantes :
 
 * Assurez-vous que chaque contrôleur du système de stockage E-Series local dispose d'une connexion iSCSI au système de stockage distant.
 * Sur votre système de stockage E-Series local, créez un volume cible pour l'opération d'importation. Assurez-vous que la capacité du volume est égale ou supérieure au volume source, qu'elle correspond au volume source et qu'elle n'est pas mappée. Voir link:create-volumes.html["Créer des volumes"].
-* Configurez le système de stockage E-Series local en tant qu'hôte sur le système distant à l'aide de son nom qualifié iSCSI (IQN). Vous pouvez afficher l'IQN à partir du menu:Paramètres[système > Paramètres iSCSI > IQN cible]. Veillez également à définir le type d'hôte approprié en fonction du système utilisé.
+* Configurez le système de stockage E-Series local comme hôte sur le système distant en utilisant son nom qualifié iSCSI (IQN). Vous pouvez consulter l’IQN dans le menu : System[iSCSI settings > Target IQN]. Veillez également à définir le type d’hôte approprié en fonction du système utilisé.
 * Arrêtez toutes les E/S, démontez tous les systèmes de fichiers et supprimez toute affectation aux hôtes ou aux applications du volume sélectionné sur le système de stockage distant.
 * Attribuez le volume au système de stockage distant à l'hôte du système de stockage E-Series local nouvellement créé.
 * Collectez les informations suivantes à partir du système de stockage distant afin que l'importation puisse être créée :
@@ -92,6 +98,7 @@ Avant de créer l'importation de stockage à distance, vous devez effectuer les 
 
 
 
+[[import-process]]
 === Processus d'importation
 
 Les étapes suivantes présentent le processus d'importation.
@@ -114,6 +121,7 @@ Une fois l'importation déconnectée, les performances de la destination locale 
 
 
 
+[[restrictions]]
 === Restrictions
 
 La fonction de stockage à distance comporte les restrictions suivantes :
@@ -132,6 +140,7 @@ La fonction de stockage à distance comporte les restrictions suivantes :
 
 
 
+[[additional-information]]
 === Informations supplémentaires
 
 De plus amples informations sur la fonction de stockage distant sont disponibles à partir du https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Rapport technique sur le stockage à distance"^].

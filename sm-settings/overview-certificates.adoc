@@ -15,6 +15,7 @@ Vous pouvez utiliser le Gestionnaire système SANtricity pour créer des demande
 
 
 
+[[what-are-certificates]]
 == Que sont les certificats ?
 
 _Certificates_ sont des fichiers numériques qui identifient des entités en ligne, telles que des sites Web et des serveurs, pour des communications sécurisées sur Internet. Il existe deux types de certificats : un certificat _signé_ est validé par une autorité de certification (CA) et un certificat _auto-signé_ est validé par le propriétaire de l'entité au lieu d'un tiers.
@@ -27,6 +28,7 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-signed-certificates]]
 == Comment configurer les certificats signés ?
 
 Vous pouvez générer une demande de signature à partir de System Manager ou en externe à l'aide d'une paire de clés privée et publique. La demande de signature est envoyée à une autorité de certification pour générer les fichiers de certificat. Une fois que l'autorité de certification a renvoyé les fichiers de certificat, vous les importez à l'aide de System Manager.
@@ -39,6 +41,7 @@ En savoir plus :
 
 
 
+[[related-information]]
 == Informations associées
 
 En savoir plus sur les tâches liées aux certificats :

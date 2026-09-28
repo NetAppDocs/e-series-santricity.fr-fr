@@ -16,7 +16,7 @@ Vous pouvez localiser les disques afin d'identifier physiquement tous les disque
 
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Sélectionnez le pool, le groupe de volumes ou le cache SSD que vous souhaitez localiser, puis cliquez sur le menu:ellipsis icon[Activer les voyants du localisateur].
+. Localisez le pool, le groupe de volumes ou le cache SSD que vous souhaitez localiser, puis cliquez sur l’icône de menu : ellipse [Activer les voyants du localisateur].
 +
 Une boîte de dialogue s'affiche pour indiquer que les voyants des disques comprenant le pool sélectionné, le groupe de volumes ou le cache SSD sont activés.
 

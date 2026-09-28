@@ -56,4 +56,4 @@ System Manager effectue les actions suivantes :
 * Efface les index de blocs, ce qui entraîne la lecture de blocs non écrits comme s'ils sont remplis à zéro (le volume semble complètement vide).
 
 
-Sélectionnez le menu : Storage[Operations in Progress] pour afficher la progression de l’opération d’initialisation en cours sur le volume sélectionné. Cette opération peut être longue et pourrait affecter les performances du système.
+Sélectionnez le menu : Surveillance [Opérations en cours] pour afficher la progression de l’opération d’initialisation en cours sur le volume sélectionné. Cette opération peut être longue et pourrait affecter les performances du système.

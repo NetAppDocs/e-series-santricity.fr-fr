@@ -98,7 +98,7 @@ X
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[System].
+. Dans le panneau de gauche, sélectionnez *Système*.
 . Sous *Général*, sélectionnez *Effacer la configuration de la baie de stockage*.
 . Dans la liste déroulante, sélectionnez *Volume* ou *matrice de stockage*.
 . *Facultatif:* si vous souhaitez enregistrer la configuration (pas les données), utilisez les liens de la boîte de dialogue.

@@ -2,7 +2,7 @@
 permalink: sm-settings/import-trusted-certificates-for-controllers-acting-as-client.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
-summary: 'Si le contrôleur rejette une connexion parce qu"il ne peut pas valider la chaîne de confiance d"un serveur réseau, vous pouvez importer un certificat depuis l"onglet approuvé qui permet au contrôleur (agissant en tant que client) d"accepter les communications de ce serveur.' 
+summary: 'Si le contrôleur rejette une connexion parce qu"il ne peut pas valider la chaîne de confiance d"un serveur réseau, vous pouvez importer un certificat depuis la page Certificats de confiance qui permet au contrôleur (agissant en tant que client) d"accepter les communications provenant de ce serveur.' 
 ---
 = Importer des certificats pour les contrôleurs lorsqu'ils agissent en tant que clients dans SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Si le contrôleur rejette une connexion parce qu"il ne peut pas valide
 
 
 [role="lead"]
-Si le contrôleur rejette une connexion parce qu'il ne peut pas valider la chaîne de confiance d'un serveur réseau, vous pouvez importer un certificat depuis l'onglet approuvé qui permet au contrôleur (agissant en tant que client) d'accepter les communications de ce serveur.
+Si le contrôleur rejette une connexion parce qu'il ne peut pas valider la chaîne de confiance d'un serveur réseau, vous pouvez importer un certificat depuis la page Certificats de confiance qui permet au contrôleur (agissant en tant que client) d'accepter les communications provenant de ce serveur.
 
 .Avant de commencer
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
@@ -20,11 +20,10 @@ Si le contrôleur rejette une connexion parce qu'il ne peut pas valider la chaî
 
 
 .Description de la tâche
-L'importation de certificats à partir de l'onglet approuvé peut être nécessaire si vous souhaitez autoriser un autre serveur à contacter les contrôleurs (par exemple, un serveur LDAP ou un serveur syslog utilisant TLS).
+L'importation de certificats depuis la page des certificats de confiance peut être nécessaire si vous souhaitez autoriser un autre serveur à contacter les contrôleurs (par exemple, un serveur LDAP ou un serveur syslog utilisant TLS).
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu:Settings[Certificates].
-. Dans l'onglet approuvé, sélectionnez *Importer*.
+. Dans le panneau de gauche, sélectionnez menu : Certificates [Trusted certificates], puis sélectionnez *Import*.
 +
 Une boîte de dialogue s'ouvre pour importer les fichiers de certificats approuvés.
 

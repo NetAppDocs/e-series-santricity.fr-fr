@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-is-auto-negotiation]]
 == Qu'est-ce que la négociation automatique ?
 
 La négociation automatique est la capacité d'une interface réseau à coordonner automatiquement ses propres paramètres de connexion (vitesse et duplex) avec une autre interface réseau.
@@ -29,6 +30,7 @@ Si la négociation automatique échoue, le contrôleur tente d'établir une conn
 ====
 
 
+[[what-is-ipv6-stateless-address-auto-configuration]]
 == Qu'est-ce que IPv6 sans état prend en charge la configuration automatique ?
 
 Grâce à la configuration automatique sans état, les hôtes ne peuvent obtenir d'adresses ni d'autres informations de configuration à partir d'un serveur.
@@ -49,12 +51,14 @@ Les périphériques effectuent ces étapes lors de l'utilisation d'une configura
 
 
 
+[[which-do-i-choose-dhcp-or-manual-configuration]]
 == Que dois-je choisir : DHCP ou configuration manuelle ?
 
 La méthode par défaut de configuration réseau est le protocole DHCP (Dynamic Host Configuration Protocol). Utilisez toujours cette option à moins que votre réseau ne dispose d'aucun serveur DHCP.
 
 
 
+[[what-is-a-dhcp-server]]
 == Qu'est-ce qu'un serveur DHCP ?
 
 Le protocole DHCP (Dynamic Host Configuration Protocol) automatise la tâche d'attribution d'une adresse IP (Internet Protocol).
@@ -65,6 +69,7 @@ Sans DHCP, un administrateur réseau saisit ces adresses IP manuellement. Avec D
 
 
 
+[[how-do-i-configure-my-dhcp-server]]
 == Comment configurer mon serveur DHCP ?
 
 Vous devez configurer un serveur DHCP (Dynamic Host Configuration Protocol) pour utiliser des adresses IP (Internet Protocol) statiques pour les contrôleurs de votre matrice de stockage.
@@ -75,6 +80,7 @@ Pour plus d'informations sur l'attribution d'adresses statiques, reportez-vous �
 
 
 
+[[why-do-i-need-to-change-the-controller-network-configuration]]
 == Pourquoi dois-je modifier la configuration du réseau du contrôleur ?
 
 Vous devez définir la configuration réseau de chaque contrôleur (son adresse IP (Internet Protocol), le masque de sous-réseau (masque de sous-réseau) et la passerelle), lorsque vous utilisez la gestion hors bande.
@@ -83,6 +89,7 @@ Vous pouvez définir la configuration du réseau à l'aide d'un serveur DHCP (Dy
 
 
 
+[[where-do-i-get-the-network-configuration]]
 == Où puis-je obtenir la configuration réseau ?
 
 Vous pouvez obtenir l'adresse IP (Internet Protocol), le masque de sous-réseau (masque de sous-réseau) et les informations de passerelle de votre administrateur réseau.
@@ -91,6 +98,7 @@ Vous avez besoin de ces informations lorsque vous configurez des ports sur les c
 
 
 
+[[what-are-icmp-ping-responses]]
 == Que sont les réponses PING ICMP ?
 
 Le protocole ICMP (Internet Control message Protocol) est l'un des protocoles de la suite TCP/IP.
@@ -99,6 +107,7 @@ Le `ICMP echo request` et le(`ICMP echo reply` les messages sont généralement 
 
 
 
+[[when-should-i-refresh-the-port-configuration]]
 == Quand dois-je actualiser la configuration des ports ?
 
 Actualisez le serveur DHCP chaque fois que le serveur est modifié ou mis à niveau, et les informations DHCP relatives à la matrice de stockage actuelle et à la matrice de stockage que vous souhaitez utiliser ont changé.
@@ -112,6 +121,7 @@ L'actualisation d'une configuration de port est destructive pour toutes les conn
 ====
 
 
+[[what-should-i-do-after-configuring-the-management-ports]]
 == Que dois-je faire après avoir configuré les ports de gestion ?
 
 Si vous avez modifié l'adresse IP de la baie de stockage, vous pouvez mettre à jour la vue de la baie globale dans SANtricity Unified Manager.
@@ -122,6 +132,7 @@ Si vous utilisez toujours SANtricity Storage Manager, accédez à la fenêtre de
 
 
 
+[[why-is-the-storage-system-in-non-optimal-mode]]
 == Pourquoi le système de stockage est-il en mode non optimal ?
 
 Un système de stockage en mode non optimal est dû à un état de configuration du système non valide. Malgré cet état, l'accès E/S normal aux volumes existants est entièrement pris en charge. Cependant, SANtricity System Manager interdit certaines opérations.

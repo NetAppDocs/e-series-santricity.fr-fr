@@ -14,20 +14,16 @@ summary: 'Vous pouvez afficher l"état et les paramètres des lecteurs, tels que
 Vous pouvez afficher l'état et les paramètres des lecteurs, tels que le type de support, le type d'interface et la capacité.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les contrôleurs, cliquez sur l'onglet *lecteurs*.
-+
-Le graphique change pour afficher les disques au lieu des contrôleurs.
-
+. Dans le panneau de gauche, sélectionnez menu : Hardware[Drives].
 . Sélectionnez le lecteur pour lequel vous souhaitez afficher l'état et les paramètres.
 +
 Le menu contextuel du lecteur s'ouvre.
 
 . Sélectionnez *Paramètres d'affichage*.
 +
-La boîte de dialogue Paramètres du lecteur s'ouvre.
+Le panneau des paramètres du lecteur s'ouvre.
 
-. Pour afficher tous les paramètres, cliquez sur *Afficher plus de paramètres* dans le coin supérieur droit de la boîte de dialogue.
+. Pour afficher tous les paramètres, faites défiler le panneau des paramètres du lecteur.
 +
 .Détails du champ
 [%collapsible]

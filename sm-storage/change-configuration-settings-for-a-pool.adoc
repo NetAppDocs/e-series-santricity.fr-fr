@@ -24,7 +24,7 @@ Vous ne pouvez pas modifier le niveau RAID d'un pool via l'interface System Mana
 ====
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
-. Sélectionnez le pool que vous souhaitez modifier, puis cliquez sur l’icône de menu : ellipsis icon[Edit Settings].
+. Repérez le pool que vous souhaitez modifier, puis cliquez sur l’icône menu:ellipsis icon[Edit Settings].
 +
 La fenêtre Modifier les paramètres du pool apparaît.
 
@@ -50,7 +50,7 @@ Alertes de capacité
  a| 
 Vous pouvez envoyer des notifications d'alerte lorsque la capacité disponible dans un pool atteint ou dépasse un seuil spécifié. Lorsque les données stockées dans le pool dépassent le seuil spécifié, System Manager envoie un message qui vous permet d'ajouter de l'espace de stockage ou de supprimer des objets inutiles.
 
-Les alertes s'affichent dans la zone Notifications du tableau de bord et peuvent être envoyées par e-mail et par des messages d'interruption SNMP à partir du serveur.
+Les alertes sont affichées dans la zone Notifications, accessible via l'icône de cloche située dans le coin supérieur de la fenêtre, et peuvent être envoyées par le serveur aux administrateurs par e-mail et par messages SNMP trap.
 
 Vous pouvez définir les alertes de capacité suivantes :
 

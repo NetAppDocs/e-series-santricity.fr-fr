@@ -20,6 +20,7 @@ Cette fonctionnalité n'est pas disponible sur le système de stockage EF80, EF5
 ====
 
 
+[[what-is-synchronous-mirroring]]
 == Qu'est-ce que la mise en miroir synchrone ?
 
 _Synchronous Mirroring_ réplique les volumes de données en temps réel pour assurer une disponibilité continue. Les contrôleurs de baies de stockage gèrent la mise en miroir, qui est transparente pour les machines hôtes et les applications logicielles.
@@ -37,6 +38,7 @@ En savoir plus :
 
 
 
+[[how-do-i-configure-synchronous-mirroring]]
 == Comment configurer la mise en miroir synchrone ?
 
 Vous devez utiliser l'interface Unified Manager pour effectuer la configuration initiale de mise en miroir entre les baies. Une fois configuré, vous pouvez gérer les paires en miroir dans System Manager.
@@ -50,6 +52,7 @@ En savoir plus :
 
 
 
+[[related-information]]
 == Informations associées
 
 En savoir plus sur les concepts liés à la mise en miroir synchrone :

@@ -16,6 +16,7 @@ Vous pouvez configurer SANtricity System Manager pour certains paramètres gén�
 
 
 
+[[what-settings-can-i-configure]]
 == Quels paramètres puis-je configurer ?
 
 Les paramètres de la matrice sont les suivants :
@@ -28,6 +29,7 @@ Les paramètres de la matrice sont les suivants :
 
 
 
+[[related-tasks]]
 == Tâches associées
 
 En savoir plus sur les tâches liées aux paramètres système :

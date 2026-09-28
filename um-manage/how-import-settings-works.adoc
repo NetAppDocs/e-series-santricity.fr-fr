@@ -15,6 +15,7 @@ SANtricity Unified Manager permet d'importer les paramètres d'une baie de stock
 
 
 
+[[settings-available-for-import]]
 == Paramètres disponibles pour l'importation
 
 Les configurations suivantes peuvent être importées dans plusieurs baies :
@@ -40,6 +41,7 @@ Les configurations suivantes peuvent être importées dans plusieurs baies :
 
 
 
+[[configuration-workflow]]
 == Flux de travail de configuration
 
 Pour importer des paramètres, suivez ce flux de travail :

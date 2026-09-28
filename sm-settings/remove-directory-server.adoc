@@ -2,7 +2,7 @@
 permalink: sm-settings/remove-directory-server.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
-summary: 'Pour interrompre la connexion entre un serveur d"annuaire et la matrice de stockage, vous pouvez supprimer les informations sur le serveur de la page gestion des accès. Vous pouvez effectuer cette tâche si vous avez configuré un nouveau serveur, puis que vous souhaitez supprimer l"ancien serveur.' 
+summary: 'Pour rompre la connexion entre un serveur d"annuaire et la baie de stockage, vous pouvez supprimer les informations du serveur depuis la page Services d"annuaire. Vous pourriez vouloir effectuer cette opération si vous avez configuré un nouveau serveur, puis souhaitez supprimer l"ancien.' 
 ---
 = Supprimer le serveur d'annuaire dans SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Pour interrompre la connexion entre un serveur d"annuaire et la matric
 
 
 [role="lead"]
-Pour interrompre la connexion entre un serveur d'annuaire et la matrice de stockage, vous pouvez supprimer les informations sur le serveur de la page gestion des accès. Vous pouvez effectuer cette tâche si vous avez configuré un nouveau serveur, puis que vous souhaitez supprimer l'ancien serveur.
+Pour rompre la connexion entre un serveur d'annuaire et la baie de stockage, vous pouvez supprimer les informations du serveur depuis la page Services d'annuaire. Vous pourriez vouloir effectuer cette opération si vous avez configuré un nouveau serveur, puis souhaitez supprimer l'ancien.
 
 .Avant de commencer
 Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
@@ -21,8 +21,7 @@ Vous devez être connecté avec un profil utilisateur qui inclut les autorisatio
 Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Settings [Access Management].
-. Sélectionnez l'onglet *Services Annuaire*.
+. Dans le panneau de gauche, sélectionnez menu : Authentication [Directory services].
 . Dans la liste, sélectionnez le serveur de répertoire à supprimer.
 . Cliquez sur *Supprimer*.
 +

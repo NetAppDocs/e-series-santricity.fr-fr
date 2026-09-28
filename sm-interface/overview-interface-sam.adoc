@@ -15,9 +15,10 @@ SANtricity System Manager est une interface web qui vous permet de gérer une ba
 
 
 
-== Page d'accueil
+[[dashboard]]
+== Tableau de bord
 
-La page d'accueil offre un tableau de bord pour la gestion quotidienne de votre matrice de stockage. Lorsque vous vous connectez à System Manager, la page d'accueil est le premier écran affiché.
+Le tableau de bord offre une vue d'ensemble de la gestion quotidienne de votre baie de stockage. Lorsque vous vous connectez à System Manager, le tableau de bord est le premier écran affiché.
 
 La vue du tableau de bord comprend trois zones récapitulatives qui contiennent des informations clés sur l'état et la santé de votre baie de stockage. Vous pouvez trouver plus d'informations dans la zone récapitulative.
 
@@ -48,18 +49,21 @@ La zone hiérarchie de stockage fournit une vue organisée des divers composants
 |===
 
 
+[[notifications-area]]
 == Zone de notifications
 
 La zone de notifications est accessible via l'icône de cloche située dans le coin supérieur de la fenêtre. La zone de notifications affiche les notifications de problème indiquant l'état de la baie de stockage et de ses composants. De plus, cette section affiche des alertes automatiques pouvant vous aider à résoudre les problèmes avant qu'ils n'affectent d'autres zones de votre environnement de stockage.
 
 
 
+[[interface-settings]]
 == Paramètres d'interface
 
 Vous pouvez modifier les préférences d'affichage et d'autres paramètres à partir de l'interface principale.
 
 
 
+[[user-logins-and-passwords]]
 == Identifiants de connexion et mots de passe des utilisateurs
 
 L'utilisateur actuellement connecté au système est affiché dans les paramètres utilisateur.

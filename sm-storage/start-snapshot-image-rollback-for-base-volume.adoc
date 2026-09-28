@@ -31,8 +31,7 @@ L'hôte peut immédiatement accéder au nouveau volume de base redéployé, mais
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Snapshots].
-. Sélectionnez l'onglet *Images snapshot*.
+. Dans le panneau de gauche, sélectionnez menu : Snapshots [Snapshot images].
 . Sélectionnez l'image snapshot, puis sélectionnez menu:Restauration[Démarrer].
 +
 La boîte de dialogue confirmer la restauration s'affiche.
@@ -60,6 +59,6 @@ System Manager effectue les actions suivantes :
 
 
 .Une fois que vous avez terminé
-Sélectionnez le menu : Storage [Operations in Progress] pour afficher la progression de l’opération de rollback.
+Sélectionnez le menu : Monitoring [Operations in progress] pour afficher la progression de l’opération de rollback.
 
 Si l'opération de restauration n'a pas réussi, l'opération s'interrompt. Vous pouvez reprendre l'opération interrompue et, si l'opération n'a toujours pas abouti, suivre la procédure Recovery Guru pour corriger le problème ou contacter le support technique.

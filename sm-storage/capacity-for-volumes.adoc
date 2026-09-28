@@ -16,6 +16,7 @@ Les lecteurs de votre matrice de stockage fournissent la capacité de stockage p
 
 
 
+[[using-capacity-to-create-and-expand-volumes]]
 == Utilisation de la capacité pour créer et développer des volumes
 
 Vous pouvez créer des volumes à partir de la capacité non affectée ou de la capacité disponible dans un pool ou un groupe de volumes.
@@ -28,6 +29,7 @@ Après avoir augmenté la capacité du volume, vous devez augmenter manuellement
 
 
 
+[[capacity-types-for-thick-volumes-and-thin-volumes]]
 == Types de capacité pour les volumes non fin et les volumes non fin
 
 Vous pouvez créer des volumes non fin ou non épais. Les capacités signalées et les capacités allouées sont identiques pour les volumes non volumineux, mais sont différentes pour les volumes fins.
@@ -49,6 +51,7 @@ SANtricity System Manager ne permet pas de créer des volumes fins. Si vous souh
 ====
 
 
+[[capacity-limits-for-thick-volumes]]
 == Des limites de capacité pour les volumes non volumineux
 
 La capacité minimale d'un thick volume est de 1 Mio, et la capacité maximale est déterminée par le nombre et la capacité des disques du pool ou du groupe de volumes.
@@ -65,6 +68,7 @@ Lorsque vous créez un volume, une certaine capacité supplémentaire est pré-a
 
 
 
+[[capacity-limits-for-thin-volumes]]
 == Limites de capacité pour les volumes fins
 
 Vous pouvez créer des volumes fins disposant d'une capacité importante indiquée et d'une capacité allouée relativement faible, ce qui est intéressant en termes d'utilisation et d'efficacité du stockage. Les volumes fins peuvent vous aider à simplifier l'administration du stockage, car la capacité allouée peut augmenter en fonction de l'évolution des besoins des applications, sans interrompre l'application, ce qui permet une meilleure utilisation du stockage.
@@ -99,6 +103,6 @@ Pour un volume fin, si la capacité maximale rapportée de 256 Tio a été attei
 
 Le système étend automatiquement la capacité allouée en fonction de la limite de capacité allouée. La limite de capacité allouée vous permet de limiter la croissance automatique du volume fin en dessous de la capacité indiquée. Lorsque le volume de données écrites se rapproche de la capacité allouée, vous pouvez modifier la limite de capacité allouée.
 
-Pour modifier la limite de capacité allouée, sélectionnez menu:Storage[volumes > onglet Thin Volume Monitoring > change Limit].
+Pour modifier la limite de capacité allouée, sélectionnez le menu : Storage [Thin volume monitoring > Change Limit].
 
 System Manager n'alloue pas la capacité pleine lors de la création d'un volume fin, cette capacité disponible insuffisante peut exister dans le pool. Un espace insuffisant peut bloquer les écritures dans le pool, non seulement pour les volumes fins, mais également pour d'autres opérations nécessitant de la capacité du pool (par exemple, des images de snapshot ou des volumes de snapshot). Toutefois, vous pouvez toujours effectuer des opérations de lecture à partir du pool. Si cette situation se produit, un avertissement de seuil d'alerte s'affiche.

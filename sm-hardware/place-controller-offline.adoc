@@ -27,11 +27,7 @@ Ne mettez pas un contrôleur hors ligne à moins d'en recevoir l'instruction du 
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez *Hardware*.
-. Si le graphique montre les lecteurs, cliquez sur l'onglet *contrôleurs et composants*.
-+
-Le graphique change pour afficher les contrôleurs au lieu des disques.
-
+. Dans le panneau de gauche, sélectionnez menu:Hardware[Controllers and components].
 . Cliquez sur le contrôleur que vous souhaitez placer hors ligne.
 +
 Le menu contextuel du contrôleur s'affiche.

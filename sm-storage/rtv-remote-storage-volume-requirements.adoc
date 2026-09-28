@@ -15,6 +15,7 @@ Les volumes utilisés pour les importations doivent satisfaire aux exigences en 
 
 
 
+[[remote-storage-volume]]
 == Volume de stockage distant
 
 Le volume source d'une importation est appelé « volume de stockage distant ». Ce volume doit répondre aux critères suivants :
@@ -41,6 +42,7 @@ Chaque volume de stockage distant est associé à un seul objet de stockage dist
 
 
 
+[[target-volume-candidates]]
 == Candidats au volume cible
 
 Le volume cible correspond au volume de destination sur le système E-Series local. Le volume de destination doit répondre aux critères suivants :

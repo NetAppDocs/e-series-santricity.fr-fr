@@ -15,6 +15,7 @@ Vous pouvez activer les volumes pour utiliser la fonction Data assurance (DA) et
 
 
 
+[[data-assurance]]
 == Data assurance
 
 Data assurance (DA) implémente la norme T10PI, qui améliore l'intégrité des données en vérifiant et en corrigeant les erreurs pouvant se produire lors du transfert des données sur le chemin d'E/S. L'utilisation classique de la fonctionnalité Data assurance permet de vérifier la partie du chemin d'E/S entre les contrôleurs et les disques. Les fonctionnalités DE DA sont présentées au niveau du pool et du groupe de volumes.
@@ -23,24 +24,28 @@ Lorsque cette fonctionnalité est activée, la matrice de stockage ajoute des co
 
 
 
+[[drive-security]]
 == Sécurité du lecteur
 
 La sécurité du lecteur est une fonction qui empêche tout accès non autorisé aux données sur les disques sécurisés lorsqu'ils sont retirés de la matrice de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou des disques certifiés conformes aux normes fédérales de traitement des informations 140-2 de niveau 2 (disques FIPS).
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 === Fonctionnement de la sécurité du lecteur au niveau du lecteur
 
 Un disque sécurisé, FDE ou FIPS, chiffre les données lors des écritures et déchiffre les données pendant les lectures. Ce cryptage et ce décryptage n'ont aucune incidence sur les performances ou le flux de travail de l'utilisateur. Chaque disque dispose de sa propre clé de chiffrement unique, qui ne peut jamais être transférée depuis le disque.
 
 
 
+[[how-drive-security-works-at-the-volume-level]]
 === Fonctionnement de la sécurité du lecteur au niveau du volume
 
 Lorsque vous créez un pool ou un groupe de volumes à partir de disques sécurisés, vous pouvez également activer la sécurité des disques pour ces pools ou groupes de volumes. L'option Drive Security (sécurité du lecteur) assure la sécurité des lecteurs et des groupes de volumes et pools associés. Un pool ou un groupe de volumes peut contenir à la fois des disques sécurisés et non sécurisés, mais tous les disques doivent être sécurisés pour utiliser leurs fonctionnalités de chiffrement.
 
 
 
+[[how-to-implement-drive-security]]
 === Comment mettre en œuvre la sécurité du lecteur
 
 Pour mettre en œuvre la sécurité des lecteurs, procédez comme suit.

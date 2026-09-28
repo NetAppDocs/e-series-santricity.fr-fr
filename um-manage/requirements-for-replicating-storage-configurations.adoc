@@ -15,6 +15,7 @@ Avant d'importer une configuration de stockage d'une matrice de stockage à une 
 
 
 
+[[shelves]]
 == Tiroirs
 
 * Les tiroirs où les contrôleurs résident doivent être identiques sur les baies source et cible.
@@ -24,9 +25,10 @@ Avant d'importer une configuration de stockage d'une matrice de stockage à une 
 
 
 
+[[controllers]]
 == Contrôleurs
 
-* Le type de contrôleur peut être différent entre les baies source et cible (par exemple, importation d'un système E2800 vers un système E5700), mais le type de boîtier RBOD doit être identique.
+* Le type de contrôleur peut être différent entre les baies source et cible (par exemple, importation d'un EF300 vers un EF80), mais le type de boîtier RBOD doit être identique.
 * Les HIC, y compris les capacités DA de l'hôte, doivent être identiques sur les baies source et cible.
 * L'importation d'une configuration recto-verso vers une configuration recto-verso n'est pas prise en charge. Cependant, l'importation d'une configuration recto-verso est autorisée.
 * Les paramètres FDE ne sont pas inclus dans le processus d'importation.
@@ -34,6 +36,7 @@ Avant d'importer une configuration de stockage d'une matrice de stockage à une 
 
 
 
+[[status]]
 == État
 
 * Les baies cibles doivent être en état optimal.
@@ -42,6 +45,7 @@ Avant d'importer une configuration de stockage d'une matrice de stockage à une 
 
 
 
+[[storage]]
 == Stockage
 
 * La capacité du lecteur peut varier entre les matrices source et cible, tant que la capacité du volume sur la cible est supérieure à la source. (Il se peut qu'une baie cible dispose de lecteurs plus récents et de plus grande capacité qui ne soient pas entièrement configurés en volumes par l'opération de réplication.)

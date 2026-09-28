@@ -16,7 +16,7 @@ Vous pouvez importer la configuration de stockage d'une matrice de stockage vers
 
 .Avant de commencer
 * Le stockage est configuré dans SANtricity System Manager pour la baie de stockage que vous souhaitez utiliser comme source.
-* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:Paramètres[système > Enregistrer la configuration de la matrice de stockage]).
+* La configuration existante des baies de stockage cibles est sauvegardée dans System Manager (menu:System[Enregistrer la configuration de la baie de stockage]).
 * Les baies source et cible doivent répondre à ces exigences :
 +
 ** Les tiroirs où les contrôleurs résident doivent être identiques.

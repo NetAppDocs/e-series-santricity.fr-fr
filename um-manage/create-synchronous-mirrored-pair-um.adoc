@@ -46,6 +46,7 @@ Le processus de création de paires mises en miroir synchrones est une procédur
 
 
 
+[[step-1-select-the-primary-volume]]
 == Étape 1 : sélectionnez le volume principal
 
 Dans cette étape, vous sélectionnez le volume primaire à utiliser dans la relation miroir synchrone. Lorsque vous sélectionnez un volume primaire sur la matrice de stockage locale, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Le volume que vous sélectionnez conserve le rôle principal dans la relation miroir.
@@ -62,6 +63,7 @@ L'assistant Créer une paire symétrique synchrone s'ouvre.
 
 
 
+[[step-2-select-the-secondary-volume]]
 == Étape 2 : sélectionnez le volume secondaire
 
 Dans cette étape, vous sélectionnez le volume secondaire à utiliser dans la relation miroir. Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste. Le volume que vous sélectionnez tiendra le rôle secondaire dans la relation miroir.
@@ -91,6 +93,7 @@ Si un volume secondaire est choisi avec une capacité supérieure à celle du vo
 
 
 
+[[step-3-select-synchronization-settings]]
 == Étape 3 : sélectionnez les paramètres de synchronisation
 
 Dans cette étape, vous sélectionnez les paramètres qui déterminent comment les données sont synchronisées après une interruption de communication. Vous pouvez définir la priorité à laquelle le propriétaire du contrôleur du volume principal resynchronise les données sur le volume secondaire après une interruption de communication. Vous devez également sélectionner la règle de resynchronisation manuelle ou automatique.
@@ -101,7 +104,7 @@ Dans cette étape, vous sélectionnez les paramètres qui déterminent comment l
 La priorité de synchronisation détermine la quantité de ressources système utilisées pour terminer la synchronisation initiale et l'opération de resynchronisation après une interruption de communication par rapport aux demandes d'E/S de service.
 
 +
-La priorité définie dans cette boîte de dialogue s'applique à la fois au volume primaire et au volume secondaire. Vous pouvez modifier ultérieurement le débit du volume primaire en accédant à System Manager et en sélectionnant menu :stockage[mise en miroir synchrone > plus > Modifier les paramètres].
+La priorité définie dans cette boîte de dialogue s'applique à la fois au volume principal et au volume secondaire. Vous pouvez modifier ultérieurement le débit du volume principal en accédant à System Manager et en sélectionnant menu : Mirroring [Synchronous mirroring > ellipsis icon > Edit Settings].
 
 +
 Il existe cinq taux de priorité de synchronisation :
@@ -122,7 +125,7 @@ Si la priorité de synchronisation est définie sur le taux le plus bas, l'activ
 ** *Manuel* (option recommandée) -- sélectionnez cette option pour que la synchronisation puisse être reprise manuellement après la restauration de la communication sur une paire symétrique. Cette option offre la meilleure possibilité de récupérer des données.
 ** *Automatique* -- sélectionnez cette option pour démarrer la resynchronisation automatiquement après la restauration de la communication vers une paire symétrique.
 +
-Pour reprendre la synchronisation manuellement, accédez à System Manager et sélectionnez menu:Storage[Synchronous Mirroring], mettez en surbrillance la paire symétrique dans le tableau et sélectionnez *reprendre* sous *plus*.
+Pour reprendre manuellement la synchronisation, accédez à System Manager et sélectionnez menu : Mirroring [Synchronous mirroring], mettez en surbrillance la paire mise en miroir dans le tableau et sélectionnez *Resume* sous *More*.
 
 
 
@@ -145,4 +148,4 @@ La capacité de chaque volume est de 128 Mio. Cependant, si les volumes sont pla
 
 
 .Une fois que vous avez terminé
-Accédez à System Manager et au menu : Storage [Operations in Progress] pour consulter la progression de l’opération de mise en miroir synchrone. Cette opération peut être longue et pourrait affecter les performances du système.
+Accédez au Gestionnaire système et au menu : Surveillance [Opérations en cours] pour consulter la progression de l’opération de mise en miroir synchrone. Cette opération peut être longue et pourrait affecter les performances du système.

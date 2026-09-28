@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-do-i-need-to-know-before-creating-a-security-key]]
 == Que dois-je savoir avant de créer une clé de sécurité ?
 
 Une clé de sécurité est partagée par les contrôleurs et les disques sécurisés au sein d'une matrice de stockage. Si un disque sécurisé est retiré de la matrice de stockage, la clé de sécurité protège les données contre tout accès non autorisé.
@@ -28,6 +29,7 @@ Vous pouvez créer et gérer des clés de sécurité en utilisant l'une des mét
 
 
 
+[[internal-key-management]]
 === Gestion interne des clés
 
 Les clés internes sont conservées et « masquées » dans un emplacement non accessible sur la mémoire persistante du contrôleur. Avant de créer une clé de sécurité interne, vous devez procéder comme suit :
@@ -40,6 +42,7 @@ Vous pouvez ensuite créer une clé de sécurité interne, qui implique la défi
 
 
 
+[[external-key-management]]
 === Gestion externe des clés
 
 Les clés externes sont conservées sur un serveur distinct de gestion des clés à l'aide d'un protocole KMIP (Key Management Interoperability Protocol). Avant de créer une clé de sécurité externe, vous devez effectuer les opérations suivantes :
@@ -48,7 +51,7 @@ Les clés externes sont conservées sur un serveur distinct de gestion des clés
 . Assurez-vous que la fonction sécurité du lecteur est activée. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
 . Obtenir un fichier de certificat client signé. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs requêtes KMIP.
 +
-.. Tout d'abord, vous remplissez et téléchargez une requête client de signature de certificat (CSR). Accédez au menu:Paramètres[certificats > gestion des clés > CSR complète].
+.. Tout d'abord, vous complétez et téléchargez une demande de signature de certificat (CSR) client. Accédez au menu : Certificates [Key management certificates], puis sélectionnez *Complete CSR*.
 .. Vous demandez ensuite un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés. (Vous pouvez également créer et télécharger un certificat client à partir du serveur de gestion des clés à l'aide du fichier CSR téléchargé.)
 .. Une fois que vous avez un fichier de certificat client, copiez-le vers l'hôte sur lequel vous accédez à System Manager.
 
@@ -60,12 +63,14 @@ Vous pouvez ensuite créer une clé externe qui implique de définir l'adresse I
 
 
 
+[[why-do-i-need-to-define-a-pass-phrase]]
 == Pourquoi dois-je définir une phrase de passe ?
 
 La phrase de passe est utilisée pour crypter et décrypter le fichier de clé de sécurité stocké sur le client de gestion local. Sans la phrase de passe, la clé de sécurité ne peut pas être décryptée et utilisée pour déverrouiller les données à partir d'un lecteur compatible avec la sécurité si elle est réinstallée dans une autre matrice de stockage.
 
 
 
+[[why-is-it-important-to-record-security-key-information]]
 == Pourquoi est-il important d'enregistrer les informations relatives aux clés de sécurité ?
 
 Si vous perdez les informations relatives aux clés de sécurité et que vous ne disposez pas d'une sauvegarde, vous risquez de perdre des données en déplaçant les disques sécurisés ou en mettant à niveau un contrôleur. Vous avez besoin de la clé de sécurité pour déverrouiller les données des lecteurs.
@@ -74,6 +79,7 @@ Assurez-vous d'enregistrer l'identifiant de clé de sécurité, la phrase de pas
 
 
 
+[[what-do-i-need-to-know-before-backing-up-a-security-key]]
 == Que dois-je savoir avant de sauvegarder une clé de sécurité ?
 
 Si votre clé de sécurité d'origine est corrompue et que vous n'avez pas de sauvegarde, vous perdrez l'accès aux données des disques s'ils sont migrés d'une matrice de stockage à une autre.
@@ -99,6 +105,7 @@ La phrase de passe pour la sécurité des disques ne doit pas être confondue av
 
 
 
+[[what-do-i-need-to-know-before-unlocking-secure-drives]]
 == Que dois-je savoir avant de déverrouiller les lecteurs sécurisés ?
 
 Pour déverrouiller les données d'un lecteur sécurisé, vous devez importer sa clé de sécurité.
@@ -113,14 +120,16 @@ Avant de déverrouiller des lecteurs sécurisés, gardez les consignes suivantes
 
 
 
+[[what-is-readwrite-accessibility]]
 == Qu'est-ce que l'accessibilité en lecture/écriture ?
 
 La fenêtre Drive Settings (Paramètres du lecteur) contient des informations sur les attributs Drive Security (sécurité du lecteur). « Accessible en lecture/écriture » est l'un des attributs qui s'affiche si les données d'un lecteur ont été verrouillées.
 
-Pour afficher les attributs de sécurité du lecteur, accédez à la page matériel. Sélectionnez un lecteur, cliquez sur *Afficher les paramètres*, puis sur *Afficher plus de paramètres*. En bas de la page, la valeur de l'attribut accessible en lecture/écriture est *Oui* lorsque le lecteur est déverrouillé. La valeur de l'attribut accessible en lecture/écriture est *non, clé de sécurité non valide* lorsque le lecteur est verrouillé. Vous pouvez déverrouiller un lecteur sécurisé en important une clé de sécurité (allez dans le menu Paramètres[système > déverrouiller les lecteurs sécurisés]).
+Pour afficher les attributs de sécurité du lecteur, accédez à la page Matériel. Sélectionnez un lecteur, cliquez sur *Afficher les paramètres*, puis sur *Afficher plus de paramètres*. En bas de la page, la valeur de l'attribut Accès en lecture/écriture est *Oui* lorsque le lecteur est déverrouillé. La valeur de l'attribut Accès en lecture/écriture est *Non, clé de sécurité invalide* lorsque le lecteur est verrouillé. Vous pouvez déverrouiller un lecteur sécurisé en important une clé de sécurité (accédez à menu:System[Déverrouiller les lecteurs sécurisés]).
 
 
 
+[[what-do-i-need-to-know-about-validating-the-security-key]]
 == Que dois-je savoir sur la validation de la clé de sécurité ?
 
 Après avoir créé une clé de sécurité, vous devez valider le fichier de clé pour vous assurer qu'il n'est pas corrompu.
@@ -134,6 +143,7 @@ Si la validation échoue, procédez comme suit :
 
 
 
+[[what-is-the-difference-between-internal-security-key-and-external-security-key-management]]
 == Quelle est la différence entre une clé de sécurité interne et une gestion externe des clés de sécurité ?
 
 Lorsque vous implémentez la fonction sécurité du lecteur, vous pouvez utiliser une clé de sécurité interne ou une clé de sécurité externe pour verrouiller les données lorsqu'un disque sécurisé est retiré de la matrice de stockage.

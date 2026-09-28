@@ -15,6 +15,7 @@ La création d'un hôte est l'une des étapes requises pour permettre à la baie
 
 
 
+[[manual-creation]]
 == Création manuelle
 
 La création manuelle d'hôte vous permet de vous assurer que les identificateurs de port d'hôte détectés par les contrôleurs de matrice de stockage sont correctement associés aux hôtes.

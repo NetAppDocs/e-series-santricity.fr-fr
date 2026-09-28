@@ -15,8 +15,7 @@ summary: 'Vous pouvez modifier le nom d"une charge de travail et afficher son ty
 Vous pouvez modifier le nom d'une charge de travail et afficher son type d'application associé. Modifiez le nom d'une charge de travail lorsque le nom actuel n'a plus de signification ni d'objet.
 
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu : Storage[Volumes].
-. Sélectionnez l’onglet *Applications et charges de travail*.
+. Dans le panneau de gauche, sélectionnez menu : Storage [Applications and workloads].
 +
 La vue Applications et charges de travail s’affiche.
 

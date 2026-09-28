@@ -28,6 +28,7 @@ Passez en revue les informations suivantes concernant l'opération de changement
 
 
 
+[[force-role-change]]
 == Forcer le changement de rôle
 
 Vous pouvez forcer un changement de rôle entre les volumes d'une paire en miroir lorsqu'un problème de communication entre la matrice de stockage locale et la matrice de stockage distante empêche la promotion du volume secondaire ou la rétrogradation du volume primaire.
@@ -41,6 +42,7 @@ Lorsque la matrice de stockage distante a été restaurée et que tout problème
 ====
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Quand une promotion forcée est-elle autorisée et non autorisée ?
 
 La promotion forcée d'un volume dans une paire symétrique n'est pas autorisée dans les conditions suivantes :
@@ -51,6 +53,7 @@ La promotion forcée d'un volume dans une paire symétrique n'est pas autorisée
 
 
 
+[[role-change-in-progress-state]]
 == Changement de rôle en cours
 
 Si deux baies de stockage dans une configuration de mise en miroir sont déconnectées, et que le volume principal d'une paire en miroir est réduit en force à un rôle secondaire, et que le volume secondaire d'une paire en miroir est promu par la force vers un rôle principal, Une fois la communication restaurée, les volumes des deux baies de stockage sont placés à l'état role-change-in-Progress.

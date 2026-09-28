@@ -35,7 +35,7 @@ Ces actions incluent les écritures RAID 5 et RAID 6 qui auraient réussi avant 
 
 ====
 .Étapes
-. Dans le panneau de gauche, sélectionnez menu :Support[Support Center > Diagnostics] onglet.
+. Dans le panneau de gauche, sélectionnez menu:Support[Diagnostics].
 . Sélectionnez *Afficher/Effacer les secteurs illisibles*.
 . Pour enregistrer le journal secteurs illisibles :
 +

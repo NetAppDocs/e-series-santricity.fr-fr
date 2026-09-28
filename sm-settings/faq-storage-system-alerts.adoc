@@ -16,6 +16,7 @@ Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une ques
 
 
 
+[[what-if-alerts-are-disabled]]
 == Que se passe-t-il si les alertes sont désactivées ?
 
 Si vous souhaitez que les administrateurs reçoivent des notifications concernant les événements importants qui se produisent dans la matrice de stockage, vous devez configurer une méthode d'alerte.
@@ -24,14 +25,16 @@ Pour les baies de stockage gérées avec SANtricity System Manager, vous configu
 
 
 
+[[how-do-i-configure-snmp-or-syslog-alerts]]
 == Comment configurer les alertes SNMP ou syslog ?
 
 En plus des alertes par e-mail, vous pouvez configurer les alertes pour qu'elles soient envoyées par des traps SNMP (simple Network Management Protocol) ou par des messages syslog.
 
-Pour configurer des alertes SNMP ou syslog, accédez au menu:Paramètres[alertes].
+Pour configurer les alertes SNMP ou syslog, accédez au menu :Alerts[].
 
 
 
+[[why-are-timestamps-inconsistent-between-the-array-and-alerts]]
 == Pourquoi les horodatages sont-ils incohérents entre la baie et les alertes ?
 
 Lorsque la matrice de stockage envoie des alertes, elle ne corrige pas le fuseau horaire du serveur ou de l'hôte cible qui reçoit les alertes. À la place, la matrice de stockage utilise l'heure locale (GMT) pour créer l'horodatage utilisé pour l'enregistrement d'alerte. Par conséquent, vous pouvez constater des incohérences entre les horodatages de la baie de stockage et le serveur ou l'hôte recevant une alerte.

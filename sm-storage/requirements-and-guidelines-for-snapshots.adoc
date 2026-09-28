@@ -15,6 +15,7 @@ Lors de la création et de l'utilisation d'instantanés, vérifiez les exigences
 
 
 
+[[snapshot-images-and-snapshot-groups]]
 == Images Snapshot et groupes de snapshots
 
 * Chaque image snapshot est associée à un seul groupe de snapshots.
@@ -29,6 +30,7 @@ Vous pouvez consulter les groupes d'instantanés depuis la page Pools et groupes
 
 
 
+[[snapshot-consistency-group]]
 == Groupe de cohérence Snapshot
 
 * Un groupe de cohérence de snapshot contient un groupe de snapshots pour chaque volume membre du groupe de cohérence de snapshot.
@@ -39,6 +41,7 @@ Vous pouvez consulter les groupes d'instantanés depuis la page Pools et groupes
 
 
 
+[[base-volume]]
 == Volume de base
 
 * Un volume snapshot doit avoir les mêmes paramètres d'assurance des données (DA) et de sécurité que le volume de base associé.
@@ -49,6 +52,7 @@ Vous pouvez consulter les groupes d'instantanés depuis la page Pools et groupes
 
 
 
+[[reserved-capacity]]
 == Capacité réservée
 
 * La capacité réservée est associée à un seul volume de base.
@@ -58,6 +62,7 @@ Vous pouvez consulter les groupes d'instantanés depuis la page Pools et groupes
 
 
 
+[[pending-snapshot-images]]
 == Images de snapshot en attente
 
 La création d'images de snapshot peut rester à l'état en attente dans les conditions suivantes :
@@ -68,6 +73,7 @@ La création d'images de snapshot peut rester à l'état en attente dans les con
 
 
 
+[[maximum-number-of-snapshot-images]]
 == Nombre maximal d'images instantanées
 
 * Si un volume est membre d'un groupe de cohérence de snapshot, System Manager crée un groupe de snapshots pour ce volume membre. Ce groupe de snapshots compte pour le nombre maximal autorisé de groupes de snapshots par volume de base.
@@ -81,12 +87,14 @@ La création d'images de snapshot peut rester à l'état en attente dans les con
 
 
 
+[[auto-deletion]]
 == Suppression automatique
 
 Si le groupe de snapshots ou le groupe de cohérence Snapshot est activé pour la suppression automatique, System Manager supprime l'image Snapshot la plus ancienne lorsque le système en crée une nouvelle pour le groupe.
 
 
 
+[[rollback-operation]]
 == Opération de retour arrière
 
 * Vous ne pouvez pas effectuer les actions suivantes lorsqu'une opération de restauration est en cours :

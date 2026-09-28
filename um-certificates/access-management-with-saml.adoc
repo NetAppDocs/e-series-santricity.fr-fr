@@ -15,6 +15,7 @@ Pour Access Management, les administrateurs peuvent utiliser les fonctionnalité
 
 
 
+[[configuration-workflow]]
 == Flux de travail de configuration
 
 La configuration SAML fonctionne comme suit :
@@ -49,6 +50,7 @@ Une fois le langage SAML activé, vous ne pouvez pas le désactiver via l'interf
 
 
 
+[[management]]
 == Gestion
 
 Lorsque vous utilisez SAML pour l'authentification, les administrateurs peuvent effectuer les tâches de gestion suivantes :
@@ -59,6 +61,7 @@ Lorsque vous utilisez SAML pour l'authentification, les administrateurs peuvent 
 
 
 
+[[access-restrictions]]
 == Restrictions d'accès
 
 Lorsque SAML est activé, les utilisateurs ne peuvent pas détecter ou gérer le stockage de cette baie à partir de l'interface Storage Manager héritée.
