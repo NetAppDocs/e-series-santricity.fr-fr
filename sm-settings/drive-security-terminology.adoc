@@ -64,9 +64,6 @@ Disques sécurisés
 Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard), qui cryptent les données pendant les écritures et décomposent les données pendant les lectures. Ces lecteurs sont considérés comme sécurisés-_compatibles_ car ils peuvent être utilisés pour des raisons de sécurité supplémentaires à l'aide de la fonction sécurité des lecteurs. Si la fonction de sécurité des disques est activée pour les groupes de volumes et les pools utilisés avec ces disques, les lecteurs deviennent sécurisés --_Enabled_.
 
 
-NOTE: Il n'est pas possible de mélanger des disques FDE et FIPS au sein d'une même baie de stockage. Tous les disques sécurisés du système doivent être du même type.
-
-
 
  a| 
 Disques sécurisés

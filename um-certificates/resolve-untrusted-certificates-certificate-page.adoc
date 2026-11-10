@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, resolve, untrusted, certificates 
 summary: 'Des certificats non fiables se produisent lorsqu"une baie de stockage tente d"établir une connexion sécurisée à SANtricity Unified Manager, mais la connexion ne parvient pas à confirmer la sécurité.' 
 ---
-= Résoudre les certificats non fiables
+= Résoudre les certificats non approuvés dans SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

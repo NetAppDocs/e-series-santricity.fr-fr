@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, software, firmware, upgrade, errors 
 summary: Des erreurs peuvent se produire lors de la mise à niveau du logiciel du contrôleur ou de la mise à niveau du micrologiciel du lecteur. 
 ---
-= En savoir plus sur les erreurs de mise à niveau du logiciel et du micrologiciel SANtricity
+= Erreurs de mise à niveau des logiciels et des microprogrammes dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

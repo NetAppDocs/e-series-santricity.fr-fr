@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
 summary: 'Vous pouvez rétablir le certificat de gestion à l"état d"origine auto-signé en usine.' 
 ---
-= Réinitialisez les certificats de gestion
+= Réinitialiser les certificats de gestion dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

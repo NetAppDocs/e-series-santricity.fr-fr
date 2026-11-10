@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, settings 
 summary: 'Vous pouvez importer des paramètres d"une matrice de stockage à une autre, y compris des alertes, des AutoSupport et des services d"annuaire.' 
 ---
-= En savoir plus sur l'importation des paramètres de la baie de stockage dans SANtricity Unified Manager
+= Découvrez comment importer les paramètres dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -22,8 +22,8 @@ Vous pouvez importer des méthodes d'alerte, des configurations AutoSupport, des
 
 En savoir plus :
 
-* link:how-import-settings-works.html["Fonctionnement des paramètres d'importation"]
-* link:requirements-for-replicating-storage-configurations.html["Conditions requises pour la réplication des configurations de stockage"]
+* link:how-import-settings-works.html["Fonctionnement de la fonction Importer les paramètres"]
+* link:requirements-for-replicating-storage-configurations.html["Exigences de réplication de la configuration de stockage"]
 
 
 

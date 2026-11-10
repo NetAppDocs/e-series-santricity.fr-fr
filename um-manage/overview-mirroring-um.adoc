@@ -40,7 +40,7 @@ Vous configurez la mise en miroir synchrone ou asynchrone dans Unified Manager, 
 
 En savoir plus :
 
-* link:mirroring-configuration-workflow.html["Flux de travail de configuration de mise en miroir"]
+* link:mirroring-configuration-workflow.html["Flux de travail de configuration de la mise en miroir"]
 * link:requirements-for-using-mirroring.html["Conditions requises pour l'utilisation de la mise en miroir"]
 * link:create-asynchronous-mirrored-pair-um.html["Création d'une paire asynchrone en miroir"]
 * link:create-synchronous-mirrored-pair-um.html["Création d'une paire symétrique synchrone"]

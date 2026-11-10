@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, view, local, user, roles 
 summary: 'Dans l"onglet rôles d"utilisateur local, vous pouvez afficher les mappages des utilisateurs sur les rôles par défaut. Ces mappages font partie du RBAC (contrôle d"accès basé sur des rôles) appliqué dans le proxy de services Web pour SANtricity Unified Manager.' 
 ---
-= Afficher les rôles d'utilisateur local
+= Afficher les rôles des utilisateurs locaux dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

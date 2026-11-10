@@ -83,9 +83,6 @@ Indique si ce pool candidat est composé uniquement de disques sécurisés, qui 
 
 
 
-NOTE: Il n'est pas possible de mélanger des disques FDE et FIPS au sein d'une même baie de stockage. Tous les disques sécurisés du système doivent être du même type.
-
-
 
  a| 
 Activer la sécurité ?

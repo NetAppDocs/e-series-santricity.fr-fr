@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, view certificates 
 summary: 'Vous pouvez afficher les informations récapitulatives d"un certificat, y compris l"organisation utilisant le certificat, l"autorité qui a émis le certificat, la période de validité et les empreintes digitales (identifiants uniques).' 
 ---
-= Afficher les certificats
+= Consultez les certificats dans SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

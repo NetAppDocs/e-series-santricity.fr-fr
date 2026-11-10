@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question. 
 ---
-= FAQ sur la mise en miroir synchronisée pour SANtricity System Manager
+= FAQ sur la mise en miroir synchrone pour SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

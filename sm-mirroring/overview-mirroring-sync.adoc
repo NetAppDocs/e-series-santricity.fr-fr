@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
 summary: La fonctionnalité de mise en miroir synchrone permet la réplication des données en ligne en temps réel entre les baies de stockage sur une distance distante. 
 ---
-= En savoir plus sur la mise en miroir synchrone dans le logiciel SANtricity
+= Découvrez la mise en miroir synchrone dans SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

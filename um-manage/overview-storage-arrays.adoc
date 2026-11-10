@@ -24,7 +24,7 @@ En savoir plus :
 
 * link:considerations-for-discovering-arrays.html["Considérations relatives à la détection des baies"]
 * link:discover-multiple-arrays.html["Découvrir plusieurs baies de stockage"]
-* link:discover-single-array.html["Découvrir une seule baie"]
+* link:discover-single-array.html["Découvrez une baie de stockage unique"]
 
 
 
@@ -40,5 +40,5 @@ En savoir plus :
 
 * link:launch-considerations.html["Facteurs à prendre en compte pour accéder à System Manager"]
 * link:launch-system-manager.html["Gérer une baie de stockage individuelle"]
-* link:storage-array-status.html["Afficher l'état de la matrice de stockage"]
+* link:storage-array-status.html["État de la matrice de stockage"]
 
