@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
 summary: Utilisez le Script editor pour créer ou modifier un fichier de script, enregistrer un fichier de script sur le disque local de la station de gestion du stockage ou charger un fichier de script depuis le disque. 
 ---
-= Utilisez l'éditeur de script dans SANtricity System Manager
+= Utilisation de l'éditeur de script
 :allow-uri-read: 
 :experimental: 
 :icons: font

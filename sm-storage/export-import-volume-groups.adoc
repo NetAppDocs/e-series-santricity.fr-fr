@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, export, import, volume group 
 summary: 'La migration d"un groupe de volumes vous permet d"exporter un groupe de volumes pour pouvoir importer le groupe de volumes vers une autre matrice de stockage.' 
 ---
-= Exportation et importation de groupes de volumes à l’aide de la CLI SANtricity
+= Exporter/Importer des groupes de volumes dans l'interface de ligne de commandes SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, synchronously, 
 summary: 'Vous configurez la mise en miroir synchrone à l"aide du workflow suivant.' 
 ---
-= Flux de travail de mise en miroir synchrone pour le logiciel SANtricity
+= Dupliquez un volume de manière synchrone dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

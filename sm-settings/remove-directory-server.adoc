@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: 'Pour rompre la connexion entre un serveur d"annuaire et la baie de stockage, vous pouvez supprimer les informations du serveur depuis la page Services d"annuaire. Vous pourriez vouloir effectuer cette opération si vous avez configuré un nouveau serveur, puis souhaitez supprimer l"ancien.' 
 ---
-= Supprimer un serveur d'annuaire dans SANtricity System Manager
+= Supprimer le serveur d'annuaire dans SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

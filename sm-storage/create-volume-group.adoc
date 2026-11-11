@@ -32,6 +32,9 @@ Avant de créer un groupe de volumes, consultez les instructions suivantes :
 
 
 
+
+NOTE: Il n'est pas possible de mélanger des disques FDE et FIPS au sein d'une même baie de stockage. Tous les disques sécurisés du système doivent être du même type.
+
 .Étapes
 . Dans le panneau de gauche, sélectionnez menu : Storage [Pools and volume groups].
 . Cliquez sur menu:Créer [Groupe de volumes].

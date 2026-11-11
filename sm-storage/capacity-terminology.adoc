@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity terms 
 summary: 'Découvrez les conditions générales de capacité qui s"appliquent à votre baie de stockage.' 
 ---
-= Terminologie de capacité dans SANtricity System Manager
+= Découvrez la terminologie relative à la capacité dans le logiciel SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
